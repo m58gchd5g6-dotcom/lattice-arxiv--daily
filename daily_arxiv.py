@@ -5,6 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 import feedparser
+from openai import OpenAI
 
 
 ARXIV_QUERY = "cat:hep-lat"
@@ -14,6 +15,12 @@ BASE_DIR = Path(__file__).resolve().parent
 REPORT_DIR = BASE_DIR / "reports"
 DATA_DIR = BASE_DIR / "data"
 SEEN_FILE = DATA_DIR / "seen_ids.json"
+
+
+client = OpenAI(
+    api_key=os.environ.get("DEEPSEEK_API_KEY"),
+    base_url="https://api.deepseek.com"
+)
 
 
 def clean_text(text):
@@ -35,10 +42,16 @@ def save_seen(seen_ids):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
 
     with open(SEEN_FILE, "w", encoding="utf-8") as f:
-        json.dump(sorted(seen_ids), f, ensure_ascii=False, indent=2)
+        json.dump(
+            sorted(seen_ids),
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
 
 
 def fetch_arxiv():
+
     url = (
         "https://export.arxiv.org/api/query"
         f"?search_query={ARXIV_QUERY}"
@@ -53,138 +66,234 @@ def fetch_arxiv():
     papers = []
 
     for entry in feed.entries:
+
         arxiv_id = entry.id.split("/abs/")[-1]
-
-        title = clean_text(entry.title)
-        abstract = clean_text(entry.summary)
-
-        authors = []
-        for author in getattr(entry, "authors", []):
-            authors.append(author.name)
-
-        pdf_url = ""
-        for link in getattr(entry, "links", []):
-            if getattr(link, "type", "") == "application/pdf":
-                pdf_url = link.href
-                break
 
         papers.append(
             {
                 "id": arxiv_id,
-                "title": title,
-                "abstract": abstract,
-                "authors": authors,
-                "published": getattr(entry, "published", ""),
+                "title": clean_text(entry.title),
+                "abstract": clean_text(entry.summary),
+                "authors": [
+                    a.name
+                    for a in getattr(entry, "authors", [])
+                ],
+                "published": getattr(
+                    entry,
+                    "published",
+                    ""
+                ),
                 "url": entry.id,
-                "pdf": pdf_url,
             }
         )
 
     return papers
 
 
-def short_summary(abstract):
-    """
-    简单从摘要前两句生成“快速概览”。
-    不需要 OpenAI API，因此 GitHub Actions 可以免费直接运行。
-    """
-    text = clean_text(abstract)
+def ai_summary(title, abstract):
 
-    sentences = re.split(r"(?<=[.!?])\s+", text)
+    prompt = f"""
+你是一名专业 lattice field theory 研究助手。
 
-    if len(sentences) >= 2:
-        return sentences[0] + " " + sentences[1]
+请分析下面这篇论文。
 
-    return text
+标题：
+{title}
+
+摘要：
+{abstract}
 
 
-def write_report(new_papers):
-    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+请用中文输出：
 
-    today = datetime.utcnow().strftime("%Y-%m-%d")
-    report_file = REPORT_DIR / f"{today}.md"
+## 一句话结论
+
+## 研究问题
+作者想解决什么问题？
+
+## 方法
+使用了什么 lattice 方法、模型、算法或数值技术？
+
+## 主要结果
+总结最重要发现。
+
+## 为什么值得关注
+解释它对 lattice/QCD/理论物理社区的重要性。
+
+## 方向标签
+选择几个标签，例如：
+Lattice QCD
+BSM
+Quantum simulation
+Machine Learning
+Tensor network
+Finite temperature
+
+## 阅读优先级
+给 1-5 星，并解释原因。
+"""
+
+    try:
+
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=[
+                {
+                    "role": "system",
+                    "content":
+                    "你是熟悉格点场论和量子场论的研究助理。"
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            temperature=0.2
+        )
+
+        return response.choices[0].message.content
+
+
+    except Exception as e:
+
+        return (
+            "DeepSeek 总结失败\n"
+            f"错误信息: {e}\n\n"
+            f"原摘要:\n{abstract}"
+        )
+
+
+def write_report(papers):
+
+    REPORT_DIR.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    today = datetime.utcnow().strftime(
+        "%Y-%m-%d"
+    )
+
+    report = REPORT_DIR / f"{today}.md"
+
 
     lines = []
 
-    lines.append(f"# Lattice arXiv Daily — {today}")
+    lines.append(
+        f"# Lattice arXiv Daily — {today}"
+    )
+
     lines.append("")
-    lines.append("自动检索来源：arXiv `hep-lat`")
+
+    lines.append(
+        "自动来源：arXiv hep-lat"
+    )
+
     lines.append("")
 
-    if not new_papers:
-        lines.append("## 今日没有发现新的 lattice / hep-lat 论文")
+
+    for i, paper in enumerate(
+        papers,
+        start=1
+    ):
+
+        lines.append(
+            f"# {i}. {paper['title']}"
+        )
+
         lines.append("")
-        lines.append("下一次自动任务会继续检查。")
 
-    else:
-        lines.append(f"今天发现 **{len(new_papers)} 篇**此前未记录的新论文。")
+        lines.append(
+            "**作者:** "
+            +
+            ", ".join(
+                paper["authors"]
+            )
+        )
+
         lines.append("")
 
-        for i, paper in enumerate(new_papers, start=1):
-            lines.append(f"## {i}. {paper['title']}")
-            lines.append("")
+        lines.append(
+            f"**arXiv:** {paper['url']}"
+        )
 
-            if paper["authors"]:
-                lines.append(
-                    "**作者：** " + ", ".join(paper["authors"])
-                )
-                lines.append("")
+        lines.append("")
 
-            lines.append(f"**arXiv：** [{paper['id']}]({paper['url']})")
+        lines.append(
+            ai_summary(
+                paper["title"],
+                paper["abstract"]
+            )
+        )
 
-            if paper["pdf"]:
-                lines.append(f"**PDF：** [打开论文]({paper['pdf']})")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
 
-            lines.append("")
-            lines.append("### 快速概览")
-            lines.append("")
-            lines.append(short_summary(paper["abstract"]))
-            lines.append("")
-            lines.append("### Abstract")
-            lines.append("")
-            lines.append(paper["abstract"])
-            lines.append("")
-            lines.append("---")
-            lines.append("")
 
-    with open(report_file, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    with open(
+        report,
+        "w",
+        encoding="utf-8"
+    ) as f:
 
-    print(f"Report written to: {report_file}")
+        f.write(
+            "\n".join(lines)
+        )
 
 
 def main():
-    print("Fetching latest hep-lat papers from arXiv...")
 
     papers = fetch_arxiv()
 
     if not papers:
-        raise RuntimeError("No papers returned from arXiv.")
+        raise RuntimeError(
+            "No papers found"
+        )
 
-    seen_ids = load_seen()
+
+    seen = load_seen()
 
     first_run = not SEEN_FILE.exists()
 
+
     if first_run:
-        # 第一次运行只生成最近 20 篇，避免报告太长
-        new_papers = papers[:20]
+
+        new_papers = papers[:10]
+
     else:
+
         new_papers = [
-            paper
-            for paper in papers
-            if paper["id"] not in seen_ids
+            p
+            for p in papers
+            if p["id"] not in seen
         ]
 
-    write_report(new_papers)
 
-    # 当前抓到的论文全部记入 seen
-    for paper in papers:
-        seen_ids.add(paper["id"])
+    write_report(
+        new_papers
+    )
 
-    save_seen(seen_ids)
 
-    print(f"Done. New papers: {len(new_papers)}")
+    for p in papers:
+
+        seen.add(
+            p["id"]
+        )
+
+
+    save_seen(
+        seen
+    )
+
+
+    print(
+        "Done:",
+        len(new_papers),
+        "papers"
+    )
 
 
 if __name__ == "__main__":
+
     main()
