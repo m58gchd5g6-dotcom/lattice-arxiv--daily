@@ -19,7 +19,8 @@ SEEN_FILE = DATA_DIR / "seen_ids.json"
 
 client = OpenAI(
     api_key=os.environ.get("DEEPSEEK_API_KEY"),
-    base_url="https://api.deepseek.com"
+    base_url="https://api.deepseek.com",
+    timeout=60
 )
 
 
