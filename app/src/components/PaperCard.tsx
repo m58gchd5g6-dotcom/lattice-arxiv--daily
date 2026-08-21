@@ -15,10 +15,12 @@ type Paper = {
 
 export default function PaperCard({ paper }: { paper: Paper }) {
   return (
-    <article>
+    <article className="paper-card">
       <h2>{paper.title}</h2>
+      <p>{paper.authors?.join(', ')}</p>
       <p>{paper.summary?.one_sentence ?? paper.summary?.raw ?? "No summary yet"}</p>
-      <p>Score: {paper.metadata?.score ?? "-"}</p>
+      <p>Score: {paper.metadata?.score ?? "-"} / 5</p>
+      <p>{paper.metadata?.topics?.join(" · ")}</p>
     </article>
   );
 }
