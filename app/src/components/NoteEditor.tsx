@@ -18,13 +18,14 @@ export default function NoteEditor({ paperId }: { paperId: string }) {
   }
 
   return (
-    <section>
+    <section className="notes-box">
       <h2>My Notes</h2>
+      <p>Markdown supported: headings, lists, equations, and research thoughts.</p>
       <textarea
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder="Write your research notes here..."
-        rows={12}
+        placeholder="# Main idea\n\n## Questions\n\n- ..."
+        rows={16}
       />
       <button onClick={saveNote}>Save note</button>
       {saved && <p>Saved.</p>}
