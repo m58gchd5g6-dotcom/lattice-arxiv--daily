@@ -1,28 +1,21 @@
 import PaperCard from "../components/PaperCard";
-
-const demoPapers = [
-  {
-    id: "demo",
-    title: "Lattice Daily is coming",
-    summary: {
-      one_sentence: "The reading interface is being built from the paper database."
-    },
-    metadata: {
-      score: 5,
-      topics: ["Lattice Field Theory"],
-      status: "unread"
-    }
-  }
-];
+import { getPapers } from "../lib/papers";
 
 export default function Home() {
+  const papers = getPapers();
+
   return (
     <main>
       <h1>Lattice Daily</h1>
       <p>Daily lattice research reader.</p>
-      {demoPapers.map((paper) => (
-        <PaperCard key={paper.id} paper={paper} />
-      ))}
+
+      {papers.length === 0 ? (
+        <p>No papers loaded yet.</p>
+      ) : (
+        papers.slice(0, 10).map((paper) => (
+          <PaperCard key={paper.id} paper={paper} />
+        ))
+      )}
     </main>
   );
 }
