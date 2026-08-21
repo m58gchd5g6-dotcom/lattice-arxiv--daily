@@ -1,0 +1,9 @@
+{
+  "name": "Lattice Daily",
+  "short_name": "Lattice Daily",
+  "description": "Daily lattice research reader",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#111111"
+}
