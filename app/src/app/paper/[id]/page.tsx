@@ -11,17 +11,33 @@ export default async function PaperPage({ params }: { params: { id: string } }) 
   return (
     <main>
       <h1>{paper.title}</h1>
-      <p>{paper.authors?.join(", ")}</p>
-      <p>{paper.arxiv_url}</p>
 
-      <h2>AI Summary</h2>
-      <pre>{JSON.stringify(paper.summary, null, 2)}</pre>
+      <section>
+        <h2>Authors</h2>
+        <p>{paper.authors?.join(", ") || "Unknown"}</p>
+      </section>
 
-      <h2>Topics</h2>
-      <p>{paper.topics?.join(", ")}</p>
+      <section>
+        <h2>arXiv</h2>
+        <a href={paper.arxiv_url} target="_blank">
+          Open paper
+        </a>
+      </section>
 
-      <h2>My Notes</h2>
-      <p>Markdown notes integration coming next.</p>
+      <section>
+        <h2>Summary</h2>
+        <p>{paper.summary?.one_sentence || paper.summary?.raw || "No summary yet"}</p>
+      </section>
+
+      <section>
+        <h2>Topics</h2>
+        <p>{paper.topics?.join(" · ") || "No topics"}</p>
+      </section>
+
+      <section>
+        <h2>My Notes</h2>
+        <p>Markdown notes integration coming next.</p>
+      </section>
     </main>
   );
 }
