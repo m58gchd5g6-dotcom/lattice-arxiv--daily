@@ -1,3 +1,4 @@
+import PaperCard from "../../components/PaperCard";
 import { getPapers } from "../../lib/papers";
 
 export default function Library() {
@@ -5,13 +6,13 @@ export default function Library() {
 
   return (
     <main>
-      <h1>Library</h1>
-      {papers.map((paper) => (
-        <article key={paper.id}>
-          <h2>{paper.title}</h2>
-          <p>{paper.metadata?.topics?.join(", ")}</p>
-        </article>
-      ))}
+      <h1>Lattice Library</h1>
+      <p>{papers.length} papers collected</p>
+      <section>
+        {papers.map((paper) => (
+          <PaperCard key={paper.id} paper={paper} />
+        ))}
+      </section>
     </main>
   );
 }
