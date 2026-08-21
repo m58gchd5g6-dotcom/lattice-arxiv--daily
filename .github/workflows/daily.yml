@@ -29,9 +29,11 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python daily_arxiv.py
 
-      - name: Update Lattice Daily paper database
+      - name: Sync Lattice Daily paper database
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
-          python pipeline/update_papers_db.py
+          python pipeline/sync_paper_database.py
         
       - name: Commit generated report and database
         run: |
