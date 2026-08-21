@@ -1,4 +1,5 @@
 import { getPapers } from "../../../lib/papers";
+import NoteEditor from "../../../components/NoteEditor";
 
 export default async function PaperPage({ params }: { params: { id: string } }) {
   const papers = getPapers();
@@ -36,7 +37,7 @@ export default async function PaperPage({ params }: { params: { id: string } }) 
 
       <section>
         <h2>My Notes</h2>
-        <p>Markdown notes integration coming next.</p>
+        <NoteEditor paperId={paper.id} />
       </section>
     </main>
   );
