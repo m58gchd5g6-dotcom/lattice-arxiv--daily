@@ -34,6 +34,10 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: |
           python pipeline/sync_paper_database.py
+
+      - name: Validate paper database
+        run: |
+          python pipeline/validate_database.py
         
       - name: Commit generated report and database
         run: |
