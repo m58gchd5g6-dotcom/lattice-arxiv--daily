@@ -1,14 +1,19 @@
 # Lattice Daily Web App
 
-First version goal:
+Next.js reader for the generated lattice paper database.
 
-- Daily paper feed
-- Paper library
-- Paper detail view
-- Markdown notes integration
+```bash
+npm ci
+npm test
+npm run dev
+```
 
-Planned stack:
+The app provides:
 
-- Next.js
-- Static data from `data/papers.json` initially
-- Later optional database backend
+- a newest-first daily paper feed;
+- a searchable paper library;
+- paper detail pages with the complete generated summary;
+- browser-local notes.
+
+Production builds read `../data/papers.json` through the repository-level
+Turbopack root configured in `next.config.ts`.

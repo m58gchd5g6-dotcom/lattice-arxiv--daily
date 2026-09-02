@@ -1,9 +1,14 @@
 import { getPapers } from "../../../lib/papers";
 import NoteEditor from "../../../components/NoteEditor";
 
-export default async function PaperPage({ params }: { params: { id: string } }) {
+export default async function PaperPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   const papers = getPapers();
-  const paper = papers.find((p) => p.id === params.id);
+  const paper = papers.find((p) => p.id === id);
 
   if (!paper) {
     return <main>Paper not found</main>;
@@ -27,7 +32,9 @@ export default async function PaperPage({ params }: { params: { id: string } }) 
 
       <section>
         <h2>Summary</h2>
-        <p>{paper.summary?.one_sentence || paper.summary?.raw || "No summary yet"}</p>
+        <div className="summary-text">
+          {paper.summary?.raw || "No summary yet"}
+        </div>
       </section>
 
       <section>

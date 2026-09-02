@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -51,7 +52,10 @@ def save_seen(seen_ids):
         )
 
 
-def fetch_arxiv():
+def fetch_arxiv(parse_feed=None, sleep=time.sleep, max_attempts=3):
+
+    if parse_feed is None:
+        parse_feed = feedparser.parse
 
     url = (
         "https://export.arxiv.org/api/query"
@@ -62,7 +66,26 @@ def fetch_arxiv():
         "&sortOrder=descending"
     )
 
-    feed = feedparser.parse(url)
+    feed = None
+    last_error = None
+
+    for attempt in range(max_attempts):
+        try:
+            candidate = parse_feed(url)
+            if getattr(candidate, "entries", []):
+                feed = candidate
+                break
+        except Exception as error:
+            last_error = error
+
+        if attempt < max_attempts - 1:
+            sleep(2 ** attempt)
+
+    if feed is None:
+        message = f"No papers found after {max_attempts} attempts"
+        if last_error is not None:
+            raise RuntimeError(message) from last_error
+        raise RuntimeError(message)
 
     papers = []
 

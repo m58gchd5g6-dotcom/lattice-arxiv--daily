@@ -11,25 +11,32 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parent.parent))
 
 from daily_arxiv import fetch_arxiv, ai_summary
-from normalize_paper import normalize_paper
-from update_papers_db import upsert_paper
+from pipeline.normalize_paper import normalize_paper
+from pipeline.sync_logic import append_new_papers
+from pipeline.update_papers_db import load_database, save_database
 
 
 
 def main():
     papers = fetch_arxiv()
+    database = load_database()
+    updated, added = append_new_papers(
+        database,
+        papers,
+        summarize=lambda paper: ai_summary(
+            paper["title"],
+            paper["abstract"]
+        ),
+        normalize=normalize_paper,
+    )
 
-    for paper in papers:
-        normalized = normalize_paper(
-            paper,
-            ai_summary(
-                paper["title"],
-                paper["abstract"]
-            )
-        )
-        upsert_paper(normalized)
+    if added:
+        save_database(updated)
 
-    print(f"Synced {len(papers)} papers into Lattice Daily database")
+    print(
+        f"Fetched {len(papers)} papers; "
+        f"added {added} new papers to Lattice Daily database"
+    )
 
 
 if __name__ == "__main__":

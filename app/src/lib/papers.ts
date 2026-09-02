@@ -1,23 +1,12 @@
-import fs from "fs";
-import path from "path";
+import "server-only";
 
-export type Paper = {
-  id: string;
-  title: string;
-  authors?: string[];
-  arxiv_url?: string;
-  summary?: Record<string, unknown>;
-  topics?: string[];
-  score?: number | null;
-  status?: string;
-};
+import papersData from "../../../data/papers.json";
+import { preparePapers } from "./paper-utils";
+
+import type { Paper } from "./paper-utils";
+
+export type { Paper } from "./paper-utils";
 
 export function getPapers(): Paper[] {
-  const file = path.join(process.cwd(), "data", "papers.json");
-
-  if (!fs.existsSync(file)) {
-    return [];
-  }
-
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  return preparePapers(papersData as unknown as Paper[]);
 }

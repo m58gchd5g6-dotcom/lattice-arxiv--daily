@@ -19,8 +19,7 @@ export default function NoteEditor({ paperId }: { paperId: string }) {
 
   return (
     <section className="notes-box">
-      <h2>My Notes</h2>
-      <p>Markdown supported: headings, lists, equations, and research thoughts.</p>
+      <p>Notes are stored locally in this browser.</p>
       <textarea
         value={note}
         onChange={(e) => setNote(e.target.value)}
