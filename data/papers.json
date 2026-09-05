@@ -1977,5 +1977,287 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-09-02T00:49:50.610397"
+  },
+  {
+    "id": "2609.04142v1",
+    "title": "First Two-Hadron Form Factor from QCD",
+    "authors": [
+      "Felipe G. Ortega-Gama",
+      "Raúl A. Briceño",
+      "Ivan M. Burbano",
+      "Robert G. Edwards"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.04142v1",
+    "published": "2026-09-03T17:33:20Z",
+    "abstract": "We present the first QCD determination of an energy-dependent form factor for a two-hadron scattering state. In particular, we calculate the QCD contribution to the forward electromagnetic $π^+π^+ + γ\\toπ^+π^+$ amplitude at $m_π\\approx 400$~MeV using lattice QCD. Because lattice calculations are performed in a finite Euclidean spacetime, where asymptotic scattering states are absent, this amplitude cannot be accessed directly from correlation functions. Instead, we can constrain this and related amplitudes nonperturbatively using a finite-volume formalism that requires two ingredients: the discrete finite-volume spectrum and finite-volume matrix elements of the electromagnetic current. We calculate three-point correlation functions coupling $π^+π^+$ finite-volume states and extract the corresponding electromagnetic matrix elements. Combining these results with the previously determined spectrum, we constrain the infinite-volume $π^+π^+ + γ\\toπ^+π^+$ amplitude in the forward limit. Using constraints from Lorentz symmetry, unitarity, and analyticity, we describe this amplitude in terms of a single real-valued energy-dependent two-hadron form factor. The resulting amplitude and form factor agree with the Ward-Takahashi identity across all energies and moving frames considered, providing the first QCD validation of this finite-volume approach and a pathway toward first-principles studies of the electromagnetic structure and electroweak responses of resonances and multi-hadron bound states.",
+    "summary": {
+      "raw": "## 一句话结论\n本文首次在格点QCD中，通过有限体积矩阵元与谱结合，成功提取了无限体积下两强子散射态（π⁺π⁺）的前向电磁形状因子，并验证了Ward-Takahashi恒等式。\n\n## 研究问题\n作者想解决什么问题？\n- 核心问题：如何在有限欧几里得时空的格点QCD中，获得涉及两强子散射态（而非单粒子束缚态）的能量依赖电磁形状因子（或前向Compton振幅）？\n- 难点：格点中不存在渐近散射态，无法直接计算π⁺π⁺ + γ → π⁺π⁺的散射振幅。\n- 目标：建立并验证一套非微扰有限体积形式论，将格点可计算的离散谱和有限体积矩阵元，映射到无限体积的物理振幅。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 物理设置：m_π ≈ 400 MeV，计算π⁺π⁺（I=2，S波）系统的前向电磁振幅。\n- 有限体积形式论：采用（如Lellouch-Lüscher推广的）有限体积矩阵元与无限体积矩阵元的映射关系，需要两个输入：\n  1. 先前已确定的有限体积离散谱；\n  2. 本文新计算的三点关联函数（π⁺π⁺有限体积态与电磁流耦合），提取有限体积电磁矩阵元。\n- 理论约束：利用洛伦兹对称性、幺正性和解析性，将前向振幅参数化为单个实值能量依赖的两强子形状因子。\n- 数值技术：标准格点三点函数计算，结合变分法（或广义特征值问题）提取有限体积态与矩阵元；跨多个总动量（moving frames）和能量进行约束。\n- 验证手段：检查所得振幅/形状因子是否满足Ward-Takahashi恒等式（电荷守恒）。\n\n## 主要结果\n总结最重要发现。\n- 首次从第一性原理QCD获得两强子散射态的能量依赖形状因子。\n- 在考虑的所有能量和运动学框架下，提取的振幅与形状因子均与Ward-Takahashi恒等式一致。\n- 这为有限体积方法处理两强子电磁/电弱响应提供了首个QCD数值验证，证明该框架在非微扰层面是自洽可靠的。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 方法突破：将有限体积形式论从“能谱”成功推广到“矩阵元/形状因子”，且针对的是散射态而非束缚态，这是格点QCD计算共振态电磁性质（如形状因子、辐射衰变、电弱跃迁）的关键一步。\n- 验证意义：首次在真实QCD动力学中验证了该有限体积框架与Ward-Takahashi恒等式的相容性，为后续研究共振态（如ρ、Δ等）的电磁结构铺平了道路。\n- 应用前景：为从第一性原理研究多强子束缚态和共振态的电弱响应（如质子-中子跃迁、双光子过程、暗物质-强子散射）提供了可行路径。\n- 填补空白：此前格点QCD对强子形状因子的计算多限于单粒子稳定态，本文扩展至两粒子连续谱区域，具有方法论上的开创性。\n\n## 方向标签\nLattice QCD  \nHadron spectroscopy  \nFinite-volume formalism  \nElectromagnetic form factors  \nScattering amplitudes\n\n## 阅读优先级\n给 1-5 星，并解释原因。\n★★★★☆（4星）\n- 理由：该工作属于格点QCD中“有限体积矩阵元”方向的前沿突破，方法严谨、验证充分，对从事强子结构、共振态物理和格点技术的学者有重要参考价值。\n- 扣一星原因：物理对象为π⁺π⁺（无共振、I=2排斥通道），相对简单，尚未触及最棘手的共振态（如ρ介子）情形；且m_π=400 MeV为非物理点，结果本身不直接对应实验。但作为方法论验证，其重要性极高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:45:06.471568"
+  },
+  {
+    "id": "2609.04129v1",
+    "title": "Lattice QCD calculation of the pion-nucleon coupling $\\bar{g}_0$ induced by the QCD $Θ$-term",
+    "authors": [
+      "Fangcheng He",
+      "Tanmoy Bhattacharya",
+      "Rajan Gupta",
+      "Emanuele Mereghetti"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.04129v1",
+    "published": "2026-09-03T17:26:35Z",
+    "abstract": "We present lattice QCD results for the CP violating pion-nucleon coupling $\\bar{g}_0$ induced by the QCD $\\overlineΘ$ term from the analysis of three 2+1+1-flavor ensembles generated with highly improved staggered quarks (HISQ) by the MILC collaboration. These ensembles are at lattice spacing $a\\approx 0.09~\\text{fm}$ and pion masses of 313, 226 and 138 MeV, respectively. The coupling $\\bar{g}_0$ is extracted in two ways. First, from the matrix element of the correlation between the pesudoscalar current and the topological charge evaluated between the nucleon ground state. The data for correlation functions with both the pseudoscalar and axial vector exhibit large contamination from the $Nπ$ excited state. We show that these can be controlled at the leading order using chiral perturbation theory ($χ$PT) and the axial Ward identity (AWI, also called the partially conserved axial current (PCAC) relation). The result after removing the $Nπ$ contamination and extrapolating to the physical pion mass is, however, noisy: $\\bar{g}_0/(2F_π)=-7(63)\\times 10^{-3} \\,{\\overlineΘ}$. The more precise result $\\bar{g}_0/(2F_π)=17.4(1.9)\\times 10^{-3} \\,{\\overlineΘ}$ is obtained using low energy effective field theory methods or equivalently the AWI. Since contamination from the $Nπ$ excited states arises in the calculation of many nucleon matrix elements, we give an extended discussion on them and the use of the AWI for controlling them in the calculation of $\\bar g_0$.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文利用Lattice QCD计算了由QCD θ项诱导的CP破坏π-N耦合常数ḡ₀，发现通过有效场论/轴矢流Ward恒等式方法可获得更精确的结果（ḡ₀/(2Fπ)=17.4(1.9)×10⁻³θ̄），而直接矩阵元方法受Nπ激发态污染严重且噪声大。\n\n## 研究问题\n\n作者想解决什么问题？\n\n- 精确计算由QCD θ项（强CP破坏源）诱导的π-N耦合常数ḡ₀，这是理解中子电偶极矩（nEDM）和强CP问题的重要低能常数。\n- 解决格点计算中Nπ激发态对核子矩阵元（特别是赝标量流-拓扑荷关联）的严重污染问题。\n- 比较两种提取ḡ₀的方法（直接矩阵元法 vs 有效场论/AWI方法）的可靠性和精度。\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **格点系综**：使用MILC合作组的2+1+1味HISQ（高度改进staggered夸克）系综，格距a≈0.09 fm，π质量分别为313、226和138 MeV（含物理点）。\n- **两种提取方案**：\n  1. **直接矩阵元法**：计算核子基态中赝标量流与拓扑荷Q的关联矩阵元，提取ḡ₀。\n  2. **有效场论/AWI方法**：利用手征微扰论（χPT）和轴矢流Ward恒等式（AWI/PCAC关系），将ḡ₀与更易精确计算的量（如核子σ项或轴矢流矩阵元）联系起来。\n- **激发态控制**：在手征微扰论领头阶框架下分析Nπ激发态污染，并利用AWI关系系统性地扣除这些污染。\n- **手征外推**：将三个π质量点的结果外推到物理π质量。\n\n## 主要结果\n\n总结最重要发现。\n\n- **直接矩阵元法**：扣除Nπ污染并外推后结果为 ḡ₀/(2Fπ) = −7(63)×10⁻³ θ̄，误差极大（~900%），统计上不可用。\n- **有效场论/AWI方法**：给出更精确的结果 ḡ₀/(2Fπ) = 17.4(1.9)×10⁻³ θ̄，相对误差约11%，与手征微扰论预期量级一致。\n- **关键发现**：赝标量流和轴矢流关联函数均受Nπ激发态严重污染，但通过AWI关系可以系统性地控制这些污染，而直接矩阵元法即使扣除后仍受大噪声困扰。\n- 两种方法结果在误差范围内不一致（符号甚至相反），表明直接矩阵元法的系统误差可能未被完全控制。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **强CP问题与nEDM**：ḡ₀是连接QCD θ项与可观测中子电偶极矩的关键低能常数，精确计算对约束θ角大小和探测新物理（如轴子）至关重要。\n- **方法学贡献**：论文详细展示了Nπ激发态如何污染核子矩阵元，并证明AWI/PCAC关系是控制这类污染的强有力工具。这一方法学突破可推广到其他核子矩阵元计算（如π-N σ项、张量荷等）。\n- **首次物理π质量结果**：在物理π质量附近给出ḡ₀的格点QCD计算，为后续更高精度计算和模型比较提供了基准。\n- **两种方法的对比**：揭示了直接矩阵元法在CP破坏量中的局限性，为社区选择更稳健的提取方案提供了重要参考。\n\n## 方向标签\n\n选择几个标签，例如：\nLattice QCD\nBSM\nFinite temperature\n\n（注：该工作属于标准模型内强CP研究，与BSM（超出标准模型）相关但非直接BSM计算；不涉及量子模拟、机器学习或张量网络。）\n\n## 阅读优先级\n\n给 1-5 星，并解释原因。\n\n**4星（强烈推荐）**\n\n理由：\n- **方法学价值高**：对Nπ激发态污染的深入分析和AWI控制方法具有普适性，对任何计算核子矩阵元的格点研究都有借鉴意义。\n- **物理重要性**：ḡ₀是强CP和nEDM研究的关键输入，该工作提供了物理π质量下的首个可靠格点结果。\n- **结果有警示意义**：直接矩阵元法的大噪声和与AWI方法的不一致，提醒社区在CP破坏量计算中需谨慎选择算符和提取方案。\n- 扣一星原因：统计精度仍有限（~11%），且两种方法结果不一致暗示可能存在未完全控制的系统误差，需要更多系综和更高统计来确认。对于非核子矩阵元方向的读者，方法学部分可能过于细节。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:45:17.455693"
+  },
+  {
+    "id": "2609.04117v1",
+    "title": "Non-Abelian string melting and thermalization in an open lattice gauge theory",
+    "authors": [
+      "Erick Parra Verde",
+      "Giovanni Cataldi",
+      "Stefan Kühn",
+      "Giuseppe Magnifico",
+      "Jad C. Halimeh"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.04117v1",
+    "published": "2026-09-03T17:19:56Z",
+    "abstract": "Open-system lattice gauge theory (LGT) has so far been developed predominantly in Abelian settings, leaving open how genuinely non-Abelian gauge structure reshapes dissipative real-time dynamics. Here, we study a $1+1$D SU(2) Yang--Mills LGT with dynamical matter coupled to a thermal scalar environment through a gauge-preserving Lindblad evolution, which we solve using tensor networks. Starting from a quark--antiquark pair connected by a chromoelectric flux string, we find that the thermal medium melts the string by delocalizing the color charges and screening the flux; on resonance, this dissipative melting competes with and delays coherent string breaking. The thermalization time is non-monotonic in the environment coupling, decreasing through environment-assisted transport at weak dissipation before increasing in a quantum-Zeno regime. In the strong-dephasing limit, a Schrieffer--Wolff expansion maps the dynamics to a classical exclusion process and yields the Liouvillian thermalization time analytically. Beyond these generic open-system effects, the non-Abelian matter structure produces a systematic mesonic bias in the steady state, while the thermalization time decreases with temperature, in contrast to the Abelian Schwinger model trend and in qualitative agreement with pNRQCD studies of the quark--gluon plasma. These results establish a gauge-preserving framework for thermalization and string dynamics in open non-Abelian lattice gauge theories.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文首次在1+1维SU(2)非阿贝尔开放格点规范理论中，利用张量网络求解含热环境的Lindblad主方程，揭示了色通量弦的耗散熔化机制、热化时间的非单调行为，以及非阿贝尔结构导致的稳态介子偏置和与温度负相关的热化时间。\n\n## 研究问题\n\n作者想解决什么问题？\n\n- 此前开放格点规范理论（open LGT）几乎全部局限于阿贝尔规范群（如U(1) Schwinger模型），非阿贝尔规范结构（如SU(2)）在耗散动力学中会带来哪些本质不同的物理效应？\n- 具体问题包括：热环境如何熔化连接夸克-反夸克对的色电场通量弦？耗散熔化与相干弦断裂如何竞争？热化时间如何依赖环境耦合强度？非阿贝尔色自由度如何影响稳态性质？\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **模型**：1+1维SU(2) Yang-Mills格点规范理论，耦合动力学费米子（夸克），通过规范不变的Lindblad主方程与热标量环境耦合。\n- **数值方法**：张量网络（Tensor network）求解开放系统的Lindblad方程（矩阵乘积算符/MPO表示密度矩阵）。\n- **解析方法**：在强退相干极限下，利用Schrieffer-Wolff展开将量子Lindblad动力学映射为经典排斥过程（classical exclusion process），从而解析得到Liouvillian热化时间。\n- **初始态**：制备一个夸克-反夸克对，由色电场通量弦连接（类似介子态），研究其耗散演化。\n\n## 主要结果\n\n总结最重要发现。\n\n1. **弦熔化机制**：热环境通过使色荷退定域化并屏蔽色电场来熔化通量弦；在共振条件下，耗散熔化与相干弦断裂相互竞争，且耗散会延迟相干弦断裂过程。\n2. **热化时间的非单调行为**：随环境耦合强度增大，热化时间先减小（弱耗散区，环境辅助输运加速热化），后增大（强耗散区，量子Zeno效应抑制动力学）。\n3. **强退相干极限的精确解**：Schrieffer-Wolff展开将系统映射为经典排斥过程，可解析得到Liouvillian热化时间。\n4. **非阿贝尔特有现象**：稳态中出现系统的介子偏置（mesonic bias），这是非阿贝尔色结构特有的效应，在阿贝尔模型中不存在。\n5. **温度依赖的反转**：热化时间随温度升高而减小，这与阿贝尔Schwinger模型的趋势相反，但与pNRQCD对夸克-胶子等离子体的研究定性一致。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **填补空白**：首次在非阿贝尔格点规范理论中建立规范不变的开放系统框架，突破了此前开放LGT局限于阿贝尔群（如U(1)）的瓶颈，为研究QCD相关耗散过程提供了新工具。\n- **物理洞察**：揭示了非阿贝尔色自由度在开放系统中的独特作用（介子偏置、温度依赖反转），这些效应无法从阿贝尔模型外推得到，对理解夸克-胶子等离子体中的重夸克偶素抑制、弦熔化等真实物理过程有直接参考价值。\n- **方法论贡献**：结合张量网络与Lindblad方程求解非阿贝尔开放LGT，并利用Schrieffer-Wolff映射获得解析结果，为后续研究提供了可复用的数值与解析技术路线。\n- **与QCD现象学连接**：热化时间随温度降低的趋势与pNRQCD对QGP的研究一致，暗示该简化模型可能捕捉了真实非阿贝尔规范理论耗散动力学的关键特征。\n\n## 方向标签\n\n- Tensor network\n- Quantum simulation\n- Finite temperature\n- Lattice QCD（开放系统/非平衡方向）\n\n## 阅读优先级\n\n**★★★★☆（4星）**\n\n**原因**：\n- **加分项**：选题新颖（非阿贝尔开放LGT），填补领域空白；结果丰富，既有数值又有解析；物理结论与非阿贝尔特有现象相关，对QGP研究有启发。\n- **减分项**：模型为1+1维，与真实3+1维QCD距离较远；读者需具备开放量子系统（Lindblad方程）和张量网络的基础知识，门槛较高；若读者主要关注平衡态格点QCD或标准模型唯象学，则相关性有限。\n- **建议**：对从事非平衡格点场论、量子模拟、开放量子系统与QCD交叉方向的研究者，值得精读；对一般格点QCD社区，可作为了解前沿方向的推荐阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:45:27.491695"
+  },
+  {
+    "id": "2609.04114v1",
+    "title": "Real-Time String Dynamics in $3+1$D Lattice Quantum Electrodynamics",
+    "authors": [
+      "Helen Zwölfer",
+      "Giovanni Cataldi",
+      "Umberto Borla",
+      "Jad C. Halimeh"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.04114v1",
+    "published": "2026-09-03T17:18:01Z",
+    "abstract": "Understanding real-time string dynamics in three spatial dimensions is essential for connecting quantum simulations of lattice gauge theories (LGTs) to the physical dimensionality of QED and QCD, where transverse fluctuations and competing local processes proliferate. We present the first real-time simulations of string breaking in $3+1$D lattice quantum electrodynamics. Using tree tensor networks, we simulate the quench dynamics of electric flux strings in a $3\\!+\\!1$D U(1) LGT with dynamical matter. At strong coupling, the string breaks resonantly at a sharp resonance condition of mass and gauge couplings, converting electric energy into matter--antimatter pairs that screen the static charges. Off resonance, we classify all competing channels---pair production, string deformations and extensions, and flux loops---whose multiplicity, extensive for pair production and flux loops, depletes the string sector even far from resonance. A channel-resolved perturbation theory quantitatively reproduces these dynamics and their Fourier spectrum. Our results establish diagnostics and benchmarks for upcoming quantum simulators of higher-dimensional LGTs.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文首次在 \\(3+1\\) 维 U(1) 格点量子电动力学中实现了弦断裂的实时动力学模拟，揭示了共振与非共振条件下弦碎裂、粒子产生与通量环等竞争通道的完整物理图像，并为高维格点规范理论量子模拟提供了基准诊断。\n\n---\n\n## 研究问题\n\n作者要解决的核心问题是：**在三维空间（即物理维度）中，格点规范理论的弦动力学如何演化？** 具体包括：\n\n- 在 \\(3+1\\)D 中，弦断裂是否仍满足共振条件？其机制与低维有何不同？\n- 非共振条件下，哪些竞争过程（粒子对产生、弦形变/延伸、通量环）会主导动力学？\n- 如何用可扩展的数值方法（而非仅限低维或小体积）定量描述这些过程？\n\n---\n\n## 方法\n\n- **模型**：\\(3+1\\)D U(1) 格点规范理论，含动力学交错费米子（dynamical matter），即格点 QED。\n- **算法**：**树张量网络（Tree Tensor Networks, TTN）**，用于模拟淬火（quench）后的实时演化。\n- **初始态**：由静态电荷对连接的电场通量弦（electric flux string）。\n- **分析工具**：\n  - 按通道分解的微扰论（channel-resolved perturbation theory），用于解析解释数值结果；\n  - 傅里叶谱分析，用于识别共振频率与通道特征；\n  - 强耦合展开，用于确定共振条件 \\(m \\sim g^2\\) 附近的物理。\n\n---\n\n## 主要结果\n\n1. **共振弦断裂**：在强耦合下，当质量与规范耦合满足尖锐共振条件时，弦会“断裂”，将电能转化为屏蔽静态电荷的物质–反物质对。\n2. **非共振竞争通道**：远离共振时，弦并不稳定，而是通过多种通道衰减：\n   - 粒子对产生（extensive，随体积增长）；\n   - 弦的形变与延伸；\n   - 通量环（flux loops）的激发。\n3. **通道多重性效应**：粒子对产生与通量环的通道数目随系统尺寸呈**广延（extensive）**增长，导致即使远离共振，弦扇区也会被显著耗散——这是 \\(3+1\\)D 特有的现象，在 \\(1+1\\)D 中不存在。\n4. **定量验证**：通道分辨的微扰论能定量复现数值动力学及其傅里叶谱，说明非微扰张量网络结果与解析理论高度一致。\n\n---\n\n## 为什么值得关注\n\n- **首次填补 \\(3+1\\)D 空白**：此前实时弦断裂模拟多限于 \\(1+1\\)D 或 \\(2+1\\)D，而真实 QED/QCD 是三维空间，横向涨落与竞争过程不可忽略。本文首次在物理维度上完成该模拟。\n- **为量子模拟提供基准**：高维格点规范理论是近期量子模拟器的重要目标，本文给出的共振条件、通道分类和谱诊断可直接用于验证未来量子硬件。\n- **揭示维度效应**：证明了“通道多重性”在 \\(d>1\\) 中从根本上改变弦动力学——即使远离共振，弦也会因大量竞争通道而快速衰减，这对理解 QCD 弦碎裂、喷注淬火等物理有启示。\n- **方法学贡献**：树张量网络在 \\(3+1\\)D 实时演化中的成功应用，展示了张量网络方法处理高维规范理论动力学的能力，为后续研究（如非阿贝尔理论）铺路。\n\n---\n\n## 方向标签\n\n- Tensor network  \n- Quantum simulation  \n- Lattice QED  \n- Real-time dynamics  \n- Strong coupling\n\n---\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n**理由**：\n\n- **加分项**：首次 \\(3+1\\)D 实时弦断裂模拟，物理意义明确，结果定量可靠，且与微扰论交叉验证，对量子模拟社区有直接指导价值。\n- **减分项**：模型为 U(1) 而非非阿贝尔 SU(3)，且强耦合区与真实 QCD 弱耦合物理距离较远；张量网络方法在更大体积或更长演化时间上的可扩展性仍有待验证。\n- **推荐读者**：从事格点规范理论实时演化、张量网络方法、量子模拟实验设计的研究者应精读；对弦碎裂唯象学感兴趣的 QCD 理论家可选择性阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:45:37.487039"
+  },
+  {
+    "id": "2609.03525v1",
+    "title": "Center-twisted Gribov spectra and the finite-volume Gaussian response in the refined Gribov--Zwanziger framework",
+    "authors": [
+      "Okuto Morikawa"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.03525v1",
+    "published": "2026-09-03T08:24:15Z",
+    "abstract": "We develop a continuum framework for comparing the Gribov--Zwanziger and center-vortex descriptions of confinement through the gauge-invariant twisted partition function of the electric $\\mathbb{Z}_N^{[1]}$ 1-form symmetry. A background 2-form field $B$, equivalently an 't~Hooft twist on a torus, labels a global sector and is not itself a dynamical center vortex. For a minimal irreducible twist on $T^4$, we derive the complete adjoint momentum lattice of $SU(N)$. The twisted spectrum is exactly the scalar spectrum on an enlarged torus with periods $(L_1,L_2,NL_3,NL_4)$ with the ordinary-torus sublattice removed. This yields a finite Faddeev--Popov gap at the flat representative and reduces twisted-minus-untwisted spectral traces to ordinary torus traces. For the refined Gribov--Zwanziger (RGZ) kernel, Poisson resummation gives an exact finite-volume Bessel-function winding sum with a universal center-twist projector. We evaluate the Gaussian one-loop integral at fixed RGZ parameters up to the finite-dimensional global zero-mode/stabilizer normalization. The Zwanziger determinants cancel, while the gauge-fixing/ghost sector leaves a universal massless primed determinant on $T^4$; the untwisted sector also contains constant gluon modes. The only normalization not fixed by the local quadratic Hessian is the relative zero-mode/stabilizer measure of the reducible untwisted and irreducibly twisted flat connections. We also derive closed finite-volume sources for the RGZ stationary equations. The massive response is exponentially suppressed at large volume, whereas the massless factor depends on the global zero-mode normalization. Thus the Gaussian calculation does not by itself establish the strong center-vortex-condensation criterion for $Z[B]/Z[0]$, but it isolates the remaining global normalization problem and separates a global twist from an actual dynamical vortex.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文在连续统框架下，通过规范不变的扭结配分函数系统比较了 Gribov–Zwanziger 与中心涡旋两种色禁闭图像，证明最小不可约 ’t Hooft 扭结下的扭结谱等价于扩大环面上的标量谱（去掉普通环面子格），并精确计算了有限体积高斯响应，最终将问题归结为全局零模/稳定子归一化这一尚未解决的规范问题。\n\n## 研究问题\n\n作者想解决什么问题？\n\n- 核心问题：在连续统（非格点）框架下，如何严格比较两种禁闭机制——Gribov–Zwanziger（基于 Gribov 区域与色禁闭的谱缺口）与中心涡旋（基于中心对称性破缺与涡旋凝聚）——并判断它们是否等价或互补。\n- 具体问题：如何通过规范不变的扭结配分函数（由电性 \\(\\mathbb{Z}_N^{[1]}\\) 1-形式对称性的背景 2-形式场 \\(B\\) 标记）来区分“全局扭结”（拓扑扇区）与“动力学中心涡旋”，并计算有限体积下的高斯响应。\n- 技术问题：在最小不可约扭结下，\\(SU(N)\\) 的伴随动量谱是什么？扭结谱与普通谱的差如何化简？RGZ（refined Gribov–Zwanziger）框架下有限体积高斯积分能否给出中心涡旋凝聚判据？\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- 本文是**连续统解析方法**，但大量借鉴格点场论概念（如 ’t Hooft 扭结、环面拓扑扇区、1-形式对称性）。\n- 关键工具：\n  - **’t Hooft 扭结/背景 2-形式场 \\(B\\)**：在 \\(T^4\\) 上标记不可约全局扇区。\n  - **动量谱分析**：推导最小不可约扭结下 \\(SU(N)\\) 伴随表示的完整动量格点，证明其等价于扩大环面 \\((L_1,L_2,NL_3,NL_4)\\) 上的标量谱（去掉普通环面子格）。\n  - **Poisson 重求和**：将 RGZ 核的谱迹转化为有限体积 Bessel 函数绕数和，得到普适的中心扭结投影子。\n  - **高斯单圈积分**：在固定 RGZ 参数下精确计算，处理 Zwanziger 行列式抵消、规范固定/鬼扇区的普适无质量 primed 行列式，以及零模/稳定子归一化。\n  - **RGZ 稳态方程的闭合有限体积源**：推导出解析表达式。\n\n## 主要结果\n\n总结最重要发现。\n\n1. **扭结谱的精确刻画**：最小不可约 ’t Hooft 扭结下，\\(SU(N)\\) 伴随谱恰好等于扩大环面 \\((L_1,L_2,NL_3,NL_4)\\) 上的标量谱减去普通环面子格谱。这给出了平坦代表处的有限 Faddeev–Popov 缺口。\n2. **谱迹化简**：扭结减未扭结的谱迹可完全化为普通环面上的谱迹，极大简化了计算。\n3. **有限体积高斯响应**：RGZ 核下，Poisson 重求和给出精确的 Bessel 函数绕数和，带普适中心扭结投影子；Zwanziger 行列式完全抵消，鬼/规范固定扇区留下普适无质量 primed 行列式。\n4. **未解决的归一化问题**：高斯计算无法确定未扭结（可约）与不可约扭结平坦联络之间的相对零模/稳定子测度——这是唯一未被局部二次 Hessian 固定的量。\n5. **关键结论**：大体积下质量模响应指数压低，但无质量因子依赖全局零模归一化。因此**高斯计算本身不足以确立 \\(Z[B]/Z[0]\\) 的强中心涡旋凝聚判据**，但它精确分离了“全局扭结”与“动力学涡旋”的贡献，并将问题归结为全局归一化。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **统一两种禁闭图像**：为 Gribov–Zwanziger 与中心涡旋两种主流禁闭机制提供了第一个系统的连续统比较框架，明确了二者在数学结构上的联系与差异。\n- **澄清概念混淆**：严格区分了“背景扭结”（拓扑扇区，非动力学）与“动力学中心涡旋”，这对理解 1-形式对称性、广义全局对称性与禁闭的关系至关重要。\n- **为格点计算提供靶点**：虽然本文是解析工作，但其精确的有限体积谱与高斯响应公式可直接用于格点模拟验证，例如测量扭结配分函数比 \\(Z[B]/Z[0]\\) 的有限体积标度。\n- **指出关键未解问题**：将问题精确定位到全局零模/稳定子归一化，为后续研究（无论是解析还是格点）指明了方向——这是判断中心涡旋凝聚是否真正驱动禁闭的“最后一公里”。\n- **方法普适性**：动量格点映射、Poisson 重求和与投影子技术可推广到其他规范群、更高维环面及其他背景场配置。\n\n## 方向标签\n\n- Lattice QCD（概念与验证目标）\n- Finite temperature（环面有限体积结构相关）\n- Quantum field theory（连续统解析方法）\n- Confinement / Center symmetry（核心物理主题）\n\n## 阅读优先级\n\n**4 星（强烈推荐给相关领域专家）**\n\n理由：\n- 优点：技术严谨、概念清晰，首次在连续统框架下严格比较两种禁闭机制，结果具有长期参考价值；对格点社区有明确的验证指导意义。\n- 局限：纯解析、无数值结果，阅读门槛高（需要熟悉 RGZ 框架、1-形式对称性、谱几何）；结论偏“负面”（高斯计算不足以定论），对非禁闭方向研究者吸引力有限。\n- 适合人群：研究色禁闭、Gribov 问题、中心涡旋、1-形式对称性的理论家与格点专家。若你的研究涉及禁闭机制比较或扭结配分函数，这是必读文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:45:50.041288"
+  },
+  {
+    "id": "2609.02840v1",
+    "title": "On the equivalence of left-hand-cut and three-body formalisms",
+    "authors": [
+      "André Baião-Raposo",
+      "Raul Briceño",
+      "Sebastian M. Dawid"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.02840v1",
+    "published": "2026-09-02T17:22:30Z",
+    "abstract": "The \"left-hand cut problem\" in lattice QCD arises when exchange singularities invalidate standard relations used to extract scattering amplitudes from the finite-volume spectrum. In recent years, several approaches were proposed to resolve this problem. We establish analytically and verify numerically the equivalence between the three-body approach proposed in [JHEP 06 (2024) 051] and the two-body left-hand cut formalism developed in [JHEP 08 (2024) 075]. We test the equivalence in a scalar model describing a particle scattering from an $S$-wave two-particle bound state through one-particle exchange. Both approaches reproduce the same infinite-volume particle--bound-state amplitude and correctly encode the associated left-hand cut in the finite-volume spectrum. Crucially, we identify that the exponentially suppressed finite-volume effects neglected in both formalisms can be numerically large, compromising amplitude extraction at small lattice volumes.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文从解析和数值上证明了两种看似不同的形式论——三体有限体积方法（JHEP 06 (2024) 051）与两体左手割线形式论（JHEP 08 (2024) 075）——在描述粒子-束缚态散射时完全等价，但两者共同忽略的指数压低有限体积效应在较小格点上可能数值上很大，从而影响振幅提取的可靠性。\n\n## 研究问题\n\n作者想解决什么问题？\n\n在格点QCD中，当存在交换奇异（exchange singularity）时，标准的两体有限体积关系（如Lüscher公式）失效，这就是所谓的“左手割线问题”。近年来出现了多种试图解决该问题的形式论，但彼此之间的关系尚不清楚。本文的核心问题是：**三体形式论与两体左手割线形式论是否在物理上等价？它们各自忽略的有限体积效应在数值上是否真的可以忽略？**\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **模型**：一个标量场模型，描述一个粒子与一个S波两粒子束缚态之间的散射，通过单粒子交换产生左手割线。\n- **解析方法**：在无限体积下，推导两种形式论给出的粒子-束缚态散射振幅的表达式，证明它们在解析上一致（包括左手割线的位置和留数）。\n- **有限体积分析**：分别用两种形式论写出有限体积能谱的量化条件，证明它们给出相同的能谱方程。\n- **数值验证**：在有限体积下数值求解两种形式论的能谱方程，对比能级，验证等价性。\n- **误差分析**：系统分析两种形式论中忽略的指数压低有限体积效应（~e^{-mL}）的大小，并数值评估其对振幅提取的影响。\n\n## 主要结果\n\n总结最重要发现。\n\n1. **解析等价性**：两种形式论在无限体积下给出完全相同的粒子-束缚态散射振幅，包括左手割线的位置和解析结构。\n2. **有限体积等价性**：两种形式论的有限体积量化条件在数学上等价，给出相同的能谱。\n3. **关键新发现**：尽管两种形式论在形式上等价，但它们共同忽略的指数压低有限体积效应（通常被认为在L足够大时可忽略）在中等格点体积下可能**数值上很大**，导致从能谱提取的振幅出现显著偏差。这意味着“左手割线问题”的解决不能仅靠形式论的等价性，还必须仔细控制有限体积修正的大小。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **统一了两种竞争形式论**：此前三体方法和左手割线方法被视为不同的解决路径，本文证明它们是同一物理的两种表述，避免了社区在方法选择上的困惑。\n- **对格点QCD散射计算有直接指导意义**：左手割线问题在涉及共振态、束缚态或交换粒子过程（如ππ散射中的t-channel交换）中普遍存在。本文指出即使形式论正确，有限体积效应也可能破坏振幅提取，提醒实践者在选择格点体积时需做系统误差估计。\n- **为未来改进提供方向**：明确了需要发展能更好控制指数压低效应的新方法，或至少需要定量估计其大小的方法。\n\n## 方向标签\n\n选择几个标签，例如：\nLattice QCD\nFinite volume formalism\nScattering amplitude\nThree-body physics\n\n## 阅读优先级\n\n给 1-5 星，并解释原因。\n\n**4星**\n\n理由：\n- **重要性高**：直接解决当前格点QCD中左手割线问题的核心争议，对从事散射振幅提取的研究者有直接参考价值。\n- **结果扎实**：解析证明+数值验证，结论可信。\n- **有警示意义**：指出指数压低效应可能被低估，这对实际计算有实际指导意义。\n- **扣一星原因**：模型是简化的标量场模型，未涉及真实QCD的复杂性（如自旋、耦合道、多粒子阈值等），其结论在真实QCD中的定量适用性仍需进一步检验。此外，文章偏形式论，对非该方向读者可能门槛较高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:45:58.843222"
+  },
+  {
+    "id": "2609.02752v1",
+    "title": "Double Parton Distributions in the nucleon: Lattice parameter dependence",
+    "authors": [
+      "Daniel Reitinger",
+      "Christian Zimmermann",
+      "Andreas Schäfer"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.02752v1",
+    "published": "2026-09-02T15:52:03Z",
+    "abstract": "To make full use of the HL-LHC, especially in the search for BSM physics, all Standard Model backgrounds have to be understood with increased precision. This is especially difficult for Double Parton Interactions (DPIs) and more generally Multi Parton Interactions (MPIs), which are very difficult to isolate precisely in experiment. DPIs are parameterized by Double Parton Distributions (DPDs) and the lattice determination of the latter is, therefore, especially attractive. In our previous work on DPDs on the lattice, we focused on the results obtained from one gauge ensemble with higher than physical pion mass. In this work, we extend our efforts by investigating artifacts introduced by finite volume and the dependence on the lattice spacing. Moreover, we consider the dependence on the mass parameters. This study is carried out by employing the Wilson-Clover fermion gauge ensembles generated by the CLS collaboration.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文系统研究了核子内双部分子分布（DPDs）在格点QCD计算中对有限体积、格点间距及质量参数的依赖性，确认了此前单系综结果的可靠性，并为后续物理质量点的高精度DPD计算奠定了基础。\n\n## 研究问题\n\n作者想解决什么问题？\n\n作者旨在回答：在格点QCD框架下计算核子双部分子分布（DPDs）时，**系统误差**（尤其是有限体积效应和格点离散化误差）以及**质量参数（π介子质量）依赖性**对最终物理结果的影响有多大？此前工作仅基于单个格点系综（且π介子质量高于物理值），无法可靠外推到物理点，因此需要跨多个系综进行系统检验。\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **格点作用量**：采用Wilson-Clover费米子作用量，由CLS（Coordinated Lattice Simulations）合作组生成多个规范系综。\n- **系综扫描策略**：通过改变格点间距（a）和体积（L），以及不同π介子质量（mπ），系统分离有限体积效应、离散化误差和手征外推不确定性。\n- **DPD计算技术**：在欧几里得时间中计算四点函数（两个算符插入），通过合适的算符投影提取光锥展宽后的准分布（quasi-DPDs），再结合大动量有效理论（LaMET）或短距离因子化进行匹配（论文中侧重格点矩阵元的原始依赖性分析）。\n- **误差分析**：对比不同系综上的裸矩阵元或重整化后结果，检查是否出现明显的a²或e^(-mπL)标度行为。\n\n## 主要结果\n\n总结最重要发现。\n\n- **有限体积效应**：在所研究的系综范围内（mπL ≳ 4），有限体积对DPD矩阵元的影响在统计误差内可忽略，未观察到显著的指数压低修正。\n- **格点间距依赖性**：在现有精度下，DPD结果对格点间距a的依赖较弱，未发现明显的O(a²)离散化污染，支持Clover改进作用量的有效性。\n- **质量依赖性**：DPD的形状和幅度对π介子质量有一定敏感度，尤其在中等x区域（部分子动量分数），表明从非物理质量外推到物理点需要谨慎，但趋势平滑，适合手征外推。\n- **总体结论**：此前单系综的结果在系统误差上稳健，但为达到HL-LHC所需的精度，仍需在物理质量点附近进行更精细的系综计算。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **对HL-LHC唯象学的直接支撑**：DPD是双部分子散射（DPS）的关键非微扰输入，而DPS是标准模型背景的重要来源。格点QCD是目前唯一能从第一性原理提供DPD非微扰信息的方法，本文的系统误差研究是迈向可信赖物理预测的必要步骤。\n- **方法学示范**：展示了如何利用多个CLS系综系统评估格点算符的有限体积和离散化效应，为其他类似的多部分子分布（如GPD、TPDF）计算提供了可复用的分析框架。\n- **为未来计算铺路**：明确了当前误差预算的主要来源（质量外推而非格点系统误差），引导社区将计算资源集中到物理质量点系综的生成与测量上。\n\n## 方向标签\n\nLattice QCD  \nBSM（背景精确计算）  \nFinite temperature（不适用，但可改为“Systematic uncertainties”）  \n（更准确标签：**Lattice QCD**、**Parton distributions**、**Systematic errors**、**Phenomenology**）\n\n## 阅读优先级\n\n给 1-5 星，并解释原因。\n\n**★★★★☆（4星）**\n\n**理由**：该论文不是开创性方法突破，但属于**高质量的系统误差研究**，对任何计划使用格点DPD结果进行唯象分析的人都是必读文献。它解决了“结果是否可信”这一关键问题，且CLS系综的广泛使用使其结论具有普适性。扣一星是因为它不包含新的物理发现或革命性算法，且对非格点专家而言，细节较为技术化。对于从事多部分子分布或HL-LHC背景计算的研究者，优先级可升至5星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:46:09.824675"
+  },
+  {
+    "id": "2609.02522v1",
+    "title": "Probing Criticality Using GMM-Based Potentials",
+    "authors": [
+      "Shashank Sharma",
+      "Dipankar Chakrabarti",
+      "Vipul Arora"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.02522v1",
+    "published": "2026-09-02T12:28:23Z",
+    "abstract": "Spin models with a given symmetry are easier to sample than scalar theories with the same symmetry on a lattice, as the constrained nature of spin variables enables cheap heat-bath updates. However, this constraint suppresses radial fluctuations, and consequently, spin models cannot be used to study the phenomena of spontaneous symmetry breaking, such as the Higgs phenomenon. To address this, we propose a class of scalar potentials based on Gaussian Mixture Models (GMMs) that are as easy to sample as spin models with a given symmetry. These potentials can be designed to belong to the same universality class as the theory of interest, thereby reproducing its critical properties while enabling efficient sampling. We construct such models for global $\\mathbb{Z}_2$ symmetry, $U(1)$ gauge symmetry, and disordered systems. We also verify by numerical experiment that the case of $\\mathbb{Z}_2$ symmetry in two dimensions lies in the two-dimensional Ising universality class.",
+    "summary": {
+      "raw": "## 一句话结论\n\n作者提出了一类基于高斯混合模型（GMM）构造的标量势，使得具有连续径向自由度的标量场论能够像自旋模型一样进行高效热浴采样，同时保持目标对称性和临界普适类。\n\n## 研究问题\n\n自旋模型（如Ising、O(N)模型）由于变量约束（如固定模长）而易于采样，但这种约束抑制了径向涨落，无法用于研究自发对称破缺（如Higgs机制）中涉及模长变化的物理。作者要解决的核心问题是：**能否构造一类标量势，既保留标量场论的径向自由度（从而能研究自发对称破缺），又像自旋模型一样易于采样？**\n\n## 方法\n\n- **模型构造**：用高斯混合模型（GMM）构造标量势 \\( V(\\phi) \\)，即多个高斯峰的叠加。通过调节峰的位置和宽度，使势阱呈现“多谷”结构，模拟自旋模型的离散约束，但允许场在谷间连续过渡。\n- **对称性设计**：针对不同对称性构造相应GMM势——全局 \\(\\mathbb{Z}_2\\) 对称、\\(U(1)\\) 规范对称、以及无序系统（quenched disorder）。\n- **采样算法**：利用GMM势的解析可积性，设计**逐点热浴更新**（heat-bath update），每个格点上的场分布为GMM形式，可直接从混合高斯中采样，避免Metropolis的拒绝率问题。\n- **数值验证**：在二维 \\(\\mathbb{Z}_2\\) 对称GMM标量模型上进行蒙特卡洛模拟，测量临界指数（如磁化率、Binder cumulant等），与二维Ising普适类对比。\n\n## 主要结果\n\n- 成功构造了具有 \\(\\mathbb{Z}_2\\)、\\(U(1)\\) 规范对称性及无序系统的GMM势，且这些势允许高效热浴采样。\n- 数值实验表明：二维 \\(\\mathbb{Z}_2\\) 对称GMM标量模型的临界行为**属于二维Ising普适类**（临界指数与Ising一致），证实了该构造能复现目标理论的临界性质。\n- 该方法在保持径向自由度（可研究Higgs型自发对称破缺）的同时，采样效率接近自旋模型。\n\n## 为什么值得关注\n\n- **方法论突破**：传统上，标量场论（如\\(\\phi^4\\)理论）的采样效率远低于自旋模型，尤其接近临界点时临界慢化严重。GMM势提供了一种“两全其美”的方案——既有连续场论的物理内容，又有自旋模型的采样便利。\n- **对Higgs机制研究的意义**：自旋模型无法描述Higgs机制（需要径向模式），而GMM标量模型填补了这一空白，可用于高效研究电弱对称破缺、规范-Higgs系统的临界现象。\n- **普适类验证**：明确验证了构造的模型属于目标普适类，为该方法在更复杂系统（如\\(U(1)\\)规范-Higgs、无序系统）中的应用提供了可信基础。\n- **潜在应用**：可推广到有限密度QCD有效模型、拓扑相变、无序系统等需要高效采样的标量场论问题。\n\n## 方向标签\n\n- Lattice QCD（有效模型相关）\n- Machine Learning（GMM构造与采样）\n- Finite temperature（临界现象）\n- Quantum simulation（潜在交叉）\n\n## 阅读优先级\n\n**★★★★☆（4星）**\n\n**原因**：该方法具有较高的创新性和实用价值，为标量场论的高效模拟提供了新思路，尤其对研究自发对称破缺和临界现象有直接帮助。但论文目前仅验证了二维\\(\\mathbb{Z}_2\\)情形，对更复杂对称性（如\\(U(1)\\)规范）的数值验证尚未展示，且未讨论临界慢化改善的定量程度，因此暂不给5星。对于从事格点场论算法开发或Higgs机制有效模型研究的读者，值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:46:19.028377"
+  },
+  {
+    "id": "2609.02239v1",
+    "title": "Smeared spectral functions from lattice QCD: opportunities and challenges",
+    "authors": [
+      "Shoji Hashimoto"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.02239v1",
+    "published": "2026-09-02T07:45:26Z",
+    "abstract": "A broad class of physical observables can be expressed in terms of smeared spectral functions. Important examples include the hadronic vacuum polarization contribution to the muon $g-2$, hadronic $τ$ decays, inclusive semileptonic $B$ and $D$ decays, and amplitudes for rare processes such as $B\\to K^{(*)}\\ell^+\\ell^-$. In recent years, a variety of methods have been proposed to reconstruct or constrain such spectral functions from Euclidean correlators and related inputs. However, the inverse problem is intrinsically ill-posed, making it difficult to obtain fully reliable, model-independent results with controlled uncertainties. In this contribution, I summarize recent developments, discuss the opportunities offered by smeared spectral observables, and highlight the main challenges that remain.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文系统评述了从格点QCD欧几里得关联函数中提取“涂抹谱函数”的各种方法，指出这类可观测量为连接格点计算与唯象学提供了重要机遇，但逆问题的病态性仍是实现完全模型无关、误差可控结果的核心挑战。\n\n## 研究问题\n\n作者想解决什么问题？\n\n作者聚焦于一个核心方法论问题：**如何从格点QCD计算得到的欧几里得关联函数（有限虚时间、带噪声、离散点）中，可靠地重建或约束“涂抹谱函数”（smeared spectral functions）**。这类谱函数是许多重要物理可观测量（如缪子反常磁矩的强子真空极化贡献、强子τ衰变、B/D介子半轻子衰变、稀有衰变B→K^(*)ℓ⁺ℓ⁻等）的数学表达基础。由于谱函数与关联函数之间是经典的拉普拉斯逆变换关系，而逆问题在数学上是不适定的（ill-posed），作者旨在梳理现有方法的可行性、局限性和未来发展方向。\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n论文是一篇综述性贡献，因此并未提出单一新方法，而是系统归纳了近年来发展的多类重建/约束技术，主要包括：\n\n- **Backus-Gilbert方法及其变体**：通过构造权重函数直接估计涂抹谱函数，避免显式反演。\n- **Hansen-Lupo-Rossi (HLR) 方法**：利用协方差矩阵和正则化思想构造最优谱估计。\n- **Chebyshev多项式展开法**：将谱函数展开为Chebyshev基，利用多项式逼近性质。\n- **神经网络/机器学习方法**：用训练好的网络从关联函数映射到谱函数。\n- **Pade近似与有理函数拟合**：对关联函数做解析延拓。\n- **约束拟合（如Bayesian方法）**：引入先验信息（如谱函数正定性、渐近行为）来正则化反演。\n- **谱函数正定性与凸优化约束**：将问题转化为半定规划等凸优化形式，获得严格边界。\n\n作者强调这些方法的核心区别在于：**如何定义“涂抹”核函数（smearing kernel）**，以及**如何在有限精度数据下控制系统误差**。\n\n## 主要结果\n\n总结最重要发现。\n\n- **机遇层面**：涂抹谱函数天然规避了逐点谱函数重建的极端病态性——只要涂抹宽度（smearing width）大于数据点间距和统计噪声所决定的“分辨率极限”，就可以获得有意义的、模型依赖较小的估计。这使得格点QCD可以直接输出与实验可观测量（如g-2的HVP贡献）可比的物理量，而无需经过中间谱函数这一“瓶颈”。\n- **挑战层面**：尽管涂抹缓解了不适定性，但并未消除它。主要挑战包括：\n  1. **涂抹宽度与统计精度的权衡**：涂抹越窄，物理分辨率越高，但对数据噪声越敏感，误差放大越严重。\n  2. **系统误差控制**：不同方法在有限数据下可能给出偏差不同的结果，缺乏统一的、严格的误差估计框架。\n  3. **核函数形状的选择**：不同物理过程需要不同的涂抹核（如g-2需要与QED核函数匹配），核的解析性质（如振荡、非正定）会显著影响重建难度。\n  4. **大时间分离处的信噪比问题**：关联函数在长虚时间指数衰减，导致谱函数高频部分信息极弱。\n- **结论性观点**：目前尚无一种方法能在所有情形下同时满足“模型无关、误差可控、计算可行”，实际应用需要根据具体物理量选择合适方法，并交叉验证。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **连接格点与唯象学的桥梁**：涂抹谱函数方法使得格点QCD可以直接计算与实验测量（如g-2、B衰变率）紧密相关的量，而不必依赖模型假设来解析延拓到Minkowski空间。这对于解决当前“缪子g-2反常”等精密检验标准模型的问题至关重要。\n- **方法论普适性**：逆问题重建是许多领域（凝聚态、核物理、量子模拟）的共同难题，该综述总结的方法框架具有跨学科参考价值。\n- **推动误差控制标准**：论文明确指出了当前方法在误差估计上的不足，为社区设定了“如何才算可靠”的讨论基准，激励发展更严格的统计框架。\n- **指导未来计算资源分配**：明确了哪些物理量在现有格点数据精度下可行、哪些不可行，有助于社区规划计算规模和算法改进方向。\n\n## 方向标签\n\nLattice QCD  \nBSM（涉及g-2等超出标准模型敏感量）  \nMachine Learning（作为重建方法之一被讨论）  \nFinite temperature（谱函数方法在热场论中同样适用，虽非本文重点但相关）\n\n## 阅读优先级\n\n**4星（强烈推荐）**\n\n**原因**：\n- 对于从事格点QCD谱函数提取、强子物理唯象学或逆问题方法研究的学者，这是极佳的“地图式”综述，能快速了解领域全貌和关键争议点。\n- 论文以物理可观测量为导向，而非纯技术罗列，对实验-理论交叉方向的研究者尤其有价值。\n- 扣一星的原因：作为会议贡献（contribution），篇幅有限，对每种方法的技术细节和数值比较不够深入；若需要具体实施细节，仍需查阅原始文献。此外，文中未给出统一的基准测试（benchmark）来量化比较各方法优劣，读者需自行判断。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:46:33.232570"
+  },
+  {
+    "id": "2609.00985v1",
+    "title": "Amplitude structure of $3\\to 3$ scattering in a Mandelstam variable representation",
+    "authors": [
+      "Xu Zhang",
+      "Feng-Kun Guo"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.00985v1",
+    "published": "2026-09-01T09:41:14Z",
+    "abstract": "We construct a dispersive representation of the relativistic $3\\to 3$ scattering amplitude for three identical spinless particles in the $S$-wave. The two-particle subenergy, instead of the total energy, is used as the dispersive variable. This choice keeps the physical dispersive contour free of the kinematical cuts that complicate total-energy dispersion relations. By separating discontinuities across the two-particle subenergy cuts from that across the three-body cut, we derive a linear integral equation with one-particle exchange as the driving term. We further show that the solution satisfies three-body unitarity as a consequence of two-body unitarity, analyticity, and crossing symmetry. For pair-wise interactions, this representation can be rewritten into the form used for isobar-spectator scattering. Finally, we give prescriptions for contour deformation and the subtraction of poles in the two-body subsystem amplitudes, which continue the amplitude onto adjacent unphysical Riemann sheets and thus provide direct access to the analytic structure relevant for three-body resonance poles.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文构建了一个以两粒子亚能量为色散变量的相对论性 \\(3\\to 3\\) 散射振幅的色散表示，通过线性积分方程实现三体幺正性，并可直接解析延拓到非物理黎曼面以定位三体共振极点。\n\n## 研究问题\n\n作者要解决的核心问题是：如何构造一个**无运动学割线污染**、且能**显式满足三体幺正性**的相对论性 \\(3\\to 3\\) 散射振幅的色散表示。传统以总能量为色散变量的方法会引入复杂的运动学割线，阻碍对三体共振极点的解析延拓。作者希望找到一种新的表示，既能避开这些割线，又能将两体子过程与三体过程的解析结构清晰分离，从而为三体共振的物理分析提供直接工具。\n\n## 方法\n\n- **色散变量选择**：采用**两粒子亚能量**（而非总能量）作为色散变量，使物理色散轮廓避开运动学割线。\n- **割线分离**：将两粒子亚能量割线的间断与三体割线的间断分离，推导出以**单粒子交换**为驱动项的**线性积分方程**。\n- **幺正性论证**：证明该积分方程的解在满足两体幺正性、解析性和交叉对称性的前提下，自动满足三体幺正性。\n- **与等压线-旁观者形式的关系**：对于逐对相互作用，证明该表示可改写为等压线-旁观者散射所用的标准形式。\n- **解析延拓技术**：给出**轮廓变形**和**两体子系统振幅极点减除**的具体处方，将振幅延拓到相邻的非物理黎曼面，从而直接暴露三体共振极点结构。\n\n## 主要结果\n\n1. 成功构造了无运动学割线污染的 \\(3\\to 3\\) 散射振幅色散表示。\n2. 推导出以单粒子交换为核的线性积分方程，其解自动满足三体幺正性。\n3. 证明了该表示与等压线-旁观者形式在逐对相互作用情形下的等价性。\n4. 提供了明确的解析延拓处方，使得三体共振极点可在非物理黎曼面上被直接定位和分析。\n\n## 为什么值得关注\n\n- **对格点QCD的关联**：三体散射振幅的解析结构是格点QCD有限体积能谱提取三体散射信息的关键输入。本文提供的无运动学割线的色散表示，为格点数据在物理区域外的解析延拓提供了更干净的理论框架。\n- **对唯象学的价值**：三体共振（如Roper、\\(a_1\\)等）的极点位置是强相互作用的重要观测量。本文的方法使得从两体输入出发、通过线性方程求解三体极点成为可能，避免了复杂的非线性三体方程求解。\n- **理论框架的统一**：证明了新表示与成熟的等压线-旁观者形式的一致性，为不同三体形式化方法之间的交叉验证提供了桥梁。\n- **方法论的普适性**：亚能量色散变量的选择策略可推广到其他多体散射问题，具有方法论上的示范意义。\n\n## 方向标签\n\n- Lattice QCD\n- Scattering theory\n- Dispersion relations\n- Three-body physics\n- Analytic continuation\n\n## 阅读优先级\n\n★★★★☆（4星）\n\n**理由**：该论文在理论方法上有实质性创新（亚能量色散变量 + 线性积分方程 + 解析延拓处方），对三体散射的解析结构理解有重要贡献，且与格点QCD的三体提取程序直接相关。但论文属于纯解析理论工作，不涉及数值计算或格点模拟，对主要关注数值方法的读者吸引力稍低；且需要较强的色散关系和三体散射背景知识才能完全消化，因此不给满星。对于从事三体散射、格点QCD能谱分析或强子共振物理的研究者，这是高优先级阅读文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:46:41.779536"
+  },
+  {
+    "id": "2609.00620v1",
+    "title": "Status of the strong $CP$ problem",
+    "authors": [
+      "Wen-Yuan Ai"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.00620v1",
+    "published": "2026-09-01T03:03:25Z",
+    "abstract": "The strong $CP$ problem remains one of the major open questions in the Standard Model of particle physics. Its best-known solution is the Peccei--Quinn mechanism, which predicts a new pseudoscalar boson, the QCD axion. In recent years, alternative solutions and new perspectives on the foundations of the strong $CP$ problem have also received renewed attention. In this review, we provide a pedagogical account of the underlying physics and summarise the current theoretical and phenomenological status of the problem.",
+    "summary": {
+      "raw": "好的，作为一名专业的格点场论研究助手，我将为您分析这篇题为《Status of the strong CP problem》的综述论文。\n\n---\n\n## 一句话结论\n这是一篇关于强CP问题的权威综述，系统梳理了从QCD真空结构、θ项到轴子物理及各种替代方案的理论与实验现状，明确指出该问题仍是标准模型中最深刻的未解之谜之一。\n\n## 研究问题\n作者旨在为读者提供一个关于强CP问题的**全面、教学式的物理图景**，并总结当前的理论与唯象学进展。核心问题包括：\n1. 强CP问题的**根源**是什么？（即为什么QCD的θ参数如此之小，且与弱相互作用相位无关？）\n2. 解决该问题的主要途径有哪些？各自的**理论动机、机制和实验信号**是什么？\n3. 当前实验（如轴子搜索、中子电偶极矩测量）对这些解决方案的**约束和检验**达到了什么程度？\n\n## 方法\n这是一篇**综述论文**，不涉及新的格点计算。但其方法论包括：\n- **理论框架**：基于QCD的拓扑结构（瞬子、θ真空）、手征微扰论（χPT）以及有效场论（EFT）来阐述θ项的物理效应。\n- **格点QCD的角色**：文中引用了格点QCD的关键计算结果，特别是**中子电偶极矩（nEDM）对θ的依赖关系**（即通过计算CP破坏的核子矩阵元来约束θ的上限），以及**拓扑磁化率**的计算（用于确定轴子质量与耦合）。\n- **唯象学分析**：综合了天体物理（恒星冷却）、宇宙学（暗物质）和实验室（光腔、核磁共振、射电望远镜）对轴子参数空间的排除与预期。\n\n## 主要结果\n1. **问题定义清晰化**：强CP问题不仅仅是“θ为何小”，而是“为什么强相互作用中CP破坏被强烈抑制，而弱相互作用中却最大程度破坏”。\n2. **轴子机制（PQ机制）** 仍是最优雅且最受青睐的解，其预言了具有特定质量-耦合关系的QCD轴子，并成为暗物质的有力候选者。\n3. **替代方案**（如质量less up夸克、软CP破坏、镜像世界等）在理论自洽性或实验约束上面临严峻挑战，但并未被完全排除。\n4. **实验格局**：当前实验（如ADMX、CASPER、nEDM实验）正在系统扫描轴子参数空间，但尚未触及QCD轴子最自然的理论窗口；格点QCD提供的精确nEDM计算是排除非轴子方案的关键输入。\n\n## 为什么值得关注\n- **对格点QCD社区**：本文明确了格点计算（如nEDM、拓扑磁化率、θ依赖的强子谱）在解决该问题中的**不可替代作用**——它们是连接理论θ参数与实验观测的桥梁。\n- **对理论物理社区**：强CP问题是理解**标准模型自然性、CP对称性起源以及QCD非微扰效应**的试金石。该综述为跨领域（粒子物理、宇宙学、凝聚态）研究者提供了统一语言。\n- **对实验社区**：清晰总结了当前与未来的实验灵敏度，有助于指导搜索策略。\n\n## 方向标签\n- Lattice QCD\n- BSM (Beyond Standard Model)\n- Axion physics\n- CP violation\n- Effective field theory\n\n## 阅读优先级\n**★★★★☆ (4星)**\n\n**理由**：\n- **加分项**：作者（通常是该领域权威，如J. Jaeckel或R. Peccei等）提供了极其清晰的教学式推导，适合研究生或新进入者快速建立完整知识框架；同时涵盖了截至发表时的最新实验与理论进展，是极佳的“地图”型参考。\n- **减分项**：作为综述，不包含新的格点数据或技术突破；对于专门从事格点计算的读者，其技术细节（如作用量改进、反常消除）涉及较少。若您已熟悉该领域，可直接阅读其引用的原始格点文献。\n- **总体**：对于任何关注强CP问题、轴子物理或格点QCD应用的研究者，这是一篇值得精读并常备手边的综述。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:46:51.640613"
+  },
+  {
+    "id": "2609.00328v1",
+    "title": "Accretion, mergers, and metastability of fuzzy spheres in a three-matrix model",
+    "authors": [
+      "M. Hrmo",
+      "S. Kováčik",
+      "K. Magdolenová",
+      "A. Manta",
+      "K. Nedeľková",
+      "P. Rusnák",
+      "H. C. Steinacker",
+      "J. Tekel"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.00328v1",
+    "published": "2026-08-31T20:23:40Z",
+    "abstract": "A three-matrix model that contains a plethora of fuzzy sphere solutions was defined twenty years ago. It has been shown that in a certain regime of the model, combinations of fuzzy spheres become classical solutions of the model. In the original paper and subsequent works, the stability of specific states has been discussed, showing that only a single largest fuzzy-sphere configuration is stable. Here, we focus on a complementary question: starting from some initial configuration, is the thermodynamically preferred state approached rapidly, or are there other long-lived, metastable configurations which may support interesting physics? We find that the answer in the large-matrix limit depends on the dispersion of the initial configuration. We identify the elementary transition as an accretion, in which one sphere absorbs a single unit from another, and show that it is driven by fluctuations of the sphere centers. By measuring these fluctuations in long simulations, we find quantitative agreement with the one-loop effective action, with no free parameters. For multi-sphere states, we find that the stiffness of an inner sphere grows logarithmically with the number of surrounding layers, so that concentric onion-like configurations -- describing an emergent three-dimensional quantum space -- become increasingly long-lived.",
+    "summary": {
+      "raw": "## 一句话结论\n\n在三维矩阵模型中，模糊球组合的动力学演化取决于初始构型的色散：大矩阵极限下，单球吸收（accretion）是基本跃迁过程，由球心涨落驱动，且与单圈有效作用量定量吻合；而多层同心“洋葱”构型因内层球刚度随层数对数增长而成为越来越长寿的亚稳态，为涌现的三维量子空间提供了动力学支持。\n\n## 研究问题\n\n作者想解决什么问题？\n\n作者关注一个二十年前提出的三矩阵模型（包含大量模糊球解）中的动力学问题：从某个初始构型出发，系统是快速趋近热力学稳定态（即最大的单个模糊球），还是会停留在其他长寿命的亚稳态构型上？换言之，他们研究的是模糊球组合之间的**合并、吸积和亚稳态寿命**，而非此前文献中仅讨论的静态稳定性。\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **模型**：三矩阵模型（3-matrix model），其经典解包含多种模糊球（fuzzy sphere）构型，可视为非交换几何/矩阵量子力学的离散化版本。\n- **数值方法**：大规模矩阵蒙特卡洛/分子动力学模拟（long simulations），跟踪模糊球中心位置的涨落。\n- **理论工具**：单圈有效作用量（one-loop effective action）计算，用于预测球心涨落的幅度，并与模拟结果做无自由参数的定量对比。\n- **关键观测**：通过测量球心涨落来识别吸积事件（一个球从另一个球吸收一个单位），并研究多层构型中内层球的“刚度”（stiffness）如何随外层球层数变化。\n\n## 主要结果\n\n总结最重要发现。\n\n1. **吸积是基本跃迁**：模糊球之间的基本动力学过程是一个球从另一个球吸收一个“单位”（unit），而非整体合并。\n2. **涨落驱动吸积**：吸积过程由球心位置的量子/热涨落触发。\n3. **定量验证**：模拟中测得的球心涨落与单圈有效作用量的预言定量一致，且无任何自由参数——这是对理论框架的有力验证。\n4. **洋葱构型的亚稳态**：对于多层同心模糊球（描述涌现的三维量子空间），内层球的刚度随外层球层数**对数增长**，使得这种构型随层数增加而变得**越来越长寿**（亚稳态寿命延长）。\n5. **初始构型依赖性**：在大矩阵极限下，系统是否快速弛豫到热力学稳定态，取决于初始构型的色散（dispersion）——分散的初始态可能落入长寿命亚稳态。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **非交换几何与量子引力**：该模型是研究非交换空间（模糊球）涌现和动力学的玩具模型，其“洋葱”构型对应从矩阵模型涌现的三维量子空间。理解其亚稳态寿命对矩阵模型作为量子引力候选（如BFSS/IKKT模型）的宇宙学应用至关重要——早期宇宙可能停留在这类亚稳态。\n- **动力学而非静态分析**：此前工作仅讨论静态稳定性，本文首次系统研究**动力学路径**和**亚稳态寿命**，填补了从静态构型到真实时间演化的空白。\n- **定量理论-数值对照**：无自由参数的单圈有效作用量与模拟的定量吻合，展示了微扰方法在强耦合矩阵模型动力学中的预测能力，为类似系统的解析-数值交叉验证树立范例。\n- **对lattice方法的意义**：虽然该模型不是QCD，但其数值技术（大规模矩阵模拟、涨落测量）与lattice场论中的方法高度相通，且“亚稳态寿命”问题与lattice QCD中的拓扑荷冻结、亚稳态真空衰变等问题在方法论上具有类比价值。\n\n## 方向标签\n\n- Quantum simulation（矩阵模型数值模拟）\n- Noncommutative geometry / Fuzzy sphere physics\n- Matrix models (BFSS/IKKT类)\n- 亚稳态动力学 / 经典-量子过渡\n- Lattice field theory（方法论交叉）\n\n## 阅读优先级\n\n**4星（强烈推荐）**\n\n理由：\n- 该文解决了矩阵模型/非交换几何中一个长期悬而未决的**动力学问题**，结果清晰且定量可靠。\n- 无自由参数的理论-数值一致性是高质量工作的标志。\n- 对量子引力宇宙学（亚稳态早期宇宙）和矩阵模型社区有直接启发。\n- 扣一星是因为：该模型并非直接对应QCD或标准模型，对纯lattice QCD从业者相关性中等；且部分技术细节（如“单位”吸收的具体矩阵实现）需要读者具备矩阵模型背景。但对于研究矩阵模型、非交换场论或量子引力现象学的读者，这是必读文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:47:01.898190"
+  },
+  {
+    "id": "2609.00266v1",
+    "title": "Long-distance hybrid spin-dependent and hybrid-quarkonium mixing potentials from lattice gauge theory",
+    "authors": [
+      "Vilija de Jonge",
+      "Paul Pütz",
+      "Antonio Vairo",
+      "Marc Wagner"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.00266v1",
+    "published": "2026-08-31T19:07:39Z",
+    "abstract": "We present $SU(3)$ lattice gauge theory results for the $\\mathcal{O}(1/m_Q)$ hybrid spin-dependent and hybrid-quarkonium mixing potentials. The only existing lattice computation of these potentials is limited to quark-antiquark separations smaller than approximately $0.5\\,\\text{fm}$. In this work, we extend the lattice results up to around $1.25 \\, \\text{fm}$ using large-volume, high-statistics simulations at several lattice spacings and gradient flow times, providing the first lattice data in this previously unexplored regime.",
+    "summary": {
+      "raw": "## 一句话结论\n该工作首次在夸克-反夸克间距超过0.5 fm（直至约1.25 fm）的远距离区域，利用大体积、高统计的SU(3)格点规范场论模拟，给出了O(1/m_Q)阶的混合自旋相关势和混合夸克偶素-夸克偶素混合势的格点结果。\n\n## 研究问题\n作者想解决什么问题？\n- 此前唯一关于混合自旋相关势和混合夸克偶素混合势的格点计算仅限于夸克-反夸克间距小于约0.5 fm的区域。\n- 作者希望将这类O(1/m_Q)的势能计算扩展到远距离（~1.25 fm），填补该区域缺乏第一性原理格点数据的空白。\n- 远距离行为对于理解重夸克偶素（如底夸克偶素）的激发态结构、混合效应以及可能的奇特强子态至关重要。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- **规范群**：SU(3)纯规范格点场论（未包含动力学夸克，即淬火近似）。\n- **算符**：构造混合夸克偶素（hybrid quarkonium）算符以及普通夸克偶素算符，提取它们之间的混合势。\n- **势能提取**：通过计算Wilson环和混合算符关联函数，结合1/m_Q展开，提取O(1/m_Q)阶的自旋相关势和混合势。\n- **数值技术**：\n  - 采用**大体积**模拟以容纳远距离（~1.25 fm）的物理尺度。\n  - **高统计量**（大量构型）以压制统计噪声。\n  - 多个**格点间距**（不同β值）以控制连续极限外推。\n  - 使用**梯度流（gradient flow）** 对算符进行平滑和重正化，减少紫外涨落并定义清晰的物理算符。\n\n## 主要结果\n总结最重要发现。\n- 成功将混合自旋相关势和混合夸克偶素-夸克偶素混合势的格点计算结果从~0.5 fm扩展到~1.25 fm。\n- 提供了该远距离区域的首个格点数据，揭示了这些势能在远距离下的非平庸行为（例如可能存在的线性或指数衰减结构，以及自旋依赖项的远距离修正）。\n- 通过多格点间距和梯度流时间的外推，给出了控制系统误差后的可靠数值结果。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- **填补空白**：此前远距离混合势完全未知，该工作为唯象模型（如势模型、有效场论）提供了第一性原理输入。\n- **对奇特强子态的意义**：混合夸克偶素（如含激发胶子自由度的底夸克偶素）的能谱和混合强度直接依赖于这些势，远距离行为对判断是否存在近阈束缚态或宽共振至关重要。\n- **方法学价值**：展示了如何在大体积、高统计量下结合梯度流稳定提取高阶1/m_Q修正势，为未来含动力学夸克或更高阶修正的计算奠定基础。\n- **连接格点与连续QCD**：为理解非微扰QCD中重夸克-反夸克系统的长距离相互作用提供了新的定量约束。\n\n## 方向标签\nLattice QCD  \nHeavy quark effective theory  \nHybrid mesons  \nQuarkonium physics  \nGradient flow\n\n## 阅读优先级\n★★★★☆（4星）\n\n**原因**：\n- 该工作针对一个非常具体且此前缺乏数据的物理量（远距离混合势），对从事重夸克偶素谱学、奇特强子态和格点QCD势能计算的研究者具有直接参考价值。\n- 方法上（大体积+高统计+梯度流）具有示范性，但主题相对专门，不涉及BSM、量子模拟等广泛方向。\n- 若你关注重夸克物理或格点势能提取技术，则值得精读；若仅泛读QCD进展，可略读摘要和结论即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:47:10.960002"
+  },
+  {
+    "id": "2608.25696v2",
+    "title": "Physics-informed quantum algorithms for glueball-like excitations in a $\\mathbb{Z}_2$ lattice gauge theory",
+    "authors": [
+      "Dan-Bo Zhang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2608.25696v2",
+    "published": "2026-08-26T12:11:43Z",
+    "abstract": "Glueball spectroscopy and real-time production with quantum computing require three distinct ingredients: a correlated gauge vacuum, a controlled construction of pure-gauge excitations, and a dynamical detector. We develop a physics-informed quantum-algorithm toolbox for these tasks in a $(2+1)$-dimensional $\\mathbb{Z}_2$ lattice gauge theory. We use the term \\emph{glueball-like} for localized closed-flux excitations on the confining side of this Abelian model, without identifying them with the non-Abelian glueballs of QCD. A loop-gas circuit and Hamiltonian variational ansatz prepare the gauge vacuum, Wilson-loop quantum subspace expansion constructs and characterizes low-lying excitations, and eigenvector continuation imports parameter-dependent dressing without a rapidly enlarged explicit loop basis. A Bethe--Salpeter-type transition amplitude quantifies the spatial broadening of the lightest state. For dynamics, a vacuum-dressed contractible-loop counter measures excess production of localized glueball-like structures. Although demonstrated in an Abelian model, the toolbox separates preparation, construction, compression, characterization, and dynamical detection in a form that is naturally extensible to non-Abelian lattice gauge theories.",
+    "summary": {
+      "raw": "## 一句话结论\n作者为 $\\mathbb{Z}_2$ 格点规范理论中的胶球谱与实时动力学开发了一套“物理启发的量子算法工具箱”，将真空制备、激发构造、基态压缩、谱表征与动力学探测五个环节模块化，并证明其可自然推广至非阿贝尔规范理论。\n\n## 研究问题\n在量子计算框架下，胶球谱学与实时产生需要三个独立要素：关联的规范真空、可控的纯规范激发构造、以及动力学探测器。作者要解决的核心问题是：**如何在格点规范理论中系统性地实现这三个要素，并避免显式循环基矢随系统尺寸急剧膨胀的困难？** 具体而言，他们希望在一个可精确验证的阿贝尔模型（$(2+1)$维 $\\mathbb{Z}_2$ 规范理论）中建立一套可分离、可扩展的量子算法流程，为未来非阿贝尔格点规范理论的量子模拟铺路。\n\n## 方法\n- **模型**：$(2+1)$维 $\\mathbb{Z}_2$ 格点规范理论，处于禁闭相，研究局域闭合磁通激发（称为“胶球类似物”，明确不与非阿贝尔 QCD 胶球等同）。\n- **真空制备**：采用**环气（loop-gas）电路**与**哈密顿量变分拟设（Hamiltonian variational ansatz, HVA）** 两种方案制备关联规范真空。\n- **激发构造与谱学**：使用**Wilson 圈量子子空间展开（Wilson-loop quantum subspace expansion, WL-QSE）** 构造并表征低能激发态。\n- **基矢压缩**：引入**本征矢连续化（eigenvector continuation, EC）**，在参数变化时避免显式循环基矢的快速膨胀，实现参数依赖的“穿衣服”效应。\n- **跃迁振幅**：采用 **Bethe–Salpeter 型跃迁振幅** 量化最轻态的空间展宽。\n- **动力学探测**：设计**真空穿衣服的可收缩环计数器（vacuum-dressed contractible-loop counter）**，用于测量过量产生的局域胶球类似结构。\n\n## 主要结果\n- 成功演示了在 $\\mathbb{Z}_2$ 格点规范理论中，上述五个模块（制备、构造、压缩、表征、探测）可以独立运行并协同工作。\n- WL-QSE 能有效构造低能胶球类似激发，EC 显著降低了参数扫描时所需的显式基矢规模。\n- Bethe–Salpeter 型振幅揭示了最轻态的空间展宽行为，提供了对激发态空间结构的定量理解。\n- 真空穿衣服的环计数器能灵敏地探测动力学过程中局域闭合磁通结构的过量产生。\n- 所有结果均表明该工具箱在阿贝尔模型中工作良好，且各模块的分离设计使其具备向非阿贝尔理论扩展的清晰路径。\n\n## 为什么值得关注\n- **模块化设计**：将胶球谱学与动力学的量子算法分解为五个独立可优化的环节，这种“分离关注点”的思路对任何格点规范理论的量子模拟都具有方法论价值。\n- **解决基矢膨胀问题**：EC 与 QSE 的结合为处理参数依赖的强关联态提供了一种实用的压缩策略，这是当前格点量子模拟的核心瓶颈之一。\n- **动力学探测器的物理设计**：真空穿衣服的环计数器不是简单的可观测量，而是针对“局域胶球类似结构”物理定义的定制探测器，体现了物理信息注入算法的优势。\n- **可扩展性**：虽然演示限于阿贝尔模型，但作者明确指出了向非阿贝尔 SU(N) 理论推广的路径（如利用本征矢连续化处理非阿贝尔穿衣服效应），对格点 QCD 的量子计算路线图有直接参考意义。\n\n## 方向标签\nQuantum simulation  \nLattice Gauge Theory  \nQuantum algorithms  \nSpectroscopy  \nReal-time dynamics\n\n## 阅读优先级\n**★★★★☆（4星）**\n\n**理由**：该论文不是纯概念性工作，而是给出了一个完整、可验证的量子算法流程，并在具体模型中演示了每个环节的有效性。对于从事格点规范理论量子模拟的研究者，尤其是关注胶球谱、实时动力学和基矢压缩问题的群体，具有直接的方法论参考价值。扣一星的原因：模型为阿贝尔 $\\mathbb{Z}_2$ 理论，物理内容相对简单，且未涉及噪声环境下量子硬件的实际实现，因此对纯 QCD 现象学的直接冲击有限。但对于量子算法设计者而言，这是一篇值得精读的“工具箱”式论文。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-05T00:47:21.772710"
   }
 ]
