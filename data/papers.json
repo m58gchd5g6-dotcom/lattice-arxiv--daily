@@ -2259,5 +2259,90 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-09-05T00:47:21.772710"
+  },
+  {
+    "id": "2609.05109v1",
+    "title": "The axial-vector nucleon form factor in the meson dominance picture: the role triangle singularities from a dispersive view",
+    "authors": [
+      "Enrique Ruiz Arriola",
+      "Pablo Sanchez-Puertas"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.05109v1",
+    "published": "2026-09-04T13:03:14Z",
+    "abstract": "The nucleon axial form factor is analyzed in terms of a dispersion relation comprising chiral perturbation theory (ChPT) and perturbative QCD (pQCD) in the low- and high-momentum regimes respectively, which implies a set of superconvergence sum rules for the $A \\to N \\bar N$ spectral function. In the timelike region below the $N \\bar N$ production threshold we include the $a_1$ and $a_1'$ resonances, with finite-width effects modeled through $ρπ$ and $σπ$ intermediate states. Above the $N \\bar N$ threshold, we model an infinite tower of radially excited $1^{++}$ resonances with a non-integer power fall-off, eventually matching pQCD. In this setup, we find that both the ChPT and pQCD contributions are tiny. In turn, the dominant $ρπ$ triangle provides the leading deviations from axial meson dominance. Our calculation is not a fit; it contains parameters with a priori uncertainties estimates. The axial radius is predicted to be $r_A^2 =(0.28-0.33)~\\textrm{fm}^2 = ( 0.47-0.57~\\textrm{fm})^2$ in agreement with recent lattice QCD results but inconsistent with the MINER$ν$A determination. A simple semiempirical formula is provided accounting for the main physical effects.",
+    "summary": {
+      "raw": "## 一句话结论\n\n作者通过色散关系结合手征微扰论（ChPT）与微扰QCD（pQCD）约束，并引入介子主导图像下的三角奇异性，预言了轴矢形状因子半径 \\(r_A^2 = (0.28-0.33)~\\mathrm{fm}^2\\)，与近期格点QCD结果一致，但与MINER\\(\\nu\\)A实验不符。\n\n## 研究问题\n\n作者要解决的核心问题是：**如何在不做拟合的前提下，从第一性原理出发可靠地预言核子轴矢形状因子（特别是轴矢半径 \\(r_A\\)）**，并解释为何实验（MINER\\(\\nu\\)A）与格点QCD之间存在显著分歧。具体而言，他们希望厘清在类时区 \\(N\\bar N\\) 阈值以下，\\(a_1\\) 与 \\(a_1'\\) 共振及其有限宽度效应（通过 \\(\\rho\\pi\\)、\\(\\sigma\\pi\\) 中间态）如何影响谱函数，以及三角奇异性（triangle singularity）在其中的角色。\n\n## 方法\n\n本文**不是格点QCD计算**，而是基于**色散关系 + 解析性质**的理论分析，方法要点如下：\n\n1. **色散关系框架**：对核子轴矢形状因子 \\(G_A(Q^2)\\) 建立色散积分，谱函数 \\(\\mathrm{Im} G_A(t)\\) 在 \\(t>0\\) 类时区积分。\n2. **低能端**：用 ChPT 约束谱函数在低 \\(t\\) 的行为。\n3. **高能端**：用 pQCD 的渐近行为约束谱函数在大 \\(t\\) 的衰减，从而导出**超收敛求和规则**（superconvergence sum rules）。\n4. **共振建模**：\n   - 在 \\(N\\bar N\\) 阈值以下，引入 \\(a_1(1260)\\) 和 \\(a_1'\\) 共振，其有限宽度通过 \\(\\rho\\pi\\) 和 \\(\\sigma\\pi\\) 两体中间态自能图实现。\n   - 在阈值以上，用**非整数幂衰减的无穷塔径向激发 \\(1^{++}\\) 共振**来模拟谱函数，最终匹配 pQCD。\n5. **三角奇异性**：重点分析 \\(\\rho\\pi\\) 中间态在色散积分中产生的三角奇异性（triangle singularity）对谱函数的贡献。\n6. **参数不确定性**：所有参数均有先验误差估计，**不做拟合**，直接预言物理量。\n\n## 主要结果\n\n1. **ChPT 与 pQCD 的贡献均极小**，对谱函数主体影响可忽略。\n2. **\\(\\rho\\pi\\) 三角奇异性是主导修正**，它提供了偏离纯轴矢介子主导（axial meson dominance）的主要来源。\n3. **轴矢半径预言**：\\(r_A^2 = (0.28-0.33)~\\mathrm{fm}^2 = (0.47-0.57~\\mathrm{fm})^2\\)，与近期格点QCD结果（如 PNDME、ETMC 等合作组）一致，但与 MINER\\(\\nu\\)A 实验提取值（偏大）不一致。\n4. 提供了一个**简单半经验公式**，可快速估算包含主要物理效应的轴矢形状因子。\n\n## 为什么值得关注\n\n1. **理论-实验-格点三方冲突的解析**：MINER\\(\\nu\\)A 实验与格点QCD在 \\(r_A\\) 上的分歧是当前核物理与粒子物理交叉领域的焦点问题。本文从纯解析色散角度独立给出与格点一致的预言，为实验系统误差或理论提取方法的问题提供了旁证。\n2. **三角奇异性的物理重要性**：本文展示了在介子主导图像中，三角奇异性（而非简单共振极点）如何自然产生对形状因子的非平庸修正，这对理解其他介子形状因子（如电磁、弱形状因子）具有方法论启示。\n3. **无拟合预言范式**：所有参数带先验误差、不做拟合直接输出结果，这种“预测性计算”在唯象学中较为少见，增强了结果的可信度与可证伪性。\n4. **对格点QCD的互补价值**：虽然本文非格点计算，但其结果可作为格点QCD外推（如 \\(Q^2 \\to 0\\) 的半径提取）的交叉检验基准。\n\n## 方向标签\n\n- Lattice QCD（作为对比基准）\n- Hadron structure\n- Dispersion relations\n- Chiral perturbation theory\n- QCD phenomenology\n\n## 阅读优先级\n\n**★★★★☆（4星）**\n\n**理由**：\n- **加分项**：方法新颖（三角奇异性 + 色散 + 超收敛求和规则），结论直接关联当前实验-格点争议，且与格点结果一致，对格点社区有直接参考价值；无拟合的预言方式值得借鉴。\n- **减分项**：本文**不是格点计算**，若读者只关注格点技术本身，则相关性有限；且涉及较多解析唯象细节（谱函数、共振塔、三角奇异性），需要一定色散关系背景才能完全理解。对于从事格点轴矢形状因子计算的研究者，建议精读；对于一般格点社区成员，可略读结论部分即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-08T00:46:31.649338"
+  },
+  {
+    "id": "2609.05108v1",
+    "title": "Equation of state of dense magnetized QCD matter via a robust analytic continuation",
+    "authors": [
+      "S. Borsányi",
+      "B. B. Brandt",
+      "G. Endrődi",
+      "J. N. Guenther",
+      "G. Markó",
+      "M. A. Petri",
+      "A. D. M. Valois"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.05108v1",
+    "published": "2026-09-04T12:57:35Z",
+    "abstract": "We compute the equation of state of dense and magnetized strongly interacting matter using lattice QCD at a non-zero value of the lattice spacing. Our simulations employ $2+1+1$ dynamical flavors of rooted staggered quarks with masses tuned to the physical point. To conform with experimental constraints, we impose strangeness neutrality and isospin asymmetry on our observables. We circumvent the sign problem by simulating imaginary values of the chemical potential and applying the $T'$-expansion scheme to carry out the analytic continuation of our observables to the real chemical potential axis. This novel scheme, adapted to the setup with nonzero magnetic fields, is demonstrated to produce significantly smaller systematic errors in the final observables, compared to the standard analytical continuation at fixed temperature, allowing for better-controlled extrapolations. Our results for the pressure, the entropy density and the interaction measure are tabulated for direct use in heavy-ion phenomenology applications.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文通过引入一种针对非零磁场环境优化的新型解析延拓方案（\\(T'\\)-expansion），成功在实化学势和强磁场条件下计算了致密QCD物质的态方程，并显著减小了系统误差，为重离子物理提供了可直接使用的数值表格。\n\n## 研究问题\n\n作者要解决的核心问题是：**在有限重子密度（实化学势）和强磁场同时存在的情况下，如何可靠地计算QCD物质的态方程**。由于符号问题，直接模拟实化学势不可行；而传统固定温度的解析延拓在磁场存在时误差较大，导致外推不可控。此外，实验条件要求奇异数中性（strangeness neutrality）和同位旋不对称（isospin asymmetry），这进一步增加了计算复杂度。\n\n## 方法\n\n- **格点QCD模拟**：采用 \\(2+1+1\\) 种动力学的根号交错夸克（rooted staggered quarks），质量调至物理点，在**非零格距**（即单点格距，未做连续极限外推）下进行模拟。\n- **规避符号问题**：在**虚化学势**下进行模拟，避开符号问题。\n- **新型解析延拓方案（\\(T'\\)-expansion）**：这是论文的核心技术贡献。与传统的“固定温度下对 \\(\\mu/T\\) 做多项式拟合”不同，\\(T'\\)-expansion 在**固定 \\(\\mu/T\\) 下对温度做展开**，再延拓到实化学势。作者将该方案适配到含非零磁场的情形，并证明其系统误差显著小于传统方法。\n- **物理约束**：在观测量的计算中强制施加奇异数中性（\\(n_S=0\\)）和同位旋不对称（由磁场诱导）条件。\n- **输出量**：计算了压强、熵密度和相互作用度量（interaction measure），并以表格形式给出，便于唯象学直接使用。\n\n## 主要结果\n\n1. **方法优势**：在磁场存在时，\\(T'\\)-expansion 产生的系统误差远小于固定温度的标准解析延拓，使得向实化学势的外推具有更好的控制。\n2. **态方程数据**：给出了在非零磁场和有限密度下，压强、熵密度和相互作用度量作为温度和化学势函数的数值结果（表格化）。\n3. **磁场效应**：结果反映了磁场对QCD态方程的非平凡修正，特别是在中等密度区域，磁场与化学势的耦合效应被定量刻画。\n4. **适用性**：数据直接面向重离子碰撞唯象学（如磁化夸克胶子等离子体的流体动力学模拟）。\n\n## 为什么值得关注\n\n- **方法论突破**：\\(T'\\)-expansion 在磁场环境下的成功应用，为处理“符号问题 + 磁场”这一双重困难提供了新的标准工具，可能推广到其他外参量（如转动、手性化学势）情形。\n- **填补空白**：此前致密磁化QCD的态方程缺乏可靠的格点第一性原理计算，该工作提供了首个系统性的、带误差控制的数值结果。\n- **唯象学直接可用**：表格化数据可直接嵌入重离子碰撞的磁流体动力学模拟，帮助解释如手性磁效应、磁致椭圆流等实验现象。\n- **物理点质量 + 物理约束**：采用物理点质量并施加奇异数中性与同位旋不对称，使结果更贴近真实实验条件，而非理想化模型设定。\n\n## 方向标签\n\n- Lattice QCD\n- Finite temperature\n- QCD equation of state\n- Analytic continuation\n- Magnetic field effects\n- Heavy-ion phenomenology\n\n## 阅读优先级\n\n**★★★★☆（4星）**\n\n**理由**：该论文在方法上有实质性创新（\\(T'\\)-expansion 在磁场下的推广），且产出了直接可用的数值数据，对格点QCD和重离子唯象学两个社区都有较高价值。扣一星的原因在于：模拟仅在**单一非零格距**下进行，未做连续极限外推，因此结果的系统性误差（离散化效应）尚未完全控制；此外，结果尚未覆盖极低温度或极高密度区域，适用范围有限。对于从事有限密度格点QCD或磁流体动力学的研究者，此文值得精读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-08T00:46:40.943908"
+  },
+  {
+    "id": "2609.05006v1",
+    "title": "Accessing the Wess-Zumino-Witten term using Lattice QCD",
+    "authors": [
+      "Fernando Romero-López",
+      "Stephen R. Sharpe"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.05006v1",
+    "published": "2026-09-04T11:17:37Z",
+    "abstract": "The Wess-Zumino-Witten interaction in chiral perturbation theory is a manifestation of chiral anomalies. One of its consequences is the presence of a nonvanishing $K \\overline K \\to π^+ π^0 π^-$ amplitude. We derive the finite-volume formalism that allows one to access this, and related, amplitudes, using the spectra of two and three particles in finite volumes, spectra that can be calculated using lattice QCD. Specifically, we present the formalism for the systems $K \\overline K + 3 π$ with $I=0$ and $πK + ππK$ with $I=1/2$ and $3/2$. In addition, we determine the threshold expansions for the $2\\leftrightarrow 3$ and $3\\leftrightarrow 3$ K matrices that enter the formalism, and calculate the leading order predictions from chiral perturbation theory for the coefficients that enter these expansions.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文为利用格点QCD谱学信息提取Wess-Zumino-Witten（WZW）反常相互作用所导致的 \\(K\\overline K \\to 3\\pi\\) 振幅，建立了完整的有限体积形式体系，并给出了手征微扰论（ChPT）的领头阶阈值展开预言。\n\n## 研究问题\n\n作者要解决的核心问题是：**如何从格点QCD可计算的有限体积能谱中，提取由量子反常（WZW项）驱动的 \\(2\\to 3\\) 和 \\(3\\to 3\\) 散射振幅？** 具体而言，WZW项预言了 \\(K\\overline K \\to \\pi^+\\pi^0\\pi^-\\) 振幅非零，但该过程涉及多粒子末态，在有限体积中无法直接测量散射振幅，需要建立能谱与无穷体积散射量之间的严格对应关系（即有限体积形式论）。\n\n## 方法\n\n- **有限体积形式论（Quantization Condition）**：基于非相对论有效场论（NREFT）或相对论量子场论的有限体积量化条件框架，推导了包含 \\(K\\overline K\\) 与 \\(3\\pi\\) 混合的 \\(I=0\\) 系统，以及 \\(\\pi K\\) 与 \\(\\pi\\pi K\\) 混合的 \\(I=1/2, 3/2\\) 系统的能谱公式。这些公式将有限体积能级与无穷体积的 \\(2\\to 2\\)、\\(2\\to 3\\)、\\(3\\to 3\\) K矩阵（或T矩阵）联系起来。\n- **对称性分析与约化**：利用同位旋、角动量分波和置换对称性，将多粒子态约化到独立的运动学通道，明确哪些分波对WZW项敏感。\n- **阈值展开**：对进入形式论的 \\(2\\leftrightarrow 3\\) 和 \\(3\\leftrightarrow 3\\) K矩阵在阈值附近做动量展开，确定展开系数的独立个数。\n- **手征微扰论（ChPT）计算**：在 \\(O(p^4)\\) 阶（即WZW项出现的阶）计算了这些阈值展开系数的领头阶预言值，为未来格点数值结果提供理论基准。\n\n## 主要结果\n\n1. **完整的形式论框架**：给出了两个关键多粒子系统的有限体积量化条件，明确指出了哪些能级组合可以约束WZW相关的振幅。\n2. **K矩阵阈值展开**：确定了 \\(2\\leftrightarrow 3\\) 和 \\(3\\leftrightarrow 3\\) K矩阵在阈值处的领头阶行为，并给出了独立系数的数目。\n3. **ChPT领头阶预言**：具体计算了这些阈值系数的数值，例如与 \\(K\\overline K \\to 3\\pi\\) 振幅相关的系数，其大小由WZW反常项的耦合常数（即 \\(N_c\\) 相关的系数）决定。这些预言可直接用于检验未来格点数据是否与标准模型反常结构一致。\n\n## 为什么值得关注\n\n- **首次为“反常过程”提供格点可行路径**：WZW项是QCD反常的低能体现，但此前格点QCD对反常效应的直接提取非常困难（因为涉及拓扑荷或瞬子效应，信噪比差）。本文通过多粒子谱学间接提取，绕开了直接计算拓扑荷的困难。\n- **方法论突破**：将有限体积形式论从纯强相互作用（如 \\(3\\pi\\)、\\(\\pi K\\) 散射）推广到**包含粒子-反粒子对（\\(K\\overline K\\)）与多π混合**的通道，处理了更复杂的耦合道和Fock空间截断问题。\n- **对ChPT的精确检验**：提供了WZW项在散射过程中的具体可测预言，若格点数据与ChPT预言不符，将暗示新物理或对反常结构的修正。\n- **为未来计算铺路**：论文给出了清晰的“配方”——哪些能谱需要计算、如何提取K矩阵、阈值系数如何与ChPT比较，可直接指导格点QCD数值工作。\n\n## 方向标签\n\nLattice QCD  \nChiral perturbation theory  \nFinite-volume formalism  \nHadron scattering  \nAnomalies / WZW term\n\n## 阅读优先级\n\n★★★★☆（4星）\n\n**理由**：这是一篇**方法学导向的理论论文**，不包含数值格点结果，因此对非该领域读者门槛较高。但对于从事**多粒子格点谱学**、**手征有效场论**或**强子散射**的研究者，这是极具价值的工作——它首次给出了提取WZW反常效应的具体可操作方案，且推导严谨、预言明确。若你的研究涉及格点QCD中的多体系统或反常物理，这篇是必读；若只是泛读，可先读摘要和结论部分。扣一星是因为其技术性较强，且尚未有数值验证。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-08T00:46:50.753872"
+  },
+  {
+    "id": "2609.04616v1",
+    "title": "Systematic study of baryon-baryon interactions in singly bottomed systems",
+    "authors": [
+      "Yuxuan Du",
+      "Yanyue Pan",
+      "Xinmei Zhu",
+      "Zhiyun Tan",
+      "Hongxia Huang",
+      "Jialun Ping"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.04616v1",
+    "published": "2026-09-04T01:30:50Z",
+    "abstract": "In this work, we systematically investigate the baryon-baryon interactions in singly bottomed dibaryon systems within the chiral quark model and search for possible bound states. By exploring the baryon-baryon interaction, we find that low-isospin channels tend to generate deeper attractive interactions and are prone to form bound states. We also find that decuplet-decuplet systems tend to show stronger attraction and support a larger number of bound states, whereas octet-octet systems generally exhibit weaker attraction and fewer bound solutions. The binding behavior of octet-decuplet systems generall lies between these two cases. Several bound states are obtained, which are $ΔΣ_b^*$ with $IJ=\\frac{1}{2}0$, $\\frac{1}{2}1$, $\\frac{1}{2}2$, $\\frac{1}{2}3$, and $\\frac{3}{2}3$, the $ΔΣ_b$ with $IJ=\\frac{1}{2}1$, $\\frac{1}{2}2$, $\\frac{3}{2}1$, and $\\frac{3}{2}2$, the $NΣ_b^*$ with $IJ=\\frac{1}{2}2$, the $ΣΣ_b$ with $IJ=00$, $01$, and $11$, the $ΣΣ_b^*$ with $IJ=01$ and $02$, the $Σ^*Σ_b$ with $IJ=01$ and $02$, and the $Σ^*Σ_b^*$ with $IJ=00$, $01$, $02$, $03$, and $13$. Further investigations of the corresponding scattering processes are still required to determine whether these bound-state candidates can be identified. These states deserve further experimental investigation.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该工作在手征夸克模型框架下系统研究了单底重子-重子相互作用，预言了多个可能存在的束缚态候选，并揭示了同位旋越低、重子多重态越高（decuplet）越容易形成束缚态的系统性规律。\n\n## 研究问题\n\n作者想解决什么问题？\n\n作者旨在系统性地回答：在含有一个底夸克的双重子系统中，哪些重子-重子组合（八重态-八重态、八重态-十重态、十重态-十重态）在哪些量子数（总同位旋 I 和总角动量 J）下能够形成束缚态？其背后的相互作用规律是什么？这为寻找新的双重子态（类似氘核的奇特强子态）提供理论预言和筛选依据。\n\n## 方法\n\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n**注意：本文并非格点QCD计算，而是基于唯象模型的研究。** 具体方法为：\n\n- **手征夸克模型（Chiral Quark Model）**：通过夸克自由度之间的单玻色子交换（π、σ、K、η等手征场）和单胶子交换来构建重子-重子相互作用势。\n- **共振群方法（Resonating Group Method, RGM）**：用于处理两重子间的多夸克动力学，求解相对运动波函数。\n- **束缚态判据**：通过数值求解RGM方程，检查是否存在负能量的束缚解，并给出束缚能。\n\n## 主要结果\n\n总结最重要发现。\n\n1. **系统性规律**：低同位旋（I小）的通道倾向于产生更深的吸引相互作用，更易形成束缚态。\n2. **多重态依赖**：十重态-十重态（decuplet-decuplet）系统吸引最强、束缚态最多；八重态-八重态（octet-octet）吸引最弱、束缚态最少；八重态-十重态介于两者之间。\n3. **具体束缚态预言**：共预言了多个束缚态候选，包括：\n   - ΔΣ_b^*：IJ = 1/2 0, 1/2 1, 1/2 2, 1/2 3, 3/2 3\n   - ΔΣ_b：IJ = 1/2 1, 1/2 2, 3/2 1, 3/2 2\n   - NΣ_b^*：IJ = 1/2 2\n   - ΣΣ_b：IJ = 00, 01, 11\n   - ΣΣ_b^*：IJ = 01, 02\n   - Σ^*Σ_b：IJ = 01, 02\n   - Σ^*Σ_b^*：IJ = 00, 01, 02, 03, 13\n4. **谨慎声明**：作者指出这些只是束缚态候选，仍需散射相移分析来确认其真实存在性。\n\n## 为什么值得关注\n\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **填补空白**：单底双重子系统（含一个b夸克）的实验和理论研究都相对稀少，本文提供了首个系统性的束缚态扫描，为未来实验（如LHCb、Belle II）搜索新奇特强子态提供了明确的目标通道和量子数。\n- **模型-格点互补**：虽然本文用的是手征夸克模型而非格点QCD，但其系统性预言可作为格点QCD计算的“靶子”——格点研究者可以优先在这些预言通道上做高精度计算来验证或排除，从而加速对强相互作用非微扰区域的理解。\n- **揭示普适规律**：发现的“低I强吸引”和“decuplet更易束缚”的规律，可能具有超越具体系统的普适性，对理解重子-重子相互作用的一般性质（如重夸克对称性、SU(3)味对称性破缺效应）有启发意义。\n- **为散射计算指明方向**：作者明确指出需要进一步散射分析，这为后续理论工作（无论是模型还是格点）提供了清晰的任务清单。\n\n## 方向标签\n\n选择几个标签，例如：\n\n- **Lattice QCD**（作为预言靶子，但本文本身不是格点计算）\n- **Hadron spectroscopy**（强子谱学）\n- **Chiral quark model**（手征夸克模型）\n- **Exotic hadrons**（奇特强子态）\n- **Baryon interactions**（重子相互作用）\n\n## 阅读优先级\n\n给 1-5 星，并解释原因。\n\n**优先级：★★★☆☆（3星）**\n\n**理由**：\n- **加分项**：系统性强、覆盖面广，给出了大量具体束缚态预言，对实验搜索和格点QCD验证有直接参考价值；规律性总结清晰，易于理解。\n- **减分项**：方法为唯象模型而非第一性原理计算（非格点QCD），预言的可信度受模型参数和手征势截断的影响较大，缺乏模型无关的可靠性保证；且作者自己也承认需要散射分析确认，结论尚属“候选”级别。\n- **适用人群**：适合从事强子谱学、重子-重子相互作用、奇特态搜索的理论和实验研究者；对纯格点QCD方法学研究者而言，可作为选题参考而非方法学来源。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-08T00:47:00.140913"
   }
 ]
