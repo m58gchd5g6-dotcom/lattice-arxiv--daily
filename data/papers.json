@@ -2344,5 +2344,130 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-09-08T00:47:00.140913"
+  },
+  {
+    "id": "2609.08299v1",
+    "title": "Probing the $B^{0}$ meson in a hot medium with finite baryon chemical potential",
+    "authors": [
+      "A. Türkan",
+      "G. Bozkır",
+      "K. Azizi"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.08299v1",
+    "published": "2026-09-08T06:20:20Z",
+    "abstract": "We perform a quantitative analysis of the $B^{0}$ meson spectroscopic parameters in a hot and dense medium. Within the framework of QCD two-point sum rules, we calculate the mass and decay constant of the $B^{0}$ meson with the help of the perturbative spectral density and nonperturbative contributions up to mass dimension five as functions of temperature $T$ and baryon chemical potential $μ_B$. For various fixed values of the baryon chemical potential, our numerical results indicate that both the mass and decay constant of the $B^{0}$ meson initially increase with temperature, reach a maximum, and then gradually decrease before eventually vanishing at sufficiently high temperatures. The corresponding vanishing points are found to be in the temperature intervals $(0.182-0.273)~\\mathrm{GeV}$ and $(0.118-0.173)~\\mathrm{GeV}$, for the mass and decay constant, respectively. Moreover, these temperatures move toward lower values as the baryon chemical potential increases. On the other hand, for various fixed temperatures, both the mass and decay constant exhibit a slight initial increase with increasing baryon chemical potential, followed by a subsequent decrease, eventually vanishing at sufficiently high chemical potentials. The vanishing points for the decay constant is determined to be in baryon chemical potential interval $(0.23-0.83)~\\mathrm{GeV}$. For the mass, the decrease at $T=0$ is much weaker than at finite temperatures; excluding this case, the vanishing points for the mass are determined to be in baryon chemical potential interval $(0.38-1.43)~\\mathrm{GeV}$ for different fixed temperatures. It is further observed that the baryon chemical potential values corresponding to the vanishing of both the mass and decay constant move to lower values as the temperature increases. In the $T \\to 0$ and $μ_B \\to 0$ limit ...",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文用 QCD 两点求和规则（不是格点 QCD）研究了热密介质中 \\(B^0\\) 介子的质量与衰变常数随温度 \\(T\\) 和重子化学势 \\(\\mu_B\\) 的变化，发现两者都先随 \\(T\\) 或 \\(\\mu_B\\) 增大而上升、达到峰值后下降，并在足够高的 \\(T\\) 或 \\(\\mu_B\\) 处消失。\n\n## 研究问题\n作者想解决的核心问题是：在同时具有有限温度 \\(T\\) 和有限重子化学势 \\(\\mu_B\\) 的热密 QCD 介质中，\\(B^0\\) 介子的谱学参数——质量和衰变常数——会如何演化？它们是否会在某个临界温度或临界化学势处消失？这些消失点如何随另一个变量变化？这关系到重味介子在热密物质中的存活条件，以及可能的解离/融化行为。\n\n## 方法\n需要先澄清：这篇论文**不是格点场论工作**，而是使用 **QCD 两点求和规则（QCD two-point sum rules）** 的解析/半解析方法。\n\n具体做法包括：\n- 构造 \\(B^0\\) 介子的两点关联函数；\n- 在算符乘积展开（OPE）框架下计算微扰谱密度和非微扰凝聚贡献，保留到质量维度五；\n- 引入有限温度 \\(T\\) 和有限重子化学势 \\(\\mu_B\\) 的修正；\n- 通过 Borel 变换和求和规则匹配，提取 \\(B^0\\) 介子的质量与衰变常数；\n- 对不同的固定 \\(T\\) 或固定 \\(\\mu_B\\) 做数值扫描，寻找质量和衰变常数的消失点。\n\n因此，这里没有使用格点离散化、Monte Carlo 采样、HMC 算法或张量网络等数值格点技术。\n\n## 主要结果\n1. **固定 \\(\\mu_B\\)，改变 \\(T\\)**  \n   \\(B^0\\) 的质量和衰变常数都先随温度升高而增大，达到一个最大值后逐渐减小，最终在足够高的温度下消失。  \n   - 质量消失点位于 \\(T \\approx (0.182-0.273)~\\mathrm{GeV}\\)；  \n   - 衰变常数消失点位于 \\(T \\approx (0.118-0.173)~\\mathrm{GeV}\\)。  \n   随着 \\(\\mu_B\\) 增大，这些消失温度向更低值移动。\n\n2. **固定 \\(T\\)，改变 \\(\\mu_B\\)**  \n   质量和衰变常数都先随 \\(\\mu_B\\) 增大而略有上升，然后下降，最终在足够高的 \\(\\mu_B\\) 处消失。  \n   - 衰变常数消失点位于 \\(\\mu_B \\approx (0.23-0.83)~\\mathrm{GeV}\\)；  \n   - 质量消失点，在排除 \\(T=0\\) 的较弱下降情形后，位于 \\(\\mu_B \\approx (0.38-1.43)~\\mathrm{GeV}\\)。  \n   随着温度升高，这些消失化学势向更低值移动。\n\n3. **总体趋势**  \n   \\(B^0\\) 介子在热密介质中并非单调融化，而是先经历一个“增强”阶段，再进入“融化”阶段。质量和衰变常数的消失点不同，说明不同谱学量对介质效应的敏感程度不同。\n\n## 为什么值得关注\n- 对**重味物理与热密 QCD**：\\(B\\) 介子在高能重离子碰撞、早期宇宙或致密星体环境中可能产生，理解其介质内性质对解释重味夸克偶素/介子 suppression 或 regeneration 很重要。\n- 对**QCD 求和规则方法**：论文展示了如何把有限 \\(T\\) 和有限 \\(\\mu_B\\) 同时纳入两点求和规则，并给出可检验的谱学参数演化图像。\n- 对**与格点 QCD 的互补性**：虽然这不是格点计算，但它提供了解析框架下的预测。未来若格点 QCD 能处理有限重子化学势下的重味介子谱，这类结果可作为交叉检验和物理直觉来源。\n- 对**临界行为与解离条件**：质量和衰变常数消失点的温度/化学势区间，可为判断 \\(B^0\\) 介子何时不再作为稳定束缚态存在提供参考。\n\n## 方向标签\n- Finite temperature\n- Finite density\n- QCD sum rules\n- Heavy-flavor physics\n- Quark-gluon plasma\n- Hadron spectroscopy\n\n## 阅读优先级\n**3/5 星**\n\n理由：  \n如果你关心热密介质中的重味介子性质、QCD 求和规则或有限 \\(T/\\mu_B\\) 下的强子谱学，这篇论文有直接参考价值。但它不是格点 QCD 论文，也不涉及 lattice 算法、量子模拟、机器学习或张量网络。因此对以格点方法为核心的读者来说，优先级中等；对做 QCD 热密物性和重味物理现象学的人来说，值得一读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-10T00:43:51.749598"
+  },
+  {
+    "id": "2609.07886v1",
+    "title": "Gauge field digitization in the Hamiltonian limit",
+    "authors": [
+      "Attila Pasztor",
+      "David Pesznyak"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.07886v1",
+    "published": "2026-09-07T18:50:24Z",
+    "abstract": "Quantum computers can circumvent the numerical sign problem in gauge theories at finite density or in real time. Quantum simulations of gauge theories require a finite-dimensional representation of continuous gauge fields. Replacing a continuous gauge group by a finite subgroup can substantially reduce the required quantum resources, but introduces digitization errors that must be controlled in the Hamiltonian, or continuous-time, limit. Previous studies, using the isotropic Euclidean lattices showed that the freezing transition of the discrete subgroup can make it a bad approximation for the continuous group at large Euclidean couplings. Here, we study the digitization of U(1) by its Z($N$) subgroups in 2+1 dimensions using anisotropic Euclidean lattices. We derive the trajectories of the spatial and temporal gauge couplings along which the Hamiltonian limit is approached at fixed Hamiltonian coupling. While the temporal coupling exhibits power-law scaling in the continuous U(1) theory, it grows only logarithmically for finite Z($N$). Using classical lattice simulations and exact diagonalization, we verify that these trajectories reproduce the corresponding Hamiltonian theories. We find that the freezing transition persists in the Hamiltonian limit of discrete gauge groups and that finite-$N$ theories can differ substantially from U(1) even outside the frozen regime, in contrast to the behavior on isotropic Euclidean lattices, where for small couplings, the discrete group provides a very accurate approximation of the continuous group. Our results provide a classical benchmark for quantifying the systematic errors due to gauge-field digitization in quantum simulations.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文系统研究了在哈密顿量极限（连续时间极限）下，用有限子群 Z(N) 离散化 U(1) 规范场时产生的系统性误差，发现离散化误差在哈密顿量极限下不仅不会消失，反而可能比各向同性欧几里得格点上更严重，尤其是冻结相变（freezing transition）持续存在并显著影响有限 N 理论对连续 U(1) 理论的逼近质量。\n\n## 研究问题\n\n作者想解决的核心问题是：\n\n1. **量子模拟中规范场离散化的可控性**：量子计算机模拟规范理论需要将连续规范群替换为有限维表示（如将 U(1) 替换为 Z(N)），这会引入离散化误差。关键问题是：这些误差能否在取连续时间（哈密顿量）极限时被控制和消除？\n\n2. **各向异性格点上的哈密顿量极限行为**：此前的研究基于各向同性欧几里得格点，发现 Z(N) 的冻结相变使得在大欧几里得耦合下离散子群成为连续群的糟糕近似。但哈密顿量极限（时间方向趋于连续）下的行为尚不清楚。\n\n3. **建立经典基准**：为量子模拟中规范场离散化的系统误差提供经典格点计算的定量基准。\n\n具体而言，作者研究 2+1 维 U(1) 规范理论被 Z(N) 子群离散化后，沿各向异性欧几里得格点上的特定轨迹（固定哈密顿量耦合，同时取空间/时间耦合的极限）逼近哈密顿量理论时的行为。\n\n## 方法\n\n**模型与格点设置：**\n\n- 2+1 维 U(1) 规范理论，使用各向异性欧几里得格点（空间格距 $a_s$ 与时间格距 $a_t$ 不同）\n- 将连续 U(1) 规范群替换为有限循环子群 Z(N)\n- 引入空间规范耦合 $\\beta_s$ 和时间规范耦合 $\\beta_t$，通过各向异性参数 $\\xi = a_s/a_t$ 联系\n\n**哈密顿量极限的推导：**\n\n- 固定哈密顿量耦合（即物理耦合），推导空间耦合 $\\beta_s$ 和时间耦合 $\\beta_t$ 沿何种轨迹逼近哈密顿量极限\n- 关键发现：连续 U(1) 理论中时间耦合呈幂律标度（power-law scaling），而有限 Z(N) 理论中仅呈对数增长（logarithmic growth）\n\n**数值方法：**\n\n1. **经典格点模拟**：在有限温度/有限欧几里得耦合下模拟 Z(N) 规范理论，验证推导的轨迹确实重现对应的哈密顿量理论\n2. **精确对角化（Exact Diagonalization）**：直接求解有限格点哈密顿量，与经典模拟结果对比验证\n3. **冻结相变分析**：研究 Z(N) 冻结相变在哈密顿量极限下的持续存在及其对离散化误差的影响\n\n**关键物理量：**\n\n- 通过比较 Z(N) 和 U(1) 理论在相同哈密顿量耦合下的物理观测量（如能谱、弦张力等）来量化离散化误差\n\n## 主要结果\n\n1. **哈密顿量极限轨迹的推导**：\n   - 连续 U(1)：时间耦合 $\\beta_t$ 随各向异性增大呈幂律发散\n   - 有限 Z(N)：$\\beta_t$ 仅呈对数增长，这意味着在哈密顿量极限下，时间方向的格点作用量增长极为缓慢\n\n2. **轨迹验证**：\n   - 经典格点模拟和精确对角化均证实，沿推导的轨迹可以正确重现对应的哈密顿量理论\n   - 这为离散化方案提供了可靠的理论框架\n\n3. **冻结相变在哈密顿量极限下持续存在**：\n   - Z(N) 的冻结相变（即规范场倾向于取离散群元素的特定值，导致动力学被\"冻结\"）在哈密顿量极限下不会消失\n   - 这意味着即使取连续时间极限，离散子群在大耦合下仍然是连续群的糟糕近似\n\n4. **有限 N 理论与 U(1) 的显著偏差**：\n   - 与各向同性欧几里得格点上的行为形成鲜明对比：在各向同性格点上，小耦合时 Z(N) 能非常精确地逼近 U(1)\n   - 在哈密顿量极限下，即使在小耦合区域（冻结区域之外），有限 N 理论也可能与 U(1) 有实质性偏差\n   - 这表明哈密顿量极限下的离散化误差结构与非各向同性欧几里得情形本质不同\n\n5. **经典基准的建立**：\n   - 为量子模拟中 Z(N) 离散化 U(1) 的系统误差提供了定量估计\n\n## 为什么值得关注\n\n1. **量子模拟规范理论的直接指导意义**：\n   - 当前量子计算机上模拟规范理论的主流方案之一就是用有限群（如 Z(N)）替代连续群以减少量子比特需求。这篇论文明确指出：在哈密顿量极限下，这种替代的误差可能比此前认为的更大，且冻结相变不会自动消失。这对量子模拟方案的设计有直接影响。\n\n2. **纠正了此前基于欧几里得格点的乐观预期**：\n   - 此前各向同性欧几里得格点的结果表明，小耦合下 Z(N) 是 U(1) 的极好近似。本文证明这一结论在哈密顿量极限下不成立，提醒社区不能简单地将欧几里得结果外推到量子模拟场景。\n\n3. **为误差控制提供理论基础**：\n   - 推导出的哈密顿量极限轨迹（空间/时间耦合的标度关系）为系统性地控制离散化误差提供了理论工具。\n\n4. **对 lattice field theory 社区的方法论贡献**：\n   - 各向异性格点上哈密顿量极限的系统研究方法和冻结相变分析，对其他规范群（如 SU(2)、SU(3)）的离散化研究有借鉴意义。\n\n5. **与 QCD 的潜在关联**：\n   - 虽然本文研究的是 U(1) 和 Z(N)，但其方法论和物理洞察（冻结相变、离散化误差在哈密顿量极限下的行为）对非阿贝尔规范群的量子模拟有重要参考价值。\n\n## 方向标签\n\n- Quantum simulation\n- Lattice gauge theory\n- Hamiltonian limit\n- Gauge field digitization\n- Finite temperature\n\n## 阅读优先级\n\n**★★★★☆（4/5 星）**\n\n**理由：**\n\n- **高优先级**：对于从事量子模拟规范理论、格点规范理论离散化方案、或哈密顿量极限方法的研究者，这篇论文提供了关键的系统误差分析和经典基准，是必读的。\n- **方法论价值**：各向异性格点上哈密顿量极限的推导和验证方法具有普适性，可推广到其他规范群。\n- **物理洞察**：冻结相变在哈密顿量极限下持续存在这一发现，对量子模拟方案设计有直接影响，纠正了此前的乐观预期。\n- **扣一星的原因**：论文聚焦于 U(1) 和 Z(N) 这一相对简单的模型，对非阿贝尔规范群（如 SU(2)、SU(3)）的直接适用性需要进一步验证；且目前是经典基准研究，尚未直接展示量子硬件上的实现。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-10T00:44:00.692443"
+  },
+  {
+    "id": "2609.07830v1",
+    "title": "Exact fermionic dual of the Bose-Hubbard model",
+    "authors": [
+      "Lei Su",
+      "Ivar Martin",
+      "Aashish A. Clerk"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.07830v1",
+    "published": "2026-09-07T18:00:10Z",
+    "abstract": "Recent developments have established exact bosonization and fermionization with a $\\mathbb{Z}_2$ symmetry as dualities through gauging. In this work, we apply fermionic gauging, which realizes generalized Jordan-Wigner transformations, to the Bose-Hubbard (BH) model with a global $U(1)$ symmetry and derive an exact dual description in terms of fermionic composites, built from bosons and fermions. In 1D, this duality generalizes the exact mapping between the extended hard-core BH model and the spinless Fermi-Hubbard model to now cover soft-core interactions. At low energies, the mapping reduces to the well-known equivalence between the sine-Gordon model and the Thirring model. The oscillation wave vector of the fermionic composite correlation function in the gapless phase is fixed by their density, providing a novel manifestation of Luttinger's theorem. We verify the exact duality using density matrix renormalization group (DMRG) calculations and demonstrate that the gapless phase and the phase transition are governed by the compact boson conformal field theory. Our construction naturally extends to generic bosonic systems and higher dimensions, opening new avenues for studying Bose-Fermi mixtures in optical lattices and other strongly correlated quantum systems.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文通过“费米子化规范”（fermionic gauging）构造了带全局 \\(U(1)\\) 对称性的 Bose-Hubbard 模型的精确费米子对偶描述，把 1D 中扩展硬核 BH 模型与无自旋 Fermi-Hubbard 模型的精确映射推广到软核相互作用情形，并用 DMRG 数值验证了该对偶。\n\n## 研究问题\n作者想解决的核心问题是：能否为带全局 \\(U(1)\\) 对称性的 Bose-Hubbard 模型建立一个**精确的费米子对偶描述**，而不仅仅局限于硬核极限或低能有效理论？具体来说：\n\n1. 如何将近年来基于 \\(\\mathbb{Z}_2\\) 对称性的玻色化/费米化对偶（通过 gauging 实现）推广到更一般的玻色系统？\n2. 在 1D 中，已知扩展硬核 BH 模型与无自旋 Fermi-Hubbard 模型存在精确映射，这一映射能否推广到包含软核相互作用的情形？\n3. 低能极限下，该对偶是否退化为已知的 sine-Gordon 模型与 Thirring 模型的等价性？\n4. 对偶的费米子复合算符的关联函数在无能隙相中的振荡波矢是否由密度决定，从而体现 Luttinger 定理？\n\n## 方法\n- **理论框架**：使用“费米子化规范”（fermionic gauging），实现广义 Jordan-Wigner 变换，将带全局 \\(U(1)\\) 对称性的 Bose-Hubbard 模型映射为由玻色子和费米子复合而成的费米子复合体的对偶描述。\n- **模型**：Bose-Hubbard 模型（含软核相互作用），全局 \\(U(1)\\) 对称性；1D 情形下与扩展硬核 BH 模型和无自旋 Fermi-Hubbard 模型的关系。\n- **低能有效理论**：sine-Gordon 模型与 Thirring 模型的等价性。\n- **数值方法**：密度矩阵重整化群（DMRG）计算，用于验证精确对偶，并确认无能隙相和相变由紧致玻色子共形场论（compact boson CFT）描述。\n- **推广**：构造自然推广到一般玻色系统和更高维度。\n\n## 主要结果\n1. **精确对偶的建立**：对带全局 \\(U(1)\\) 对称性的 Bose-Hubbard 模型，构造了精确的费米子对偶描述，对偶变量是由玻色子和费米子组成的复合体。\n2. **1D 映射的推广**：将扩展硬核 BH 模型与无自旋 Fermi-Hubbard 模型之间的精确映射，推广到包含软核相互作用的情形。\n3. **低能对应**：在低能极限下，该映射退化为 sine-Gordon 模型与 Thirring 模型之间的已知等价性。\n4. **Luttinger 定理的新体现**：无能隙相中费米子复合体关联函数的振荡波矢由它们的密度固定，提供了 Luttinger 定理的一种新表现形式。\n5. **数值验证**：DMRG 计算验证了精确对偶，并表明无能隙相和相变由紧致玻色子 CFT 支配。\n6. **可推广性**：该构造自然推广到一般玻色系统和更高维度，为光晶格中的 Bose-Fermi 混合物及其他强关联量子系统的研究开辟了新途径。\n\n## 为什么值得关注\n- **对偶方法的推进**：将近年来基于 gauging 的精确玻色化/费米化对偶从 \\(\\mathbb{Z}_2\\) 对称性情形推广到带全局 \\(U(1)\\) 对称性的 Bose-Hubbard 模型，扩展了对偶工具箱。\n- **连接已知结果**：在 1D 中统一并推广了硬核 BH–Fermi-Hubbard 映射和 sine-Gordon–Thirring 等价性，为这些经典结果提供了更一般的框架。\n- **Luttinger 定理的新表现**：为 Luttinger 定理在玻色-费米对偶背景下的体现提供了新视角，可能对凝聚态和冷原子系统有启发。\n- **数值可验证性**：DMRG 验证增强了对精确对偶的信心，并为后续数值研究提供了基准。\n- **跨领域潜力**：自然推广到更高维和一般玻色系统，可能对光晶格中的 Bose-Fermi 混合物、强关联量子系统以及量子模拟研究产生重要影响。\n- **对 lattice/QCD 社区的潜在意义**：虽然本文聚焦于凝聚态/冷原子系统，但其 gauging 对偶和广义 Jordan-Wigner 变换的技术可能对格点规范理论、符号问题研究和量子模拟有借鉴意义。\n\n## 方向标签\n- Quantum simulation\n- Tensor network\n- Lattice field theory (methodological overlap)\n- Strongly correlated systems\n- Duality / Bosonization\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：这篇论文在理论框架上有实质性推进，将精确对偶推广到更一般的 Bose-Hubbard 模型，并辅以 DMRG 数值验证，结果扎实且具有跨领域启发性。对于研究对偶、玻色化、冷原子系统和强关联量子多体物理的读者，阅读优先级较高。不过，若研究兴趣主要集中在高能格点 QCD 或 BSM 现象学，其直接相关性相对有限，因此不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-10T00:44:07.477491"
+  },
+  {
+    "id": "2609.07781v1",
+    "title": "Sector-Resolved Flow Sampling for Topologically Frozen Lattice Gauge Theories",
+    "authors": [
+      "Ankur Singha",
+      "Jacob Kauffmann",
+      "Karl Jansen",
+      "Jacob Finkenrath",
+      "Vipul Arora",
+      "Shinichi Nakajima"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.07781v1",
+    "published": "2026-09-07T17:29:17Z",
+    "abstract": "Topological fluctuations are essential to nonperturbative gauge theories but become increasingly difficult to sample toward the continuum limit, where Markov chains can freeze in sectors of fixed topological charge. We introduce a generative sampler, a mixture of sector-resolved samplers (MSRS) that explicitly resolves these sectors and exploits a key advantage of generative models, the ability to directly evaluate the domain-restricted partition function and thereby determine the relative weights of disconnected sectors. We train a generative model in a reference topological sector combined with a bijective topological shift that deterministically maps its samples to other sectors. We demonstrate the method in two-dimensional compact U (1) lattice gauge theory, where it reproduces the topological-charge distribution and yields an unbiased susceptibility in a regime where hybrid Monte Carlo is frozen and overrelaxation gives inaccurate estimates. Our approach also outperforms existing flow-based samplers by orders of magnitude. These results demonstrate that explicit sector resolution provides a promising route to overcoming topological barriers in lattice gauge theory.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出了一种“按拓扑扇区分解的生成式采样器”（MSRS），通过在每个拓扑扇区分别训练生成模型并利用双射拓扑平移连接不同扇区，从而在拓扑冻结区域仍能正确采样拓扑荷分布，并在二维 compact U(1) 格点规范理论中显著优于传统 HMC、overrelaxation 和已有 flow-based 方法。\n\n## 研究问题\n论文要解决的核心问题是：在格点规范理论接近连续极限时，拓扑荷的涨落变得极其缓慢，Markov chain Monte Carlo（尤其是 HMC）容易“冻结”在固定拓扑荷扇区中，导致拓扑荷分布、拓扑磁化率等物理量采样不充分或估计有偏。作者希望构建一种能够显式处理不同拓扑扇区、并正确计算各扇区相对权重的采样方法，从而克服拓扑采样障碍。\n\n## 方法\n论文使用的是格点规范理论中的生成式采样方法，具体包括：\n\n- 研究对象：二维 compact U(1) lattice gauge theory。\n- 核心方法：Mixture of Sector-Resolved Samplers（MSRS），即按拓扑扇区分解的混合生成采样器。\n- 关键思想：\n  - 显式分辨不同拓扑荷扇区；\n  - 利用生成模型可以直接估计“域限制配分函数”的优势，从而确定不同拓扑扇区之间的相对权重；\n  - 在一个参考拓扑扇区中训练生成模型；\n  - 使用一个双射的拓扑平移操作，将参考扇区样本确定性地映射到其他拓扑扇区。\n- 对比方法：Hybrid Monte Carlo（HMC）、overrelaxation、以及已有 flow-based samplers。\n- 数值技术：生成模型采样、拓扑荷扇区分解、拓扑平移、配分函数相对权重估计。\n\n## 主要结果\n主要发现包括：\n\n1. MSRS 能够复现二维 compact U(1) 格点规范理论中的拓扑荷分布。\n2. 在 HMC 已经冻结、overrelaxation 给出不准确估计的区域，MSRS 仍能给出无偏的拓扑磁化率。\n3. 与已有 flow-based samplers 相比，该方法在效率上提升了数个数量级。\n4. 结果表明，显式拓扑扇区分解是克服格点规范理论中拓扑采样障碍的一条有前景的路线。\n\n## 为什么值得关注\n这篇论文值得关注，因为它直接触及格点场论中长期存在的“拓扑冻结”难题。随着格点 QCD 和格点规范理论向连续极限推进，拓扑荷采样效率会急剧下降，影响拓扑磁化率、θ 依赖、以及某些非微扰物理量的可靠计算。该工作说明生成模型不仅可以作为传统采样器的加速器，还可以通过显式扇区分解和配分函数权重估计，提供一种更系统、更可控的拓扑采样框架。这对 lattice QCD、格点规范理论、以及机器学习与场论交叉方向都有重要意义。\n\n## 方向标签\n- Lattice QCD\n- Machine Learning\n- Lattice Gauge Theory\n- Topological Sampling\n- Generative Models\n\n## 阅读优先级\n★★★★☆\n\n原因：  \n这篇论文主题非常聚焦，但解决的问题是格点场论中非常重要且困难的拓扑采样问题。方法思路清晰，结合了生成模型、拓扑扇区和配分函数权重估计，具有较强的启发性。虽然当前演示只在二维 compact U(1) 中完成，尚未直接推广到 4D SU(3) 或 QCD，但它对未来 lattice QCD 拓扑采样方法的发展有较高参考价值。因此适合作为生成模型与格点场论交叉方向的重点阅读论文。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-10T00:44:13.483546"
+  },
+  {
+    "id": "2609.06486v1",
+    "title": "ggpeps: A package for Gauged Gaussian PEPS",
+    "authors": [
+      "Ariel Kelman",
+      "Itay Gomelski",
+      "Jonathan Elyovich",
+      "Erez Zohar",
+      "Patrick Emonts"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.06486v1",
+    "published": "2026-09-06T09:00:18Z",
+    "abstract": "Lattice gauge theories are a low-energy regularization of quantum field theories. They are the basis for the development of numerical algorithms that provide insight into the non-perturbative regime of quantum field theories which is difficult to achieve through other methods. We present a python package, ggpeps, implementing gauged Gaussian projected entangled pair states (GGPEPS), specialized to study lattice gauge theories. We give a an overview of the considered systems, describe the GGPEPS ansatz and provide a usage guide for the ggpeps package.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文发布了一个名为 `ggpeps` 的 Python 软件包，实现了“规范高斯投影纠缠对态”（Gauged Gaussian PEPS, GGPEPS）这一张量网络拟设，用于数值研究格点规范理论，为探索量子场论的非微扰区域提供了一个新的计算工具。\n\n## 研究问题\n\n格点规范理论是量子场论的低能正则化方案，是研究量子场论非微扰区域的重要数值框架。然而，传统方法（如蒙特卡洛）在有限密度、实时动力学、拓扑项等情形下面临符号问题等困难。作者想要解决的问题是：\n\n1. 如何将张量网络方法（特别是高斯费米子 PEPS）推广到**带规范对称性**的格点规范理论中？\n2. 如何提供一个**通用、可复用的软件工具**，让研究者能够方便地构建和计算 GGPEPS 态，从而研究格点规范理论的非微扰性质？\n\n简言之，论文的目标是**将 GGPEPS 拟设工程化、软件化**，降低该方法的入门门槛。\n\n## 方法\n\n论文涉及的核心方法要素包括：\n\n- **张量网络 / 投影纠缠对态（PEPS）**：使用 PEPS 作为变分拟设来近似格点规范理论的基态或低能态。\n- **高斯费米子张量网络（Gaussian PEPS）**：将 PEPS 的张量限制为高斯（即费米子高斯态）形式，使得计算可以高效进行，避免一般 PEPS 的高计算复杂度。\n- **规范对称性（Gauge symmetry）**：将局域规范约束（如 Gauss 定律）编码进张量网络结构中，构造“规范不变”的 GGPEPS。\n- **格点规范理论模型**：论文概述了所考虑的系统（如格点规范理论与费米子耦合的模型），具体模型细节需参见全文。\n- **Python 软件实现**：提供 `ggpeps` 包，包含态构造、规范投影、可观测量计算等功能模块，并附带使用指南。\n\n总体而言，方法属于**张量网络 + 格点规范理论**的交叉方向，核心创新在于将高斯 PEPS 与规范对称性结合并软件化。\n\n## 主要结果\n\n由于摘要篇幅有限，论文的主要贡献可概括为：\n\n1. **提出了 GGPEPS 拟设的系统描述**：明确了如何在高斯费米子 PEPS 框架内实现规范不变性。\n2. **发布了 `ggpeps` Python 软件包**：这是该工作最核心的产出，提供了可实际运行的工具，支持研究格点规范理论。\n3. **给出了所考虑系统的概述和使用指南**：使社区研究者能够快速上手，复现和扩展相关计算。\n\n论文本身更偏向**方法学与软件工具**，而非报告某个具体物理模型的新数值结果（如相图、质量谱等）。其“结果”主要体现在工具的可可用性和方法的可行性上。\n\n## 为什么值得关注\n\n1. **应对符号问题的新途径**：张量网络方法（尤其是高斯 PEPS）在处理有限密度、实时演化等问题时，可能规避传统蒙特卡洛的符号问题，对格点 QCD 和凝聚态规范理论都有潜在价值。\n2. **规范对称性与张量网络的结合**：将局域规范约束严格编码进张量网络，是张量网络方法走向规范理论的关键一步，具有方法学意义。\n3. **软件工具化推动社区发展**：`ggpeps` 作为开源 Python 包，降低了张量网络方法研究格点规范理论的门槛，有助于吸引更多研究者进入该方向。\n4. **与量子模拟的关联**：GGPEPS 的结构与量子模拟器上的态制备有一定对应关系，可能为量子计算/量子模拟研究格点规范理论提供理论支撑。\n\n## 方向标签\n\n- Tensor network\n- Lattice gauge theory\n- Quantum simulation\n- Machine Learning（软件工具/计算方法层面，若论文涉及自动微分等可归入）\n- Non-perturbative QFT\n\n## 阅读优先级\n\n**★★★☆☆（3/5 星）**\n\n**理由**：\n\n- **加分项**：论文提供了一个可直接使用的软件工具，对从事张量网络 + 格点规范理论交叉研究的人员有直接实用价值；GGPEPS 方法本身具有方法学创新性。\n- **减分项**：作为软件包论文，其物理结果的深度可能有限（摘要未展示具体数值发现）；对于不做张量网络或不关注非微扰方法的格点 QCD 研究者，相关性较低。\n- **适用人群**：如果你正在研究张量网络方法在规范理论中的应用、关注符号问题替代方案、或需要现成工具来构建规范不变的 PEPS 态，这篇论文值得优先阅读。否则，可作为背景参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-10T00:44:20.377382"
+  },
+  {
+    "id": "2609.05989v1",
+    "title": "Nucleon-sigma terms at $m_π=222 ~\\rm MeV$ with a variational analysis from lattice QCD",
+    "authors": [
+      "Lorenzo Barca",
+      "Gunnar Bali",
+      "Sara Collins",
+      "Marcel Rodekamp"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.05989v1",
+    "published": "2026-09-05T09:15:55Z",
+    "abstract": "Nucleon sigma terms are important for the decomposition of the nucleon mass and for searches for new physics beyond the Standard Model involving scalar interactions. A persistent tension between lattice QCD and phenomenological determinations may be due to uncontrolled excited-state contamination in lattice QCD analyses. In previous work at $m_π=429~\\rm MeV$, we showed that this contamination is dominated by $Nσ$ states and can be strongly suppressed with a variational analysis using $N$ and $Nσ$ operators. In this talk, we present preliminary results at $m_π=222~\\rm MeV$, where the $σ$ becomes unstable and decays into $ππ$. We investigate whether the same small variational basis can remove the expected $Nππ$ contamination through the overlap of the $Nσ$ operator with these states.",
+    "summary": {
+      "raw": "## 一句话结论\n在 $m_\\pi=222~\\rm MeV$（$\\sigma$ 介子不再稳定、衰变为 $\\pi\\pi$）下，作者初步验证了仅用 $N$ 和 $N\\sigma$ 算子构成的小型变分基，仍能通过 $N\\sigma$ 算子与 $N\\pi\\pi$ 态的重叠来有效压制激发态污染，从而为可靠提取核子 sigma 项提供可行路径。\n\n## 研究问题\n核子 sigma 项（$\\sigma_{\\pi N}$、$\\sigma_s$ 等）对核子质量分解和超出标准模型的新物理（标量相互作用）搜索至关重要。但格点 QCD 与唯象学确定值之间存在持续张力，作者认为根源之一是格点分析中未受控的激发态污染。此前在 $m_\\pi=429~\\rm MeV$ 的工作表明，该污染主要来自 $N\\sigma$ 态，并可用包含 $N$ 与 $N\\sigma$ 算子的变分分析强烈压制。本文要解决的问题是：当 $m_\\pi$ 降到 $222~\\rm MeV$、$\\sigma$ 变为不稳定并衰变成 $\\pi\\pi$ 时，同样的小型变分基能否通过 $N\\sigma$ 算子与 $N\\pi\\pi$ 态的重叠来移除预期的 $N\\pi\\pi$ 污染。\n\n## 方法\n- 格点 QCD 数值模拟，手征外推至更轻的 pion 质量 $m_\\pi=222~\\rm MeV$。\n- 变分分析（variational analysis），使用由核子算子 $N$ 和 $N\\sigma$ 算子组成的小型算子基。\n- 利用 $N\\sigma$ 算子与 $N\\pi\\pi$ 态的重叠，考察其能否压制多强子激发态污染。\n- 报告的是初步结果（preliminary results），属于会议报告性质。\n\n## 主要结果\n- 在 $m_\\pi=222~\\rm MeV$ 下，$\\sigma$ 不再稳定，会衰变为 $\\pi\\pi$，因此激发态结构从 $N\\sigma$ 变为 $N\\pi\\pi$。\n- 初步结果表明，即便 $\\sigma$ 不稳定，仅用 $N$ 与 $N\\sigma$ 算子的小型变分基仍可能通过 $N\\sigma$ 算子与 $N\\pi\\pi$ 态的重叠来有效去除 $N\\pi\\pi$ 污染。\n- 这延续并支持了此前在 $m_\\pi=429~\\rm MeV$ 的结论：小型变分基足以控制主要激发态污染。\n\n## 为什么值得关注\n- 核子 sigma 项是核子质量分解和 BSM 标量相互作用搜索的关键输入，格点与唯象学之间的张力长期未解。\n- 若激发态污染能被系统控制，可能缓解甚至消除这一张力，提升格点结果的可靠性。\n- 该工作检验了在物理上更接近真实（更轻 pion 质量、$\\sigma$ 不稳定）的情形下，简单变分基是否仍然有效，对格点 QCD 社区计算 sigma 项的方法论有直接指导意义。\n- 对 BSM 直接探测、暗物质与核子标量耦合的解释也有潜在影响。\n\n## 方向标签\n- Lattice QCD\n- BSM\n- Hadron spectroscopy\n- Variational analysis\n- Excited-state contamination\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：这是一篇会议报告性质的初步结果，问题重要且方法思路清晰，但结果尚属 preliminary，且聚焦于技术性污染控制而非最终物理数值。对直接从事核子 sigma 项、格点变分分析或 BSM 标量耦合的研究者优先级较高（4 星）；对更广泛的理论物理读者则为中等优先级。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-10T00:44:25.109346"
   }
 ]
