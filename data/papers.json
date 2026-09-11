@@ -2469,5 +2469,83 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-09-10T00:44:25.109346"
+  },
+  {
+    "id": "2609.10486v1",
+    "title": "Faster Quantum Monte Carlo Simulation by Random Compilation",
+    "authors": [
+      "John M. Martyn",
+      "Joshua Lin",
+      "Neill C. Warrington",
+      "Isaac L. Chuang",
+      "Andrew J. Daley"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.10486v1",
+    "published": "2026-09-09T17:25:26Z",
+    "abstract": "Quantum Monte Carlo (QMC) algorithms are among the most powerful classical methods for simulating quantum systems, yet their accuracy is often limited by the systematic errors in the approximations used, such as Trotterization. Here we introduce randomly compiled quantum Monte Carlo (RC-QMC) as a general framework that suppresses these systematic errors by averaging over a family of approximations rather than relying on a single fixed one. This strategy is grounded in the concept of randomized compiling from quantum computing, which suppresses errors by sampling over quantum gates, at essentially no additional computational cost. Consequently, our framework achieves a computational advantage over standard QMC methods when estimating a target state to a desired level of accuracy. We illustrate this advantage on two key Monte Carlo algorithms: (1) path integral quantum Monte Carlo for estimating thermal states, and (2) the quantum trajectories method for simulating open system dynamics. In aggregate, these results represent a cross-fertilization of quantum and classical algorithms, are readily generalizable to other QMC methods, and suggest wider applications in classical simulation.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文提出“随机编译量子蒙特卡洛”（RC-QMC），通过对一族近似方案做随机平均，系统性抑制 Trotterization 等离散化误差，在达到同等精度时比标准 QMC 更省计算量，并在路径积分 QMC 与量子轨迹方法上做了演示。\n\n## 研究问题\n\n标准 QMC（如路径积分蒙特卡洛、量子轨迹方法）为了模拟连续时间演化或热态，通常要把虚时间/演化时间离散化，于是引入 Trotterization 误差等系统性偏差。传统做法是减小步长 τ 或提高 Trotter 阶数，但这会让计算成本急剧上升。作者要解决的核心问题是：\n\n**如何在不显著增加计算成本的前提下，抑制 QMC 中由固定近似方案带来的系统性误差，从而更快地以目标精度估计热态或开放系统动力学？**\n\n## 方法\n\n- **核心思想**：借用量子计算中的 randomized compiling（随机编译）思想，不依赖单一固定的 Trotter 分解或离散化方案，而是对一族近似方案进行随机采样并平均。\n- **RC-QMC 框架**：将目标演化/配分函数写成对随机编译选择的期望值，使误差在平均后抵消到更高阶，而不是像标准 Trotter 那样留下 O(τ²) 或 O(τ³) 的系统偏差。\n- **具体应用一**：路径积分量子蒙特卡洛（PIMC）估计热态。对 Trotter 分解做随机化，减少有限 τ 偏差。\n- **具体应用二**：量子轨迹方法模拟开放系统动力学。对轨迹分解/离散化方案做随机平均。\n- **数值技术特点**：随机采样几乎不增加单步计算量，主要成本仍是原有 QMC 采样；误差抑制来自统计平均而非更细的离散化。\n- **理论工具**：随机编译、Trotter 误差的代数抵消、Monte Carlo 估计的偏差-方差分析。\n\n## 主要结果\n\n1. **提出 RC-QMC 通用框架**：可把随机编译思想系统性地嫁接到经典 QMC 算法上，用于抑制离散化/分解带来的系统误差。\n2. **在 PIMC 上验证**：对热态估计，RC-QMC 在相同计算预算下达到比标准 PIMC 更高的精度；或在相同精度下需要更少计算量。\n3. **在量子轨迹方法上验证**：对开放系统动力学，随机编译同样抑制了轨迹离散化误差。\n4. **计算优势**：由于随机平均几乎不增加额外成本，RC-QMC 相对标准 QMC 在“达到目标精度”这一指标上有计算优势。\n5. **可推广性**：框架不限于上述两种算法，原则上可推广到其他 QMC 方法。\n\n## 为什么值得关注\n\n- **对 lattice/QCD 社区**：格点场论中广泛使用 HMC、PIMC、Trotterized 演化等方法，Trotter/离散化误差是系统性误差的重要来源。RC-QMC 提供了一种“几乎免费”的误差抑制思路，可能用于有限温度 QCD、实时演化、开放量子系统模拟等。\n- **对量子模拟与经典模拟交叉**：论文把量子计算中的 randomized compiling 反向移植到经典 QMC，体现了量子与经典算法的交叉融合。\n- **对精度-成本权衡**：如果能在不细化步长的情况下降低系统误差，就能显著改变 QMC 的精度-成本曲线，对需要高精度热力学量或实时动力学的计算尤其有价值。\n- **潜在局限**：随机平均会引入额外方差，实际加速取决于具体模型、可观测量的方差以及随机编译族的选择；论文展示了可行性，但尚未在格点 QCD 等大规模场论中验证。\n\n## 方向标签\n\n- Quantum simulation\n- Finite temperature\n- Lattice QCD\n- Machine Learning（弱相关，随机采样/编译思想）\n- Tensor network（不直接相关，但同属经典模拟量子系统）\n\n## 阅读优先级\n\n**4 星**\n\n理由：论文提出了一个通用、低成本、可推广的误差抑制框架，思想新颖且与 lattice/QCD 中常见的 Trotterization 误差问题直接相关。虽然目前演示集中在 PIMC 和量子轨迹，尚未在格点 QCD 中做大规模验证，但其方法论潜力较大，值得关注。若后续能在 HMC 或有限温度格点场论中落地，优先级可升至 5 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-11T00:42:37.461664"
+  },
+  {
+    "id": "2609.10306v1",
+    "title": "An improved partial-wave projection of the one-particle exchange in relativistic three-body scattering",
+    "authors": [
+      "Nicholas C. Chambers",
+      "Andrew W. Jackura"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.10306v1",
+    "published": "2026-09-09T15:16:50Z",
+    "abstract": "A critical component of relativistic three-body scattering amplitudes is the one-particle exchange (OPE) process, wherein a single particle is exchanged between incoming and outgoing two-body subsystems. We present an improved, finite-sum expression for the partial-wave OPE that is valid for three massive, spinless particles in arbitrary angular momentum configurations. A collection of analytic and numerical checks demonstrate that our finite-sum expression reproduces the known properties of the partial-wave OPE, including its threshold scaling behavior and singularity structure. Compared with previous work, this result more efficiently handles the rapid proliferation of partial waves contributing to any total angular momentum $J$, enabling the construction of robust wavesets for three-body amplitude analyses.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文给出了相对论三体散射中单粒子交换（OPE）分波投影的一个改进的有限求和表达式，能更高效、更稳健地处理任意角动量组态下急剧增多的分波，为三体振幅分析构建可靠的波集（waveset）提供了关键工具。\n\n## 研究问题\n作者想解决什么问题？\n\n在相对论三体散射振幅的构造中，单粒子交换（OPE）过程是核心组成部分：一个粒子在入射和出射的两体子系统之间被交换。要对三体振幅做分波展开（partial-wave expansion），就必须把 OPE 投影到确定的总角动量 $J$ 上。\n\n问题在于：\n- 随着总角动量 $J$ 增大，参与贡献的分波数量会迅速“增殖”（rapid proliferation），导致计算和数值实现变得低效甚至不稳定。\n- 此前的工作虽然给出了 OPE 的分波投影，但在处理任意角动量组态、尤其是高 $J$ 情形时效率不足，难以构建稳健的 waveset。\n- 需要一个对三个有质量、无自旋粒子、任意角动量组态都成立的、更高效的有限求和表达式。\n\n因此，本文的目标是：推导一个改进的、有限求和形式的 OPE 分波投影，并验证它复现已知的物理性质（阈值标度行为、奇点结构等）。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n需要说明的是，这篇论文属于相对论三体散射的理论/形式推导工作，并非格点 QCD 数值模拟，因此不涉及 lattice 方法本身。其方法要点包括：\n\n- **理论框架**：相对论三体散射振幅，聚焦其中的单粒子交换（OPE）过程，粒子设定为三个有质量、无自旋（spinless）粒子。\n- **分波投影**：将 OPE 投影到确定的总角动量 $J$，处理任意角动量组态。\n- **有限求和表达式**：推导出一个改进的有限求和（finite-sum）公式，替代此前效率较低的表述，以应对分波数量随 $J$ 的快速增殖。\n- **解析与数值检验**：通过一组解析和数值检查，验证新表达式复现 OPE 分波投影的已知性质，包括：\n  - 阈值标度行为（threshold scaling behavior）\n  - 奇点结构（singularity structure）\n- **数值效率与稳定性**：对比此前工作，展示新结果在处理高 $J$ 分波时的效率和稳健性，从而支持构建可靠的 waveset。\n\n## 主要结果\n总结最重要发现。\n\n- 提出了一个改进的、有限求和形式的 OPE 分波投影表达式，适用于三个有质量、无自旋粒子、任意角动量组态。\n- 该表达式复现了分波 OPE 的已知物理性质，包括阈值标度行为和奇点结构，通过了多项解析与数值检验。\n- 与先前工作相比，新结果能更高效地处理随总角动量 $J$ 快速增殖的分波，显著改善了数值实现的效率和稳定性。\n- 这一改进使得为三体振幅分析构建稳健的 waveset 成为可能，是三体散射振幅实际应用中的重要一步。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **三体散射是当前强子物理的前沿难点**：实验上（如 LHCb 等）已观测到大量三体共振态，理论上需要可靠的三体振幅框架来提取共振参数。OPE 是三体振幅的核心构件，其分波投影的效率直接决定整个分析是否可行。\n- **支撑有限体积方法 / 格点 QCD 的三体分析**：在格点 QCD 中，从有限体积能谱提取三体散射信息需要精确的三体振幅（如 B 矩阵、K 矩阵）参数化，而 OPE 分波投影正是其中的关键输入。改进的表达式能让高 $J$ 波集的处理更可靠，从而扩展可分析的三体系统范围。\n- **方法学价值**：分波增殖是高角动量问题的普遍困难，本文的有限求和技巧对更广泛的分波展开问题具有借鉴意义。\n- **连接理论与实验**：更高效稳健的 waveset 构建，有助于把格点/理论计算与实验三体共振分析对接起来。\n\n## 方向标签\n- Lattice QCD\n- Hadron spectroscopy\n- Three-body scattering\n- Partial-wave analysis\n- Theoretical physics\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：\n- 对从事三体散射、格点 QCD 有限体积方法、强子共振分析的研究者来说，这是直接相关且实用的方法学改进，值得精读。\n- 它解决的是实际计算中的效率与稳定性瓶颈，而非纯概念性问题，因此对相关方向的工作有直接帮助。\n- 扣一星是因为其适用范围较专门（相对论三体、无自旋粒子、OPE 分波投影），对不涉及三体振幅或分波展开的读者优先级较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-11T00:42:46.448391"
+  },
+  {
+    "id": "2609.10134v1",
+    "title": "Quantum tunneling from perturbation theory revisited",
+    "authors": [
+      "Hiroshi Suzuki"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.10134v1",
+    "published": "2026-09-09T13:14:54Z",
+    "abstract": "In the late 1990s, Suzuki and Yasuta proposed a compact formula that extracts the decay rate per unit volume of a false vacuum in the $D$-dimensional $O(N)$ $λ(φ^2)^2$ theory with an unbounded potential from conventional perturbative coefficients of the vacuum energy density, i.e., vacuum bubble diagrams. The idea was to identify the imaginary part arising from the Borel integral along the discontinuity of the Borel transform with that of the vacuum energy density. While the formula works quite well for~$D=1$, i.e., quantum mechanics, its validity remained unclear for~$D\\geq2$ because only the first three perturbative coefficients for~$D=2$ were available and the result showed no sign of convergence. In the present paper, we reexamine this approach using the first seven nontrivial perturbative coefficients (up to nine loops) for~$D=2$ and~$N=1$ obtained by Serone, Spada, and~Villadoro. Introducing two tunable parameters in the finite-order truncated Borel transform following these authors, we find that the imaginary part converges as the perturbative order increases, with the last few orders agreeing to within a few percent. In the intermediate range of the coupling constant, $3\\lesssim\\widetilde{g}\\lesssim8$, this approach yields an imaginary part rather close to the leading-order semi-classical approximation with the one-loop determinant; it is $10$--$20\\%$ larger than the semi-classical result with the two-loop correction computed by Malatesta, Parisi, and~Rizzo.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文重新检验了 Suzuki–Yasuta 提出的“用微扰真空能密度的 Borel 变换虚部提取假真空衰变率”的公式，并利用 \\(D=2\\)、\\(N=1\\) 的九圈微扰系数发现：在有限阶截断 Borel 变换中，虚部随阶数增加而收敛，且在中等耦合区与半经典结果相差约 \\(10\\)–\\(20\\%\\)。\n\n## 研究问题\n作者想解决的核心问题是：Suzuki 和 Yasuta 在 1990 年代末提出的一个紧凑公式，能否在 \\(D\\ge 2\\) 时正确地从常规微扰真空能密度（真空泡图）中提取假真空每单位体积的衰变率。\n\n具体来说，该公式试图把 Borel 积分沿 Borel 变换不连续性的虚部，等同于真空能密度的虚部。此前在 \\(D=1\\)（量子力学）中该公式表现良好，但在 \\(D\\ge 2\\) 时，由于当时只有 \\(D=2\\) 的前三个微扰系数，结果没有显示出收敛迹象，因此其有效性一直不明确。本文要回答的是：当有更高阶微扰系数时，这个 Borel 方法是否真的收敛，并且是否接近半经典近似。\n\n## 方法\n本文不是直接的格点模拟论文，而是一篇基于微扰论、Borel 变换和半经典近似的理论分析论文。其方法要点包括：\n\n1. **模型**：\\(D\\) 维 \\(O(N)\\) 标量场论，势为 \\(\\lambda(\\phi^2)^2\\) 型，且势无下界，因此存在假真空衰变。\n2. **具体参数**：本文重点分析 \\(D=2\\)、\\(N=1\\) 的情形。\n3. **微扰输入**：使用 Serone、Spada 和 Villadoro 得到的第一个七个非平凡微扰系数，即直到九圈的真空能密度系数。\n4. **Borel 变换与截断**：采用有限阶截断的 Borel 变换，并按照 Serone 等人的做法引入两个可调参数，以改善收敛行为。\n5. **提取虚部**：从 Borel 积分沿不连续性的虚部中读取假真空衰变率。\n6. **与半经典结果比较**：将得到的虚部与领头阶半经典近似加单圈行列式的结果比较，也与 Malatesta、Parisi 和 Rizzo 计算的双圈修正半经典结果比较。\n\n因此，本文没有使用格点方法、蒙特卡洛算法或张量网络，而是使用高阶级数展开、Borel 求和和半经典分析。\n\n## 主要结果\n1. **虚部随微扰阶数增加而收敛**：使用前七个非平凡微扰系数后，有限阶截断 Borel 变换给出的虚部不再像早期只有三阶时那样无收敛迹象，而是随着阶数增加趋于稳定。\n2. **最后几阶一致到几个百分点**：最后几个阶数的结果彼此吻合在百分之几的精度内，说明该方法在 \\(D=2\\)、\\(N=1\\) 中表现出实际收敛性。\n3. **与半经典结果的比较**：在中等耦合区间 \\(3\\lesssim \\widetilde{g}\\lesssim 8\\)，Borel 方法得到的虚部相当接近领头阶半经典近似加单圈行列式的结果；它比 Malatesta–Parisi–Rizzo 的双圈修正半经典结果大约 \\(10\\)–\\(20\\%\\)。\n4. **对 Suzuki–Yasuta 公式的支持**：这些结果表明，至少在 \\(D=2\\)、\\(N=1\\) 且使用足够高阶微扰系数时，Suzuki–Yasuta 的 Borel 方法可以给出合理且收敛的假真空衰变率。\n\n## 为什么值得关注\n这篇论文对理论物理和格点/QCD 相关社区的重要性主要体现在以下几点：\n\n1. **连接微扰论与非微扰衰变**：假真空衰变是非微扰现象，通常需要瞬子或半经典方法。本文表明，至少在某些情况下，可以从常规微扰真空泡图及其 Borel 变换中提取非微扰衰变率，这为理解微扰级数与非微扰效应之间的关系提供了新证据。\n2. **Borel 求和与重整化群**：Borel 变换、不连续性、有限阶截断和可调参数的处理，与量子场论中处理发散级数、重整化子和非微扰效应的方法密切相关。\n3. **对 \\(D\\ge2\\) 量子场论的意义**：此前该公式只在量子力学中较可靠，本文首次用九圈数据在二维场论中显示收敛，提升了该方法在更高维场论中的可信度。\n4. **与半经典近似的定量比较**：结果与单圈半经典近似接近，但与双圈修正有 \\(10\\)–\\(20\\%\\) 差异，这有助于评估半经典近似的精度以及 Borel 方法的系统误差。\n5. **对格点场论的潜在启示**：虽然本文不是格点计算，但它讨论的假真空衰变率、真空能密度和瞬子/半经典对应，与格点场论中研究亚稳态真空、相变和隧穿问题有概念上的联系。\n\n## 方向标签\n- Lattice field theory\n- Quantum field theory\n- Nonperturbative effects\n- Borel summation\n- False vacuum decay\n- Semiclassical approximation\n\n## 阅读优先级\n**4 星**\n\n理由：这篇论文对研究假真空衰变、Borel 求和、微扰与非微扰联系的理论物理学者有较高价值，尤其是它用九圈微扰系数重新检验了一个长期不明确的公式。它不是格点 QCD 或机器学习类论文，因此对更广泛的格点社区可能不是必读，但对亚稳态真空、瞬子和非微扰效应方向的研究者来说，是一篇值得仔细阅读的工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-11T00:42:55.002414"
+  },
+  {
+    "id": "2609.07886v2",
+    "title": "Gauge field digitization in the Hamiltonian limit",
+    "authors": [
+      "Attila Pasztor",
+      "David Pesznyak"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.07886v2",
+    "published": "2026-09-07T18:50:24Z",
+    "abstract": "Quantum computers can circumvent the numerical sign problem in gauge theories at finite density or in real time. Quantum simulations of gauge theories require a finite-dimensional representation of continuous gauge fields. Replacing a continuous gauge group by a finite subgroup can substantially reduce the required quantum resources, but introduces digitization errors that must be controlled in the Hamiltonian, or continuous-time, limit. Previous studies, using the isotropic Euclidean lattices showed that the freezing transition of the discrete subgroup can make it a bad approximation for the continuous group at large Euclidean couplings. Here, we study the digitization of U(1) by its Z($N$) subgroups in 2+1 dimensions using anisotropic Euclidean lattices. We derive the trajectories of the spatial and temporal gauge couplings along which the Hamiltonian limit is approached at fixed Hamiltonian coupling. While the temporal coupling exhibits power-law scaling in the continuous U(1) theory, it grows only logarithmically for finite Z($N$). Using classical lattice simulations and exact diagonalization, we verify that these trajectories reproduce the corresponding Hamiltonian theories. We find that the freezing transition persists in the Hamiltonian limit of discrete gauge groups and that finite-$N$ theories can differ substantially from U(1) even outside the frozen regime, in contrast to the behavior on isotropic Euclidean lattices, where for small couplings, the discrete group provides a very accurate approximation of the continuous group. Our results provide a classical benchmark for quantifying the systematic errors due to gauge-field digitization in quantum simulations.",
+    "summary": {
+      "raw": "## 一句话结论\n在 2+1 维各向异性欧几里得格点上，将连续 U(1) 规范场数字化为有限 Z(N) 子群时，冻结相变在哈密顿量极限下依然存在，且即使远离冻结区，有限 N 理论也可能与 U(1) 显著不同——这与各向同性欧几里得格点上小耦合时 Z(N) 能极好近似 U(1) 的行为形成鲜明对比。\n\n## 研究问题\n量子计算机有望规避规范场论在有限密度或实时演化中的符号问题，但量子模拟需要将连续规范场表示为有限维希尔伯特空间。用有限子群 Z(N) 替代连续群 U(1) 可大幅减少量子资源，但会引入数字化误差。作者要解决的核心问题是：\n\n1. 如何在哈密顿量极限（连续时间极限）下系统地控制这些数字化误差？\n2. 此前基于各向同性欧几里得格点的研究表明，Z(N) 的冻结相变使其在大欧几里得耦合下成为 U(1) 的糟糕近似。那么在各向异性格点上取哈密顿量极限时，这一结论是否仍然成立？\n3. 有限 N 的 Z(N) 理论在哈密顿量极限下与连续 U(1) 理论的偏差有多大？\n\n## 方法\n- **模型**：2+1 维 U(1) 格点规范理论，通过各向异性欧几里得格点（空间耦合 β_s 和时间耦合 β_t 不同）来逼近哈密顿量极限。\n- **数字化方案**：将连续 U(1) 规范群替换为有限循环子群 Z(N)。\n- **理论推导**：推导在固定哈密顿量耦合下逼近哈密顿量极限时，空间和시간规范耦合所遵循的轨迹（trajectories）。\n  - 对连续 U(1)：时间耦合呈幂律标度（power-law scaling）。\n  - 对有限 Z(N)：时间耦合仅呈对数增长（logarithmic growth）。\n- **数值验证**：\n  - 经典格点模拟（Monte Carlo）验证这些轨迹确实重现对应的哈密顿量理论。\n  - 精确对角化（exact diagonalization）用于验证哈密顿量极限下的理论行为。\n- **关键物理量**：冻结相变（freezing transition）在哈密顿量极限下的表现，以及有限 N 与 U(1) 的偏差。\n\n## 主要结果\n1. **哈密顿量极限轨迹的推导与验证**：作者成功推导出各向异性格点上逼近哈密顿量极限的耦合轨迹，并通过经典格点模拟和精确对角化验证了这些轨迹确实重现了相应的哈密顿量理论。\n2. **标度行为的本质差异**：连续 U(1) 理论中时间耦合呈幂律标度，而有限 Z(N) 理论中仅呈对数增长——这一差异是理解数字化误差的关键。\n3. **冻结相变在哈密顿量极限下持续存在**：Z(N) 的冻结相变不会因取哈密顿量极限而消失，这意味着在大耦合区域，Z(N) 仍然是 U(1) 的糟糕近似。\n4. **远离冻结区也可能显著偏离**：与各向同性欧几里得格点上小耦合时 Z(N) 能极好近似 U(1) 的行为不同，在哈密顿量极限下，即使 outside the frozen regime，有限 N 理论也可能与 U(1) 有实质性差异。\n5. **为量子模拟提供经典基准**：这些结果为量化量子模拟中规范场数字化带来的系统误差提供了经典基准。\n\n## 为什么值得关注\n- **对量子模拟规范场论的直接影响**：当前量子模拟规范场论的主流方案之一就是用有限群替代连续群。本文表明，在哈密顿量极限下（即量子模拟真正关心的连续时间极限），数字化误差可能比此前基于欧几里得格点的估计严重得多，这对量子资源估算和误差控制策略有重要警示意义。\n- **对格点规范场论社区的启示**：冻结相变在哈密顿量极限下的持续存在，以及有限 N 与 U(1) 在非冻结区的显著偏差，提醒人们在设计基于有限群的量子算法时需要更加谨慎。\n- **方法论的贡献**：各向异性格点上哈密顿量极限轨迹的推导和验证，为系统研究数字化误差提供了可推广的框架。\n- **连接经典与量子**：本文的经典基准结果为未来量子模拟实验提供了可对比的参照，有助于区分数字化误差与量子硬件噪声。\n\n## 方向标签\n- Quantum simulation\n- Lattice gauge theory\n- Hamiltonian limit\n- Gauge field digitization\n- U(1) gauge theory\n\n## 阅读优先级\n⭐⭐⭐⭐（4/5）\n\n**理由**：本文直接回应了量子模拟规范场论中一个核心且实际的问题——有限群数字化在哈密顿量极限下的误差控制。结论具有警示性（冻结相变持续存在、非冻结区也可能显著偏离），对从事量子模拟和格点规范场论交叉领域的研究者有重要参考价值。方法清晰，结合了解析推导与数值验证。扣一星是因为目前仅针对 2+1 维 U(1)，尚未推广到非阿贝尔群或更高维，但作为该方向的系统性研究，优先级很高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-11T00:43:01.954150"
   }
 ]
