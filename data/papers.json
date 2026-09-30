@@ -4019,5 +4019,161 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-09-29T06:02:59.189291"
+  },
+  {
+    "id": "2609.37799v1",
+    "title": "Equation of State of the Quark-Gluon Plasma in an External Magnetic Field to Fourth Order",
+    "authors": [
+      "L. Levkova",
+      "C. DeTar"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.37799v1",
+    "published": "2026-09-29T15:22:57Z",
+    "abstract": "We extend a lattice-QCD determination of the response of the quark-gluon plasma to an external magnetic field using a Taylor expansion of the pressure at zero field. A zero-net-flux ``half-and-half'' magnetic-field configuration permits continuous differentiation with respect to the field amplitude on gauge ensembles generated at $B=0$. The electromagnetic vector potential is chosen to minimize stochastic noise in the Taylor operators. Previous results through $O(B^2)$ are extended to $O(B^4)$ using $2+1$-flavor HISQ/tree ensembles with $m_l/m_s=0.05$ and $N_t=8$. The renormalized quadratic coefficient confirms paramagnetic behavior above the QCD crossover. The fourth-order coefficient $C_4$ is small at high temperature and is enhanced near the crossover. At $T=167$ MeV the $C_4$ result at $48^3\\times 8$ lies about two standard deviations above the corresponding $32^3\\times8$ one, indicating likely finite- volume effects. For $eB = 0.2$ GeV$^2$, characteristic of magnetic fields relevant to heavy-ion phenomenology, the fourth-order contribution is small compared with the leading magnetic correction at moderate and high temperatures, but near the crossover the large-volume result is about half of the central value of the quadratic term, after the vacuum-pressure subtraction. We also place the method in the context of other lattice determinations of magnetic susceptibility and clarify the relevance of finite-volume effects for the thermal subtraction. This work was completed in 2014 and preliminary results were reported at Lattice 2014.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文把零磁场格点 QCD 的压强泰勒展开从 \\(O(B^2)\\) 推广到 \\(O(B^4)\\)，给出了夸克-胶子等离子体在外磁场中磁响应的四阶系数 \\(C_4\\)，并指出其在 QCD 交叉区附近增强、且可能受有限体积效应影响。\n\n## 研究问题\n作者想解决的核心问题是：夸克-胶子等离子体在外加磁场下的状态方程，尤其是压强对磁场的非线性响应，能否在格点 QCD 中可靠地计算到 \\(B^4\\) 阶？具体包括：\n\n1. 如何在不直接生成 \\(B\\neq 0\\) 规范组态的情况下，通过零场组态上的泰勒展开计算 \\(O(B^4)\\) 磁响应？\n2. 四阶系数 \\(C_4\\) 的大小、温度依赖性和有限体积效应如何？\n3. 在重离子碰撞现象学相关的磁场强度 \\(eB \\sim 0.2\\ \\mathrm{GeV}^2\\) 下，四阶项相对于二阶项是否重要？\n4. 该方法与其他格点磁化率计算之间的关系是什么？\n\n## 方法\n论文使用的是**格点 QCD 泰勒展开方法**，具体要点如下：\n\n1. **基本框架**：从零磁场下的压强 \\(p(T,B=0)\\) 出发，对压强作外磁场 \\(B\\) 的泰勒展开：\n   \\[\n   p(T,B)=p(T,0)+\\frac{1}{2}C_2(T)(eB)^2+\\frac{1}{4!}C_4(T)(eB)^4+\\cdots\n   \\]\n   其中 \\(C_2\\)、\\(C_4\\) 是磁响应系数。\n\n2. **磁场构型**：采用零净磁通的“half-and-half”磁场位形。这种位形允许在 \\(B=0\\) 的规范组态上对磁场振幅连续求导，从而避免直接模拟非零磁场。\n\n3. **规范场选择**：电磁矢量势的选择被优化，以最小化泰勒算子中的随机噪声。\n\n4. **格点组态**：使用 \\(2+1\\) 味 HISQ/tree 组态，轻夸克与奇异夸克质量比 \\(m_l/m_s=0.05\\)，时间方向格点数 \\(N_t=8\\)。空间体积包括 \\(32^3\\times 8\\) 和 \\(48^3\\times 8\\)。\n\n5. **计算内容**：在已有 \\(O(B^2)\\) 结果基础上，扩展到 \\(O(B^4)\\)，即计算重整化后的四阶系数 \\(C_4\\)。\n\n6. **重整化与真空减除**：对相关系数进行重整化，并在讨论交叉区附近四阶贡献时进行真空压强减除。\n\n7. **方法定位**：作者还将该方法置于其他格点磁化率计算的背景下，并澄清热减除中有限体积效应的重要性。\n\n## 主要结果\n1. **二阶系数确认顺磁行为**：重整化后的二阶系数 \\(C_2\\) 在 QCD 交叉温度以上确认了夸克-胶子等离子体的顺磁行为。\n\n2. **四阶系数 \\(C_4\\) 的温度依赖**：\\(C_4\\) 在高温下较小，但在 QCD 交叉区附近增强。\n\n3. **有限体积效应迹象**：在 \\(T=167\\ \\mathrm{MeV}\\) 时，\\(48^3\\times 8\\) 格点上的 \\(C_4\\) 结果比 \\(32^3\\times 8\\) 的结果高约两个标准差，表明可能存在明显的有限体积效应。\n\n4. **现象学磁场下的相对重要性**：对于 \\(eB=0.2\\ \\mathrm{GeV}^2\\)，即重离子碰撞中典型磁场强度，四阶贡献在中等和高温下相对于领头磁修正较小；但在交叉区附近，大体积结果约为二阶项中心值的一半（经真空压强减除后）。\n\n5. **方法学结论**：零净磁通 half-and-half 磁场构型结合优化的矢量势，可以有效地在 \\(B=0\\) 组态上计算到 \\(O(B^4)\\) 的磁响应，但热减除和有限体积控制对交叉区结果至关重要。\n\n## 为什么值得关注\n1. **状态方程扩展**：这是格点 QCD 对夸克-胶子等离子体磁响应首次系统扩展到 \\(O(B^4)\\) 的工作之一，补足了此前仅到 \\(O(B^2)\\) 的不足。\n\n2. **重离子碰撞现象学**：非中心重离子碰撞中会产生强磁场，\\(eB\\) 可达 \\(0.1\\)–\\(0.2\\ \\mathrm{GeV}^2\\) 甚至更高。四阶项是否重要直接影响对磁效应、手征磁效应、磁催化等物理的解释。\n\n3. **方法学贡献**：half-and-half 磁场构型和优化矢量势为在零场组态上计算高阶磁场响应提供了可行方案，对后续格点计算有参考价值。\n\n4. **有限体积问题**：论文明确指出交叉区附近 \\(C_4\\) 的有限体积效应，这对未来格点计算的设计和误差评估很重要。\n\n5. **历史定位**：该工作完成于 2014 年，并在 Lattice 2014 报告初步结果，属于早期系统研究 QGP 磁响应高阶项的格点工作，对后续磁场相关格点研究有承前启后的意义。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- External magnetic field\n- QCD equation of state\n- Quark-Gluon Plasma\n- Taylor expansion / magnetic susceptibility\n\n## 阅读优先级\n**4 星**\n\n理由：这篇论文对格点 QCD 有限温度外磁场研究具有较高参考价值，尤其是对 \\(O(B^4)\\) 磁响应、有限体积效应和重离子现象学相关磁场强度的讨论。它不是综述，但方法清晰、结果具体，适合研究 QGP 磁效应、格点状态方程和重离子碰撞理论的人精读。若只关心最新结果，需注意该工作完成于 2014 年，后续可能有更新文献；但作为方法和高阶项系统计算的早期代表，仍值得阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:19.016176"
+  },
+  {
+    "id": "2609.37723v1",
+    "title": "Improving hadron creation operators for charmonium, glueballs and baryons",
+    "authors": [
+      "Juan Andrés Urrea-Niño",
+      "John Bulava",
+      "Nikolai Husung",
+      "Francesco Knechtli",
+      "Tomasz Korzec",
+      "Michael Peardon",
+      "Fernando Romero-López",
+      "Miguel Salg"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.37723v1",
+    "published": "2026-09-29T14:49:34Z",
+    "abstract": "Constructing hadron creation operators which properly sample the finite-volume energy spectrum is a fundamental step in lattice QCD spectroscopy and scattering calculations. Operators enabling access to spectrum information from correlation functions at early temporal separations are extremely advantageous, particularly when the signal-to-noise problem is severe. We present improved operator constructions for charmonium, glueball and baryon spectroscopy which exhibit these advantages. Novelties of our work include the extension of the distillation profiles framework to baryon and multi-meson calculations, as well as an efficient implementation of glueball-like operators which retain angular momentum information from the continuum.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出了改进的强子产生算符构造方法，用于 charmonium、glueball 和 baryon 谱学计算，能够在更早的时间间隔提取谱信息，从而缓解信噪比问题。\n\n## 研究问题\n在格点 QCD 谱学和散射计算中，构造能够正确采样有限体积能量谱的强子产生算符是基础步骤。作者想解决的问题是：如何构造改进的算符，使得从关联函数中能够在更早的时间间隔获取谱信息，特别是在信噪比问题严重的情况下。具体针对 charmonium、glueball 和 baryon 三种谱学计算。\n\n## 方法\n- 使用格点 QCD 谱学方法。\n- 扩展了 distillation profiles 框架，将其应用于 baryon 和多介子计算。\n- 实现了高效的 glueball-like 算符，这些算符保留了连续统中的角动量信息。\n- 构造改进的强子产生算符，以优化对有限体积能量谱的采样。\n\n## 主要结果\n- 提出了改进的算符构造，适用于 charmonium、glueball 和 baryon 谱学。\n- 这些算符能够在更早的时间间隔提供谱信息，有利于缓解信噪比问题。\n- 将 distillation profiles 框架扩展到 baryon 和多介子计算。\n- 实现了保留连续统角动量信息的 glueball-like 算符的高效实现。\n\n## 为什么值得关注\n这项工作对格点 QCD 社区具有重要意义：\n- 信噪比问题是格点 QCD 谱学计算中的核心困难之一，尤其是在高激发态和 glueball 计算中。\n- 能够在更早时间间隔提取谱信息，意味着可以用更少的计算资源获得可靠结果。\n- 将 distillation profiles 扩展到 baryon 和多介子计算，拓宽了该框架的适用范围。\n- glueball 算符保留角动量信息，有助于更好地识别 glueball 的量子数，这对理解 QCD 非微扰性质至关重要。\n- 对 charmonium 谱学也有直接应用价值，与实验上丰富的 charmonium 态测量相关。\n\n## 方向标签\n- Lattice QCD\n- Hadron spectroscopy\n- Glueballs\n- Charmonium\n- Baryons\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：这篇论文针对格点 QCD 谱学中的核心技术问题——算符构造与信噪比——提出了实用的改进方法，并覆盖了 charmonium、glueball 和 baryon 三个重要领域。对于从事格点谱学、散射计算或相关数值模拟的研究者来说，具有较高的参考价值和直接应用潜力。不过，它属于方法学改进而非突破性理论发现，因此给 4 星而非 5 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:22.987052"
+  },
+  {
+    "id": "2609.37325v1",
+    "title": "Boundary Condition dependent Universality Classes on a Hyperbolic Lattice",
+    "authors": [
+      "Pallabi Dey",
+      "Debasish Banerjee",
+      "Arnab Kundu",
+      "Ritam Sinha"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.37325v1",
+    "published": "2026-09-29T12:01:23Z",
+    "abstract": "We study the ferromagnetic Ising model on finite hyperbolic tessellations of Euclidean AdS$_2$ with open and wired boundary conditions. Because a finite fraction of spins remains at the boundary as the lattice grows, these conditions select distinct thermodynamic behaviours. In the $\\{5,4\\}$ tessellation, Monte-Carlo simulations using efficient worm algorithms on open boundaries (OBC) yield a transition near $β_c J=0.632(3)$, with susceptibility data collapsing under scaling by the total number of spins $N$. The fitted finite-size exponents, $1/\\barν \\simeq 0.162$ and $γ/\\barν \\simeq 0.743$, differ substantially from the mean-field volume scaling. Wired boundaries (WBC), which correlate boundary spins, instead show a transition around $β_c J=0.348(4)$ to an ordered phase consistent with the mean-field exponents. While the mean-field criticality with WBC is consistent with previous studies and with the suppression of independent boundary fluctuations, the OBC exponents hint at the presence of a new universality class. Results from other tessellations support the robustness of the observed scaling with OBC. We discuss a possible route to interpolate between the different boundary conditions. Our findings show that boundary dynamics must be specified when characterizing critical behaviour on hyperbolic lattices.",
+    "summary": {
+      "raw": "## 一句话结论\n\n在双曲格点上，边界条件（开边界 vs. 有线边界）会选出不同的普适类：开边界给出偏离平均场的新标度指数，而有线边界恢复平均场临界行为。\n\n## 研究问题\n\n作者研究的是：在双曲格点（Euclidean AdS₂ 的有限双曲镶嵌）上的铁磁 Ising 模型，其临界行为如何依赖于边界条件。核心问题是——由于双曲格点的边界自旋占总自旋数的有限比例（不随格点增大而趋于零），边界自由度在热力学极限下不可忽略，因此开边界（OBC）与有线边界（WBC）可能对应完全不同的热力学行为和普适类。作者想厘清这种边界依赖性，并检验此前关于双曲格点上平均场临界性的结论是否只是特定边界条件的产物。\n\n## 方法\n\n- **模型**：铁磁 Ising 模型，定义在有限双曲镶嵌（主要是 {5,4} 镶嵌，即每个顶点 5 个五边形、每个顶点度数为 4）上，对应 Euclidean AdS₂ 的离散化。\n- **边界条件**：开边界（OBC）与有线边界（WBC，即边界自旋相互关联/固定）。\n- **算法**：高效的 worm 算法（蠕虫算法）进行 Monte-Carlo 模拟，适合在双曲格点上处理 Ising 模型的团簇更新。\n- **分析手段**：有限尺寸标度分析，用总自旋数 N 而非线性尺寸 L 做标度变量；拟合有限尺寸指数 1/ν̄ 和 γ/ν̄；比较 OBC 与 WBC 下的磁化率数据塌缩行为。\n- **扩展验证**：在其他双曲镶嵌上重复模拟，检验 OBC 标度的稳健性；并讨论在两种边界条件之间插值的可能路径。\n\n## 主要结果\n\n1. **OBC 下的新普适类**：在 {5,4} 镶嵌、开边界下，转变点 β_c J = 0.632(3)，磁化率数据在以总自旋数 N 标度时塌缩。拟合指数为 1/ν̄ ≃ 0.162、γ/ν̄ ≃ 0.743，与平均场体积标度显著不同，暗示存在一个新的普适类。\n2. **WBC 下的平均场行为**：有线边界下转变点移至 β_c J = 0.348(4)，进入有序相，临界指数与平均场一致。这与先前研究相符，也符合“有线边界抑制了独立边界涨落”的直觉。\n3. **稳健性**：其他双曲镶嵌的结果支持 OBC 标度的稳健性，说明新标度行为不是 {5,4} 的特例。\n4. **边界条件插值**：作者讨论了在 OBC 与 WBC 之间连续插值的可能途径，为理解两种普适类之间的关系提供线索。\n5. **总体结论**：在双曲格点上刻画临界行为时，必须明确指定边界动力学，否则普适类本身是不确定的。\n\n## 为什么值得关注\n\n- **对格点场论与统计物理的基础意义**：双曲格点上的边界自旋占比有限，这打破了通常欧几里得格点上“边界可忽略”的直觉。该工作表明边界条件可以改变普适类，而不仅仅是改变转变点，这对全息对偶（AdS/CFT 的离散版本）和弯曲空间上的临界现象研究有直接启示。\n- **与全息和 AdS₂ 物理的关联**：Euclidean AdS₂ 的离散化为研究边界 CFT 与体理论的关系提供了玩具模型。边界条件选择不同普适类，可能对应边界 CFT 的不同定义或不同边界态，对理解全息边界条件的作用有价值。\n- **方法学贡献**：展示了 worm 算法在双曲格点上的有效性，以及用总自旋数 N 而非线性尺寸做标度的必要性，为后续双曲格点模拟提供参考。\n- **对 lattice/QCD 社区的潜在影响**：虽然不直接涉及 QCD，但“边界条件决定普适类”这一现象提醒人们在有限温度、有限体积格点计算中，边界/有限尺寸效应的处理可能比预想更微妙，尤其是在边界自由度占比不可忽略的几何中。\n\n## 方向标签\n\n- Lattice field theory\n- Statistical mechanics / Critical phenomena\n- Holography / AdS₂\n- Monte Carlo algorithms\n- Finite-size scaling\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：这是一篇选题新颖、结论清晰的工作，把“边界条件选择普适类”这一在双曲几何中特有的现象明确展示出来，对全息离散模型和弯曲空间临界现象的研究者有较高参考价值。方法（worm 算法 + 有限尺寸标度）扎实，结果有多个镶嵌的交叉验证。扣一星是因为它目前主要是数值观测和现象学讨论，对“新普适类”的理论解释（如有效场论或共形边界条件分类）尚不完整，插值路径也停留在讨论层面。对于做双曲格点、全息对偶或边界临界现象的研究者，值得优先精读；对主流 lattice QCD 研究者则属于扩展视野类阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:30.081806"
+  },
+  {
+    "id": "2609.37130v1",
+    "title": "Progress on $Sp(4)$ lattice theories with Grid: Möbius domain wall fermions and continuum extrapolations",
+    "authors": [
+      "Gianmarco Simonetti",
+      "Ed Bennett",
+      "Peter A. Boyle",
+      "Luigi Del Debbio",
+      "Niccolò Forzano",
+      "Ryan C. Hill",
+      "Deog Ki Hong",
+      "Jong-Wan Lee",
+      "C. -J. David Lin",
+      "Biagio Lucini",
+      "Maurizio Piai",
+      "Davide Vadacchino",
+      "Alexis Verney-Provatas"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.37130v1",
+    "published": "2026-09-29T09:35:15Z",
+    "abstract": "We present preliminary results obtained in the first extensive study of the Möbius domain wall fermion (MDWF) lattice formulation of the four-dimensional Sp(4) gauge theory coupled to two dynamical fermions transforming in the fundamental representation. This theory is important for extensions of the Standard Model, as it provides the microscopic origin for both composite Higgs and dark matter models based on the SU(4)/Sp(4) coset. We scan the space of bare lattice parameters, including those entering the MDWF, and monitor spurious effects, such as the residual mass. We identify optimised regions of parameter space in which lattice artefacts affecting the global symmetries of the theory are suppressed. We then perform preliminary measurements of the lightest pseudoscalar and vector meson masses, together with the pseudoscalar decay constant. We demonstrate the potential of the MDWF formulation to enable continuum-limit extrapolations with reduced lattice discretisation effects.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文首次系统研究了四维 $Sp(4)$ 规范理论中两种基本表示动力学费米子的 Möbius domain wall fermion 离散化，找到了抑制手征对称性破缺伪效应的优化参数区域，并初步验证了该方案在连续极限外推方面的潜力。\n\n## 研究问题\n作者想解决的核心问题是：对于 $Sp(4)$ 规范理论耦合两个基本表示费米子这一重要的 BSM 模型，如何建立一套可行的格点离散化方案，使得：\n1. 手征对称性得到良好保持（残余质量足够小）；\n2. 格点伪影（尤其是破坏全局对称性的效应）得到有效抑制；\n3. 能够以可控的格点离散化误差进行连续极限外推。\n\n该理论之所以重要，是因为它提供了基于 $SU(4)/Sp(4)$ 陪集的复合 Higgs 模型和暗物质模型的微观起源。\n\n## 方法\n- **格点规范理论**：四维 $Sp(4)$ 规范场耦合 $N_f = 2$ 个基本表示动力学费米子。\n- **费米子离散化**：Möbius domain wall fermion（MDWF）方案，这是 domain wall fermion 的一种改进变体，通过 Möbius 变换参数优化手征对称性保持。\n- **数值软件**：使用 Grid 格点 QCD 框架进行数值模拟。\n- **参数扫描**：系统扫描裸格点参数空间，包括 MDWF 特有的参数（如 Möbius 参数、域壁高度 $L_s$ 等），监测残余质量等伪效应。\n- **观测量**：测量最轻的赝标量介子质量、矢量介子质量以及赝标量衰变常数。\n- **连续极限**：初步探索向连续极限外推的可行性。\n\n## 主要结果\n1. **优化参数区域识别**：作者找到了 MDWF 参数空间中的优化区域，在这些区域内，影响理论全局对称性的格点伪影被有效抑制，残余质量保持在较小水平。\n2. **谱学量初步测量**：成功测量了最轻赝标量介子质量 $m_{PS}$、矢量介子质量 $m_V$ 和赝标量衰变常数 $f_{PS}$，展示了 MDWF 方案在该理论中提取物理量的可行性。\n3. **连续极限外推的潜力**：结果表明 MDWF 方案能够以减小的格点离散化效应实现连续极限外推，为后续大规模计算奠定了基础。\n4. **残余质量监测**：通过监测残余质量，验证了 MDWF 在 $Sp(4)$ 理论中保持手征对称性的有效性。\n\n## 为什么值得关注\n- **BSM 物理需求**：$Sp(4)$ 理论是复合 Higgs 和暗物质模型的重要候选，格点计算为其非微扰性质提供第一性原理输入。\n- **技术示范**：这是 MDWF 首次在 $Sp(4)$ 理论中的广泛应用研究，为其他 BSM 规范理论（如 $SU(2)$、$SU(4)$ 等）的格点模拟提供了方法论参考。\n- **连续极限可行性**：证明了 MDWF 方案在 BSM 格点计算中控制离散化误差的能力，这对获得可靠的连续极限结果至关重要。\n- **Grid 框架扩展**：展示了 Grid 框架不仅适用于 QCD，也可推广到 BSM 规范理论，对社区工具生态有推动作用。\n- **全局对称性保护**：在 BSM 理论中，全局对称性破缺模式直接决定低能有效理论，格点伪影的控制尤为关键。\n\n## 方向标签\n- Lattice QCD\n- BSM\n- Composite Higgs\n- Dark Matter\n- Domain Wall Fermions\n\n## 阅读优先级\n⭐⭐⭐⭐（4/5）\n\n**理由**：这篇论文对从事 BSM 格点计算、复合 Higgs 模型或暗物质模型的研究者具有直接参考价值。MDWF 在 $Sp(4)$ 理论中的首次系统应用、参数优化策略以及连续极限外推的初步验证，都是该方向的重要进展。不过由于是 preliminary results，尚未给出最终物理结果（如连续极限下的谱学量），因此不是最高优先级，但对相关方向的研究者来说值得仔细阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:36.163060"
+  },
+  {
+    "id": "2609.37049v1",
+    "title": "Subtraction method for disconnected diagrams in full QCD",
+    "authors": [
+      "Lorenzo Barca",
+      "Joshua Crawford",
+      "Jacob Finkenrath",
+      "Stefan Schaefer",
+      "Juan Andrés Urrea-Niño"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.37049v1",
+    "published": "2026-09-29T08:55:34Z",
+    "abstract": "Disconnected diagrams remain a major challenge for precision lattice QCD calculations because of their large statistical fluctuations. We investigate a subtraction method based on a domain decomposition of the Dirac operator, yielding a biased but substantially less noisy estimator. Applying the method to charmonium disconnected correlators computed using distillation, we achieve a variance reduction of about three orders of magnitude at only twice the computational cost, providing a practical alternative to completely neglecting disconnected contributions.",
+    "summary": {
+      "raw": "## 一句话结论\n本文提出并验证了一种基于 Dirac 算子区域分解的减除法，用于压低全 QCD 中 disconnected diagram 的统计噪声；在 charmonium disconnected correlator 的 distillation 计算中，以约两倍计算代价实现了约三个量级的方差缩减。\n\n## 研究问题\n作者想解决什么问题？\n\n- Disconnected diagrams 是 lattice QCD 精确计算中的主要瓶颈之一，其统计涨落极大，通常需要极高统计量才能得到可靠信号。\n- 在许多实际计算中，由于噪声过大，disconnected contributions 常被直接忽略，这会引入系统误差。\n- 本文关注的问题是：能否构造一个虽然带有偏差、但噪声显著更低的估计量，从而在实际计算中更有效地处理 disconnected diagrams。\n- 具体目标是在 full QCD 背景下，针对 charmonium disconnected correlators，发展一种可实用的减除方法，以替代“完全忽略 disconnected contribution”的做法。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- 研究对象：full QCD 中的 disconnected diagrams。\n- 核心方法：基于 Dirac 算子的 domain decomposition 构造 subtraction method。\n- 基本思想：将 Dirac 算子按空间区域分解，利用局域化结构构造一个减除项，从而降低估计量的方差。\n- 估计量性质：该估计量是 biased estimator，即不是无偏估计，但方差显著降低。\n- 数值实现：将方法应用于 charmonium disconnected correlators。\n- 计算技术：使用 distillation 方法计算相关函数。\n- 代价与收益：计算成本约为原来的两倍，但方差降低约三个数量级。\n\n## 主要结果\n总结最重要发现。\n\n- 作者提出的基于 Dirac 算子区域分解的减除法，可以显著降低 disconnected correlator 的统计噪声。\n- 在 charmonium disconnected correlators 的 distillation 计算中，实现了约 \\(10^3\\) 量级的方差缩减。\n- 这一改进仅需约两倍的计算成本，说明方法在效率上具有实际可行性。\n- 虽然估计量有偏，但由于噪声大幅下降，整体上提供了比直接忽略 disconnected contributions 更可控、更实用的替代方案。\n- 结果表明，该方法有潜力成为 full QCD 中处理 disconnected diagrams 的实用工具。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- Disconnected diagrams 是 lattice QCD 精确计算中的长期难题，尤其影响强子谱、矩阵元、稀有衰变、以及部分 BSM 或味物理相关观测量。\n- 许多计算因噪声过大而忽略 disconnected contributions，这会带来不可控的系统误差。\n- 本文提出的方法以较小额外成本换取巨大方差缩减，可能显著改善未来 full QCD 计算的可行性和精度。\n- 对 charmonium 等系统，这意味着可以更可靠地纳入 disconnected 效应，而不是简单丢弃。\n- 方法基于 Dirac 算子区域分解，具有一定通用性，可能推广到其他关联函数、其他量子数和更广泛的 lattice QCD 计算中。\n- 对理论物理社区而言，这提供了一种在偏差与方差之间权衡的新思路，尤其适用于高维、强噪声的格点计算问题。\n\n## 方向标签\n- Lattice QCD\n- Full QCD\n- Disconnected diagrams\n- Variance reduction\n- Charmonium\n- Distillation\n- Dirac operator\n- Numerical algorithms\n\n## 阅读优先级\n★★★★☆\n\n理由：\n\n- 如果研究兴趣集中在 lattice QCD 的精确计算、强子关联函数、disconnected diagrams 或统计误差控制，这篇论文优先级很高。\n- 它针对的是长期存在的实际瓶颈，方法思路清晰，数值结果有说服力：约三个量级方差缩减、仅两倍成本，具有较强实用价值。\n- 虽然估计量有偏，但论文明确将其定位为“实用替代方案”，对实际计算有直接参考意义。\n- 若研究方向偏形式理论、BSM 模型构造或量子模拟，则相关性稍低，但仍值得了解其方差缩减思想。\n- 综合来看，属于 lattice QCD 数值方法中值得重点阅读的一类工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:41.784641"
+  },
+  {
+    "id": "2609.36358v1",
+    "title": "Vector Meson Dominance and Vector Meson Production",
+    "authors": [
+      "Craig D. Roberts"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.36358v1",
+    "published": "2026-09-28T22:46:40Z",
+    "abstract": "Against a background supported by the three pillars of emergent mass, this contribution challenges the fidelity of vector meson dominance as an instrument for relating the electromagnetic vector-meson (V) production reaction $e + p \\to e^\\prime + V + p$ to the hadronic process $V + p \\to V + p$. It also describes a viable reaction model for exclusive photoproduction of light and heavy vector mesons from the proton, which exposes the $q\\bar q$ content of the photon. That model's successes reveal that it is premature to link extant $V + p \\to V + p$ data with, for instance, in-proton gluon distributions, the QCD trace anomaly, or pentaquark production. Improved reaction theory and more precise data are required before the validity of such links can objectively be assessed.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文质疑了矢量介子主导（VMD）模型在联系电磁矢量介子产生过程 $e + p \\to e' + V + p$ 与强子过程 $V + p \\to V + p$ 时的可靠性，并提出一个更成功的反应模型来描述质子上的轻/重矢量介子独家光产生，强调当前将 $V+p \\to V+p$ 数据与胶子分布、QCD迹反常或五夸克态产生相联系的做法为时过早。\n\n## 研究问题\n\n作者想解决的核心问题是：\n\n1. **VMD 的适用性危机**：矢量介子主导模型长期以来被用来将电磁探针（光子）与强子物理（矢量介子-质子散射）联系起来。作者质疑这种联系是否忠实可靠。\n2. **反应机制的混淆**：当前文献中，人们倾向于将 $V + p \\to V + p$ 数据直接与质子内胶子分布（GPDs）、QCD 迹反常效应、甚至五夸克态产生等物理量挂钩。作者认为这种联系缺乏坚实的反应理论基础。\n3. **需要更好的反应理论**：在建立这些联系之前，必须先有一个能正确描述独家矢量介子光产生过程的反应模型。\n\n## 方法\n\n需要指出的是，**这篇论文本身并非格点场论计算工作**，而是一篇关于反应模型和现象学分析的贡献性论文。其方法包括：\n\n1. **反应模型构建**：作者发展了一个描述质子独家光产生轻矢量介子（$\\rho$, $\\omega$, $\\phi$）和重矢量介子（$J/\\psi$, $\\Upsilon$）的可行反应模型。\n2. **$q\\bar{q}$ 内容暴露机制**：该模型能够揭示光子中 $q\\bar{q}$ 涨落的味结构和动量分布特征。\n3. **对 VMD 的批判性检验**：通过比较 VMD 预言与实验数据及模型计算结果，评估 VMD 作为联系电磁产生与强子散射的桥梁是否成立。\n4. **与\"涌现质量\"三支柱框架的联系**：论文在\"涌现质量\"（emergent mass）的三个支柱背景下讨论问题——即 Higgs 机制、动力学手征对称性破缺、以及 QCD 迹反常。\n\n> 注：论文摘要中未提及具体的格点 QCD 数值模拟、算法或张量网络技术。如果论文正文包含格点输入（如 GPDs 的格点计算），那属于辅助输入而非核心方法。\n\n## 主要结果\n\n1. **VMD 的忠实度受到挑战**：VMD 不能可靠地将 $e + p \\to e' + V + p$ 与 $V + p \\to V + p$ 联系起来，两者之间的映射关系存在实质性偏差。\n2. **反应模型的成功**：作者提出的独家光产生反应模型能够成功描述轻和重矢量介子的产生数据，并暴露出光子中 $q\\bar{q}$ 的味内容和动量分布。\n3. **对现有数据解读的警告**：将现有 $V + p \\to V + p$ 数据直接与质子内胶子分布、QCD 迹反常或五夸克态产生相联系的尝试是不成熟的。\n4. **需要改进的理论与更精确的数据**：在客观评估这些联系的有效性之前，必须发展更完善的反应理论并获取更高精度的实验数据。\n\n## 为什么值得关注\n\n1. **对 QCD 因子化框架的冲击**：矢量介子独家产生是研究质子 GPDs 和胶子分布的重要渠道。如果 VMD 不可靠，那么基于 VMD 提取的胶子信息可能存在系统偏差。\n2. **对\"涌现质量\"研究的警示**：论文在涌现质量三支柱框架下讨论问题，提示迹反常等非微扰 QCD 效应在矢量介子产生中的角色需要更仔细的理论处理。\n3. **对五夸克态搜索的影响**：近年来在 $J/\\psi$ 光产生中寻找五夸克态的努力，可能因反应机制的复杂性而需要重新审视。\n4. **对格点 QCD 的间接需求**：论文呼吁更好的反应理论，这暗示格点 QCD 在提供非微扰输入（如 GPDs、介子分布振幅）方面有重要角色，但也提醒格点社区注意与实验对接时的模型依赖性。\n5. **方法论层面的贡献**：论文提供了一个更可靠的替代反应模型，为未来实验分析和理论计算提供了新基准。\n\n## 方向标签\n\n- **Phenomenology**\n- **QCD**\n- **Hadron Structure**\n- **Vector Meson Production**\n- **GPDs**\n- **Emergent Mass**\n\n（注：论文本身不直接属于 Lattice QCD、BSM、Quantum Simulation、Machine Learning、Tensor Network 或 Finite Temperature 方向，但其结论对格点 QCD 计算 GPDs 和介子性质有间接参考价值。）\n\n## 阅读优先级\n\n**★★★☆☆（3/5 星）**\n\n**理由**：\n\n- **对格点 QCD 研究者**：如果你从事 GPDs、介子分布振幅或非微扰强子结构计算，这篇论文值得一读，因为它提醒你注意将格点结果与实验数据对接时的模型依赖性。但它不是格点方法论文，不会教你新技术。\n- **对现象学和实验分析研究者**：优先级较高（4 星），因为它直接挑战了矢量介子产生数据分析中的标准假设。\n- **对一般理论物理读者**：如果你关注 QCD 涌现质量和强子物理的交叉领域，这篇论文提供了有价值的批判性视角。\n- **扣分原因**：论文是批判性和模型构建性的，而非提供新的格点计算或算法突破；其影响更多在现象学层面而非格点技术层面。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:49.624918"
+  },
+  {
+    "id": "2609.36010v1",
+    "title": "A parameter independent analysis of the QCD chiral phase transition and its universal critical behaviour",
+    "authors": [
+      "Jishnu Goswami",
+      "Frithjof Karsch",
+      "Sabarnya Mitra",
+      "Christian Schmidt"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.36010v1",
+    "published": "2026-09-28T18:00:27Z",
+    "abstract": "We make use of unique properties of scaling functions to estimate the chiral phase transition temperature and corresponding universal critical parameters of this phase transition directly from (2+1)-flavor QCD simulations with highly improved staggered fermions on lattices with temporal extent $N_τ=8$. Working with an improved chiral order parameter for quantifying chiral symmetry breaking, we analyze the finite-volume dependence of this observable for a wide range of lattice volumes and light quark masses, and quantitatively estimate the deviations from the expected universal scaling behaviour as a function of the light-to-strange quark mass ratio.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文利用标度函数的独特性质，从 (2+1) 味 QCD 格点模拟中直接估计手征相变温度及其普适临界参数，并系统分析了有限体积和轻夸克质量对普适标度行为的偏离。\n\n## 研究问题\n作者想解决的核心问题是：如何从格点 QCD 模拟中**不依赖参数选择**地确定手征相变温度 $T_c$ 及其所属普适类（预期为 $O(4)$ 或 $U(2)\\times U(2)$ 标度行为）的临界参数。具体而言：\n\n1. 手征相变温度 $T_c$ 的精确确定一直是 QCD 相图研究中的核心难题，不同方法给出的结果存在系统性差异。\n2. 在有限格点体积和非零轻夸克质量下，手征对称性破缺序参量的标度行为会偏离无限体积、手征极限下的普适标度函数。\n3. 需要定量估计这些偏离如何依赖于轻-奇夸克质量比 $m_l/m_s$，从而为外推到手征极限提供可靠依据。\n\n## 方法\n- **格点作用量**：使用高度改进交错费米子（Highly Improved Staggered Fermions, HISQ）进行 (2+1) 味 QCD 模拟。\n- **格点规模**：时间方向 $N_\\tau = 8$，空间方向取多个不同体积以研究有限体积效应。\n- **序参量**：采用改进的手征序参量来量化手征对称性破缺。\n- **标度分析**：利用标度函数的普适性质（universal scaling functions），将有限体积、有限夸克质量下的序参量数据与预期普适标度行为进行对比。\n- **参数扫描**：在广泛的格点体积和轻夸克质量范围内进行分析，定量估计偏离普适标度行为的程度随 $m_l/m_s$ 的变化。\n- **核心思想**：通过标度函数本身的形状（而非拟合特定参数化形式）来提取 $T_c$ 和临界指数，从而减少对先验参数选择的依赖。\n\n## 主要结果\n1. **手征相变温度的估计**：从标度函数分析中直接提取了手征相变温度 $T_c$，该方法减少了对特定拟合形式的依赖。\n2. **普适临界参数的确定**：验证了手征相变属于预期的普适类，并提取了相应的临界指数和标度函数参数。\n3. **有限体积效应的量化**：系统展示了序参量随空间体积的变化，并确定了达到普适标度行为所需的体积阈值。\n4. **夸克质量依赖的偏离**：定量估计了偏离普适标度行为的程度作为 $m_l/m_s$ 的函数，表明在目前模拟的夸克质量范围内，偏离是可控制的但不可忽略。\n5. **方法学贡献**：展示了利用标度函数独特性质进行参数独立分析的可行性，为未来更高精度确定 $T_c$ 提供了新途径。\n\n## 为什么值得关注\n1. **QCD 相图的关键输入**：手征相变温度的精确值直接影响重离子碰撞实验（如 RHIC、LHC）中夸克-胶子等离子体形成的理论解释，以及中子星合并等天体物理过程的理解。\n2. **普适性验证**：手征相变是否属于 $O(4)$ 普适类是 QCD 临界现象研究的核心问题，该工作提供了基于第一性原理格点计算的直接检验。\n3. **方法学创新**：参数独立的分析策略减少了传统拟合方法中的系统不确定性，为格点 QCD 中临界现象研究树立了新标准。\n4. **为外推提供基础**：对 $m_l/m_s$ 依赖性的定量估计是向物理夸克质量外推的必要步骤，对理解手征极限行为至关重要。\n5. **与实验的桥梁**：更精确的 $T_c$ 和临界参数为重离子碰撞中手征磁效应、临界涨落等可观测量的理论预言提供了更可靠的输入。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Chiral phase transition\n- Universal critical behavior\n- QCD phase diagram\n\n## 阅读优先级\n⭐⭐⭐⭐（4/5）\n\n**理由**：\n- 对于从事格点 QCD 有限温度相变、临界现象和 QCD 相图研究的学者，这是**必读**文献，因为它直接关系到 $T_c$ 的精确确定和普适类验证。\n- 对于更广泛的重离子碰撞唯象学和 QCD 热力学研究者，该工作提供了重要的理论基准。\n- 方法学上利用标度函数进行参数独立分析的思想具有推广价值，值得关注。\n- 扣一星的原因：该工作基于 $N_\\tau=8$ 的格点，尚未进行连续极限外推，且未包含 $N_\\tau=6,10,12$ 等更细格点的系统比较，因此最终精度仍有提升空间。此外，论文主要聚焦于方法展示和有限体积/质量依赖性的量化，而非给出最终精确的 $T_c$ 值。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-09-30T05:49:56.875243"
   }
 ]
