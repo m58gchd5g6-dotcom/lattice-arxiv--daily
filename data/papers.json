@@ -4271,5 +4271,152 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-01T06:20:44.312992"
+  },
+  {
+    "id": "2610.02169v1",
+    "title": "Drell-Yan lepton pair production from low to high transverse momentum",
+    "authors": [
+      "Benoît Assi",
+      "Enrico Bothmann",
+      "John Campbell",
+      "Christian Gütschow",
+      "Stefan Höche",
+      "Wan-Li Ju",
+      "Max Knobbe",
+      "Marek Schönherr",
+      "Jesse Thaler",
+      "Michael L. Wagman"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.02169v1",
+    "published": "2026-10-01T17:56:04Z",
+    "abstract": "We present a technique for computing Drell-Yan lepton pair production at particle-level that achieves N$^3$LO and approximate N$^4$LL$'$ accuracy at small to moderate transverse momentum, tree-level precision for $Z+4$, $5$, and $6$ jets, and approximate NLO EW precision at high transverse momentum. A crucial non-perturbative input, the Collins-Soper kernel, is obtained from continuum-limit lattice QCD results. High-precision theory results are recast into strictly positive event weights using an information-theoretic approach based on the maximum entropy principle.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文把连续极限格点 QCD 计算得到的 Collins-Soper 核作为关键非微扰输入，构建了一个可在粒子层面同时覆盖低、中、高横动量区域的 Drell-Yan 轻子对产生的高精度理论框架，并借助最大熵原理将高精度理论结果转化为严格为正的事件权重，从而实现与蒙特卡洛事件生成器兼容的匹配。\n\n## 研究问题\n\n作者想解决的核心问题是：如何在 Drell-Yan 轻子对产生过程中，实现从低横动量到高横动量的统一高精度理论描述，并使之能够以粒子层面事件权重的方式用于实验分析。\n\n具体而言，Drell-Yan 过程在不同横动量区域需要不同的理论工具：\n\n- 低横动量区域：需要重求和大对数，依赖 Collins-Soper-Sterman 演化，其中 Collins-Soper 核是关键非微扰输入；\n- 中等横动量区域：需要固定阶微扰计算与重求和的匹配；\n- 高横动量区域：需要高阶微扰计算，甚至电弱修正，以及多喷注末态。\n\n传统上这些区域由不同工具分别处理，难以统一。此外，高精度理论结果（如 N³LO 级别的截面）往往不是正定的，难以直接转化为蒙特卡洛事件权重。因此，作者希望：\n\n1. 用格点 QCD 提供 Collins-Soper 核的第一性原理输入；\n2. 实现跨横动量区域的高精度统一计算；\n3. 用信息论方法将理论结果转化为严格正的事件权重。\n\n## 方法\n\n这篇论文的方法核心可以概括为“格点 QCD 输入 + 高精度微扰计算 + 最大熵事件权重”。\n\n**1. Collins-Soper 核的格点 QCD 计算**\n\nCollins-Soper 核是横动量依赖部分子分布演化中的关键非微扰函数，描述夸克横向动量随能标演化。作者使用连续极限格点 QCD 结果来获取该核。具体而言，这通常涉及：\n\n- 计算准 TMD 矩阵元或相关关联函数；\n- 进行重整化；\n- 做匹配到 TMD 因子化方案；\n- 取连续极限和外推。\n\n论文强调该输入来自 continuum-limit lattice QCD，说明作者重视系统误差控制，而非单点格点数据。\n\n**2. 微扰计算精度**\n\n论文声称达到：\n\n- 小到中等横动量：N³LO 和近似 N⁴LL′ 精度；\n- 高横动量：Z+4、5、6 喷注的树图精度；\n- 高横动量电弱修正：近似 NLO EW 精度。\n\n这意味着作者将固定阶计算、横动量重求和、多喷注末态和电弱修正整合到一个框架中。\n\n**3. 最大熵原理转化为正事件权重**\n\n高精度理论截面可能在某些相空间区域出现负权重，这在蒙特卡洛事件生成中难以处理。作者使用基于最大熵原理的信息论方法，将理论结果重铸为严格正的事件权重。最大熵方法通常用于在满足若干约束的条件下构造最接近某种先验分布的概率分布，这里则用于构造与高精度理论预测一致的正权重分布。\n\n**4. 粒子层面事件生成**\n\n最终输出是粒子层面的事件权重，意味着该方法不仅给出截面，还能与事件生成器结合，用于实验模拟和分析。\n\n## 主要结果\n\n论文的主要结果包括：\n\n1. **实现了跨横动量区域的统一高精度 Drell-Yan 计算**：从低横动量到高横动量，分别达到 N³LO + 近似 N⁴LL′、多喷注树图精度和近似 NLO 电弱精度。\n\n2. **Collins-Soper 核来自连续极限格点 QCD**：这是将格点 QCD 第一性原理计算直接用于高能碰撞现象学的重要实例，减少了该非微扰输入的不确定性。\n\n3. **高精度理论结果被转化为严格正的事件权重**：通过最大熵原理，作者解决了负权重问题，使得高精度理论预测可以直接用于蒙特卡洛事件生成和实验分析。\n\n4. **方法具有可扩展性和实用性**：该框架不仅适用于 Drell-Yan，还可能推广到其他需要 TMD 重求和和多喷注匹配的过程。\n\n## 为什么值得关注\n\n这篇论文对格点 QCD、QCD 现象学和理论物理社区都有重要意义：\n\n**对格点 QCD 社区：**\n\n- 展示了格点 QCD 计算可以直接为高能碰撞过程提供关键非微扰输入，特别是 Collins-Soper 核。\n- 强调了连续极限和外推的重要性，为格点计算与现象学结合树立了范例。\n- 提升了格点 QCD 在 TMD 物理和横动量重求和中的可见度和影响力。\n\n**对 QCD 现象学社区：**\n\n- 提供了一个从低到高横动量统一的高精度 Drell-Yan 计算框架。\n- 解决了高精度理论结果与蒙特卡洛事件生成之间的正权重问题。\n- 对 LHC 和未来对撞机上的 W/Z 产生、精密电弱测量、TMD 物理等都有直接应用价值。\n\n**对理论物理社区：**\n\n- 最大熵原理用于事件权重构造是一个有趣的信息论与量子场论交叉方法。\n- 该框架可能启发其他高精度计算中负权重问题的解决方案。\n\n**对实验社区：**\n\n- 粒子层面正权重事件可以直接用于实验模拟、 unfolding 和参数提取。\n- 高精度理论预测有助于减少系统误差，提高精密测量灵敏度。\n\n## 方向标签\n\n- Lattice QCD\n- QCD Phenomenology\n- TMD Physics\n- Collider Physics\n- Machine Learning / Information Theory\n- Precision Calculations\n\n## 阅读优先级\n\n**★★★★☆**\n\n理由：\n\n- 如果你从事格点 QCD 与高能现象学交叉研究，这篇论文非常值得精读，因为它展示了格点计算如何直接进入高精度对撞机物理。\n- 如果你关注 TMD 物理、Collins-Soper 核或横动量重求和，这篇论文提供了最新的高精度框架和格点输入。\n- 如果你从事事件生成、蒙特卡洛模拟或实验分析，最大熵正权重方法可能对你直接有用。\n- 如果你主要关注纯格点技术或纯微扰 QCD，论文的技术细节可能不是最核心，但其交叉方法仍有启发意义。\n- 扣一星是因为论文的具体技术实现和系统误差细节需要仔细评估，且部分精度声明（如近似 N⁴LL′）可能需要进一步验证和独立复现。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T05:59:48.529076"
+  },
+  {
+    "id": "2610.01988v1",
+    "title": "Effective field theory of scalar glueballs: Form factors and interaction radii",
+    "authors": [
+      "Adamu Issifu",
+      "Orlando Oliveira",
+      "Tobias Frederico"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.01988v1",
+    "published": "2026-10-01T16:27:03Z",
+    "abstract": "We develop a gauge-invariant effective field theory for scalar glueball interactions based on the Yang-Mills gluon condensate. Starting from a coherent-state formulation of the Yang-Mills vacuum, we derive an effective Lagrangian for the scalar glueball and its interactions with gluons. The resulting crossing-symmetric amputated four-gluon Green's function is projected onto the color-singlet $J^{PC}=0^{++}$ channel, yielding a normalized scalar glueball form factor that factorizes into universal kinematic structures and an intrinsic glueball function. The formalism predicts a parameter-free effective interaction radius for the ground-state scalar glueball with resonance $f_0(1710)$, $r_{\\rm int}=\\sqrt{6}/m_φ=0.28$ fm, which is in excellent agreement with recent lattice Yang-Mills determinations of the mass-radius ($r=0.263(31)$ fm). The predicted momentum dependence of the normalized form factor is consistent with lattice Yang-Mills gravitational form factor data, with the $f_0(1710)$ candidate providing the best overall fit and $r_{\\rm int}$. Inclusion of the first excited $0^{++}$ glueball produces modest corrections to the interaction radius ($r_{\\rm int}^*=0.240$ fm) while yielding stable and kinematically robust modifications of the form factor. This framework provides a systematic bridge between effective field theory and first-principles lattice Yang-Mills calculations of scalar glueball dynamics.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文从 Yang-Mills 胶子凝聚出发，构建了一个规范不变的标量胶球有效场论，推导出与格点 Yang-Mills 结果高度一致的标量胶球形状因子和相互作用半径，为有效场论与第一性原理格点计算之间搭建了系统桥梁。\n\n## 研究问题\n作者想解决的核心问题是：如何从有效场论的角度，系统描述标量胶球（特别是基态 \\(0^{++}\\) 胶球，候选共振态 \\(f_0(1710)\\)）的形状因子、相互作用半径及其与胶子的相互作用，并将这些预言与格点 Yang-Mills 的引力形状因子数据及质量-半径关系进行定量对比。具体而言：\n\n1. 如何从 Yang-Mills 真空的相干态表述出发，构造一个规范不变的标量胶球有效拉氏量？\n2. 能否得到一个参数自由的相互作用半径预言，并与格点结果比较？\n3. 标量胶球形状因子的动量依赖行为是否与格点引力形状因子数据一致？\n4. 第一激发态 \\(0^{++}\\) 胶球的修正有多大？\n\n## 方法\n本文主要使用的是**有效场论（EFT）方法**，而非直接的格点计算。具体技术路线包括：\n\n1. **相干态表述**：从 Yang-Mills 真空的相干态出发，描述胶子凝聚 \\(\\langle G_{\\mu\\nu}^a G^{a\\mu\\nu}\\rangle\\)。\n2. **有效拉氏量构造**：推导标量胶球场与胶子场的有效相互作用拉氏量，保持规范不变性。\n3. **四点胶子格林函数**：得到交叉对称的截断四点胶子格林函数，并投影到色单态 \\(J^{PC}=0^{++}\\) 通道。\n4. **形状因子分解**：将投影结果表示为普适运动学结构乘以一个内禀胶球函数，得到归一化的标量胶球形状因子。\n5. **与格点数据对比**：将预言的有效相互作用半径 \\(r_{\\rm int}=\\sqrt{6}/m_\\phi\\) 和形状因子动量依赖与近期格点 Yang-Mills 的引力形状因子数据及质量-半径测定进行对比。\n6. **激发态修正**：纳入第一激发 \\(0^{++}\\) 胶球，计算其对相互作用半径和形状因子的修正。\n\n注意：本文本身**不包含新的格点模拟**，而是以格点 Yang-Mills 结果作为基准进行验证和比较。\n\n## 主要结果\n1. **参数自由的相互作用半径预言**：基态标量胶球（对应 \\(f_0(1710)\\)）的有效相互作用半径为\n   \\[\n   r_{\\rm int}=\\frac{\\sqrt{6}}{m_\\phi}=0.28\\ \\text{fm},\n   \\]\n   与近期格点 Yang-Mills 测定的质量-半径结果 \\(r=0.263(31)\\) fm 高度一致。\n\n2. **形状因子与格点数据一致**：预言的归一化形状因子动量依赖行为与格点 Yang-Mills 引力形状因子数据相符，其中 \\(f_0(1710)\\) 候选态给出最佳整体拟合。\n\n3. **激发态修正温和**：纳入第一激发 \\(0^{++}\\) 胶球后，相互作用半径修正为 \\(r_{\\rm int}^*=0.240\\) fm，修正幅度适中；形状因子的修改稳定且运动学上稳健。\n\n4. **理论框架的系统性**：该形式化方法为有效场论与第一性原理格点 Yang-Mills 计算之间提供了系统性的桥梁，可用于标量胶球动力学的进一步研究。\n\n## 为什么值得关注\n1. **连接有效场论与格点 QCD**：胶球是 QCD 非微扰动力学的重要预言，但实验识别困难。本文提供了一种从有效场论出发、可直接与格点数据定量对比的框架，有助于弥合两种方法之间的鸿沟。\n\n2. **参数自由的预言**：相互作用半径 \\(r_{\\rm int}=\\sqrt{6}/m_\\phi\\) 不引入额外自由参数，却与格点结果吻合，这增强了对标量胶球有效描述的信任度。\n\n3. **对 \\(f_0(1710)\\) 胶球解释的支持**：结果支持 \\(f_0(1710)\\) 作为标量胶球候选态，对强子谱学和实验搜寻有参考价值。\n\n4. **引力形状因子的关联**：形状因子与格点引力形状因子数据的对比，涉及胶球的质量与力学性质（如半径、压缩性等），对理解 QCD 非微扰真空结构和胶球内部结构有重要意义。\n\n5. **方法论推广潜力**：该相干态 + 有效拉氏量的方法可能推广到其他量子数通道的胶球、混杂态，甚至有限温度或密度情形。\n\n## 方向标签\n- Lattice QCD\n- Effective Field Theory\n- Glueballs\n- Yang-Mills\n- Hadron Physics\n- Form Factors\n\n## 阅读优先级\n★★★★☆（4/5 星）\n\n**理由**：\n- 对标量胶球、胶子凝聚、有效场论与格点 QCD 交叉领域的研究者，本文具有较高参考价值，尤其是参数自由的半径预言与格点数据的一致性值得关注。\n- 论文本身不包含新的格点计算，方法以解析 EFT 推导为主，因此对纯格点技术开发者而言优先级略低。\n- 若关注 \\(f_0(1710)\\) 的胶球解释、引力形状因子或胶球有效理论，本文应列入必读或重点阅读。\n- 由于结果依赖格点数据的验证，且激发态修正和系统误差仍需进一步检验，未给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T05:59:55.544346"
+  },
+  {
+    "id": "2610.01925v1",
+    "title": "Thermal axion production in QCD from the lattice",
+    "authors": [
+      "Luis Neubauer",
+      "Guy D. Moore"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.01925v1",
+    "published": "2026-10-01T15:58:34Z",
+    "abstract": "Thermal axion production in the early Universe is controlled by the QCD topological-charge-density spectral function evaluated on the light-cone as a function of momentum k. We show how weighted integrals of this quantity can be computed using Euclidean lattice QCD without any analytic continuation, similar to what Harvey Meyer and collaborators have recently done for the photon production rate. We then test the approach in pure-glue QCD at T=1.5 Tc, finding that it is feasible to extract at least one and possibly two finite weighted k-integrals of the k-dependent production rate. This opens the possibility for extractions in full QCD at temperatures around and somewhat above the crossover temperature, where other methods are not reliable.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出并首次在纯胶子格点 QCD 中验证了一种无需解析延拓、直接从欧几里得格点数据提取热轴子产生率加权积分的方法，为在 QCD 相变温度附近计算轴子热产生提供了可行路径。\n\n## 研究问题\n作者想解决什么问题？\n\n早期宇宙中热轴子的产生率由 QCD 拓扑荷密度谱函数在光锥上的值决定，即需要计算谱函数在动量 k 处的值 ρ(k)（更准确地说，是 k²ρ(k) 形式的光锥极限）。然而，格点 QCD 天然工作在欧几里得时空，要得到谱函数通常需要解析延拓，而解析延拓在数值上极不稳定、系统误差难以控制。因此核心问题是：\n\n**能否绕过解析延拓，直接从欧几里得格点 QCD 计算中提取热轴子产生率的相关物理量？**\n\n具体而言，作者希望计算产生率的加权 k-积分（moments），而不是逐点重建谱函数。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **理论基础**：借鉴 Harvey Meyer 及其合作者近期为光子产生率发展的方法。关键思想是：热产生率对 k 的某些加权积分可以表示为欧几里得关联函数（拓扑荷密度两点函数）的特定组合，无需解析延拓。\n- **物理量**：QCD 拓扑荷密度谱函数在光锥上的加权积分，与轴子产生率直接相关。\n- **格点设置**：\n  - 纯胶子 QCD（pure-glue QCD），即不考虑动力学夸克。\n  - 温度 T = 1.5 Tc（Tc 为纯胶子 QCD 的禁闭-去禁闭相变温度）。\n  - 使用欧几里得格点 QCD 计算拓扑荷密度两点关联函数。\n- **数值技术**：\n  - 计算拓扑荷密度两点函数的欧几里得时间依赖。\n  - 构造特定的加权积分（moments），这些积分对谱函数在光锥上的行为敏感。\n  - 检验能否从格点数据中稳定提取至少一个、可能两个有限的加权 k-积分。\n- **无需解析延拓**：整个方法完全在欧几里得空间中操作，避免了逆 Laplace 变换或最大熵方法等解析延拓步骤。\n\n## 主要结果\n总结最重要发现。\n\n1. **可行性验证**：在纯胶子 QCD、T = 1.5 Tc 的条件下，作者成功从格点数据中提取了至少一个、可能两个有限的加权 k-积分（moments）of the k-dependent axion production rate。\n2. **方法有效性**：证明了无需解析延拓即可从欧几里得格点 QCD 获得热轴子产生率的部分信息，这与 Meyer 等人在光子产生率上的结论一致。\n3. **精度与限制**：提取的积分数量有限（1-2 个），说明当前格点精度和统计量下只能可靠获得低阶矩。更高阶矩或逐点谱函数信息仍难以获取。\n4. **向全 QCD 推广的前景**：纯胶子结果是第一步，表明在完整 QCD（含动力学夸克）中、在 QCD 相变温度附近及略高温度下进行类似计算是可行的。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n1. **轴子宇宙学**：热轴子产生率是计算轴子暗物质丰度、约束轴子衰变常数和轴子质量的关键输入。精确的 QCD 计算对轴子宇宙学至关重要。\n2. **规避解析延拓难题**：解析延拓是格点 QCD 中计算谱函数的核心瓶颈。该工作展示了绕过这一瓶颈的新途径，具有方法论上的普遍意义。\n3. **填补温度窗口空白**：在 QCD 相变温度附近（T ~ Tc 到几倍 Tc），微扰方法不可靠，而格点方法此前难以给出产生率。该工作开辟了在这一关键温度窗口进行第一性原理计算的可能性。\n4. **与光子产生率方法的呼应**：将 Meyer 等人为光子产生率发展的技术推广到轴子产生率，展示了这类方法的通用性，可能启发更多类似应用（如中微子产生率、引力波相关谱函数等）。\n5. **纯胶子到全 QCD 的路线图**：虽然当前结果是纯胶子的，但它为完整 QCD 计算提供了明确的下一步方向，对格点社区有直接的指导意义。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- BSM（轴子物理与暗物质）\n- Axion cosmology\n- Spectral function / transport coefficients\n\n## 阅读优先级\n★★★★☆（4/5 星）\n\n**理由**：\n- 对于研究轴子宇宙学、早期宇宙 QCD 相变、或格点谱函数方法的学者，这篇论文是**必读**的，因为它提出了一个切实可行的新方法来解决一个长期存在的计算难题。\n- 方法本身借鉴自光子产生率的工作，技术门槛适中，但应用前景广阔。\n- 扣掉一星是因为当前结果仅在纯胶子 QCD 中验证，尚未推广到全 QCD，且只能提取 1-2 个矩，距离精确的轴子产生率计算还有距离。但对于方法学论文而言，这已经是重要的概念验证。\n- 如果你的研究不涉及轴子、早期宇宙或有限温度谱函数，优先级可降至 2-3 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T06:00:02.776290"
+  },
+  {
+    "id": "2610.01396v1",
+    "title": "Gravitational D-form factors of the nucleon and pion with mixing between two-quark and four-quark states",
+    "authors": [
+      "Mamiya Kawaguchi",
+      "Yao Ma",
+      "Yong-Liang Ma"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.01396v1",
+    "published": "2026-10-01T10:01:54Z",
+    "abstract": "We investigate the gravitational $D$-form factors of the nucleon and pion within an extended linear sigma model (eLSM) that incorporates both two-quark and four-quark states, as well as nucleon fields. Within the scalar-meson-dominance picture, we find that meson mixing between two-quark and four-quark states suppresses the nucleon $D$-form factor and leads to agreement with the lattice-QCD results. Interestingly, a quantitatively similar suppression was previously found in the parity doublet model (PDM) as a consequence of a nonzero chiral invariant component of the nucleon mass. This suggests that the effects of meson mixing and the chiral invariant mass are difficult to distinguish from the nucleon $D$-form factor alone. We therefore examine the pion $D$-form factor in the chiral limit. While its value in the forward limit remains fixed at $-1$ in both the eLSM and the PDM, meson mixing modifies its momentum-transfer dependence. In contrast, the chiral invariant mass does not directly affect the pion $D$-form factor. These results suggest that a combined analysis of the nucleon and pion $D$-form factors can provide further insight into the mass decomposition of the nucleon and the quark composition of mesons.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用扩展线性 sigma 模型（eLSM）研究了核子和π介子的引力 D-form factor，发现两夸克与四夸克态之间的介子混合会压低核子 D-term 并使其与格点 QCD 结果一致，同时指出该效应与 parity doublet model 中手征不变质量效应在核子 D-term 上难以区分，但π介子 D-form factor 的动量依赖可以区分二者。\n\n## 研究问题\n\n作者想解决的核心问题是：\n\n1. **核子 D-term 的“压低”来源是什么？** 格点 QCD 给出的核子 D-form factor 比朴素模型预期偏小。此前 parity doublet model（PDM）将其归因于核子质量中的手征不变分量（chiral invariant mass）。本文则提出另一种可能：两夸克（\\(\\bar q q\\)）与四夸克（\\(\\bar q \\bar q q q\\)）介子态之间的混合也会压低核子 D-term。\n\n2. **这两种机制能否区分？** 如果仅看核子 D-form factor，介子混合效应与手征不变质量效应在数值上非常相似，难以辨别。作者因此转向π介子的 D-form factor，考察其在手征极限下的行为，希望找到一个可区分的观测量。\n\n3. **对核子质量分解和介子夸克组成的启示。** 最终目标是借助核子与π介子 D-form factor 的联合分析，进一步理解核子质量的来源以及介子的内部夸克结构。\n\n## 方法\n\n本文是**有效场论/唯象模型研究**，不是直接的格点计算。主要方法包括：\n\n- **扩展线性 sigma 模型（eLSM）**：在传统线性 sigma 模型基础上，同时引入两夸克介子态（\\(q\\bar q\\)）和四夸克介子态（\\(qq\\bar q\\bar q\\)），以及核子场。介子 sector 包含标量、赝标量等自由度，并允许两夸克与四夸克态之间的混合。\n\n- **标量介子主导（scalar-meson-dominance）图像**：引力形状因子的计算通过标量介子交换来实现，即核子/π介子与引力源的耦合经由标量介子中介。\n\n- **D-form factor 的计算**：在模型内计算核子和π介子的引力 D-form factor \\(D(t)\\)，其中 \\(t\\) 为动量转移平方。关注前向极限 \\(D(0)\\) 以及动量转移依赖。\n\n- **与格点 QCD 结果对比**：将模型给出的核子 D-term 与已有格点 QCD 数据比较，检验介子混合是否能解释格点结果。\n\n- **与 parity doublet model（PDM）对比**：将 eLSM 结果与 PDM 中手征不变质量机制的预言进行对比，特别关注π介子 D-form factor 在手征极限下的行为。\n\n- **手征极限分析**：在 \\(m_\\pi \\to 0\\) 极限下考察π介子 D-form factor，以区分介子混合效应与手征不变质量效应。\n\n## 主要结果\n\n1. **介子混合压低核子 D-form factor**：在 eLSM 中，两夸克与四夸克介子态之间的混合会显著压低核子 D-form factor，使其与格点 QCD 结果一致。这提供了一种不依赖手征不变质量的替代解释。\n\n2. **与 PDM 的简并性**：此前 PDM 中发现，核子质量中的非零手征不变分量也会导致类似的压低。两种机制在核子 D-form factor 上给出定量相似的结果，因此**仅凭核子 D-form factor 无法区分介子混合效应和手征不变质量效应**。\n\n3. **π介子 D-form factor 的区分能力**：\n   - 在手征极限下，eLSM 和 PDM 给出的前向极限值都固定为 \\(D_\\pi(0) = -1\\)。\n   - 但**介子混合会改变π介子 D-form factor 的动量转移依赖**。\n   - 相反，**手征不变质量不直接影响π介子 D-form factor**。\n   - 因此，π介子 D-form factor 的动量依赖可以作为区分两种机制的观测量。\n\n4. **联合分析的提议**：核子与π介子 D-form factor 的联合分析可以提供关于核子质量分解和介子夸克组成的额外信息。\n\n## 为什么值得关注\n\n- **对核子质量分解的意义**：核子 D-term 与核子内部压力分布和力学性质密切相关。理解 D-term 的来源（手征不变质量 vs. 介子混合）直接关系到我们如何理解核子质量的起源，这是当前核子结构研究的前沿问题之一。\n\n- **对格点 QCD 的互补性**：格点 QCD 已经给出了核子 D-form factor 的精确数据，但仅凭核子数据难以区分不同物理机制。本文指出π介子 D-form factor 的动量依赖可能是关键，这为格点 QCD 计算提供了明确的靶点。\n\n- **对介子内部结构的启示**：四夸克态与两夸克态的混合是介子谱学中的重要问题。本文表明引力形状因子可能对介子的夸克组成敏感，为研究四夸克态提供了一种新途径。\n\n- **有效模型与格点的桥梁**：本文展示了如何用有效模型解释格点结果，并进一步提出可区分的观测量，体现了模型研究与格点计算之间的良性互动。\n\n- **对引力形状因子研究的推动**：引力形状因子（包括 D-term）是近年来核子结构研究的热点，本文将其扩展到π介子并强调联合分析的重要性，可能引导后续更多理论和格点工作。\n\n## 方向标签\n\n- Lattice QCD\n- Hadron structure\n- Gravitational form factors\n- Effective field theory\n- Chiral symmetry\n- Meson mixing\n- Nucleon mass decomposition\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：\n\n- **对格点 QCD 和核子结构研究者**：值得一读。本文直接与格点 QCD 的核子 D-term 结果对话，并提出了π介子 D-form factor 作为区分机制的新观测量，对格点计算有明确的参考价值。\n- **对有效模型和手征对称性研究者**：较有价值。eLSM 中两夸克-四夸克混合的处理以及手征极限分析具有方法学意义。\n- **对更广泛的 QCD 社区**：优先级中等。本文是模型研究而非格点计算，结论需要格点或实验进一步检验；且 D-form factor 本身是较为专门的观测量。\n- **局限性**：模型依赖较强，eLSM 的截断和参数选择可能影响定量结论；π介子 D-form factor 的动量依赖在格点上是否可精确计算仍有待验证。\n\n总体而言，这是一篇连接有效模型与格点 QCD 的有趣工作，适合对核子结构、引力形状因子和介子混合感兴趣的读者精读，但对一般 QCD 研究者而言优先级中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T06:00:11.323578"
+  },
+  {
+    "id": "2610.00546v1",
+    "title": "Generative Modeling of Stochastic Dynamics for Long-Time Evolution",
+    "authors": [
+      "Yang-yang Tan",
+      "Jinyang Li",
+      "Lingxiao Wang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.00546v1",
+    "published": "2026-09-30T18:26:34Z",
+    "abstract": "Exact stochastic equations for non-equilibrium dynamics are rarely accessible. We show that the long-time evolution of stochastic dynamics can be predicted from configuration pairs at a fixed short time lag, without knowledge of the equation of motion. Generative diffusion models learn the finite-time transition kernel from these pairs, and iterating it propagates the dynamics far beyond the training lag. For two-dimensional Model B, the diffusive dynamics of a conserved order parameter, the learned kernels reproduce dynamic critical scaling and self-similar $t^{1/3}$ coarsening. Agreement with direct simulations persists on lattices twice the largest training size and for initial ensembles absent from training. For driven colloids in a periodic optical potential, ten minutes of measured trajectories suffice to predict the particle current and mean passage time over the next twenty minutes within experimental uncertainty. Short-time observations thus contain the information needed to predict emergent non-equilibrium dynamics at much longer times.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文表明，仅凭固定短时间间隔的构型对，生成式扩散模型就能学习随机动力学的有限时间转移核，并通过迭代该核把演化外推到远长于训练时间尺度，在二维 Model B 中重现动态临界标度和 $t^{1/3}$ 粗化，并在驱动胶体实验数据上预测后续二十分钟的电流与平均通过时间。\n\n## 研究问题\n作者想解决的问题是：对于非平衡随机动力学，精确的随机演化方程往往不可得或难以直接求解，那么能否在不显式知道运动方程的情况下，仅从短时间观测数据预测长时间演化？具体而言，他们希望验证短时间构型对是否已经包含足够信息，使得学习到的转移核在迭代后仍能保持正确的长时集体行为、临界标度和实验可观测量的预测能力。\n\n## 方法\n论文的核心方法是把随机动力学的有限时间转移核视为一个可从数据中学习的对象。作者使用生成式扩散模型（generative diffusion models）从固定短时间滞后 $\\Delta t$ 的构型对中学习该转移核，然后通过反复迭代这一学习到的核来传播动力学，从而外推到远超训练滞后的时间。\n\n在物理模型方面，主要数值实验是二维 Model B，即守恒序参量的扩散动力学，用于检验学习到的核能否重现动态临界标度和自相似 $t^{1/3}$ 粗化行为。作者还在两倍于最大训练尺寸的格点上、以及训练集中未出现的初始系综上测试泛化能力。此外，他们将该框架应用于周期性光学势中的驱动胶体系统，用十分钟实测轨迹预测随后二十分钟的粒子电流和平均通过时间。\n\n从格点场论角度看，这里涉及的是经典随机场动力学的数据驱动建模，而不是传统 Monte Carlo 更新或分子动力学积分；关键数值技术是扩散生成模型、转移核学习与迭代传播。\n\n## 主要结果\n最重要的发现包括：\n\n1. 生成式扩散模型能够从短时间构型对中学习二维 Model B 的有限时间转移核，并且迭代该核可以正确传播动力学到远长于训练滞后的时间。\n2. 学习到的核重现了动态临界标度和自相似 $t^{1/3}$ 粗化，说明模型不仅拟合了短时局部细节，还捕捉到了长时普适行为。\n3. 与直接模拟的吻合在比最大训练尺寸大一倍的格点上仍然成立，并且在训练中未出现的初始系综上也成立，表明方法具有尺寸和系综泛化能力。\n4. 在驱动胶体实验中，十分钟测量轨迹足以预测接下来二十分钟的粒子电流和平均通过时间，且落在实验不确定度范围内。\n5. 总体结论是：短时间观测包含预测长时间涌现非平衡动力学所需的信息。\n\n## 为什么值得关注\n对 lattice/QCD/理论物理社区而言，这篇论文的重要性在于它提出了一种数据驱动的长时演化预测范式，可能绕过传统上对精确随机方程、长时间数值积分或巨大计算成本的依赖。在格点场论中，许多问题涉及随机动力学、临界慢化、粗化、相变动力学和有限温度非平衡过程；如果短时构型对足以学习转移核并迭代到长时，那么这可能为研究动态临界现象、守恒序参量动力学和复杂非平衡系统提供新的数值工具。\n\n此外，该方法与机器学习、生成模型和统计物理的交叉非常明显。它不直接替代第一性原理计算，但可能用于以下场景：精确演化方程未知、长时间直接模拟过贵、或实验数据有限时。对 QCD 相关研究而言，虽然论文没有直接处理规范场或费米子，但其“从短时数据学习转移核并外推长时行为”的思想，可能启发对随机量子化、实时动力学、有限温度相变动力学或有效场论中非平衡演化的数据驱动建模。\n\n## 方向标签\n- Machine Learning\n- Finite temperature\n- Quantum simulation\n- Lattice field theory methods\n\n## 阅读优先级\n4 星。\n\n原因是：论文主题与 lattice field theory 中的非平衡动力学、临界标度和数据驱动数值方法高度相关，方法新颖且结果有实验验证，对机器学习与理论物理交叉方向有较强启发性。但它并非直接针对 Lattice QCD 或 BSM 计算，因此对以 QCD 为主的研究者来说，优先级略低于直接涉及格点规范场或费米子算法的论文。若研究兴趣在随机动力学、临界现象、生成模型或非平衡场论，则值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T06:00:18.426465"
+  },
+  {
+    "id": "2610.00484v1",
+    "title": "Glueballs and fractional anomalous determinants at nonzero $θ$, and the decays of the X(2370)",
+    "authors": [
+      "Francesco Giacosa",
+      "Shahriyar Jafarzade",
+      "Győző Kovács",
+      "Péter Kovács",
+      "Robert D. Pisarski",
+      "Fabian Rennecke"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.00484v1",
+    "published": "2026-09-30T18:00:16Z",
+    "abstract": "Using fractional anomalous determinants, we construct a model of the trace and axial anomalies of a $SU(3)$ gauge theory at nonzero $θ$ angle through the couplings to scalar and pseudoscalar glueballs. In the pure gauge theory, we reproduce the $θ$ dependence of the vacuum energy and the scalar-glueball mass from the lattice, and estimate the jump in the topological charge density for the first-order transition at $θ= π$. In QCD, the coupling of a pseudoscalar glueball to fractional anomalous determinants describes all of the four three-pseudoscalar decay channels of the $0^{-+}$ glueball candidate $X(2370)$ measured by the BESIII collaboration. Measuring the decay rates for $ηηη$ and $ηηη'$ can provide a stringent test of the model.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用“分数反常行列式”（fractional anomalous determinants）构造了一个描述 SU(3) 规范理论在非零 θ 角下迹反常与轴反常的有效模型，既能重现纯规范理论中真空能量和标量胶球质量的 θ 依赖，又能统一描述 BESIII 测量的 X(2370) 候选者的四个三赝标量衰变道。\n\n## 研究问题\n\n作者想解决的核心问题有两个层面：\n\n1. **纯规范理论层面**：如何在非零 θ 角下，用一个有效的、与反常结构一致的模型来同时描述真空能量密度、标量胶球质量以及 θ=π 处一阶相变时拓扑荷密度的跳变，并与格点结果对照。\n2. **QCD 层面**：$0^{-+}$ 胶球候选者 X(2370) 被 BESIII 观测到多个三赝标量衰变道（涉及 η、η′），如何用一个与 QCD 反常结构相容的框架统一解释这些衰变率，并对尚未精确测量的道（如 ηηη、ηηη′）给出可检验预言。\n\n本质上，作者试图把“反常”这一 QCD 非微扰核心结构，作为连接纯规范格点物理与胶球唯象衰变的桥梁。\n\n## 方法\n\n- **分数反常行列式**：这是本文的核心工具。作者不直接使用完整的费米子行列式，而是引入带有分数幂次的、携带反常相位的行列式因子，用来在有效拉氏量中正确实现迹反常（尺度反常）和轴反常（$U(1)_A$ 反常）。\n- **有效模型构造**：通过标量胶球场 $G$ 和赝标量胶球场 $\\tilde G$ 与分数反常行列式的耦合，写出同时编码两种反常的有效势/拉氏量。\n- **纯规范部分**：在无夸克极限下，计算真空能量 $E(\\theta)$、标量胶球质量 $m_G(\\theta)$，并与已有格点数据（θ 依赖）做对比；进一步估计 θ=π 一阶相变处拓扑荷密度的跳变 $\\Delta\\langle q\\rangle$。\n- **QCD 部分**：把赝标量胶球与分数反常行列式的耦合展开，得到 $0^{-+}$ 胶球到三个赝标量介子的有效顶点，计算 X(2370) 的四个衰变道宽度/分支比，与 BESIII 测量比较。\n- 论文本身**不是**一篇新的格点计算论文，而是以格点结果为输入/基准的有效理论建模工作；方法上属于连续场论有效模型 + 反常匹配 + 唯象拟合。\n\n## 主要结果\n\n1. **纯规范理论**：模型成功重现了格点给出的真空能量随 θ 的变化以及标量胶球质量随 θ 的变化趋势。\n2. **θ=π 相变**：估计了第一阶相变处拓扑荷密度的跳变，为理解 θ=π 附近真空结构提供定量信息。\n3. **X(2370) 衰变**：赝标量胶球与分数反常行列式的耦合能够**同时描述 BESIII 测量的全部四个三赝标量衰变道**，说明 X(2370) 的胶球解释在反常结构层面是自洽的。\n4. **可检验预言**：对 $ηηη$ 和 $ηηη'$ 衰变率的精确测量将构成对该模型的严格检验——这是论文明确指出的未来实验判据。\n\n## 为什么值得关注\n\n- **连接格点与唯象**：它把格点 QCD 关于 θ 依赖和胶球质量的结果，与实验上胶球候选者的衰变模式联系起来，是“从第一性原理到实验”链条上的一环。\n- **反常作为组织原则**：用分数反常行列式统一处理迹反常和轴反常，提供了一种简洁且与 QCD 对称性结构一致的建模思路，可能被推广到其他胶球态或有限温度/密度情形。\n- **对 θ 物理的意义**：θ=π 处的一阶相变和拓扑荷密度跳变与强 CP 问题、轴子物理、以及可能的 θ 依赖相变研究相关。\n- **对胶球谱学的意义**：X(2370) 是否为胶球一直是热点争议；本文给出一个可被 BESIII 后续数据直接检验的框架，具有明确的实验指向性。\n\n## 方向标签\n\n- Lattice QCD\n- QCD Phenomenology\n- Glueballs\n- Theta vacuum / Topology\n- Anomalies\n- Hadron spectroscopy\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：如果你关注胶球谱学、θ 真空物理、或格点结果与有效模型的对接，这篇论文值得优先阅读——它提出了一个结构清晰、可检验的框架，并直接对接 BESIII 数据。扣掉一星是因为它本身不是新的格点计算，其可靠性最终依赖于所引格点输入和唯象拟合的精度；对纯做格点算法或数值技术的人，直接相关性略低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T06:00:25.934987"
+  },
+  {
+    "id": "2610.00472v1",
+    "title": "Fractional anomalous determinants and the chiral phase transition",
+    "authors": [
+      "Robert D. Pisarski"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.00472v1",
+    "published": "2026-09-30T18:00:05Z",
+    "abstract": "At high temperature instantons form a dilute gas, so in QCD-like theories the breaking of the anomalous $U(1)_A$ symmetry is given by integral powers of the anomalous determinant, $\\sim (\\det Φ)^{Q}$, where $Φ\\sim \\overline{q}_L q_R$ is bilinear in the quark fields, and with untwisted boundary conditions, the topological charge, $Q$, is an integer. A syncretic model is constructed, which is manifestly \"beyond Landau\". In the chiral limit, at temperatures above the chiral phase transition, $T > T_χ$, only integral powers of the anomalous determinant appear. Below $T_χ$, following 't Hooft et al. I assume that the topological charge $Q$ is fractional, as an integer times $1/N_c$, where $N_c$ is the number of colors. I suggest that consequently, fractional powers of the anomalous determinant appear in the chiral effective Lagrangian. For $N_f$ degenerate flavors, this generalizes the Witten-Veneziano term, valid for small $N_f/N_c$, to arbitrary $N_f/N_c$. In this model the chiral phase transition is generically of second order. The two exceptions are for one flavor, where it is probably crossover, and three flavors, where it could well be weakly first order. This can be tested in lattice QCD with $2+1$ flavors by comparing the (known) temperature dependence of the difference of the $π^a$ and $a_0^a$ propagators, to the chiral condensate of the strange quark, between $T_χ$ and $\\sim 2 \\, T_χ$. Analogous measurements are possible for one to four degenerate flavors about $T_χ$. Lastly, I propose an operator for baryon number in the symmetric phase.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出：在高温手征相变之上，反常U(1)_A破缺只由整数幂的反常行列式给出；而在手征相变之下，拓扑荷可能取分数值（整数乘以1/N_c），从而在手征有效拉氏量中出现反常行列式的分数幂，并据此预测手征相变通常为二级相变，除了一味（可能是crossover）和三味（可能弱一级）之外。\n\n## 研究问题\n作者想解决的核心问题是：在QCD类理论中，手征相变附近反常U(1)_A对称性的破缺形式如何随温度变化？具体来说，高温瞬子气体图像给出整数拓扑荷Q，从而反常破缺项正比于(det Φ)^Q；但在T_χ以下，'t Hooft等人曾提出拓扑荷可能分数化。作者希望构造一个能统一描述T_χ上下行为的“syncretic”模型，并回答：\n- 分数反常行列式是否会在手征有效拉氏量中出现？\n- 这对Witten-Veneziano项在大N_f/N_c下的推广意味着什么？\n- 手征相变的阶数是什么？\n- 如何在格点QCD中检验这些预测？\n\n## 方法\n这是一篇理论/唯象构造型论文，不是直接的格点计算论文，但它明确给出格点QCD可检验的预言。方法要点包括：\n- 构造一个“syncretic model”，即同时包含整数幂和分数幂反常行列式贡献的手征有效拉氏量。\n- 在高温T > T_χ，采用稀薄瞬子气体图像，拓扑荷Q为整数，反常破缺项为(det Φ)^Q。\n- 在T < T_χ，假设拓扑荷分数化为Q = 整数/N_c，从而允许(det Φ)^{Q}这类分数幂项。\n- 对N_f个简并味，将Witten-Veneziano项从小N_f/N_c推广到任意N_f/N_c。\n- 分析手征相变阶数，并给出格点可测观测量：π^a与a_0^a传播子之差随温度的变化，以及奇异夸克手征凝聚，在T_χ到约2T_χ之间进行比较。\n- 对1到4个简并味给出类似测量建议。\n- 最后提出对称相中重子数算符的构造。\n\n## 主要结果\n- 在T > T_χ时，只有整数幂的反常行列式出现，符合稀薄瞬子气体图像。\n- 在T < T_χ时，若拓扑荷分数化，则手征有效拉氏量中会出现反常行列式的分数幂。\n- 该模型将Witten-Veneziano项推广到任意N_f/N_c，不再局限于小N_f/N_c。\n- 手征相变在该模型下通常为二级相变。\n- 两个例外：N_f = 1时可能是crossover；N_f = 3时可能是弱一级相变。\n- 提出可用格点QCD 2+1味计算检验：比较π^a与a_0^a传播子之差（已知温度依赖）与奇异夸克手征凝聚，在T_χ到约2T_χ之间。\n- 对1到4个简并味，也可在T_χ附近做类似测量。\n- 提出对称相中重子数算符。\n\n## 为什么值得关注\n- 对格点QCD社区：论文给出明确的、可用2+1味格点QCD检验的预言，尤其是π^a与a_0^a传播子之差和奇异夸克手征凝聚的比较，这直接关联到U(1)_A反常破缺和手征相变阶数。\n- 对QCD相图：手征相变阶数（二级、crossover或弱一级）是QCD相图的关键问题，尤其N_f=3的弱一级可能性与格点热力学研究密切相关。\n- 对有效场论：将Witten-Veneziano项推广到任意N_f/N_c，并引入分数幂反常行列式，可能影响手征有效拉氏量的构造。\n- 对拓扑荷与分数化：如果拓扑荷在T_χ以下分数化，这是一个深刻的非微扰现象，值得格点拓扑荷分布和瞬子研究检验。\n- 对重子数算符：对称相中重子数算符的提议可能对理解高温对称相中的重子数涨落和输运有帮助。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Chiral phase transition\n- Topology\n- Effective field theory\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：论文主题重要，直接关联手征相变、U(1)_A反常和格点QCD可检验预言，且给出具体测量方案。但它是理论构造型论文，分数拓扑荷假设仍需格点验证；如果读者关注格点QCD热力学和手征相变，这篇值得优先阅读。若只关注算法或数值技术，则优先级稍低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-02T06:00:32.772371"
   }
 ]
