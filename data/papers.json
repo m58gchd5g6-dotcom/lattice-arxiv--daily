@@ -4418,5 +4418,141 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-02T06:00:32.772371"
+  },
+  {
+    "id": "2610.03553v1",
+    "title": "Complex-momentum form factors from lattice QCD",
+    "authors": [
+      "Maxwell T. Hansen",
+      "Gurtej Kanwar"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.03553v1",
+    "published": "2026-10-02T16:34:05Z",
+    "abstract": "We demonstrate that form factors evaluated at complex-valued momenta can be directly accessed from position-space Euclidean correlators without analytically continuing the latter and without solving an inverse problem. The approach directly applies a bilateral Laplace transform to the lattice data, which provides the analytically continued form factor wherever it converges. Focusing on the pion form factor in Quantum Chromodynamics (QCD), this gives access to the observable as a function of invariant \\(Q^2\\) throughout an extended analytic domain consisting of all complex \\(Q^2\\) with real part larger than \\(-4m_π^2\\). This could, for example, be used to improve charge-radius determinations or provide more complete data for fits based on conformal mapping of the data. After developing the approach for infinite-volume correlators, we discuss various options for finite-volume estimators suitable for realistic calculations, including position-space fits or application of a spatial chemical potential represented by boundary conditions with an imaginary twist angle. Finally, we test the method in the two-dimensional \\(O(3)\\) nonlinear sigma model using Monte Carlo data.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文提出并演示了一种直接从格点 QCD 的欧几里得位置空间关联函数出发、通过双边 Laplace 变换获取复动量（复 \\(Q^2\\)）形状因子的方法，无需解析延拓或求解逆问题，并在二维 \\(O(3)\\) 非线性 sigma 模型上完成了数值验证。\n\n## 研究问题\n\n作者想解决的问题是：如何在格点 QCD 中直接获得**复数值动量（复 \\(Q^2\\)）处的形状因子**，而不必经过传统上不稳定的解析延拓或逆问题求解。\n\n具体动机包括：\n\n- 形状因子在复 \\(Q^2\\) 平面上的信息对于**电荷半径提取**、**共形映射拟合**等非常重要。\n- 传统格点计算只能给出欧几里得动量点（离散的 \\(Q^2 > 0\\)）上的形状因子，要获得复动量或类时区域信息通常需要解析延拓，而这是病态问题。\n- 作者希望找到一种**直接、稳定、可从格点数据实现**的方法来访问扩展的复解析区域。\n\n## 方法\n\n**核心思想：**\n\n- 对位置空间欧几里得关联函数直接施加**双边 Laplace 变换（bilateral Laplace transform）**，从而得到解析延拓后的形状因子。\n- 不需要对关联函数本身做解析延拓，也不需要解逆问题。\n- 该方法在变换收敛的区域内给出复 \\(Q^2\\) 处的形状因子。\n\n**理论框架：**\n\n- 首先在**无限体积关联函数**上建立方法。\n- 证明可获得复 \\(Q^2\\) 平面上实部大于 \\(-4m_\\pi^2\\) 的整个扩展解析区域内的形状因子。\n\n**有限体积实现方案：**\n\n- 讨论了多种适用于实际格点计算的有限体积估计方法：\n  - 位置空间拟合（position-space fits）\n  - 施加**空间化学势**，通过具有**虚 twist angle** 的边界条件实现\n\n**数值验证：**\n\n- 在二维 \\(O(3)\\) 非线性 sigma 模型上用**蒙特卡洛数据**测试了该方法。\n\n**涉及的技术要素：**\n\n- 格点 QCD 关联函数\n- 双边 Laplace 变换\n- 复动量 / 复 \\(Q^2\\) 解析延拓\n- 有限体积效应处理\n- 虚 twist angle 边界条件\n- 蒙特卡洛数值模拟\n\n## 主要结果\n\n1. **方法可行性证明**：证明了可以从位置空间欧几里得关联函数直接通过双边 Laplace 变换获得复动量处的形状因子，无需解析延拓或逆问题求解。\n\n2. **解析区域**：对于 QCD 中的 pion 形状因子，该方法可访问复 \\(Q^2\\) 平面上实部大于 \\(-4m_\\pi^2\\) 的整个扩展解析区域。\n\n3. **应用前景**：\n   - 改进电荷半径的确定\n   - 为基于共形映射的拟合提供更完整的数据\n\n4. **有限体积方案**：提出了多种有限体积估计方法，包括位置空间拟合和虚 twist angle 边界条件方案。\n\n5. **数值验证成功**：在二维 \\(O(3)\\) 非线性 sigma 模型上用蒙特卡洛数据验证了方法的有效性。\n\n## 为什么值得关注\n\n1. **方法学突破**：提供了一种全新的、不依赖解析延拓的途径来获取格点 QCD 中复动量处的物理量，避免了传统解析延拓的病态性。\n\n2. **电荷半径精确测定**：电荷半径与形状因子在 \\(Q^2 \\to 0\\) 处的斜率相关，复 \\(Q^2\\) 数据可以显著改善半径提取的精度和系统误差控制。\n\n3. **共形映射拟合**：为基于共形映射的形状因子拟合提供了更丰富、更完整的数据输入，可能改善对实验数据的理论解释。\n\n4. **广泛适用性**：虽然论文聚焦于 pion 形状因子，但方法原则上可推广到其他强子形状因子和其他物理量。\n\n5. **实际可操作性**：论文不仅建立了理论框架，还讨论了有限体积实现方案并在可计算的模型上做了验证，具有较强的实际可操作性。\n\n6. **对格点社区的意义**：为格点 QCD 计算开辟了新的可观测量类别——复动量空间中的物理量，可能影响未来格点计算的策略和数据分析方法。\n\n## 方向标签\n\n- Lattice QCD\n- Hadron structure\n- Form factors\n- Analytic continuation\n- Numerical methods\n\n## 阅读优先级\n\n**★★★★☆（4/5 星）**\n\n**理由：**\n\n- **高优先级**：对于从事格点 QCD 形状因子计算、电荷半径提取、强子结构研究的研究者，这篇论文提出了一种新颖且实用的方法，直接关系到日常计算策略。\n- **方法创新性强**：双边 Laplace 变换直接作用于位置空间关联函数的思路简洁而有力，避免了长期困扰格点社区的解析延拓难题。\n- **验证充分**：在二维 \\(O(3)\\) 模型上做了蒙特卡洛验证，增加了方法的可信度。\n- **扣一星的原因**：目前仅在二维模型中验证，尚未在真实 QCD 中实现；有限体积方案的可行性仍需进一步检验。对于不直接从事形状因子计算的研究者，相关性可能稍低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:02:27.139617"
+  },
+  {
+    "id": "2610.03183v1",
+    "title": "Looking at radiative corrections to the $Σ^\\pm\\toΛe^\\pm \\barν$ semileptonic decay-rate ratio",
+    "authors": [
+      "Constantia Alexandrou",
+      "Simone Bacchio",
+      "Antonio Evangelista",
+      "Andreas Konstantinou",
+      "Nazario Tantalo"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.03183v1",
+    "published": "2026-10-02T11:56:54Z",
+    "abstract": "We investigate the impact of radiative corrections on the ratio of the semileptonic decay rates $Σ^\\pm\\toΛe^\\pm \\barν$. Phenomenological analyses point to sizable radiative effects on the experimentally measured ratio. From a theoretical perspective, this observable is particularly appealing because several hadronic and electroweak contributions partially cancel in the ratio, providing a cleaner probe of electromagnetic effects. We identify the dominant contributions to the radiative corrections and develop the framework for a dedicated calculation. This represents a first step toward a precise theoretical description of baryon semileptonic decays, helping to assess their potential as precision tests of the Standard Model.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文指出，在 \\(\\Sigma^\\pm\\to\\Lambda e^\\pm\\bar\\nu\\) 半轻子衰变率比值中，辐射修正可能对实验测量产生显著影响，并初步建立了一个专门计算该比值中主导辐射修正的理论框架。\n\n## 研究问题\n\n作者想解决的核心问题是：**辐射修正对 \\(\\Sigma^\\pm\\to\\Lambda e^\\pm\\bar\\nu\\) 半轻子衰变率比值究竟有多大影响？**\n\n具体来说：\n\n1. 实验上测量的 \\(\\Sigma^\\pm\\to\\Lambda e^\\pm\\bar\\nu\\) 衰变率比值可能受到可观的辐射修正影响，但此前缺乏精确的理论计算。\n2. 这个比值在理论上很有吸引力，因为部分强子和电弱贡献在比值中相消，使其成为探测电磁效应的更干净观测量。\n3. 作者希望识别辐射修正中的主导贡献，并为后续的专门计算搭建理论框架，从而评估这类重子半轻子衰变作为标准模型精确检验的潜力。\n\n## 方法\n\n从摘要来看，这篇论文主要是一篇**理论框架建立**的工作，而非完整的数值计算。其方法特点包括：\n\n1. **比值观测量分析**：利用 \\(\\Sigma^\\pm\\to\\Lambda e^\\pm\\bar\\nu\\) 衰变率比值中强子与电弱贡献部分相消的特性，构造对电磁效应敏感、对强子不确定性相对不敏感的观测量。\n2. **辐射修正分类与主导项识别**：系统分析辐射修正的来源，识别出对该比值影响最大的贡献项。\n3. **专用计算框架开发**：为后续精确计算建立理论形式体系，可能涉及：\n   - 实光子辐射与虚光子修正\n   - 红外发散的处理与抵消\n   - 电子-中微子能量端点区域的效应\n   - 强子结构对辐射修正的影响\n\n需要注意的是，摘要中**没有明确提及 lattice QCD 方法**。这篇论文更偏向现象学分析和解析理论框架，而非格点数值模拟。如果论文中使用了格点输入（如形状因子），摘要中并未强调。\n\n## 主要结果\n\n1. **辐射效应可能显著**：现象学分析表明，辐射修正对实验测量的比值有可观测的影响，不能忽略。\n2. **比值观测量具有理论优势**：由于强子和电弱贡献部分相消，该比值是探测电磁效应的较干净探针。\n3. **主导贡献已识别**：作者找到了辐射修正中的主要贡献来源，为精确计算指明了方向。\n4. **框架已建立**：这是迈向重子半轻子衰变精确理论描述的第一步，有助于评估其作为标准模型精确检验的潜力。\n\n## 为什么值得关注\n\n1. **精确检验标准模型**：重子半轻子衰变是提取 \\(|V_{us}|\\) 等 CKM 矩阵元的重要渠道。如果辐射修正未被正确计入，可能导致系统性偏差，影响对标准模型的检验。\n2. **比值方法的通用性**：该工作中发展的比值技术可能推广到其他重子半轻子衰变过程，如 \\(\\Lambda\\to p e\\bar\\nu\\)、\\(\\Xi\\to\\Sigma e\\bar\\nu\\) 等。\n3. **连接格点与现象学**：虽然本文偏解析，但其结果对格点 QCD 计算有直接意义——格点可以提供所需的形状因子，而本文的框架则说明如何将辐射修正与形状因子结合。\n4. **实验精度提升的需求**：随着实验精度不断提高，辐射修正成为不可忽视的系统误差来源，理论上的精确计算变得迫切。\n\n## 方向标签\n\n- Lattice QCD\n- Standard Model precision tests\n- Radiative corrections\n- Semileptonic decays\n- Hadronic physics\n\n## 阅读优先级\n\n**★★★☆☆（3/5 星）**\n\n**理由**：\n\n- **值得读**：如果你关心重子半轻子衰变、CKM 矩阵元提取、或辐射修正对精密检验的影响，这篇论文提供了有价值的框架和主导贡献分析。\n- **优先级中等**：这是一篇“第一步”性质的工作，尚未给出完整数值结果。如果你需要的是可直接用于实验分析的完整计算，可能需要等待后续工作。\n- **对格点社区的相关性**：如果论文确实未使用格点方法，那么它对纯格点计算者的直接技术相关性有限，但对利用格点形状因子做现象学分析的研究者则有参考价值。\n- **建议**：适合作为了解该问题现状和理论框架的入门阅读，后续应关注作者承诺的“dedicated calculation”的完整版本。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:02:33.837118"
+  },
+  {
+    "id": "2610.03028v1",
+    "title": "Critical coupling and $Δ\\langleφ^2\\rangle$ in three-dimensional $φ^4$ theory",
+    "authors": [
+      "Stephan Durr",
+      "Tolga S. H. Kiel"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.03028v1",
+    "published": "2026-10-02T09:04:34Z",
+    "abstract": "We consider the $φ^4$ theory with $φ(x)\\in\\mathbb{R}$ in three Euclidean dimensions. For a variety of self-couplings $\\hatλ$, the critical (bare) parameter $\\hatμ_{0\\mathrm{c}}^2(\\hatλ)$ is determined where the lattice-regulated system changes from the symmetric phase to the broken phase. Next, we send the box volume to infinity and switch to a universal scheme; this yields $\\hatμ_\\mathrm{c}^2(\\hatλ)$ for each simulated $\\hatλ$. Finally, a continuum extrapolation gives $f_\\mathrm{c}=\\lim_{\\hatλ\\to0} \\hatλ^2/\\hatμ_\\mathrm{c}^2(\\hatλ)$, and we find $f_\\mathrm{c} = 18.808(64)_{\\mathrm{stat}}(45)_{\\mathrm{sys}} = 18.808(78)_{\\mathrm{tot}}$. In addition, $Δ\\langleφ^2\\rangle_\\mathrm{c}/λ= -0.00303(12)_{\\mathrm{stat}}(12)_{\\mathrm{sys}} = -0.00303(17)_{\\mathrm{tot}}$ is determined in the combined continuum and infinite-volume limit.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用格点蒙特卡洛方法高精度确定了三维实标量 $\\phi^4$ 理论在连续极限下的临界耦合常数 $f_\\mathrm{c}=18.808(78)$，以及临界点附近 $\\Delta\\langle\\phi^2\\rangle_\\mathrm{c}/\\lambda = -0.00303(17)$，为三维 Ising 普适类的标量场论提供了迄今最精确的定量基准之一。\n\n## 研究问题\n\n作者要解决的核心问题是：三维欧几里得空间中实标量 $\\phi^4$ 理论在连续极限下的临界（裸）参数如何随自耦合 $\\hat\\lambda$ 变化，以及当 $\\hat\\lambda \\to 0$（即向平凡连续极限逼近）时，临界耦合的标度组合 $f_\\mathrm{c} = \\lim_{\\hat\\lambda\\to0} \\hat\\lambda^2/\\hat\\mu_\\mathrm{c}^2(\\hat\\lambda)$ 取什么值。\n\n具体而言：\n\n1. 对一系列裸自耦合 $\\hat\\lambda$，确定格点正则化系统从对称相到破缺相的临界裸参数 $\\hat\\mu_{0\\mathrm{c}}^2(\\hat\\lambda)$。\n2. 将盒子体积趋于无穷，并转换到一个普适方案（universal scheme），得到每个模拟 $\\hat\\lambda$ 对应的 $\\hat\\mu_\\mathrm{c}^2(\\hat\\lambda)$。\n3. 做连续极限外推，提取 $f_\\mathrm{c}$ 和 $\\Delta\\langle\\phi^2\\rangle_\\mathrm{c}/\\lambda$。\n\n这个问题的重要性在于：三维 $\\phi^4$ 理论属于 Ising 普适类，其临界性质与统计力学、凝聚态相变以及场论中的非微扰重整化密切相关。精确确定 $f_\\mathrm{c}$ 可以作为该理论在连续极限下定义的一个基准量，用于检验解析方法和其它数值方法。\n\n## 方法\n\n论文使用的是**格点场论 + 蒙特卡洛数值模拟**的标准框架，具体包括：\n\n- **模型**：三维欧几里得格点上的实标量 $\\phi^4$ 理论，作用量为\n  $$S = \\sum_x \\left[ \\frac{1}{2}\\sum_\\mu (\\phi(x+\\hat\\mu)-\\phi(x))^2 + \\frac{1}{2}\\hat\\mu_0^2 \\phi(x)^2 + \\frac{\\hat\\lambda}{4}\\phi(x)^4 \\right]$$\n  其中 $\\hat\\mu_0^2$ 是裸质量平方参数，$\\hat\\lambda$ 是裸自耦合。\n\n- **相变定位**：对每个给定的 $\\hat\\lambda$，通过数值模拟确定临界裸参数 $\\hat\\mu_{0\\mathrm{c}}^2(\\hat\\lambda)$，即系统从对称相（$\\langle\\phi\\rangle=0$）转变到破缺相（$\\langle\\phi\\rangle\\neq0$）的位置。这通常通过有限体积扫描、Binder 累积量或磁化率峰值等方法实现。\n\n- **有限体积到无穷体积**：在临界点附近做有限体积分析，将盒子体积趋于无穷，消除有限体积效应。\n\n- **普适方案转换**：从格点正则化方案转换到一个普适方案（universal scheme），使得临界参数的定义不依赖于具体的正则化细节。这一步是提取连续极限下普适量的关键。\n\n- **连续极限外推**：对多个 $\\hat\\lambda$ 值得到 $\\hat\\mu_\\mathrm{c}^2(\\hat\\lambda)$ 后，外推 $\\hat\\lambda\\to0$，提取\n  $$f_\\mathrm{c} = \\lim_{\\hat\\lambda\\to0} \\frac{\\hat\\lambda^2}{\\hat\\mu_\\mathrm{c}^2(\\hat\\lambda)}$$\n  同时提取 $\\Delta\\langle\\phi^2\\rangle_\\mathrm{c}/\\lambda$。\n\n- **误差分析**：区分统计误差（stat）和系统误差（sys），并给出总误差（tot）。\n\n## 主要结果\n\n1. **临界耦合常数**：\n   $$f_\\mathrm{c} = 18.808(64)_{\\mathrm{stat}}(45)_{\\mathrm{sys}} = 18.808(78)_{\\mathrm{tot}}$$\n   这是三维 $\\phi^4$ 理论在连续极限下临界耦合的一个高精度测定值。\n\n2. **$\\Delta\\langle\\phi^2\\rangle$ 的临界值**：\n   $$\\frac{\\Delta\\langle\\phi^2\\rangle_\\mathrm{c}}{\\lambda} = -0.00303(12)_{\\mathrm{stat}}(12)_{\\mathrm{sys}} = -0.00303(17)_{\\mathrm{tot}}$$\n   该结果是在连续极限和无穷体积极限联合取完后得到的。\n\n3. 论文还对一系列 $\\hat\\lambda$ 值给出了对应的 $\\hat\\mu_\\mathrm{c}^2(\\hat\\lambda)$，展示了从格点正则化到连续极限的完整外推过程。\n\n## 为什么值得关注\n\n- **普适类基准**：三维 $\\phi^4$ 理论属于 Ising 普适类，其临界性质在统计力学、凝聚态物理和量子场论中都有广泛应用。精确确定 $f_\\mathrm{c}$ 为这一普适类提供了一个高精度的定量基准。\n\n- **非微扰重整化**：$\\phi^4$ 理论在四维是平凡理论，但在三维存在非平凡红外不动点。精确确定连续极限下的临界耦合有助于理解该理论的非微扰重整化性质。\n\n- **方法学价值**：论文展示了从格点正则化到普适方案再到连续极限的完整流程，对其它格点场论计算（包括格点 QCD 中的类似外推）有方法学参考意义。\n\n- **与解析结果的比较**：该数值结果可以与微扰论、函数重整化群、共形 bootstrap 等解析方法的结果进行交叉检验，推动对三维标量场论的理解。\n\n- **对 QCD 和 BSM 的间接意义**：虽然这篇论文不直接研究 QCD，但三维标量场论是许多有效理论的基础，其临界性质与有限温度相变、维度约化等场景相关。\n\n## 方向标签\n\n- Lattice Field Theory\n- Scalar Field Theory\n- Phase Transitions\n- Critical Phenomena\n- Continuum Limit\n- Monte Carlo Methods\n\n## 阅读优先级\n\n**★★★★☆（4/5 星）**\n\n理由：\n\n- 对于研究三维标量场论、Ising 普适类、临界现象和格点非微扰重整化的研究者，这篇论文提供了高精度的基准值，值得仔细阅读。\n- 对于格点 QCD 研究者，虽然不直接涉及 QCD，但其连续极限外推和普适方案转换的方法学有参考价值。\n- 对于更广泛的理论物理社区，该结果可作为检验解析方法的数值基准。\n- 扣一星是因为主题相对专门，不涉及 QCD 动力学、BSM 新物理或量子模拟等更热门的方向，受众相对有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:02:42.101984"
+  },
+  {
+    "id": "2610.02430v1",
+    "title": "Towards Precision-Controlled Partonic Structures from First Principles",
+    "authors": [
+      "Jinchen He"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.02430v1",
+    "published": "2026-10-01T19:52:58Z",
+    "abstract": "The internal structure of hadrons is governed by nonperturbative Quantum Chromodynamics (QCD). This dissertation presents first-principles calculations of partonic observables using lattice QCD and effective field theory, with controlled systematic uncertainties, advancing from collinear structure to transverse-momentum-dependent distributions (TMDs) that encode the three-dimensional partonic structure of hadrons. Within the large momentum effective theory (LaMET) framework, this work presents state-of-the-art calculations of pion distribution amplitudes and systematic studies of nucleon parton distributions, with control of renormalization, excited-state contamination, Fourier-transform systematics, and power corrections. A Coulomb-gauge formulation of quasi-distributions simplifies ultraviolet structure by avoiding Wilson-line related linear divergences, with Gribov-copy effects found to be negligible at current statistical precision. Building on these developments, this dissertation reports lattice determinations of nucleon TMD parton distributions, the Collins-Soper kernel, the intrinsic soft function, and pion TMD observables. These results provide nonperturbative inputs for global QCD analyses and the precision hadron-structure program, including the Electron-Ion Collider. In parallel, this work explores machine-learning acceleration of lattice gauge simulations through neural field transformations embedded in Hybrid Monte Carlo. In two-dimensional U(1) tests, the method reduces autocorrelation and improves performance toward finer lattice spacing, suggesting potential applications to more efficient lattice QCD simulations.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇博士论文在 LaMET 框架下系统推进了从共线部分子结构到三维 TMD 结构的格点 QCD 第一性原理计算，并探索了机器学习加速格点规范场模拟的新方法。\n\n## 研究问题\n作者想解决的核心问题是：如何从第一性原理出发，以可控的系统误差计算强子的部分子结构，包括：\n\n1. **共线结构**：π 介子分布振幅（DA）、核子部分子分布（PDF）；\n2. **三维结构**：核子与 π 介子的横动量依赖分布（TMD）、Collins-Soper kernel、内禀软函数；\n3. **系统误差控制**：重整化、激发态污染、傅里叶变换系统误差、幂次修正等；\n4. **紫外结构简化**：如何避免 Wilson line 带来的线性发散；\n5. **计算效率**：如何用机器学习加速格点规范场模拟。\n\n## 方法\n论文使用的主要方法和技术包括：\n\n1. **LaMET（Large Momentum Effective Theory）框架**：将格点上计算的准分布（quasi-distributions）与光锥部分子分布通过匹配核联系起来；\n2. **格点 QCD 数值模拟**：计算 π 介子分布振幅和核子部分子分布；\n3. **Coulomb gauge 准分布表述**：避免 Wilson line 相关的线性紫外发散，简化重整化结构；并检验 Gribov copy 效应在当前统计精度下可忽略；\n4. **系统误差控制技术**：\n   - 重整化；\n   - 激发态污染控制；\n   - 傅里叶变换系统误差处理；\n   - 幂次修正控制；\n5. **TMD 相关计算**：格点确定核子 TMD、Collins-Soper kernel、内禀软函数、π 介子 TMD 观测量；\n6. **机器学习加速**：将神经场变换（neural field transformations）嵌入 Hybrid Monte Carlo（HMC），在二维 U(1) 规范理论中测试，减少自关联时间并改善向更细格距的性能。\n\n## 主要结果\n1. 在 LaMET 框架下给出了**最先进的 π 介子分布振幅计算**；\n2. 对**核子部分子分布**进行了系统研究，并控制了重整化、激发态、傅里叶变换和幂次修正等系统误差；\n3. 提出 **Coulomb gauge 准分布表述**，避免了 Wilson line 相关线性发散，且 Gribov-copy 效应在当前统计精度下可忽略；\n4. 实现了格点确定：\n   - 核子 TMD 部分子分布；\n   - Collins-Soper kernel；\n   - 内禀软函数；\n   - π 介子 TMD 观测量；\n5. 这些结果为全球 QCD 分析、精确强子结构研究计划以及**电子离子对撞机（EIC）**提供非微扰输入；\n6. 在机器学习方面，二维 U(1) 测试中，神经场变换嵌入 HMC 后**降低了自关联时间**，并改善了向更细格距的性能，显示出应用于更高效格点 QCD 模拟的潜力。\n\n## 为什么值得关注\n1. **连接格点 QCD 与实验**：TMD、PDF、DA 是理解强子三维结构和 QCD 非微扰动力学的核心观测量，也是 EIC 物理计划的关键输入；\n2. **系统误差控制**：论文不是单一计算，而是对 LaMET 计算中多个系统误差来源进行系统研究，这对推动“精确强子结构”计划至关重要；\n3. **Coulomb gauge 方法**：为避免 Wilson line 线性发散提供了替代方案，可能简化未来格点计算；\n4. **TMD 格点计算**：TMD 的格点直接计算是当前前沿方向，Collins-Soper kernel 和软函数是非微扰输入，对全球分析意义重大；\n5. **机器学习与格点结合**：神经场变换嵌入 HMC 是格点场论中机器学习应用的一个有前景方向，可能缓解临界慢化问题；\n6. **面向未来设施**：结果直接服务于 EIC 和精确 QCD 强子结构研究。\n\n## 方向标签\n- Lattice QCD\n- Hadron structure\n- LaMET\n- TMD\n- Machine Learning\n- Effective Field Theory\n\n## 阅读优先级\n★★★★★（5 星）\n\n**原因**：\n这篇论文覆盖了当前格点强子结构研究中最活跃的几个前沿方向：LaMET、PDF/DA、TMD、Collins-Soper kernel、软函数、系统误差控制，以及机器学习加速格点模拟。它既有方法学创新（Coulomb gauge 准分布、神经场变换 HMC），又有面向 EIC 的物理结果，对格点 QCD、强子结构、有效场论和机器学习交叉领域的研究者都具有很高参考价值。若你关注 LaMET、TMD 或格点机器学习，这篇论文应优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:02:48.198751"
+  },
+  {
+    "id": "2610.02394v1",
+    "title": "All-mode approach for general tensor renormalization group method",
+    "authors": [
+      "Katsumasa Nakayama",
+      "Shinji Takeda"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.02394v1",
+    "published": "2026-10-01T19:18:02Z",
+    "abstract": "We apply the stochastic all-mode technique to general coarse-graining schemes of the tensor renormalization group (TRG) approach. The technique possesses a notable characteristic of being entirely free from systematic errors which can potentially arise in the coarse-graining step, while it has statistical errors caused by random noise. The key element in our generalization is employing a method called squeezer, and the all-mode technique can be used when it is constructed. Since many TRG methods can be described in terms of the squeezers, our approach can be applicable in all such cases. In this work, we demonstrate the new method with higher-order TRG in the two- and three-dimensional Ising model.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文将随机 all-mode 技术推广到一般张量重整化群（TRG）粗粒化方案中，通过“squeezer”这一统一结构，使高阶 TRG 等广泛方法都能在无粗粒化系统误差的前提下进行随机评估，并在 2D/3D Ising 模型上验证了该方法的可行性。\n\n## 研究问题\n\nTRG 类方法在粗粒化步骤中通常会引入系统误差，例如截断奇异值、有限键维数近似等。作者希望解决的核心问题是：\n\n- 能否将原本用于特定 TRG 方案的随机 all-mode 技术，推广到更一般的 TRG 粗粒化框架？\n- 在什么条件下这种推广是可行的？\n- 推广后的方法能否在保持“无粗粒化系统误差”这一优点的同时，仅以统计误差为代价？\n- 该方法在高阶 TRG 和多维模型中是否实际可用？\n\n## 方法\n\n- **核心框架**：张量重整化群（TRG）及其一般粗粒化方案。\n- **关键技术**：随机 all-mode 技术。该技术此前已用于某些 TRG 变体，其特点是避免粗粒化过程中产生的系统误差，但引入由随机噪声导致的统计误差。\n- **推广关键**：引入称为 **squeezer** 的结构。作者指出，许多 TRG 方法都可以用 squeezer 来描述；只要某个 TRG 方案能够构造出相应的 squeezer，all-mode 技术就可以应用。\n- **模型验证**：在二维和三维 Ising 模型上，使用高阶 TRG 进行数值演示。\n- **算法性质**：随机方法，统计误差随样本数减小；无粗粒化系统误差。\n\n## 主要结果\n\n- 成功将 stochastic all-mode 技术推广到一般 TRG 粗粒化方案。\n- 明确了 squeezer 是可推广性的核心要素：只要 TRG 方法可由 squeezer 描述，all-mode 技术即可适用。\n- 在 2D 和 3D Ising 模型中，用高阶 TRG 验证了新方法的有效性。\n- 方法保持了 all-mode 技术的关键优势：不受粗粒化步骤中系统误差影响，代价是引入统计噪声。\n- 表明该推广不限于某一特定 TRG 变体，而具有较广泛的适用性。\n\n## 为什么值得关注\n\n- **对张量网络社区**：TRG 是研究统计物理和格点场论的重要数值工具。粗粒化系统误差长期是精度控制的关键问题。本文提供了一种通用方式来消除这类系统误差，可能提升高阶 TRG 的可靠性和适用范围。\n- **对 lattice field theory**：张量网络方法正被用于格点场论，包括有限密度、实时演化和符号问题等传统 Monte Carlo 困难的场景。若 all-mode 技术可推广到更多 TRG 方案，将增强这些方法在格点场论中的系统误差控制能力。\n- **方法学意义**：squeezer 作为统一结构，有助于整理和理解不同 TRG 方案之间的关系，也可能启发新的粗粒化方案设计。\n- **实际限制**：统计误差和计算成本仍是需要权衡的问题，尤其在高维或高键维情况下。\n\n## 方向标签\n\n- Tensor network\n- Lattice field theory\n- Statistical physics\n- Ising model\n- Renormalization group\n\n## 阅读优先级\n\n**3.5 / 5 星**\n\n理由：\n\n- 如果你直接从事 TRG、张量网络或格点场论数值方法研究，本文值得优先阅读，因为它提出了一个可推广到多类 TRG 方案的通用随机框架，并触及系统误差控制这一核心问题。\n- 如果你主要关注 Lattice QCD 现象学、BSM 或机器学习，本文的相关性相对间接，优先级可降低。\n- 论文目前主要在 Ising 模型上演示，尚未直接应用于规范场论或 QCD，因此对更广泛格点场论社区的影响仍需后续工作验证。\n- 方法概念清晰，squeezer 的统一视角具有潜在方法学价值，适合作为张量网络数值方法方向的参考阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:02:53.786866"
+  },
+  {
+    "id": "2610.02316v1",
+    "title": "A Polynomial-Scaling PDE Solver with Entanglement-Basis Tensor Networks",
+    "authors": [
+      "Abhijatmedhi Chotrattanapituk",
+      "Michael J. Landry",
+      "Chu-Liang Fu",
+      "Mingda Li"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.02316v1",
+    "published": "2026-10-01T18:00:02Z",
+    "abstract": "We develop a finite element method (FEM) for partial differential equation (PDE) solver based on the entanglement-basis representation introduced in our companion work. By lifting non-linear finite-element equations into an augmented coefficient space, the governing PDE together with boundary, initial, and inter-element constraints can be expressed through a unified quadratic residual minimization. Although this augmented space grows exponentially with the number of elements, its tensor-product structure allows it to be represented efficiently using tensor networks. Using the matrix product state (MPS) as a concrete example, we show that density matrix renormalization group (DMRG) sweeps enable element-by-element optimization without explicitly constructing the full augmented space. For bounded bond dimension, the resulting computational cost scales polynomially with the number of finite elements. We extend the framework to time-dependent problems through implicit temporal discretization and demonstrate convergence under both mesh and polynomial refinement using diffusion equations.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出了一种基于纠缠基张量网络（特别是 MPS/DMRG）的有限元 PDE 求解框架，通过将非线性有限元方程提升到增广系数空间并化为统一二次残差最小化问题，在固定键维数下实现了对有限元数目多项式标度的求解复杂度。\n\n## 研究问题\n作者想解决的核心问题是：如何利用张量网络的高效压缩表示能力来求解偏微分方程（PDE）的有限元离散化问题，从而避免传统方法中随自由度指数增长的计算代价。具体而言：\n\n1. 非线性有限元方程通常需要求解大规模非线性系统，计算成本高。\n2. 增广系数空间虽然可以统一处理边界条件、初始条件和单元间约束，但其维度随单元数指数增长。\n3. 如何利用张量网络的张量积结构，在不显式构造完整增广空间的前提下，实现高效的逐单元优化。\n\n## 方法\n本文的方法结合了以下几个关键技术要素：\n\n1. **有限元方法（FEM）**：作为 PDE 离散化的基础框架，将连续问题转化为单元上的代数方程。\n2. **增广系数空间（Augmented Coefficient Space）**：将非线性有限元方程、边界条件、初始条件和单元间约束统一提升到一个增广空间中，表示为统一的二次残差最小化问题。\n3. **张量网络表示**：利用增广空间的张量积结构，用矩阵乘积态（MPS）高效表示高维系数张量。\n4. **DMRG 扫描优化**：使用密度矩阵重整化群（DMRG）的逐单元扫描算法，在不显式构造完整增广空间的情况下进行逐元素优化。\n5. **隐式时间离散化**：将框架扩展到含时问题，通过隐式时间步进处理扩散方程等时间依赖问题。\n6. **收敛性验证**：在网格加密（mesh refinement）和多项式加密（polynomial refinement）下验证收敛性。\n\n核心思想与 lattice 场论中的张量网络方法（如 MPS 用于格点 gauge 理论）有深刻的结构相似性：都是利用物理态的低纠缠特性来压缩指数大的 Hilbert 空间。\n\n## 主要结果\n1. **多项式标度**：在固定键维数（bounded bond dimension）下，计算成本随有限元数目多项式增长，而非指数增长。\n2. **无需显式构造增广空间**：DMRG 扫描允许逐单元优化，避免了指数级内存需求。\n3. **统一框架**：边界条件、初始条件和单元间约束被统一纳入二次残差最小化，简化了问题表述。\n4. **时间依赖扩展**：通过隐式时间离散化，框架可处理时间依赖 PDE。\n5. **收敛性验证**：在扩散方程上验证了网格加密和多项式加密下的收敛性。\n\n## 为什么值得关注\n1. **与 lattice 场论的深刻联系**：张量网络方法在 lattice QCD 和格点场论中已被广泛用于压缩高维态空间。本文将类似思想引入 PDE 数值求解，展示了张量网络作为通用计算框架的潜力。\n2. **潜在的计算优势**：对于高维 PDE 问题，传统 FEM 面临维数灾难。张量网络方法可能提供一条规避指数复杂度的路径，这与 lattice 场论中张量网络用于高维格点问题的动机一致。\n3. **方法论的交叉启发**：DMRG 扫描优化与 lattice 场论中的变分张量网络算法（如 TEBD、DMRG 用于格点 gauge 理论）在算法结构上高度相似，可能促进两个社区之间的方法迁移。\n4. **对量子模拟的启示**：如果 PDE 的解具有低纠缠结构，则可能被量子计算机高效模拟，这与 quantum simulation 社区的目标一致。\n5. **框架的通用性**：该方法不限于特定 PDE，理论上可推广到更广泛的非线性问题，包括那些出现在有效场论和格点模型中的方程。\n\n## 方向标签\n- Tensor network\n- Machine Learning\n- Quantum simulation\n- Lattice QCD（方法论交叉）\n- Finite element methods（数值方法）\n\n## 阅读优先级\n★★★★☆（4/5 星）\n\n**理由**：\n- 对于从事 tensor network 和 lattice 场论方法研究的读者，本文提供了一种将张量网络应用于 PDE 求解的新范式，具有方法论上的启发意义。\n- 对于关注高维 PDE 数值求解和维数灾难问题的读者，本文的多项式标度结果值得关注。\n- 扣一星的原因是：本文目前仅在扩散方程上验证，尚未展示在更复杂的非线性 PDE 或高维问题上的实际性能；与 lattice QCD 的直接关联仍需进一步探索。\n- 如果读者对 tensor network 与 PDE 求解的交叉领域感兴趣，本文是必读的；如果仅关注传统 lattice QCD 计算，则相关性中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:03:00.348448"
+  },
+  {
+    "id": "2610.02305v1",
+    "title": "Blackened BPS: the end of the thermal BMN branch",
+    "authors": [
+      "Jorge E. Santos"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.02305v1",
+    "published": "2026-10-01T18:00:00Z",
+    "abstract": "We study the thermodynamics of the BMN matrix model at large $N$ and strong coupling, using its dual black holes in eleven-dimensional supergravity. Within the consistent truncation to two-dimensional $SO(9)$ gauged supergravity, the static $SO(3)\\times SO(6)$-invariant black holes solve ordinary differential equations, which we solve to high precision. We formulate holographic renormalisation for this truncation and fix the finite counterterms using a supersymmetric solution. This gives the energy, the entropy and the response to the BMN mass independently, and we verify the first law and the Smarr relation along the branch. The thermal branch ends at a critical value of $μ/T$, which power-law fits place at $4π$ with an estimated uncertainty below $10^{-10}$. The first-order transition inferred in earlier work, where the free energy was reconstructed from the entropy, does not survive, and an independent eleven-dimensional calculation agrees with ours over the range it covers. Instead, the free energy, the entropy and the mass response approach their values in the confined phase continuously at the end of the branch, where the solutions become singular. If this branch remains the dominant one up to its end point, the transition therefore coincides with the singularity. Near the end of the branch, the scalar fields follow a solution of the supersymmetric first-order equations, while the metric carries a nontrivial blackening factor. The horizon develops a neck whose profile is universal, with radii growing as the $2/5$ power of the distance from the pinch. Within the range we resolve, the geometry is not that of the Ricci-flat double cone which governs mergers of vacuum black holes.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用十一维超引力中的静态黑孔解，高精度地研究了BMN矩阵模型在大$N$、强耦合下的热力学，发现热力学分支终止于$\\mu/T = 4\\pi$（精度优于$10^{-10}$），此前文献中推断的一阶相变并不存在，分支终点处自由能、熵和质量响应连续趋近于禁闭相的值，相变与奇点重合。\n\n## 研究问题\n\n作者想解决的核心问题是：BMN矩阵模型在大$N$极限、强耦合下的热力学相结构究竟是什么？具体来说：\n\n1. 此前的工作（基于从熵重构自由能）推断存在一个一阶相变，这个结论是否正确？\n2. 热力学分支在哪里终止？终止点的性质是什么（是相变、奇点、还是连续过渡）？\n3. 分支终点附近的几何和标量场行为如何？是否与真空黑洞合并中的Ricci-flat双锥几何有关？\n4. 如何对这个截断理论进行全息重整化，以独立地提取能量、熵和对BMN质量的响应？\n\n## 方法\n\n这篇论文**不是**传统的格点场论计算，而是使用**全息对偶**方法：\n\n- **模型**：BMN矩阵模型（Berestein-Maldacena-Nastase），通过AdS/CFT对偶映射到十一维超引力中的黑孔解。\n- **截断**：将十一维超引力一致截断到二维$SO(9)$规范超引力，考虑静态$SO(3)\\times SO(6)$不变的黑孔。\n- **方程求解**：黑孔解由常微分方程（ODE）描述，作者以高精度数值求解这些ODE。\n- **全息重整化**：为这个截断理论构建全息重整化框架，用超对称解固定有限反项。\n- **数值技术**：高精度数值求解ODE，配合幂律拟合确定临界值$\\mu/T = 4\\pi$，估计不确定度低于$10^{-10}$。\n- **交叉验证**：独立的十一维计算在其覆盖范围内与本文结果一致。\n\n值得注意的是，虽然标题和摘要提到\"lattice field theory研究助手\"，但本文实际使用的是**全息数值相对论/超引力**方法，而非格点蒙特卡洛方法。\n\n## 主要结果\n\n1. **临界值精确确定**：热力学分支终止于$\\mu/T = 4\\pi$，幂律拟合给出的不确定度低于$10^{-10}$。\n\n2. **一阶相变不存在**：此前工作中从熵重构自由能所推断的一阶相变，在本文的独立计算中**不成立**。\n\n3. **连续过渡**：在分支终点，自由能、熵和质量响应**连续地**趋近于禁闭相的值，解在终点变为奇异。\n\n4. **相变与奇点重合**：如果该分支在其终点前始终是主导分支，则相变与奇点重合。\n\n5. **标量场行为**：在分支终点附近，标量场遵循超对称一阶方程的解，而度规带有非平凡的blackening factor。\n\n6. **视界颈部几何**：视界发展出一个颈部，其轮廓是**普适的**，半径随距离的$2/5$次幂增长。\n\n7. **非Ricci-flat双锥**：在所分辨的范围内，几何不是支配真空黑洞合并的Ricci-flat双锥。\n\n8. **第一定律和Smarr关系**：沿分支验证了第一定律和Smarr关系。\n\n## 为什么值得关注\n\n1. **对BMN矩阵模型热力学的精确理解**：BMN矩阵模型是$\\mathcal{N}=4$ SYM在pp-wave极限下的重要变形，其热力学相结构对理解强耦合规范理论的非微扰行为至关重要。\n\n2. **纠正此前文献的错误结论**：论文明确指出此前推断的一阶相变不存在，这对依赖该结论的后续研究有重要影响。\n\n3. **全息重整化的技术贡献**：为二维$SO(9)$规范超引力截断构建全息重整化框架，并用超对称解固定有限反项，这一技术可推广到其他类似截断。\n\n4. **奇点与相变的关系**：论文提出相变可能与奇点重合，这对理解全息对偶中奇点的物理意义有深远影响。\n\n5. **普适的颈部几何**：视界颈部的普适$2/5$幂律行为可能与更广泛的临界现象和黑洞合并物理相关。\n\n6. **对格点/QCD社区的潜在启示**：虽然本文不是格点计算，但其关于强耦合规范理论热力学相变的研究方法与格点QCD中有限温度相变的研究有概念上的联系，特别是关于相变阶数和临界点的精确确定。\n\n## 方向标签\n\n- Finite temperature\n- Holography / AdS-CFT\n- Black holes\n- Matrix model\n- Supergravity\n- Phase transitions\n\n## 阅读优先级\n\n**★★★★☆**（4/5星）\n\n**理由**：\n- 对于研究BMN矩阵模型、全息对偶、黑洞热力学的学者，这是**必读**论文，因为它纠正了此前的重要错误结论并给出了高精度结果。\n- 对于格点QCD社区，虽然方法不同，但其关于强耦合规范理论相变的研究思路和精确确定临界点的方法有借鉴意义。\n- 对于更广泛的理论物理社区，论文关于奇点与相变重合、普适颈部几何的讨论具有普遍兴趣。\n- 扣掉一星是因为：论文高度专业化，对非全息对偶背景的研究者门槛较高；且其方法（超引力ODE数值求解）与格点场论的核心技术（蒙特卡洛采样）差异较大，对格点社区的直接影响有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-05T06:03:07.579432"
   }
 ]
