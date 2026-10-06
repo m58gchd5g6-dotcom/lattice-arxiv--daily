@@ -4554,5 +4554,151 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-05T06:03:07.579432"
+  },
+  {
+    "id": "2610.06734v1",
+    "title": "Two-loop RI/SMOM-$\\overline{\\text{MS}}$ matching factors for the renormalization of bi-local operators contributing to $ε_K$",
+    "authors": [
+      "Erik Lundstrum"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.06734v1",
+    "published": "2026-10-05T17:18:53Z",
+    "abstract": "The measure of indirect CP violation in the neutral kaon system, $ε_K$, is an important precision test of the Standard Model. A first-principles Standard Model prediction of $ε_K$ requires evaluating the long-distance contribution in which the $ΔS = 2$ process proceeds via two $ΔS = 1$ operators. The non-perturbative nature of QCD in the relevant energy regimes requires a lattice QCD simulation. In this paper we present the two-loop, $O(α_s)$ RI/SMOM - $\\overline{\\text{MS}}$ matching factors required to renormalize a lattice QCD calculation of the long-distance contribution to $ε_K$.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文计算了双局域（bi-local）算符在 RI/SMOM 与 \\(\\overline{\\text{MS}}\\) 方案之间的两圈匹配因子，为格点 QCD 计算 \\(K^0-\\bar K^0\\) 混合的长程贡献（即 \\(\\epsilon_K\\)）提供了所需的微扰重整化匹配。\n\n## 研究问题\n作者想解决什么问题？\n\n- 标准模型中 \\(\\epsilon_K\\)（中性 kaon 系统中间接 CP 破坏的度量）的精确检验需要第一性原理计算。\n- 传统上 \\(\\epsilon_K\\) 由短程的 \\(\\Delta S=2\\) 局域算符 \\(O^{\\Delta S=2}\\) 主导，但完整计算还需要**长程贡献**：\\(\\Delta S=2\\) 过程通过两个 \\(\\Delta S=1\\) 算符的乘积（双局域算符）实现。\n- 这个长程贡献本质上是非微扰的，需要用格点 QCD 计算。\n- 格点计算得到的双局域算符矩阵元必须在某个中间方案（RI/SMOM）中重整化，然后匹配到 \\(\\overline{\\text{MS}}\\) 方案以便与连续谱结果比较。\n- **本文要解决的问题**：此前缺少双局域算符从 RI/SMOM 到 \\(\\overline{\\text{MS}}\\) 的两圈（\\(O(\\alpha_s)\\)）匹配因子。本文正是要填补这一空白。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n\n- **微扰论计算**：在连续时空中进行两圈（two-loop）微扰计算，而非格点数值模拟。\n- **方案**：使用 RI/SMOM（Regularization Independent / Symmetric Momentum subtraction）方案作为中间重整化方案，目标方案为 \\(\\overline{\\text{MS}}\\)。\n- **对象**：双局域算符，即两个 \\(\\Delta S=1\\) 四夸克算符的乘积，插入在两点之间（对应长程贡献的算符结构）。\n- **技术要点**：\n  - 计算双局域算符的顶点函数（vertex functions）在两圈阶的修正。\n  - 处理双局域算符带来的额外复杂性：算符间的混合（operator mixing）、可能的幂次发散（power divergences）以及算符乘积的紫外结构。\n  - 提取有限部分，得到 RI/SMOM 与 \\(\\overline{\\text{MS}}\\) 之间的转换因子。\n- 结果以解析形式给出匹配系数，供格点计算直接使用。\n\n## 主要结果\n总结最重要发现。\n\n- 给出了双局域算符（贡献于 \\(\\epsilon_K\\) 长程部分）从 RI/SMOM 到 \\(\\overline{\\text{MS}}\\) 的**两圈匹配因子**，即 \\(O(\\alpha_s)\\) 精度的转换系数。\n- 这些匹配因子是格点 QCD 计算长程 \\(\\epsilon_K\\) 贡献并进行重整化所必需的。\n- 计算涵盖了相关算符的混合结构，确保格点矩阵元可以一致地转换到 \\(\\overline{\\text{MS}}\\) 方案。\n- 该结果使得格点计算的长程贡献可以与微扰论短程贡献以一致方案结合，从而给出 \\(\\epsilon_K\\) 的完整 SM 预测。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n\n- **填补关键空白**：此前 \\(\\epsilon_K\\) 长程贡献的格点计算缺少必要的两圈匹配因子，本文提供了这一缺失环节。\n- **提高精度**：两圈匹配是实现 \\(O(\\alpha_s)\\) 精度重整化的必要条件，对精确检验 SM 至关重要。\n- **支持格点计算**：为正在进行或计划中的格点 QCD 计算（如 RBC/UKQCD 等合作组）提供直接可用的微扰输入。\n- **CP 破坏物理**：\\(\\epsilon_K\\) 是检验 CKM 机制和寻找新物理的重要观测量；精确的 SM 预测有助于识别 BSM 偏差。\n- **方法论意义**：双局域算符的重整化比局域算符更复杂，本文的处理方法对类似的双局域/非局域算符计算有借鉴意义。\n\n## 方向标签\n- Lattice QCD\n- Flavor physics / Kaon physics\n- Perturbative QCD / Renormalization\n- CP violation\n- Standard Model precision tests\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：\n- 对于直接从事 \\(\\epsilon_K\\) 格点计算、kaon 物理或双局域算符重整化的研究者，这是**必读**文献（5 星）。\n- 对于更广泛的格点 QCD 和味物理社区，它提供了重要的微扰匹配输入，值得关注（4 星）。\n- 对于不涉及 kaon 混合或双局域算符的读者，技术细节可能较为专门，但方法论有参考价值（3 星）。\n- 论文本身是技术性微扰计算，不涉及新的格点算法或数值模拟，因此对方法学创新的贡献有限，但对特定物理目标的推进至关重要。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:12.238152"
+  },
+  {
+    "id": "2610.06628v1",
+    "title": "Phenomenological Estimate for the Longitudinal Unpolarized Structure Function in Semi-inclusive Deep Inelastic Scattering",
+    "authors": [
+      "Alessandro Bacchetta",
+      "Matteo Cerutti",
+      "Leonard Gamberg",
+      "Richard Whitehill"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.06628v1",
+    "published": "2026-10-05T16:23:02Z",
+    "abstract": "We present a phenomenological study of the longitudinal unpolarized structure function $F_{UU,L}$ in semi-inclusive deep inelastic scattering (SIDIS) and its ratio with the transverse structure function, $R_{\\, \\rm SIDIS}=F_{UU,L}/F_{UU,T}$. We study their transverse-momentum dependence, combining for the first time low- and high-transverse-momentum contributions across the kinematic range relevant to SIDIS measurements. At low transverse momentum, $F_{UU,L}$ is power suppressed, making it sensitive to next-to-next-to-leading-power dynamics in the unpolarized sector. We find that this contribution can be sizable, with $R_{\\, \\rm SIDIS}\\simeq 0.3$ at low transverse momentum and hard scale, producing a correction of the order of $10\\%$ to transverse-momentum-integrated observables. Although these estimates remain subject to theoretical uncertainties, our results indicate that accounting for $F_{UU,L}$ is likely to be important for the interpretation of SIDIS multiplicities and motivate dedicated measurements of $R_{\\, \\rm SIDIS}$ to better constrain the longitudinal contribution.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用现象学方法首次系统估算了 SIDIS 中纵向非极化结构函数 \\(F_{UU,L}\\) 及其与横向结构函数之比 \\(R_{\\rm SIDIS}\\)，发现低横动量区域的 \\(F_{UU,L}\\) 贡献可达约 30%，对横动量积分观测量造成约 10% 的修正，因此不能被忽略。\n\n## 研究问题\n\n作者想解决的核心问题是：在半单举深度非弹性散射（SIDIS）中，纵向非极化结构函数 \\(F_{UU,L}\\) 到底有多大？它相对于横向结构函数 \\(F_{UU,T}\\) 的比值 \\(R_{\\rm SIDIS}\\) 在实验相关运动学范围内是多少？具体来说：\n\n1. 在低横动量区域，\\(F_{UU,L}\\) 受到幂次压低，属于次次领头幂（NNLP）贡献，此前很少被系统研究。\n2. 高横动量区域可以用微扰 QCD 处理，但低横动量区域需要非微扰信息。\n3. 作者希望把低横动量和高横动量贡献结合起来，给出覆盖 SIDIS 实验运动学范围的完整估计。\n4. 最终目标是判断 \\(F_{UU,L}\\) 对 SIDIS 多重数（multiplicity）提取和横动量积分观测量的影响是否重要。\n\n## 方法\n\n需要特别指出：**这篇论文不是格点 QCD 论文**，而是一篇基于 QCD 因子化和现象学模型的分析工作。具体方法包括：\n\n1. **横动量依赖（TMD）因子化框架**：在低横动量区域，使用 TMD 因子化来描述 SIDIS 截面，其中 \\(F_{UU,L}\\) 对应 NNLP 的贡献。\n2. **共线因子化**：在高横动量区域，使用标准的共线因子化与微扰 QCD 计算，其中 \\(F_{UU,L}\\) 来自 \\(\\alpha_s\\) 阶的硬散射系数。\n3. **低-高横动量匹配**：作者首次将低横动量（非微扰、NNLP）和高横动量（微扰）贡献结合，覆盖整个 SIDIS 运动学范围。\n4. **现象学模型输入**：使用已有的非极化 TMD 分布函数和碎裂函数参数化，以及 NNLP 非微扰矩阵元的模型估计。\n5. **数值估算**：计算 \\(F_{UU,L}\\)、\\(F_{UU,T}\\) 及其比值 \\(R_{\\rm SIDIS}\\) 随横动量和硬标度的变化。\n\n论文中没有使用格点模拟、机器学习、张量网络或量子模拟等数值技术。\n\n## 主要结果\n\n1. **\\(F_{UU,L}\\) 在低横动量区域可以被放大**：尽管受到幂次压低，但在低横动量和较大硬标度下，\\(F_{UU,L}\\) 的贡献可以相当显著。\n2. **比值 \\(R_{\\rm SIDIS}\\simeq 0.3\\)**：在低横动量和硬标度条件下，\\(R_{\\rm SIDIS}=F_{UU,L}/F_{UU,T}\\) 约为 0.3，远非可以忽略的小量。\n3. **对横动量积分观测量的修正约 10%**：将 \\(F_{UU,L}\\) 纳入后，横动量积分后的观测量（如多重数）会得到约 10% 量级的修正。\n4. **对 SIDIS 多重数提取有重要影响**：由于实验上常通过多重数比值来提取碎裂函数和 TMD 分布，忽略 \\(F_{UU,L}\\) 可能引入系统性偏差。\n5. **理论不确定性仍然存在**：作者强调这些估计依赖于 NNLP 非微扰矩阵元的模型假设，需要未来实验和理论工作来进一步约束。\n\n## 为什么值得关注\n\n1. **对 SIDIS 实验分析有直接影响**：SIDIS 是研究核子自旋结构和三维动量结构的主要实验手段之一。如果 \\(F_{UU,L}\\) 的贡献达到 10% 量级，那么现有基于忽略纵向贡献的分析可能存在系统性偏差。\n2. **推动 NNLP 理论研究**：\\(F_{UU,L}\\) 在低横动量区域属于 NNLP 效应，此前在非极化 SIDIS 中很少被系统研究。这项工作为 NNLP 因子化和非微扰矩阵元的现象学研究提供了动机。\n3. **连接微扰与非微扰 QCD**：论文展示了如何将高横动量的微扰计算与低横动量的非微扰 TMD 描述结合起来，这对理解 QCD 因子化在不同运动学区域的衔接有方法论意义。\n4. **对格点 QCD 的潜在启示**：虽然本文不是格点工作，但 NNLP 非微扰矩阵元原则上可以通过格点 QCD 计算（如准 TMD 或格点 TMD 方法）来约束。这为格点社区提供了一个可能的未来方向。\n5. **对电子-离子对撞机（EIC）的意义**：EIC 将提供高精度 SIDIS 数据，如果 \\(F_{UU,L}\\) 确实有 10% 量级的贡献，那么 EIC 分析必须认真对待这一效应。\n\n## 方向标签\n\n- **QCD 因子化与微扰 QCD**\n- **TMD 分布函数与碎裂函数**\n- **SIDIS 现象学**\n- **核子结构**\n- **NNLP 效应**\n\n（注：本文不属于 Lattice QCD、BSM、Quantum simulation、Machine Learning、Tensor network 或 Finite temperature 方向。）\n\n## 阅读优先级\n\n**★★★☆☆（3/5 星）**\n\n理由：\n\n- **对 SIDIS 和 TMD 现象学研究者：4-5 星**。如果你直接从事 SIDIS 数据分析、TMD 提取或核子结构研究，这篇论文的结果直接影响你的系统误差预算，值得仔细阅读。\n- **对格点 QCD 研究者：2-3 星**。本文不是格点工作，但它指出的 NNLP 非微扰矩阵元可能成为格点计算的未来目标。如果你关心格点 QCD 与实验现象的连接，可以浏览。\n- **对一般 QCD/理论物理研究者：2-3 星**。论文的物理动机清晰，结果有现象学意义，但方法本身没有引入全新的理论框架，更多是已有工具的组合应用。\n- **对高能物理实验研究者：3-4 星**。如果你参与 SIDIS 或 EIC 相关实验，这篇论文提醒你纵向贡献不可忽略，值得关注。\n\n总体而言，这是一篇扎实的现象学估算论文，对特定子领域有明确价值，但并非广泛意义上的突破性工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:20.905659"
+  },
+  {
+    "id": "2610.06612v1",
+    "title": "Learning Low-Order Approximations of the Quark Propagator in Lattice QCD",
+    "authors": [
+      "Simon Pfahler",
+      "Maren Käfferlein",
+      "Daniel Knüttel",
+      "Christoph Lehner",
+      "Tilo Wettig"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.06612v1",
+    "published": "2026-10-05T16:17:05Z",
+    "abstract": "The hopping expansion is an important approximation of the quark propagator in lattice quantum chromodynamics, but it diverges for light quarks, which limits the scope of strong-coupling and finite-density simulations. We present an artificial scientific discovery framework using gauge-equivariant neural networks in the Clifford basis to extract interpretable approximations. Our approach yields improved low-order approximations that outperform the hopping expansion at identical computational cost. In the parameter regime where the hopping expansion fails, our approach identifies convergent behavior, thus suggesting a novel series expansion. The discovered approximations generalize to unseen gauge fields and volumes, enabling immediate implementation as plug-in replacements and a new theoretical understanding of quark-propagator expansions.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用规范等变神经网络在 Clifford 基下“学习”夸克传播子的低阶近似，得到的展开式在相同计算成本下优于传统 hopping expansion，并在 hopping expansion 发散的轻夸克区域表现出收敛行为，暗示了一种新的级数展开。\n\n## 研究问题\n\n作者想解决的核心问题是：**hopping expansion 作为格点 QCD 中夸克传播子的重要近似，在轻夸克（小夸克质量）区域会发散**，这严重限制了强耦合展开和有限密度模拟的适用范围。具体来说：\n\n- hopping expansion 按 hopping 参数 κ 的幂次展开，当 κ 增大（轻夸克）时级数不收敛；\n- 这阻碍了强耦合方法、有限密度算法（如重子数化学势下的模拟）以及相关有效理论的应用；\n- 作者希望**自动发现新的、可解释的低阶近似**，在相同计算成本（相同阶数、相同算符数量）下比 hopping expansion 更准确、更稳定，甚至能在原展开失效的参数区域收敛。\n\n## 方法\n\n论文采用了一个“人工科学发现”框架，关键要素包括：\n\n1. **Clifford 基表示**：将夸克传播子（以及相关算符）用 Clifford 代数基（γ 矩阵组合）展开，使网络输出具有明确的狄拉克结构，便于物理解释。\n\n2. **规范等变神经网络（gauge-equivariant neural networks）**：网络被设计为在规范变换下等变，保证学到的近似尊重格点 QCD 的规范对称性。这是关键，因为传播子必须与规范场协变地组合。\n\n3. **学习低阶近似**：网络被训练来拟合/逼近夸克传播子，但约束其输出为**低阶、稀疏、可解释的算符组合**（类似 hopping expansion 的项，但允许更一般的项和系数）。目标是提取出显式的级数展开形式，而非黑箱模型。\n\n4. **与 hopping expansion 对比**：在相同阶数/相同计算成本下比较精度；在 hopping expansion 发散的参数区域检验新展开的收敛性。\n\n5. **泛化测试**：在未见过的规范场组态和不同体积上测试学到的近似，验证其可迁移性，使其能作为“即插即用”替代品。\n\n## 主要结果\n\n1. **改进的低阶近似**：在相同计算成本（相同阶数）下，学到的近似比传统 hopping expansion 更准确地逼近真实夸克传播子。\n\n2. **在 hopping expansion 失效区域发现收敛行为**：在轻夸克参数区域（hopping expansion 发散处），新方法识别出收敛的展开行为，**暗示存在一种新的级数展开**，可能扩展强耦合/有限密度方法的适用范围。\n\n3. **泛化能力**：学到的近似能推广到未见过的规范场和不同体积，说明它捕捉到了物理上可迁移的结构，而不仅是拟合特定组态。\n\n4. **可解释性**：由于在 Clifford 基下用等变网络并约束为低阶算符组合，结果具有明确的解析形式，可提供对夸克传播子展开的新理论理解。\n\n## 为什么值得关注\n\n- **对格点 QCD 强耦合/有限密度方法有直接影响**：hopping expansion 是强耦合展开和有限密度算法的基石之一。若能在轻夸克区域获得收敛的新展开，可能显著扩展这些方法的应用范围（例如有限重子密度、核物理相关模拟）。\n- **机器学习与理论物理的结合范式**：这不是简单的黑箱拟合，而是用等变网络“发现”可解释的解析近似，展示了 AI 辅助理论推导的潜力。\n- **可即插即用**：学到的近似可作为现有代码中的替代模块，实用性强。\n- **理论意义**：可能揭示夸克传播子展开的新结构，促进对格点 QCD 解析近似的理解。\n- **方法可迁移**：Clifford 基 + 规范等变网络的框架可能被推广到其他费米子传播子或相关算符的展开问题。\n\n## 方向标签\n\n- Lattice QCD\n- Machine Learning\n- Finite density\n- Strong coupling expansion\n- Quark propagator\n\n## 阅读优先级\n\n**4/5 星**\n\n理由：\n\n- **高优先级**如果你从事格点 QCD 强耦合展开、有限密度算法、或 AI for science / 等变网络在物理中的应用——这篇论文直接相关且方法新颖。\n- **中等优先级**如果你关注夸克传播子解析结构或格点微扰论——结果有理论启发性，但需验证其展开的严格收敛性和适用范围。\n- **扣一星的原因**：摘要未给出具体数值精度、收敛半径、算符阶数等细节；实际影响取决于新展开是否在物理相关参数区域（如真实轻夸克质量）真正收敛，以及是否可扩展到完整 QCD 模拟。需要阅读全文确认其普适性和理论严谨性。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:28.613670"
+  },
+  {
+    "id": "2610.06272v1",
+    "title": "Two-Sided Bounds on Ground State Properties in Lattice Gauge Theories",
+    "authors": [
+      "Eloïc Vallée",
+      "Ariel Kelman",
+      "Julius Mildenberger",
+      "Jordi Tura",
+      "Patrick Emonts"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.06272v1",
+    "published": "2026-10-05T13:05:48Z",
+    "abstract": "Gauge theories describe fundamental interactions in the standard model of particle physics and build effective theories in condensed matter physics. Being notoriously hard to simulate, these theories are commonly regularized as lattice gauge theories which can be evaluated with high precision through Monte Carlo algorithms or variational methods. However, Monte Carlo algorithms are not applicable in all regimes due to the sign problem; while variational methods, quantum and classical alike, only give upper-bounds on the ground-state energy. Their precision crucially depends on the chosen ansatz. Here, we present a framework based on a hierarchy of semidefinite programs to yield increasingly good lower-bounds on the ground-state energy and propagate these bounds to extended observables like Wilson loops and mesonic strings. We demonstrate the numerical capabilities by applying the algorithm to a (1+1)-dimensional $\\mathbb{Z}_2$ theory with dynamic fermionic matter and its pure-gauge version in (2+1)-dimensions. In both cases, we obtain certified intervals for the ground-state energy. For a one-dimensional system with 129 sites, the certified interval has a relative spread of $0.04\\%$. For a two-dimensional system with 97 sites (corresponding to a $7 \\times 8$ lattice), the relative spread is $2.08\\%$. Beyond energy estimates, the proposed method provides rigorous bounds on both short- and long-range observables such as Wilson loops over multiple plaquettes and the magnitude of the mesonic string. The method can be both used as a computational microscope into many-body physics and a way to certify results of quantum simulators.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出了一套基于半定规划（SDP）层级的方法，首次为格点规范理论的基态能量及扩展观测量（如 Wilson loop、介子弦）同时给出严格的双侧界（上界与下界），并在 (1+1)D $\\mathbb{Z}_2$ 费米子理论和 (2+1)D 纯规范理论中数值验证了其可行性。\n\n## 研究问题\n格点规范理论通常依赖 Monte Carlo 方法进行高精度计算，但 Monte Carlo 在符号问题严重的区域（如有限密度、拓扑项、实时动力学）失效。变分方法（量子或经典）虽然可以绕过符号问题，但只能给出基态能量的**上界**，其精度严重依赖于试探波函数的选取，缺乏系统性的误差控制。作者想解决的核心问题是：**如何为格点规范理论的基态能量和物理观测量提供严格的下界，从而与变分上界结合形成“认证区间”（certified interval），实现不依赖具体拟设精度的可靠误差界定？**\n\n## 方法\n- **理论框架**：基于量子多体系统的**半定规划层级**（semidefinite programming hierarchy），类似于量子边际问题（quantum marginal problem）或 NPA（Navascués-Pironio-Acín）层级的思想，但推广到格点规范理论。\n- **核心思想**：构造一系列越来越紧的半定规划松弛，每一层给出基态能量的下界。随着层级升高，下界单调收敛到真实基态能量。\n- **观测量扩展**：不仅限于能量，还将下界传播到扩展观测量，如 Wilson loop（跨越多个 plaquette）和介子弦（mesonic string）的幅度。\n- **模型与数值验证**：\n  - (1+1)D $\\mathbb{Z}_2$ 规范理论 + 动态费米子物质\n  - (2+1)D 纯 $\\mathbb{Z}_2$ 规范理论\n- **数值技术**：利用半定规划求解器处理层级优化问题，并针对格点结构进行稀疏性/对称性优化。\n\n## 主要结果\n1. **认证区间**：\n   - 一维 129 个格点系统：基态能量的认证区间相对宽度仅为 **0.04%**。\n   - 二维 $7 \\times 8$ 格点（97 个格点）系统：相对宽度为 **2.08%**。\n2. **双侧界**：方法同时给出上界（来自变分）和下界（来自 SDP 层级），形成严格区间。\n3. **扩展观测量**：对 Wilson loop（多 plaquette）和介子弦幅度给出了严格的双侧界，而不仅仅是能量。\n4. **可扩展性**：方法在 1D 和 2D 系统中均可行，且层级越高界越紧。\n\n## 为什么值得关注\n- **解决符号问题的新途径**：为 Monte Carlo 无法处理的区域（有限密度、实时动力学等）提供了严格的非微扰计算框架。\n- **变分方法的误差认证**：变分方法（包括量子模拟器和张量网络）通常只能给上界，本文的下界方法使得结果可以被“认证”，极大提升了可靠性。\n- **量子模拟器的验证工具**：可用于验证量子模拟器或量子计算机的输出是否落在严格区间内，判断其是否可信。\n- **对格点 QCD 的潜在影响**：虽然本文测试的是 $\\mathbb{Z}_2$ 理论，但框架具有推广到非阿贝尔规范理论（如 $SU(2)$、$SU(3)$）的潜力，可能为格点 QCD 提供独立的交叉验证手段。\n- **多体物理的“计算显微镜”**：严格界可以揭示基态和低激发态的物理性质，而不依赖于具体拟设。\n\n## 方向标签\n- Lattice Gauge Theory\n- Quantum Simulation\n- Tensor Network\n- Sign Problem\n- Variational Methods\n- Semidefinite Programming\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：\n- 方法新颖且具有理论深度，将量子信息中的 SDP 层级技术引入格点规范理论，解决了长期存在的“只有上界”问题。\n- 数值结果在 1D 和 2D 系统中展示了可行性，认证区间宽度令人印象深刻（0.04% 和 2.08%）。\n- 对量子模拟和格点 QCD 社区有直接相关性，尤其是符号问题严重的区域。\n- 扣一星是因为目前仅测试了 $\\mathbb{Z}_2$ 理论，向非阿贝尔规范理论和高维系统的推广仍面临计算复杂度的挑战，尚未展示对实际 QCD 问题的直接应用。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:35.344639"
+  },
+  {
+    "id": "2610.06075v1",
+    "title": "Status and Progress of Hamiltonian Effective Field Theory in Light Hadron Spectroscopy",
+    "authors": [
+      "Qi-Liang Xie",
+      "Qiu-Rui Wu",
+      "Zi-Jun Li",
+      "Fang-Chao Han",
+      "Yu Zhuge",
+      "Zhan-Wei Liu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.06075v1",
+    "published": "2026-10-05T10:07:01Z",
+    "abstract": "Hadron resonances are intrinsically dynamical states whose observable properties are governed by the interplay between quark-model configurations and hadronic channels. Hamiltonian effective field theory provides a practical framework for connecting hadron dynamics with experimental observables and lattice QCD results. In this review, we outline the infinite- and finite-volume formulations of Hamiltonian effective field theory and survey its applications to light-hadron spectroscopy and resonance structure. By constraining the same Hamiltonian framework with experimental scattering data and lattice QCD spectra, Hamiltonian effective field theory can help distinguish among scenarios that describe the available scattering data comparably well but imply different roles for bare-state and multihadron configurations. We also review recent extensions of the Hamiltonian framework developed to address more complicated dynamical settings.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇综述系统总结了 Hamiltonian Effective Field Theory（HEFT）在无限体积与有限体积下的形式体系及其在轻强子谱学与共振态结构中的应用，强调它能把实验散射数据与格点 QCD 能谱纳入同一个哈密顿量框架，从而区分“裸态”与“多强子通道”在共振态中扮演的不同角色。\n\n## 研究问题\n作者想解决的核心问题是：强子共振态本质上是动力学态，其性质由夸克模型组态与强子通道之间的耦合决定。仅靠实验散射数据，往往存在多个理论情景都能同样好地描述数据，但它们对裸态（bare state）和多强子组态的相对重要性给出不同解释。论文希望回答：\n\n1. 如何建立一个能同时连接实验散射数据和格点 QCD 有限体积能谱的有效场论框架？\n2. 如何利用这一框架区分那些在散射数据上表现相近、但物理内涵不同的共振态情景？\n3. 如何把 HEFT 推广到更复杂的动力学情形，例如多通道、有限体积效应更复杂或耦合更强的系统？\n\n## 方法\n论文综述的是 Hamiltonian Effective Field Theory 框架，而不是某一种具体格点算法。其方法要点包括：\n\n1. **哈密顿量形式**：将强子共振态描述为裸态与多强子通道耦合的哈密顿系统，通常包含：\n   - 裸态或夸克模型态；\n   - 两强子或多强子连续谱通道；\n   - 裸态与通道之间的耦合顶点；\n   - 通道之间的相互作用。\n\n2. **无限体积表述**：用于描述散射振幅、相移、共振极点以及实验散射数据。通过拟合散射数据来确定哈密顿量参数。\n\n3. **有限体积表述**：用于与格点 QCD 能谱对接。有限体积中连续谱离散化为有限体积能级，HEFT 可计算这些能级随体积和动量的变化，并与格点 QCD 谱比较。\n\n4. **联合约束**：用同一套哈密顿量框架同时拟合实验散射数据和格点 QCD 有限体积能谱，从而减少模型依赖性，并区分不同物理情景。\n\n5. **扩展形式**：综述还讨论了针对更复杂动力学设置的近期扩展，例如多通道耦合、更一般的有限体积效应、以及更复杂的共振结构。\n\n6. **与 Lüscher 方法的关系**：HEFT 可视为一种互补途径。Lüscher 方法通常从有限体积能级提取无限体积散射信息，而 HEFT 直接构造哈密顿量并同时描述有限体积谱与无限体积散射。\n\n## 主要结果\n论文的主要结论和发现可概括为：\n\n1. **HEFT 提供了连接实验与格点 QCD 的统一框架**：同一个哈密顿量可以同时描述实验散射数据和格点 QCD 能谱，从而把两类信息结合起来。\n\n2. **能区分简并情景**：对于仅用散射数据难以区分的不同解释，HEFT 结合格点能谱后可以判断裸态和多强子组态的相对重要性。例如，某些共振态可能更接近“裸态主导”，而另一些则更接近“分子态”或“多强子通道主导”。\n\n3. **有限体积表述是关键桥梁**：有限体积 HEFT 能预测格点 QCD 中离散能级随体积的变化，因此可以直接与格点计算比较，并帮助解释格点谱。\n\n4. **适用于轻强子谱学与共振结构**：综述覆盖了轻强子谱学中的应用，包括共振态的质量、宽度、耦合以及内部结构信息。\n\n5. **框架具有可扩展性**：近期扩展表明 HEFT 可处理更复杂的动力学情形，而不仅限于简单的单通道或两通道问题。\n\n6. **强调模型依赖性控制**：通过联合实验与格点数据，HEFT 能减少仅靠散射数据拟合带来的模型简并，提高对共振态物理图像判断的可靠性。\n\n## 为什么值得关注\n这篇综述对 lattice/QCD/理论物理社区的重要性体现在：\n\n1. **连接格点 QCD 与实验**：格点 QCD 能计算有限体积能谱，但如何从中提取共振态物理信息仍是核心难题。HEFT 提供了一条直接连接格点谱、散射数据和共振态结构的路径。\n\n2. **解决模型简并问题**：实验散射数据往往无法唯一确定共振态的内部结构。HEFT 通过联合格点数据，能帮助区分“裸态主导”与“多强子分子态主导”等不同情景。\n\n3. **对强子谱学有直接意义**：轻强子谱学中许多共振态（如 ρ、σ、f0、a0 等）的本质仍有争议。HEFT 为这些态的结构研究提供了系统框架。\n\n4. **与 Lüscher 方法互补**：HEFT 不替代 Lüscher 形式，而是提供另一种从有限体积谱到物理信息的途径，尤其在多通道和复杂耦合情形下可能更有优势。\n\n5. **推动格点 QCD 谱学分析**：随着格点 QCD 计算精度提高，如何解释有限体积能级变得越来越重要。HEFT 为格点谱学分析提供了实用工具。\n\n6. **可扩展到更复杂系统**：论文讨论的扩展方向可能对多通道共振、耦合通道阈值效应、以及未来更高精度格点计算的分析有重要影响。\n\n## 方向标签\n- Lattice QCD\n- Hadron Spectroscopy\n- Effective Field Theory\n- Resonance Physics\n- Finite Volume Effects\n\n## 阅读优先级\n**4.5/5 星**\n\n理由：\n- 如果你从事格点 QCD 强子谱学、共振态提取或有限体积效应研究，这篇综述非常值得精读。它系统整理了 HEFT 的形式体系、应用和扩展，能帮助你理解如何把格点能谱与实验散射数据结合。\n- 如果你主要做算法、机器学习或 tensor network 方向，相关性较低，可能只需了解其核心思想。\n- 对于理论物理社区中研究强子共振态结构的人，这篇综述提供了清晰的框架和最新进展，具有较高参考价值。\n- 扣掉半星是因为它是一篇综述，具体技术细节和数值结果需要查阅其引用的原始论文；如果你需要直接上手计算，还需结合具体实现文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:44.207991"
+  },
+  {
+    "id": "2610.04665v1",
+    "title": "Efficient Neural Surrogates for Linear Radiation Transport on the Lattice and Hohlraum benchmarks",
+    "authors": [
+      "Carmelo Gonzales",
+      "Steffen Schotthöfer",
+      "Cory D. Hauck"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.04665v1",
+    "published": "2026-10-03T17:26:34Z",
+    "abstract": "Linear radiation transport equations (RTEs) form the simulation foundations underpinning design and analysis tasks in nuclear engineering, inertial confinement fusion, medical imaging, and astrophysics, but resolving the high-dimensional phase space at engineering fidelity remains expensive enough that outer-loop workflows, such as design optimization, uncertainty quantification, and parameter sweeps, are routinely budget-bound on traditional solvers. Neural surrogates promise to relax this bottleneck by amortizing simulation cost across thousands of downstream queries, but the architectural choices and engineered inductive biases that make a surrogate accurate on one transport problem do not transfer straightforwardly across model families. We benchmark two parameter-matched neural surrogate architectures, the physics-attention Transolver and the multi-scale graph network Bi-Stride Multi-Scale MeshGraphNet (BSMS-MGN), as end-to-end approximations of the final-time particle concentration for the two-dimensional linear RTE on the canonical Lattice and Hohlraum benchmarks. An ablation across Fourier features and region-weighted training loss exposes strongly architecture-dependent inductive-bias preferences, indicating that design choices common to physics-informed surrogate workflows must be revisited per architecture rather than imported across model families, and that downstream utility depends on per-QoI sensitivity rather than a single field-level score. The model training recipe, training data, and evaluation pipeline are released alongside this paper to support reproduction, transfer to related transport problems, and evaluation as amortized forward-model components in larger outer-loop simulation workflows.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文系统比较了两种参数规模匹配的神经代理架构（Transolver 与 BSMS-MGN）在二维线性辐射输运方程上的表现，发现物理信息代理模型中的归纳偏置偏好强烈依赖于具体架构，不能跨模型家族直接迁移。\n\n## 研究问题\n作者想解决的核心问题是：在高保真线性辐射输运方程（RTE）求解代价高昂的背景下，如何构建高效的神经代理模型来加速外循环工作流（如设计优化、不确定性量化、参数扫描）。具体而言，作者关注的是：不同神经代理架构在相同参数预算下，对同一输运问题的归纳偏置需求是否一致？Fourier 特征和区域加权损失等常见设计选择是否具有跨架构的通用性？\n\n## 方法\n- **物理问题**：二维线性辐射输运方程，在标准 Lattice 和 Hohlraum 基准上求解最终时刻的粒子浓度场。\n- **神经代理架构**：\n  - **Transolver**：基于物理注意力机制的 Transformer 类架构。\n  - **BSMS-MGN（Bi-Stride Multi-Scale MeshGraphNet）**：多尺度图神经网络。\n- **消融实验**：对 Fourier 特征编码和区域加权训练损失进行消融，检验不同架构对这两种归纳偏置的敏感度。\n- **评估方式**：端到端预测最终时刻粒子浓度，并关注逐 QoI（Quantity of Interest）敏感度而非单一全场指标。\n- **可复现性**：发布了训练配方、训练数据和评估流水线。\n\n## 主要结果\n1. **架构依赖的归纳偏置偏好**：Fourier 特征和区域加权损失对不同架构的效果差异显著，说明物理信息代理工作流中的常见设计选择需要针对每种架构重新审视，而非跨模型家族直接套用。\n2. **下游效用取决于逐 QoI 敏感度**：单一的全场级评分不足以判断代理模型在下游任务中的实际价值，需要关注具体物理量的敏感度。\n3. **两种架构均能作为端到端代理**：Transolver 和 BSMS-MGN 在参数匹配条件下均可近似最终时刻粒子浓度，但各自的优劣取决于具体基准和评估指标。\n\n## 为什么值得关注\n尽管这篇论文的直接应用场景是核工程和惯性约束聚变中的辐射输运，但其方法论对 lattice/QCD/理论物理社区有重要启示：\n- **神经代理模型的架构选择不是中性的**：在 lattice 场论中越来越多地使用机器学习代理（如用于采样加速、相变检测、参数扫描），本文表明归纳偏置必须与架构匹配，不能盲目迁移。\n- **逐 QoI 评估的重要性**：在 lattice QCD 中，不同物理量（如手征凝聚、拓扑荷、介子质量）对代理模型的敏感度可能截然不同，单一损失函数不足以指导设计。\n- **可复现的基准流水线**：为社区提供了可迁移到其他输运类问题的评估框架。\n\n## 方向标签\n- Machine Learning\n- Lattice Field Theory (方法学交叉)\n- Computational Physics\n- Neural Surrogate Models\n- Radiation Transport\n\n## 阅读优先级\n★★★☆☆（3/5）\n\n**理由**：这篇论文本身不直接研究 lattice QCD 或量子场论，而是聚焦于辐射输运的神经代理基准。对于从事 lattice 场论中机器学习应用的研究者，其方法论启示（架构依赖的归纳偏置、逐 QoI 评估）具有参考价值，但具体技术细节与 QCD 的关联较间接。如果读者的兴趣在于将神经代理用于 lattice 计算加速，本文提供的基准框架和消融思路值得一读；如果关注的是 lattice QCD 本身的物理问题，则优先级较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:49.554732"
+  },
+  {
+    "id": "2609.30496v1",
+    "title": "Disentangling Expressibility, Symmetry Protection, and Hardware Noise in Variational Quantum Simulation of the Two-Flavor Schwinger Model",
+    "authors": [
+      "Karthikeya Machiraju",
+      "Krishna Sujith",
+      "Kaustav Bhowmick"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2609.30496v1",
+    "published": "2026-09-24T19:33:55Z",
+    "abstract": "Existing quantum simulations of the two-flavor Schwinger model have run at a single lattice size, and it is not known how far the variational approach can be pushed or which weakness stops it first. Following the model from N = 2 to 6 staggered lattice sites, we find that the binding constraint at reachable sizes is hardware noise rather than circuit expressibility or trainability, and identify N = 3 as the immediately viable extension of existing trapped-ion experiments. The energy error of a charge-conserving ansatz collapses onto one function of p/d, the ratio of variational parameters to physical-sector dimension, and falls by more than two orders of magnitude as p/d rises through order unity, giving the expressibility condition L(4N - 1) >= binom(2N,N) for L circuit layers. The condition is local in chemical potential: at N = 3 the layer count sufficient at zero chemical potential leaves a 74.38% error near the first-order boundary, while one further layer reaches 0.08%. Charge conservation also protects trainability and prevents charge-sector leakage: as the qubit count doubles from 4 to 8, the normalized gradient variance falls to 1/3.56 of its starting value for the constrained ansatz, versus 1/13.57 for an unconstrained circuit. Comparing a global contraction with per-gate local noise, a fixed-parameter control shows that the noise model, not whether the optimizer runs inside the noisy loop, sets how strongly noise degrades the first-order transition. At N = 4, a noiseless control reaches 0.12% mean error, whereas the same circuit at 1.00% depolarizing noise reaches 25.69 to 52.81%.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文系统扫描了双味 Schwinger 模型从 N=2 到 6 个 staggered 格点的变分量子模拟，发现**在当前可及的格点规模下，限制模拟精度的是硬件噪声而非线路表达能力或可训练性**，并给出了一个基于参数/维度比 p/d 的可表达性判据，指出 N=3 是现有囚禁离子实验最直接可行的扩展。\n\n## 研究问题\n\n作者想解决的核心问题是：**变分量子模拟（VQE 类方法）究竟能推到多大规模，以及最先卡住它的是哪个瓶颈？**\n\n具体而言：\n\n1. 已有的双味 Schwinger 模型量子模拟都只在单一格点规模上运行，缺乏对格点规模 N 的系统扫描，因此不知道变分方法的可扩展性边界。\n2. 三个潜在瓶颈——**线路可表达性（expressibility）、可训练性（trainability / 贫瘠高原）、硬件噪声**——哪一个最先成为限制因素，此前没有明确的实验或数值判据。\n3. 能否给出一个定量的、可操作的\"需要多少变分参数/多少层线路\"的条件，来保证达到目标精度？\n4. 化学势（chemical potential）如何影响这一条件？特别是在一阶相变边界附近。\n\n## 方法\n\n**模型与格点化：**\n\n- 双味 Schwinger 模型（two-flavor Schwinger model），即 1+1 维 QED 带两个费米子味。\n- 使用 **staggered fermion** 离散化，格点数 N = 2 到 6。\n- 采用 **charge-conserving ansatz**（保持电荷守恒的变分拟设），与无约束线路对比。\n\n**量子模拟方法：**\n\n- 变分量子模拟（variational quantum simulation / VQE 框架），在量子线路中制备基态近似。\n- 线路层数 L 作为可调参数，变分参数总数 p 与物理扇区维度 d 的比值 p/d 作为核心标度变量。\n- 物理扇区维度由组合数 binom(2N, N) 给出（对应电荷守恒扇区的 Hilbert 空间大小）。\n\n**噪声建模：**\n\n- 对比两种噪声处理方式：\n  - **全局收缩（global contraction）**：将噪声作为整体信道处理。\n  - **逐门局部噪声（per-gate local noise）**：每个量子门后施加局部噪声信道。\n- 使用 **固定参数对照实验（fixed-parameter control）**，区分\"噪声模型本身\"与\"优化器是否在噪声回路内运行\"这两个因素对结果的影响。\n- 具体噪声水平：1.00% 去极化噪声（depolarizing noise）。\n\n**数值技术：**\n\n- 计算能量误差随 p/d 的标度行为。\n- 计算归一化梯度方差（normalized gradient variance）随量子比特数的变化，用于诊断贫瘠高原。\n- 检查电荷扇区泄漏（charge-sector leakage）。\n\n## 主要结果\n\n1. **瓶颈排序：硬件噪声 > 可表达性 > 可训练性。** 在可达的格点规模（N ≤ 6）下，最先限制精度的是硬件噪声，而不是线路表达能力不足或梯度消失。\n\n2. **能量误差坍缩为 p/d 的单一函数。** 电荷守恒拟设的能量误差不依赖于 N 和 L 的独立取值，而是坍缩到变分参数数与物理扇区维度之比 p/d 的单一函数上。当 p/d 从小于 1 增长到超过 1 时，误差下降超过两个数量级。\n\n3. **可表达性判据：L(4N − 1) ≥ binom(2N, N)。** 即线路层数 L 乘以每层参数数 (4N−1) 必须至少等于物理扇区维度 binom(2N, N)，才能进入误差快速下降的区域。\n\n4. **该条件对化学势是局部的（local in chemical potential）。** 在 N=3 时，零化学势下足够的层数，在一阶相变边界附近会留下 **74.38%** 的误差；再加一层即可将误差降到 **0.08%**。这说明相变点附近需要更多变分参数。\n\n5. **电荷守恒保护可训练性并防止扇区泄漏。** 当量子比特数从 4 翻倍到 8 时：\n   - 约束拟设的归一化梯度方差降至初始值的 **1/3.56**；\n   - 无约束线路则降至 **1/13.57**。\n   - 即电荷守恒显著缓解了贫瘠高原问题。\n\n6. **噪声模型而非优化器位置决定噪声退化程度。** 固定参数对照实验表明，是噪声模型（全局收缩 vs. 逐门局部噪声）决定了噪声对一阶相变的退化强度，而不是优化器是否在噪声回路内运行。\n\n7. **N=4 的定量对比：** 无噪声对照达到 **0.12%** 平均误差；同样线路在 1.00% 去极化噪声下误差升至 **25.69%–52.81%**。这直接量化了当前硬件噪声对模拟精度的毁灭性影响。\n\n8. **N=3 是现有囚禁离子实验最直接可行的扩展。**\n\n## 为什么值得关注\n\n1. **对量子模拟社区：** 给出了一个清晰的\"瓶颈诊断\"——在当前 NISQ 硬件上，不要过度担心线路表达力或贫瘠高原，噪声才是第一位的敌人。这改变了资源分配的优先级。\n\n2. **对格点场论社区：** 双味 Schwinger 模型是测试量子模拟算法的重要玩具模型，其相图（包括一阶相变）与 QCD 有定性相似性。本文首次系统扫描了格点规模，并给出了可表达性判据，为未来向更大规模、更高维模型扩展提供了定量基准。\n\n3. **对 QCD 与 BSM 的启示：** 化学势下相变边界附近需要更多变分参数这一发现，直接关系到有限密度 QCD 和 BSM 相变的量子模拟——这些正是经典方法最困难的区域。\n\n4. **方法论贡献：** p/d 标度律和 L(4N−1) ≥ binom(2N,N) 判据是可操作的工程指南，而不仅仅是定性观察。电荷守恒对可训练性的保护作用也为拟设设计提供了明确指导。\n\n5. **对实验的直接影响：** 明确指出 N=3 是囚禁离子平台的可行下一步，为实验组提供了具体目标。\n\n## 方向标签\n\n- Quantum simulation\n- Lattice gauge theory\n- Schwinger model\n- Variational quantum eigensolver (VQE)\n- NISQ / hardware noise\n- Sign problem / finite density（化学势相关）\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n**理由：**\n\n- **高优先级**给从事量子模拟格点规范理论的读者：本文直接回答了\"能推多远、什么先坏\"这个核心工程问题，并给出了可操作的判据。\n- **高优先级**给囚禁离子量子计算实验组：N=3 的具体建议和噪声量化直接相关。\n- **中等优先级**给经典格点 QCD 研究者：Schwinger 模型的结果有借鉴意义，但距离真实 QCD 仍有较大差距。\n- **扣一星的原因：** 模型是 1+1 维、小格点（N ≤ 6）、单一噪声模型（去极化），结论的普适性有待在更高维、更大规模、更真实噪声谱下验证。此外，p/d 标度律的解析推导或严格证明在摘要中未体现，可能主要是数值观察。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-06T06:41:59.223146"
   }
 ]
