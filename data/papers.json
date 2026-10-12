@@ -5117,5 +5117,46 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-09T06:29:49.113751"
+  },
+  {
+    "id": "2610.13791v1",
+    "title": "Evidence of Taste-Symmetry restoration for Kähler-Dirac fermions on Euclidean Dynamical Triangulations",
+    "authors": [
+      "Mingwei Dai",
+      "Walter Freeman",
+      "Mason Grieb",
+      "Jack Laiho",
+      "Marc Schiffer",
+      "Judah Unmuth-Yockey"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.13791v1",
+    "published": "2026-10-09T16:05:04Z",
+    "abstract": "We study the spectrum of two-particle bound states of Kähler-Dirac fermions coupled via gravity in Euclidean Dynamical Triangulations (EDT). We work in the quenched approximation, where the geometry is allowed to fluctuate, but there is no back-reaction from the matter on the geometry. The Kähler-Dirac action respects an exact $U(1)$ symmetry that is related to continuum chiral symmetry, and this $U(1)$ symmetry ensures that some of the bound-state masses vanish in the chiral limit of vanishing fermion bare mass. The bound-state masses that are not protected by the $U(1)$ symmetry do not vanish in the chiral limit, but the scale associated with the symmetry breaking does not appear to be a physical scale like the Planck mass or the curvature scale of the emergent de Sitter background. Rather, the mass scale associated with this non-degeneracy appears to be a positive power of the lattice spacing, decreasing as the continuum limit is approached. This suggests that Kähler-Dirac fermions in EDT can be interpreted as the gravity analog of staggered fermions in flat-space lattice field theories, with similar behavior.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文通过数值模拟发现，在欧几里得动力学三角剖分（EDT）上，Kähler-Dirac 费米子的非保护束缚态质量在连续极限下趋于消失，表明格点劈裂（taste-symmetry breaking）效应随格距减小而减弱，从而支持将 EDT 上的 Kähler-Dirac 费米子类比为平直空间中的交错费米子（staggered fermions）。\n\n## 研究问题\n\n作者想解决的核心问题是：**Kähler-Dirac 费米子在耦合到涨落几何（EDT）时，其味对称性（taste symmetry）是否能像平直空间交错费米子那样在连续极限下恢复？**\n\n具体而言：\n\n1. Kähler-Dirac 作用量具有一个精确的 U(1) 对称性，与连续手征对称性相关，保护某些束缚态质量在手征极限下为零。\n2. 但不受 U(1) 保护的其他束缚态质量在格点上会出现非简并（即 taste-symmetry breaking），问题是这种非简并对应的质量标度是否是物理标度（如 Planck 质量或 de Sitter 曲率标度），还是仅仅是格点人为效应（随格距趋于零而消失）。\n3. 如果后者成立，则 EDT 上的 Kähler-Dirac 费米子可以作为“弯曲/涨落几何中的交错费米子”类比，具有类似的味对称性恢复机制。\n\n## 方法\n\n- **模型**：Kähler-Dirac 费米子耦合到欧几里得动力学三角剖分（EDT）上的量子引力。\n- **近似**：淬火近似（quenched approximation），即几何可以涨落，但物质场对几何没有反作用（no back-reaction）。\n- **格点方法**：Euclidean Dynamical Triangulations（EDT），一种非微扰量子引力格点方法，通过对单纯形三角剖分求和来定义路径积分。\n- **费米子形式**：Kähler-Dirac 作用量，具有精确 U(1) 对称性，与连续手征对称性相关。\n- **数值技术**：计算双粒子束缚态谱（two-particle bound states spectrum），通过测量关联函数提取束缚态质量，并研究其随裸费米子质量（手征极限）和格距（连续极限）的标度行为。\n- **关键观测量**：非 U(1) 保护的束缚态质量在手征极限下的残余值，以及该残余值随格距的标度行为。\n\n## 主要结果\n\n1. **U(1) 保护的束缚态**：在手征极限（裸费米子质量趋于零）下，受精确 U(1) 对称性保护的束缚态质量确实趋于零，与理论预期一致。\n\n2. **非 U(1) 保护的束缚态**：这些态的质量在手征极限下不趋于零，存在非简并（taste-symmetry breaking）。\n\n3. **关键发现——非简并标度的性质**：与对称性破缺相关的质量标度**不是**物理标度（如 Planck 质量或涌现 de Sitter 背景的曲率标度），而是表现为**格距的正幂次**，即随格距减小而减小。\n\n4. **连续极限行为**：随着连续极限的逼近，非简并质量标度趋于消失，表明 taste-symmetry 在连续极限下恢复。\n\n5. **类比结论**：EDT 上的 Kähler-Dirac 费米子可以解释为平直空间格点场论中交错费米子的引力类比，具有类似的味对称性恢复行为。\n\n## 为什么值得关注\n\n1. **量子引力中的费米子问题**：将费米子耦合到涨落几何（量子引力）是格点量子引力中的核心难题之一。本文展示了 Kähler-Dirac 费米子在 EDT 上可以一致地定义，并且其味对称性破缺是可控的格点人为效应。\n\n2. **手征对称性与格点劈裂**：在格点 QCD 中，Nielsen-Ninomiya 定理表明不能同时保持手征对称性和避免费米子倍增。交错费米子通过味对称性恢复机制部分解决了这一问题。本文表明类似的机制可能在量子引力背景下也成立，这对于构建手征格点引力理论具有重要意义。\n\n3. **EDT 作为量子引力候选**：EDT 是一种非微扰量子引力方法，能够涌现出 de Sitter 背景。本文的结果增强了 EDT 作为量子引力候选理论的可行性，因为它表明费米子可以以受控的方式耦合到涨落几何。\n\n4. **对格点社区的方法论启示**：本文的数值技术（束缚态谱计算、手征极限外推、连续极限标度分析）可以直接借鉴到其他格点引力或格点 QCD 研究中。\n\n5. **跨领域类比**：将 EDT 上的 Kähler-Dirac 费米子类比为平直空间中的交错费米子，为理解量子引力中的费米子行为提供了新的理论视角。\n\n## 方向标签\n\n- Lattice QCD\n- Quantum Gravity (Lattice)\n- Chiral Symmetry\n- Fermion Doubling / Taste Symmetry\n- Euclidean Dynamical Triangulations\n\n## 阅读优先级\n\n**★★★★☆（4/5 星）**\n\n**理由**：\n\n- **高优先级**：对于研究格点量子引力、手征费米子格点公式、或味对称性恢复机制的研究者，本文提供了重要的数值证据和理论类比，值得仔细阅读。\n- **中等优先级**：对于主要关注格点 QCD 现象学（如强子谱、有限温度相变）的研究者，本文的直接相关性较低，但其方法论（束缚态谱计算、手征极限分析）和味对称性恢复的概念可能仍有参考价值。\n- **扣分原因**：淬火近似限制了结果的物理完备性；EDT 本身是一个特定的量子引力方法，受众相对较窄；论文的数值精度和系统误差分析需要进一步评估（摘要中未详细说明）。\n\n**建议**：如果您的兴趣在于量子引力中的费米子、格点手征对称性、或 EDT 方法，本文是必读的。如果您的兴趣主要在格点 QCD 现象学，可以快速浏览结论部分，了解其与交错费米子的类比即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-12T06:17:43.176592"
+  },
+  {
+    "id": "2610.12547v1",
+    "title": "Lattice Monte Carlo of $λφ^4$ on Euclidean de Sitter",
+    "authors": [
+      "Angelo Caravano"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.12547v1",
+    "published": "2026-10-08T18:00:00Z",
+    "abstract": "We report the first Monte Carlo simulation of quantum field theory on Euclidean de Sitter space, $S^4$. Rather than discretizing space, we use a spectral lattice based on spherical harmonics, keeping all symmetries exact at finite cutoff. For a massless $λφ^4$ theory, the zero-mode distribution reproduces the Starobinsky-Yokoyama equilibrium at weak coupling, and deviations closely follow the one-loop renormalization of $λ$. At strong bare coupling, the renormalized quartic coupling saturates near the ceiling of the one-loop renormalization-group flow. This saturation is the de Sitter counterpart of the triviality mechanism that bounds the Higgs mass in flat space. Our results confirm nonperturbatively that the infrared divergences of light scalars in de Sitter are correctly resummed by the stochastic formalism. More broadly, this work opens up de Sitter space to lattice Monte Carlo methods.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文首次把格点蒙特卡洛方法搬到欧几里得 de Sitter 空间 \\(S^4\\) 上，用球谐函数谱格点模拟无质量 \\(\\lambda\\phi^4\\) 理论，非微扰地验证了 de Sitter 中红外发散由随机形式论正确重求和，并发现强裸耦合下重整化四阶耦合饱和，对应 de Sitter 版本的平凡性机制。\n\n## 研究问题\n作者想解决的核心问题是：在 de Sitter 空间中，轻标量场的红外涨落非常强，微扰论可能失效；尤其是无质量 \\(\\lambda\\phi^4\\) 理论中，零点模的平衡分布、耦合常数的重整化行为、以及随机形式论是否真正非微扰地重求和了红外发散，此前缺乏第一性原理的格点验证。另一个更广泛的问题是，能否建立一套保持 de Sitter 对称性精确成立的格点场论方法，使 de Sitter 空间也可用格点蒙特卡洛研究。\n\n## 方法\n- 研究对象：欧几里得 de Sitter 空间 \\(S^4\\) 上的无质量 \\(\\lambda\\phi^4\\) 标量场论。\n- 格点构造：不直接离散化坐标空间，而是采用基于球谐函数的谱格点，也就是在球谐函数空间截断，保持 \\(S^4\\) 的对称性在有限截断下精确成立。\n- 数值方法：蒙特卡洛模拟。\n- 分析对象：零点模分布、有效四阶耦合的重整化行为、强弱裸耦合下的红外行为。\n- 理论对照：与 Starobinsky-Yokoyama 随机形式论的平衡分布、单圈重整化群流以及微扰重整化结果比较。\n\n## 主要结果\n1. 弱耦合下，零点模分布与 Starobinsky-Yokoyama 平衡分布一致。\n2. 偏离该平衡分布的行为与 \\(\\lambda\\) 的单圈重整化修正吻合。\n3. 强裸耦合下，重整化四阶耦合不会无限增长，而是接近单圈重整化群流的上限并饱和。\n4. 这种饱和被解释为 de Sitter 空间中对应平直空间 Higgs 质量上限的平凡性机制。\n5. 结果非微扰地确认：de Sitter 中轻标量的红外发散确实被随机形式论正确重求和。\n6. 更广泛地，该工作表明 de Sitter 空间可以纳入格点蒙特卡洛方法的适用范围。\n\n## 为什么值得关注\n这篇工作的重要性在于，它把格点场论从传统的平直空间、有限温度或弯曲空间背景进一步推广到 de Sitter 空间，并且不是靠近似离散化破坏对称性，而是用谱格点保持对称性精确成立。这对早期宇宙、暴胀中的量子涨落、随机形式论、红外发散重求和、以及标量场平凡性等问题都有直接意义。对 lattice/QCD/理论物理社区而言，它提供了一种新的非微扰工具，可能用于研究弯曲时空中的强耦合场论、宇宙学相变、以及 de Sitter 中的有效场论问题。\n\n## 方向标签\n- Lattice field theory\n- de Sitter space\n- Cosmology\n- Quantum field theory in curved spacetime\n- Stochastic formalism\n- Nonperturbative renormalization\n\n## 阅读优先级\n★★★★☆\n\n原因：这是一篇方法上有开创性、物理结论也重要的论文，尤其适合关注格点场论、弯曲时空量子场论、暴胀和随机形式论的研究者。它首次实现 de Sitter 上的格点蒙特卡洛，技术路线清晰，结果与已知微扰和随机形式论衔接良好。扣一星是因为目前只处理无质量 \\(\\lambda\\phi^4\\) 这一相对简单模型，尚未展示更复杂规范场或引力耦合情形，但其方向潜力很大。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-12T06:17:50.142741"
   }
 ]
