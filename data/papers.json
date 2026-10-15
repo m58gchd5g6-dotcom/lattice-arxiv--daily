@@ -5340,5 +5340,109 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-14T05:13:13.549683"
+  },
+  {
+    "id": "2610.20362v1",
+    "title": "Excited-State Effects in Nucleon Sigma Terms from a Variational Analysis",
+    "authors": [
+      "Constantia Alexandrou",
+      "Giannis Koutsou",
+      "Yan Li",
+      "Srijit Paul",
+      "Ferenc Pittler"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.20362v1",
+    "published": "2026-10-14T15:37:26Z",
+    "abstract": "We investigate excited-state effects in nucleon sigma-terms in lattice QCD using twisted-mass clover-improved fermion ensembles. We study correlation functions with nucleon and multihadron nucleon-$σ$-meson interpolating operators. The analysis is performed using three gauge ensembles, including one ensemble simulated with two degenerate light, a strange, and a charm quark with quark masses tuned to approximately their physical value. We solve the generalized eigenvalue problem that arises from the matrix of correlators and show that the three-point function for the light sigma-term obtained using the optimal linear combination of interpolating operators has substantially reduced time dependence without loss of statistical precision. We apply Laplace filtering and investigate residual excited-state contributions in the extraction of $σ_{πN}$. Using the same optimal linear combination of correlators as for $σ_{πN}$ for the strange sigma-term we also observe suppressed excited state contributions over an extended range of source--sink time separations. For the charm sigma-term, we observe negligible time dependence within the large statistical uncertainties, and these improvements show no significant effect.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过变分分析（广义本征值问题）构造最优插值算子组合，显著抑制了格点 QCD 中核子 sigma 项（σπN 和奇异 sigma 项）的激发态污染，且不损失统计精度，但对粲夸克 sigma 项无明显改进。\n\n## 研究问题\n格点 QCD 计算核子 sigma 项时，三点关联函数中激发态贡献会导致系统性偏差。作者希望系统研究并抑制这些激发态效应，特别是通过多强子（核子-σ介子）插值算子与变分方法来改善 σπN 和奇异 sigma 项的提取。\n\n## 方法\n- **格点设置**： twisted-mass clover-improved fermion 系综，共三个规范系综，其中一个包含两简并轻夸克、奇异夸克和粲夸克，夸克质量调至近似物理值。\n- **插值算子**：使用核子单态算子以及核子-σ介子多强子算子构造关联函数矩阵。\n- **变分分析**：求解关联函数矩阵的广义本征值问题（GEVP），获得最优线性组合插值算子。\n- **技术细节**：对三点函数应用 Laplace filtering，研究残余激发态贡献；将 σπN 的最优组合同样用于奇异 sigma 项。\n\n## 主要结果\n1. **σπN**：使用最优线性组合插值算子后，三点函数的时间依赖性大幅降低，且统计精度未损失。\n2. **奇异 sigma 项**：采用与 σπN 相同的最优组合后，在更宽的源-汇时间间隔范围内观察到激发态贡献被抑制。\n3. **粲夸克 sigma 项**：统计误差较大，时间依赖性可忽略，上述改进无显著效果。\n\n## 为什么值得关注\n- 核子 sigma 项是理解 QCD 标量耦合、暗物质直接探测截面、以及核子质量起源的关键输入。\n- 激发态污染是格点 QCD 计算中主要的系统误差来源之一，该工作展示了变分方法结合多强子算子可有效控制这一误差。\n- 对奇异和粲夸克 sigma 项的差异化结果提示：不同夸克味道的激发态结构可能不同，为未来格点计算提供了重要参考。\n\n## 方向标签\n- Lattice QCD\n- Hadron structure\n- Variational method\n- Nuclear matrix elements\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文针对格点 QCD 中一个具体但重要的系统误差问题给出了实用且可推广的方法，结果清晰，对从事核子结构、sigma 项或格点三点函数计算的学者有直接参考价值。方法并不新颖（GEVP 已广泛使用），但应用于 sigma 项的系统性研究及多强子算子的结合具有实际指导意义。粲夸克部分因统计误差大而结论有限，稍减分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-15T04:59:26.567951"
+  },
+  {
+    "id": "2610.20072v1",
+    "title": "Constraining three-nucleon forces in nuclear lattice effective field theory",
+    "authors": [
+      "Serdar Elhatisari",
+      "Ulf-G. Meißner",
+      "Zhengxue Ren",
+      "Shuang Zhang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.20072v1",
+    "published": "2026-10-14T12:11:53Z",
+    "abstract": "We study short-range three-nucleon forces (3NFs) in nuclear lattice effective field theory with a chiral two-nucleon interaction at N${}^3$LO. The one-pion-exchange ($c_D$) and contact ($c_E$) terms of the leading 3NF are decomposed into locally and non-locally smeared components and supplemented by partial-wave-resolved pair contacts coupled to the density of a third nucleon. We determine their coefficients from nuclear binding energies for nuclei in the mass range from $A=3$ to $A=40$ and neutron--alpha finite-volume energies. This allows to work out the minimal three-nucleon force that can be used for future precision studies in NLEFT.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文在核格点有效场论（NLEFT）框架下，系统构造并标定了领头阶三核力（3NF）的局域与非局域 smear 分解形式，通过拟合 A=3 到 A=40 的核结合能以及中子-α 有限体积能量，确定了可用于未来精确计算的最小三核力参数集。\n\n## 研究问题\n\n作者想解决的核心问题是：在 NLEFT 中，如何以可控且系统的方式引入和约束领头阶三核力，使得从轻核到中等质量核（直至 A=40）的结合能以及中子-α 散射相关能量能够被同时描述？\n\n具体而言：\n\n1. 手征有效场论中领头阶 3NF 包含单π交换项（c_D）和接触项（c_E），但在格点实现中，这些项的局域/非局域处理方式会影响数值结果和拟合稳定性。\n2. 此前 NLEFT 计算多集中于较轻核区，如何在保持手征对称性约束的前提下，构造一个\"最小但足够\"的 3NF 参数化，使其能同时覆盖从 A=3 到 A=40 的核区，是一个尚未完全解决的问题。\n3. 作者还希望利用中子-α 有限体积能量作为额外约束，以弥补仅靠结合能拟合可能带来的参数简并。\n\n## 方法\n\n论文使用的主要方法和技术包括：\n\n**格点框架：**\n- 核格点有效场论（Nuclear Lattice Effective Field Theory, NLEFT），在离散时空格点上定义核子自由度。\n- 两核力（2NF）采用手征有效场论至 N³LO 的相互作用。\n\n**三核力参数化：**\n- 将领头阶 3NF 的单π交换项（c_D）和接触项（c_E）分解为局域（local）和非局域（non-local）smear 分量。\n- 补充了分波分辨的配对接触项（partial-wave-resolved pair contacts），这些项与第三个核子的密度耦合。\n- 这种分解方式允许在格点上更灵活地实现 3NF，同时保持与手征对称性的一致性。\n\n**数值算法：**\n- 使用投影蒙特卡洛方法（Projection Monte Carlo）计算核基态能量。\n- 通过拟合核结合能（A=3 到 A=40）和中子-α 有限体积能量来确定 3NF 的低能常数（LECs）。\n- 有限体积能量通过格点计算直接获得，并与实验/已知数据对比。\n\n**拟合策略：**\n- 多参数同时拟合，利用不同核区和有限体积数据来打破参数简并。\n- 目标是确定\"最小三核力\"参数集，即用最少的参数实现对整个质量区的描述。\n\n## 主要结果\n\n1. **成功确定了 3NF 参数集：** 作者从 A=3 到 A=40 的核结合能以及中子-α 有限体积能量中，自洽地提取了领头阶 3NF 的系数，包括 c_D、c_E 以及分波分辨的配对接触项。\n\n2. **局域与非局域分解的影响：** 将 3NF 分解为局域和非局域 smear 分量后，发现不同分量对核结合能的贡献有差异，且这种分解方式对于格点计算的数值稳定性和拟合质量至关重要。\n\n3. **最小三核力：** 论文明确给出了一个\"最小\"的 3NF 参数化方案，该方案足以描述从轻核到中等质量核的结合能系统学，为未来 NLEFT 精确研究提供了基准。\n\n4. **中子-α 有限体积能量的约束作用：** 引入中子-α 有限体积能量作为拟合输入，有效补充了纯结合能拟合的不足，有助于更准确地确定 3NF 参数。\n\n5. **质量区覆盖：** 该 3NF 参数化在 A=3 到 A=40 范围内均能给出合理的结合能描述，表明其具有良好的外推性和系统性。\n\n## 为什么值得关注\n\n1. **核物理精确计算的基础：** 三核力是理解核结构、核反应和中子星物质的关键输入。在 NLEFT 中系统标定 3NF，是从第一性原理出发描述原子核的重要一步。\n\n2. **手征有效场论的格点实现：** 论文展示了如何在格点上一致地实现手征 3NF 的局域/非局域分解，这对其他格点有效场论计算具有方法论参考价值。\n\n3. **从轻核到中等质量核的桥梁：** 此前 NLEFT 多关注 A≤12 的核区，本文扩展到 A=40，显著拓宽了 NLEFT 的应用范围，为未来研究更重核和核物质提供了基础。\n\n4. **有限体积方法的运用：** 利用中子-α 有限体积能量作为约束，展示了格点计算中有限体积效应不仅可以作为系统误差，还可以作为物理约束来使用。\n\n5. **为未来精确研究铺路：** 论文明确目标是提供\"可用于未来精确研究的最小三核力\"，这意味着后续的 NLEFT 计算（如核反应、激发态、更重核）可以直接建立在此参数化之上。\n\n6. **与 Lattice QCD 的间接联系：** 虽然本文是核格点有效场论而非 Lattice QCD，但其方法论（格点场论、蒙特卡洛、有效场论匹配）与 Lattice QCD 社区有共通之处，且核力参数最终可追溯到 QCD。\n\n## 方向标签\n\n- Lattice field theory (nuclear)\n- Effective field theory (chiral)\n- Nuclear lattice EFT (NLEFT)\n- Few-body and many-body nuclear physics\n- Monte Carlo methods\n- Finite-volume physics\n\n## 阅读优先级\n\n**★★★★☆（4/5 星）**\n\n**理由：**\n\n- **高优先级**给从事 NLEFT、手征核力、格点核物理、第一性原理核结构计算的研究者。本文直接提供了可用的 3NF 参数化和方法论细节，是该领域的重要参考。\n- **中等优先级**给从事 Lattice QCD、有效场论方法论、蒙特卡洛算法开发的研究者。虽然主题偏核物理，但格点实现和拟合策略有交叉借鉴价值。\n- **较低优先级**给高能物理、BSM、凝聚态量子模拟等方向的研究者，除非对核力第一性原理计算有特别兴趣。\n\n扣掉一星的原因是：论文侧重于参数标定和拟合，理论形式上的突破性相对有限；且 A=40 仍属于中等质量核区，对更重核和外推性的验证尚需后续工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-15T04:59:35.178942"
+  },
+  {
+    "id": "2610.19485v1",
+    "title": "Gauge-invariant nonperturbative Wilson action in quantum electrodynamics II",
+    "authors": [
+      "Sorato Nagao",
+      "Hiroshi Suzuki"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.19485v1",
+    "published": "2026-10-14T03:00:51Z",
+    "abstract": "The gradient flow exact renormalization group (GFERG) is a formulation of the exact renormalization group for gauge theories that provides a renormalization group flow preserving the gauge Ward--Takahashi identity exactly. In this paper, we nonperturbatively solve the GFERG flow equation for the simplest nontrivial gauge-invariant Wilson action, introduced in a previous paper, for $D$-dimensional quantum electrodynamics with~$N_f$ flavors (for all~$D$, flavors are counted in units of four-component spinors). For $D=3$ and~$D=2$, a nontrivial infrared fixed point exists even for~$N_f=1$, and the structure of the critical exponents at the fixed point is qualitatively the same as that in the large-$N_f$ limit. We also obtain the gauge-field propagator in the continuum limit; for~$D=2$, it reproduces the dynamical mass of the Schwinger model within a few percent. To the best of our knowledge, apart from the large-$N_f$ approximation, this is the first example in which the Wilson renormalization group in a gauge theory is solved nonperturbatively while manifestly preserving gauge symmetry.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文在量子电动力学（QED）中，首次对最简单的非平凡规范不变 Wilson 作用量非微扰地求解了梯度流精确重整化群（GFERG）方程，在保持规范 Ward–Takahashi 恒等式严格成立的前提下，发现了 D=3 和 D=2 时即使 N_f=1 也存在非平凡红外不动点，并在 D=2 时以几个百分点的精度重现了 Schwinger 模型的动力学质量。\n\n## 研究问题\n\n作者想解决的核心问题是：**如何在规范理论中非微扰地求解 Wilson 重整化群，同时严格保持规范对称性？**\n\n具体来说：\n\n1. 传统的 Wilson 重整化群（精确重整化群，ERG）在应用于规范理论时，通常难以同时保持规范不变性——截断或近似往往会破坏 Ward–Takahashi 恒等式。\n2. GFERG（梯度流精确重整化群）是之前提出的一种形式化方案，原则上可以精确保持规范 Ward–Takahashi 恒等式，但此前尚未在非微扰层面真正求解过。\n3. 本文的目标是对一个具体的、最简单的非平凡规范不变 Wilson 作用量，在 D 维 QED（含 N_f 个费米子味）中非微扰地求解 GFERG 流方程，并研究其红外行为、不动点结构和临界指数。\n\n## 方法\n\n本文使用的方法属于**函数重整化群（FRG/ERG）与梯度流方法的结合**，而非传统的格点蒙特卡洛模拟。具体包括：\n\n- **GFERG 形式化**：梯度流精确重整化群，将梯度流方程嵌入精确重整化群的框架中，使得重整化群流在每一步都精确保持规范 Ward–Takahashi 恒等式。\n- **规范不变的 Wilson 作用量**：采用前一篇论文中引入的最简单的非平凡规范不变 Wilson 作用量形式，作为截断空间。\n- **非微扰求解**：对 GFERG 流方程进行非微扰求解（具体数值/解析手段需参见正文，可能涉及对算符空间的截断与自洽求解）。\n- **维数 D 与味数 N_f 的扫描**：对任意 D 维 QED 进行分析，重点考察 D=3 和 D=2 的情形，并与大 N_f 极限的结果进行对比。\n- **连续极限下的规范场传播子**：提取连续极限下的光子传播子，并与已知结果（如 Schwinger 模型的动力学质量）进行比较。\n\n需要指出的是，虽然论文标题和摘要提到“Wilson action”，但这里的“Wilson action”指的是 Wilson 重整化群意义下的有效作用量，而非格点 QCD 中通常说的 Wilson 费米子作用量。本文并非格点模拟工作，而是连续时空中的函数重整化群研究。\n\n## 主要结果\n\n1. **非平凡红外不动点的存在**：在 D=3 和 D=2 时，即使 N_f=1（即单个费米子味），GFERG 流也存在非平凡的红外不动点。这与大 N_f 极限下的行为定性一致。\n2. **临界指数结构**：在不动点处，临界指数的结构与大 N_f 极限下的结果在定性上相同，表明大 N_f 近似所揭示的物理在图景上具有一定的普适性。\n3. **连续极限下的规范场传播子**：作者获得了连续极限下的光子传播子。在 D=2 时，该传播子重现了 Schwinger 模型中光子的动力学质量，精度在几个百分点以内。\n4. **规范对称性的严格保持**：整个非微扰求解过程中，规范 Ward–Takahashi 恒等式被精确保持，这是此前类似研究中难以做到的。\n5. **方法论上的首次**：据作者所知，除大 N_f 近似外，这是第一个在规范理论中非微扰求解 Wilson 重整化群并同时显式保持规范对称性的例子。\n\n## 为什么值得关注\n\n1. **规范对称性与非微扰重整化群的兼容性**：长期以来，如何在非微扰重整化群框架中严格保持规范对称性是一个核心难题。本文首次在具体模型中展示了 GFERG 可以做到这一点，为规范理论的非微扰重整化群研究提供了可行的范式。\n2. **对 Schwinger 模型的精确重现**：D=2 QED（Schwinger 模型）是量子场论中少数可精确求解的模型之一，其动力学质量生成是经典结果。本文以几个百分点的精度重现了这一结果，验证了 GFERG 方法的可靠性。\n3. **红外不动点与临界现象**：在 D=3 和 D=2 中发现非平凡红外不动点，且临界指数与大 N_f 极限定性一致，这对于理解低维规范理论的红外行为、以及可能的共形窗口具有重要意义。\n4. **对格点/QCD 社区的潜在影响**：虽然本文不是格点模拟，但其方法论——在保持规范对称性的同时非微扰求解重整化群流——对格点 QCD 中的重整化群改进、连续极限外推、以及规范对称性保护等问题具有启发意义。特别是 GFERG 的思想可能与格点上的梯度流方法产生交叉。\n5. **向 QCD 推广的可能性**：本文处理的是 QED，但 GFERG 框架原则上可以推广到非阿贝尔规范理论。如果成功，将为 QCD 的非微扰重整化群研究开辟新途径。\n\n## 方向标签\n\n- Lattice field theory（方法论相关）\n- Renormalization group\n- Gauge theory\n- Schwinger model\n- Quantum electrodynamics\n- Nonperturbative field theory\n\n## 阅读优先级\n\n**★★★☆☆（3/5 星）**\n\n理由：\n\n- **对特定方向的研究者优先级较高**：如果你从事函数重整化群、梯度流、规范理论非微扰方法、或低维规范理论（如 Schwinger 模型）的研究，这篇论文值得仔细阅读，因为它在方法论上有实质性突破。\n- **对格点 QCD 主流研究者优先级中等**：本文并非格点模拟工作，不涉及格点算法、蒙特卡洛模拟或有限温度 QCD 等典型格点课题。但其关于规范对称性保持和非微扰重整化群的思想，对格点社区中关注重整化群改进和连续极限的研究者有参考价值。\n- **对一般理论物理读者优先级较低**：论文技术性较强，涉及 GFERG 形式化和非微扰求解的具体细节，不适合作为泛读材料。但摘要中关于“首次非微扰求解规范理论 Wilson RG 并保持规范对称性”的声明具有较高的概念性意义，值得关注。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-15T04:59:43.647489"
+  },
+  {
+    "id": "2610.19310v1",
+    "title": "A Nontrivial Lattice Scalar Quantum Field Model",
+    "authors": [
+      "P. A. Faria da Veiga",
+      "R. Mistry",
+      "M. O'Carroll"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.19310v1",
+    "published": "2026-10-13T23:37:59Z",
+    "abstract": "We introduce a new Euclidean quantum model with zero-spin scaled scalar fields on a spacetime hypercubic lattice, which we refer to as the hybrid model. The model coupling parameters are the hopping parameter $κ^2>0$ and the field interaction coupling $α>0$. Using the technique of lattice scaled fields, with a noncanonical scaling that corresponds to a partial renormalization (wave function renormalization), we show that the partition function of this model satisfies both thermodynamic and ultraviolet stability bounds, with constants which are uniform in the lattice volume $Λ_s$ and the lattice spacing $a\\in(0,1]$. As a consequence, the model has a finite free energy per degree of freedom in the thermodynamic limit $Λ_s\\nearrow\\infty$, at least in the subsequential sense. Subsequently, we can also take the ultraviolet or continuum limit $a\\searrow 0$. Besides the finiteness property of the free energy, for sufficiently small values of the model coupling parameters $κ^2$ and $α$, we show the model satisfies Osterwalder-Schrader positivity and construct the underlying physical quantum mechanical Hilbert space, and, using a polymer expansion, we show correlations also remain bounded in the thermodynamic limit. Finally, we perturbatively compute an infinite volume truncated four-point correlation showing it is nonzero. Noting that, for fixed $a$, perturbation series in $κ^2$ and $α$ converges, these results are sufficient to show that our hybrid model makes sense as a lattice quantum field theory in spacetime dimension $d=3,4$, with possible extensions to other higher values of $d$.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文构造并严格分析了一个新的格点标量场“混合模型”（hybrid model），证明其在热力学极限和连续极限下具有稳定的配分函数、有限的自由能、Osterwalder–Schrader 正性以及非零的四点关联函数，从而在 d=3,4 维中给出了一个非平凡的格点量子场论模型。\n\n## 研究问题\n\n作者想解决的问题是：**能否构造一个严格定义的、非平凡的格点标量量子场论模型，使其同时满足热力学稳定性和紫外稳定性，并在连续极限下仍然有意义？**\n\n具体而言：\n- 传统的 \\(\\phi^4\\) 格点模型在 d=4 维中面临平凡性问题（triviality），即连续极限下相互作用耦合趋于零。\n- 作者希望引入一种新的“混合模型”，通过非标准的场标度变换（对应部分重整化/波函数重整化），使得模型在格点体积趋于无穷和格点间距趋于零时都能保持稳定。\n- 进一步，作者希望验证该模型满足 Osterwalder–Schrader 公理（构造性量子场论的基本要求），并计算非平凡的关联函数。\n\n## 方法\n\n论文使用了以下格点场论方法和技术：\n\n1. **模型定义**：在超立方格点上定义零自旋标度标量场（scaled scalar fields），耦合参数为跳跃参数 \\(\\kappa^2 > 0\\) 和场相互作用耦合 \\(\\alpha > 0\\)。\n\n2. **格点标度场技术（lattice scaled fields）**：采用非标准的标度变换，对应于部分重整化（波函数重整化），这是该模型区别于传统 \\(\\phi^4\\) 模型的关键。\n\n3. **热力学与紫外稳定性界**：证明配分函数满足热力学和紫外稳定性界，且界中的常数对格点体积 \\(\\Lambda_s\\) 和格点间距 \\(a \\in (0,1]\\) 一致成立。\n\n4. **Osterwalder–Schrader 正性**：对小耦合参数 \\(\\kappa^2\\) 和 \\(\\alpha\\)，证明模型满足 OS 正性，并构造底层的物理量子力学 Hilbert 空间。\n\n5. **聚合物展开（polymer expansion）**：用于证明关联函数在热力学极限下保持有界。\n\n6. **微扰计算**：微扰地计算无穷体积截断四点关联函数，证明其非零。\n\n7. **收敛性论证**：对于固定 \\(a\\)，证明关于 \\(\\kappa^2\\) 和 \\(\\alpha\\) 的微扰级数收敛。\n\n## 主要结果\n\n1. **稳定性**：配分函数满足热力学和紫外稳定性界，常数对格点体积和格点间距一致。\n\n2. **有限自由能**：在热力学极限 \\(\\Lambda_s \\nearrow \\infty\\) 下（至少沿子序列），模型具有有限的每自由度自由能。\n\n3. **连续极限**：可以取紫外/连续极限 \\(a \\searrow 0\\)。\n\n4. **OS 正性**：对小耦合参数，模型满足 Osterwalder–Schrader 正性，可构造物理 Hilbert 空间。\n\n5. **关联函数有界**：通过聚合物展开证明关联函数在热力学极限下保持有界。\n\n6. **非平凡四点函数**：微扰计算显示无穷体积截断四点关联函数非零。\n\n7. **适用维度**：这些结果足以表明该混合模型在时空维度 \\(d=3,4\\) 中作为格点量子场论是有意义的，并可能推广到更高维度。\n\n## 为什么值得关注\n\n1. **构造性量子场论的重要进展**：在 d=4 维中严格构造非平凡量子场论是数学物理中最困难的问题之一。该论文通过非标准标度变换绕过了传统 \\(\\phi^4\\) 模型的平凡性问题，为构造性量子场论提供了新思路。\n\n2. **格点场论方法论的创新**：引入“混合模型”和格点标度场技术，可能为格点 QCD 和其他格点模型提供新的分析工具，特别是在处理紫外稳定性和连续极限方面。\n\n3. **OS 正性与 Hilbert 空间构造**：满足 OS 正性是格点模型能否对应真实量子场论的关键判据。该模型在小耦合下满足这一条件，增强了其物理相关性。\n\n4. **对 QCD 社区的潜在影响**：虽然该模型是标量场论，但其技术（如聚合物展开、非标准标度、稳定性证明）可能启发格点 QCD 中关于连续极限、有限体积效应和关联函数有界性的研究。\n\n5. **非平凡性证明**：四点关联函数非零的微扰计算表明模型确实包含非平凡的相互作用，而非自由场论。\n\n## 方向标签\n\n- Lattice Field Theory\n- Constructive Quantum Field Theory\n- Scalar Field Theory\n- Osterwalder-Schrader Positivity\n- Continuum Limit\n- Polymer Expansion\n\n## 阅读优先级\n\n**★★★☆☆（3/5 星）**\n\n**理由**：\n- 对于从事构造性量子场论或格点标量场论严格分析的学者，这篇论文具有较高价值（4-5 星）。\n- 对于格点 QCD 的数值研究者，其直接相关性较低，因为模型是标量场论而非规范场论，且方法偏重严格数学分析而非数值模拟（2-3 星）。\n- 对于关注连续极限、紫外稳定性和 OS 正性一般理论的学者，该论文提供了有价值的案例研究（3-4 星）。\n- 总体而言，这是一篇技术性强、数学严格但物理应用范围较窄的论文，适合特定方向的专家深入阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-15T04:59:49.933581"
+  },
+  {
+    "id": "2610.19066v1",
+    "title": "Born-Oppenheimer chiral effective field theory and its application to $X_b$",
+    "authors": [
+      "Yu Zhang",
+      "Feng-Kun Guo",
+      "Christoph Hanhart",
+      "Alexey Nefediev",
+      "Paul Pütz"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.19066v1",
+    "published": "2026-10-13T19:02:44Z",
+    "abstract": "Following the discovery of the exotic state $X(3872)$ in the charmonium spectrum, the possible existence of an analogous state, $X_b$, in the bottomonium sector has attracted considerable attention of the hadronic physics community. In this work, we lay the ground for the development of Born-Oppenheimer chiral effective field theory (BO$χ$EFT), that allows us to include both quark and hadron degrees of freedom as well as the full complexity of the meson-exchange potential in a systematic way. For illustration, the formalism to leading order (LO) is applied to the system of $χ_{b1}$ states and in particular the $X_b$. The two parameters that are present at this order are constrained using experimental information on the bottomonium spectrum together with lattice input on static quark-antiquark potentials, including string breaking effects. The framework identifies the observed $1^{++}$ state at 10.513 GeV with a predominantly molecular $X_b$, the bottom counterpart of the $X(3872)$, and predicts an additional predominantly compact bottomonium state at 10.544 GeV, about 60 MeV below the $B\\bar{B}^*$ threshold.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文提出了 **Born-Oppenheimer 手征有效场论（BOχEFT）** 框架，将夸克自由度与强子自由度系统性地结合，并首次应用于底夸克偶素系统，将 10.513 GeV 的 \\(1^{++}\\) 态识别为以分子态为主的 \\(X_b\\)（即 \\(X(3872)\\) 的底夸克对应态），同时预言了一个额外的紧致底夸克偶素态。\n\n---\n\n## 研究问题\n\n作者想解决的核心问题是：\n\n1. **如何系统性地描述同时包含夸克自由度和强子自由度的奇特态（exotic states）**，特别是像 \\(X(3872)\\) 和其底夸克对应态 \\(X_b\\) 这样的候选分子态。\n2. 传统的非相对论夸克模型或纯强子有效场论各自有局限：前者难以描述长程介子交换效应，后者难以纳入夸克-反夸克之间的短程相互作用和禁闭效应。\n3. 如何利用格点 QCD 提供的静态夸克-反夸克势（包括 string breaking 效应）来约束有效场论中的参数，并给出对 \\(X_b\\) 谱的预言。\n\n---\n\n## 方法\n\n论文使用的方法结合了以下几个关键要素：\n\n1. **Born-Oppenheimer 近似**：借鉴分子物理中的 BO 近似，将重夸克（\\(b\\bar{b}\\)）视为缓慢运动的\"核\"，而将轻自由度（介子交换、胶子场等）视为快速自由度，从而分离能标。\n\n2. **手征有效场论（χEFT）**：用于描述轻介子（如 \\(\\pi\\), \\(\\sigma\\) 等）与重夸克偶素之间的相互作用，保证与 QCD 手征对称性一致。\n\n3. **格点 QCD 输入**：\n   - 使用格点计算的**静态夸克-反夸克势**（static quark-antiquark potential），包括**string breaking 效应**（即当夸克间距增大时，胶子弦断裂形成轻夸克对）。\n   - 这些格点数据用于约束 BOχEFT 领头阶（LO）的两个参数。\n\n4. **领头阶（LO）计算**：将形式应用于 \\(\\chi_{b1}\\) 态系统，特别是 \\(X_b\\)，通过求解耦合通道方程获得能谱。\n\n5. **实验约束**：利用已知的底夸克偶素谱（bottomonium spectrum）实验信息来进一步固定参数。\n\n---\n\n## 主要结果\n\n1. **\\(X_b\\) 的识别**：框架将实验观测到的 10.513 GeV 的 \\(1^{++}\\) 态识别为**以分子态为主的 \\(X_b\\)**，即 \\(X(3872)\\) 在底夸克扇区的对应态。其结构主要由 \\(B\\bar{B}^*\\) 分子成分主导。\n\n2. **新态预言**：预言了一个额外的**以紧致底夸克偶素为主的态**，质量为 10.544 GeV，比 \\(B\\bar{B}^*\\) 阈值低约 **60 MeV**。\n\n3. **参数约束**：领头阶仅有两个参数，通过底夸克偶素谱实验数据和格点静态势（含 string breaking）联合约束，保证了框架的预言能力。\n\n4. **框架的通用性**：BOχEFT 提供了一个系统性方案，可以同时纳入夸克和强子自由度，并完整处理介子交换势的复杂性。\n\n---\n\n## 为什么值得关注\n\n1. **桥接格点 QCD 与有效场论**：该工作展示了如何将格点 QCD 计算的静态势（包括 string breaking 这种非微扰效应）系统地嵌入到有效场论框架中，为格点数据与现象学模型之间搭建了桥梁。\n\n2. **奇特态研究的新范式**：BOχEFT 为描述 \\(X(3872)\\)、\\(Z_b\\)、\\(Z_c\\) 等奇特态提供了一个系统性的理论框架，超越了传统的纯分子态或纯紧致态二分法。\n\n3. **对 \\(X_b\\) 实验搜寻的指导**：预言的新态（10.544 GeV）为实验（如 Belle II、LHCb）提供了明确的搜寻目标。\n\n4. **方法论意义**：Born-Oppenheimer 近似在重夸克系统中此前已有应用（如 Born-Oppenheimer 有效场论 BOEFT），但结合手征对称性和格点输入的系统性框架尚属首次，可能推广到其他重味系统。\n\n5. **对 lattice/QCD 社区的启示**：强调了格点计算的静态势（特别是 string breaking）在理解奇特态中的关键作用，鼓励更精细的格点计算来进一步约束该框架。\n\n---\n\n## 方向标签\n\n- **Lattice QCD**\n- **Effective Field Theory**\n- **Hadron Spectroscopy**\n- **Exotic States**\n- **Heavy Quark Physics**\n\n---\n\n## 阅读优先级\n\n**★★★★☆（4/5 星）**\n\n**理由**：\n\n- **高优先级**给从事奇特态、重夸克偶素谱学、有效场论或格点 QCD 与现象学交叉研究的读者。\n- 论文提出的 BOχEFT 框架具有方法论创新性，且直接与格点 QCD 输入和实验数据挂钩，实用性强。\n- 减一星的原因：目前仅应用于领头阶和 \\(\\chi_{b1}\\) 系统，尚未展示更高阶计算或更广泛的应用；对于不熟悉 Born-Oppenheimer 近似或手征有效场论的读者，入门门槛较高。\n- 对于纯格点 QCD 技术开发者（如算法、数值方法）而言，直接相关性稍低，但对其物理应用方向仍有重要参考价值。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-15T04:59:57.148234"
   }
 ]
