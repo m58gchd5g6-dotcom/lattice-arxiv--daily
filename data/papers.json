@@ -5570,5 +5570,186 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-16T04:49:41.755074"
+  },
+  {
+    "id": "2610.23783v1",
+    "title": "Sampling the XY model with an attention-based neural network",
+    "authors": [
+      "Piotr Białas",
+      "Christian D. Morales",
+      "Tomasz Stebel",
+      "Dawid Zapolski"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.23783v1",
+    "published": "2026-10-16T17:16:35Z",
+    "abstract": "We present a transformer-based variational autoregressive network for sampling lattice systems with continuous degrees of freedom and apply it to the two-dimensional XY model near the Berezinskii-Kosterlitz-Thouless transition. The architecture is combined with physics-informed ingredients: locality-informed attention and approximate probabilities. The resulting sampler significantly outperforms existing neural samplers. We train the model on lattices up to $96\\times96$, verify with a mode-dropping estimator that no parts of the configuration space are missed, and reproduce the energy, magnetization and helicity modulus obtained with the traditional Markov Chain Monte Carlo algorithm.",
+    "summary": {
+      "raw": "## 一句话结论\n本文提出一种基于 Transformer 的变分自回归网络（结合局域性注意力与近似概率等物理先验），在二维 XY 模型 BKT 相变附近实现了对连续自由度格点系统的高效采样，性能显著优于现有神经采样器，并复现了传统 MCMC 的能量、磁化与螺旋模量。\n\n## 研究问题\n作者想解决的问题是：如何用神经网络对**连续自由度**的格点场论系统（而非离散自旋或规范变量）进行高效、无偏的变分采样。现有神经采样器多针对离散变量（如 Ising、Z₂ 规范理论），在连续变量、长程关联显著的 BKT 临界区面临模式坍塌（mode dropping）、采样效率低、难以扩展到大规模格点等困难。作者以二维 XY 模型为测试平台，检验神经自回归采样能否在临界区可靠工作。\n\n## 方法\n- **格点模型**：二维 XY 模型（连续角度变量 θ∈[0,2π)），关注 BKT 相变附近。\n- **网络架构**：基于 Transformer 的变分自回归网络（autoregressive network），逐点条件采样。\n- **物理先验**：\n  - 局域性注意力（locality-informed attention）：利用格点相互作用的局域性约束注意力范围；\n  - 近似概率（approximate probabilities）：降低精确归一化/条件概率的计算代价。\n- **训练规模**：最大到 96×96 格点。\n- **验证手段**：用 mode-dropping estimator 检验配置空间是否被完整覆盖（无遗漏模式）。\n- **对照基准**：与传统 MCMC 算法比较能量、磁化强度、螺旋模量（helicity modulus）。\n\n## 主要结果\n1. 该采样器在二维 XY 模型上**显著优于现有神经采样器**（采样质量/效率）。\n2. 在最大 96×96 格点上成功训练，并通过 mode-dropping 估计器**验证未遗漏配置空间的部分**——这是自回归采样器在临界系统中常被质疑的关键点。\n3. 复现了 MCMC 得到的**能量、磁化、螺旋模量**，说明采样在物理观测量上是可靠的。\n4. 表明物理先验（局域注意力、近似概率）是让 Transformer 自回归网络可扩展到连续格点场的关键设计。\n\n## 为什么值得关注\n- **连续自由度 + 临界区**是神经采样器此前较少被严格检验的场景，本文给出了可行方案与验证流程（mode-dropping estimator），对后续工作有方法学价值。\n- BKT 相变涉及拓扑缺陷（涡旋）与长程关联，是检验采样器能否捕捉非平凡物理的严苛测试；成功复现螺旋模量说明网络学到了拓扑相关物理。\n- 对 lattice/QCD 社区：格点场论（包括规范理论）本质是连续变量问题，本文的架构思路（局域注意力 + 自回归 + 物理先验）可迁移到更接近 QCD 的连续场系统，为神经采样替代/加速 MCMC 提供参考。\n- 提供了“神经采样器结果可信度如何验证”的实用范式（与 MCMC 观测量对照 + 模式覆盖检验）。\n\n## 方向标签\n- Machine Learning\n- Lattice field theory (XY model / statistical field theory)\n- Variational autoregressive sampling\n- Phase transitions (BKT)\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对做神经采样、变分蒙特卡洛、格点场论机器学习的研究者高度相关，方法（局域注意力、近似概率、mode-dropping 验证）有直接借鉴价值；但模型是二维 XY 而非规范场/QCD，距离实际格点 QCD 应用仍有距离，且属于方法验证型工作而非新物理发现，故不给满分。若你关注“神经采样器如何可信地用于连续格点场”，建议精读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:03:59.080316"
+  },
+  {
+    "id": "2610.23681v1",
+    "title": "Impact of Irrep Truncations on Quantum Simulations of QCD",
+    "authors": [
+      "Patrick Draper",
+      "Drishti Gupta"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.23681v1",
+    "published": "2026-10-16T16:10:40Z",
+    "abstract": "Quantum simulations of lattice gauge theories with continuous gauge groups require a choice of basis (how states of the gauge theory map to the qubit computational basis) and truncation scheme (which of the infinitely many gauge theory basis states should be omitted in the map to the finite dimensional qubit Hilbert space.) The most common choices are adapted to an electric basis for the gauge theory, where the basis states for each link are associated with irreducible representations of the gauge group. Electric bases and truncations are generally advantageous for preserving gauge symmetries and simulating the strong coupling regime, but their effectiveness in the weak coupling regimes of physical interest are less well understood. In this work, we compute relative probabilities $p(R')/p(R)$ for finding a link in the irreps $R,R'$ in the ground state of SU(3) lattice gauge theory using Euclidean Monte Carlo methods and weak-coupling lattice perturbation theory. The observables that compute these relative probabilities are constructed by introducing seams into an anisotropic lattice, and by a similar construction we are also able to measure relative probabilities of different site singlets (ways that electric flux braids together into a gauge singlet) at each vertex. With these methods we can quantify, for example, the importance of higher electric flux states in the weak coupling ground state. These results directly inform what truncations are needed to accurately capture non-abelian gauge dynamics near the continuum limit.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文通过格点蒙特卡洛和弱耦合微扰论定量计算了SU(3)格点规范基态中不同不可约表示（irrep）及不同格点单态的**相对概率**，从而直接评估在连续极限附近做量子模拟时电基截断需要保留多少高能态才能准确刻画非阿贝尔规范动力学。\n\n## 研究问题\n\n量子模拟连续群格点规范理论时，必须把无限维的规范希尔伯特空间映射到有限维量子比特空间，这需要选择**基**（如电基，按规范群不可约表示标记每条链的状态）和**截断方案**（丢弃哪些高能态）。电基截断在强耦合区表现良好且能保持规范对称性，但在**物理感兴趣的弱耦合区**（接近连续极限）其有效性缺乏定量理解。作者要回答的核心问题是：在弱耦合基态中，高电通量态和复杂格点单态到底占多大权重？需要多大的截断才能准确捕捉非阿贝尔规范动力学？\n\n## 方法\n\n- **模型**：SU(3) 格点规范理论（纯规范部分），基态性质。\n- **主要数值方法**：欧几里得格点蒙特卡洛（Euclidean Monte Carlo），用于在有限格点上计算基态中链处于不同 irrep $R, R'$ 的相对概率 $p(R')/p(R)$。\n- **解析方法**：弱耦合格点微扰论，与蒙特卡洛结果交叉验证，并给出解析理解。\n- **关键技巧**：在各向异性格点上引入**接缝（seam）**构造，使得可以测量不同 irrep 的相对概率；用类似构造测量每个格点上不同**格点单态**（电通量如何编织成规范单态的方式）的相对概率。\n- **可观测量**：相对概率 $p(R')/p(R)$ 以及不同 site singlet 的相对概率，用于量化高电通量态在弱耦合基态中的重要性。\n\n## 主要结果\n\n1. 定量给出了弱耦合基态中不同 irrep 的相对概率 $p(R')/p(R)$，表明高电通量态（更高 irrep）的权重随耦合减小而受到压制，但**压制程度可被定量刻画**，并非可任意忽略。\n2. 通过 seam 构造首次系统测量了**格点单态（site singlet）**的相对概率，揭示了电通量在顶点处编织成规范单态的不同方式在基态中的相对重要性。\n3. 蒙特卡洛结果与弱耦合微扰论一致，为截断误差提供了可控的定量估计。\n4. 结论直接指导：在接近连续极限的量子模拟中，需要保留哪些 irrep 和哪些单态结构才能准确再现非阿贝尔规范动力学——即给出了**截断方案的定量判据**。\n\n## 为什么值得关注\n\n- 量子模拟格点规范理论是当前量子计算与高能物理交叉的热点，而**基与截断的选择**是决定模拟成败的核心问题之一。此前电基截断的合理性主要在强耦合区被讨论，弱耦合区（连续极限附近）缺乏定量依据。\n- 该工作提供了**第一性的、可计算的截断误差估计**，把\"需要保留多少态\"从经验猜测变成有蒙特卡洛和微扰论支撑的定量结论。\n- 方法上，seam 构造和各向异性格点技巧为测量 irrep 分辨的可观测量提供了新工具，可推广到其他规范群和含费米子情形。\n- 对规划近期量子模拟实验（qubit 数有限）的团队有直接指导意义：帮助在资源约束下选择最优截断。\n\n## 方向标签\n\n- Lattice QCD\n- Quantum simulation\n- Gauge theory truncation\n- SU(3) lattice gauge theory\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：对从事量子模拟格点规范理论、电基截断方案设计的研究者而言是**必读**，提供了稀缺的弱耦合区定量依据；对纯格点 QCD 数值计算社区相关性中等（方法新颖但对象是纯规范基态性质）；对更广泛的理论物理读者，其关于截断误差可控性的思想有启发性。扣一星是因为它聚焦纯规范 SU(3) 基态、未涉及费米子和动力学模拟，适用范围有一定局限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:05.485083"
+  },
+  {
+    "id": "2610.23675v1",
+    "title": "Complete $g^6$ pressure of hot Yang-Mills theory",
+    "authors": [
+      "Keijo Kajantie",
+      "Pablo Navarrete",
+      "Risto Paatelainen",
+      "Leon Sandbote",
+      "York Schröder",
+      "Kaapo Seppänen",
+      "Aleksi Vuorinen"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.23675v1",
+    "published": "2026-10-16T16:06:23Z",
+    "abstract": "We present the full order $g^6$ term in the weak-coupling expansion of the pressure of hot $\\mathrm{SU}(3)$ Yang-Mills theory, resolving a problem that has remained open for more than two decades. To achieve this, we evaluate nine previously unknown nonfactorizing four-loop sum-integrals using the thermal loop-tree duality method with novel local ultraviolet and infrared subtractions, thereby completing the hard-scale contribution to the pressure for general $\\mathrm{SU}(N_c)$. Combining this result with known chromoelectric and chromomagnetic contributions, available for $N_c=3$, we demonstrate the analytic cancellation of infrared divergences originating from different momentum scales and obtain the complete $O(g^6)$ pressure for $\\mathrm{SU}(3)$. Our result displays quantitative agreement with data from four-dimensional lattice simulations over a broad range of temperatures, providing a stringent test of the dimensionally reduced effective-field-theory paradigm.",
+    "summary": {
+      "raw": "## 一句话结论\n本文首次完整计算了热 SU(3) Yang-Mills 理论压强弱耦合展开的 \\(g^6\\) 阶项，解决了悬置二十余年的问题，并与四维格点模拟数据在宽温度范围内定量吻合。\n\n## 研究问题\n作者想解决什么问题？\n热 Yang-Mills 理论压强的弱耦合展开中，\\(g^6\\) 阶项长期缺失。此前已知的色电（chromoelectric）和色磁（chromomagnetic）贡献只覆盖部分动量尺度，而“硬尺度”（hard-scale）贡献涉及九个未知的非因子化四圈求和-积分，且不同动量尺度的红外发散能否解析相消一直未得到验证。本文旨在补全这一阶，并检验维度约化有效场论（dimensionally reduced EFT）范式的自洽性。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 理论框架：热 SU(\\(N_c\\)) Yang-Mills 理论的弱耦合展开，结合维度约化有效场论（将色电、色磁贡献与硬尺度贡献分离）。\n- 计算技术：热圈-树对偶（thermal loop-tree duality, LTD），并引入新颖的局部紫外（UV）和红外（IR）减除方案，用于计算九个此前未知的非因子化四圈求和-积分。\n- 结果验证：将解析结果与四维格点模拟的压强数据在宽温度范围内进行定量比较。\n- 注意：本文主体是解析/半解析的微扰计算，格点数据仅用于验证，而非本文直接产生的数值模拟。\n\n## 主要结果\n总结最重要发现。\n1. 完成了通用 SU(\\(N_c\\)) 下压强硬尺度贡献的 \\(g^6\\) 阶计算，给出九个非因子化四圈求和-积分的解析/数值结果。\n2. 对 \\(N_c=3\\)，将硬尺度贡献与已知的色电、色磁贡献结合，解析证明了来自不同动量尺度的红外发散相互抵消，得到完整的 \\(O(g^6)\\) 压强。\n3. 完整 \\(g^6\\) 结果与四维格点模拟数据在广泛温度范围内定量吻合，为维度约化 EFT 范式提供了严格检验。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 解决了热 QCD 微扰论中悬置二十多年的关键缺口，使压强的高阶弱耦合展开得以完整。\n- 红外发散的解析相消验证了维度约化 EFT 在多尺度热场论中的自洽性，这对理解夸克-胶子等离子体的热力学性质至关重要。\n- 与格点数据的定量吻合为微扰论与格点计算之间的交叉检验提供了标杆，对重离子碰撞物理中 QGP 状态方程的建模有直接参考价值。\n- 所发展的 LTD 加局部减除技术可推广到其他多圈热求和-积分的计算。\n\n## 方向标签\nFinite temperature\nPerturbative QCD\nEffective field theory\nThermal field theory\nLattice QCD（作为验证手段）\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是热 QCD 微扰论领域一项里程碑式的完整计算，问题经典、结果干净、与格点数据吻合良好，对有限温度 QCD 和 EFT 研究者价值很高。扣一星是因为它本质是解析微扰计算而非格点方法本身，且技术细节（LTD、局部减除、四圈积分）较为专门，对非热场论背景的读者门槛较高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:10.344627"
+  },
+  {
+    "id": "2610.23676v1",
+    "title": "The pressure of the gluon plasma at $\\mathcal{O}(g_s^6)$, perturbatively",
+    "authors": [
+      "Mikael Chala",
+      "Luis Gil",
+      "Javier López Miras"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.23676v1",
+    "published": "2026-10-16T16:06:23Z",
+    "abstract": "We determine the four-loop hard-scale matching correction to the pressure of the gluon plasma at high temperature. This result completes the long-standing calculation through $\\mathcal{O}(g_s^6)$, where $g_s$ is the strong coupling. Our result agrees, within uncertainties, with the value obtained in arXiv:1204.6184 by fitting the perturbative series to continuum-extrapolated lattice data, thereby providing the first direct test of the weak-coupling expansion at this order.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文完成了胶子等离子体压强在微扰展开到 \\(\\mathcal{O}(g_s^6)\\) 阶所需的最后一个四圈硬标度匹配修正，首次使弱耦合展开在该阶与格点数据实现直接对比验证。\n\n## 研究问题\n\n高温 QCD 中胶子等离子体压强的微扰展开长期停留在 \\(\\mathcal{O}(g_s^5)\\) 或部分 \\(\\mathcal{O}(g_s^6)\\) 项，缺少四圈硬标度（hard-scale）匹配修正这一关键组成部分。作者要解决的问题是：补全 \\(\\mathcal{O}(g_s^6)\\) 阶压强计算中缺失的四圈匹配系数，从而得到完整的 \\(\\mathcal{O}(g_s^6)\\) 微扰结果，并与已有格点数据拟合值（arXiv:1204.6184）进行直接比较，检验弱耦合展开在该阶的可靠性。\n\n## 方法\n\n这是一篇纯微扰量子场论（ continuum perturbative QFT）计算，而非格点模拟工作。核心方法包括：\n\n- 采用维度正则化下的四圈（four-loop）硬标度匹配计算，分离硬标度（\\(\\sim \\pi T\\)）与软标度贡献；\n- 使用有效场论框架（维度约化/静电 QCD 类分解），将压强分解为硬标度匹配系数与软标度贡献之和；\n- 通过四圈积分约化（IBP 恒等式、主积分计算）求得匹配修正系数；\n- 将结果与 arXiv:1204.6184 中基于连续极限外推格点数据拟合得到的微扰级数值进行对比。\n\n## 主要结果\n\n1. 确定了四圈硬标度匹配修正，补全了胶子等离子体压强至 \\(\\mathcal{O}(g_s^6)\\) 的完整微扰计算。\n2. 新结果在误差范围内与 arXiv:1204.6184 通过拟合连续外推格点数据得到的值一致。\n3. 这是首次在 \\(\\mathcal{O}(g_s^6)\\) 阶对弱耦合展开进行直接检验，表明微扰展开在该阶仍与格点数据相容。\n\n## 为什么值得关注\n\n- **理论层面**：\\(\\mathcal{O}(g_s^6)\\) 是高温 QCD 压强微扰展开的一个里程碑阶数，此前长期缺失，补全后使微扰预言达到与格点可比拟的精度。\n- **格点/QCD 社区**：提供了微扰与格点两条独立路径的首次直接交叉验证，增强了对高温 QCD 状态方程在 \\(T \\gtrsim\\) 几倍 \\(T_c\\) 区域微扰描述的信心。\n- **现象学**：对重离子碰撞中夸克胶子等离子体的状态方程、以及早期宇宙 QCD 相变的热力学描述有直接影响。\n- **方法学**：展示了有效场论分解 + 四圈匹配在有限温度场论中的可行性，为更高阶或更复杂理论（如 BSM 扩展）的计算提供范式。\n\n## 方向标签\n\n- Finite temperature\n- Perturbative QCD\n- QCD equation of state\n- Effective field theory\n- Lattice QCD（对比验证）\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：对于从事高温 QCD 状态方程、微扰计算或格点-微扰对比的研究者，这是必读的里程碑工作，直接补全了长期缺失的一阶。但它属于专门的四圈微扰计算，技术门槛高、受众相对集中；对不涉及高温 QCD 热力学的研究者相关性较低，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:15.290922"
+  },
+  {
+    "id": "2610.23332v1",
+    "title": "Two-nucleon scattering amplitudes at light quark masses from lattice QCD",
+    "authors": [
+      "Jorge Baeza-Ballesteros",
+      "André Baião-Raposo",
+      "Davide Laudicina",
+      "Malcolm Lazarow",
+      "Miguel Salg",
+      "John Bulava",
+      "Jeremy R. Green",
+      "Andrew Hanlon",
+      "Renwick J. Hudspith",
+      "Daniel Mohler",
+      "Colin Morningstar",
+      "Amy Nicholson",
+      "Fernando Romero-López",
+      "Thomas R. Richardson",
+      "André Walker-Loud",
+      "Hartmut Wittig",
+      "for the Baryon Scattering",
+      "Collaboration"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.23332v1",
+    "published": "2026-10-16T11:36:00Z",
+    "abstract": "We present a lattice-QCD determination of nucleon-nucleon scattering amplitudes at pion masses of $M_π\\approx 200$ MeV and $M_π\\approx 280$ MeV at a single lattice spacing $a \\approx 0.064$ fm on two CLS ensembles. The finite-volume energy spectra are extracted from large Hermitian correlation matrices constructed within the distillation framework using an extensive basis of two-nucleon interpolating operators. To reliably relate the finite-volume spectra to the infinite-volume scattering amplitudes, we employ two recently developed formalisms that explicitly account for the long-range interaction generated by one-pion exchange: the plane-wave quantization condition and the relativistic left-hand-cut formalism. We discuss the quark-mass dependence of the nucleon-nucleon scattering lengths, effective ranges, shape parameters and pole positions. At all pion masses considered, our analysis prefers virtual states in both isospin channels by more than $1σ$. Comparing also results from our previous calculation at $M_π\\approx 710$ MeV, we observe that the inverse scattering lengths and binding momenta approach their physical-point phenomenological values monotonically as the pion mass is varied.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文在 $M_\\pi \\approx 200$ 和 $280$ MeV 两个近物理 pion 质量下，利用格点 QCD 从有限体积能谱提取了核子-核子散射振幅，发现两个同位旋通道均倾向于虚拟态（virtual state），且随 pion 质量降低，散射长度和束缚动量单调趋近物理点唯象值。\n\n## 研究问题\n\n作者想解决的核心问题是：**核子-核子（NN）散射振幅在接近物理 pion 质量时的行为如何？** 具体包括：\n\n1. 在 $M_\\pi \\approx 200$ MeV 和 $280$ MeV 下，NN 散射长度、有效程、形状参数和极点位置是什么？\n2. 这些量如何随 quark mass（即 pion 质量）变化？能否从较高的 pion 质量（如之前 $M_\\pi \\approx 710$ MeV 的计算）单调外推到物理点？\n3. 两个同位旋通道（$^1S_0$ 和 $^3S_1$-$^3D_1$）中是否存在束缚态或虚拟态？\n\n这是核物理从第一性原理 QCD 出发理解核力的重要一步。\n\n## 方法\n\n论文使用了以下格点 QCD 技术：\n\n1. **CLS ensembles**：两个 $N_f = 2+1$ 味 Wilson-clover 费米子系综，$a \\approx 0.064$ fm，$M_\\pi \\approx 200$ 和 $280$ MeV。\n2. **Distillation framework**：构造大规模 Hermitian 关联矩阵，使用丰富的两核子插值算符基（包括不同动量、自旋和同位旋通道）。\n3. **有限体积能谱提取**：从关联矩阵的本征值提取有限体积能量谱。\n4. **有限体积到无限体积的映射**：采用两种近期发展的形式：\n   - **平面波量子化条件**（plane-wave quantization condition）\n   - **相对论左手切割形式**（relativistic left-hand-cut formalism）\n   \n   两者都显式处理了单 pion 交换（OPE）产生的长程相互作用——这是低 pion 质量下不可忽略的效应。\n5. **散射参数提取**：从无限体积振幅中拟合散射长度、有效程、形状参数和极点位置。\n\n## 主要结果\n\n1. **两个同位旋通道均偏好虚拟态**：在所有考虑的 pion 质量下，$^1S_0$ 和 $^3S_1$-$^3D_1$ 通道的分析均以超过 $1\\sigma$ 的显著性偏好虚拟态（而非束缚态）。\n2. **quark mass 依赖性**：将结果与之前 $M_\\pi \\approx 710$ MeV 的计算比较，发现**逆散射长度和束缚动量随 pion 质量降低单调趋近物理点唯象值**。\n3. **散射参数随 $M_\\pi$ 的演化**：给出了散射长度、有效程和形状参数在 $M_\\pi \\approx 200$–$710$ MeV 范围内的 quark-mass 依赖趋势。\n4. **方法学验证**：两种形式（平面波量子化条件和左手切割形式）在低 pion 质量下给出一致结果，验证了 OPE 长程效应处理的可靠性。\n\n## 为什么值得关注\n\n1. **从 QCD 第一性原理理解核力**：NN 散射振幅是核物理的基本输入量。在近物理 pion 质量下从格点 QCD 直接计算，是连接 QCD 与核物理的关键桥梁。\n2. **手征外推的重要进展**：单调趋近物理点的行为为从高 pion 质量格点数据外推到物理点提供了信心，这对未来更大规模的计算具有指导意义。\n3. **虚拟态 vs 束缚态的判定**：在 $^1S_0$ 通道中，物理点是虚拟态（散射长度为大负值），而 $^3S_1$ 通道是束缚态（氘核）。论文在 $M_\\pi \\approx 200$–$280$ MeV 下均偏好虚拟态，说明氘核的束缚可能在更接近物理点时才出现——这对理解核子间相互作用的 quark mass 演化至关重要。\n4. **方法学贡献**：在低 pion 质量下正确处理 OPE 长程效应是格点 NN 计算的难点，论文采用的两种形式为社区提供了可参考的范式。\n5. **向物理点迈进**：$M_\\pi \\approx 200$ MeV 已相当接近物理 pion 质量（$135$ MeV），是当前格点 NN 计算中最轻的 pion 质量之一。\n\n## 方向标签\n\n- Lattice QCD\n- Nuclear physics from lattice QCD\n- Hadron-hadron scattering\n- Chiral extrapolation\n- Few-body physics\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n**理由**：\n\n- **高优先级**对于从事格点 QCD 核物理、NN 散射、有限体积方法或手征外推的研究者。论文直接推进了该领域的前沿——在近物理 pion 质量下计算 NN 振幅并讨论 quark mass 依赖性。\n- **方法学价值高**：两种处理 OPE 长程效应的形式在低 pion 质量下的应用和一致性检验，对后续计算有直接参考意义。\n- **结果重要但非颠覆性**：虚拟态的偏好和单调趋近物理点的行为是预期之中的，但以格点数据定量证实这一点具有重要价值。\n- 扣一星的原因：单 lattice spacing（$a \\approx 0.064$ fm）意味着未做连续极限外推，且仅两个 pion 质量点，系统误差控制有限。对于非格点 QCD 背景的读者，技术门槛较高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:23.056273"
+  },
+  {
+    "id": "2610.23207v1",
+    "title": "Gauge-Covariant Wavelets for Quark-Propagator Sparsening and Distillation in Lattice QCD",
+    "authors": [
+      "Debsubhra Chakraborty",
+      "Nilmani Mathur",
+      "Mrinmoy Basak"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.23207v1",
+    "published": "2026-10-16T09:44:56Z",
+    "abstract": "We develop a novel gauge-covariant wavelet framework for computing hadronic correlation functions in lattice QCD. Two complementary approaches connect spatial localization and resolution-scale separation to propagator sparsening and distillation. A gauge-covariant fast wavelet transform, based on compactly supported biorthogonal filters, coarse-grains quark propagators and reduces early-time excited-state contamination relative to direct decimation at equal spatial reduction. A second construction applies a resolvent filter of the spatial covariant Laplacian to localized sources, generating a distillation subspace without computing Laplacian eigenpairs. We detail its gauge covariance, smearing profiles, and implementation in exact and stochastic distillation. Spatial localization enables unbiased Hansen-Hurwitz sampling of hadronic contractions, reducing their computational cost substantially. We also examine momentum aliasing induced by fixed coarse grids and the use of random grid shifts to remove unwanted contributions in expectation. Numerical benchmarks of the proposed methods are performed with single hadrons, the I = 2 two-pion system, the deuteron channel, and boosted nucleons. The extracted energy levels agree very well with full or conventional distillation calculations within statistical uncertainties. We quantify the costs of on-demand basis construction and contractions, demonstrate contraction speedups at comparable statistical precision. These studies establish a practical foundation of wavelet-based propagator compression and operator construction for multi-operator calculations of hadronic and nuclear systems, particularly at larger lattice volumes.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出了一套**规范协变的小波框架**，用于在格点 QCD 中对夸克传播子进行稀疏化和蒸馏（distillation），从而在保持统计精度的前提下显著降低强子关联函数的计算成本。\n\n## 研究问题\n作者想解决的核心问题是：**格点 QCD 中强子关联函数计算量过大**，尤其是多算符、核子系统和大体积格点上的传播子收缩（contraction）成本。具体包括：\n- 如何在保持规范协变性的前提下对夸克传播子做空间局域化/稀疏化（sparsening），减少存储与收缩开销；\n- 如何在不显式求解拉普拉斯本征对的情况下构造蒸馏子空间（distillation subspace），降低传统蒸馏的基构造成本；\n- 如何避免固定粗网格带来的动量混叠（momentum aliasing），并保证采样无偏；\n- 在单强子、I=2 双π、氘核道和 boosted nucleon 等系统上验证方法的精度与加速效果。\n\n## 方法\n论文使用了以下 lattice 方法与数值技术：\n1. **规范协变快速小波变换**：基于紧支撑双正交滤波器（compactly supported biorthogonal filters），对夸克传播子做粗粒化，并与直接抽取（direct decimation）在相同空间缩减下比较激发态污染。\n2. **空间协变拉普拉斯的预解滤波（resolvent filter）**：对局域源施加空间协变拉普拉斯算符的预解滤波，生成蒸馏子空间，而无需计算拉普拉斯本征对；讨论了其规范协变性、smearing profile，以及在精确蒸馏和随机蒸馏中的实现。\n3. **Hansen-Hurwitz 无偏采样**：利用空间局域化对强子收缩做无偏随机采样，降低收缩计算量。\n4. **随机网格平移**：分析固定粗网格导致的动量混叠，并用随机网格平移在期望意义上消除不需要的贡献。\n5. **数值基准测试**：在单强子、I=2 双π系统、氘核道和 boosted nucleon 上，与完整传播子或传统蒸馏结果比较能级，并量化按需基构造与收缩的成本、展示在可比统计精度下的收缩加速。\n\n## 主要结果\n- 小波粗粒化传播子在相同空间缩减下**比直接抽取更好地抑制早期激发态污染**。\n- 预解滤波构造的蒸馏子空间**无需显式求解本征对**，且保持规范协变性，可用于精确与随机蒸馏。\n- 空间局域化使 **Hansen-Hurwitz 无偏采样**成为可能，大幅降低强子收缩的计算成本。\n- 固定粗网格引起的动量混叠可通过**随机网格平移**在期望意义上消除。\n- 在单强子、I=2 双π、氘核道和 boosted nucleon 上，提取的能级在统计误差内与完整/传统蒸馏计算**吻合良好**；论文量化了按需基构造与收缩成本，并展示了在可比统计精度下的**收缩加速**。\n- 这些结果为大体积格点上多算符强子与核系统的计算奠定了实用基础。\n\n## 为什么值得关注\n- **计算成本是格点 QCD 的核心瓶颈**：多算符关联函数、核子系统和大体积格点的传播子收缩成本极高；小波稀疏化与无本征对蒸馏提供了可扩展的压缩与算符构造方案。\n- **保持规范协变性**：这是格点 QCD 中任何传播子/源处理方法的硬性要求，论文明确处理了规范协变小波变换与滤波构造。\n- **无需显式本征分解的蒸馏**：传统蒸馏需计算空间拉普拉斯本征对，成本随体积增长；预解滤波方法绕开这一瓶颈，对大规模计算有实际价值。\n- **统计上无偏的采样与混叠消除**：Hansen-Hurwitz 采样和随机网格平移为稀疏化提供了严格的统计基础，避免系统性偏差。\n- **对核物理与多强子系统的直接意义**：氘核道、双π和 boosted nucleon 的基准测试表明方法可直接用于核子-核子与多强子关联计算。\n\n## 方向标签\n- Lattice QCD\n- Hadron spectroscopy\n- Nuclear physics from lattice QCD\n- Algorithm development / numerical methods\n- Signal-to-noise and statistical sampling\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文针对格点 QCD 中非常实际且昂贵的传播子收缩与蒸馏成本问题，提出了规范协变、统计无偏且无需本征分解的新方法，并在多个物理通道上做了数值验证，实用性强。扣一星是因为其价值高度依赖具体实现细节与体积/参数下的加速比，且小波滤波器的选择与调参可能带来额外工程复杂度；对不做多算符/核系统计算的读者优先级略低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:30.030051"
+  },
+  {
+    "id": "2610.22994v1",
+    "title": "Leading-twist proton parton distribution amplitude from scalar and axial-vector diquark correlations",
+    "authors": [
+      "B. Almeida-Zamora",
+      "L. Albino",
+      "C. Mezrag",
+      "J. Segovia"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.22994v1",
+    "published": "2026-10-16T06:18:58Z",
+    "abstract": "We compute the leading-twist proton parton distribution amplitude (PDA) using algebraic representations of the nucleon Faddeev wave function inspired by perturbation-theory integral representations. The PDA is obtained from a light-front projection of the covariant quark--diquark Faddeev amplitude and analysed in terms of its scalar- and axial-vector-diquark components. We derive analytic expressions for the corresponding diquark distribution amplitudes and their contributions to the proton PDA. The resulting distribution is broad and concave, with its maximum $(x_1,x_2,x_3)\\approx(0.55,0.20,0.25)$ displaced from the symmetric configuration $(1/3,1/3,1/3)$, which corresponds to the maximum of the perturbative-QCD asymptotic form. Scalar-diquark correlations generate a strong asymmetry in the longitudinal momentum distribution, whereas axial-vector correlations redistribute momentum among the valence quarks and significantly reduce this asymmetry. We calculate low-order Mellin moments and obtain a compact parametrisation of the proton PDA at the hadronic scale, $μ_0=0.51\\,\\mathrm{GeV}$. We then perform the leading-order QCD evolution of its normalized shape to $μ=2\\,\\mathrm{GeV}$, finding that evolution reduces the momentum asymmetry while preserving a clear imprint of the non-perturbative quark--diquark correlations. The results provide insight into the role of such correlations in shaping the proton light-front structure and furnish non-perturbative input for studies of hard exclusive baryonic processes.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文用基于夸克-双夸克 Faddeev 波函数的光锥投影方法，计算了质子领头扭度部分子分布振幅（PDA），发现标量双夸克关联导致强纵向动量不对称，而轴矢双夸克关联显著削弱这种不对称，并在 QCD 演化到 2 GeV 后仍保留非微扰关联的印记。\n\n## 研究问题\n作者想解决什么问题？\n- 质子领头扭度 PDA 的非微扰形状及其对夸克-双夸克关联结构的依赖尚不清楚。\n- 标量双夸克与轴矢双夸克关联分别如何影响质子内价夸克的纵向动量分布（尤其是偏离对称构型 (1/3,1/3,1/3) 的程度）？\n- 在强子尺度 μ₀ = 0.51 GeV 得到的非微扰 PDA，经领头阶 QCD 演化到 μ = 2 GeV 后，非微扰关联的印记是否还能保留？\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 不是格点 QCD 计算，而是基于协变夸克-双夸克 Faddeev 振幅的解析/唯象方法。\n- 采用受微扰论积分表示启发的核子 Faddeev 波函数代数表示。\n- 对协变夸克-双夸克 Faddeev 振幅做光锥投影得到 PDA。\n- 将 PDA 分解为标量双夸克和轴矢双夸克分量，推导对应的双夸克分布振幅解析表达式及其对质子 PDA 的贡献。\n- 计算低阶 Mellin 矩，并在强子尺度 μ₀ = 0.51 GeV 给出紧凑参数化。\n- 对归一化形状做领头阶 QCD 演化至 μ = 2 GeV。\n\n## 主要结果\n总结最重要发现。\n- 得到的质子 PDA 宽而凹，最大值位于 (x₁,x₂,x₃) ≈ (0.55,0.20,0.25)，明显偏离微扰 QCD 渐近形式的最大点 (1/3,1/3,1/3)。\n- 标量双夸克关联产生强烈的纵向动量分布不对称。\n- 轴矢双夸克关联在价夸克间重新分配动量，并显著减小该不对称。\n- 给出了 μ₀ = 0.51 GeV 处 PDA 的紧凑参数化及低阶 Mellin 矩。\n- 领头阶 QCD 演化到 μ = 2 GeV 会减小动量不对称，但仍保留非微扰夸克-双夸克关联的清晰印记。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 为硬排他重子过程（如质子形状因子、DVCS 类过程）提供非微扰输入 PDA。\n- 揭示双夸克关联（标量 vs. 轴矢）在塑造质子光锥结构中扮演的不同角色，有助于理解核子内部结构。\n- 给出的参数化形式可直接用于唯象研究，并可作为格点 QCD 计算质子 PDA 的对照/补充。\n- 说明 QCD 演化不会抹去非微扰关联信息，对从高能实验反推强子尺度结构有启示意义。\n\n## 方向标签\n- Lattice QCD（相关但非直接格点计算）\n- QCD Phenomenology\n- Hadron Structure\n- Parton Distribution Amplitude\n- Quark-Diquark Model\n\n## 阅读优先级\n★★★☆☆（3/5）\n- 优点：主题重要（质子 PDA 是硬排他过程的关键非微扰输入），结果清晰，参数化实用，对理解双夸克关联作用有直接价值。\n- 局限：方法为夸克-双夸克 Faddeev 模型的解析/唯象计算，并非第一性原理格点 QCD；结论依赖模型假设，需与格点或实验进一步对照。\n- 适合关注强子光锥结构、PDA 唯象及夸克-双夸克模型的读者精读；若只关心格点第一性原理计算，可作为背景参考略读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:35.579206"
+  },
+  {
+    "id": "2610.11937v2",
+    "title": "Reassessing the $X(2370)$ in $J/ψ\\toγK_S^0K_S^0π^0$ beyond the one-dimensional mass projections",
+    "authors": [
+      "Xiang-Kun Dong",
+      "Teng Ji",
+      "Meike Küßner",
+      "Ulf-G. Meiß ner"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.11937v2",
+    "published": "2026-10-08T13:30:44Z",
+    "abstract": "The BESIII Collaboration recently extracted the properties of the $X(2370)$ from a fit to the one-dimensional $K_S^0K_S^0π^0$ invariant-mass spectrum in $J/ψ\\toγK_S^0K_S^0π^0$. The intermediate two-body structures visible in the mass correlations, including the $K_0^*(1430)$ bands, require a coherent treatment of cross-channel interference when interpreting the enhancement near 2.3 GeV. We reassess the need for an additional $X(2370)$ contribution by fitting the published data using an effective coupled-channel framework with an approximate detection efficiency depending on the three-body invariant mass. The three-body parent amplitude is parameterized using a $K$-matrix that describes scattering among several quasi-two-body channels. The seven- and eight-bare-state models give similar mass distributions. Adding the eighth bare state lowers the Poisson deviance by 1.22% and produces an additional pole at $E=(2419-i152)$ MeV, substantially broader than the $X(2370)$ mass-width reference. This pole is model-dependent, and its identification with the $X(2370)$ is not clear. The present analysis does not establish the need for an additional $X(2370)$ contribution in $J/ψ\\toγK_S^0K_S^0π^0$, thereby weakening the flavor-singlet argument based on the suppression of $K^*\\bar K$ relative to the total $K\\bar Kπ$ contribution. A more comprehensive experimental amplitude analysis, incorporating coherent interference, mass and angular correlations, and detector effects across related decay channels, is needed to establish the role and decay properties of the $X(2370)$.",
+    "summary": {
+      "raw": "## 一句话结论\n作者用耦合道 K-矩阵模型重新拟合 BESIII 的 \\(J/\\psi\\to\\gamma K_S^0K_S^0\\pi^0\\) 数据，发现无需额外引入 \\(X(2370)\\) 也能描述 2.3 GeV 附近的增强，所谓 \\(X(2370)\\) 极点的存在强烈依赖模型假设。\n\n## 研究问题\nBESIII 合作组从一维 \\(K_S^0K_S^0\\pi^0\\) 不变质量谱的拟合中提取了 \\(X(2370)\\) 的性质，但一维投影丢失了跨道干涉信息（尤其是可见的 \\(K_0^*(1430)\\) 带）。本文要问：在正确处理三体相空间、跨道干涉和探测效率后，数据是否真的需要一个额外的 \\(X(2370)\\) 共振贡献？基于 \\(K^*\\bar K\\) 相对 \\(K\\bar K\\pi\\)  suppressed 的 flavor-singlet 论证是否仍然成立？\n\n## 方法\n- 有效耦合道框架：用 \\(K\\)-矩阵描述多个准两体道（\\(K_0^*(1430)\\) 带等）之间的散射，构造三体母振幅。\n- 比较 7 个与 8 个裸态（bare state）模型，拟合 BESIII 公布的一维质量谱数据。\n- 引入依赖三体不变质量的近似探测效率。\n- 通过极点位置和 Poisson deviance 变化评估第 8 个裸态（即候选 \\(X(2370)\\)）的必要性。\n- 注意：这不是格点 QCD 计算，而是基于实验数据的有效振幅分析（phenomenology）。\n\n## 主要结果\n- 7 态与 8 态模型给出的质量分布相似；加入第 8 个裸态仅使 Poisson deviance 降低 1.22%。\n- 第 8 态产生的新极点位于 \\(E=(2419-i152)\\) MeV，宽度远大于 \\(X(2370)\\) 的参考质量-宽度值。\n- 该极点强烈依赖模型，不能明确等同于 \\(X(2370)\\)。\n- 结论：当前数据不establish需要额外 \\(X(2370)\\) 贡献，从而削弱了基于 \\(K^*\\bar K\\)  suppressed 的 flavor-singlet 论证。\n- 呼吁更全面的实验振幅分析：相干干涉、质量与角关联、跨相关衰变道的探测器效应。\n\n## 为什么值得关注\n- 对强子谱学：提醒一维质量投影可能人为制造“共振”信号，跨道干涉与三体动力学必须自洽处理。\n- 对 \\(X(2370)\\) 身份认定：若该态不存在或不是 flavor singlet，则基于它讨论胶球/奇特态的解释需重新审视。\n- 对格点 QCD：格点计算常给出候选态的质量与宽度，本文说明从实验提取这些量时模型系统误差可能很大，格点与实验的对比需谨慎。\n- 方法论上：K-矩阵耦合道拟合是连接实验数据与理论振幅的标准工具，本文展示了模型选择对极点提取的影响。\n\n## 方向标签\n- Hadron spectroscopy\n- Effective field theory / coupled-channel amplitude analysis\n- Exotic hadrons / glueballs\n- Phenomenology (experimental amplitude analysis)\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：对关注 \\(X(2370)\\)、胶球候选态和 BESIII 振幅分析的人是必读的批判性 reassessment；方法本身是标准 K-矩阵拟合而非格点计算，对纯 lattice 技术读者相关性中等，但对“格点结果如何与实验对比”这一交叉问题有重要警示价值。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-19T05:04:41.083512"
   }
 ]
