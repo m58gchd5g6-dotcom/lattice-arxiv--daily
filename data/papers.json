@@ -5751,5 +5751,132 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-19T05:04:41.083512"
+  },
+  {
+    "id": "2610.26838v1",
+    "title": "Field theory guides Monte Carlo in the one-dimensional long-range Ising model",
+    "authors": [
+      "António Antunes",
+      "José Matos"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.26838v1",
+    "published": "2026-10-19T17:58:25Z",
+    "abstract": "The statistical long-range Ising (LRI) model in one dimension provides a family of some of the simplest non-exactly solvable critical points. These critical points are described by long-range conformal field theories (CFTs) that are well understood analytically with perturbative expansions and some exact results. Guided by this, we revisit the Monte Carlo (MC) approach to the corresponding lattice model which has many favorable features compared to other systems studied with MC methods. In particular, with very modest computational cost, we are able to estimate scaling dimensions of leading and subleading operators as well as the associated three-point functions, and even certain four-point functions. These results help highlight the fact that 1d LRI CFTs are a phenomenal playground to more generally test non-perturbative methods and ideas for strongly coupled CFTs.",
+    "summary": {
+      "raw": "## 一句话结论\n作者以长程 CFT 的解析结果为指导，重新审视一维长程 Ising 模型的蒙特卡洛模拟，以很低的计算成本高精度提取了主导与次主导算符的标度维数、三点函数乃至部分四点函数。\n\n## 研究问题\n一维长程 Ising（LRI）模型提供了一族最简单的、非精确可解的关键点，其对应的长程 CFT 已有较好的解析理解（微扰展开与部分精确结果）。作者想解决的问题是：能否借助这些 CFT 解析知识来\"引导\"蒙特卡洛，从而在格点模型上高效、可靠地测量 CFT 数据（标度维数、三点/四点函数），并检验这套方法作为强耦合 CFT 非微扰研究\"试验场\"的可行性。\n\n## 方法\n- 模型：一维长程 Ising 模型（自旋间耦合按幂律衰减，J(r) ~ 1/r^{d+σ}），其临界点由长程 CFT 描述。\n- 方法：蒙特卡洛（MC）模拟，并以长程 CFT 的解析结果（微扰展开、精确结果）作为指导来选择观测量、拟合形式与外推策略。\n- 数值技术：通过测量算符关联函数提取主导与次主导算符的标度维数，并进一步估计三点函数及部分四点函数；强调计算成本\"非常适中\"。\n\n## 主要结果\n- 以很小的计算代价即可估计主导与次主导算符的标度维数。\n- 能够测量相关的三点函数，甚至某些四点函数。\n- 结果表明一维 LRI CFT 是检验强耦合 CFT 非微扰方法与思想的极佳\"游乐场\"（phenomenal playground）。\n\n## 为什么值得关注\n- 为 lattice/理论物理社区提供了一个低成本、可控的 CFT 基准平台：可用已知解析结果校验非微扰数值方法（如 MC、以及潜在的张量网络/量子模拟方法）。\n- 有助于发展提取 CFT 数据（标度维数、三点/四点函数）的通用数值策略，这些技术可迁移到更复杂的强耦合 CFT 与规范场论研究中。\n- 强调\"用场论解析结果引导 MC\"这一思路，对方法学有推广价值。\n\n## 方向标签\n- Lattice field theory（格点场论）\n- Conformal field theory（CFT）\n- Monte Carlo methods\n- Statistical/condensed-matter lattice models\n- Non-perturbative methods\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：论文方法学意义明确、成本低、可作为 CFT 数值方法的标准测试平台，对做格点/CFT 数值方法的人有参考价值；但它是一维统计模型、不直接涉及 QCD 或规范场论，属于\"方法试验场\"性质，若你的兴趣集中在 QCD/BSM 主线，优先级中等；若关注强耦合 CFT 的非微扰数值技术，则值得一读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-20T05:06:41.155148"
+  },
+  {
+    "id": "2610.25494v1",
+    "title": "Expansion schemes for finite density QCD equation of state: which one is the best?",
+    "authors": [
+      "Szabolcs Borsányi",
+      "Zoltán Fodor",
+      "Jana N. Guenther",
+      "Piyush Kumar",
+      "Paolo Parotto",
+      "Attila Pásztor",
+      "Chik Him Wong"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.25494v1",
+    "published": "2026-10-18T19:32:15Z",
+    "abstract": "The finite density equation of state of QCD is a fundamental quantity for understanding the phase structure of the theory, and also for the realistic modeling of the QCD medium in simulations. While direct lattice simulations at finite density are extremely challenging, several expansion schemes have been devised to extrapolate into the QCD phase diagram. All of these schemes are based on susceptibilities of conserved charges, i.e. derivatives of the pressure with respect to the chemical potential(s). In this work we set out to determine which of these schemes possesses the best convergence properties. To this end, we employ extreme-statistics lattice simulations on a $16^3\\times8$ lattice, which allow us to obtain susceptibilities up to order eight with remarkably small errors. We compare in particular two methods, based on contours of constant (normalized) baryon density and of constant entropy density. We find that the latter converges more quickly, effectively requiring susceptibilities only up to order four to cover the chemical potential range up to at least $μ_B \\approx 500$ MeV. We also extend the comparison to the three dimensional space of chemical potentials, and find that the entropy-based method consistently shows superior convergence.",
+    "summary": {
+      "raw": "## 一句话结论\n在有限密度 QCD 状态方程的各种展开方案中，基于**恒定熵密度等值线**的展开方案收敛性最好，仅需到四阶感受率即可覆盖 μ_B ≲ 500 MeV 的范围，优于基于恒定（归一化）重子密度等值线的方案。\n\n## 研究问题\n有限密度 QCD 的直接格点模拟因符号问题而极其困难，因此社区发展了多种基于守恒荷感受率（压强对化学势的导数）的展开/外推方案，将状态方程从零密度外推到 QCD 相图内部。但这些方案之间缺乏系统的收敛性比较：**究竟哪一种展开方案收敛最快、最可靠？** 本文正是要回答这一问题，并进一步把比较推广到三维化学势空间 (μ_B, μ_Q, μ_S)。\n\n## 方法\n- **格点设置**：在 \\(16^3\\times8\\) 格点上进行\"极端统计量\"（extreme-statistics）格点模拟，从而以非常小的误差获得**直到八阶**的守恒荷感受率 \\(\\chi_n = \\partial^n p/\\partial \\mu^n\\)。\n- **比较对象**：两类展开方案——\n  1. 基于恒定（归一化）重子密度等值线的方案（constant \\(n_B/s\\) 或归一化重子密度轮廓）；\n  2. 基于恒定熵密度等值线的方案（constant \\(s/n_B\\) 类轮廓，entropy-based）。\n- **判据**：比较两种方案在给定化学势范围内达到收敛所需的感受率阶数（即所需展开阶数越低、误差越小者收敛性越好）。\n- **扩展**：将比较从一维 μ_B 推广到三维化学势空间 (μ_B, μ_Q, μ_S)，检验结论的稳健性。\n- 属于纯格点 QCD 数值计算（非微扰），核心数值技术是高温展开/泰勒展开系数（感受率）的高精度测量与重求和/等值线重构。\n\n## 主要结果\n1. **熵基方案收敛更快**：基于恒定熵密度等值线的展开，实际上只需**到四阶**感受率即可覆盖至少 μ_B ≈ 500 MeV 的化学势范围，而重子密度等值线方案需要更高阶项才能达到同等精度。\n2. **三维推广一致**：在 (μ_B, μ_Q, μ_S) 三维化学势空间中比较，熵基方法**始终表现出更优的收敛性**，说明该结论不依赖于单一方向的特殊选择。\n3. **高精度感受率数据**：作者展示了在 \\(16^3\\times8\\) 上以极小误差获得至八阶感受率的可行性，为系统比较提供了可靠数值基础。\n\n## 为什么值得关注\n- **实用价值**：有限密度 QCD 状态方程是重离子碰撞建模（如流体力学模拟）、中子星与致密物质研究的基础输入。选择一个收敛快、所需阶数低的展开方案，能显著降低系统误差并简化实际计算。\n- **方法学贡献**：此前各展开方案多被平行使用而缺少横向的收敛性基准测试；本文首次用高统计量格点数据给出\"哪个方案更好\"的定量答案，为社区提供了方案选择的依据。\n- **可推广性**：结论在三维化学势空间成立，对需要同时处理重子数、电荷、奇异数化学势的实际相图外推（如寻找临界点、绘制状态方程曲面）具有直接指导意义。\n- **技术示范**：展示了八阶感受率的高精度测量能力，对格点 QCD 高阶展开方法本身也是重要推动。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Finite density QCD / QCD phase diagram\n- Equation of state\n- Taylor expansion / susceptibilities\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇方法学导向、结论清晰且实用性强的论文——它不提出新理论，而是系统回答\"哪种展开方案最好\"这一社区实际关心的问题，结论（熵基方案仅需四阶即可覆盖 μ_B ≲ 500 MeV）对做状态方程、重离子模拟和相图外推的研究者直接可用。扣一星是因为其格点规模较小（\\(16^3\\times8\\)、单一格距），结论的连续极限与体积依赖性仍需后续验证；若读者关注的是临界点定位或符号问题算法本身，则相关性略低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-20T05:06:47.612610"
+  },
+  {
+    "id": "2610.24785v1",
+    "title": "Recent Advances in Transverse-Momentum--Dependent Distributions in Lattice QCD",
+    "authors": [
+      "Huey-Wen Lin",
+      "Wei Wang",
+      "Yong Zhao"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.24785v1",
+    "published": "2026-10-17T17:12:33Z",
+    "abstract": "Unraveling the three-dimensional structure of hadrons is a central objective in modern nuclear and particle physics. Transverse Momentum Dependent parton distributions (TMDs) provide crucial insights into the interplay between partonic transverse motion and spin, and are indispensable for describing a wide range of high-energy processes at facilities such as JLab, COMPASS, the LHC, and the upcoming Electron-Ion Collider. In recent years, significant progress has been made in accessing TMDs from lattice QCD using novel approaches. Methods based on ratios of Mellin moments, large-momentum effective theory (LaMET), and Coulomb-gauge techniques have enabled first-principles investigations of the Collins-Soper kernel, intrinsic soft functions, TMD wave functions, and TMDPDFs. Recent lattice results for both unpolarized and spin-dependent distributions, including the Boer-Mulders function, demonstrate the feasibility of extracting transverse-momentum--dependent information directly from QCD. This paper reviews recent advances in lattice-QCD studies of TMDs, outlines remaining challenges such as continuum and infinite-momentum extrapolations, and discusses future directions toward precision determinations of hadron structure in three dimensions.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇综述系统梳理了格点 QCD 在横动量依赖分布（TMDs）研究上的最新进展，表明通过 Mellin 矩比值、LaMET 和库仑规范等方法，已能从第一性原理出发计算 Collins-Soper 核、内禀软函数、TMD 波函数和 TMDPDFs，包括 Boer-Mulders 函数等自旋相关分布，标志着三维强子结构的第一性原理研究进入可行阶段。\n\n## 研究问题\n\n作者想解决的核心问题是：如何从格点 QCD 第一性原理出发，提取描述强子三维结构的横动量依赖部分子分布（TMDs）。具体包括：\n\n1. TMDs 传统上依赖实验拟合或模型输入，缺乏第一性原理计算手段，因为 TMDs 涉及沿光锥的实时/类光关联，而欧几里得格点 QCD 无法直接模拟类光间隔。\n2. 如何定义和计算 TMD 中的关键非微扰量——Collins-Soper 核、内禀软函数、TMD 波函数和 TMDPDFs。\n3. 如何将格点可计算的量（如准 TMDs、Mellin 矩、库仑规范下的关联函数）与物理 TMDs 通过因子化或匹配关系联系起来。\n4. 当前方法在连续极限、无限动量外推等方面的系统误差与剩余挑战。\n\n## 方法\n\n论文综述的格点方法主要包括三类：\n\n1. **Mellin 矩比值方法**：利用 TMD 的 Mellin 矩在格点上可计算的性质，通过矩的比值消去未知的软函数和匹配系数，从而提取 Collins-Soper 核等量。\n2. **大动量有效理论（LaMET）及其扩展**：在格点上计算有限动量下的准 TMD（quasi-TMD）或准 TMDPDF，通过大动量展开与微扰匹配核，将准量转换为光锥 TMD。涉及大动量外推和重整化（如 RI/MOM 方案、Wilson 线重整化）。\n3. **库仑规范方法**：在库仑规范下计算空间 Wilson 线关联，避免类光 Wilson 线的直接模拟困难，结合微扰匹配提取 TMD 相关信息。\n\n数值技术方面涉及：格点系综上的关联函数计算、Wilson 线/链接的重整化、连续极限外推、无限动量外推、以及自旋相关分布（如 Boer-Mulders 函数）的格点实现。\n\n## 主要结果\n\n1. **Collins-Soper 核**已通过多种格点方法（Mellin 矩比值、LaMET 准 TMD）得到首次第一性原理计算，不同方法间结果呈现初步一致性。\n2. **内禀软函数**和 **TMD 波函数**可在格点上定义并计算，为 TMD 因子化中的非微扰输入提供第一性原理约束。\n3. **TMDPDFs**（包括非极化分布）已通过 LaMET 类方法从格点提取，展示了可行性。\n4. **自旋相关分布**，特别是 **Boer-Mulders 函数**，已实现格点计算，表明横动量与自旋关联的第一性原理研究可行。\n5. 论文同时指出剩余挑战：连续极限外推、无限动量外推、重整化方案的系统误差、以及向高精度测定的迈进路径。\n\n## 为什么值得关注\n\n1. **填补第一性原理空白**：TMDs 是描述 JLab、COMPASS、LHC 和未来电子-离子对撞机（EIC）高能过程的核心输入，此前主要依赖实验拟合和模型。格点计算提供了独立的、来自 QCD 拉氏量的第一性原理约束。\n2. **方法学突破**：Mellin 矩比值、LaMET 和库仑规范方法绕过了格点无法直接模拟类光关联的根本困难，为其他光锥关联函数的研究提供了范式。\n3. **对 EIC 物理的意义**：EIC 将精确测量 TMDs，格点结果可用于检验因子化、约束非微扰输入、并帮助解释实验数据。\n4. **对格点/QCD 社区的推动**：TMD 计算涉及重整化、大动量外推、软函数等共性难题，其进展将惠及更广泛的格点强子结构研究（如 PDFs、GPDs）。\n5. **自旋物理**：Boer-Mulders 函数等自旋相关 TMD 的格点计算，直接关联核子自旋谜题和横动量-自旋关联的起源。\n\n## 方向标签\n\n- Lattice QCD\n- Hadron structure / TMDs\n- LaMET / quasi-distributions\n- Spin physics\n- Renormalization\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：这是一篇及时且覆盖面广的综述，适合作为进入格点 TMD 研究领域的入口文献。它系统整理了方法、结果和挑战，对从事格点强子结构、TMD 因子化、EIC 唯象以及自旋物理的研究者都有较高参考价值。扣一星的原因是综述类文章本身不提供新的数值细节，且 TMD 格点计算仍处于早期阶段，部分结果的系统误差尚未完全控制，读者需结合具体原始论文深入阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-20T05:06:55.598778"
+  },
+  {
+    "id": "2610.24632v1",
+    "title": "One-loop mixing matrix of the N=1 SYM Supercurrent operator upon renormalization on the Lattice using stout-smeared Links",
+    "authors": [
+      "Marios Costa",
+      "Elias Antoniou",
+      "Constantinos Costa",
+      "Salomi Dimou",
+      "Haralambos Panagopoulos"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.24632v1",
+    "published": "2026-10-17T11:12:22Z",
+    "abstract": "We extend the perturbative investigation of the renormalization and mixing patterns of the supercurrent operator in lattice ${\\cal N}=1$ supersymmetric Yang-Mills (SYM) theory, using stout-smeared gauge links. We employ the SLiNC action for gluinos and a family of Symanzik improved gauge actions for gluons. Building upon previous studies employing clover-improved fermions and the Wilson gauge action, we compute the one-loop mixing matrix of the supercurrent operator among gauge-invariant and gauge-variant operators. Particular emphasis is placed on the structure of operator mixing in the presence of stout smearing parameters. Our results contribute toward refining fine-tuning strategies necessary for the restoration of supersymmetry in the continuum limit, and provide a stepping stone for future perturbative and nonperturbative investigations in supersymmetric theories on the lattice.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文在格点上用 stout smearing 的胶子链接，对 N=1 超对称 Yang–Mills 理论中的超流（supercurrent）算符做了单圈微扰计算，给出了该算符在规范不变与规范可变算符之间的单圈混合矩阵，并重点分析了混合结构对 stout smearing 参数的依赖。\n\n## 研究问题\n\n作者想解决的问题是：在格点 N=1 SYM 理论中，超流算符在重整化时会与其它算符发生混合（包括规范可变算符），这会破坏超对称的恢复。此前的研究用的是 clover-improved 费米子和 Wilson 胶子作用量，本文要扩展到 SLiNC 费米子作用量 + 一族 Symanzik 改进的胶子作用量 + stout-smeared 链接，计算单圈混合矩阵，并弄清 stout smearing 参数如何进入混合结构。最终目标是服务于连续极限下超对称恢复所需的精细调节（fine-tuning）策略。\n\n## 方法\n\n- **理论模型**：格点 N=1 超对称 Yang–Mills（SYM）理论，规范群为 SU(N)。\n- **费米子作用量**：SLiNC action（用于 gluino）。\n- **胶子作用量**：一族 Symanzik 改进的规范作用量。\n- **胶子链接**：stout-smeared links，smearing 参数作为可调参数进入计算。\n- **计算手段**：单圈微扰论（one-loop perturbation theory），计算超流算符在规范不变与规范可变算符基下的混合矩阵。\n- **对比基线**：此前用 clover-improved fermions + Wilson gauge action 的结果，本文是其推广。\n\n## 主要结果\n\n- 给出了超流算符在规范不变与规范可变算符之间的**单圈混合矩阵**，作用量为 SLiNC + Symanzik 改进胶子作用量 + stout smearing。\n- 重点刻画了**混合结构对 stout smearing 参数的依赖**：smearing 参数会改变混合矩阵中相应元素的数值（及可能的符号/结构），需要在 fine-tuning 时纳入考虑。\n- 结果与之前 clover + Wilson 的结果形成对照，说明作用量改进和 smearing 对混合图案的影响。\n- 为后续微扰与非微扰研究（以及连续极限下超对称恢复的精细调节）提供了基础输入。\n\n## 为什么值得关注\n\n- **超对称的格点恢复**是 N=1 SYM 格点研究的核心难题：超流算符的混合与重整化直接决定是否需要以及如何做 fine-tuning（例如调节 gluino 质量、算符系数等）。\n- 本文把计算推广到**更接近实际模拟所用的改进作用量 + stout smearing**，使微扰结果与非微扰模拟的设置更一致，提高了实用价值。\n- 对**格点 SYM / 超对称理论社区**而言，这是构建可靠连续极限外推的必要一步；对更广泛的理论物理（超对称破缺、算符混合系统学）也有参考意义。\n- stout smearing 参数的显式依赖为模拟参数选择提供了微扰指导。\n\n## 方向标签\n\n- Lattice Field Theory\n- Lattice Supersymmetry (N=1 SYM)\n- Operator Mixing / Renormalization\n- Perturbative Lattice Calculations\n- BSM（超对称相关）\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：这是一篇技术性强、面向专门子领域的微扰计算论文，对做格点 N=1 SYM、超流算符重整化与超对称恢复的研究者是**必读/高相关**；但对一般格点 QCD 或更广泛理论物理读者，其方法和结论较为专门，实用价值局限于该方向。若你关注格点超对称或算符混合系统学，可提到 4 星；若只做常规 QCD 现象学，3 星足够。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-20T05:07:01.408126"
+  },
+  {
+    "id": "2610.24175v1",
+    "title": "Electric Flux as a Criterion for String Breaking and Schwinger Pair Production",
+    "authors": [
+      "Sebastian Grieninger"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.24175v1",
+    "published": "2026-10-16T19:52:17Z",
+    "abstract": "We define string breaking by the midpoint electric field falling to half a flux unit. In the massive Schwinger model, an energy balance between intact string and screened configuration predicts this separation using only vacuum observables and meson masses as input. We observe numerically that this half flux point corresponds to equal weights of the two configurations thus explaining the observed peak of the entanglement entropy as maximal uncertainty of the binary flux. The same binary uncertainty explains the entanglement peak at the vacuum transition. Near breaking, screening organizes part of the spatial entanglement between the string interior and exterior into a nearly maximally entangled bit. Within the selected flux sectors, this approximate encoded Bell pair records whether the flux is screened and nearly separates from the remaining correlations. The vacuum transition exhibits the same structure. The string and the $θ$-vacuum reveal a matching structure of the capacity of entanglement minimum at their transition point, linking their entanglement spectra. The transition rearranges degrees of freedom coherently as revealed by the entanglement asymmetry and Robustness of Magic of disjoint subregions. Finally, we construct the $θ$-vacuum and string wavefunctions with high fidelity using a restricted Boltzmann machine ansatz.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出以“中点电场降到半个通量单位”作为弦断裂（string breaking）的操作性判据，并在有质量 Schwinger 模型中用真空可观测量与介子质量做能量平衡预测该断裂点，数值上发现该半通量点对应两种构型等权重，从而统一解释了弦断裂与真空跃迁处的纠缠熵峰、纠缠容量极小、纠缠不对称与 Magic 资源的结构，并用受限玻尔兹曼机高保真重构了 θ-真空与弦波函数。\n\n## 研究问题\n作者想解决的核心问题是：**如何给“弦断裂”一个不依赖具体谱学拟合、可数值操作的判据**，并理解弦断裂与 θ-真空跃迁在量子信息层面（纠缠结构、二分不确定性、纠缠谱）是否共享同一机制。具体包括：\n1. 能否仅用真空可观测量和介子质量预测弦断裂的分离距离（半通量点）？\n2. 半通量点是否等价于“完整弦”与“屏蔽构型”等权重，从而解释纠缠熵峰为二元通量最大不确定性？\n3. 弦断裂与真空跃迁是否在纠缠容量、纠缠不对称、Magic 资源上呈现匹配结构？\n4. 能否用受限玻尔兹曼机（RBM）高保真表示 θ-真空与弦波函数？\n\n## 方法\n- **模型**：一维 massive Schwinger model（QED₂），即格点 Schwinger 模型，含 θ 项；这是研究弦断裂与 Schwinger 对产生的标准玩具模型。\n- **判据定义**：以弦中点电场强度降到 0.5 个通量单位定义 string breaking。\n- **解析部分**：对“完整弦”与“屏蔽（介子对）构型”做能量平衡，输入仅为真空可观测量与介子质量，预测断裂分离。\n- **数值部分**：格点数值模拟（哈密顿量/张量网络类方法，摘要未明示具体算法，应为格点精确对角化或 MPS/DMRG 类方法）测量中点电场、纠缠熵、纠缠容量（capacity of entanglement）、纠缠不对称（entanglement asymmetry）、Robustness of Magic，以及不相交子区域间的关联。\n- **机器学习**：用 restricted Boltzmann machine ansatz 构造 θ-真空与弦波函数，并评估保真度。\n\n## 主要结果\n1. **半通量判据成立**：能量平衡仅用真空可观测量与介子质量即可预测弦断裂分离，数值上半通量点与两种构型等权重吻合。\n2. **纠缠熵峰的解释**：半通量点对应“通量是否被屏蔽”这一二元自由度的最大不确定性，因此纠缠熵出现峰；真空跃迁处的纠缠峰由同一二元不确定性机制解释。\n3. **近似编码 Bell 对**：接近断裂时，屏蔽把弦内部与外部的部分空间纠缠组织成一个近最大纠缠比特，在选定通量扇区内近似记录“通量是否被屏蔽”，并几乎与其余关联解耦。\n4. **纠缠谱匹配**：弦与 θ-真空在各自跃迁点都出现纠缠容量极小，二者纠缠谱结构相匹配。\n5. **相干重排**：纠缠不对称与不相交子区域的 Robustness of Magic 显示跃迁以相干方式重排自由度。\n6. **RBM 表示**：用受限玻尔兹曼机 ansatz 高保真重构 θ-真空与弦波函数。\n\n## 为什么值得关注\n- 对 **lattice/QCD 社区**：给出一个简单、可移植的弦断裂判据（半通量点），并把它与能量平衡和介子质量联系起来，可能推广到更接近 QCD 的规范理论中研究弦断裂与屏蔽。\n- 对 **量子信息与场论交叉**：把弦断裂和真空跃迁统一为“二元通量不确定性”导致的纠缠峰，并用纠缠容量、纠缠不对称、Magic 资源刻画跃迁，提供了场论中量子资源视角的案例。\n- 对 **量子模拟**：一维 Schwinger 模型是量子模拟的基准模型，半通量判据与纠缠结构可直接用于设计测量方案与验证量子模拟器。\n- 对 **机器学习 + 格点**：RBM 高保真表示 θ-真空与弦波函数，为神经量子态在场论中的应用提供证据。\n\n## 方向标签\n- Lattice gauge theory（Schwinger model）\n- Quantum information in field theory\n- Entanglement / entanglement asymmetry\n- Machine learning（RBM ansatz）\n- Quantum simulation（benchmark model）\n- Schwinger pair production / string breaking\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：判据简洁、物理图像清晰，且把弦断裂与真空跃迁的纠缠结构统一起来，对格点规范理论与量子信息交叉方向有较高参考价值；但模型为一维 Schwinger 模型，结论向 3+1 维 QCD 的推广仍需检验，且摘要未给出具体格点算法与误差控制细节，需读正文确认数值可靠性。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-20T05:07:08.820181"
+  },
+  {
+    "id": "2610.24091v1",
+    "title": "Trapped-ion quantum simulation of (1+1)D SU(2) lattice gauge theory via loop-string-hadron formulation",
+    "authors": [
+      "Toshiaki Kaji",
+      "Jesse R. Stryker",
+      "Yutaro Iiyama",
+      "Lento Nagano",
+      "Enrico Rinaldi",
+      "Christian W. Bauer",
+      "Koji Terashi"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.24091v1",
+    "published": "2026-10-16T18:21:27Z",
+    "abstract": "We present a quantum simulation of the SU(2) lattice gauge theory in 1+1 dimensions with one flavor of fermions, performed using the trapped-ion Quantinuum System Model H2. This work is based on the loop-string-hadron (LSH) formulation of the gauge theory, and is distinguished by using qubits to represent both bosonic-gauge and fermionic-matter degrees of freedom. Furthermore, we access the $j=1$ electric-flux sector beyond the $j_{\\max}=1/2$ truncation commonly used in SU(2) quantum simulations. To that end, we digitize an electric-field degree of freedom using a multiqubit register for representing the bosonic quantum number. Our simulation therefore synthesizes several key ingredients relevant to quantum simulations in higher spatial dimensions, in particular explicit local gauge-field degrees of freedom represented here by a multiqubit bosonic register, while relying solely on circuit-construction optimizations that are expected to scale polynomially with lattice size. This work demonstrates that modern quantum hardware is increasingly able to accommodate the features of complicated but physically important lattice gauge theories while successfully reproducing the expected Trotterized dynamics.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在 Quantinuum H2 离子阱量子计算机上，首次用 loop-string-hadron（LSH）表述对 (1+1)D SU(2) 格点规范理论（含单味费米子）进行了量子模拟，并突破常用的 \\(j_{\\max}=1/2\\) 截断，进入 \\(j=1\\) 电通量扇区，用多量子比特寄存器编码玻色型电场自由度，成功复现了 Trotter 化动力学。\n\n## 研究问题\n作者想解决的核心问题是：如何在现有含噪中等规模量子硬件上，模拟具有**显式局域规范场自由度**（而非被积掉或截断到最小表示）的 SU(2) 非阿贝尔格点规范理论。具体而言：\n1. 以往 SU(2) 量子模拟多局限于 \\(j_{\\max}=1/2\\) 的最小截断，无法体现更高电通量扇区的物理；\n2. 玻色型电场量子数（\\(j\\)）需要多量子比特寄存器表示，这在硬件上是否可行、电路优化是否能多项式扩展，尚缺乏实验验证；\n3. 需要一套同时处理玻色规范自由度与费米物质自由度、且电路构造可随格点规模多项式扩展的方案。\n\n## 方法\n- **格点表述**：采用 loop-string-hadron（LSH）表述，这是 SU(2) 格点规范理论的一种物理希尔伯特空间表述，直接以规范不变的自由度（loop、string、hadron 算符）构造态空间，避免冗余规范自由度。\n- **模型**：(1+1)D SU(2) 格点规范理论，单味费米子，进入 \\(j=1\\) 电通量扇区（超出常见的 \\(j_{\\max}=1/2\\) 截断）。\n- **编码**：用量子比特同时表示玻色型规范自由度（电场量子数 \\(j\\)，用多量子比特寄存器数字化）和费米型物质自由度。\n- **算法**：Trotter 化时间演化，电路构造仅依赖随格点规模多项式扩展的优化。\n- **硬件**：Quantinuum System Model H2 离子阱量子计算机。\n\n## 主要结果\n1. 在真实量子硬件上成功实现了 (1+1)D SU(2) LSH 表述的量子模拟，同时包含玻色规范场与费米物质自由度。\n2. 首次在 SU(2) 量子模拟中进入 \\(j=1\\) 电通量扇区，突破了 \\(j_{\\max}=1/2\\) 的常规截断，验证了多量子比特寄存器编码玻色电场量子数的可行性。\n3. 实验观测到的 Trotter 化动力学与理论预期相符，说明现代量子硬件已能承载复杂但物理上重要的格点规范理论的关键要素。\n4. 所用电路优化预期随格点规模多项式扩展，为向更高空间维度推广提供了可行性依据。\n\n## 为什么值得关注\n- **对量子模拟社区**：这是向“显式局域规范场自由度 + 多量子比特玻色寄存器”这一高维模拟关键要素迈出的实验性一步，证明了当前硬件能处理非阿贝尔规范理论的复杂编码。\n- **对格点/QCD 社区**：LSH 表述在 SU(2) 上的硬件实现，为未来在量子设备上研究非阿贝尔规范理论的有限密度、实时动力学等问题提供了技术路线；突破 \\(j_{\\max}=1/2\\) 截断意味着可以探索更丰富的电通量物理。\n- **方法论意义**：展示了物理希尔伯特空间表述（LSH）与多项式可扩展电路构造的结合，对将量子模拟从 (1+1)D 推广到 (2+1)D、(3+1)D 具有参考价值。\n\n## 方向标签\n- Quantum simulation\n- Lattice gauge theory\n- SU(2) gauge theory\n- Trapped-ion quantum computing\n- Loop-string-hadron formulation\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇具有实验演示意义的量子模拟工作，在 SU(2) 非阿贝尔规范理论的硬件实现上取得了实质性进展（进入 \\(j=1\\) 扇区、多量子比特玻色编码），对量子模拟与格点规范理论交叉领域有较高参考价值。扣一星是因为目前仍限于 (1+1)D、小规模系统，距离真正的高维 QCD 相关物理还有明显距离，且属于方法学演示而非新物理发现。对关注量子计算用于格点规范理论的读者应优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-20T05:07:15.617887"
   }
 ]
