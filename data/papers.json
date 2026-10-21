@@ -5878,5 +5878,63 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-20T05:07:15.617887"
+  },
+  {
+    "id": "2610.27843v1",
+    "title": "Flavor decomposition of electromagnetic multipole moments in $[q_1q_2][\\bar q_3 \\bar c]$ tetraquarks: Light-quark analogs of $T_{cs1}(2900)^0$ with $J^P = 1^+$",
+    "authors": [
+      "Ulaş Özdem"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.27843v1",
+    "published": "2026-10-20T08:28:26Z",
+    "abstract": "We present a systematic study of the magnetic dipole and electric quadrupole moments of compact $[q_1 q_2][\\bar q_3 \\bar c]$ tetraquark states with quantum numbers $J^P = 1^+$, in the diquark--antidiquark picture and within the light-cone QCD sum rule framework. By performing a flavor decomposition across all admissible $u/d$ configurations, we show that the charm-quark contribution to the electromagnetic moments vanishes algebraically at the operator level -- a structural feature of the specific spin organization adopted here, in which the heavy antiquark resides in a pseudoscalar antidiquark, distinct from the dynamical $1/m_c$ suppression operative in alternative compact constructions and in hadronic molecules. The magnetic moments follow a coherent light-flavor pattern -- positive for $uu$-, negative for $dd$-, and suppressed for mixed-flavor diquarks -- and the quadrupole moments are non-zero throughout, corresponding, in the customary geometrical interpretation, to intrinsically deformed charge distributions. We further identify the dimensionless multipole ratio $\\mathcal{D}/μ$ as a structural observable, independent of the normalization of the interpolating current, which probes the relative geometry of the spin-current and charge distributions complementary to the absolute moments. Taken together, the algebraic decoupling of the charm contribution and the operator-level distinction it implies among different singly-heavy tetraquark architectures constitute methodological signatures that discriminate among the corresponding internal organizations and, to the extent that a physical candidate is dominated by one of them, among compact and molecular interpretations.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在二夸克-反二夸克图像下，用光锥QCD求和规则系统计算了 $[q_1q_2][\\bar q_3\\bar c]$（$J^P=1^+$）四夸克态的磁偶极矩和电四极矩，发现粲夸克对电磁矩的贡献在算符层面代数消零，并给出轻味分解的相干图案（$uu$ 正、$dd$ 负、混合味压低），可作为区分紧凑四夸克与分子态内部组织的结构性判据。\n\n## 研究问题\n作者想解决的核心问题是：$T_{cs1}(2900)^0$ 这类单粲四夸克态的电磁多极矩（磁偶极矩 $\\mu$ 与电四极矩 $\\mathcal{D}$）在轻味 $u/d$ 配置下如何分解？粲夸克贡献是否真的被动力学压低（$1/m_c$），还是在特定自旋组织下于算符层面代数消零？以及能否用无量纲比值 $\\mathcal{D}/\\mu$ 作为不依赖插值流归一化的结构观测量，来区分不同的单粲四夸克内部结构（紧凑 vs 分子、不同自旋组织）。\n\n## 方法\n- **理论框架**：光锥QCD求和规则（light-cone QCD sum rules），而非格点QCD。\n- **模型假设**：紧凑二夸克-反二夸克（diquark–antidiquark）图像，重反夸克 $\\bar c$ 位于赝标量反二夸克中。\n- **计算对象**：对所有允许的 $u/d$ 味配置做味分解，计算 $J^P=1^+$ 态的磁偶极矩与电四极矩。\n- **关键观测量**：绝对多极矩 $\\mu$、$\\mathcal{D}$，以及无量纲比值 $\\mathcal{D}/\\mu$（对插值流归一化不敏感的结构观测量）。\n- **对比分析**：与替代紧凑构造及强子分子态中动力学 $1/m_c$ 压制作对比。\n\n## 主要结果\n1. **粲夸克贡献代数消零**：在所采用的自旋组织（重反夸克处于赝标量反二夸克）下，粲夸克对电磁矩的贡献在算符层面严格为零，而非动力学 $1/m_c$ 压低。这与替代紧凑构造和分子态形成结构性区别。\n2. **轻味相干图案**：磁矩对 $uu$ 型二夸克为正、$dd$ 型为负、混合味被压低，呈现一致的轻味依赖。\n3. **四极矩非零**：所有允许配置的电四极矩均非零，几何上对应内禀形变的电荷分布。\n4. **$\\mathcal{D}/\\mu$ 作为结构观测量**：该比值独立于插值流归一化，探测自旋流与电荷分布的相对几何，补充绝对矩信息。\n5. **方法论判据**：粲贡献的代数解耦及由此产生的不同单粲四夸克架构间的算符层面差异，可作为区分内部组织、进而在物理候选态由某一架构主导时区分紧凑与分子解释的判据。\n\n## 为什么值得关注\n- 对**四夸克态内部结构判定**提供了新的算符层面判据：粲贡献\"代数消零 vs 动力学压低\"是可证伪的结构性差异，有助于解释 $T_{cs1}(2900)^0$ 类态的本质。\n- **$\\mathcal{D}/\\mu$ 比值**作为归一化无关观测量，为求和规则计算与未来格点/实验比较提供更稳健的桥梁。\n- 对**单粲四夸克谱学**与**奇特强子分类**有直接推动，且其味分解图案可与格点QCD的关联函数/多极矩计算交叉检验。\n- 方法上展示了光锥求和规则在电磁多极矩味分解上的系统应用，可与格点方法互补。\n\n## 方向标签\n- Lattice QCD（关联/互补，非本文主方法）\n- Exotic Hadrons / Tetraquarks\n- QCD Sum Rules\n- Hadron Structure (Electromagnetic Moments)\n- Flavor Physics\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：对奇特强子与四夸克结构判定有明确价值，味分解与 $\\mathcal{D}/\\mu$ 观测量有启发性；但方法为光锥求和规则而非格点，结论依赖特定二夸克-反二夸克自旋组织与模型假设，系统误差与模型依赖性需谨慎评估。若研究兴趣集中在 $T_{cs}$ 类态、四夸克电磁性质或求和规则-格点交叉检验，则值得优先阅读；若纯做格点数值模拟，则作为背景与判据参考即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-21T05:07:52.653997"
+  },
+  {
+    "id": "2610.27070v1",
+    "title": "Cavity models of non-Abelian gauge theories",
+    "authors": [
+      "Lucia Valor",
+      "Jacquelin Luneau",
+      "Klaus Liegener",
+      "Stefan Filipp",
+      "Peter Rabl"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.27070v1",
+    "published": "2026-10-19T18:00:02Z",
+    "abstract": "In quantum optics and related fields, cavity quantum electrodynamics provides a powerful framework for modeling the low-energy properties of bound charges coupled to electromagnetic fields, using a minimal set of atomic levels and isolated photonic modes. Here, we develop a similar framework for non-Abelian gauge theories, focusing on the pure-gauge dynamics of SU(2) fields as the conceptually simplest example. Starting from the corresponding Yang-Mills Lagrangian, we derive an SU(2) cavity Hamiltonian in the Coulomb gauge, represented in terms of only three localized bosonic modes. Unlike its non-interacting electromagnetic counterpart, this model exhibits a nontrivial excitation spectrum featuring bound composite gauge particles ('glueballs') as the lowest-energy configurations. We extend this framework to one-dimensional arrays of coupled SU(2) cavities and discuss the driven excitation of a glueball condensate and the clustering of multi-glueball states as two elementary interaction-induced processes in these models. These examples offer a glimpse into the multitude of novel many-body phenomena that arise within this cavity SU(2) framework and we show how this physics at the interface between particle physics and quantum optics can be experimentally explored using state-of-the-art superconducting quantum circuits.",
+    "summary": {
+      "raw": "## 一句话结论\n\n作者从 SU(2) Yang-Mills 拉氏量出发，在库仑规范下构造了一个仅含三个局域玻色模式的“腔”哈密顿量，证明纯规范非阿贝尔理论在低能下可呈现胶球束缚态、胶球凝聚与多胶球团簇等类量子光学多体现象，并指出可用超导量子电路实验实现。\n\n## 研究问题\n\n作者想解决的问题是：量子光学中的腔 QED 能用极少的原子能级和孤立光子模式有效描述束缚电荷与电磁场的低能物理，那么能否为非阿贝尔规范理论建立一个类似的“最小腔模型”框架？具体而言，能否把 SU(2) 纯规范动力学约化为少数几个局域玻色模式的哈密顿量，并在此基础上研究其低能激发谱（是否出现胶球）以及耦合腔阵列中的多体现象（驱动激发的胶球凝聚、多胶球团簇），同时给出可实验模拟的方案。\n\n## 方法\n\n- **出发点**：SU(2) Yang-Mills 拉氏量，纯规范部分。\n- **规范固定**：库仑规范。\n- **约化/建模**：将连续规范场在空间上做局域化处理，导出 SU(2) 腔哈密顿量，仅保留三个局域玻色模式（对应腔内的规范场自由度），属于“腔模型”式的有效哈密顿量构造，而非传统格点离散化。\n- **扩展**：将单腔模型推广到一维耦合 SU(2) 腔阵列，研究驱动激发与多体态。\n- **分析手段**：对哈密顿量做能谱分析（识别最低能激发为胶球束缚态）、讨论驱动下的胶球凝聚与多胶球团簇行为。\n- **实验方案**：提出用超导量子电路实现该腔 SU(2) 框架。\n- 注意：本文**不是**标准的格点 QCD 数值模拟（无 Monte Carlo、无张量网络、无格点作用量离散化），而是解析/有效模型构造加能谱分析。\n\n## 主要结果\n\n1. 从 SU(2) Yang-Mills 拉氏量在库仑规范下导出了仅含三个局域玻色模式的腔哈密顿量，给出了非阿贝尔规范理论的极简腔表示。\n2. 与无相互作用的电磁腔 QED 不同，该模型具有非平庸激发谱：最低能构型是规范粒子的束缚复合态，即“胶球”。\n3. 将框架推广到一维耦合 SU(2) 腔阵列，识别出两类由相互作用诱导的基本过程：驱动激发的胶球凝聚，以及多胶球态的团簇化。\n4. 论证这些粒子物理与量子光学交叉的物理可用当前超导量子电路技术实验探索。\n\n## 为什么值得关注\n\n- 提出了一个连接**粒子物理（非阿贝尔规范理论、胶球）与量子光学（腔 QED、多体物理）** 的新桥梁框架，为用可控量子平台模拟规范理论提供了极简模型。\n- 胶球是 QCD 中重要但实验上难以直接观测的对象，该框架给出了一种在量子模拟器中研究胶球及其多体集体行为（凝聚、团簇）的可操作途径。\n- 对 lattice/QCD 社区而言，它提供了一种不同于传统格点离散化的“腔约化”视角，可能启发混合模拟方案（格点 + 量子模拟）以及规范理论多体现象的新研究方向。\n- 与当前量子模拟规范理论的潮流（超导电路、冷原子）直接对接，具有明确的实验可行性论证。\n\n## 方向标签\n\n- Quantum simulation\n- Lattice gauge theory（非传统格点，属有效腔模型）\n- QCD（胶球物理）\n- 多体物理 / 量子光学交叉\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：论文提出了有启发性的概念框架和实验方案，对量子模拟规范理论和胶球物理的交叉方向有参考价值；但它不是标准格点 QCD 数值工作，缺乏定量格点计算或与已知 QCD 谱的系统对比，模型的有效性和定量可靠性仍需进一步检验。对关注量子模拟规范理论或胶球唯象的读者优先级较高，对做传统格点数值模拟的读者则属“拓展视野”类阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-21T05:07:59.196996"
+  },
+  {
+    "id": "2610.11035v2",
+    "title": "Hamiltonian framework for Chiral Gauge Theories on a Disk Boundary",
+    "authors": [
+      "Srimoyee Sen"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.11035v2",
+    "published": "2026-10-08T00:25:47Z",
+    "abstract": "I propose a Hamiltonian framework for chiral gauge theories (CGT) based on an existing Euclidean formulation, that uses 2n dimensional chiral fermions on the boundary of a 2n+1 dimensional disk. In the original Euclidean formulation, boundary gauge fields were extended into the bulk using $2n + 1$ dimensional gauge field equations of motion (EOM). This creates a bottleneck for constructing a Hamiltonian. I present an alternate proposal for extending the gauge fields into the bulk that is compatible with both a Hamiltonian framework and a Euclidean path integral. Applying this to Abelian gauge fields produces exact expressions of interior fields as a functional of the boundary fields, which can be directly used in a Hamiltonian formulation. Euclidean analysis of the new gauge field extension shows that it can preserve the non-perturbative content of the original construction, including the behavior of topological charge, associated chiral fermion zero modes and an absence of the strong CP problem when applied to the Standard Model. This construction opens up a route to a Hamiltonian treatment and future quantum simulation of CGTs on a disk boundary.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出了一种新的规范场体延拓方案，使基于“2n+1维圆盘边界上的2n维手征费米子”的欧氏手征规范理论构造首次兼容哈密顿框架，为手征规范理论的哈密顿处理与量子模拟铺路。\n\n## 研究问题\n原始欧氏构造（圆盘边界上手征费米子、规范场用2n+1维体运动方程延拓）依赖欧氏EOM延拓规范场，这种延拓本质上是非局域/非因果的，无法直接定义哈密顿量（正则动量、相空间），成为构造哈密顿框架的“瓶颈”。作者要解决：能否换一种规范场体延拓方式，既保持原构造的非微扰物理内容（拓扑荷、手征零模、标准模型中无强CP问题），又能同时写成哈密顿框架和欧氏路径积分？\n\n## 方法\n- 理论/解析构造，非数值格点模拟。\n- 模型：2n+1维圆盘，边界为2n维，边界上手征费米子；阿贝尔规范场情形下求解体延拓。\n- 关键技术：提出替代的规范场体延拓方案（与哈密顿框架及欧氏路径积分兼容），对阿贝尔规范场给出内部场作为边界场泛函的精确表达式，可直接用于哈密顿表述。\n- 对新延拓做欧氏分析，检验拓扑荷行为、手征费米子零模、强CP问题等非微扰内容是否保持。\n\n## 主要结果\n1. 给出了一种新的规范场体延拓，替代原EOM延拓，同时兼容哈密顿框架与欧氏路径积分。\n2. 对阿贝尔规范场，得到内部场作为边界场泛函的精确表达式，可直接进入哈密顿量构造。\n3. 欧氏分析表明新延拓保留了原构造的非微扰内容：拓扑荷行为、关联的手征费米子零模，以及应用到标准模型时无强CP问题。\n4. 打开了在圆盘边界上手征规范理论做哈密顿处理及未来量子模拟的路线。\n\n## 为什么值得关注\n- 手征规范理论的正则/哈密顿表述长期受“规范场延拓非因果”困扰，尤其与格点手征费米子（如domain-wall/overlap类构造）相关；该工作给出一个可能绕开瓶颈的构造性方案。\n- 若成立，为手征规范理论的量子模拟（quantum simulation）提供可直接离散化/编码的哈密顿量框架，这是当前量子模拟与格点交叉的热点。\n- 保留“标准模型无强CP问题”和手征零模等非微扰性质，对BSM与手征格点费米子构造有潜在意义。\n- 注意：目前主要是解析构造、阿贝尔情形精确结果，非阿贝尔与数值验证尚待推进，属概念性/路线性贡献。\n\n## 方向标签\n- Chiral gauge theory\n- Lattice fermions（domain-wall/overlap 相关）\n- Quantum simulation\n- BSM / Strong CP\n- Hamiltonian formulation\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：对做手征格点费米子、domain-wall/overlap构造及量子模拟路线的人价值较高，思路新颖且直击哈密顿化的瓶颈；但目前限于解析构造与阿贝尔精确解，非阿贝尔推广和数值/格点实现未给出，属于“路线图/概念验证”级别，非立即可用于大规模格点计算的工具。若你关注手征规范理论哈密顿化或量子模拟，可提到4星；若只做常规Lattice QCD数值，3星足够。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-21T05:08:04.915842"
   }
 ]
