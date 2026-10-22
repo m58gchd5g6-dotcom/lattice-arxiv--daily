@@ -5936,5 +5936,130 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-21T05:08:04.915842"
+  },
+  {
+    "id": "2610.29861v1",
+    "title": "Progress on meson-glueball mixing in lattice gauge theories coupled to fermions in multiple representations",
+    "authors": [
+      "Nuno Brito",
+      "Ed Bennett",
+      "Deog Ki Hong",
+      "Jong-Wan Lee",
+      "C. -J. David Lin",
+      "Biagio Lucini",
+      "Maurizio Piai",
+      "Davide Vadacchino",
+      "Fabian Zierler"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.29861v1",
+    "published": "2026-10-21T15:18:43Z",
+    "abstract": "We present preliminary results from our numerical lattice investigation of the low-lying flavour-singlet bound states in the ${\\rm Sp}(4)$ gauge theory coupled to fermions transforming in the fundamental and two-index antisymmetric representations. We use the Wilson gauge action and Wilson fermions. We employ the generalized eigenvalue problem (GEVP) method with a basis of smeared glueball and meson interpolating operators. We analyse two high-statistics ensembles with the same lattice coupling and different fermion mass. We study both the scalar and pseudoscalar states. We observe the first evidence for meson-glueball mixing in this theory. We improve upon previous determinations of the energy eigenstates and mixing angles in the flavour-singlet pseudoscalar sector.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在 Sp(4) 规范理论（基本表示 + 两指标反对称表示费米子）中，首次给出了介子-胶球混合的格点证据，并改进了味单态赝标量扇区的能级与本征态混合角测定。\n\n## 研究问题\n作者想解决什么问题？\n- 在带费米子的规范理论中，味单态（flavour-singlet）低激发态里，胶球与介子具有相同量子数，因此会发生混合；论文要数值研究这种混合是否存在、有多大。\n- 具体针对 Sp(4) 规范理论耦合基本表示与两指标反对称表示费米子这一 BSM 模型，确定标量与赝标量味单态扇区的能级本征态及混合角。\n- 改进此前对味单态赝标量扇区能级和混合角的测定。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 模型：Sp(4) 规范理论，Wilson 规范作用量 + Wilson 费米子；费米子处于基本表示和两指标反对称表示。\n- 观测量：低 lying 味单态标量与赝标量束缚态。\n- 算符基：涂抹（smeared）的胶球算符与介子插值算符共同构成变分基。\n- 算法：广义本征值问题（GEVP），用于从关联矩阵中提取能级与本征态混合。\n- 系综：两个高统计量系综，相同格点耦合、不同费米子质量。\n\n## 主要结果\n总结最重要发现。\n- 在该理论中首次观察到介子-胶球混合的证据。\n- 改进了味单态赝标量扇区能量本征态与混合角的先前测定。\n- 对标量扇区也进行了分析（摘要未给出具体数值结论，属初步结果）。\n- 结果基于两个不同费米子质量的高统计量系综，说明混合效应在所用参数下可被分辨。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 胶球-介子混合是 QCD 味单态谱（如 η–η′ 扇区、标量胶球）长期存在的核心困难；在可控的 BSM 规范理论中给出混合证据，有助于检验理解混合机制的方法学。\n- Sp(4) 加多表示费米子是复合希格斯/暗物质等 BSM 模型的重要候选，其味单态谱与混合角直接影响模型的现象学预言。\n- GEVP + 胶球/介子联合算符基的做法为其他带费米子规范理论的混合分析提供可复用范式。\n- 对理解非 QCD 类规范理论中胶球与介子自由度如何交织具有普遍理论意义。\n\n## 方向标签\n- Lattice QCD（方法学与谱学）\n- BSM（Sp(4) 复合动力学）\n- Spectroscopy / Glueball-meson mixing\n- Variational methods (GEVP)\n\n## 阅读优先级\n★★★☆☆（3/5）\n- 理由：主题重要且方法清晰，但这是 preliminary results，只有两个系综、单一格点耦合，尚无连续极限与体积效应控制；对标量扇区结论有限。对做 BSM 谱学或胶球混合方法学的人值得细读；对一般 QCD 现象学读者可作为方法参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-22T05:11:15.545052"
+  },
+  {
+    "id": "2610.29726v1",
+    "title": "Mellin Moments of Proton Unpolarized GPDs at Nonzero Skewness from Lattice QCD with a Neural-Network Parametrization",
+    "authors": [
+      "Min-Huan Chu",
+      "Manuel Colaço",
+      "Krzysztof Cichy",
+      "Martha Constantinou",
+      "Arif Sarkar"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.29726v1",
+    "published": "2026-10-21T13:31:29Z",
+    "abstract": "We use lattice QCD to determine the generalized form factors (GFFs) entering the first four Mellin moments of the unpolarized isovector $u-d$ proton GPDs at nonzero skewness. The framework combines the polynomiality of the moments in the skewness $ξ$, with the short-distance expansion formalism, allowing the lattice-extracted reduced Ioffe-time distributions (ITDs) to be expressed in terms of GFFs. In order to extract the GFFs by fitting these relations to the lattice data, we parameterize each GFF with an artificial neural network (ANN) as a continuous function of the invariant momentum transfer squared $t$, which accommodates the kinematic coverage of the data in a flexible way. With this fit, we determine the fourteen GFFs that enter the first four Mellin moments, including the skewness-dependent GFFs. From the extracted GFFs, we obtain the quark total angular momentum of the isovector combination, $J^{u-d}=0.296(11)(7)$ in the $\\overline{\\mathrm{MS}}$ scheme at $μ=2~\\mathrm{GeV}$, in agreement with previous lattice determinations based on nonlocal operators and with a smaller total uncertainty. We also determine the impact-parameter distributions of the first three Mellin moments in an unpolarized and in a transversely polarized proton. We finally identify and discuss the principal systematic uncertainties which enter this extraction, and the challenges specific to the nonzero-skewness regime.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次将神经网络参数化与短距离展开方法结合，从格点QCD中提取了非零偏度下质子非极化GPD的前四个Mellin矩所对应的14个广义形状因子，并给出了目前精度最高的同位旋矢量夸克总角动量测定值。\n\n## 研究问题\n作者想解决的核心问题是：如何在格点QCD计算中可靠地提取非零偏度（ξ≠0）条件下的质子广义部分子分布（GPDs）的Mellin矩。具体而言，GPD的Mellin矩在偏度ξ中满足多项式性，但格点数据在运动学覆盖上有限且离散，如何从这些数据中稳健地拟合出多个GFF（包括依赖ξ的GFF），并控制系统误差，是该领域长期面临的挑战。此前大多数格点研究局限于零偏度情形，非零偏度的GPD矩提取尚不成熟。\n\n## 方法\n- **格点QCD框架**：基于短距离展开（short-distance expansion）形式，将格点提取的约化Ioffe-time分布（ITDs）表示为GFF的线性组合，利用Mellin矩对偏度ξ的多项式性建立拟合关系。\n- **神经网络参数化**：每个GFF被参数化为一个以不变动量转移平方t为输入的人工神经网络（ANN）连续函数，从而灵活适应数据的运动学覆盖范围，避免传统多项式拟合的形式偏差。\n- **拟合策略**：将上述关系拟合到格点数据，同时提取进入前四个Mellin矩的14个GFF（含ξ依赖的GFF）。\n- **系统误差分析**：识别并讨论了该提取过程中的主要系统不确定性，以及非零偏度区域特有的挑战。\n\n## 主要结果\n1. 确定了前四个Mellin矩对应的全部14个GFF，包括依赖偏度ξ的GFF。\n2. 从提取的GFF得到同位旋矢量夸克总角动量：J^{u-d} = 0.296(11)(7)，在MS̄方案、μ=2 GeV下，与之前基于非局域算符的格点测定一致，但总不确定度更小。\n3. 给出了非极化和横向极化质子中前三个Mellin矩的碰撞参数分布（impact-parameter distributions）。\n4. 系统讨论了提取中的主要系统误差来源及非零偏度区域的特殊挑战。\n\n## 为什么值得关注\n- **方法学创新**：将神经网络参数化引入GPD矩的格点提取，为处理多维、有限运动学覆盖的拟合问题提供了灵活且可推广的工具。\n- **非零偏度GPD矩的首批系统提取之一**：推动了格点GPD研究从零偏度向物理上更丰富的非零偏度区域扩展，这对理解GPD的三维质子结构至关重要。\n- **精度提升**：J^{u-d}的测定在保持与已有结果一致的同时减小了总不确定度，对质子自旋分解的唯象研究具有直接价值。\n- **系统误差的透明化**：明确讨论了非零偏度区域的系统挑战，为后续研究设定了基准和改进方向。\n\n## 方向标签\n- Lattice QCD\n- Machine Learning\n- Hadron Structure / GPDs\n- Proton Spin\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：该论文在方法（ANN参数化+短距离展开）和物理目标（非零偏度GPD矩、质子角动量）上均有实质推进，结果与已有测定一致且精度更高，系统误差讨论充分。对于关注格点QCD强子结构、GPD唯象和质子自旋的研究者具有较高参考价值。扣一星是因为非零偏度格点GPD仍处于发展初期，系统误差（如高阶扭度污染、连续极限外推等）尚未完全控制，结论的最终稳健性有待后续独立验证。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-22T05:11:21.014635"
+  },
+  {
+    "id": "2610.29349v1",
+    "title": "Magnetic monopoles produced by first-order phase transition",
+    "authors": [
+      "Yuefeng Di",
+      "Ligong Bian",
+      "Rong-Gen Cai"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.29349v1",
+    "published": "2026-10-21T07:42:51Z",
+    "abstract": "We present the first 3D lattice simulations of magnetic monopole production from a first-order phase transition, using the Press-Ryden-Spergel method, capturing the subsequent annihilation stage and the entry into the scaling regime in an expanding universe. We establish the quantitative relationship between the initial bubble number and the residual monopole abundance, and calculate the magnetic field and gravitational wave power spectra sourced by monopole dynamics. Crucially, we find that the magnetic field spectrum displays a steep $k^{-5}$ decline beyond the monopole size $w_M$, whereas the peak of the gravitational wave spectrum aligns with the scale of the mean monopole separation $d_M$, governed by $k^3$ and $k^{-3}$ scalings on the low- and high-wavenumber sides of the peak, respectively. However, since the resulting magnetic field strength is excluded by blazar observations, magnetic monopoles cannot be the origin of primordial cosmic magnetic fields. Finally, we determine the allowed monopole mass under the constraints of the Parker bound ($m_M\\lesssim2.18\\times10^{11}\\,\\mathrm{GeV}$) and dark matter abundance ($m_M\\lesssim1.58\\times10^{12}\\,\\mathrm{GeV}$).",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文首次用三维格点模拟研究了**一阶相变产生的磁单极子**，追踪了其在膨胀宇宙中的湮灭与标度演化，定量关联了初始气泡数与残余单极子丰度，并计算了单极子动力学产生的磁场与引力波谱——结论是磁单极子**不能**解释原初宇宙磁场（被耀变体观测排除），但给出了Parker束缚与暗物质丰度下的单极子质量上限。\n\n## 研究问题\n\n作者想解决的核心问题：\n\n1. **一阶相变能产生多少磁单极子？** 初始气泡数密度与最终残余单极子丰度之间是否存在定量关系（此前缺乏三维格点的定量模拟）。\n2. **单极子动力学产生什么样的磁场和引力波谱？** 其谱形（尤其是高k端的幂律）和峰值尺度由什么物理量决定（单极子尺寸 $w_M$ vs. 平均间距 $d_M$）。\n3. **磁单极子能否作为原初宇宙磁场的起源？** 以及在与Parker束缚、暗物质丰度约束下，单极子质量的上限是多少。\n\n## 方法\n\n- **三维格点模拟**：采用 **Press-Ryden-Spergel (PRS) 方法** 模拟一阶相变中的气泡成核、碰撞与磁单极子形成。\n- **膨胀宇宙背景**：模拟中包含了宇宙膨胀，从而能捕捉相变后的**湮灭阶段**并进入**标度（scaling）regime**。\n- **场论模型**：基于标量场（Higgs型）自发对称性破缺产生拓扑缺陷（单极子）的经典场模拟，属于经典格点场论（classical lattice field simulation），而非格点QCD式的路径积分蒙特卡洛。\n- **谱计算**：从模拟场构型中提取磁场功率谱与引力波功率谱，分析其幂律标度（$k^{-5}$、$k^3$、$k^{-3}$）。\n- **观测约束对比**：将模拟得到的磁场强度与耀变体（blazar）观测上限比较；结合Parker束缚与暗物质 relic abundance 给出质量上限。\n\n## 主要结果\n\n1. **定量关系**：建立了初始气泡数密度与残余单极子丰度之间的定量关系（这是此前缺失的关键输入）。\n2. **磁场谱**：在单极子尺寸 $w_M$ 之外呈**陡峭的 $k^{-5}$ 衰减**。\n3. **引力波谱**：峰值位于**平均单极子间距 $d_M$** 对应的尺度，低波数端 $k^3$、高波数端 $k^{-3}$。\n4. **排除原初磁场起源**：模拟给出的磁场强度**被耀变体观测排除**，因此磁单极子不能是原初宇宙磁场的来源。\n5. **质量上限**：Parker束缚给出 $m_M \\lesssim 2.18\\times10^{11}\\,\\mathrm{GeV}$；暗物质丰度给出 $m_M \\lesssim 1.58\\times10^{12}\\,\\mathrm{GeV}$。\n\n## 为什么值得关注\n\n- **方法学贡献**：首次将PRS格点方法系统用于**一阶相变单极子产生 + 膨胀宇宙 + 湮灭/标度阶段**的完整链条，为宇宙相变拓扑缺陷的格点研究提供了可复用的数值框架。\n- **谱形预言**：$k^{-5}$（磁场）与 $k^3/k^{-3}$（引力波）的标度律是**可检验的理论预言**，对引力波天文学（PTA、LISA等）和宇宙磁场观测有直接意义。\n- **排除性结论**：明确排除单极子作为原初磁场起源，清理了一个长期悬而未决的候选机制。\n- **约束交叉**：把格点模拟输出直接对接Parker束缚与暗物质丰度，展示了**格点宇宙学模拟 → 观测约束**的完整闭环，对BSM相变物理与暗物质社区都有参考价值。\n\n## 方向标签\n\n- BSM（Beyond Standard Model）\n- Finite temperature / Cosmological phase transition\n- Classical lattice field simulation\n- Gravitational waves from phase transitions\n- Cosmic magnetic fields\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：对**宇宙相变、拓扑缺陷、引力波与原初磁场**方向的研究者是高优先级必读——它提供了首个三维格点的定量结果和可检验谱形，并给出排除性结论。对主流**格点QCD**（有限温度QCD相变、状态方程）社区相关性中等，因为方法（经典场模拟 vs. 蒙特卡洛路径积分）和对象（宇宙学相变 vs. QCD）不同，但有限温度相变与拓扑缺陷的物理直觉可迁移。对量子模拟/张量网络/机器学习方向基本无关。综合给4星：在其细分领域内是重要且方法扎实的工作，但受众相对专门化。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-22T05:11:27.863927"
+  },
+  {
+    "id": "2610.29019v1",
+    "title": "The Standard Model on a finite bosonic lattice with continuum Weyl fermions",
+    "authors": [
+      "Stephen D. H. Hsu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.29019v1",
+    "published": "2026-10-21T00:44:34Z",
+    "abstract": "We investigate a formulation of the Standard Model in which gauge and Higgs fields are regulated on a finite lattice, while quarks and leptons remain continuum Weyl fermions. This preserves the familiar continuum description of anomalies, spectral flow, and fermion zero modes, without requiring a finite-dimensional discretization of chiral fermions. The Standard Model's anomaly cancellation permits a gauge-invariant definition of the chiral fermion determinant. Yukawa interactions are included in the full fermion determinant using a gauge-covariant cutoff that acts on the interaction vertices rather than the fermion propagator. We show that removing this cutoff requires only the local subtractions expected from one-loop power counting, and construct a consistent complex fermion weight, including in topologically nontrivial backgrounds. At fixed bosonic lattice spacing and finite spacetime volume, the resulting bosonic functional integral is finite and exactly gauge invariant under the stated smoothness conditions. The construction provides a finite-regulator Standard Model formulation retaining the physical structure of continuum chiral fermions. Appendix F.5 establishes reflection positivity for a variant reconstruction at zero Yukawa coupling and zero theta. The bosonic continuum limit remains open.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文提出了一种“玻色子格点化 + 费米子连续化”的混合正则化方案：规范场和 Higgs 场放在有限格点上，而夸克轻子保持连续的 Weyl 费米子，从而在避免手征费米子格点化困难的同时，保留连续手征费米子的反常、谱流和零模结构，并论证了在固定格距和有限体积下配分函数有限且规范不变。\n\n## 研究问题\n\n作者想解决的核心问题是：**如何为完整标准模型构造一个有限的正则化方案，同时不破坏连续手征费米子的物理结构（手征反常、谱流、费米子零模）**。\n\n具体而言：\n\n1. **手征费米子格点化的根本困难**：Nielsen–Ninomiya 定理表明，在格点上实现手征费米子会遇到 doubler 问题；Ginsparg–Wilson 关系虽然提供了部分解决方案，但实现复杂且对反常和零模的处理不如连续情形直观。\n2. **标准模型是手征规范理论**：其反常抵消条件（每代内夸克与轻子贡献相消）是理论自洽的关键，任何正则化都必须保持这一结构。\n3. **Yukawa 相互作用与拓扑非平凡背景**：需要构造一个复费米子权重（fermion determinant），在包括瞬子等拓扑非平凡背景下仍然自洽、规范不变。\n4. **连续极限的开放性**：作者明确承认玻色子连续极限尚未建立，但希望先给出一个有限、规范不变的调节器框架。\n\n## 方法\n\n论文采用的核心方法是**混合正则化（hybrid regularization）**：\n\n1. **玻色子格点化**：规范场 \\(A_\\mu\\) 和 Higgs 场定义在有限四维格点上，格距 \\(a\\) 固定，时空体积有限。这提供了规范场泛函积分的有限测度。\n2. **费米子保持连续**：夸克和轻子作为连续时空中的 Weyl 费米子处理，不做格点离散化。费米子 determinant 在连续时空背景下定义，但背景规范场是格点化的（通过插值/光滑性条件连接到连续场）。\n3. **规范协变截断（gauge-covariant cutoff）**：Yukawa 相互作用被纳入完整费米子 determinant，截断作用于**相互作用顶点**而非费米子传播子。这是关键的技术选择——避免直接截断传播子破坏手征对称性。\n4. **局部减除（local subtractions）**：证明移除截断只需要单圈幂次计数所预期的局部减除项，即截断的去除是可控的。\n5. **复费米子权重的构造**：在拓扑非平凡背景下构造自洽的复权重，利用标准模型反常抵消保证规范不变性。\n6. **反射正性（reflection positivity）**：附录 F.5 在零 Yukawa 耦合和零 \\(\\theta\\) 的变体构造中建立了反射正性。\n\n方法上**没有使用数值模拟**，属于解析构造与论证型工作。\n\n## 主要结果\n\n1. **有限且规范不变的配分函数**：在固定玻色子格距 \\(a\\) 和有限时空体积下，所得玻色子泛函积分是有限的，且在给定的光滑性条件下**精确规范不变**。\n2. **反常结构的保持**：由于费米子保持连续，手征反常、谱流和费米子零模的连续描述被完整保留，标准模型的反常抵消条件使得手征费米子 determinant 有规范不变的定義。\n3. **Yukawa 相互作用的可控截断**：规范协变截断作用于相互作用顶点，移除时仅需单圈幂次计数预期的局部减除，构造在拓扑非平凡背景下仍然自洽。\n4. **反射正性的部分建立**：在零 Yukawa 耦合、零 \\(\\theta\\) 的变体重构中证明了反射正性，这是构造欧几里得格点理论幺正性/正定性的重要一步。\n5. **连续极限仍开放**：玻色子连续极限（\\(a \\to 0\\)、体积趋于无穷）尚未建立，作者明确将其列为未解决问题。\n\n## 为什么值得关注\n\n1. **对手征费米子格点化困境提供了一条替代路径**：传统方法（Domain Wall、Overlap、GW 费米子）都在格点上离散化费米子并付出代价（额外维度、算符复杂性、拓扑零模处理的微妙性）。本文反其道而行，让费米子留在连续域，只格点化玻色子，从概念上绕开了 Nielsen–Ninomiya 障碍。\n2. **为标准模型作为有效场论的正则化提供了新视角**：如果玻色子连续极限能够建立，这将是一个保持手征物理直观的完整标准模型正则化方案，对理解手征规范理论的正则化本质有概念性价值。\n3. **对反常和拓扑结构的处理更透明**：连续费米子使得瞬子背景下的零模、谱流和反常计算保持熟悉的连续语言，这对研究非微扰手征动力学（如 QCD 的 \\(\\theta\\) 真空、手征对称破缺）有潜在启发。\n4. **反射正性的建立**是构造严格格点场论的关键里程碑，尽管目前只在简化变体中成立。\n5. **需要冷静看待的局限**：玻色子连续极限未建立、光滑性条件的具体含义、以及该方案是否能实际用于数值计算（费米子 determinant 在格点背景下的计算代价）都是开放问题。这更像是一个**概念性/构造性**贡献，而非可直接数值实施的方案。\n\n## 方向标签\n\n- Lattice field theory（格点场论，方法论文）\n- Chiral gauge theory（手征规范理论）\n- Standard Model regularization（标准模型正则化）\n- Anomaly / topological backgrounds（反常与拓扑背景）\n- Reflection positivity（反射正性）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：\n\n- **值得读**：如果你关心手征费米子正则化的根本困难、标准模型作为有效场论的正则化问题、或格点场论中反射正性与连续极限的构造性方法，这篇论文提供了一个新颖的概念框架，且写作应较为自洽（有附录专门处理反射正性）。\n- **不必优先读**：如果你的兴趣是可直接数值计算的方法（如格点 QCD 谱学、算法开发、张量网络、量子模拟），这篇论文不提供可运行的算法或数值结果；玻色子连续极限的缺失也意味着它目前不是一个完整的、可用于实际计算的方案。\n- **定位**：属于格点场论中“构造性/概念性”分支的工作，适合作为方法论参考或激发对混合正则化方案的思考，而非当前主流数值格点研究的直接工具。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-22T05:11:37.575075"
+  },
+  {
+    "id": "2610.28993v1",
+    "title": "Digital Quantum Simulation of Dynamics in Interacting Fields",
+    "authors": [
+      "Zhiyao Li"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.28993v1",
+    "published": "2026-10-20T23:47:40Z",
+    "abstract": "Matter under extreme conditions behaves as a non-equilibrium, strongly-interacting quantum system. Such systems are in the non-perturbative regime of quantum chromodynamics (QCD), where their time evolution is classically intractable. Quantum computing offers a promising alternative, but present-day devices are limited in qubit count and circuit depth, so efficient formulations and algorithms are key to scaling toward experimentally relevant QCD simulations. A scalable framework is established for simulating energy loss and hadronization in 1+1-dimensional SU(2) lattice gauge theory, in which a heavy quark traverses a lattice of light quarks. Classical lattice QCD methods are translated into physics-informed circuits to prepare the interacting ground state. The evolution is run on IBM's quantum processor ibm_pittsburgh, where the charge distribution and energy loss are measured. A further study develops the quantum simulation of the fully gauge-fixed SU(2) Hamiltonian in a mixed basis, a formulation that is expected to remain efficient at all gauge couplings. Digitizing the continuous gauge fields with as few as three qubits per plaquette reproduces low-energy observables with $10^{-3}$ precision. Scaling to larger systems is limited by resource overhead, which motivates truncations that preserve the relevant observables. Sequency Hierarchy Truncation (SeqHT) exploits the hierarchy in basis-operator contributions. Demonstrated on the adiabatic preparation of the $λφ^4$ ground state on ibm_sherbrooke, SeqHT reduces circuit depth by ~30%, suppressing hardware noise in the extracted observables. All simulations in this dissertation are validated on quantum hardware against classical benchmarks. These studies advance quantum simulations of real-time QCD dynamics.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文建立了一个可在当前 IBM 超导量子处理器上运行的、面向 1+1 维 SU(2) 格点规范理论的数字量子模拟框架，用于研究重夸克穿过轻夸克介质时的能量损失与强子化动力学，并提出了在混合基下高效表示规范场以及用 SeqHT 截断降低电路深度的方案。\n\n## 研究问题\n作者想解决的问题是：极端条件下的物质（如 QCD 中的非平衡强相互作用系统）处于非微扰区域，经典方法难以追踪其实时演化；而现有量子硬件受限于量子比特数和电路深度，无法直接模拟实验相关尺度的 QCD。因此需要回答两个层面的问题：(1) 如何把经典格点 QCD 方法（基态制备、哈密顿量演化、可观测量测量）翻译成物理启发的量子电路，使其在当今硬件上可行；(2) 如何构造在全部规范耦合下都保持高效的表示与截断方案，以控制资源开销、抑制硬件噪声，同时保留低能可观测量。\n\n## 方法\n- **模型**：1+1 维 SU(2) 格点规范理论，含一个重夸克在轻夸克格点介质中运动；另研究完全规范固定后的 SU(2) 哈密顿量以及 λφ⁴ 标量场基态制备。\n- **格点/表示方法**：将连续规范场数字化，每个 plaquette 仅用少至 3 个量子比特；发展混合基下的 SU(2) 哈密顿量量子模拟表述，预期在所有规范耦合下保持高效。\n- **算法/电路技术**：物理启发的电路用于制备相互作用基态；实时演化在 IBM 量子处理器 ibm_pittsburgh 上执行并测量电荷分布与能量损失；提出 Sequency Hierarchy Truncation (SeqHT)，利用基算符贡献的层级结构进行截断，在 ibm_sherbrooke 上演示 λφ⁴ 基态的绝热制备。\n- **验证方式**：所有量子硬件模拟均与经典基准对照验证。\n\n## 主要结果\n1. 在 ibm_pittsburgh 上成功运行了 1+1 维 SU(2) 格点规范理论的实时演化，测得重夸克穿过轻夸克介质时的电荷分布与能量损失，并与经典结果一致。\n2. 混合基下完全规范固定的 SU(2) 哈密顿量表述可用每 plaquette 仅 3 个量子比特的数字化重现低能可观测量，精度达 10⁻³。\n3. SeqHT 在 λφ⁴ 基态绝热制备中将电路深度降低约 30%，从而抑制硬件噪声、改善提取可观测量的质量。\n4. 指出向更大系统扩展受资源开销限制，因此需要保持相关可观测量的截断方案——SeqHT 即为一种候选。\n\n## 为什么值得关注\n- 它把“实时 QCD 动力学”这一经典不可解问题推进到当今量子硬件可执行的层面，给出了从格点 QCD 表述到物理启发电路的完整可扩展路线，而不仅是原理性演示。\n- 每 plaquette 3 量子比特、混合基表述和 SeqHT 截断直接针对量子模拟的核心瓶颈（比特数、电路深度、噪声），对任何想在近期设备上做规范理论模拟的团队都有直接参考价值。\n- 所有结果均在真实硬件上与经典基准交叉验证，增强了该框架的可信度，为后续向更高维、更大耦合范围以及更接近实验相关 QCD 的模拟铺路。\n\n## 方向标签\n- Lattice QCD\n- Quantum simulation\n- Lattice gauge theory\n- Algorithm development / truncation\n- Real-time dynamics\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对格点规范理论量子模拟方向的研究者，这是高度相关且方法具体（含硬件验证与截断方案）的论文，值得精读；对更广泛的格点 QCD 社区，其 1+1 维 SU(2) 模型与真实 3+1 维 QCD 仍有距离，且部分内容偏框架与可行性论证，因此不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-22T05:11:43.725639"
+  },
+  {
+    "id": "2610.28778v1",
+    "title": "Quark TMDPDFs from Large to Small $x$: A Unified Description of CSS, DGLAP, and Small-$x$ Double Logarithms",
+    "authors": [
+      "Swagato Mukherjee",
+      "Vladimir V. Skokov",
+      "Andrey Tarasov",
+      "Shaswat Tiwari"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.28778v1",
+    "published": "2026-10-20T18:11:54Z",
+    "abstract": "We extend the full-kinematic background-field construction developed for gluon transverse-momentum dependent parton distribution functions (TMDPDFs) in Mukherjee et al. [Phys. Rev. D 109, 034035 (2024)] to quark TMDPDFs, providing a common framework for their large- and small-$x$ dynamics. We compute the leading-power quark TMD beam function at next-to-leading order using the background-field method. The background fields retain both longitudinal and transverse momenta, with neither collinear nor eikonal ordering imposed. We distinguish the renormalization scales that define the TMD operator from the factorization scales that separate its perturbative and non-perturbative modes. With standard TMD renormalization, the quark TMDPDF obeys Collins-Soper-Sterman (CSS) evolution, while the lower-scale separation is organized directly in terms of background-field TMD operators. We refer to this full-kinematic construction as the MSTT scheme. In the MSTT scheme, the leading term of the resulting operator expansion reproduces both the Dokshitzer-Gribov-Lipatov-Altarelli-Parisi (DGLAP) logarithm and the small-$x$ double logarithm in the appropriate limits, while retaining parts of the higher-twist and sub-eikonal corrections. We also formulate a rapidity-only scheme for quark TMDPDFs with distinct renormalization and factorization cutoffs. We derive its evolution equation, which reduces to DGLAP evolution in the collinear limit and to double-logarithmic quark evolution at small $x$, and establish its matching to the MSTT and standard TMD schemes.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文把此前为胶子 TMDPDF 建立的全运动学背景场构造推广到夸克情形，提出 MSTT 方案，使 CSS 演化、DGLAP 对数和小 $x$ 双对数在同一算符框架下统一描述。\n\n## 研究问题\n\n作者想解决的核心问题是：夸克横向动量依赖部分子分布函数（TMDPDF）在大 $x$（共线、DGLAP 区域）和小 $x$（双对数区域）的动力学通常由不同理论框架分别处理，缺乏一个统一描述。具体而言：\n\n1. 传统 TMD 因子化把共线模式与软/快度模式分开，但小 $x$ 双对数涉及不同运动学区域，标准 CSS 框架不能自然涵盖。\n2. 如何在一个保持完整运动学（纵向与横向动量均保留、不施加共线或 eikonal 排序）的背景场构造中，同时重现 DGLAP 对数和小 $x$ 双对数。\n3. 如何区分定义 TMD 算符的重整化标度与分离微扰/非微扰模式的因子化标度，并建立不同方案之间的匹配关系。\n\n## 方法\n\n需要说明：这篇论文是**解析场论计算**，不是格点数值模拟。它使用的方法包括：\n\n- **背景场方法**：将夸克 TMD beam function 在 leading power 下按 next-to-leading order（NLO）计算，背景场同时保留纵向和横向动量，不施加共线或 eikonal 排序。\n- **全运动学构造（MSTT 方案）**：继承 Mukherjee 等人对胶子 TMDPDF 的构造，把低标度分离直接用背景场 TMD 算符组织。\n- **标准 TMD 重整化**：使夸克 TMDPDF 满足 CSS 演化。\n- **算符展开**：分析展开领头项在适当极限下分别重现 DGLAP 对数和小 $x$ 双对数，并保留部分高 twist 和 sub-eikonal 修正。\n- **rapidity-only 方案**：为夸克 TMDPDF 构建具有独立重整化与因子化截断的方案，推导其演化方程，并建立与 MSTT 及标准 TMD 方案的匹配。\n\n## 主要结果\n\n1. **NLO 夸克 TMD beam function 的全运动学计算**：在背景场框架下完成 leading-power NLO 计算，背景场保留完整动量信息。\n2. **MSTT 方案中的统一性**：算符展开的领头项在共线极限下给出 DGLAP 对数，在小 $x$ 极限下给出双对数，同时保留部分高 twist 与 sub-eikonal 修正。\n3. **标度分离的清晰化**：明确区分 TMD 算符重整化标度与微扰/非微扰因子化标度；前者驱动 CSS 演化，后者由背景场 TMD 算符直接组织。\n4. **rapidity-only 方案的演化方程**：推导出的演化方程在共线极限退化为 DGLAP 演化，在小 $x$ 极限给出双对数夸克演化，并建立了与 MSTT 和标准 TMD 方案的匹配。\n\n## 为什么值得关注\n\n- **理论统一性**：首次在夸克 TMDPDF 中把 CSS、DGLAP 和小 $x$ 双对数纳入同一算符框架，有助于理解 TMD 因子化在不同运动学区域的衔接。\n- **对 TMD 因子化与方案依赖的澄清**：区分重整化标度与因子化标度、提出 rapidity-only 方案并给出匹配，对 TMD 文献中长期存在的方案依赖与标度设定问题有直接意义。\n- **对格点 TMD 计算的潜在影响**：格点 QCD 计算准 TMD（quasi-TMD）和大动量有效理论时，需要把格点可算量与 $\\overline{\\rm MS}$ 中的 TMDPDF 匹配；一个能覆盖大 $x$ 与小 $x$ 的统一方案，可能为扩展格点 TMD 计算的运动学覆盖范围提供理论输入。\n- **小 $x$ 物理**：小 $x$ 双对数与饱和/Color Glass Condensate 物理相关，该框架为从 TMD 侧连接小 $x$ 演化提供了新工具。\n\n需要指出：论文本身不包含格点数据或数值模拟，其价值主要是解析理论框架层面的。\n\n## 方向标签\n\n- TMD Factorization\n- Perturbative QCD\n- Small-x Physics\n- DGLAP Evolution\n- Quark/Gluon Structure\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：对专门研究 TMD 因子化、小 $x$ 演化或格点 TMD 匹配的研究者，这篇论文有较高参考价值，属于应读的理论框架工作。但它不涉及格点数值方法或算法实现，对以格点模拟为主要工作流的读者优先级中等；对只关心现象学拟合或 BSM 的读者相关性较低。建议 TMD/小 $x$ 理论方向的研究者精读，格点 TMD 实践者可重点阅读方案匹配与标度设定部分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-22T05:11:51.069027"
   }
 ]
