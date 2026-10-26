@@ -6222,5 +6222,106 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-24T05:02:51.400093"
+  },
+  {
+    "id": "2610.32458v1",
+    "title": "Hybrid Monte Carlo for the extended Kane-Mele-Hubbard model",
+    "authors": [
+      "Finn L. Temmen",
+      "Thomas Luu",
+      "Johann Ostmeyer",
+      "Lin Wang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.32458v1",
+    "published": "2026-10-23T10:21:09Z",
+    "abstract": "The Hubbard model offers a powerful minimal description of strongly correlated electrons in molecules and materials, yet it neglects effects observed in nature that give rise to a much richer variety of physics. For instance, including nonlocal interactions introduces a competition between strongly correlated phases, while incorporating spin-orbit coupling (SOC) can lead to the emergence of exotic topological phases. Seeking a more realistic platform for simulating graphene and, potentially, related materials such as transition metal dichalcogenides (TMDs), we therefore consider the extended Kane-Mele-Hubbard model, which features a Kane-Mele SOC term and nearest-neighbor interactions. Simulating this model is particularly challenging once the nonlocal interactions become dominant over the on-site Hubbard interaction, as a severe sign problem arises already at half filling, leaving this regime largely unexplored. In this work, we develop continuous auxiliary field formulations of the model, suitable for treatment with the Hybrid Monte Carlo (HMC) algorithm. Using these formulations, we characterize the sign problem across the model's parameter space and establish where simulations are feasible, as a first step toward the full phase diagram.",
+    "summary": {
+      "raw": "## 一句话结论\n作者为扩展 Kane-Mele-Hubbard 模型（含 Kane-Mele 自旋轨道耦合与最近邻相互作用）发展了适用于 Hybrid Monte Carlo 的连续辅助场表述，并系统刻画了该模型参数空间中的符号问题，确定了可模拟的参数区域。\n\n## 研究问题\n作者想解决什么问题？\n- Hubbard 模型忽略了非局域相互作用和自旋轨道耦合等真实效应；引入这些效应后会出现强关联相竞争和拓扑相，但模拟难度大增。\n- 具体到扩展 Kane-Mele-Hubbard 模型：当最近邻非局域相互作用超过在位 Hubbard 相互作用时，即使在半填充也会出现严重的符号问题，导致该区域几乎未被探索。\n- 因此本文的目标是：建立可用于 HMC 的连续辅助场表述，摸清符号问题在整个参数空间的分布，划定“哪些参数可以模拟”，为后续完整相图研究铺路。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 模型：扩展 Kane-Mele-Hubbard 模型——石墨烯型蜂窝晶格上的 Hubbard 相互作用 + Kane-Mele 自旋轨道耦合项 + 最近邻相互作用（非局域）。\n- 算法：Hybrid Monte Carlo (HMC)。\n- 关键技术：连续辅助场（continuous auxiliary field）表述，替代传统的离散 Hubbard-Stratonovich 变换，以便用 HMC 对辅助场做连续采样。\n- 数值工作：在这些表述下计算/表征符号问题（如平均符号、符号相），扫描模型参数空间，确定可模拟区域。\n\n## 主要结果\n总结最重要发现。\n- 成功构造了该模型的连续辅助场表述，使其能够用 HMC 处理。\n- 系统刻画了符号问题随参数（非局域相互作用强度、SOC、掺杂/半填充等）的变化，给出了符号问题严重程度的参数地图。\n- 明确了模拟可行的参数区域：在半填充下，当非局域相互作用主导时符号问题严重、模拟困难；而在其他区域仍可进行 HMC 模拟。\n- 这是迈向该模型完整相图（包括拓扑相与强关联相的竞争）的第一步。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 凝聚态格点场论方向：为石墨烯类材料及 TMD 等候选材料的强关联+拓扑物理提供了可执行的数值路线，把此前“符号问题禁区”变成可系统探索的区域。\n- 方法学意义：连续辅助场 + HMC 的组合是对离散 HS 变换的重要补充，尤其适用于含非局域相互作用和多轨道/自旋自由度的问题；符号问题的参数地图对其他类似模型的模拟规划有直接参考价值。\n- 与 lattice QCD 社区的方法互通：HMC、符号问题、辅助场表述是格点 QCD 的核心工具，本文把这类技术迁移到凝聚态拓扑模型，体现了格点方法跨领域的通用性，也可能反过来为符号问题缓解策略提供新测试场景。\n\n## 方向标签\n- Lattice field theory (condensed matter)\n- Sign problem\n- Hybrid Monte Carlo\n- Topological phases / Kane-Mele\n- Strongly correlated electrons\n\n## 阅读优先级\n★★★☆☆（3/5）\n- 理由：如果你关心符号问题、HMC 方法或拓扑强关联模型的格点模拟，这篇是直接相关的方法学工作，值得读；但它目前主要是“可行性/符号问题刻画”的第一步，尚未给出完整相图或新物理相，因此对一般理论物理读者的吸引力有限。方法细节（连续辅助场构造）对做类似模型的人价值较高，可给 4 星；对广泛读者则约 3 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-26T05:08:06.376409"
+  },
+  {
+    "id": "2610.32385v1",
+    "title": "Equation of state of hot and dense QCD using the complex Langevin equation",
+    "authors": [
+      "Michael Mandl",
+      "Dénes Sexty",
+      "Daniel Unterhuber"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.32385v1",
+    "published": "2026-10-23T09:14:01Z",
+    "abstract": "We present continuum-extrapolated lattice results for the QCD equation of state at high temperatures and unprecedentedly large baryon chemical potentials. These results were obtained by performing the first complex Langevin simulations at the physical value of the pion mass. We work in a strangeness-neutral, charm-neutral, and isospin-symmetric setup and show results for the baryon density, pressure, and trace anomaly as a function of baryon chemical potential and temperature, respectively.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文首次在物理π介子质量下用复数Langevin方程完成了有限重子化学势下QCD状态方程的连续极限外推格点计算，把状态方程的可靠覆盖范围推进到前所未有的高重子化学势区域。\n\n## 研究问题\n\n有限密度QCD状态方程是理解重离子碰撞、中子星结构与演化等物理的核心输入，但格点QCD在有限重子化学势μ_B下遭遇符号问题：费米子行列式变为复数，重要性采样失效。传统方法（如泰勒展开、虚化学势外推、重尾重加权）在μ_B/T ≳ 2–3 后迅速失效。作者要解决的问题是：能否绕过符号问题，在物理π介子质量、连续极限下，把QCD状态方程（重子密度、压强、迹反常）算到高重子化学势区域。\n\n## 方法\n\n- **格点QCD**：在格点上离散化QCD，采用strangeness-neutral、charm-neutral、isospin-symmetric的物理设置（即μ_S、μ_Q由μ_B和电中性/同位旋对称条件确定）。\n- **复数Langevin方程（CLE）**：将实Langevin随机过程解析延拓到复平面，使复作用量下的采样成为可能，从而规避符号问题；这是该方法首次在**物理π介子质量**下用于状态方程计算。\n- **连续极限外推**：在多个格点间距上计算并外推至连续极限（continuum-extrapolated），这是结果可信度的关键。\n- **观测量**：重子密度、压强、迹反常（trace anomaly），作为μ_B和T的函数。\n\n## 主要结果\n\n- 给出了连续极限外推的QCD状态方程格点结果，覆盖高温度与**空前大的重子化学势**范围。\n- 首次在物理π介子质量下用CLE得到重子密度、压强、迹反常随μ_B（及温度）的变化。\n- 结果展示了在传统方法失效的高μ_B区域，CLE仍能给出稳定的状态方程数据，为有限密度QCD热力学提供了新的第一性原理输入。\n\n## 为什么值得关注\n\n- **方法学突破**：符号问题是有限密度格点QCD数十年的核心障碍。CLE在物理π介子质量+连续极限下成功给出状态方程，是对该方法的强有力验证，可能改变有限密度格点QCD的实践格局。\n- **物理价值**：高μ_B状态方程直接关联重离子碰撞的低能区、中子星物态方程与QCD相图探索。\n- **社区影响**：若结果稳健，将为泰勒展开等方法提供独立交叉检验，并推动CLE在相变附近、更大体积、更细格点上的进一步应用与系统误差研究（CLE的正确性判据、边界项等仍是活跃议题）。\n\n## 方向标签\n\nLattice QCD；Finite temperature；Finite density / Sign problem；Complex Langevin；QCD equation of state\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：这是有限密度格点QCD方法学上具有里程碑意义的工作——首次在物理π介子质量下用CLE做连续极限状态方程，结果本身对重离子碰撞和中子星物理都有直接价值，值得精读。扣一星是因为CLE的正确性/系统误差控制（如边界项、Langevin稳定性判据）在社区中仍有争议，读者需结合后续验证与讨论来评估结果的稳健性；若你关注符号问题方法学或高密度状态方程，则应升至5星优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-26T05:08:13.765319"
+  },
+  {
+    "id": "2610.32378v1",
+    "title": "Low-Temperature Hybrid Monte Carlo for Perylene and Corannulene: Stabilizing Determinant and Force",
+    "authors": [
+      "Petar Sinilkov",
+      "Thomas Luu",
+      "Johann Ostmeyer",
+      "Finn L. Temmen",
+      "Marcel Rodekamp"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.32378v1",
+    "published": "2026-10-23T09:06:42Z",
+    "abstract": "We demonstrate a real world physics study of the molecules perylene and corannulene at different doping levels, and calculating selected one-, two- (exciton) and three-body (trion) correlators. This has been done by performing Hubbard-model simulations near room temperature. We find, between charge neutral and doubly charged plateaus of perylene, an interaction-induced $ΔQ = 1$ plateau whose width grows with interaction strength and in which the ground state is a spin doublet rather than a singlet. The algorithmic advancement enabling this study simultaneously stabilizes the determinant and force calculations to machine precision at room temperature, while scaling as well as standard determinant Quantum Monte Carlo simulations of these systems. Furthermore, our formalism retains the full time-displaced (2-point) Green's function, allowing us to construct any $n$-body correlator, including those that contain disconnected diagrams.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文提出了一种在室温下同时稳定行列式与力计算的混合蒙特卡洛（HMC）算法改进，并将其应用于苝（perylene）和碗烯（corannulene）的 Hubbard 模型模拟，发现了一种由相互作用诱导的 ΔQ=1 电荷平台，其基态为自旋双重态。\n\n## 研究问题\n\n作者想解决两个层面的问题：\n\n1. **物理问题**：在室温附近对苝和碗烯这两种分子进行 Hubbard 模型模拟，研究不同掺杂水平下的单粒子、激子（两体）和三体（trion）关联函数，特别是电荷中性到双电荷平台之间是否存在相互作用诱导的中间电荷态。\n2. **算法问题**：低温/室温下行列式量子蒙特卡洛（DQMC）和 HMC 面临行列式与力计算数值不稳定的问题（矩阵条件数恶化、数值精度损失），需要一种既能稳定到机器精度、又保持与标准 DQMC 同等标度行为的算法方案。\n\n## 方法\n\n- **模型**：Hubbard 模型（用于描述分子体系的电子关联）。\n- **算法**：混合蒙特卡洛（Hybrid Monte Carlo, HMC），针对有限温度/室温下的行列式模拟。\n- **关键数值技术**：对行列式和力计算进行数值稳定化处理，使其在室温下达到机器精度，同时保持与标准行列式量子蒙特卡洛（DQMC）相同的计算标度。\n- **可观测量**：单粒子（两点）关联函数、激子（两体）关联函数、trion（三体）关联函数；形式体系保留完整的时间位移两点格林函数，从而可构造任意 n 体关联函数，包括含 disconnected 图的贡献。\n- **体系**：苝（perylene）和碗烯（corannulene），不同掺杂水平。\n\n## 主要结果\n\n1. **发现相互作用诱导的 ΔQ=1 电荷平台**：在苝的电荷中性平台与双电荷平台之间，存在一个 ΔQ=1 的中间平台，其宽度随相互作用强度增大而增大。\n2. **基态自旋性质**：该 ΔQ=1 平台的基态是自旋双重态（spin doublet），而非单态（singlet）。\n3. **算法稳定化**：所提出的算法改进在室温下将行列式和力计算同时稳定到机器精度，且计算标度与标准 DQMC 相当。\n4. **完整格林函数形式体系**：保留完整时间位移两点格林函数，使得任意 n 体关联函数（含 disconnected 图）均可构造。\n\n## 为什么值得关注\n\n- **对 lattice 场论方法学**：HMC 在低温/室温下行列式与力计算的数值不稳定性是长期困扰有限温度格点模拟的瓶颈。该工作提出的稳定化方案在保持标度的同时达到机器精度，具有可推广性，可能惠及 Hubbard 模型之外的更广泛格点费米子模拟（包括有限密度、强关联电子体系）。\n- **对量子化学与凝聚态交叉领域**：将格点场论方法（HMC、DQMC）系统应用于真实分子（苝、碗烯），并计算激子和 trion 关联函数，展示了格点方法在分子电子结构问题上的实用价值。\n- **物理发现的意义**：相互作用诱导的 ΔQ=1 平台及自旋双重态基态，为理解分子体系中的电荷掺杂与自旋-电荷关系提供了新视角，可能与分子电子学、有机半导体中的掺杂调控相关。\n- **对 QCD/格点社区的方法论启示**：行列式稳定化、力计算精度控制、完整格林函数构造等技术与格点 QCD 中的 fermion determinant 处理、HMC 力精度问题高度同源，具有跨领域借鉴价值。\n\n## 方向标签\n\n- Lattice field theory methods\n- Hybrid Monte Carlo\n- Hubbard model\n- Quantum chemistry / molecular simulation\n- Finite temperature\n- Strongly correlated electrons\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n**理由**：算法稳定化部分是格点方法学的实质性进展，且与格点 QCD 中 HMC 力计算精度问题直接相关，值得方法学研究者关注；物理结果（ΔQ=1 平台、自旋双重态）对分子体系有新颖性，但受众相对专门化。若读者关注 HMC 数值稳定性或格点方法在量子化学中的应用，优先级可升至 5 星；若仅关注 QCD 现象学，则相关性中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-26T05:08:22.469603"
+  },
+  {
+    "id": "2610.31756v1",
+    "title": "Soft scalar-field corrections to the topological susceptibility",
+    "authors": [
+      "Dietrich Bodeker",
+      "Rasmus S. K. Nielsen"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.31756v1",
+    "published": "2026-10-22T18:00:02Z",
+    "abstract": "We compute the contribution from soft scalar-field fluctuations to the topological susceptibility in SU(2) gauge theory at high temperature. We construct a 3-dimensional effective theory for the scalar field that accounts for the presence of an instanton. In the limit that the scalar selfcoupling $ λ$ is much larger than the square of the gauge coupling $g$ we obtain a correction of order $\\sqrtλ$ relative to the 1-loop result for the topological susceptibility.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文计算了高温 SU(2) 规范理论中软标量场涨落对拓扑磁化率的修正，发现在标量自耦合 λ ≫ g² 的极限下，该修正相对于单圈结果为 O(√λ) 量级。\n\n## 研究问题\n\n作者想解决的核心问题是：在高温 SU(2) 规范理论中，当存在标量场时，软标量场涨落如何影响拓扑磁化率（topological susceptibility）？具体而言，此前拓扑磁化率的计算主要基于纯规范场或单圈近似，而标量场的非微扰软模式贡献尚未被系统处理。作者特别关注标量自耦合远大于规范耦合平方（λ ≫ g²）的参数区域，此时标量场的软涨落不能被微扰展开简单处理。\n\n## 方法\n\n需要指出的是，**本文并非 lattice 数值模拟工作**，而是一个解析/有效场论计算。具体方法包括：\n\n- 构造一个**三维有效场论**（3-dimensional effective theory）来描述标量场在瞬子（instanton）背景下的行为。这是高温下维度约化（dimensional reduction）的标准思路：高温下时间方向被紧致化，得到三维有效理论。\n- 在瞬子存在的情况下，构建标量场的有效作用量，并计算软标量涨落对拓扑磁化率的贡献。\n- 在 λ ≫ g² 的极限下做解析计算，得到修正的标度行为。\n\n文中没有使用 lattice 数值技术、Monte Carlo 算法或格点模拟。\n\n## 主要结果\n\n最重要的发现是：软标量场涨落对拓扑磁化率的修正相对于单圈结果为 **O(√λ)** 量级。这意味着在 λ ≫ g² 的参数区域，标量自耦合的平方根标度行为主导了修正，而非简单的微扰幂次修正。这一结果揭示了标量场软模式对拓扑性质的不可忽略的贡献，且其标度行为不同于朴素的微扰预期。\n\n## 为什么值得关注\n\n- **拓扑磁化率是 QCD 轴子物理和 θ 真空结构的关键量**：理解其在高温下（早期宇宙、重离子碰撞）的行为对轴子宇宙学和 QCD 相变研究有直接意义。\n- **标量场修正的 O(√λ) 标度行为**提示在 BSM 模型中，扩展标量扇区可能显著改变拓扑性质，这对理解早期宇宙中轴子丰度计算（misalignment mechanism）的可靠性有影响。\n- **三维有效理论 + 瞬子背景的方法**为处理高温下软模式与拓扑涨落的耦合提供了一个可推广的框架，可应用于更复杂的规范-标量系统。\n- 对 lattice 社区而言，这一解析结果可作为未来格点模拟（如有限温度 SU(2)+标量场）的检验基准。\n\n## 方向标签\n\n- Finite temperature\n- BSM\n- Topological susceptibility\n- Effective field theory\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n**理由**：本文是一个聚焦的解析计算，问题定义清晰，结果（O(√λ) 修正）有明确的物理意义，适合对高温拓扑性质、轴子物理或 BSM 标量扇区感兴趣的读者。但它不是格点数值工作，方法上不涉及 lattice 技术，且 SU(2) 玩具模型与真实 QCD 有距离。对于专门做格点拓扑或有限温度模拟的研究者，作为理论参考有价值但非必读；对于关注轴子宇宙学或有效场论方法的研究者，优先级可提高到 4 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-26T05:08:29.713126"
+  },
+  {
+    "id": "2610.31748v1",
+    "title": "Multicriticality in the Generalized Schwinger Model",
+    "authors": [
+      "Federico Ambrosino",
+      "Bernardo Zan"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.31748v1",
+    "published": "2026-10-22T18:00:00Z",
+    "abstract": "We consider the generalized Schwinger model. This theory is obtained by coupling the field strength to an auxiliary scalar field $B$ and allowing generic potentials $V(B)$. We study the properties and phases of the model, focusing on the case where the potential is quartic. We investigate the model using both semiclassical and numerical methods, and find a rich phase diagram in the space of couplings. A region with unbroken charge conjugation is separated from one where the symmetry is spontaneously broken by lines of first- and second-order phase transitions. At the special point where these two lines meet, we find a fixed point in the tricritical Ising universality class. We also observe infinitely many lines of first order phase transitions ending at points of the Ising universality class.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文通过半经典与格点数值方法研究具有一般势 \\(V(B)\\) 的广义 Schwinger 模型，发现在四次势情形下相图异常丰富，包含电荷共轭对称性自发破缺相、一阶与二阶相变线，以及位于三临界 Ising 普适类的不动点和无穷多条终止于 Ising 普适类点的一阶相变线。\n\n## 研究问题\n\n作者想解决的核心问题是：当把 Schwinger 模型的场强与一个辅助标量场 \\(B\\) 耦合、并允许一般势 \\(V(B)\\)（重点研究四次势）时，这个二维规范理论的相结构是什么？具体而言：\n\n- 电荷共轭（C）对称性在参数空间中哪些区域保持、哪些区域自发破缺？\n- 相变线的性质（一阶/二阶）及其交汇点的普适类是什么？\n- 该模型是否能实现三临界 Ising 普适类等非平凡临界行为？\n\n这本质上是在问：广义 Schwinger 模型是否提供了一个可控的、可在格点上验证的、具有多重临界性的二维规范理论平台。\n\n## 方法\n\n- **模型**：广义 Schwinger 模型，将场强 \\(F_{\\mu\\nu}\\) 与辅助标量场 \\(B\\) 耦合，作用量中含一般势 \\(V(B)\\)，重点取四次势。\n- **半经典方法**：分析有效势、相变线的平均场结构、对称性破缺模式。\n- **格点数值方法**：在格点上对模型进行数值模拟（摘要未给出具体算法细节，通常此类二维模型可用 Monte Carlo、张量网络或精确对角化/转移矩阵方法；结合“numerical methods”与相变线普适类判定，推测使用了有限尺寸标度分析与序参量测量）。\n- **普适类判定**：通过临界指数/标度行为识别三临界 Ising 与 Ising 普适类。\n\n## 主要结果\n\n1. **丰富相图**：在耦合参数空间中存在 C 对称性未破缺的区域与自发破缺区域，二者被一阶和二阶相变线分隔。\n2. **三临界 Ising 不动点**：一阶与二阶相变线的交汇点是一个属于三临界 Ising 普适类的不动点。\n3. **无穷多条一阶相变线**：观察到无穷多条一阶相变线，每条终止于一个 Ising 普适类的临界点。\n4. 半经典与数值结果相互印证，给出了该模型完整的相结构图像。\n\n## 为什么值得关注\n\n- **多重临界性的可控实例**：三临界 Ising 普适类在格点规范理论中较少被直接实现和验证，该模型提供了一个二维、相对可控的范例，有助于理解规范理论与标量场耦合时的临界现象。\n- **对 Schwinger 模型社区的扩展**：Schwinger 模型是低维规范理论的重要玩具模型（与 QCD\\(_2\\)、禁闭、θ 真空等密切相关），引入辅助场与一般势后相图大幅丰富，为研究规范场与标量自由度耦合提供了新视角。\n- **方法学意义**：展示了半经典分析 + 格点数值判定普适类的组合策略在二维规范理论中的有效性，可推广到其他带辅助场的规范模型。\n- **与凝聚态/统计物理的交叉**：Ising 与三临界 Ising 普适类的出现，使该模型成为连接格点场论与统计力学临界现象研究的桥梁。\n\n## 方向标签\n\n- Lattice gauge theory（二维规范理论）\n- Schwinger model\n- Phase transitions / critical phenomena\n- Universality class（Ising / tricritical Ising）\n- Semiclassical + numerical methods\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：该论文主题聚焦于二维广义 Schwinger 模型的相图与多重临界性，对专门研究 Schwinger 模型、二维规范理论或格点临界现象的读者价值较高（可达 4 星）；但它不是主流四维 Lattice QCD 或 BSM 现象学工作，方法上也偏模型研究而非大规模数值计算，对更广泛的高能/格点社区属于“有趣但非必读”。若你关注规范-标量耦合的普适类或三临界 Ising 在格点场论中的实现，建议优先阅读；否则可作为背景参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-26T05:08:37.923884"
   }
 ]
