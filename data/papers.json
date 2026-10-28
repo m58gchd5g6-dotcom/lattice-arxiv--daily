@@ -6599,5 +6599,121 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-27T05:25:33.729674"
+  },
+  {
+    "id": "2610.37120v1",
+    "title": "Easier parameter scans with hmcdj",
+    "authors": [
+      "Alexis Verney-Provatas",
+      "Ed Bennett",
+      "Gaurav Ray"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.37120v1",
+    "published": "2026-10-27T12:21:28Z",
+    "abstract": "We present hmcdj, a new tool developed to ease the process of generating large numbers of gauge ensembles for a given theory. Building on top of the Grid library, hmcdj allows quick specification of lattice gauge theories in C++ with minimal boilerplate, and precise specification of per-ensemble parameters to be controlled at run time from a YAML input file. Additionally, it supports many quality-of-life features for managing large numbers of running jobs, including automatic tuning of the molecular dynamics step size to control the Metropolis acceptance rate; output of ILDG-compliant data; and integration with HPC schedulers to dynamically adapt the target trajectory count of a job to match its time limits. hmcdj is openly available under the GPLv2 license, and welcomes new contributions.",
+    "summary": {
+      "raw": "## 一句话结论\nhmcdj 是一个基于 Grid 库的 C++ 工具，通过 YAML 配置文件和自动化功能（如分子动力学步长自动调优、HPC 调度器集成、ILDG 兼容输出），大幅简化了大规模规范场集合（gauge ensemble）的生成流程。\n\n## 研究问题\n在格点场论研究中，生成大量规范场集合通常需要编写大量重复的样板代码、手动调参（如 MD 步长以控制 Metropolis 接受率）、管理众多并行作业，并处理与 HPC 调度器的交互。作者想解决的核心问题是：**如何降低生成大规模 gauge ensemble 的门槛和工作量**，让研究者能以最少的代码和手动干预，高效地扫描理论参数空间。\n\n## 方法\n- **基础框架**：构建在 Grid 库之上（Grid 是格点场论中广泛使用的 C++ 库）。\n- **配置方式**：用 YAML 输入文件精确指定每个 ensemble 的运行时参数，C++ 端只需最少的样板代码即可定义格点规范理论。\n- **自动化技术**：\n  - 自动调优分子动力学（MD）步长，以控制 Metropolis 接受率；\n  - 输出符合 ILDG 标准的数据；\n  - 与 HPC 调度器集成，根据作业时间限制动态调整目标 trajectory 数量。\n- **软件工程特性**：支持大量运行作业的管理（quality-of-life 功能），GPLv2 开源。\n\n## 主要结果\n论文是一篇工具介绍性文章，主要“结果”是 hmcdj 这一软件本身及其功能集：\n1. 快速用 C++ 指定格点规范理论，样板代码极少；\n2. 通过 YAML 实现 per-ensemble 参数的精确运行时控制；\n3. 自动 MD 步长调优以维持目标接受率；\n4. ILDG 兼容数据输出；\n5. 与 HPC 调度器动态集成，按时间限制自适应调整 trajectory 数；\n6. 开源（GPLv2）并欢迎社区贡献。\n\n摘要中未给出具体的物理测量结果或性能基准数据，重点在于工具能力展示。\n\n## 为什么值得关注\n- **降低门槛**：参数扫描（parameter scan）是格点 QCD/BSM 研究中生成 ensemble 的常见但繁琐任务，hmcdj 把配置、调参、作业管理流水线化，能显著节省人力。\n- **可复现性与标准化**：YAML 配置 + ILDG 输出有利于工作流复现和数据互操作。\n- **HPC 友好**：自动适配调度器时间限制，对在超算上跑大批量 ensemble 的团队尤其实用。\n- **生态整合**：基于 Grid 库，能直接受益于并贡献于现有格点社区生态。\n\n## 方向标签\n- Lattice QCD\n- 软件工具 / 数值技术\n- HPC 工作流\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：这是一篇工具/软件类论文，对**需要大规模生成 gauge ensemble、且使用 Grid 库**的研究组有直接实用价值，值得一读并考虑采用。但它不涉及新的物理结果、算法理论突破或数值基准对比，对不从事 ensemble 生成或不用 Grid 的读者优先级较低。若你正计划做参数扫描或搭建 HPC 流水线，可提升至 4 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-28T06:01:15.539287"
+  },
+  {
+    "id": "2610.36608v1",
+    "title": "Spin Hamiltonian for Quantum Simulation of Minimally Truncated $3+1$D SU(2) Lattice Gauge Theory and Testing Eigenstate Thermalization",
+    "authors": [
+      "Ziyuan Li",
+      "Xiaojun Yao"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.36608v1",
+    "published": "2026-10-27T04:10:49Z",
+    "abstract": "We construct the spatial-gauge-singlet Hamiltonian of pure SU(2) lattice gauge theory in $3+1$ dimensions ($3+1$D) on qubits under the minimal truncation $j_{\\rm max}=1/2$, building on previous work on the hyperhoneycomb lattice, and test the eigenstate thermalization hypothesis (ETH). By enforcing Gauss's law and exploiting the redundancy among gauge-invariant loop operators, we find the minimal set of independent loop variables that can be bijectively mapped onto qubits, and write the Hamiltonian as a sum of Pauli strings. An $n\\times n\\times n$ lattice with fixed boundary conditions requires $2(n-1)^3+3(n-1)^2$ qubits. We exactly diagonalize the Hamiltonian on a $2\\times 3\\times 3$ lattice and identify the coupling range of quantum ergodicity from the level statistics. At the ergodic coupling $g=0.3$, we calculate the matrix elements of local energy density operators and the entanglement entropies of all eigenstates and find them consistent with the ETH. These results show that the $3+1$D truncated SU(2) lattice gauge theory thermalizes in accordance with the ETH and provide a benchmark for future real-time quantum simulations of non-equilibrium dynamics.",
+    "summary": {
+      "raw": "## 一句话结论\n作者在最小截断 $j_{\\rm max}=1/2$ 下构造了 $3+1$D 纯 SU(2) 格点规范理论的量子比特自旋哈密顿量，并在 $2\\times3\\times3$ 格点上精确对角化，首次在 $3+1$D 截断规范理论中数值验证了本征态热化假说（ETH）。\n\n## 研究问题\n如何在量子计算机/量子模拟器上表示 $3+1$D SU(2) 格点规范理论，并检验其量子动力学是否满足 ETH（即截断后的规范理论是否仍表现出热化行为）。具体包括：\n1. 在空间规范单态（Gauss 定律约束）下，如何用最少的量子比特数编码规范不变的自由度；\n2. 截断理论的本征态统计是否呈现量子混沌/遍历性，以及局域算符矩阵元和纠缠熵是否符合 ETH 预言。\n\n## 方法\n- **模型**：纯 SU(2) 格点规范理论，$3+1$D，最小截断 $j_{\\rm max}=1/2$（每个链变量只保留自旋-1/2 表示），基于 hyperhoneycomb（超蜂窝）格点上的先前工作推广到立方格点。\n- **哈密顿量构造**：强制 Gauss 定律、利用规范不变圈算符之间的冗余，找出最小独立圈变量集合，双射到量子比特，将哈密顿量写成 Pauli 串之和（空间规范单态形式）。\n- **量子比特计数**：$n\\times n\\times n$ 格点固定边界条件需 $2(n-1)^3+3(n-1)^2$ 个量子比特。\n- **数值技术**：对 $2\\times3\\times3$ 格点做精确对角化（ED），分析能级统计（能级间距比等）确定量子遍历性的耦合范围；在遍历耦合 $g=0.3$ 处计算局域能量密度算符的矩阵元与所有本征态的纠缠熵，与 ETH 预言对比。\n\n## 主要结果\n1. 给出了 $3+1$D 截断 SU(2) 理论在量子比特上的显式 Pauli 串哈密顿量及最小量子比特资源公式。\n2. 通过能级统计识别出量子遍历性的耦合区间；在 $g=0.3$（遍历区）处，局域能量密度算符矩阵元与本征态纠缠熵均与 ETH 一致。\n3. 结论：$3+1$D 截断 SU(2) 格点规范理论按 ETH 热化，为未来实时量子模拟非平衡动力学提供了基准。\n\n## 为什么值得关注\n- 这是向 **$3+1$D 非阿贝尔规范理论量子模拟** 迈出的具体一步：给出了可执行的量子比特编码方案和资源标度，对近期量子硬件上的规范理论模拟有直接参考价值。\n- 首次在 $3+1$D 截断规范理论中数值检验 ETH，说明截断（$j_{\\rm max}=1/2$）并未破坏热化行为，为截断方案的有效性提供了动力学层面的证据。\n- 对理解规范理论中 **量子混沌、热化与纠缠结构** 有理论意义，也为量子模拟结果的物理解读（如热化时间尺度、平衡态性质）建立基准。\n- 与 lattice QCD 社区关心的实时动力学、有限温度与非平衡输运问题相关，是量子模拟路线与传统格点方法之间的桥梁工作。\n\n## 方向标签\nQuantum simulation\nLattice gauge theory\nSU(2) gauge theory\nEigenstate thermalization\nEntanglement entropy\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：工作扎实且方向前沿，但当前系统规模很小（$2\\times3\\times3$，精确对角化），结论主要是方法学与概念验证性质；对专门做量子模拟或 ETH/量子混沌的读者价值较高，对主流 lattice QCD 数值计算读者的直接实用性有限。作为了解“规范理论量子模拟 + ETH”交叉领域的入门与基准文献值得一读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-28T06:01:22.188272"
+  },
+  {
+    "id": "2610.36528v1",
+    "title": "Measurement-induced entanglement phases in hyperbolic gauge-Higgs models",
+    "authors": [
+      "Cole Kelson-Packer",
+      "Hiroki Sukeno",
+      "Akimasa Miyake"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.36528v1",
+    "published": "2026-10-27T02:36:00Z",
+    "abstract": "Gauge-Higgs theory in flat spacetime provides a prime theoretical model of multiple phases of matter with distinct entanglement structures. More recently, there has been interest in hyperbolic space and the influence its extensive boundaries have on these structures. Entanglement transitions between non-equilibrium phases, such as topological phases, can be realized by the competition of non-commutating measurements. Here we study the entanglement phases of gauge-Higgs models on hyperbolic lattices described by measurement-only dynamics. We chart 2D phase diagrams by employing topological entanglement entropy and introducing a generalized measurement-induced entanglement tailored for hyperbolic Higgs phases. Utilizing duality, we find a phase absent in Euclidean space, wherein the bulk lattice hosts separated clusters of symmetry-protected topological order. Transitions between this \"archipelago\" phase and neighboring topological and trivial phases feature a critical exponent $δ$ belonging to a mean-field universality class. Our essential tool is a 3D resource state inspired by measurement-based quantum computation that simulates the spacetime evolution of the 2D quantum state with a third direction of entanglement. This allows us to analyze spacetime \"sponges\" of entanglement, which map to classical percolation theory and allow us to infer values of critical points on our phase diagrams' boundaries.",
+    "summary": {
+      "raw": "## 一句话结论\n本文通过在双曲格点上引入仅测量动力学，发现了一种在平直空间中不存在的“群岛”相——体格点中分离的对称保护拓扑（SPT）序团簇，并利用三维资源态与经典渗流理论的映射确定了相变临界点及平均场临界指数。\n\n## 研究问题\n作者想解决的核心问题是：**双曲空间（具有广泛边界）如何影响规范-希格斯模型的纠缠结构与相图？** 具体而言：\n1. 平直时空中规范-希格斯理论具有丰富的相结构（拓扑相、希格斯相、平凡相等），这些相在双曲格点上是否仍然存在？是否会出现平直空间中没有的新相？\n2. 仅测量动力学（measurement-only dynamics）驱动的非平衡纠缠相变在双曲格点上的相图是什么样的？\n3. 如何定义适合双曲希格斯相的广义测量诱导纠缠量来刻画这些相变？\n\n## 方法\n- **模型**：双曲格点上的规范-希格斯模型，动力学由非对易测量的竞争驱动（measurement-only dynamics），而非哈密顿量时间演化。\n- **格点几何**：双曲格点（负曲率），具有指数增长的边界，与平直欧几里得格点形成对比。\n- **序参量与诊断工具**：\n  - 拓扑纠缠熵（topological entanglement entropy）用于识别拓扑序；\n  - 引入**广义测量诱导纠缠**（generalized measurement-induced entanglement），专门为双曲希格斯相设计；\n  - 利用**对偶性**（duality）分析相结构。\n- **核心数值技术**：构造一个受测量基量子计算（MBQC）启发的**三维资源态**（3D resource state），用第三个纠缠方向模拟二维量子态的时空演化。该三维结构映射到**经典渗流理论**（classical percolation theory），从而推断相图边界上的临界点数值。\n- **相图**：绘制二维相图，识别“群岛”相与相邻拓扑相、平凡相之间的相变，并提取临界指数 δ。\n\n## 主要结果\n1. **发现新相——“群岛”相（archipelago phase）** ：在双曲格点上存在一个平直欧几里得空间中不存在的相，其体格点包含**分离的对称保护拓扑（SPT）序团簇**，如同群岛般散布。\n2. **相图结构**：通过拓扑纠缠熵和广义测量诱导纠缠绘制了二维相图，识别出“群岛”相与拓扑相、平凡相之间的相变边界。\n3. **临界指数**：从“群岛”相到相邻拓扑相和平凡相的相变具有临界指数 δ，属于**平均场普适类**（mean-field universality class）。\n4. **时空纠缠“海绵”** ：三维资源态描述的时空纠缠结构映射到经典渗流理论，成功推断了相图边界上的临界点数值。\n\n## 为什么值得关注\n1. **对格点场论/量子信息交叉领域的贡献**：首次系统研究了双曲格点上规范-希格斯模型的测量诱导纠缠相变，揭示了曲率对相结构的定性改变（新相的出现），这对理解弯曲时空中的纠缠结构具有重要意义。\n2. **方法学创新**：三维资源态 + 经典渗流映射的组合提供了一种可推广的数值框架，用于分析测量诱导相变中的时空纠缠结构，可能应用于其他格点模型。\n3. **对量子模拟的启示**：测量诱导相变是近期量子模拟实验的热点，双曲格点上的结果可为在量子计算机上实现和探测这类相变提供理论指导。\n4. **对高能物理的潜在影响**：规范-希格斯模型的相结构是粒子物理标准模型的基础问题；双曲几何与AdS/CFT对偶中的全息思想有概念联系，尽管本文未直接涉及全息，但其对边界效应的关注与全息纠缠熵的精神相通。\n\n## 方向标签\n- Tensor network\n- Quantum simulation\n- Lattice field theory (beyond QCD)\n- Entanglement / quantum information\n- Topological phases\n\n## 阅读优先级\n**★★★★☆（4/5）**\n\n理由：本文的核心贡献——双曲格点上测量诱导的新拓扑相（“群岛”相）及其平均场普适类——具有明确的新颖性，方法（三维资源态 + 渗流映射）也颇具巧思。对于关注纠缠相变、拓扑序、双曲格点场论或量子模拟的研究者，这是一篇高相关度的论文。扣一星的原因是：该工作与格点QCD主流（如有限温度、手征相变、算法改进）的直接关联较弱，且测量诱导动力学目前仍主要是理论/量子模拟层面的框架，距离实际实验实现尚有距离。但对于理论物理和量子信息交叉方向的研究者，强烈推荐阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-28T06:01:30.367024"
+  },
+  {
+    "id": "2610.36316v1",
+    "title": "Quark Saturation in Magnetized Pure Neutron Matter",
+    "authors": [
+      "Toru Kojo"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.36316v1",
+    "published": "2026-10-26T21:41:30Z",
+    "abstract": "We study how magnetic fields affect the onset of quark saturation, which limits the domain of applicability of a purely baryonic description. We consider matter composed of electrically neutral $ddu$ baryons, including neutron- and $Δ^0$-like states. Using a simple constituent-quark model, we compute the baryon wave functions and spectra in magnetic fields. The magnetic field polarizes the spin-flavor structure, compresses the internal wave function in the transverse direction, and strongly suppresses the transverse kinetic energy. From the baryon wave functions, we construct the one-body reduced density matrix and derive the corresponding single-quark distributions in longitudinal momentum and Landau-level space. We then use these distributions to evaluate quark occupation probabilities in an ideal baryon gas and determine the onset of quark saturation. At finite magnetic field in the $+z$-direction, the $d_\\downarrow$ quark in the lowest Landau level reaches saturation first. The resulting saturation density depends nonmonotonically on the magnetic-field strength: it decreases at weak fields and increases at stronger fields. This behavior reflects the competition between spin-flavor polarization, which promotes saturation, and transverse spatial squeezing, which delays saturation by broadening of the quark transverse momentum distribution.",
+    "summary": {
+      "raw": "## 一句话结论\n在强磁场下，纯中子物质中夸克饱和的起始密度随磁场强度呈非单调变化：弱场下饱和提前，强场下饱和推迟，源于自旋-味极化（促进饱和）与横向波函数压缩导致横动量展宽（延迟饱和）之间的竞争。\n\n## 研究问题\n作者想解决什么问题？\n- 纯重子描述（中子星/中子物质）在什么条件下失效？具体地说，磁场如何影响“夸克饱和”的起始——即单夸克占据概率趋近于1、重子自由度不再适用的临界点。\n- 磁场对重子内部结构（波函数、谱）的极化与压缩效应，如何通过单夸克分布传递到饱和判据上。\n- 饱和密度对磁场强度的依赖是单调的还是非单调的，其物理机制是什么。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 本文不是格点论文，而是**简单组分夸克模型**（constituent-quark model）的解析/数值计算：\n  - 考虑电中性 $ddu$ 重子（类中子与类 $\\Delta^0$ 态），在磁场中求解重子波函数与谱。\n  - 由重子波函数构造**单体约化密度矩阵**，导出单夸克在纵向动量与朗道能级空间的分布。\n  - 在理想重子气体中，用这些分布计算夸克占据概率，确定夸克饱和起始。\n- 关键物理输入：磁场导致自旋-味极化、横向波函数压缩、横向动能强烈压低。\n- 未使用格点 QCD、张量网络或机器学习等数值技术；属于现象学模型计算。\n\n## 主要结果\n总结最重要发现。\n- 在沿 $+z$ 方向的有限磁场中，最低朗道能级的 $d_\\downarrow$ 夸克最先达到饱和。\n- 饱和密度对磁场强度**非单调**：弱场下随磁场增强而下降（饱和提前），较强场下反而上升（饱和推迟）。\n- 机制：自旋-味极化促进饱和；横向空间压缩使夸克横动量分布展宽，从而延迟饱和。两者竞争决定净效应。\n- 这限定了纯重子描述（如中子星物质状态方程）在磁化环境中的适用范围。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 对致密星体物理（磁星、强磁场中子星）中状态方程与组分描述的有效范围给出定量判据：何时必须引入夸克自由度。\n- 虽然本文是模型计算，但其“饱和判据 + 单夸克分布”框架可被格点 QCD（有限密度、有限磁场、重子数化学势）或有效模型检验与校准。\n- 磁场诱导的各向异性（纵向/横向、朗道能级、自旋-味极化）是 QCD 相图与磁化物质研究中的核心议题，本文提供了从重子内部结构到宏观饱和的清晰物理链条。\n- 对理解磁化中子星合并、强磁场下的弱相互作用与输运也有间接意义。\n\n## 方向标签\n- Finite temperature（有限密度/磁化致密物质，相关但非直接）\n- 有效模型 / 组分夸克模型（非格点）\n- 磁场中的 QCD 物质\n- 致密星体状态方程\n- 夸克饱和 / 重子-夸克过渡\n\n## 阅读优先级\n★★★☆☆（3/5）\n- 理由：物理图像清晰、机制解释有说服力，但基于简化组分夸克模型，非第一性原理格点计算，定量结论需格点或更真实模型验证。对做磁化致密物质、重子-夸克过渡、中子星状态方程的研究者有较高参考价值；对纯格点技术方法学读者优先级中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-28T06:01:36.954139"
+  },
+  {
+    "id": "2610.36054v1",
+    "title": "Mesons, Confinement, and Complexity: A Krylov Space Perspective on the Long-Range Ising Chain",
+    "authors": [
+      "Xuhao Jiang",
+      "Jad C. Halimeh",
+      "N. S. Srivatsa"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.36054v1",
+    "published": "2026-10-26T18:00:05Z",
+    "abstract": "We investigate the interplay between confinement and Krylov complexity in the long-range transverse-field Ising chain, where power-law interactions $\\sim 1/r^α$ generate an effective confining potential between domain walls without an explicit symmetry-breaking field. Using the time-averaged Krylov state complexity after a quench as a diagnostic, we find that the complexity is strongly suppressed and only weakly system size-dependent at small $α$ and small transverse field $h_x$, where confinement is strongest, and crosses over to rapid growth at larger $α$, where it increases with system size. Within the confined regime, the oscillation frequencies of the complexity agree with the meson masses of an effective two-kink model, with the dominant frequency growing linearly with the lightest meson mass and the time-averaged complexity decreasing approximately as its inverse square. We further study operator Krylov complexity at finite temperature using the Wightman inner product. At low temperature, it exhibits bounded oscillations that directly encode the meson spectrum, whereas this structure is progressively washed out as the temperature increases. These results identify Krylov complexity as a spectroscopic probe of interaction-induced confinement and reproduce, in a microscopic lattice model, the hallmarks of Krylov complexity identified in confining field theories.",
+    "summary": {
+      "raw": "## 一句话结论\n本文在一维长程横场 Ising 链中，用 Krylov 复杂度（态复杂度和算符复杂度）作为诊断量，发现由幂律相互作用诱导的畴壁禁闭会强烈抑制淬火后的复杂度增长，且复杂度振荡频率与有效双 kink 模型中的“介子”质量谱直接对应，从而在微观格点模型中重现了禁闭场论中 Krylov 复杂度的标志性特征。\n\n## 研究问题\n作者想解决的核心问题是：**禁闭（confinement）这种非微扰相互作用现象，能否通过 Krylov 复杂度这一量子信息/量子动力学诊断量来刻画和探测？** 具体而言：\n\n1. 在没有显式对称破缺场的情况下，仅靠长程幂律相互作用 $\\sim 1/r^\\alpha$ 产生的有效禁闭势，会对淬火后态复杂度的增长产生什么影响？\n2. 复杂度振荡的频率是否与禁闭产生的“介子”（畴壁束缚态）质量谱对应？\n3. 有限温度下算符 Krylov 复杂度（用 Wightman 内积）是否也能编码介子谱，以及温度如何破坏这一结构？\n\n这本质上是在问：Krylov 复杂度能否作为禁闭与介子谱的“光谱学探针”。\n\n## 方法\n- **模型**：一维长程横场 Ising 链（long-range transverse-field Ising chain），相互作用为幂律 $\\sim 1/r^\\alpha$，横场为 $h_x$。长程相互作用在畴壁（kink）之间产生有效禁闭势，无需显式对称破缺场。\n- **态复杂度**：对系统进行量子淬火（quench）后，计算时间平均的 Krylov 态复杂度（Krylov state complexity），采用 Lanczos 算法构造 Krylov 基并演化。\n- **算符复杂度**：在有限温度下，使用 Wightman 内积定义算符 Krylov 复杂度，研究其温度依赖。\n- **有效模型对比**：将复杂度振荡频率与有效双 kink（two-kink）模型的介子质量进行比对，分析主导频率与最轻介子质量、时间平均复杂度与介子质量倒数平方之间的关系。\n- **数值技术**：本质上是精确对角化/稀疏矩阵演化加 Lanczos 三对角化，属于小到中等规模格点模型的数值模拟（非蒙特卡洛）。\n\n## 主要结果\n1. **禁闭抑制复杂度**：在小 $\\alpha$ 和小横场 $h_x$（禁闭最强）区域，时间平均 Krylov 复杂度被强烈抑制，且对系统尺寸依赖很弱；当 $\\alpha$ 增大（禁闭减弱）时，复杂度快速增长并随系统尺寸增大而增大，存在明显的 crossover。\n2. **复杂度振荡 = 介子谱**：在禁闭区内，复杂度振荡频率与有效双 kink 模型的介子质量一致；主导频率随最轻介子质量线性增长，而时间平均复杂度约按最轻介子质量的平方反比下降。\n3. **有限温度算符复杂度**：低温下算符 Krylov 复杂度表现出有界振荡，直接编码介子谱；随温度升高，这一结构逐渐被“洗掉”（wash out）。\n4. **总体结论**：Krylov 复杂度可作为相互作用诱导禁闭的光谱学探针，并在微观格点模型中重现了禁闭场论中 Krylov 复杂度的标志性特征。\n\n## 为什么值得关注\n- **连接量子信息与禁闭物理**：禁闭是 QCD 和格点场论的核心非微扰现象，而 Krylov 复杂度是近年量子混沌/量子信息领域的热点诊断量。本文把两者在可控格点模型中定量联系起来，为用复杂度探测禁闭提供了微观证据。\n- **介子谱的新探针**：复杂度振荡频率对应介子质量，意味着复杂度可能成为一种“光谱学”工具，补充传统关联函数/谱函数方法。\n- **对格点 QCD 的启示**：虽然本文是 1D 长程 Ising 模型，但其机制（畴壁禁闭、介子束缚态、温度效应）与 QCD 中的弦禁闭和介子谱有结构类比，为在更复杂格点规范理论中引入 Krylov 复杂度诊断提供了概念验证。\n- **量子模拟相关性**：长程 Ising 链是离子阱、里德堡原子等量子模拟平台的典型模型，本文结果可直接指导实验测量复杂度动力学。\n\n## 方向标签\n- Quantum simulation\n- Finite temperature\n- Lattice field theory (非 QCD 格点模型)\n- Quantum information / Krylov complexity\n- Confinement\n\n## 阅读优先级\n**★★★☆☆（3/5）**\n\n理由：本文概念新颖、结果清晰，把 Krylov 复杂度与禁闭/介子谱定量挂钩，对量子信息和格点场论交叉领域有启发价值，值得相关方向研究者阅读。但它使用的是 1D 长程 Ising 这一简化模型，规模有限、无规范场，距离真正的格点 QCD 应用还有相当距离；若你的兴趣集中在 QCD 格点或高维规范理论，其直接相关性中等。对量子模拟和量子混沌/复杂度方向则优先级可提高到 4 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-28T06:01:45.307749"
+  },
+  {
+    "id": "2610.36031v1",
+    "title": "Analytic Bootstrap Solution for Quantum Mechanics on a Circle",
+    "authors": [
+      "David Berenstein",
+      "Upamanyu Moitra"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.36031v1",
+    "published": "2026-10-26T18:00:00Z",
+    "abstract": "We solve the Schrödinger equation for a particle in the circle with a quantum mechanical bootstrap method. The main idea is that in physical situations one needs solutions of the recursion relations for the Fourier coefficients of the measure that vanish exponentially fast. We show that this results in a (generalized) continued fraction representation of the solution. The solution is an analytical function of the couplings and the energy. We also show how one this method directly computes the density of states and checking that the answer is physical is reduced to checking an inequality for a single variable. We also show how to reconstruct the wave function and how to extract the quasimomentum of the particle as a function of the energy. We illustrate our solution in the simplest case of the Mathieu equation, where we show that the method can easily resolve exponentially small bands in the band spectrum.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用“解析 bootstrap”方法求解圆周上的量子力学（Mathieu 方程），把递归关系的物理解（指数衰减的 Fourier 系数）表示为广义连分数，从而得到能量、态密度和波函数的解析解，并能轻松分辨指数小的能带间隙。\n\n## 研究问题\n\n作者想解决的核心问题是：如何用 bootstrap 思想（即只依赖递归关系 + 物理性约束，而不直接解微分方程）来**解析地**求解圆周上的 Schrödinger 方程。具体目标包括：\n\n1. 如何从 Fourier 系数的递归关系中挑出物理上允许的解（指数衰减条件）；\n2. 如何把该解写成对耦合和能量的解析函数（广义连分数）；\n3. 如何直接计算态密度，并把“物理性检验”简化为对单变量的一个不等式；\n4. 如何重构波函数、提取准动量随能量的依赖；\n5. 在 Mathieu 方程这一最简单情形中验证方法，尤其是能否分辨能谱中指数小的能带间隙。\n\n## 方法\n\n- **模型**：一维圆周上的量子力学粒子，即 Mathieu 方程（周期势），是紧致空间上最简的量子力学模型。\n- **框架**：量子力学 bootstrap。对测度（波函数模方）的 Fourier 系数建立递归关系。\n- **关键技巧**：物理情形要求递归关系的解（Fourier 系数）**指数衰减**；作者证明这一条件导致解的（广义）**连分数表示**，且该表示对耦合与能量是解析函数。\n- **算法/数值技术**：连分数的截断与收敛分析；态密度由连分数直接给出；物理性判据化为单变量不等式检验；波函数重构与准动量提取。\n- **验证**：在 Mathieu 方程上做解析与数值对照，展示对指数小能带间隙的分辨能力。\n- 注意：这不是格点场论意义上的 lattice 方法（无离散化、无 Monte Carlo），而是**解析 bootstrap**，属于谱方法/递归方法范畴。\n\n## 主要结果\n\n1. 物理性条件（Fourier 系数指数衰减）等价于递归关系解的**广义连分数表示**，该表示对耦合和能量解析。\n2. 态密度可由该方法**直接计算**，且“答案是否物理”归结为**单个变量的不等式**检验——这是 bootstrap 中通常需要大量矩约束的问题在这里被极大简化。\n3. 可以**重构波函数**，并提取**准动量作为能量的函数**。\n4. 在 Mathieu 方程上验证：方法能**轻易分辨能谱中指数小的能带间隙**（即禁带宽度 ~ e^{-c/g} 这类非微扰效应），说明其对非微扰谱结构的解析能力。\n\n## 为什么值得关注\n\n- **概念层面**：展示了 bootstrap 思想在**可解量子力学**中能给出封闭解析解（连分数），为理解 bootstrap 约束的数学结构提供了干净范例；这对格点/QCD 社区理解“矩问题 + 正定性”为何能锁定物理谱有启发意义。\n- **非微扰谱**：能解析分辨指数小的能带间隙，说明方法对非微扰效应（类似瞬子/能带间隙）有解析控制力，这对强耦合谱问题有借鉴价值。\n- **方法迁移潜力**：连分数/递归 + 指数衰减判据的思路，可能推广到更复杂的紧致空间量子力学、矩阵模型，乃至格点场论的谱 bootstrap 研究。\n- **局限**：目前仅限量子力学（0+1 维），离格点 QCD 的实际应用还有距离；但其“单变量不等式判物理性”的简化值得在更高维 bootstrap 中思考。\n\n## 方向标签\n\n- Quantum mechanics bootstrap\n- Spectral methods / continued fractions\n- Non-perturbative spectrum\n- Mathieu equation\n- (边缘相关) Lattice field theory methods\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：论文本身干净、结果漂亮，对 bootstrap 方法论的数学理解有价值，且 Mathieu 方程是很好的测试床；但它是一维量子力学，**不直接涉及格点 QCD、有限温度、张量网络或机器学习**，对格点场论日常研究的相关性是间接的（方法论启发而非可直接用的技术）。若你关注谱 bootstrap、非微扰解析方法或紧致空间谱问题，可提到 4 星；若只做格点 QCD 数值模拟，3 星足够，属于“值得一读以获取方法灵感”的范畴。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-10-28T06:01:53.756970"
   }
 ]
