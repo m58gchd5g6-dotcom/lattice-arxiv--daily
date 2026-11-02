@@ -6974,5 +6974,147 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-10-30T06:13:22.322951"
+  },
+  {
+    "id": "2610.42037v1",
+    "title": "Meson spectroscopy from lattice QCD",
+    "authors": [
+      "Andrew W. Jackura"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.42037v1",
+    "published": "2026-10-30T17:02:42Z",
+    "abstract": "Determining the meson spectrum directly from Quantum Chromodynamics (QCD) remains a central challenge, since QCD is strongly coupled at low energies and most excited states appear as resonances in hadronic decay channels. Advances in lattice QCD and scattering theory now provide a systematic framework for extracting meson spectra and resonance properties from first principles. Here I present an overview of this program and review current state-of-the-art calculations in meson spectroscopy from lattice QCD. I highlight recent progress in the extraction of resonant and coupled-channel amplitudes, along with frontier developments in three-body dynamics and the determination of meson photo-couplings. Together, these advances are bringing us closer to a comprehensive first-principles description of the excited meson spectrum.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这是一篇关于格点 QCD 介子谱学（尤其是共振态与耦合道振幅提取）的综述性文章，系统梳理了从第一性原理计算激发态介子谱及共振性质的最新进展与前沿方向。\n\n## 研究问题\n\n作者想解决的核心问题是：**如何从 QCD 第一性原理出发，系统地确定介子谱，特别是那些在强子衰变道中以共振形式出现的激发态**。由于 QCD 在低能区强耦合，大多数激发态表现为共振而非稳定束缚态，传统格点计算（只算能级）无法直接给出共振参数（质量、宽度、耦合），因此需要建立格点 QCD 与散射理论的系统框架，把有限体积能谱映射到无限体积的散射/共振振幅上。文章还关注耦合道效应、三体动力学以及介子光耦合等前沿问题。\n\n## 方法\n\n作为综述，文章讨论的方法框架主要包括：\n\n- **格点 QCD 数值模拟**：在欧几里得时空格点上计算强子关联函数与有限体积能谱。\n- **Lüscher 方法及其推广**：将有限体积能谱与无限体积散射振幅联系起来的有限体积量子化条件/散射理论形式（包括耦合道推广、以及向三体情形的扩展）。\n- **耦合道振幅提取**：从多个道（如 ππ、KK̄ 等）的能谱联合拟合共振极点与耦合常数。\n- **三体动力学**：讨论三体有限体积形式与三体共振（如部分轻介子激发态）的处理。\n- **介子光耦合（photo-couplings）**：通过格点计算关联函数提取共振态到光子道的跃迁振幅。\n- 数值技术层面涉及关联函数计算、变分法（variational method）提取激发态能谱、以及大统计量/多体积计算等。\n\n## 主要结果\n\n文章总结的主要进展包括：\n\n1. **共振与耦合道振幅的系统提取已成为现实**：格点 QCD + 散射理论框架能够从第一性原理给出共振态的质量、宽度和道耦合，而不再只是稳定态能级。\n2. **耦合道计算取得显著进展**：多道情形下的振幅提取已应用于实际介子共振（如轻介子谱中的若干激发态），提高了对共振极点的可靠确定。\n3. **三体动力学是当前前沿**：三体有限体积形式与三体共振的处理正在发展，是尚未完全成熟但快速推进的方向。\n4. **介子光耦合的格点确定**：共振态到光子道的跃迁振幅开始被计算，连接了谱学与电磁性质。\n5. 总体判断：这些进展使人们**更接近对激发介子谱的全面第一性原理描述**。\n\n## 为什么值得关注\n\n- 对 **lattice QCD 社区**：它标志着格点计算从“能级谱”走向“散射振幅与共振参数”的范式转变，是方法论上的重要成熟。\n- 对 **QCD/强子物理**：激发介子谱是检验非微扰 QCD 的关键窗口，共振参数（质量、宽度、耦合）直接对接实验（如 BESIII、LHCb、GlueX 等）的强子谱学测量。\n- 对 **理论物理**：耦合道与三体散射的有限体积形式是格点与量子场论散射理论交叉的核心难题，其进展具有普遍方法论意义。\n- 对 **寻找新物理/奇特态**：可靠的共振振幅提取是鉴别奇特强子态（混杂态、多夸克态等）的必要工具。\n\n## 方向标签\n\n- Lattice QCD\n- Hadron spectroscopy\n- Scattering theory / finite-volume formalism\n- Coupled-channel dynamics\n- Three-body dynamics\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：作为综述，它覆盖面广、定位清晰，适合作为进入“格点介子谱学与共振提取”领域的入口文献，对做强子谱、散射形式或对接实验的研究者价值很高。扣一星是因为它是 overview 性质，具体技术细节（如各计算的系统误差、具体数值结果）需追溯其引用的原始论文；若读者只关心单一技术（如三体形式）或单一共振态，则需进一步精读专门文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:02.196280"
+  },
+  {
+    "id": "2610.41864v1",
+    "title": "Generative sampling with physics-informed kernels",
+    "authors": [
+      "Friederike Ihssen",
+      "Renzo Kapust",
+      "Jan M. Pawlowski"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.41864v1",
+    "published": "2026-10-30T15:17:36Z",
+    "abstract": "We construct a generative network for Monte-Carlo sampling in lattice field theories and beyond, for which the layerwise propagation is computed and optimised independently on each layer. The architecture uses physics-informed renormalisation group flows that provide access to the layerwise propagation step from one layer to the next in terms of a simple first order partial differential equation for the respective renormalisation group kernel through a given layer. Thus, it transforms the generative task into that of solving once the set of independent and linear differential equations for the kernels of the transformation. As these equations are analytically known, the kernels can be refined iteratively. This allows us to structurally tackle out-of-domain problems generally encountered in generative models and opens the path to further optimisation. We illustrate the practical feasibility of the architecture within simulations in scalar field theories.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出一种“物理信息核”生成网络，把格点场论中的生成式蒙特卡洛采样转化为逐层求解一组解析已知的线性一阶偏微分方程（RG 核方程），从而在标量场论中实现了可迭代精化、结构上更稳健的采样。\n\n## 研究问题\n格点场论（尤其 QCD）的蒙特卡洛采样在临界点附近、大化学势或拓扑受阻时面临严重自相关和“域外”（out-of-domain）问题。现有生成模型（如 flow-based、GAN、扩散模型）虽能加速采样，但训练目标与物理流（renormalization group flow）脱节，容易在训练分布之外失效，且缺乏可解释、可逐层优化的结构。作者想解决的是：能否构造一个生成网络，使其逐层传播由物理（RG 流）直接决定，从而把生成任务变成求解一组独立、线性、解析已知的微分方程，并借此结构性缓解 out-of-domain 问题。\n\n## 方法\n- **架构**：逐层（layerwise）生成网络，每一层的传播由一个“物理信息 RG 核”（physics-informed renormalisation group kernel）描述。\n- **核心思想**：利用 RG 流，把从一层到下一层的传播步骤写成该层 RG 核的**一阶偏微分方程**（PDE）。由于这些方程解析已知且相互独立、线性，生成任务被转化为“一次性求解这组核方程”，之后可迭代精化核。\n- **算法/数值技术**：逐层独立计算与优化（layerwise propagation computed and optimised independently on each layer）；核方程解析已知，支持迭代 refinement；在**标量场论**模拟中做可行性验证。\n- **与常规生成模型的区别**：不是端到端黑箱训练一个全局变换，而是把变换分解为物理可解释的逐层 RG 核，每层有独立线性方程，结构上更可控。\n\n## 主要结果\n- 成功构造了基于物理信息 RG 核的生成网络，并在标量场论模拟中验证了实际可行性。\n- 逐层传播可由解析已知的线性一阶 PDE 描述，核可迭代精化，从而把生成任务简化为求解一组独立线性方程。\n- 作者声称该结构能“结构性”应对生成模型常见的 out-of-domain 问题，并为后续优化打开路径（摘要中为可行性展示，未给出大规模 QCD 或临界现象定量结果）。\n\n## 为什么值得关注\n- 对 lattice/QCD 社区：提供了一条不同于 flow-based/扩散模型的生成采样路线，把 RG 流这一场论核心结构直接嵌入网络，理论上更可控、更可解释，有望缓解临界点附近采样困难与 out-of-domain 失效。\n- 方法学意义：将生成建模转化为求解解析已知的线性 PDE 组，便于逐层独立优化与迭代精化，可能带来更好的训练稳定性和可扩展性。\n- 潜在影响：若能从标量场推广到规范场/QCD，可能显著加速格点模拟并改善拓扑采样；同时为“物理约束生成模型”提供新范式。\n\n## 方向标签\n- Machine Learning\n- Lattice Field Theory（标量场论验证）\n- Renormalization Group / Flow-based sampling\n- Monte-Carlo sampling\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：想法新颖且物理动机清晰（RG 核 + 逐层线性 PDE），对生成式采样方法学有潜在价值；但当前仅在标量场论做可行性展示，缺少与现有 flow/扩散方法的定量对比、缺少 QCD/规范场与临界现象的实际结果，离 lattice QCD 实用还有距离。适合关注 ML+格点采样方法学的研究者精读方法部分，应用导向读者可先看结论与展望。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:09.720171"
+  },
+  {
+    "id": "2610.41256v1",
+    "title": "Faster-than-power-law decay of order parameter correlations in the two-dimensional RP$^2$ model: a rigorous result by vibe-proving",
+    "authors": [
+      "Masaki Oshikawa"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.41256v1",
+    "published": "2026-10-30T04:57:33Z",
+    "abstract": "We consider the RP$^2$ model on the two-dimensional square lattice with nearest-neighbor interactions. It is obtained by replacing the spin in the standard classical Heisenberg model with a director, which does not distinguish two opposite directions. Unlike the standard classical Heisenberg model or the O(3) nonlinear sigma model, the RP$^2$ (and its cousin RP$^3$) model allows point vortex defects classified by $π_1(RP^2)= Z_2$ in two dimensions. It is tempting to expect the $Z_2$ vortices to induce a phase transition analogous to the well-established Berezinskii-Kosterlitz-Thouless transition in the O(2) model (XY model) in two dimensions. Indeed, the possibilities of a critical phase or a critical point with power-law correlations of the order parameter in the RP$^2$ and RP$^3$ models have been discussed in the literature. However, the challenging nature of the problem has prevented a definitive conclusion on the phase diagram so far. In this paper, we report a rigorous mathematical proof by Artificial Intelligence (ChatGPT 6 Astra) that the absolute value of the two-point correlation function of order parameters at distance $r$ in the RP$^2$ and RP$^3$ models on the two-dimensional square lattice is bounded above by $C_β\\exp{(-c_β[\\log(2+r)]^2)}$ for any finite inverse temperature $β\\ge0$, with positive constants $C_β$ and $c_β$ depending only on $β$. Namely, the correlation function decays faster than any power of $r$. The proof is formalized and verified in Lean; the formalization is publicly available at doi:10.5281/zenodo.23548847 . A heuristic argument based on a one-parameter effective theory ansatz at large distances combined with the rigorous correlation bound suggests (but does not prove) that the $Z_2$ vortices are always unbound at any nonzero temperature.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文声称借助 AI（ChatGPT 6 Astra）并经由 Lean 形式化验证，严格证明了二维方格 RP² 与 RP³ 模型中序参量两点关联函数在任意有限温度下衰减快于任意幂律（上界为 \\(C_\\beta \\exp(-c_\\beta[\\log(2+r)]^2)\\)），从而排除了这些模型中存在幂律关联临界相的可能性。\n\n## 研究问题\n\n作者想解决的问题是：二维 RP²（及 RP³）模型由于 \\(\\pi_1(RP^2)=\\mathbb{Z}_2\\) 存在点涡旋缺陷，人们长期猜测这些 \\(\\mathbb{Z}_2\\) 涡旋可能像 XY 模型中的 BKT 转变那样，诱导出一个具有幂律序参量关联的临界相或临界点。然而该问题长期没有定论。本文试图给出一个严格结论：在任意有限温度下，序参量关联函数衰减快于任何幂律，即不存在幂律关联的临界相/临界点。\n\n## 方法\n\n- **模型**：二维方格上的 RP²（及 RP³）模型，最近邻相互作用，自旋被替换为不分正反方向的 director（即取 \\(\\mathbb{RP}^{N-1}\\) 值）。\n- **方法类型**：解析/严格数学证明，而非数值模拟。文中称证明由 AI（ChatGPT 6 Astra）给出，并在 Lean 证明助手中形式化并验证（公开于 Zenodo）。\n- **辅助论证**：结合大距离下单参数有效理论 ansatz 的启发式论证，推测 \\(\\mathbb{Z}_2\\) 涡旋在任意非零温度下始终解束缚。\n- 未使用 Monte Carlo、张量网络等数值 lattice 技术；本质是严格不等式界（关联函数上界）的证明。\n\n## 主要结果\n\n1. **严格上界**：对任意有限逆温度 \\(\\beta\\ge 0\\)，二维方格 RP² 和 RP³ 模型的序参量两点关联函数绝对值满足\n   \\[\n   |\\langle \\cdots\\rangle| \\le C_\\beta \\exp\\!\\big(-c_\\beta[\\log(2+r)]^2\\big),\n   \\]\n   其中 \\(C_\\beta, c_\\beta>0\\) 仅依赖 \\(\\beta\\)。该衰减快于任意幂律 \\(r^{-p}\\)。\n2. **推论**：排除了 RP²/RP³ 模型在二维中存在幂律关联临界相（或临界点）的可能性——至少在该关联函数意义下。\n3. **启发式推测**：结合有效理论 ansatz，\\(\\mathbb{Z}_2\\) 涡旋在任意 \\(T>0\\) 下可能始终解束缚（作者明确说明这未被证明）。\n4. **形式化验证**：证明在 Lean 中形式化并通过验证，提供可复现的机器检验证明。\n\n## 为什么值得关注\n\n- **概念层面**：澄清了二维 RP^{N-1} 模型相图的一个长期悬而未决的问题，否定了“\\(\\mathbb{Z}_2\\) 涡旋诱导 BKT 类临界相”的朴素期望，对理解拓扑缺陷与二维相变（BKT 机制的可推广性）有直接意义。\n- **方法层面**：这是“AI 辅助 + 形式化验证”产出严格数学物理结果的标志性案例，对理论物理中严格结果的可信度与可复现性讨论有示范价值（也必然引发对 AI 证明可靠性的审视）。\n- **与 lattice/QCD 的联系**：RP^{N-1} 模型与 \\(CP^{N-1}\\) 模型、非线性 sigma 模型密切相关，后者是 QCD 手征对称破缺、\\(\\theta\\) 真空、拓扑缺陷（瞬子、涡旋）等问题的低维玩具模型；二维拓扑缺陷与禁闭/解禁闭的类比也常被借鉴。因此该结果对理解拓扑缺陷在低维规范/自旋模型中的作用有间接参考价值。\n- 需注意：该结果针对的是经典统计模型，不直接是 lattice QCD 计算，社区相关性偏“理论/严格结果”一侧。\n\n## 方向标签\n\n- 统计场论 / 严格结果\n- 拓扑缺陷与相变（BKT 类）\n- 非线性 sigma 模型 / RP^{N-1}\n- AI 辅助数学证明 + 形式化验证（Lean）\n- 二维经典 lattice 模型\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：若你关注二维拓扑缺陷、BKT 机制推广、RP^{N-1}/CP^{N-1} 模型或严格 lattice 结果，这篇值得细读，尤其是证明结构与 Lean 形式化的可信度评估；若你的核心兴趣是数值 lattice QCD、有限温度 QCD 或 BSM 现象学，则相关性较弱，可作为背景/方法论参考快速浏览。另外，鉴于“AI 生成证明”这一非常规来源，建议以审慎态度核对形式化内容与物理论断（尤其是启发式涡旋解束缚的推测部分，作者自己也声明未证明）。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:18.143384"
+  },
+  {
+    "id": "2610.40515v1",
+    "title": "Single-Temperature Ranked Greedy Cluster Exchange for Max-Cut on Two-Dimensional Tori",
+    "authors": [
+      "Hao Geng",
+      "Nan Su",
+      "Gabriele Cavallaro"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.40515v1",
+    "published": "2026-10-29T17:25:54Z",
+    "abstract": "Ground-state search in two-dimensional Ising spin glasses on large toroidal lattices remains challenging for local-update heuristics because rugged energy barriers impede relaxation across metastable states. Equivalent to zero-field toroidal Max-Cut problems, these spin-glass instances also serve as standard benchmarks for optimization heuristics. Many Monte Carlo approaches combine single-spin flips or cluster moves with temperature ladders or annealing schedules, yet even with tuned parameters, rarely achieve rapid, reliable ground-state convergence at scale. Here, we address the need for faster ground-state search through cooperation between replicas. We introduce ranked greedy cluster exchange (RGCX) and combine it with fixed-temperature Metropolis sweeps to form single-temperature RGCX. Replicas are ranked by cut to determine the pair-processing order. Each pair deterministically exchanges every disagreement cluster that raises the better replica's cut, retaining the complement and conserving the pair's summed cut. On the 20,000-spin Gset instance G81, the estimated runtime to reach the certified optimum with 99% success probability (TTS99) was 12.1 s on an 8-core desktop computer. With the same population size, exchange interval and temperature, the method reached the best known cuts on all 17 toroidal Gset graphs, including 9 certified optima. These findings advance ground-state search on large two-dimensional tori by establishing single-temperature RGCX as an efficient population-based method that combines ranked greedy cluster exchange with fixed-temperature Metropolis dynamics.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文提出了一种名为“单温度排序贪心簇交换”（single-temperature RGCX）的副本群体优化方法，通过在固定温度下对副本按割值排序并确定性地交换分歧簇，显著加速了二维环面 Ising 自旋玻璃（等价于零场环面 Max-Cut）的基态搜索，在 20,000 自旋的 G81 实例上以 99% 成功率约 12.1 秒达到认证最优。\n\n## 研究问题\n\n作者想解决的问题是：在大型二维环面晶格上的 Ising 自旋玻璃基态搜索中，局部更新启发式方法因崎岖的能量势垒而难以跨越亚稳态，导致弛豫缓慢。即使结合单自旋翻转/簇移动与温度阶梯或退火调度，调参后也很难在大规模下快速、可靠地收敛到基态。论文旨在通过副本间的协作来加速基态搜索。\n\n## 方法\n\n- **模型**：二维环面 Ising 自旋玻璃，等价于零场环面 Max-Cut 问题；使用 Gset 基准图（17 个环面图）。\n- **算法核心**：提出 ranked greedy cluster exchange（RGCX）——副本按割值排序以确定配对处理顺序；每对副本确定性地交换每一个能提升较优副本割值的“分歧簇”（disagreement cluster），保留补集并守恒该对的割值总和。\n- **组合方式**：RGCX 与固定温度 Metropolis 扫描结合，形成 single-temperature RGCX（单温度 RGCX），即不使用温度阶梯/退火，而是在单一温度下运行副本群体。\n- **数值技术**：群体式（population-based）副本方法；在 8 核桌面计算机上测试；以 TTS99（99% 成功概率所需时间）作为性能指标。\n\n## 主要结果\n\n- 在 20,000 自旋的 Gset 实例 **G81** 上，达到认证最优的 TTS99 约为 **12.1 秒**（8 核桌面机）。\n- 在相同群体大小、交换间隔和温度下，该方法在全部 **17 个环面 Gset 图**上均达到已知最佳割值，其中 **9 个为认证最优**。\n- 表明单温度 RGCX 是一种高效的群体式基态搜索方法，无需温度阶梯即可在大规模二维环面上快速可靠收敛。\n\n## 为什么值得关注\n\n- **对自旋玻璃/组合优化社区**：提供了一种不依赖退火调度、仅靠副本间确定性簇交换即可加速基态搜索的简洁机制，降低了调参负担，并在标准基准上展示了竞争力。\n- **对格点场论方法学**：RGCX 的“分歧簇交换 + 割值守恒”思想与格点场论中的副本交换、簇算法（如 Swendsen-Wang、Wolff）以及并行回火有概念上的联系，可能启发针对崎岖能量景观的格点采样算法设计。\n- **对理论物理**：二维环面 Ising 自旋玻璃是研究阻挫与无序的经典模型，更快的基态搜索有助于大规模数值研究基态性质、缺陷与临界行为。\n- **需注意**：该工作本身并非格点 QCD 计算，与 QCD 的直接关联较弱；其价值主要在于算法方法学与统计物理模型层面。\n\n## 方向标签\n\n- Machine Learning（启发式优化/群体方法，边缘相关）\n- Finite temperature（固定温度 Metropolis 动力学）\n- 其他建议：Spin glass / Combinatorial optimization / Monte Carlo algorithms（非列表内但更贴切）\n\n## 阅读优先级\n\n**★★☆☆☆（2/5）**\n\n理由：若你的研究聚焦格点 QCD、张量网络或量子模拟，该论文与核心课题关联较弱，属于方法学外围参考。但若你关注蒙特卡洛采样算法、副本交换/簇算法、自旋玻璃或组合优化基准，则值得一读——其“排序贪心簇交换”机制简洁且结果扎实（17/17 达最佳、9 个认证最优、G81 上 12.1 秒 TTS99），对设计崎岖能量景观下的采样策略有借鉴意义。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:25.630240"
+  },
+  {
+    "id": "2610.40220v2",
+    "title": "Complex potential and the thermal width of quarkonium in quark-gluon plasma",
+    "authors": [
+      "Rasmus Normann Larsen",
+      "Peter Petreczky",
+      "Jorge Luis Dasilva Golan",
+      "Johannes H. Weber"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.40220v2",
+    "published": "2026-10-29T15:02:37Z",
+    "abstract": "We study the complex heavy quark anti-quark potential in lattice 2+1 flavor QCD at non-zero temperature. We point out a close relation between the imaginary part of the potential and the thermal quarkonium width. Using this relation, we estimate the thermal width of charmonia and bottomonia at high temperatures, which are not yet accessible with direct lattice QCD calculations of the quarkonium correlation functions and compare these to the results of the T-matrix analysis. For some of the excited quarkonia states, our estimates of the thermal width are smaller than the ones obtained in the T-matrix analysis.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文利用格点 2+1 味 QCD 计算的重夸克偶素复势虚部，结合其与热宽度的关系，估算了高温度下粲偶素和底偶素的热宽度，发现部分激发态的热宽度小于 T-matrix 分析结果。\n\n## 研究问题\n作者想解决的核心问题是：在高温夸克-胶子等离子体（QGP）中，重夸克偶素（quarkonium）的热宽度如何确定。直接通过格点 QCD 计算夸克偶素关联函数在高温下尚不可行，因此需要借助复势的虚部与热宽度之间的关联来间接估算粲偶素和底偶素的热宽度，并与 T-matrix 分析结果进行比较。\n\n## 方法\n- 使用格点 2+1 味 QCD 在非零温度下计算重夸克-反夸克复势。\n- 利用复势虚部与夸克偶素热宽度之间的密切关系（即 Im[V] 与热宽度 Γ 的对应关系）来估算热宽度。\n- 将估算结果与 T-matrix 分析的结果进行对比。\n- 涉及的数值技术包括格点 QCD 规范场构型生成、复势的提取（可能通过 Wilson 圈或相关量），以及热宽度的间接推导。\n\n## 主要结果\n- 指出了复势虚部与热夸克偶素宽度之间的密切关系，并据此估算了高温下粲偶素和底偶素的热宽度。\n- 对于部分激发态夸克偶素，其热宽度估算值小于 T-matrix 分析给出的结果。\n- 这些估算覆盖了目前直接格点 QCD 计算夸克偶素关联函数尚无法达到的高温区域。\n\n## 为什么值得关注\n- 为高温 QGP 中夸克偶素的动力学性质（特别是热宽度）提供了一种不依赖直接关联函数计算的间接格点方法。\n- 复势虚部与热宽度关系的建立，为连接格点 QCD 可计算量与实验可观测的夸克偶素 suppression 提供了理论桥梁。\n- 与 T-matrix 分析结果的差异（尤其是激发态）提示不同理论框架对热宽度的描述存在系统不确定性，值得进一步检验。\n- 对理解重味夸克在 QGP 中的输运和束缚态 melting 有重要意义，与相对论重离子碰撞实验（如 RHIC、LHC）中夸克偶素产额的解释直接相关。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Quark-gluon plasma\n- Heavy quarkonium\n- Complex potential\n\n## 阅读优先级\n★★★★☆（4 星）\n\n理由：该论文直接处理格点 QCD 在有限温度下的重要前沿问题——夸克偶素热宽度，方法上利用复势虚部这一相对新颖且可操作的途径，结果与 T-matrix 分析的比较具有理论检验价值。对于研究 QGP 中重味物理、夸克偶素 suppression 以及格点有限温度场论的读者具有较高参考价值。扣一星是因为其结论依赖于复势虚部与热宽度关系的近似程度，且部分结果与已有分析存在差异，需要结合后续更精确的格点计算来确认。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:31.446403"
+  },
+  {
+    "id": "2610.39215v2",
+    "title": "Nucleon Wave Functions from QCD Vacuum Topology",
+    "authors": [
+      "Wei-Yang Liu",
+      "Ismail Zahed"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.39215v2",
+    "published": "2026-10-29T02:36:55Z",
+    "abstract": "Instantons, as topologically nontrivial gauge field configurations, provide a microscopic mechanism for chiral symmetry breaking and the $U_A(1)$ anomaly in QCD. Within the instanton liquid model (ILM), instantons generate multi-fermion interactions governed by their density and size. Using this framework, we develop a microscopic description of the nucleon based on instanton-induced quark--quark correlations. We derive the diquark interaction kernels arising from single instantons and instanton--anti-instanton molecules, revealing a strong attraction in the scalar channel and weaker correlations in the spin-one channels. Embedding these interactions in a covariant, permutation-symmetric Bethe--Salpeter--Faddeev equation yields a nucleon mass $m_N=939.53~{\\rm MeV}$, with a predominantly scalar-diquark component ($98\\%$) and a small axial-vector admixture ($2\\%$) around the mass pole. Despite its small weight, the small admixture generates substantial spin--isospin interference, yielding an axial charge $g_A=1.265$, close to experiment. The resulting covariant amplitude is analytically continued to the light front to obtain the leading three-quark wave function. The corresponding unpolarized, helicity, and transversity parton distributions, along with their QCD-evolved moments, provide a direct connection to lattice QCD calculations and global-fit analyses. Our results show that the topology of the QCD vacuum organizes not only the nucleon mass and spin structure, but also its leading valence partonic content, providing a microscopic foundation for a more complete description including confinement and higher Fock components.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在瞬子液体模型框架下，从QCD真空拓扑导出核子内部的夸克-夸克相互作用核，求解协变Bethe–Salpeter–Faddeev方程，得到核子质量、轴荷及领头三夸克光锥波函数，并计算可与格点QCD和全局拟合直接比较的部分子分布。\n\n## 研究问题\n作者试图回答：QCD真空的拓扑结构（瞬子与瞬子-反瞬子分子）能否在微观层面同时组织核子的质量、自旋结构（轴荷）以及领头价夸克的部分子内容？具体而言，能否从单瞬子和瞬子-反瞬子分子诱导的双夸克相互作用出发，构建一个协变、置换对称的核子束缚态描述，并将其与格点QCD计算结果和实验全局拟合对接？\n\n## 方法\n- **模型框架**：瞬子液体模型（Instanton Liquid Model, ILM），以瞬子密度和尺寸为输入参数。\n- **相互作用核**：从单瞬子和瞬子-反瞬子分子出发，推导瞬子诱导的夸克-夸克（双夸克）相互作用核，区分标量道与自旋一道。\n- **束缚态方程**：将相互作用嵌入协变、置换对称的Bethe–Salpeter–Faddeev方程，求解三夸克束缚态振幅。\n- **解析延拓**：将得到的协变振幅解析延拓到光锥，提取领头三夸克波函数。\n- **部分子分布**：由光锥波函数计算非极化、螺旋度和横向度部分子分布及其QCD演化矩。\n- **对比对象**：格点QCD计算与全局拟合分析（未直接使用格点规范场模拟，属于模型计算与格点结果的比较）。\n\n## 主要结果\n- 核子质量 $m_N = 939.53~\\mathrm{MeV}$，与实验值高度接近。\n- 质量极点附近核子波函数以标量双夸克成分为主（约98%），轴矢双夸克混合约2%。\n- 尽管轴矢混合权重很小，却产生显著的spin–isospin干涉，给出轴荷 $g_A = 1.265$，接近实验值。\n- 由光锥波函数得到非极化、螺旋度和横向度部分子分布及其QCD演化矩，可与格点QCD和全局拟合直接比较。\n- 结论：QCD真空拓扑不仅组织核子质量和自旋结构，也组织其领头价部分子内容。\n\n## 为什么值得关注\n- 提供了一个从QCD真空拓扑（瞬子）出发的微观核子图像，把质量、自旋和部分子结构放在同一框架下统一描述。\n- 给出的部分子分布及演化矩可直接与格点QCD和实验全局拟合对比，为模型与第一性原理计算之间搭建桥梁。\n- 小轴矢混合导致大 $g_A$ 修正的结果，对理解核子自旋危机的微观起源有启发。\n- 为后续纳入禁闭效应和更高Fock组分（如介子云、海夸克）提供可扩展的微观基础。\n\n## 方向标签\n- Lattice QCD（作为对比基准）\n- QCD Phenomenology\n- Nucleon Structure\n- Instanton / Topology\n- Parton Distribution Functions\n- Bethe–Salpeter–Faddeev\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文将真空拓扑、束缚态方程与部分子分布串联起来，结果与格点QCD和实验均有直接对接点，对核子结构研究有较高参考价值；但方法基于ILM模型而非第一性原理格点计算，且尚未包含禁闭与高Fock组分，因此对纯格点方法学读者的直接技术价值略低于对QCD唯象与核子结构研究者。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:38.771895"
+  },
+  {
+    "id": "2610.29861v2",
+    "title": "Progress on meson-glueball mixing in lattice gauge theories coupled to fermions in multiple representations",
+    "authors": [
+      "Nuno Brito",
+      "Ed Bennett",
+      "Deog Ki Hong",
+      "Jong-Wan Lee",
+      "C. -J. David Lin",
+      "Biagio Lucini",
+      "Maurizio Piai",
+      "Davide Vadacchino",
+      "Fabian Zierler"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.29861v2",
+    "published": "2026-10-21T15:18:43Z",
+    "abstract": "We present preliminary results from our numerical lattice investigation of the low-lying flavour-singlet bound states in the ${\\rm Sp}(4)$ gauge theory coupled to fermions transforming in the fundamental and two-index antisymmetric representations. We use the Wilson gauge action and Wilson fermions. We employ the generalized eigenvalue problem (GEVP) method with a basis of smeared glueball and meson interpolating operators. We analyse two high-statistics ensembles with the same lattice coupling and different fermion mass. We study both the scalar and pseudoscalar states. We observe the first evidence for meson-glueball mixing in this theory. We improve upon previous determinations of the energy eigenstates and mixing angles in the flavour-singlet pseudoscalar sector.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在 Sp(4) 规范理论（基本表示 + 两指标反对称表示费米子）中，首次给出了介子-胶球混合的格点证据，并改进了味单态赝标量扇区的能级与本征态混合角测定。\n\n## 研究问题\n作者研究的是：当一个规范理论同时包含胶子束缚态（胶球）和费米子束缚态（介子）且它们具有相同的量子数（味单态标量与赝标量）时，这些态会不会发生混合、混合程度多大。具体目标是：\n1. 在 Sp(4) 与多表示费米子的理论中寻找低 lying 味单态束缚态；\n2. 检验介子与胶球之间是否存在可观测的混合；\n3. 改进此前对味单态赝标量扇区能级和混合角的确定。\n\n## 方法\n- **模型**：Sp(4) 规范理论，费米子分别处于基本表示和两指标反对称表示（这是复合 Higgs / 部分复合暗物质等 BSM 模型常考虑的框架）。\n- **格点作用量**：Wilson 规范作用量 + Wilson 费米子。\n- **算符基**：使用 smeared（涂抹）的胶球算符与介子算符构成关联矩阵。\n- **算法**：广义本征值问题（GEVP），从关联矩阵中提取能级与本征态混合。\n- **系综**：两个高统计量系综，相同格点耦合、不同费米子质量。\n- **分析对象**：标量扇区与赝标量扇区。\n\n## 主要结果\n1. 在该理论中**首次观察到介子-胶球混合的证据**（作者称 first evidence）。\n2. 对味单态**赝标量扇区**，给出了改进的能级本征态与混合角测定（相对此前结果）。\n3. 通过两个不同费米子质量的系综，考察了混合随质量的变化趋势（初步结果）。\n4. 标量扇区也做了分析，但摘要中强调的主要改进集中在赝标量扇区。\n\n## 为什么值得关注\n- **物理层面**：胶球与介子量子数相同必然混合，但格点上定量给出混合角非常困难；该工作提供了多表示费米子理论中的直接证据，对理解味单态谱的物理组成（胶子成分 vs 费米子成分）很关键。\n- **BSM 层面**：Sp(4) + 多表示费米子是复合 Higgs、部分复合暗物质等模型的典型实现；介子-胶球混合会直接影响这些模型的质量谱预言与现象学（如暗物质候选态、Higgs 类标量）。\n- **方法层面**：GEVP + 涂抹胶球/介子算符基是处理混合态的标准工具，该工作展示了其在多表示理论中的可行性，为后续更大规模计算铺路。\n- **社区意义**：味单态谱与混合是 lattice 社区长期关注的难点（QCD 中 η′、标量胶球等），该研究把这一套方法推广到 BSM 规范理论。\n\n## 方向标签\n- Lattice QCD / Lattice Gauge Theory\n- BSM（复合 Higgs、暗物质）\n- Spectroscopy（胶球、介子、混合）\n- Sp(4) gauge theory\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是初步结果（preliminary），统计与系统误差尚未完全展开，但“首次观察到介子-胶球混合”在该理论中具有明确的新颖性，且方法成熟、结论对 BSM 谱学有直接参考价值。若你关注复合 Higgs/暗物质或味单态混合，值得优先精读；若只关心 QCD 本身，可作方法参考略读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-02T06:36:45.888409"
   }
 ]
