@@ -7116,5 +7116,218 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-02T06:36:45.888409"
+  },
+  {
+    "id": "2611.03530v1",
+    "title": "Generalizable Equivariant Diffusion Models for Non-Abelian Lattice Gauge Theory: Analytical Foundations and Numerical Scaling Tests",
+    "authors": [
+      "Gert Aarts",
+      "Diaa E. Habibi",
+      "Andreas Ipp",
+      "David I. Müller",
+      "Thomas R. Ranner",
+      "Lingxiao Wang",
+      "Wei Wang",
+      "Qianteng Zhu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.03530v1",
+    "published": "2026-11-02T17:59:17Z",
+    "abstract": "Gauge-equivariant diffusion models can be used to generate ensembles of field configurations in non-abelian lattice gauge theories. Previously, we demonstrated the feasibility of modeling these theories by combining L-CNN-based diffusion models with the Metropolis-adjusted annealed Langevin algorithm (MAALA). Here we focus on the underlying analytical framework. In particular, we present a rigorous derivation of the reverse-time stochastic differential equation on the group manifold, discuss the gauge invariance of the denoising loss function, and provide extensive numerical benchmarks regarding the scaling behavior with respect to the lattice volume and the inverse coupling $β$. Full analytical expressions for arbitrarily sized Wilson loops and the topological charge susceptibility during the forward process are given as well.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文为非阿贝尔格点规范场论上的规范等变扩散模型建立了严格的分析基础（群流形上的逆向 SDE 推导、去噪损失的规范不变性证明），并系统给出了生成质量随格点体积和耦合 β 的标度行为数值基准。\n\n## 研究问题\n\n作者想解决的核心问题是：将扩散生成模型用于非阿贝尔格点规范场（如 SU(N) 杨-米尔斯）时，其**理论基础是否严格**、其**可扩展性是否可靠**。具体包括三方面：\n\n1. 如何在群流形（而非欧氏空间）上严格定义前向/逆向随机微分方程，并保证采样正确性；\n2. 去噪损失函数是否真正规范不变（这是等变模型正确性的关键前提）；\n3. 模型性能（生成质量、采样效率）如何随格点体积 V 和逆耦合 β 标度——这决定了方法能否推广到接近连续极限的大体积模拟。\n\n## 方法\n\n- **模型框架**：基于 L-CNN（Lattice Gauge Convolutional Neural Network）的规范等变扩散模型，作用于群流形上的规范链接变量。\n- **采样算法**：Metropolis-adjusted annealed Langevin algorithm（MAALA），在退火朗之万动力学中引入 Metropolis 校正以保证渐近正确性。\n- **分析工具**：\n  - 在群流形上严格推导逆向时间 SDE（涉及群上的布朗运动、热核与得分函数）；\n  - 证明去噪损失函数的规范不变性；\n  - 解析给出前向过程中任意大小 Wilson 环与拓扑荷磁化率的期望表达式。\n- **数值基准**：在不同格点体积和 β 值下测试生成质量与标度行为（scaling tests）。\n\n## 主要结果\n\n1. **严格推导了群流形上的逆向时间 SDE**，为在非阿贝尔群上正确运行扩散采样提供了数学基础，而非仅凭欧氏空间类比。\n2. **证明了去噪损失的规范不变性**，说明等变网络结构与该损失在规范变换下自洽，训练目标本身不破坏规范对称性。\n3. **给出了前向过程 Wilson 环与拓扑荷磁化率的解析表达式**（任意尺寸），可用于监控/校准扩散过程。\n4. **数值标度测试**表明生成质量随格点体积和 β 的变化行为，为方法向更大体积、更接近连续极限的外推提供了经验依据（具体标度指数与退化趋势需看正文数据）。\n\n## 为什么值得关注\n\n- 格点 QCD 的构型生成（尤其接近连续极限时）计算代价极高，扩散模型是替代/加速 HMC 的有前景路线；但此前工作多偏工程可行性，**缺乏群流形上的严格数学基础**。本文补上了这一环。\n- 规范不变性的严格论证直接关系到生成系综的物理正确性——若损失或采样破坏规范对称性，生成构型将偏离目标测度。\n- 体积与 β 的标度测试是判断该方法能否真正用于**大体积、细格距**物理计算的关键门槛，对 lattice/QCD 社区评估 ML 生成方法的实用价值有直接参考意义。\n- 解析的 Wilson 环/拓扑荷表达式也为诊断生成质量提供了物理可解释的观测量。\n\n## 方向标签\n\n- Machine Learning\n- Lattice QCD\n- Lattice gauge theory（非阿贝尔规范场）\n- Generative models / Diffusion models\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：对关注\"ML 用于格点规范场生成\"的研究者，这是**必读的方法论基础文献**——它把此前偏经验的扩散+MAALA 方案提升到有严格 SDE 推导和规范不变性证明的层次，并给出标度行为这一实用判据。扣一星是因为它侧重分析基础与标度测试，而非直接产出物理结果（如谱学量或热力学量）；若你的兴趣在具体 QCD 物理预言而非生成方法本身，优先级可降至 3 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:06:53.639671"
+  },
+  {
+    "id": "2611.02426v1",
+    "title": "2+1 flavor light hadron spectrum with PACS10 configurations",
+    "authors": [
+      "K. -I. Ishikawa",
+      "N. Ishizuka",
+      "Y. Kuramashi",
+      "Y. Nakamura",
+      "Y. Namekawa",
+      "K. Satoh",
+      "E. Shintani",
+      "Y. Taniguchi",
+      "N. Ukita",
+      "H. Watanabe",
+      "T. Yamazaki",
+      "T. Yoshié"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.02426v1",
+    "published": "2026-11-02T02:51:11Z",
+    "abstract": "We present the results for the hadron spectrum, the pseudoscalar meson decay constants, and the quark mass ratio in the continuum limit using the ``PACS10'' gauge configurations generated with the $O(a)$-improved Wilson quark action and the Iwasaki gauge action. Numerical simulations are carried out at three lattice spacings keeping the space-time volumes over (10 fm$)^4$ in 2+1 flavor QCD at the physical point. We calculate physical quantities with two choices of conventions to define pseudoexperimental values expected in the isosymmetric QCD. In order to investigate the finite size effects on the physical quantities we have additionally generated the (5.4 fm$)^4$ lattice at the coarsest lattice spacing of $a=0.08487(14)$~fm, which is a hypercube with half the length in each direction compared to the PACS10 configurations. While the finite size effect is hardly observed in comparison of the hadron effective masses on the (10.9 fm$)^4$ and (5.4 fm$)^4$ lattices, the results for the pseudoscalar meson decay constants show discrepancies beyond the error bars. The (5.4 fm$)^4$ lattice also serves for determining the expansion parameters of the pseudoscalar meson masses and decay constants, and the octet baryon masses in terms of the quark masses around the physical point with the aid of the mass reweighting technique. The expansion parameters are used for the fine-tuning of the physical point employing the pseudoexperimental masses of the $π$ meson, $K$ meson, and the $Ξ$ baryon as physical inputs in each convention. We compare the results for the octet baryon masses and the pseudoscalar decay constants in the continuum limit with the corresponding pseudoexperimental values in both conventions. We also discuss the deviation between two results with different conventions. As for the quark mass ratio the result is compared with the recent FLAG summary.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文利用三套保持物理体积超过 (10 fm)⁴ 的 PACS10 格点组态，在 2+1 味 QCD 物理点附近完成了强子谱、赝标介子衰变常数和夸克质量比的连续极限计算，并系统检验了有限体积效应与“等对称 QCD”约定选择对结果的影响。\n\n## 研究问题\n\n作者想解决的核心问题是：在 2+1 味 QCD 中，以物理点附近的格点模拟为基础，能否得到可靠的连续极限强子谱、赝标介子衰变常数和夸克质量比，并定量评估两类系统误差——有限体积效应，以及将格点 QCD 结果映射到“伪实验值”时所采用的约定（convention）差异。具体而言：\n\n1. 有限体积效应在 (10.9 fm)⁴ 与 (5.4 fm)⁴ 两种体积下对强子有效质量和衰变常数的影响有多大；\n2. 用 π、K 介子和 Ξ 重子的伪实验质量作为物理输入进行精细调节时，不同约定是否给出自洽的连续极限结果；\n3. 夸克质量比与 FLAG 最新总结的对比情况。\n\n## 方法\n\n- **格点作用量**：O(a) 改进的 Wilson 夸克作用量 + Iwasaki 规范作用量，2+1 味 QCD，物理点附近。\n- **组态**：PACS10 组态，三个格点间距，保持时空体积超过 (10 fm)⁴；另在最粗格点 a = 0.08487(14) fm 处额外生成 (5.4 fm)⁴ 的“半尺寸”超立方体组态，用于有限体积效应研究。\n- **有限体积检验**：比较 (10.9 fm)⁴ 与 (5.4 fm)⁴ 上的强子有效质量与赝标介子衰变常数。\n- **质量重加权（mass reweighting）技术**：利用 (5.4 fm)⁴ 组态确定赝标介子质量/衰变常数及八重态重子质量在物理点附近对夸克质量的展开参数。\n- **物理点精细调节**：以 π 介子、K 介子和 Ξ 重子的伪实验质量作为物理输入，在两种约定下分别调节。\n- **连续极限外推**：对强子谱、衰变常数和夸克质量比做连续极限，并与伪实验值及 FLAG 结果比较。\n\n## 主要结果\n\n1. **有限体积效应**：在 (10.9 fm)⁴ 与 (5.4 fm)⁴ 上比较强子有效质量时几乎观察不到有限体积效应；但赝标介子衰变常数的结果出现超出误差棒的差异，说明衰变常数对体积更敏感。\n2. **(5.4 fm)⁴ 组态的额外用途**：结合质量重加权技术，确定了赝标介子质量、衰变常数和八重态重子质量在物理点附近按夸克质量展开的参数，并用于物理点的精细调节。\n3. **连续极限结果**：给出了八重态重子质量和赝标介子衰变常数的连续极限值，并与两种约定下的伪实验值进行比较；论文还讨论了两种约定之间结果的偏离。\n4. **夸克质量比**：连续极限下的夸克质量比与近期 FLAG 总结进行了对比。\n\n## 为什么值得关注\n\n- **大体积、物理点的系统计算**：保持 (10 fm)⁴ 以上体积在三个格点间距上做连续极限，是控制有限体积误差的重要一步，对精确检验 QCD 非微扰性质有直接价值。\n- **有限体积效应的定量证据**：有效质量几乎不受体积影响、而衰变常数出现显著差异，这一对比为社区评估衰变常数系统误差提供了具体案例。\n- **约定问题的显式讨论**：格点 QCD 与“等对称 QCD 伪实验值”之间的映射约定会影响物理点调节和最终比较，论文对此做了系统对比，有助于统一不同合作组之间的结果比较。\n- **夸克质量比与 FLAG 对比**：直接关系到轻夸克质量谱的精确测定，对味物理、手征微扰论和标准模型检验都有参考意义。\n\n## 方向标签\n\n- Lattice QCD\n- Hadron spectrum\n- Quark masses\n- Finite volume effects\n- Continuum limit\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：这是一篇方法扎实、系统误差分析细致的格点 QCD 计算论文，对大体积连续极限、有限体积效应和约定依赖性问题都有直接讨论，对从事格点强子谱、衰变常数和夸克质量计算的读者有较高参考价值。扣一星是因为其主题属于格点 QCD 的“精密计算与系统误差控制”方向，而非提出全新算法或新物理框架；若读者关注的是算法创新或 BSM 现象学，优先级可适当降低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:01.425043"
+  },
+  {
+    "id": "2611.02367v1",
+    "title": "Full edge control of bulk energy gap in armchair graphene nanoribbons",
+    "authors": [
+      "Lin Wang",
+      "Thomas Luu",
+      "Ulf-G. Meißner"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.02367v1",
+    "published": "2026-11-02T01:30:19Z",
+    "abstract": "In solid-state physics, the ability to open and tune an electronic energy gap provides a direct route to controlling charge transport and accessing distinct electronic phases. In solids with physical boundaries, a bulk energy gap formed exclusively by extended bulk states is conventionally expected to be governed primarily by the interior bulk region, with only a minor contribution from the boundaries. Here we show that, in stark contrast to this conventional expectation, the bulk gap of armchair graphene nanoribbons in the $N_w=3p+2$ family with $p\\in\\mathbb{Z}\\ge 0$ can be fully controlled through the hoppings solely at the boundaries. This full boundary control originates from an exact cancellation between the gap contributions of long-range hoppings along and across the ribbon in the bulk region. It persists in the presence of Hubbard interactions and holds irrespective of ribbon width in this family. Our findings establish boundary dynamics as an unexpectedly powerful means of manipulating bulk electronic properties, enabling width-preserving engineering of one-dimensional (1D) band structures and topological phases, with potential applications in qubits, artificial quantum spin chains, topological quantum dots and other quantum devices.",
+    "summary": {
+      "raw": "## 一句话结论\n\n在扶手椅型石墨烯纳米带（AGNR）的 \\(N_w=3p+2\\) 家族中，体能隙可以被**仅位于边界的跃迁参数完全控制**——体区长程跃迁对能隙的贡献在体内精确抵消，这一效应在 Hubbard 相互作用下依然成立且与带宽无关。\n\n## 研究问题\n\n传统固体物理认为，由扩展体态形成的体能隙主要由内部体区决定，边界只有微小贡献。作者要问的是：**是否存在一类体系，其体能隙可以被边界自由度完全操控？** 具体到 AGNR，作者想解决：(1) 能否仅通过调节边界跃迁来打开/调节体能隙；(2) 这种边界控制的微观机制是什么；(3) 在电子相互作用（Hubbard）存在时是否稳健；(4) 是否与纳米带宽度无关。\n\n## 方法\n\n- **模型**：紧束缚（tight-binding）蜂窝晶格模型，针对扶手椅型石墨烯纳米带，包含体区与边界的长程跃迁项；进一步加入 Hubbard 相互作用（ onsite \\(U\\)）做平均场或精确对角化/数值处理。\n- **解析手段**：利用 AGNR 的准一维能带结构，对 \\(N_w=3p+2\\) 家族的能隙做解析推导，证明体区长程跃迁（沿带方向与横跨带方向）对能隙的贡献精确相消。\n- **数值手段**：对有限宽纳米带做能带计算（对角化 Bloch 哈密顿量），扫描边界跃迁参数，验证能隙随边界参数的完整可调性；在 Hubbard 相互作用下做数值验证（可能为平均场自洽或小尺寸精确对角化）。\n- **家族分类**：按宽度模 3 分类（\\(N_w=3p,3p+1,3p+2\\)），聚焦 \\(3p+2\\) 家族。\n\n## 主要结果\n\n1. **体能隙的完全边界控制**：在 \\(N_w=3p+2\\) 家族中，仅调节边界跃迁即可将体能隙从零调到任意值，体区跃迁不改变能隙。\n2. **精确相消机制**：体区内沿带方向与横跨带方向的长程跃迁对能隙的贡献符号相反、大小相等，精确抵消——这是该效应的微观根源。\n3. **对 Hubbard 相互作用稳健**：加入 onsite 排斥 \\(U\\) 后，边界控制性质依然保持。\n4. **与宽度无关**：该性质对整个 \\(3p+2\\) 家族成立，不随纳米带宽度改变，因此可实现“保宽度”的能带工程。\n5. **应用前景**：可用于一维能带结构与拓扑相的宽度保持型调控，潜在应用于量子比特、人工量子自旋链、拓扑量子点等。\n\n## 为什么值得关注\n\n- **对凝聚态与格点社区的概念冲击**：挑战了“体能隙由体区决定”的常规直觉，展示了边界动力学对体电子性质的强大操控力，这对理解拓扑边界态、体-边对应关系有直接启发。\n- **格点模型层面的精确结果**：精确相消是一种可严格证明的格点代数性质，类似格点场论中对称性导致的精确抵消（如手征对称性保护），对构造可调控的格点哈密顿量有方法论价值。\n- **相互作用稳健性**：在 Hubbard 相互作用下仍成立，说明这不是自由费米子的偶然简并，而具有强关联稳健性，对量子模拟（冷原子/光晶格实现 AGNR）有直接指导意义。\n- **拓扑与量子器件**：保宽度的能隙调控为设计拓扑量子点、人工自旋链和量子比特提供了新自由度——用边界而非体区做“旋钮”。\n- **与 lattice QCD 的类比价值有限但存在**：精确相消、边界条件对体性质的影响（类似有限体积效应、边界条件选择）在格点场论中也是核心议题，但本文体系与 QCD 的直接关联较弱，更多属于凝聚态格点模型范畴。\n\n## 方向标签\n\n- Tensor network（准一维体系可用 DMRG/MPS 研究）\n- Quantum simulation（冷原子/光晶格实现 AGNR）\n- 强关联电子 / Hubbard 模型\n- 拓扑相与边界态\n- 低维格点模型\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：论文的物理结论清晰且反直觉（边界完全控制体能隙 + 精确相消机制），方法以紧束缚解析加数值验证为主，技术门槛不高，对凝聚态格点和量子模拟社区有较好参考价值。但它与 lattice QCD/BSM 的核心问题距离较远，方法上也没有引入新的格点算法或数值技术，因此对以 QCD 为主业的读者优先级中等；对做低维强关联、拓扑物态或冷原子量子模拟的研究者则值得一读（可给 4 星）。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:10.607238"
+  },
+  {
+    "id": "2611.01824v1",
+    "title": "A General Manifestly Covariant Construction of Partial-Wave Amplitudes in the Rarita-Schwinger Formalism",
+    "authors": [
+      "Hao-Jie Jing",
+      "Shu-Ming Wu",
+      "Jia-Jun Wu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.01824v1",
+    "published": "2026-11-01T11:42:57Z",
+    "abstract": "We propose a new set of functions, named Relative Spin Wave Functions (RSWFs), defined via covariant pure boosts to a common rest frame. RSWFs separate spin transport from orbital-spin coupling while preserving the conventional partial-wave angular structure in a manifestly covariant form. Within the Rarita-Schwinger formalism, this approach generates explicit, covariant on-shell partial-wave amplitudes for two-body decays of massive particles of arbitrary spin, with definite orbital angular momentum and total final-state spin. This general framework provides a foundational Lorentz basis for hadronic reaction studies and $LS$-organized operators in theoretical investigations, such as Lattice QCD and QCD sum rules.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文提出了一套基于协变纯助推（covariant pure boosts）定义的“相对自旋波函数”（RSWFs），在 Rarita-Schwinger 形式下为任意自旋大质量粒子的两体衰变构造了显式协变、壳上的分波振幅，将自旋输运与轨道-自旋耦合分离，同时保持传统分波的角结构。\n\n## 研究问题\n作者想解决的问题是：如何在**显式协变（manifestly covariant）**的形式下，为任意自旋粒子的两体衰变构造具有确定轨道角动量 $L$ 和末态总自旋 $S$ 的分波振幅。传统分波分析通常在特定参考系（如螺旋度形式或非相对论 $LS$ 耦合）中进行，协变性不明显；而 Rarita-Schwinger 形式处理高自旋时，自旋与轨道的耦合和自旋输运混在一起，缺乏一个干净的、协变的 $LS$ 分离框架。作者希望填补这一空白，为强子反应和格点 QCD 中的 $LS$ 组织算符提供严格的洛伦兹基础。\n\n## 方法\n这是一篇**形式理论/构造性**论文，而非格点数值计算。核心方法包括：\n- 定义一组新的函数 RSWFs：通过协变纯助推将所有相关动量变换到共同静止系，从而把自旋输运（boost 带来的自旋旋转）与轨道-自旋耦合分离开。\n- 在 **Rarita-Schwinger 形式**下处理任意自旋的大质量粒子，构造壳上（on-shell）的两体衰变分波振幅。\n- 保持传统分波的角结构（球谐/维格纳 D 函数结构），但以显式协变的方式写出。\n- 输出为具有确定 $L$ 和末态总自旋 $S$ 的协变振幅表达式。\n\n没有使用格点模拟、机器学习或张量网络等数值技术；其“lattice”相关性体现在为格点 QCD 中 $LS$ 耦合算符的构造提供理论基础。\n\n## 主要结果\n- 提出并定义了 **Relative Spin Wave Functions (RSWFs)**，这是一组通过协变纯助推到共同静止系而定义的函数。\n- 证明了 RSWFs 能够**将自旋输运与轨道-自旋耦合分离**，同时保持传统分波的角结构且显式协变。\n- 在 Rarita-Schwinger 形式下，给出了**任意自旋大质量粒子两体衰变的显式协变壳上分波振幅**，每个振幅带有确定的轨道角动量 $L$ 和末态总自旋 $S$。\n- 该框架为强子反应研究以及格点 QCD、QCD 求和规则中的 $LS$ 组织算符提供了一个**基础的洛伦兹基**。\n\n## 为什么值得关注\n- 对**格点 QCD 强子谱学**：格点计算中提取多强子态（如 $\\pi\\pi$、$N\\pi$、高自旋共振态）的散射振幅和共振参数时，需要把算符按 $J^{PC}$ 和 $LS$ 组织。该工作提供了显式协变、任意自旋通用的 $LS$ 分波基，有助于系统化地构造算符和匹配有限体积谱。\n- 对**强子物理/分波分析**：为高自旋共振态（如高自旋重子、张量介子）的两体衰变提供了协变、干净的分波振幅，避免参考系依赖的歧义。\n- 对**QCD 求和规则与有效场论**：$LS$ 组织算符的协变基础可直接用于关联函数和跃迁矩阵元的系统展开。\n- 概念上，RSWF 把“自旋输运”这一常被隐式处理的效应显式化，对理解相对论性自旋动力学有普遍意义。\n\n## 方向标签\n- Lattice QCD（强子谱学/算符构造，间接相关）\n- Hadronic Physics / Partial-Wave Analysis\n- High-Spin Hadron Spectroscopy\n- QCD Sum Rules\n- Formal Field Theory（Rarita-Schwinger formalism）\n\n## 阅读优先级\n★★★☆☆（3/5）\n\n理由：这是一篇扎实的形式理论构造论文，概念清晰且对格点 QCD 中高自旋多强子算符的 $LS$ 组织有潜在实用价值，但它**不包含格点数值结果、算法或可直接落地的计算方案**，与典型格点研究的直接关联是间接的（提供理论基础）。对于从事高自旋强子谱、多强子散射振幅提取或分波分析的研究者，值得细读；对于一般格点 QCD 数值工作者，可作为方法学参考按需查阅。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:19.074366"
+  },
+  {
+    "id": "2611.01768v1",
+    "title": "Heavy-meson molecules with dynamical pions",
+    "authors": [
+      "Yan-Ke Chen",
+      "Liang-Zhen Wen",
+      "Lu Meng",
+      "Shi-Lin Zhu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.01768v1",
+    "published": "2026-11-01T10:17:49Z",
+    "abstract": "We investigate heavy-meson molecules by treating the pion as a dynamical degree of freedom. We construct an energy-independent Hamiltonian that couples the two- and three-body Fock spaces. The two-body sector contains a pseudoscalar meson and a vector meson $H_1H_2^{*}$, while the three-body sector consists of two pseudoscalar mesons and a pion $H_1H_2 π$. The $H^*$ self-energy, the $H_1H_2^{*}$ pion-exchange interaction, and the $H_1H_2π$ three-body propagation are consistently generated through the coupling between the two Fock sectors. We use the Gaussian expansion and complex scaling methods to solve the coupled Schrödinger equation. Previous approaches usually reduce three-body effects to energy-dependent two-body kernels and solve the equations iteratively. Our approach obtains the poles by solving a single linear generalized eigenvalue problem. The eigenvectors also provide explicit wave functions in both Fock sectors, allowing a qualitative analysis of channel weights and spatial structure. We benchmark the framework in $T_{cc}^{+}$ and $X(3872)$. The benchmark results are consistent with the current experimental pole determinations. We then apply this formalism to the $BBπ$, $B\\bar{B}π$, $DBπ$ and $D\\bar{B}π$ systems. We predict one isoscalar bound state in each of these systems. The $DBπ$ and $D\\bar{B}π$ systems also contain resonances lying below and above their three-body threshold, respectively. We propose complementary searches for these resonances through $DB^*\\to DBγ$ and $D\\bar Bπ$. This coupled Fock-space framework can be readily extended to other few-body systems in which unstable constituents can decay and change the particle number.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文提出一个耦合两体（\\(H_1H_2^*\\)）与三体（\\(H_1H_2\\pi\\)）Fock空间的能量无关哈密顿量框架，通过高斯展开与复标度法将原本需迭代求解的能量依赖三体问题转化为单一线性广义本征值问题，并在 \\(T_{cc}^+\\)、\\(X(3872)\\) 上验证后预言了 \\(BB\\pi\\)、\\(B\\bar B\\pi\\)、\\(DB\\pi\\)、\\(D\\bar B\\pi\\) 系统中的束缚态与共振。\n\n## 研究问题\n\n作者想解决的核心问题是：**如何自洽地处理重介子分子中π介子作为动力学自由度（而非静态交换势）所带来的三体效应**。具体包括：\n\n1. 传统方法把三体效应约化为能量依赖的两体核（energy-dependent two-body kernel），需迭代求解，且难以直接获得波函数与通道权重信息；\n2. \\(H^*\\) 的自能、\\(H_1H_2^*\\) 的π交换相互作用、以及 \\(H_1H_2\\pi\\) 三体传播若分别人为引入，容易破坏一致性；\n3. 需要一个能同时给出极点位置与两/三体Fock空间波函数的统一框架，以便对候选分子态（如 \\(T_{cc}^+\\)、\\(X(3872)\\) 及含底夸克的类似系统）做定性结构分析并给出实验搜索建议。\n\n## 方法\n\n需要说明：本文**不是格点QCD第一性原理计算**，而是一个基于有效哈密顿量的少体框架。其方法要素为：\n\n- **耦合Fock空间哈密顿量**：两体扇区 \\(H_1H_2^*\\)（赝标量+矢量介子），三体扇区 \\(H_1H_2\\pi\\)（两个赝标量介子+π）。通过两扇区耦合，**一致地生成** \\(H^*\\) 自能、π交换相互作用与三体传播，保证能量无关（energy-independent）。\n- **求解技术**：Gaussian expansion（高斯展开基）＋ complex scaling（复标度法），将共振/束缚态极点问题化为**单一线性广义本征值问题**求解，避免迭代。\n- **波函数分析**：本征矢给出两个Fock扇区的显式波函数，可做通道权重与空间结构的定性分析。\n- **基准检验**：在 \\(T_{cc}^+\\) 与 \\(X(3872)\\) 上对标实验极点。\n- **应用**：推广到 \\(BB\\pi\\)、\\(B\\bar B\\pi\\)、\\(DB\\pi\\)、\\(D\\bar B\\pi\\) 系统。\n\n## 主要结果\n\n1. **框架自洽性**：两体与三体扇区耦合一致地产生自能、交换势与三体传播，无需能量依赖核的迭代求解。\n2. **基准验证**：在 \\(T_{cc}^+\\) 和 \\(X(3872)\\) 上得到的极点与当前实验测定一致。\n3. **预言**：在 \\(BB\\pi\\)、\\(B\\bar B\\pi\\)、\\(DB\\pi\\)、\\(D\\bar B\\pi\\) 四个系统中**各预言一个同位旋标量束缚态**。\n4. **共振**：\\(DB\\pi\\) 与 \\(D\\bar B\\pi\\) 系统还分别包含位于三体阈值**之下**和**之上**的共振态。\n5. **实验建议**：提出通过 \\(DB^*\\to DB\\gamma\\) 与 \\(D\\bar B\\pi\\) 渠道对上述共振做互补搜索。\n6. **可推广性**：该耦合Fock空间框架可推广到其他含不稳定组分（可衰变、改变粒子数）的少体系统。\n\n## 为什么值得关注\n\n- **概念层面**：把“不稳定组分衰变导致粒子数改变”这一物理自洽地纳入少体哈密顿量，避免了能量依赖核带来的近似与迭代不稳定性，对强子分子态（尤其是含π的三体效应显著的系统）建模有方法论意义。\n- **技术层面**：将极点搜索转化为单一线性广义本征值问题，并同时输出两/三体波函数，便于系统化扫描与结构分析，计算上更稳健、信息更完整。\n- **现象学层面**：对 \\(T_{cc}^+\\)、\\(X(3872)\\) 的基准一致性增强了预言可信度；对含底夸克的 \\(BB\\pi\\)、\\(B\\bar B\\pi\\)、\\(DB\\pi\\)、\\(D\\bar B\\pi\\) 给出明确束缚态/共振预言及实验搜索渠道，对BESIII、LHCb、Belle II等实验有直接参考价值。\n- **对格点/QCD社区的意义**：虽然本文非格点计算，但其“耦合Fock空间＋能量无关哈密顿量”的思路可与格点QCD给出的有限体积能级、耦合常数对接，为从第一性原理输入构建少体分子态模型提供桥梁；对理解近阈奇特态（\\(T_{cc}\\)、\\(X\\)、\\(Z\\) 类）的内部结构有推动作用。\n\n## 方向标签\n\n- Hadron spectroscopy（强子谱）\n- Few-body / coupled-channel dynamics（少体与耦合道动力学）\n- Exotic hadrons / hadronic molecules（奇特强子/强子分子）\n- Effective Hamiltonian / complex scaling（有效哈密顿量/复标度）\n- Lattice QCD phenomenology interface（与格点QCD现象学对接）\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：对研究近阈奇特强子（\\(T_{cc}\\)、\\(X(3872)\\) 及含底类似物）和少体耦合道问题的人，这是一篇方法清晰、基准可靠、预言明确且具实验可检验性的高价值论文，值得精读方法与结果部分。扣一星是因为它并非格点QCD第一性原理工作，若读者主要关注格点算符、有限体积谱或连续极限系统误差，则相关性稍弱；此外模型依赖（π交换势形式、截断、参数选取）对预言的不确定度需读者自行评估。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:28.946478"
+  },
+  {
+    "id": "2611.01638v1",
+    "title": "Precision determination of $B_c$ and $B_c^*$ meson decay constants from lattice QCD",
+    "authors": [
+      "Navdeep Singh Dhindsa",
+      "Debsubhra Chakraborty",
+      "Nilmani Mathur"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.01638v1",
+    "published": "2026-11-01T06:41:47Z",
+    "abstract": "We present a lattice QCD study of heavy-heavy meson decay constants using the HISQ gauge ensemble generated by the MILC Collaboration. Employing the HISQ action for both charm and bottom valence quarks tuned to their physical masses, we determine pseudoscalar, vector, and tensor decay constants for heavy quarkonium and $B_c$ systems. Preliminary results are presented for the decay constants of the $B_c$, $B_c^*$, $η_c$, $η_b$, and $Υ$ mesons.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文利用 MILC 协作组生成的 HISQ 规范场组态，以物理质量下的 HISQ 作用量计算了 $B_c$、$B_c^*$ 等重-重介子的衰变常数，给出了初步的格点 QCD 精确测定结果。\n\n## 研究问题\n作者希望从格点 QCD 第一性原理出发，精确确定 $B_c$ 与 $B_c^*$ 介子（以及 $\\eta_c$、$\\eta_b$、$\\Upsilon$ 等重夸克偶素）的衰变常数。这些非微扰 QCD 参数对于解释实验上重夸克偶素产生、衰变以及检验有效理论（如 NRQCD）至关重要，而此前格点计算在同时包含粲夸克和底夸克、且两者都调至物理质量方面仍存在精度和系统误差上的挑战。\n\n## 方法\n- **规范场组态**：使用 MILC 协作组生成的 HISQ 规范场组态（$N_f=2+1+1$ 高度改进交错夸克）。\n- **费米子作用量**：对粲夸克和底夸克价夸克均采用 HISQ 作用量，并将两者质量调至物理值（即 $m_c^{\\text{phys}}$、$m_b^{\\text{phys}}$），从而避免外推带来的系统误差。\n- **观测量**：计算赝标量、矢量、张量衰变常数，涉及 $B_c$、$B_c^*$、$\\eta_c$、$\\eta_b$、$\\Upsilon$ 等介子。\n- **数值技术**：在格点上抽取两点关联函数，通过拟合提取基态矩阵元，再结合重整化常数得到物理衰变常数；文中结果为初步（preliminary）结果。\n\n## 主要结果\n论文给出了 $B_c$、$B_c^*$、$\\eta_c$、$\\eta_b$、$\\Upsilon$ 介子的赝标量、矢量及张量衰变常数的初步格点数值。核心贡献在于：首次（或系统性地）在同一个 HISQ 组态上，将粲和底价夸克同时调至物理质量，从而对重-重介子衰变常数给出自洽且精度可观的格点预言，为后续与实验及有效理论对比奠定基础。\n\n## 为什么值得关注\n- **对格点 QCD 社区**：展示了用 HISQ 作用量同时处理物理粲和物理底夸克的可行性，这是重夸克格点计算中一个长期的技术难点（底夸克质量大，离散化误差需严格控制）。\n- **对唯象学与实验**：$B_c$ 介子衰变常数是 LHCb 等实验研究 $B_c$ 产生与衰变的关键输入，也是检验 NRQCD 因子化预言的重要参数。\n- **对理论物理**：为重整化、匹配以及张量衰变常数等非微扰矩阵元提供基准值，可用于约束有效场论和夸克模型。\n\n## 方向标签\n- Lattice QCD\n- Heavy Quark Physics\n- Hadron Spectroscopy / Decay Constants\n- Non-perturbative QCD\n\n## 阅读优先级\n★★★★☆（4 星）\n理由：该工作直接针对重-重介子衰变常数这一重要且具有实验关联的物理量，方法上采用物理质量 HISQ 价夸克，技术路线清晰且具有代表性；但结果为初步（preliminary），尚未给出完整的误差预算和连续极限外推，因此略低于最高优先级。对从事格点重夸克计算或 $B_c$ 唯象研究的人员而言，属于必读或重点跟踪的文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:35.634433"
+  },
+  {
+    "id": "2611.00559v1",
+    "title": "Wilsonian exact renormalization group flow in the gauged Nambu--Jona-Lasinio model",
+    "authors": [
+      "Sorato Nagao",
+      "Hiroshi Suzuki"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.00559v1",
+    "published": "2026-10-31T02:35:21Z",
+    "abstract": "We study the Wilsonian exact renormalization group flow of the gauged Nambu--Jona-Lasinio (NJL) model, a four-dimensional $U(1)$ gauge theory with chirally invariant four-Fermi interactions, by using the gradient flow exact renormalization group~(GFERG). Our gauge-invariant ansatz (truncation) for the 1PI Wilson action keeps a general photon kinetic function~$\\mathcal{K}_τ(k^2)$, the fermion mass, and the scalar and vector four-Fermi couplings. For a fixed gauge coupling~$e^2$, the Gaussian and NJL (quasi-)fixed points on the critical surface merge at~$e_c^2\\simeq17$, as anticipated by the ladder Schwinger--Dyson equation and the conventional Wilsonian renormalization group. We then let $e^2$ itself flow. Owing to the manifest gauge invariance of the GFERG, the flow of~$e^2$ is governed solely by the photon anomalous dimension~$γ_A$, which remains positive along both branches up to the merging point. Hence, no fixed point with~$e^2\\neq0$ exists. Flows from a sufficiently large~$e^2$ in the ultraviolet (UV) reach the chirally broken phase even for vanishing four-Fermi couplings, so the gauge interaction does trigger chiral symmetry breaking. The merging point, however, is not a fixed point, and the gauge coupling vanishes in any continuum limit within our truncation.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文用梯度流精确重整化群（GFERG）研究四维 U(1) 规范 NJL 模型，发现高斯不动点与 NJL 准不动点在临界面上于 $e_c^2\\simeq17$ 处合并，但由于 GFERG 的显式规范不变性使规范耦合流仅由光子反常维度控制且 $e^2$ 在紫外趋于零，因此不存在 $e^2\\neq0$ 的不动点，不过足够大的紫外规范耦合仍能触发手征对称性自发破缺。\n\n## 研究问题\n\n作者想解决的核心问题是：在四维规范 Nambu–Jona-Lasinio（NJL）模型中，规范相互作用与四费米相互作用如何共同影响重整化群流？具体而言：\n\n1. 高斯不动点与 NJL（准）不动点在临界面上如何随规范耦合 $e^2$ 变化、是否合并？\n2. 当让 $e^2$ 本身跑动时，是否存在非零规范耦合的不动点？\n3. 规范相互作用能否单独（即使四费米耦合为零）触发手征对称性破缺？\n4. 该模型的连续极限行为如何？\n\n这些问题与 ladder Schwinger–Dyson 方程和传统 Wilsonian RG 的预期有关，作者希望用 GFERG 这一显式规范不变的方法来检验和澄清。\n\n## 方法\n\n- **模型**：四维 $U(1)$ 规范理论 + 手征不变的四费米相互作用（gauged NJL 模型）。\n- **方法**：梯度流精确重整化群（gradient flow exact renormalization group, GFERG）。GFERG 是近年发展的 Wilsonian ERG 框架，通过梯度流方程构造 1PI Wilson 作用量，具有显式规范不变性。\n- **截断（ansatz）**：对 1PI Wilson 作用量采用规范不变的截断，保留：\n  - 一般的光子动能函数 $\\mathcal{K}_\\tau(k^2)$（而非仅 $F^2$ 项），\n  - 费米子质量，\n  - 标量与矢量四费米耦合。\n- **分析手段**：解析/半解析地推导 β 函数与反常维度，研究不动点结构及流图；先固定 $e^2$ 分析临界面上不动点的合并，再让 $e^2$ 跑动。\n- 本文属于解析性 ERG 研究，**并非格点蒙特卡洛模拟**；GFERG 与格点梯度流有概念联系，但此处未做数值格点计算。\n\n## 主要结果\n\n1. **不动点合并**：对固定规范耦合 $e^2$，临界面上高斯不动点与 NJL（准）不动点在 $e_c^2\\simeq17$ 处合并，与 ladder Schwinger–Dyson 方程及传统 Wilsonian RG 的预期一致。\n2. **规范耦合的流**：由于 GFERG 的显式规范不变性，$e^2$ 的流完全由光子反常维度 $\\gamma_A$ 决定；$\\gamma_A$ 在合并点之前沿两支都保持为正。\n3. **无非零规范耦合不动点**：因此不存在 $e^2\\neq0$ 的不动点；合并点本身也不是不动点。\n4. **手征对称性破缺**：从足够大的紫外 $e^2$ 出发的流，即使四费米耦合为零，也会到达手征破缺相——即规范相互作用本身可以触发手征对称性自发破缺。\n5. **连续极限**：在作者的截断内，任何连续极限中规范耦合都趋于零（即连续极限是平庸/非相互作用规范理论的）。\n\n## 为什么值得关注\n\n- **对 gauged NJL 模型长期问题的澄清**：该模型常被用作研究规范相互作用触发手征破缺、以及“规范耦合不动点”可能性的玩具模型（与 technicolor、walking 动力学、BSM 模型构建相关）。本文用显式规范不变的 GFERG 给出系统分析，指出在截断内不存在非零规范耦合不动点，对相关 BSM 构造是重要的负面约束/警示。\n- **GFERG 方法论的展示**：展示了 GFERG 在处理规范理论 + 四费米相互作用时的能力，特别是显式规范不变性如何简化规范耦合的流（仅由 $\\gamma_A$ 控制），为后续 ERG 研究提供范式。\n- **与格点/连续方法的交叉验证**：结果与 ladder SD 方程和传统 Wilsonian RG 的预期一致，增强了对不动点合并图像的可信度；对理解格点梯度流与 ERG 的联系也有概念价值。\n- **手征破缺机制**：确认规范相互作用可单独驱动手征破缺，对理解强耦合规范理论中的动力学对称性破缺有参考意义。\n\n## 方向标签\n\n- BSM\n- 理论物理（ERG / 重整化群方法）\n- 手征对称性破缺\n- 规范理论（非格点，解析 ERG）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：本文对 gauged NJL 模型和 ERG 方法社区有明确价值，结论清晰且与既有预期一致，方法（GFERG）具有方法论意义。但它属于解析 ERG 研究而非格点数值工作，截断较简单（保留有限算符），且核心结论（无非零规范耦合不动点、连续极限规范耦合趋于零）在截断内成立、需进一步检验截断依赖性。对专注格点 QCD 数值模拟的读者相关性中等；对 BSM、动力学对称性破缺和 ERG 方法研究者则值得一读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:43.118712"
+  },
+  {
+    "id": "2611.00214v1",
+    "title": "Quantum Simulation of Hadronization: From String Breaking to Event Generation",
+    "authors": [
+      "Christian W. Bauer",
+      "Anthony N. Ciavarella",
+      "Jad C. Halimeh",
+      "Yannick Meurice",
+      "Stephen Mrenna",
+      "Martin J. Savage",
+      "Giovanni Cataldi",
+      "Henry Froland",
+      "Dorota M. Grabowska",
+      "Sebastian Grieninger",
+      "Kenneth Heitritter",
+      "Michael Hite",
+      "Marc Illa",
+      "Saurabh V. Kadam",
+      "Henry Lamm",
+      "Zhiyao Li",
+      "Zane Ozzello",
+      "Vincent R. Pascuzzi",
+      "Blake Senseman",
+      "Kaidi Xu",
+      "Xiaojun Yao",
+      "Nikita A. Zemlevskiy"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.00214v1",
+    "published": "2026-10-30T18:00:19Z",
+    "abstract": "High-energy collisions produce large numbers of quarks and gluons that are bound into hadrons by the confining interactions of quantum chromodynamics (QCD). This hadronization process is intrinsically real-time and non-perturbative. Event generators describe hadronization using phenomenological models with parameters fitted to data rather than calculated from QCD. Uncertainties in these models limit the precision of certain measurements at the Large Hadron Collider. Quantum computers could enable first-principles simulations of these dynamics. Existing quantum simulations of gauge theories have demonstrated string-breaking dynamics. This white paper summarizes the conclusions of the InQubator for Quantum Simulation workshop \\textit{From String Dynamics to Event Generation with Quantum Simulation}. We develop a roadmap for extending these simulations to inform phenomenological models of hadronization. A sequence of toy models is proposed for connecting current quantum simulations to QCD. The observables that should be extracted are listed, and the challenges that separate present simulations from quantitative predictions are identified. We propose a staged program in which quantum simulations first provide qualitative modifications to event generators and later provide quantitative input.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这是一份量子模拟路线图白皮书，提出用分阶段、逐步逼近的玩具模型序列，把当前量子计算机上已实现的弦断裂（string breaking）模拟，逐步扩展为可用于改进事件产生器中强子化唯象模型的定量输入。\n\n## 研究问题\n\n高能碰撞产生的夸克和胶子通过 QCD 的禁闭相互作用束缚成强子，这一强子化过程本质上是实时、非微扰的。目前事件产生器（如 PYTHIA、HERWIG 等）用唯象模型描述强子化，参数靠拟合实验数据得到，而非从 QCD 第一性原理计算。这些模型的不确定性限制了 LHC 某些测量的精度。作者想解决的问题是：如何利用量子计算机实现强子化动力学的第一性原理模拟，并系统性地把这类模拟从现有的弦断裂演示，推进到能为唯象模型提供有用输入的水平。\n\n## 方法\n\n本文是 InQubator for Quantum Simulation 研讨会（\"From String Dynamics to Event Generation with Quantum Simulation\"）的总结白皮书，方法层面主要是路线图设计而非具体数值计算：\n\n- **量子模拟框架**：基于格点规范理论的哈密顿量形式，用数字/模拟量子模拟器实时演化规范场动力学。现有工作已演示了弦断裂（string breaking）动力学。\n- **玩具模型序列**：提出一系列逐步增加复杂度的模型，作为连接当前量子模拟与真实 QCD 的桥梁（例如从简化规范群、低维、少自由度系统逐步走向更接近 QCD 的设定）。\n- **可观测量清单**：明确列出应从这些模拟中提取、并可与唯象模型对接的物理量。\n- **分阶段计划**：第一阶段让量子模拟为事件产生器提供定性修正，第二阶段提供定量输入。\n- **挑战识别**：梳理从现有演示到定量预测之间的障碍（如资源需求、误差控制、态制备、读出、与唯象模型的接口等）。\n\n文中未涉及具体的格点数值技术（如混合蒙特卡洛、张量网络收缩等）细节，重点在量子模拟算法与路线图层面。\n\n## 主要结果\n\n- 确认现有量子模拟已能展示规范理论中的弦断裂动力学，这是通向强子化的关键一步。\n- 提出一个**玩具模型序列**作为路线图核心：通过一系列可控的简化模型，把当前模拟能力与 QCD 强子化连接起来。\n- 列出应提取的可观测量，为量子模拟输出与事件产生器唯象模型的对接建立接口。\n- 识别出阻碍定量预测的关键挑战。\n- 提出**分阶段策略**：先定性改进事件产生器，后提供定量输入——这是一种务实的、承认当前量子硬件限制的推进方式。\n\n## 为什么值得关注\n\n- **填补第一性原理与唯象模型之间的鸿沟**：强子化是 LHC 精度物理的主要理论不确定性来源之一，本文给出了用量子计算系统性攻克这一问题的路线图。\n- **为量子模拟社区提供明确目标**：把\"弦断裂演示\"这类孤立成果与高能物理实际需求（事件产生器改进）挂钩，指明了可观测量的选择和模型序列的设计原则。\n- **对格点/QCD 社区的意义**：实时、非微扰动力学正是传统欧氏格点 QCD 难以直接处理的领域（符号问题/实时演化），量子模拟提供了互补路径；本文的路线图有助于协调格点方法与量子模拟方法的分工。\n- **务实的分阶段思路**：承认近期量子硬件无法直接做 QCD，转而通过玩具模型逐步积累可信度，这对资源分配和预期管理都有参考价值。\n\n## 方向标签\n\n- Quantum simulation\n- Lattice QCD\n- Hadronization / Event generation\n- Real-time dynamics\n- Non-perturbative QCD\n\n## 阅读优先级\n\n★★★★☆（4 星）\n\n理由：作为白皮书/路线图，它不提供新的数值结果，但系统梳理了\"量子模拟→强子化→事件产生器\"这一新兴交叉方向的路线、可观测量与挑战，对关注量子计算与 QCD 交叉、以及强子化建模的研究者具有较高的战略参考价值。若你只关心具体格点数值技术或可立即使用的算法细节，价值会打折扣（故不给 5 星）；但若你想了解该领域未来 5–10 年的发展路径和接口设计，这是必读的纲领性文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:51.648230"
+  },
+  {
+    "id": "2611.00201v1",
+    "title": "Quantum simulation of real-time Yukawa dynamics with qubits and qumodes",
+    "authors": [
+      "Jack Y. Araz",
+      "Jeffrey Forshaw",
+      "Ross Jenkinson"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.00201v1",
+    "published": "2026-10-30T18:00:02Z",
+    "abstract": "Real-time quantum simulation of field theories offers access to scattering and decay dynamics, circumventing the limitations of Euclidean lattice methods. However, representing bosonic fields on qubits requires a finite-dimensional approximation and can entail costly multi-qubit operations. Hybrid qubit-qumode architectures avoid this by encoding bosonic fields directly in oscillators. We formulate scattering in the (1+1)-dimensional Yukawa theory for such a device, with staggered fermions on qubits and the scalar on qumodes. Trapped ions are a natural candidate, with the fermions on the internal states of the ions and the scalar on their collective motion, so that the Yukawa coupling becomes a native spin-dependent displacement. Emulating the device with tensor networks, we study the decay of a single scalar particle and fermion-antifermion scattering around the resonance region, using observables that can be measured on the device natively. We compare the results with those obtained using lattice perturbation theory. The emulation is able to resolve corrections beyond the Dyson summation of the one-loop self-energy.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文提出并数值验证了一种混合 qubit–qumode 架构（囚禁离子）上的实时 (1+1) 维 Yukawa 理论散射方案，用张量网络模拟该器件，成功分辨出超出单圈自能 Dyson 求和的修正。\n\n## 研究问题\n\n欧氏格点方法无法直接访问实时散射与衰变动力学。若把玻色场编码到 qubit 上，需要有限维截断并引入昂贵的多 qubit 操作。作者要解决的问题是：如何在可实现的量子硬件架构上，直接、高效地表示玻色场并模拟实时 Yukawa 动力学（标量衰变、费米子–反费米子散射、共振区行为），同时给出可在器件上原生测量的观测量，并与格点微扰论对比以确认量子模拟能捕捉到微扰论求和之外的修正。\n\n## 方法\n\n- **模型**：(1+1) 维 Yukawa 理论，交错费米子（staggered fermions）放在 qubit 上，标量场直接编码在 qumode（谐振子）上。\n- **硬件映射**：囚禁离子方案——费米子用离子内态，标量用集体振动模式，Yukawa 耦合自然实现为自旋依赖的位移（spin-dependent displacement）操作。\n- **算法/模拟**：用张量网络（tensor network）对该混合 qubit–qumode 器件做经典 emulation，模拟实时演化。\n- **观测量**：选取可在器件上原生测量的量（如占据数、关联函数等）。\n- **对比基准**：格点微扰论（lattice perturbation theory），包括单圈自能的 Dyson 求和。\n\n## 主要结果\n\n1. 建立了 (1+1) 维 Yukawa 理论在混合 qubit–qumode 器件上的散射表述，费米子与标量分别编码，耦合为原生自旋依赖位移。\n2. 用张量网络 emulation 研究了单标量粒子的衰变，以及共振区附近的费米子–反费米子散射。\n3. 与格点微扰论对比表明：emulation 能分辨出**超出单圈自能 Dyson 求和**的修正，即量子模拟捕捉到了微扰论重求和之外的非微扰/高阶动力学信息。\n4. 观测量均为器件原生可测，说明该方案在近期硬件上具有可执行性。\n\n## 为什么值得关注\n\n- 对**实时量子模拟场论**：展示了玻色场直接编码于 qumode 可避免 qubit 截断与多 qubit 门开销，是混合架构路线的具体可行性论证。\n- 对**格点社区**：提供了欧氏格点之外的互补途径，且明确与格点微扰论对标，说明量子模拟能给出微扰论求和之外的信息，具有方法学意义。\n- 对**囚禁离子量子计算**：Yukawa 耦合映射为原生自旋依赖位移，是硬件友好映射的范例，连接了量子信息与高能物理。\n- 对**散射/共振物理**：在 (1+1) 维中演示衰变与共振散射，为更高维推广与 QCD 类实时问题提供概念验证。\n\n## 方向标签\n\nQuantum simulation\nTensor network\nLattice field theory (Yukawa)\nTrapped-ion quantum computing\nReal-time dynamics / scattering\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：选题前沿且方法具体（混合 qubit–qumode + 张量网络 emulation + 与格点微扰论对标），对量子模拟与格点场论交叉领域有直接参考价值；但限于 (1+1) 维且为经典 emulation 而非真实硬件演示，推广到 (3+1) 维与 QCD 仍有距离，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-03T07:07:58.466632"
   }
 ]
