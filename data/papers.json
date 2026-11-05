@@ -7445,5 +7445,166 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-04T06:50:57.995545"
+  },
+  {
+    "id": "2611.06880v1",
+    "title": "Simulating a chiral gauge theory",
+    "authors": [
+      "Laurens Lootens",
+      "Hersh Singh"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.06880v1",
+    "published": "2026-11-04T18:36:32Z",
+    "abstract": "Chiral gauge theories underlie the Standard Model, yet none has been simulated nonperturbatively. Lattice constructions that evade the Nielsen-Ninomiya obstruction entail complex fermion measures or infinite-dimensional local Hilbert spaces. Here we provide a gauge-invariant Hamiltonian lattice regularization of 1+1-dimensional abelian chiral gauge theories built from clock-and-shift qudits with $\\mathbb{Z}_N$ gauge fields, in which the global chiral symmetry and its 't Hooft anomaly survive exactly mod $N$. Anomaly cancellation on the lattice lets the Gauss laws be imposed and solved exactly, reducing the theory to an unconstrained qudit chain. Using infinite matrix product states, we simulate the canonical 1+1-dimensional chiral gauge theory, the 34-50 model, and find excellent agreement with analytic predictions, showing that a finite-dimensional local Hilbert space at $N=6$ reproduces the expected infrared physics of the continuum 34-50 model. This provides an efficient and practical solution to the problem of simulating general abelian chiral gauge theories in 1+1 dimensions, both on classical and quantum computers.",
+    "summary": {
+      "raw": "## 一句话结论\n作者构造了一个规范不变的哈密顿量格点正则化方案，用 clock-and-shift qudit 与 $\\mathbb{Z}_N$ 规范场在 1+1 维实现阿贝尔手征规范理论，并借助异常抵消精确求解 Gauss 定律，从而用无限矩阵乘积态（iMPS）数值模拟了 34-50 模型，结果与解析预言高度一致。\n\n## 研究问题\n手征规范理论是标准模型的基础，但由于 Nielsen–Ninemya 阻碍，传统格点方法难以非微扰地模拟手征费米子：要么费米子测度复杂（符号问题），要么需要无限维局部希尔伯特空间。作者想解决的核心问题是：能否构造一个**有限维局部希尔伯特空间、规范不变、且精确保留整体手征对称性及其 't Hooft 异常**的格点正则化，并实际数值模拟出连续极限下的红外物理。\n\n## 方法\n- **格点框架**：哈密顿量格点正则化，1+1 维阿贝尔手征规范理论。\n- **自由度**：clock-and-shift qudit（有限维局部希尔伯特空间）表示费米子，$\\mathbb{Z}_N$ 规范场。\n- **关键机制**：整体手征对称性及其 't Hooft 异常在 mod $N$ 意义下精确保持；利用格点上的异常抵消使 Gauss 定律可被精确施加并求解，将约束理论约化为无约束的 qudit 链。\n- **数值技术**：无限矩阵乘积态（iMPS）张量网络方法进行变分模拟。\n- **验证对象**：canonical 1+1 维手征规范理论以及 34-50 模型（即 SU(2) 手征规范理论的 1+1 维类比/简化模型），与解析预言对比。\n\n## 主要结果\n1. 成功构造了规范不变、有限维局部希尔伯特空间的手征规范理论哈密顿量格点正则化，整体手征对称性与 't Hooft 异常精确保持（mod $N$）。\n2. 通过异常抵消精确施加并求解 Gauss 定律，把约束理论化为无约束 qudit 链，使数值模拟可行。\n3. 用 iMPS 模拟 canonical 手征规范理论和 34-50 模型，与解析预言**高度一致**。\n4. 关键定量结论：在 $N=6$ 的有限维局部希尔伯特空间下，即能重现连续 34-50 模型预期的红外物理。\n5. 该方案对经典计算机和量子计算机均适用，为 1+1 维一般阿贝尔手征规范理论提供了高效实用的模拟路径。\n\n## 为什么值得关注\n- **突破长期阻碍**：手征规范理论此前从未被非微扰模拟，Nielsen–Ninomiya 阻碍是格点场论数十年的核心难题；本文给出一个可实际计算的构造。\n- **异常的精确保留**：在格点上精确保持 't Hooft 异常并用于抵消/求解 Gauss 定律，对理解格点手征规范理论的正则化原则有方法论意义。\n- **张量网络 + 量子模拟桥梁**：iMPS 的成功演示说明有限维 qudit 编码适合近期量子模拟器与经典张量网络，直接关联 quantum simulation 方向。\n- **对标准模型与 BSM 的启示**：虽然只在 1+1 维阿贝尔情形，但为更高维、非阿贝尔手征规范理论（如标准模型手征结构）的格点/量子模拟提供了概念验证与路线图。\n- **对 QCD/格点社区**：提供了处理手征费米子与规范约束的新思路，可能影响 domain-wall/overlap 之外的手征格点方案讨论。\n\n## 方向标签\n- Lattice gauge theory（手征规范理论）\n- Tensor network（iMPS）\n- Quantum simulation\n- BSM / 标准模型手征结构\n- Anomaly / 't Hooft anomaly\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是手征规范理论非微扰模拟领域的**概念性突破**，方法清晰、结果与解析对照扎实，对格点场论、张量网络和量子模拟交叉方向的研究者都高度相关。扣一星是因为目前仅限 1+1 维阿贝尔理论，向 3+1 维非阿贝尔（真正标准模型相关）的推广仍是开放问题，实用影响尚待后续工作验证。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:10:25.288611"
+  },
+  {
+    "id": "2611.06771v1",
+    "title": "Non-compact Kogut-Susskind gauge theories: 1D lattice models with exact ${\\rm SL}(2,\\mathbb{R})$ gauge invariance",
+    "authors": [
+      "Carlos Fulgado-Claudio",
+      "Torsten V. Zache"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.06771v1",
+    "published": "2026-11-04T16:50:20Z",
+    "abstract": "The Kogut-Susskind (KS) formulation of gauge theories constructs quantum many-body Hamiltonians with gauge invariance under a compact Lie group exactly implemented on a spatial lattice. Here, we revisit this construction for a non-compact gauge group. Although motivated in part by theories like general relativity whose first-order formulation involves the non-compact Lorentz group as a local symmetry, we focus on simpler cases in one spatial dimension akin to the Schwinger model. In a bottom-up approach, we show how exact gauge invariance under the simplest non-compact Lie group ${\\rm SL}(2,\\mathbb{R})$ can be retained exactly on a 1D lattice, and highlight the differences that arise with respect to compact gauge groups, including a continuous spectrum of the Casimir operators of the gauge fields and the emergence of infinite-dimensional representations of the matter fields. For the pure gauge theory, we discuss how a consistent restriction to the positive semigroup ${\\rm SL}^{+}(2,\\mathbb{R})$ reproduces well-known results from the quantization of Jackiw-Teitelboim (JT) gravity. Motivated by the constraint structure of general dilaton gravity, we introduce static charges coupled to the non-compact gauge field, which can be realised by single-fermion degrees of freedom living in an additional, synthetic dimension. With static charges our lattice model remains exactly integrable, but when extending to dynamical fermionic matter, we arrive at an interacting 1D ${\\rm SL}(2,\\mathbb{R})$ KS gauge theory. We give an interpretation of this model as a chain of charges sequentially connected by strings whose tension pulls matter left or right depending on the sign of the relative continuous ${\\rm SL}(2,\\mathbb{R})$ fluxes. This picture becomes exact when the involved ${\\rm SL}(2,\\mathbb{R})$ charges are strongly self-interacting, where we solve the reduced two-body problem analytically.",
+    "summary": {
+      "raw": "## 一句话结论\n本文首次在1D格点上严格实现了非紧致群 SL(2,ℝ) 的 Kogut-Susskind 规范不变性，揭示了连续 Casimir 谱、无穷维物质表示等与紧致规范群的根本差异，并将纯规范部分与 JT 引力量子化、静态电荷模型与可积性、动力学费米子模型与弦链图像联系起来。\n\n## 研究问题\n作者想解决的核心问题是：Kogut-Susskind 哈密顿格点规范理论传统上只对紧致李群严格实现规范不变性，能否将其推广到非紧致规范群（以最简单的 SL(2,ℝ) 为例），并在1D格点上保持精确规范不变？具体子问题包括：\n1. 非紧致性带来哪些与紧致群本质不同的结构（Casimir 连续谱、无穷维物质表示）？\n2. 纯规范理论能否与已知的 JT 引力量子化结果对应？\n3. 引入静态电荷和动力学费米子后，模型是否仍可解/可积？物理图像是什么？\n\n## 方法\n- **KS 哈密顿格点框架的非紧致推广**：在1D空间格点上构造哈密顿量，用群元素/表示论方法严格投影到规范不变子空间（类似 Gauss 定律约束的量子化实现）。\n- **群论与表示论工具**：处理 SL(2,ℝ) 的连续系列表示（continuous series）、Casimir 算符连续谱、无穷维表示；讨论正半群 SL⁺(2,ℝ) 的限制。\n- **纯规范情形**：与 JT 引力的规范理论量子化（BF 型理论/正半群约化）做对应分析。\n- **静态电荷**：用生活在额外“合成维度”中的单费米子自由度实现静态电荷，构造可精确积分的格点模型。\n- **动力学费米子**：构造相互作用的1D SL(2,ℝ) KS 规范理论，给出“电荷链+弦”的物理解释；在强自相互作用极限下解析求解约化的两体问题。\n- 以解析/严格构造为主，未见大规模数值模拟。\n\n## 主要结果\n1. **精确非紧致规范不变性可在1D格点上实现**：SL(2,ℝ) 的 Gauss 定律约束可被严格实施，构造出规范不变的量子多体哈密顿量。\n2. **本质差异**：规范场 Casimir 算符具有连续谱（而非紧致群的离散谱）；物质场需要无穷维表示，带来新的 Hilbert 空间结构问题。\n3. **纯规范 ↔ JT 引力**：对正半群 SL⁺(2,ℝ) 的一致限制可重现 JT 引力量子化的已知结果，建立了格点规范理论与低维引力之间的桥梁。\n4. **静态电荷模型精确可积**：受膨胀引力约束结构启发引入静态电荷（合成维度中的单费米子），模型保持精确可积性。\n5. **动力学费米子模型**：得到相互作用的1D SL(2,ℝ) KS 规范理论，可解释为“电荷链由弦依次连接”，弦的张力依连续 SL(2,ℝ) 通量符号将物质向左或右拉；在强自相互作用极限下解析求解约化两体问题。\n\n## 为什么值得关注\n- **扩展了 KS 格点规范理论的适用范围**：从紧致群（U(1)、SU(N)）推广到非紧致群，为格点框架开辟新方向，对理解引力/洛伦兹群作为规范群的体系有潜在意义。\n- **连接格点规范理论与低维量子引力**：与 JT 引力的对应为“格点方法研究引力”提供了具体、可操作的玩具模型。\n- **可积性与量子模拟潜力**：1D 可积模型（静态电荷情形）和清晰的弦链图像，使其成为量子模拟器（冷原子/离子阱）实现非紧致规范理论的候选，也可作为张量网络/数值方法处理连续谱规范群的新基准。\n- **概念性贡献**：连续 Casimir 谱与无穷维表示对格点场论的 Hilbert 空间构造、约束实现和数值截断策略提出新挑战，值得理论物理社区关注。\n\n## 方向标签\n- Lattice gauge theory（非紧致规范群）\n- Quantum simulation\n- Holography / JT gravity（低维量子引力）\n- Integrable models\n- Theoretical physics（表示论/约束量子化）\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对格点规范理论和非紧致群/低维引力交叉方向的研究者高度相关，概念新颖且解析结果清晰；但当前限于1D、以解析构造为主、尚无大规模数值或现象学应用，对主流 Lattice QCD 数值社区的直接实用价值有限，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:10:34.311840"
+  },
+  {
+    "id": "2611.06503v1",
+    "title": "A Duality Model in Which Dual QCD Becomes Hydrodynamics",
+    "authors": [
+      "Noriaki Aibara",
+      "So Katagiri",
+      "Yoshiki Matsuoka",
+      "Kazuya Mitsutani",
+      "Akio Sugamoto"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.06503v1",
+    "published": "2026-11-04T13:34:18Z",
+    "abstract": "Revisiting a duality model in which dual QCD becomes hydrodynamics, or the dual gluon is a fluid, allows us to understand some of the mysteries of QCD, such as the behavior of the quark--gluon plasma (QGP) as a perfect fluid and gluon saturation in the structure function at high energies. This old-fashioned duality converts the gluon action into hydrodynamics described by the 2-form stream function $W^a_{μν}$ with eight colors. All interactions then become current--current interactions of the Nambu--Jona-Lasinio type. The resulting theory admits a strong-coupling expansion about the fluid. This can provide a third method to supplement perturbative QCD and lattice QCD.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文重新审视了一种“对偶 QCD → 流体力学”的旧式对偶模型，将胶子作用量改写为以八色 2-形式流函数 $W^a_{\\mu\\nu}$ 描述的流体力学，使所有相互作用化为 Nambu–Jona-Lasinio 型流-流相互作用，并由此得到围绕流体的强耦合展开，作为微扰 QCD 与格点 QCD 之外的“第三种方法”。\n\n## 研究问题\n\n作者试图用这一对偶框架解释 QCD 中的若干疑难现象，核心有两个：\n\n1. 夸克-胶子等离子体（QGP）为何表现得近乎理想流体（极小剪切黏度、近乎完美流体行为）；\n2. 高能下结构函数中的胶子饱和（gluon saturation）现象。\n\n更宏观的目标是：在微扰 QCD（高能、弱耦合）与格点 QCD（数值、有限温/强耦合但受符号问题与计算成本限制）之外，提供一种解析的强耦合展开手段，作为“第三种方法”补充现有 QCD 计算体系。\n\n## 方法\n\n需要说明：本文是**解析/理论构造**工作，并非格点数值研究，因此不涉及格点作用量、Monte Carlo 算法、格点离散化或数值模拟技术。其方法要点为：\n\n- **对偶变换**：把胶子作用量通过旧式对偶（old-fashioned duality）改写为流体力学形式，基本自由度是带色指标的 2-形式流函数 $W^a_{\\mu\\nu}$（八个色分量），即“对偶胶子即流体”。\n- **相互作用重构**：变换后所有相互作用都变成 Nambu–Jona-Lasinio（NJL）型的流-流相互作用。\n- **强耦合展开**：所得理论允许围绕流体背景做强耦合展开（strong-coupling expansion about the fluid），这是该方法的核心解析工具。\n- 与格点 QCD 的关系是**互补/对照**，而非使用格点技术。\n\n## 主要结果\n\n1. 建立了“对偶 QCD = 流体力学”的显式表述：胶子自由度被 2-形式流函数 $W^a_{\\mu\\nu}$ 取代，理论呈现流体描述。\n2. 所有相互作用统一为 NJL 型流-流形式，结构上简化了强耦合区的相互作用描述。\n3. 得到围绕流体的强耦合展开，可作为独立于微扰 QCD 和格点 QCD 的第三条解析途径。\n4. 声称该框架有潜力自然解释 QGP 的完美流体行为与高能胶子饱和这两个现象（摘要层面为动机性陈述，具体定量结果需看正文）。\n\n## 为什么值得关注\n\n- **对 QCD 社区**：若该对偶成立，则 QGP 近完美流体性与胶子饱和这两个长期“谜题”可能获得统一的流体力学式解释，而非仅靠 AdS/CFT 类比或有效模型拟合。\n- **方法论价值**：提供微扰 QCD（弱耦合）与格点 QCD（数值强耦合）之外的第三种解析强耦合工具，尤其适用于格点难以处理的实时/非平衡与高密度区域。\n- **与格点 QCD 的互补性**：可作为格点结果的解析交叉检验或外推参考，例如有限温 QGP 输运系数、胶子分布函数在小 $x$ 区的饱和行为。\n- **需谨慎之处**：这是“old-fashioned duality”的重新审视，属高度非主流、构造性强的理论框架，其严格性与定量预言能力尚待检验；摘要中的现象学声明需正文及后续工作支撑。\n\n## 方向标签\n\n- QCD Phenomenology\n- Quark-Gluon Plasma\n- Strong-Coupling / Duality\n- Gluon Saturation\n- Hydrodynamics\n- 非格点解析方法（与 Lattice QCD 互补）\n\n## 阅读优先级\n\n★★☆☆☆（2/5）\n\n理由：选题重要（QGP 完美流体性、胶子饱和、强耦合方法学），但这是一篇基于旧式对偶的构造性/思辨性理论工作，与格点 QCD 数值实践无直接接口，且摘要中的物理解释多为动机性主张，缺乏可立即验证的定量预言。对专注对偶、流体/强耦合解析方法的理论研究者值得一读；对以格点数值为主的研究者，优先级较低，可作为背景或交叉参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:10:42.360871"
+  },
+  {
+    "id": "2611.06154v1",
+    "title": "Statistical mechanics and hierarchy of learnability in quantum codes: From generalized symmetries to non-Abelian topological orders",
+    "authors": [
+      "Hiromi Ebisu",
+      "Masazumi Honda"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.06154v1",
+    "published": "2026-11-04T08:35:38Z",
+    "abstract": "Local weak measurements provide noisy information about observables encoded in a quantum code. We formulate the corresponding Bayesian inference problem for a broad class of topological stabilizer codes by mapping it to classical spin models with generalized symmetries. When the wavefunction deformation and Gaussian measurement strengths coincide, the replicated model acquires an enlarged symmetry. We use this symmetry to derive exact identities among correlators averaged over measurement records that quantify the learnability of nonlocal observables associated with fractionalized excitations. Together with correlation inequalities in the associated clean ferromagnetic models, these identities establish hierarchies of learnability: if two observables remain learnable at long distances, their product must also remain learnable. We demonstrate these relations in the rank-2 toric code and the X-cube model, whose classical descriptions exhibit modulated and subsystem symmetries, respectively. We further extend the analysis to finite group quantum double models, including non-Abelian ones. We derive exact relations between learnability and correlations in the corresponding classical models, and show that the representation structure and fusion rules of anyons impose further constraints under suitable positivity conditions. These results constrain which types of nonlocal information can be learned simultaneously, providing a guide to learning phase diagrams in quantum codes under local weak measurements.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文将拓扑稳定子码在局域弱测量下的贝叶斯推断问题映射为具有广义对称性的经典自旋模型，利用复制模型的扩大对称性与铁磁关联不等式，严格推导出非局域可学习性的层级关系（若两个可观测量可学，则其乘积也可学），并将结果推广到有限群量子双模型（含非阿贝尔情形），揭示了任意子的表示结构与融合规则对可同时学习的非局域信息的额外约束。\n\n## 研究问题\n\n作者想解决的问题是：在局域弱测量下，量子纠错码中编码的非局域信息（特别是与分数化激发/任意子相关的非局域可观测量）究竟哪些可以被有效学习（learnable），哪些不能？更具体地说：\n\n1. 如何系统地把量子码在局域弱测量下的贝叶斯推断问题转化为可分析的经典统计力学模型？\n2. 不同非局域可观测量的可学习性之间是否存在普适的层级关系（hierarchy）？\n3. 这种层级关系如何依赖于码的广义对称性（如 rank-2 toric code 的调制对称性、X-cube 模型的子系统对称性）？\n4. 对于非阿贝尔量子双模型，任意子的表示论结构和融合规则如何进一步约束可学习性？\n\n## 方法\n\n- **映射框架**：将拓扑稳定子码在局域弱测量下的贝叶斯推断问题映射为具有广义对称性的经典自旋模型（复制方法/replica trick）。波函数形变与高斯测量强度相等时，复制模型获得扩大对称性。\n- **精确恒等式**：利用扩大对称性推导测量记录平均下的关联函数精确恒等式，用于量化与分数化激发相关的非局域可观测量的可学习性。\n- **关联不等式**：结合相关干净铁磁模型中的关联不等式（correlation inequalities），建立可学习性层级。\n- **具体模型**：rank-2 toric code（经典描述具有调制对称性）、X-cube 模型（子系统对称性）、有限群量子双模型（含非阿贝尔情形）。\n- **表示论与融合规则分析**：对量子双模型，利用任意子的表示结构和融合规则，在适当正性条件下导出可学习性与经典模型关联之间的精确关系及额外约束。\n- 方法整体为解析/严格推导为主，辅以具体模型的演示，未见大规模数值模拟。\n\n## 主要结果\n\n1. **可学习性层级的普适定理**：若两个非局域可观测量在长距离下仍可学习，则它们的乘积也必须可学习。这由复制模型的扩大对称性给出的精确恒等式与铁磁关联不等式共同确立。\n2. **具体码中的验证**：在 rank-2 toric code 和 X-cube 模型中展示了上述关系，分别对应调制对称性和子系统对称性的经典描述。\n3. **推广到有限群量子双模型（含非阿贝尔）**：导出了可学习性与对应经典模型关联之间的精确关系。\n4. **任意子约束**：任意子的表示结构与融合规则在适当正性条件下对可学习性施加额外约束——即并非任意组合的非局域信息都能同时被学习。\n5. **总体结论**：这些结果约束了哪些类型的非局域信息可以被同时学习，为局域弱测量下量子码的“学习相图”（learning phase diagrams）提供了指导。\n\n## 为什么值得关注\n\n- **量子码与拓扑序的可学习性**：把“弱测量下能学到什么”这一量子信息/量子模拟中的核心问题，转化为经典统计力学中可严格分析的关联函数问题，提供了系统性工具。\n- **广义对称性与子系统对称性**：将现代广义对称性（modulated symmetry、subsystem symmetry）语言与可学习性联系起来，对凝聚态与高能物理中对称性分类的思路有交叉启发。\n- **非阿贝尔任意子**：把表示论与融合规则引入可学习性约束，对拓扑量子计算中“哪些拓扑信息可被局域测量提取”有直接意义（涉及拓扑保护的鲁棒性与信息泄漏）。\n- **方法学价值**：复制模型 + 扩大对称性 + 关联不等式的组合是一套可迁移的严格分析框架，可能被推广到其他稳定子码、其他测量协议或其他经典自旋模型。\n- 对 lattice/QCD 社区而言，虽非直接 QCD 计算，但其“广义对称性—经典自旋模型—严格不等式”的方法论与格点场论中对称性实现、复制技巧、关联不等式等有方法上的亲缘性，且对量子模拟拓扑序有潜在指导意义。\n\n## 方向标签\n\n- Quantum simulation\n- Tensor network（间接相关：稳定子码/复制模型与张量网络表述有联系）\n- Machine Learning（弱测量下的贝叶斯推断/可学习性，属学习理论视角）\n- 广义对称性 / 拓扑序（非标准标签，但为核心内容）\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：论文问题清晰、框架优雅、结论严格，对量子码可学习性与广义对称性交叉领域的研究者有较高价值；但它以解析推导为主、聚焦特定稳定子码与量子双模型，与格点 QCD 主线（数值格点计算、QCD 相图、强子物理）距离较远。若读者的兴趣在量子模拟拓扑序、测量诱导相变、广义对称性或拓扑量子计算的信息可提取性，则优先级可上调至 4 星；若主要关注 QCD  phenomenology 或格点算法，则相关性有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:10:51.615302"
+  },
+  {
+    "id": "2611.05987v1",
+    "title": "Quantum Computing for Entanglement Asymmetry and the Quantum Mpemba Effect in Field Theory",
+    "authors": [
+      "Keisuke Fujii",
+      "Harunobu Fujimura",
+      "Masazumi Honda",
+      "Duc Truyen Le"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.05987v1",
+    "published": "2026-11-04T05:34:19Z",
+    "abstract": "We construct a quantum measurement protocol for estimating the Rényi entanglement asymmetry, which quantifies symmetry breaking at the level of a subsystem and provides a probe of the quantum Mpemba effect. The protocol combines the SWAP test with a charge-resolving procedure based on randomized symmetry rotations. For a fixed additive accuracy $ε$, the required number of measurements scales as $\\mathcal{O}(ε^{-2})$ without explicit dependence on the total system size, making the protocol particularly attractive for quantum many-body systems and lattice quantum field theories. As a representative application, we study the quantum Mpemba effect in the lattice Schwinger model with a $θ$ term using classical state-vector simulations. We further estimate the resources required to implement the protocol on noisy intermediate-scale quantum (NISQ) devices, fault-tolerant quantum computers (FTQCs), and a representative early-FTQC architecture. Our results provide a measurement-efficient framework for investigating anomalous symmetry-restoration dynamics in quantum many-body systems and quantum field theories.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出了一种基于量子测量的Rényi纠缠不对称性估计协议（SWAP测试 + 随机对称旋转的电荷分辨），测量次数仅按 O(ε⁻²) 缩放且不显含系统尺寸，并在格点Schwinger模型（含θ项）上用量子态矢量模拟演示了量子Mpemba效应，同时估算了NISQ、FTQC及早期FTQC架构上的资源需求。\n\n## 研究问题\n作者想解决的核心问题是：如何在量子多体系统与格点量子场论中**高效测量子系统层面的对称性破缺**（即Rényi纠缠不对称性），并以此作为**量子Mpemba效应**（非平衡动力学中对称性异常快速恢复的现象）的探针。具体难点在于：\n1. 纠缠不对称性涉及对子系统约化密度矩阵在对称群旋转下的非对角结构，经典计算代价随系统尺寸增长；\n2. 现有测量方案往往对系统尺寸有显式依赖，难以扩展到格点场论；\n3. 希望在真实量子硬件（NISQ/FTQC）上可行，需要明确的资源标度。\n\n## 方法\n- **量子测量协议**：将SWAP测试与基于**随机对称旋转（randomized symmetry rotations）** 的电荷分辨程序结合，构造Rényi纠缠不对称性的估计量；对固定加性精度ε，测量次数为 O(ε⁻²)，且**不显含总系统尺寸**。\n- **模型**：格点Schwinger模型（1+1维QED的格点版本），并引入**θ项**（拓扑角），研究其非平衡动力学中的量子Mpemba效应。\n- **数值技术**：经典**态矢量模拟（state-vector simulation）** 作为代表性应用演示。\n- **资源估算**：分别针对NISQ设备、容错量子计算机（FTQC）以及一种代表性的**早期FTQC架构**估算实现该协议所需的量子资源（量子比特数、门数、测量次数等）。\n\n## 主要结果\n1. 协议达到固定加性精度ε所需的测量次数为 **O(ε⁻²)**，且**无显式系统尺寸依赖**，使其适用于量子多体系统与格点场论。\n2. 在含θ项的格点Schwinger模型中，通过经典态矢量模拟**观测到量子Mpemba效应**（对称性异常快速恢复的动力学）。\n3. 给出了在NISQ、FTQC及早期FTQC架构上实现该协议的**资源估算**，表明该方案在近期与远期量子硬件上均具可行性路径。\n4. 提供了一个**测量高效**的框架，用于研究量子多体系统与量子场论中的反常对称性恢复动力学。\n\n## 为什么值得关注\n- **对格点/QCD社区**：纠缠不对称性是子系统层面探测对称性破缺的新工具，与θ真空、拓扑扇区、禁闭/去禁闭等QCD相关问题潜在关联；该协议为在格点场论中研究**非平衡对称性恢复**提供了可执行的量子算法路径。\n- **对量子模拟社区**：O(ε⁻²) 且不显含系统尺寸的测量标度是稀缺的好性质，直接关系到近期量子硬件的可行性；对NISQ/FTQC的资源估算是实用的工程参考。\n- **对理论物理**：量子Mpemba效应是近年非平衡统计与量子信息交叉的热点，本文将其推广到**格点规范场论**语境，并给出可测量的判据（Rényi纠缠不对称性），连接了量子信息、非平衡动力学与场论。\n- **方法学价值**：SWAP测试 + 随机对称旋转的电荷分辨组合是一个可复用的测量原语，可迁移到其他对称群与其他格点模型。\n\n## 方向标签\n- Quantum simulation\n- Lattice gauge theory（格点Schwinger模型）\n- Entanglement / quantum information\n- Non-equilibrium dynamics\n- Quantum algorithms\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文核心贡献（测量高效的纠缠不对称性协议 + 格点Schwinger模型中的量子Mpemba效应演示 + 硬件资源估算）对量子模拟与格点场论交叉方向有直接价值，方法可复用性强；但当前演示限于1+1维Schwinger模型的经典态矢量模拟，尚未在真实硬件或更高维/非阿贝尔规范理论中验证，故不给满分。若你的研究涉及纠缠熵/不对称性测量、量子Mpemba效应或格点规范理论的量子算法，建议优先精读；若仅关注传统格点QCD数值计算，可作为方法学参考略读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:10:59.805538"
+  },
+  {
+    "id": "2611.05899v1",
+    "title": "Finite-volume Analysis of On-shell Subtraction in the Luescher formalism",
+    "authors": [
+      "Wanchen Lei",
+      "Yuting Wang",
+      "Jin-Yi Pang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.05899v1",
+    "published": "2026-11-04T03:45:39Z",
+    "abstract": "On-shell subtraction is a relevant step in finite-volume analyses, which is to isolate an on-shell singularity and evaluate regular momentum-dependent factors at their on-shell values. For short-range interactions with a finite mass gap, the correction associated with this on-shell subtraction is exponentially suppressed at sufficiently large volume and can therefore be neglected at the corresponding accuracy. We examine how this correction changes as the relevant mass parameter decreases. Using a common dimensional-regularization prescription, we derive analytic expressions for the resulting finite volume correction for representative momentum structures and examine their behavior numerically. For a nonzero mass parameter, the corrections are indeed exponentially suppressed at large $μL$, whereas in the massless limit this suppression is replaced by an enhanced finite-volume dependence. More importantly, the $S$-wave contribution can develop an infrared divergence of finite volume correction in the massless limit. These results clarify the conditions under which on-shell subtraction can be applied and provide guidance for assessing such corrections in finite-volume hadronic calculations involving long-range effects, including QCD+QED.",
+    "summary": {
+      "raw": "## 一句话结论\n本文系统分析了Lüscher形式中在壳减除的有限体积修正随质量参数减小的行为，发现在无质量极限下指数压低被增强的有限体积依赖取代，且S波贡献可能出现红外发散，从而明确了在壳减除适用的条件。\n\n## 研究问题\n作者想解决什么问题？\n在格点场论的有限体积分析中，在壳减除（on-shell subtraction）用于隔离在壳奇异性并将正则动量依赖因子取在壳值上。对于有有限质量间隙的短程相互作用，该修正随体积指数压低，可被忽略。但作者想追问：当相关质量参数（如光子质量或介子质量）减小时，这一指数压低是否仍然成立？在无质量极限下会发生什么？具体而言，他们想确定在壳减除在何种条件下可以安全应用，并为涉及长程效应（如QCD+QED）的有限体积强子计算提供修正评估的指导。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 采用Lüscher形式框架下的有限体积分析。\n- 使用常见的维数正规化方案（dimensional-regularization prescription）推导解析表达式。\n- 针对代表性动量结构（如S波等）计算有限体积修正的解析形式。\n- 对结果进行数值考察，研究其随无量纲组合μL的行为（μ为质量参数，L为体积尺度）。\n- 未涉及具体的格点模拟或数值算法，属于解析+数值评估的理论分析工作。\n\n## 主要结果\n总结最重要发现。\n1. 对于非零质量参数μ，在壳减除的有限体积修正确实随μL增大而指数压低，验证了传统预期。\n2. 在无质量极限（μ→0）下，指数压低被增强的有限体积依赖所取代，修正不再被指数抑制。\n3. 更重要的是，S波贡献在无质量极限下可能发展出有限体积修正的红外发散。\n4. 这些结果明确了在壳减除可应用的条件，并为评估涉及长程效应（包括QCD+QED）的有限体积强子计算中的此类修正提供了指导。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 在壳减除是Lüscher方法提取散射信息的关键步骤，其系统误差评估对格点计算的可信度至关重要。\n- QCD+QED计算中光子质量趋于零，长程效应显著，本文结果直接关系到此类计算中有限体积修正的处理。\n- 红外发散的出现提示在无质量极限下需要更谨慎的处理方案，可能影响现有分析流程的适用性。\n- 为社区提供了明确的适用条件判据，有助于避免在长程效应主导的体系中错误忽略在壳减除修正。\n\n## 方向标签\n- Lattice QCD\n- Finite-volume effects\n- QCD+QED\n- Scattering theory (Lüscher formalism)\n\n## 阅读优先级\n★★★★☆（4星）\n理由：本文针对Lüscher形式中一个常被默认忽略的修正步骤进行了系统且及时的分析，直接关系到QCD+QED等长程效应显著的格点计算的可信度。解析推导清晰，结论具有实际指导意义。扣一星是因为工作偏理论分析，未结合具体格点数值模拟验证，且红外发散的处理方案尚需后续工作补充。对于从事有限体积散射分析或QCD+QED格点计算的研究者，属于必读文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:11:05.753816"
+  },
+  {
+    "id": "2611.05635v1",
+    "title": "Proton generalized parton distributions from electromagnetic form factors: A theoretically constrained phenomenological reconstruction",
+    "authors": [
+      "A. Capelo-Astudillo",
+      "T. Aguilar",
+      "M. Conde-Correa",
+      "A. Duenas-Vidal",
+      "P. G. Ortega",
+      "J. Segovia"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.05635v1",
+    "published": "2026-11-03T21:20:53Z",
+    "abstract": "We present a theoretically constrained phenomenological reconstruction of the unpolarized, chiral-even, leading-twist proton generalized parton distributions $H^q$ and $E^q$. At zero skewness, valence-quark distributions are combined with flavor-dependent exponential profiles calibrated simultaneously against phenomenological representations of the proton and neutron electromagnetic form factors. The construction imposes exact valence and anomalous-magnetic-moment normalizations, the low-scale condition $B^{u+d}(0)=0$, the required endpoint behavior, and the complete Gaussian impact-parameter positivity bound. The resulting parametrization provides a reasonable description of the electromagnetic form factors and their slopes while revealing the tension between strict GPD consistency and a precision reproduction of all low-$Q^2$ observables within the adopted ansatz. We extend the distributions to nonzero skewness using normalized double distributions and introduce an independent $D$-term to complete the relevant Mellin polynomials. We examine electromagnetic and energy--momentum-tensor form factors, impact-parameter distributions, positivity, polynomiality, and illustrative mechanical properties. The analysis distinguishes information constrained by electromagnetic data from additional assumptions governing skewness and the mechanical sector, thereby providing a transparent elastic baseline for future studies of nucleon-to-resonance transition GPDs.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文**不是格点 QCD 计算**，而是一个受理论约束的现象学重构：用价夸克分布 + 味依赖指数轮廓，同时拟合质子和中子的电磁形状因子，从而构造零斜度下的非极化手征偶领头扭度质子 GPD \\(H^q\\)、\\(E^q\\)，再通过归一化双分布延拓到非零斜度并引入独立 \\(D\\)-term。\n\n## 研究问题\n\n作者想解决的核心问题是：**能否仅用电磁形状因子（及其斜率）这类弹性数据，在满足 GPD 全部理论约束的前提下，重构出质子的广义部分子分布？** 具体包括：\n\n1. 在零斜度 \\(\\xi=0\\) 下，如何把价夸克分布与味依赖的指数轮廓结合，使质子和中子电磁形状因子同时被合理描述；\n2. 如何强制满足价夸克归一化、反常磁矩归一化、低标度条件 \\(B^{u+d}(0)=0\\)、端点行为和完整的 Gaussian 碰撞参数正定性约束；\n3. 在严格 GPD 一致性与精确复现所有低 \\(Q^2\\) 观测量之间存在的张力有多大；\n4. 如何用归一化双分布把结果延拓到非零斜度，并用独立 \\(D\\)-term 补全 Mellin 多项式；\n5. 区分哪些信息真正被电磁数据约束、哪些来自关于斜度和力学部分的额外假设。\n\n## 方法\n\n需要明确：**本文没有使用格点 QCD、蒙特卡洛模拟或任何 lattice 数值技术**。其方法是解析/现象学的：\n\n- **零斜度构造**：价夸克 PDF 与味依赖指数轮廓 \\(e^{B^q t}\\) 型 \\(t\\) 依赖相乘，参数同时拟合质子和中子电磁形状因子的现象学表示及其斜率；\n- **理论约束**：施加价夸克与反常磁矩归一化、\\(B^{u+d}(0)=0\\)、正确端点行为、Gaussian 碰撞参数正定性上界；\n- **非零斜度延拓**：使用归一化双分布（double distributions），并引入独立 \\(D\\)-term 以补全 Mellin 多项式（polynomiality）；\n- **检验与预言**：计算电磁形状因子、能量-动量张量形状因子、碰撞参数分布、正定性、多项式性以及若干力学性质（如压力分布等）；\n- **定位**：把结果作为\"弹性基线\"（elastic baseline），为未来核子到共振态跃迁 GPD 研究提供透明参照。\n\n## 主要结果\n\n1. 所构造的参数化能**合理描述**质子和中子电磁形状因子及其斜率，但**无法同时精确复现所有低 \\(Q^2\\) 观测量**——这暴露了严格 GPD 一致性与高精度弹性数据拟合之间的内在张力（作者明确将此作为发现之一，而非失败）。\n2. 构造**精确满足**价夸克归一化、反常磁矩归一化、\\(B^{u+d}(0)=0\\)、端点行为和 Gaussian 碰撞参数正定性界。\n3. 通过归一化双分布 + 独立 \\(D\\)-term，成功延拓到非零斜度并满足多项式性；检验了电磁与能量-动量张量形状因子、碰撞参数分布、正定性和力学性质。\n4. 论文的核心方法论贡献是**透明地区分了**\"被电磁数据约束的信息\"与\"关于斜度和力学部分的额外假设\"，为后续研究划定了弹性数据能提供多少 GPD 信息的边界。\n\n## 为什么值得关注\n\n- **对 GPD 唯象学**：给出了一个满足全部理论约束、仅依赖弹性数据的\"最小假设\"基线，未来任何格点 QCD 的 GPD 计算或实验提取都可以与之对比，判断额外信息（斜度依赖、\\(D\\)-term、力学性质）究竟来自哪里。\n- **对格点 QCD 社区**：格点计算 GPD（尤其是 \\(x\\) 依赖、\\(D\\)-term、力学性质）目前仍具挑战性；本文提供了一个解析、可复现、约束完备的参照系，可用于交叉检验格点结果和模型假设。\n- **对实验分析**：明确了电磁形状因子数据对 GPD 的约束能力上限，有助于设计 DVCS/GPD 实验时理解哪些自由度必须由新数据（而非弹性数据）确定。\n- **对核子-共振跃迁 GPD**：作为\"弹性基线\"，为过渡 GPD 研究提供可对照的起点。\n\n## 方向标签\n\n- Generalized Parton Distributions (GPD)\n- Nucleon Structure / Electromagnetic Form Factors\n- Phenomenology\n- QCD Spin & Mechanical Properties\n- Double Distributions / D-term\n\n（注：**不属于** Lattice QCD、BSM、Quantum simulation、Machine Learning、Tensor network、Finite temperature。）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：对 GPD 唯象学和核子结构研究者价值较高——它系统梳理了弹性数据能约束什么、不能约束什么，并给出满足全部理论约束的透明基线，适合作为格点 GPD 计算的对照参考。但它**不是格点计算**，方法上是解析现象学重构，且作者自认对低 \\(Q^2\\) 观测量的拟合存在张力，因此对以 lattice 数值技术为核心兴趣的读者优先级中等。若你关注 GPD 的 \\(D\\)-term、多项式性、正定性约束或核子力学性质，可提升至 4 星；若只关心格点算法与数值结果，则 2–3 星即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:11:15.202577"
+  },
+  {
+    "id": "2611.05491v1",
+    "title": "Quantum computing for high energy nuclear physics",
+    "authors": [
+      "João Barata"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.05491v1",
+    "published": "2026-11-03T19:00:09Z",
+    "abstract": "Quantum information science (QIS) offers a new set of conceptual and computational tools ideally suited to exploring the many-body, out-of-equilibrium, and real-time properties of strongly interacting quantum systems. These themes find a natural counterpart in high energy nuclear physics, whose central goal is to describe the properties of Quantum Chromodynamics (QCD), the theory of the strong interaction, under extreme conditions. Relevant examples range from the formation and internal structure of hadrons, to the collective and thermalization dynamics of strongly interacting QCD matter, and the properties of complex many-body scattering processes. Although tremendous progress has been made over the past decades in our understanding of QCD in the nuclear physics context, through perturbative methods, lattice QCD, and effective theory descriptions, phenomena that are intrinsically connected to real-time dynamics, highly entangled many-body evolution, or finite density regimes remain only partially accessible with existing approaches. In this article, we argue that QIS can help realize a new paradigm for addressing these open questions. With the aim of making the discussion accessible to both high energy nuclear physics and QIS audiences, we provide an overview of selected open problems in high energy nuclear physics, with emphasis on aspects motivated by collider phenomenology, and discuss how they can be approached using QIS tools. This connection is illustrated through representative examples drawn from the recent literature, making the case that QIS can become a driving force for discovery in nuclear physics in the coming years.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这是一篇面向高能核物理与量子信息科学（QIS）交叉领域的综述/立场文章，论证量子计算与量子模拟可为QCD中实时动力学、强纠缠多体演化与有限密度等格点方法难以处理的问题提供新范式。\n\n## 研究问题\n\n作者想解决的核心问题是：高能核物理中描述QCD在极端条件下的性质时，存在一类现有方法（微扰QCD、格点QCD、有效理论）难以系统处理的现象——本质涉及实时动力学、高度纠缠的多体演化、有限重子密度（符号问题）以及复杂多体散射过程。文章要回答的是：QIS的概念与计算工具能否、以及如何帮助攻克这些开放问题，并为两个社区（高能核物理与QIS）搭建可对话的桥梁。\n\n## 方法\n\n作为综述/立场文章，本文不提出单一新算法，而是梳理并串联代表性文献中的QIS方法，主要包括：\n\n- **量子模拟/量子计算**：将QCD或相关有效模型（如Schwinger模型、晶格规范理论的量子版本）映射到量子比特或连续变量量子平台，用于实时演化与热化动力学研究。\n- **张量网络方法**：以矩阵乘积态（MPS）/张量网络作为经典可模拟的纠缠受限近似，同时作为量子电路的经典基准与纠缠结构分析工具。\n- **量子信息观测量**：纠缠熵、纠缠负度、量子失谐等作为刻画强相互作用多体态与热化过程的新诊断量。\n- **格点QCD与有效理论的对照**：以格点QCD、微扰方法和有效理论作为既有基线，指出其在实时与有限密度区域的局限，并讨论量子方法如何补位。\n- **代表性应用场景**：强子结构与形成、重离子碰撞中的集体与热化动力学、有限密度QCD物质、多体散射等。\n\n文章本身不涉及具体数值模拟或新格点计算，属于方法学综述与路线图性质。\n\n## 主要结果\n\n文章的主要\"结果\"是论证性结论而非数值发现：\n\n1. **明确界定了QIS的用武之地**：实时动力学、强纠缠多体演化、有限密度三类问题正是经典方法（含格点QCD的欧几里得路径积分）的薄弱环节，而量子信息工具在这些方面具有概念与计算上的天然适配性。\n2. **建立了问题—工具的对应关系**：将高能核物理的具体开放问题（碰撞 phenomenology 驱动的强子化、热化、输运、有限密度相结构等）与具体QIS工具（量子模拟、张量网络、纠缠观测量）逐一对应，并用近期文献实例佐证。\n3. **提出范式性主张**：QIS有望在未来数年成为核物理发现的驱动力，形成\"量子计算+高能核物理\"的新研究范式。\n4. **强调社区沟通**：文章以同时面向两个社区为目标组织内容，降低了交叉门槛。\n\n## 为什么值得关注\n\n- **对格点QCD社区**：明确指出欧几里得格点方法在实时关联函数、有限密度（符号问题）和非平衡演化上的结构性困难，提示量子模拟与张量网络可能成为互补甚至替代路径，影响未来算法与硬件路线布局。\n- **对理论物理社区**：把纠缠熵等量子信息量提升为强相互作用多体物理的一等诊断工具，可能改变我们刻画热化、禁闭与相变的方式。\n- **对交叉领域**：作为路线图式综述，有助于凝聚共识、界定近期可实现的\"杀手级\"基准问题（如Schwinger模型量子模拟），对资源评估与实验平台选择有指导意义。\n- **局限性**：文章为立场/综述性质，不含新数值结果，对量子硬件现状与可扩展性的现实约束讨论相对概括，读者需结合具体技术文献判断时间表。\n\n## 方向标签\n\n- Quantum simulation\n- Lattice QCD\n- Finite temperature\n- Tensor network\n- Real-time dynamics\n- Finite density / Sign problem\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：对于关注格点QCD前沿、实时动力学与有限密度问题的研究者，这是一篇定位清晰、覆盖面广的路线图综述，能快速建立\"哪些开放问题适合量子方法、对应哪些工具\"的整体图景，性价比高。扣一星是因为它不提供新算法或数值结果，技术细节需回溯其引用的原始文献；若读者只关心具体格点算法实现，则需配合更专门的量子模拟方法论文阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-05T07:11:23.791799"
   }
 ]
