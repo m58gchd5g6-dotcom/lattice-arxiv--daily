@@ -7606,5 +7606,203 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-05T07:11:23.791799"
+  },
+  {
+    "id": "2611.08279v1",
+    "title": "Has Quarkyonic Matter Been Seen in Lattice Simulations?",
+    "authors": [
+      "Kohei Fujikura",
+      "Kenji Fukushima",
+      "Yoshimasa Hidaka",
+      "Etsuko Itou",
+      "Larry McLerran"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.08279v1",
+    "published": "2026-11-05T16:45:28Z",
+    "abstract": "Quarkyonic Matter refers to the dual state of matter between confined hadrons and quasi-free quarks. This duality leads to a robust constraint on the behavior of the distribution functions. After a comprehensive review of Quarkyonic Matter based on the distribution functions, we discuss recent lattice data for two-color QCD in $(1+1)$ and $(3+1)$ dimensions at finite baryon number density and QCD in $(3+1)$ dimensions at finite isospin density, as well as the astrophysically inferred equation of state. Taken together, these results reveal a coherent picture consistent with the emergence of Quarkyonic Matter in lattice simulations. Future lattice calculations of baryon and gauge-invariant quark momentum distributions at high density would provide a more direct test of this interpretation.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文综合分析了二色QCD（1+1维和3+1维）在有限重子密度下、以及QCD在有限同位旋密度下的最新格点数据，结合天体物理推断的状态方程，论证这些结果与Quarkyonic物质（介于禁闭强子与准自由夸克之间的对偶态）的出现相一致。\n\n## 研究问题\n\n作者想回答的核心问题是：**格点模拟中是否已经观测到了Quarkyonic物质？** 具体而言：\n\n1. Quarkyonic物质作为一种介于禁闭强子和准自由夸克之间的对偶物质态，其分布函数应满足何种稳健约束？\n2. 现有的格点数据（二色QCD在有限密度、QCD在有限同位旋密度）是否与这些约束一致？\n3. 天体物理推断的状态方程是否支持这一图像？\n4. 未来需要什么样的格点计算才能更直接地检验这一解释？\n\n## 方法\n\n本文是一篇综述/分析性论文，而非新的格点计算工作。其方法包括：\n\n- **理论框架**：基于分布函数对Quarkyonic物质进行系统综述，强调其对偶性导致的分布函数稳健约束（即同时呈现禁闭强子和准自由夸克的特征）。\n- **格点数据分析**：综合近期格点数据，包括：\n  - 二色QCD（two-color QCD）在(1+1)维和(3+1)维有限重子数密度下的模拟结果；\n  - QCD在(3+1)维有限同位旋密度下的模拟结果。\n- **天体物理约束**：结合中子星等天体物理观测推断出的状态方程。\n- **一致性检验**：将上述多源数据放在一起，检验是否形成与Quarkyonic物质涌现相一致的连贯图像。\n- **未来建议**：提出在高密度下计算重子和规范不变的夸克动量分布函数，作为更直接的检验手段。\n\n## 主要结果\n\n1. **Quarkyonic物质的分布函数约束**：对偶性要求分布函数同时体现禁闭（强子-like）和准自由（夸克-like）行为，这提供了一个稳健的、不依赖于具体模型的判据。\n2. **格点数据的一致性**：二色QCD在有限重子密度下（1+1维和3+1维）以及QCD在有限同位旋密度下的格点数据，与Quarkyonic物质的预期特征一致，形成了一个连贯的图像。\n3. **天体物理状态方程的支持**：天体物理推断的状态方程同样与Quarkyonic物质的涌现相容。\n4. **未来检验方向**：在高密度下进行重子和规范不变的夸克动量分布函数的格点计算，将能更直接地检验这一解释。\n\n## 为什么值得关注\n\n- **解决符号问题的重要途径**：有限重子密度下的QCD格点计算受符号问题困扰，而二色QCD和有限同位旋密度QCD是无符号问题或符号问题可控的替代体系。本文表明这些体系可能已经揭示了Quarkyonic物质的关键特征，为理解真实QCD的有限密度相结构提供了重要线索。\n- **连接格点与天体物理**：将格点数据与中子星状态方程联系起来，增强了格点QCD对致密星体物理的预言能力。\n- **提出可检验的判据**：基于分布函数的稳健约束为未来格点计算提供了明确的观测量建议（夸克动量分布函数），具有方法论指导意义。\n- **对Quarkyonic物质图像的检验**：如果成立，这将是对Quarkyonic物质这一理论概念的首批格点证据之一，对理解QCD相图（特别是从强子到夸克物质的过渡区域）具有重要意义。\n\n## 方向标签\n\n- Lattice QCD\n- Finite density QCD\n- Quarkyonic Matter\n- Two-color QCD\n- Isospin density\n- Equation of State\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：本文涉及有限密度QCD格点这一核心难题，综合了二色QCD、同位旋密度QCD和天体物理多条线索，提出了可检验的判据和未来方向，对有限密度QCD相结构研究具有较高的参考价值。扣一星是因为它是一篇综述/分析性文章而非新的第一性格点计算，且Quarkyonic物质的格点证据仍是间接的、依赖于对分布函数的解释，结论的确定性有待未来更直接的计算（如夸克动量分布函数）来验证。对于从事有限密度格点、QCD相图或致密星体物理的研究者，值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:06.293437"
+  },
+  {
+    "id": "2611.08266v1",
+    "title": "The index of mesoscopic Wilson--Dirac operators: I",
+    "authors": [
+      "Mikio Furuta",
+      "Shinichiroh Matsuo"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.08266v1",
+    "published": "2026-11-05T16:38:28Z",
+    "abstract": "This is the first of a series of papers which will be devoted to a study of the index of mesoscopic Wilson--Dirac operators on closed Riemannian manifolds. The aim of the series is to discretise the index of the Dirac operator. On flat tori, this is achieved by the Wilson--Dirac operator of lattice gauge theory on a regular lattice. On a general closed Riemannian manifold, however, no regular lattice is available. As an intermediate step between the continuum Dirac operator and its discretisations, we introduce mesoscopic Wilson--Dirac operators on any closed Riemannian manifold, defined by integrating covariant differences over distances comparable to a fixed length scale. In this paper, we define the index of the mesoscopic Wilson--Dirac operators via spectral flow and prove that it agrees with that of the continuum Dirac operator at all sufficiently small scales. The proof rests on an elliptic estimate uniform in the scale and a Rellich-type compactness theorem. In the second paper, we shall pass from mesoscopic operators to discrete Wilson--Dirac operators.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文在任意闭黎曼流形上引入了“介观 Wilson–Dirac 算子”（通过对协变差分在固定长度尺度上积分定义），用谱流定义其指标，并证明在足够小的尺度下该指标与连续 Dirac 算子的指标一致，为最终把 Dirac 指标离散化到格点上铺平了道路。\n\n## 研究问题\n\n作者想解决的核心问题是：**如何把连续 Dirac 算子的指标（index）离散化**。\n\n- 在平坦环面上，格点规范理论中的 Wilson–Dirac 算子已经能做到这一点（有正则格点可用）。\n- 但在一般的闭黎曼流形上，**不存在正则格点**，因此无法直接照搬格点构造。\n- 于是作者提出一个中间步骤：先构造一个“介观”（mesoscopic）版本的 Wilson–Dirac 算子——它仍然定义在连续流形上，但通过在以固定长度尺度为半径的范围内对协变差分做积分来“粗粒化”，从而在连续 Dirac 算子与真正的离散 Wilson–Dirac 算子之间架桥。\n\n具体要回答的是：这个介观算子的指标如何定义？它是否在小尺度极限下与连续 Dirac 算子的指标相等？\n\n## 方法\n\n- **对象**：任意闭黎曼流形上的介观 Wilson–Dirac 算子，由对协变差分在“与固定长度尺度可比的”距离上积分来定义（即对差分算子做尺度约化的平均/积分）。\n- **指标定义**：通过**谱流（spectral flow）** 来定义介观 Wilson–Dirac 算子的指标，而不是直接用核空间维数差。\n- **核心分析工具**：\n  - 一个**与尺度一致（uniform in the scale）的椭圆估计**；\n  - 一个 **Rellich 型紧性定理**。\n- 论文属于解析/算子理论路线（指标定理 + 谱流 + 椭圆估计），**不是数值格点模拟**；数值/离散化留到系列第二篇（从介观算子过渡到离散 Wilson–Dirac 算子）。\n\n## 主要结果\n\n- 成功在**任意闭黎曼流形**上定义了介观 Wilson–Dirac 算子及其指标（经谱流）。\n- 证明了：**在所有足够小的尺度下，介观算子的指标与连续 Dirac 算子的指标一致**。\n- 证明依赖于尺度一致的椭圆估计与 Rellich 型紧性定理。\n- 这是系列第一篇；第二篇将把介观算子进一步过渡到离散 Wilson–Dirac 算子，从而完成指标的离散化。\n\n## 为什么值得关注\n\n- **概念层面**：它给出了“连续指标 → 介观指标 → 离散指标”这条清晰路线，解决了“一般流形上没有正则格点”这一长期障碍，是把格点规范理论中 Wilson–Dirac 算子的指标构造推广到一般几何的核心一步。\n- **对格点/QCD 社区**：Wilson–Dirac 算子的指标与手征反常、拓扑荷、零模等密切相关；理解指标在离散化下的稳健性（以及尺度一致性）对格点手征费米子、拓扑扇区识别有直接的方法论意义。\n- **对数学物理/指标定理**：把谱流、椭圆估计与格点式粗粒化结合，可能为离散化指标定理提供新证明途径。\n- 需要注意：这是纯解析/算子理论工作，**尚未给出数值格点实现**，实际数值价值要等第二篇及后续工作。\n\n## 方向标签\n\n- Lattice QCD（Wilson–Dirac 算子、指标/拓扑）\n- 手征费米子与指标定理（chiral fermions / index theorem）\n- 数学物理 / 谱流与椭圆算子理论\n- 离散化与粗粒化（discretisation / coarse-graining）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：对关心 Wilson–Dirac 算子指标、手征反常离散化、以及“无正则格点流形上如何做格点化”的研究者有较高概念价值，且是系列工作的理论基础；但它是纯解析论文、无数值结果、也不直接涉及 QCD 现象学或算法实现，对以数值格点模拟为主的读者优先级中等。建议关注该系列第二篇（介观→离散）后再评估整体实用价值。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:15.586660"
+  },
+  {
+    "id": "2611.08161v1",
+    "title": "Primitive Quantum Gates for an $SU(3)$ Discrete Subgroup: $Σ(216\\times3)$",
+    "authors": [
+      "Erik J. Gustafson",
+      "Henry Lamm",
+      "Edison Murairi",
+      "Sebastian Osorio Perez"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.08161v1",
+    "published": "2026-11-05T15:20:22Z",
+    "abstract": "We construct a primitive gate set for the digital quantum simulation of the $648$-element discrete subgroup of $SU(3)$, $\\dsb$. The five algorithmic primitives are the inversion, group multiplication, trace, group Fourier transform, and kinetic-phase gates, for which we provide qubit and qutrit--qubit decompositions. For a fiducial shear-viscosity calculation on a $10^3$ spatial lattice with $50$ time steps and a total synthesis-error budget of $10^{-8}$, the estimated fault-tolerant costs are $2.3$--$6.8\\times10^{10}$ $T$ gates in the qubit architecture and $1.3$--$5.9\\times10^{12}$ $R$ gates in the qutrit--qubit architecture.",
+    "summary": {
+      "raw": "## 一句话结论\n本文为 \\(SU(3)\\) 的 648 元离散子群 \\(\\Sigma(216\\times3)\\) 构建了一套用于数字量子模拟的原始门集合，并估算了在容错量子计算机上做剪切黏度计算的 \\(T\\) 门/\\(R\\) 门开销。\n\n## 研究问题\n作者想解决的问题是：如何在数字量子计算机上高效实现 \\(SU(3)\\) 规范理论的量子模拟。连续群 \\(SU(3)\\) 无法直接编码到有限量子比特系统，因此需要选取合适的离散子群作为近似，并为该子群设计一套可分解为量子门的基本算法原语（primitive gates），同时评估其容错量子计算成本。\n\n## 方法\n- 选取 \\(SU(3)\\) 的 648 元离散子群 \\(\\Sigma(216\\times3)\\) 作为规范群近似。\n- 构造五个算法原语：求逆（inversion）、群乘法（group multiplication）、迹（trace）、群傅里叶变换（group Fourier transform）、动能相位门（kinetic-phase gates）。\n- 给出这些原语在 qubit 架构和 qutrit–qubit 混合架构下的分解方案。\n- 以 \\(10^3\\) 空间格点、50 个时间步的剪切黏度（shear viscosity）计算为基准，在总合成误差预算 \\(10^{-8}\\) 下估算容错量子计算资源开销。\n\n## 主要结果\n- 成功为 \\(\\Sigma(216\\times3)\\) 构造了完整的五原语门集合，并给出 qubit 与 qutrit–qubit 两种分解。\n- 容错成本估算：qubit 架构下约需 \\(2.3\\)–\\(6.8\\times10^{10}\\) 个 \\(T\\) 门；qutrit–qubit 架构下约需 \\(1.3\\)–\\(5.9\\times10^{12}\\) 个 \\(R\\) 门。\n- 表明该离散子群方案在容错量子计算资源上处于可讨论但仍有挑战的量级。\n\n## 为什么值得关注\n- 为 \\(SU(3)\\) 格点规范理论的数字量子模拟提供了具体的群离散化与门级实现方案，是从抽象算法走向资源估算的重要一步。\n- 离散子群方法避免了连续群编码的困难，对量子模拟 Lattice QCD 的路线选择有参考价值。\n- 容错资源估算是判断该方案近期/中期可行性的关键指标，对量子硬件与算法协同设计有指导意义。\n- 对研究量子计算与格点场论交叉方向的研究者有直接的方法论借鉴意义。\n\n## 方向标签\n- Lattice QCD\n- Quantum simulation\n- SU(3) gauge theory\n- Fault-tolerant quantum computing\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：本文属于量子模拟格点规范理论的方法学与资源估算工作，对专门从事量子模拟 Lattice QCD 的研究者价值较高；但对传统格点 QCD 数值模拟或唯象研究者相关性有限。方法清晰、结果具体，适合作为该细分方向的参考阅读，而非广泛必读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:21.907604"
+  },
+  {
+    "id": "2611.07864v1",
+    "title": "Quark-mass dependence of two-nucleon scattering",
+    "authors": [
+      "Jorge Baeza-Ballesteros",
+      "André Baião-Raposo",
+      "Davide Laudicina",
+      "Malcolm Lazarow",
+      "Thomas R. Richardson",
+      "Miguel Salg",
+      "John Bulava",
+      "Jeremy R. Green",
+      "Andrew Hanlon",
+      "Renwick J. Hudspith",
+      "Daniel Mohler",
+      "Colin Morningstar",
+      "Amy Nicholson",
+      "Fernando Romero-López",
+      "André Walker-Loud",
+      "Hartmut Wittig"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.07864v1",
+    "published": "2026-11-05T11:41:58Z",
+    "abstract": "Understanding how the properties of the visible Universe depend on the parameters of the Standard Model of particle physics requires \\emph{ab initio} theoretical computations. To that end, we investigate the quark-mass dependence of low-energy nucleon-nucleon scattering in the deuteron and dineutron channels. We perform lattice-QCD calculations at pion masses $M_π\\approx 200$ and $280$ MeV and compare their results to phenomenology at the physical point and to a previous calculation at $M_π\\approx 710$ MeV. Scattering amplitudes, phase shifts, and threshold parameters are determined from finite-volume spectra using quantization conditions that explicitly incorporate long-distance effects from one-pion exchange. We analyze the pion-mass dependence of scattering lengths and effective ranges using chiral effective field theory with Weinberg and Kaplan-Savage-Wise power countings. From this, we estimate the pion-mass derivatives of the inverse scattering lengths and binding momentum, at the physical point. Both power countings indicate that the deuteron unbinds near $M_π\\approx 220$ MeV.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过在 $M_\\pi \\approx 200$ 和 $280$ MeV 的格点 QCD 计算，结合手征有效场论分析，发现氘核在 $M_\\pi \\approx 220$ MeV 附近解绑（即核力不足以束缚氘核），并给出了散射长度和束缚动量对 π 介子质量的导数估计。\n\n## 研究问题\n作者想解决的核心问题是：**核子-核子（NN）低能散射性质如何依赖于夸克质量（即 π 介子质量）？** 具体而言：\n\n1. 在物理点附近，氘核（deuteron）和双中子（dineutron）通道的散射振幅、相移和阈值参数如何随 $M_\\pi$ 变化？\n2. 氘核在多大的 $M_\\pi$ 下会解绑（unbind）？\n3. 不同的手征有效场论幂次计数方案（Weinberg 计数 vs. Kaplan-Savage-Wise 计数）对结论有何影响？\n\n这个问题对于理解标准模型参数（特别是夸克质量）如何决定可见宇宙中的核物理现象具有基础性意义——例如，氘核的稳定性是 Big Bang 核合成和恒星燃烧的关键输入。\n\n## 方法\n- **格点 QCD 计算**：在 $M_\\pi \\approx 200$ 和 $280$ MeV 两个 π 介子质量点进行计算，并与之前 $M_\\pi \\approx 710$ MeV 的结果以及物理点的唯象值进行比较。\n- **有限体积谱学**：从有限体积能谱中提取散射信息。\n- **量子化条件**：使用显式包含单π交换（one-pion exchange, OPE）长程效应的量子化条件（类似于 Lüscher 方法的推广），以正确处理 NN 相互作用中的长程尾。\n- **手征有效场论（ChEFT）**：使用 Weinberg 和 Kaplan-Savage-Wise 两种幂次计数方案分析散射长度和有效力程的 π 介子质量依赖性，并外推估计物理点的导数。\n- **提取量**：散射振幅、相移、阈值参数（散射长度、有效力程）、逆散射长度和束缚动量对 $M_\\pi$ 的导数。\n\n## 主要结果\n1. **氘核解绑的临界 π 介子质量**：两种幂次计数方案一致表明，氘核在 $M_\\pi \\approx 220$ MeV 附近解绑。这意味着如果夸克质量稍大（π 介子质量约比物理值大约 60%），氘核将不再束缚，对宇宙学核合成产生深远影响。\n2. **散射长度和有效力程的 $M_\\pi$ 依赖性**：给出了在物理点处逆散射长度和束缚动量对 $M_\\pi$ 的导数估计。\n3. **幂次计数方案的比较**：Weinberg 和 KSW 两种计数给出定性一致的结论，增强了结果的可信度。\n4. **与唯象学的对比**：将 $M_\\pi \\approx 200$、$280$ MeV 的结果与物理点唯象值及 $710$ MeV 的先前计算进行系统比较，展示了从重 π 介子质量到物理点的演化趋势。\n\n## 为什么值得关注\n1. **核物理与 QCD 的桥梁**：这是从第一性原理（格点 QCD）出发理解核力如何从夸克和胶子中涌现的重要一步，特别是在系统性地改变夸克质量时核力的行为。\n2. **宇宙学与精细调节问题**：氘核解绑的临界 $M_\\pi \\approx 220$ MeV 直接关系到\"宇宙学精细调节\"讨论——标准模型参数的小变化如何影响核物理和宇宙演化。这对理解为什么我们的宇宙允许复杂核素存在具有重要意义。\n3. **方法论贡献**：展示了如何在格点 QCD 计算中正确处理 NN 散射的长程单π交换效应，以及如何将格点结果与 ChEFT 外推系统结合，为未来更高精度的 NN 计算奠定基础。\n4. **对 BSM 物理的启示**：如果夸克质量在早期宇宙或某些 BSM 场景中与今天不同，该结果提供了核物理响应的定量估计。\n\n## 方向标签\n- Lattice QCD\n- Nuclear physics from lattice QCD\n- Chiral effective field theory\n- Quark-mass dependence / Fundamental parameters\n- Few-body scattering\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文直接连接格点 QCD 与核物理唯象学，主题重要且结果具有跨领域影响力（核物理、宇宙学、BSM）。方法上结合了格点计算与 ChEFT 外推，技术含量高。扣一星的原因是：目前仅有两个新 π 介子质量点（200 和 280 MeV），统计精度和系统误差控制可能有限；且氘核解绑的精确临界质量仍有不确定性。但对于关注核力从 QCD 涌现、以及标准模型参数敏感性的研究者来说，这是必读工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:32.192026"
+  },
+  {
+    "id": "2611.07745v1",
+    "title": "First Overlap Formulation and Perturbative Results for Supersymmetric QCD",
+    "authors": [
+      "Marios Costa",
+      "Elias Antoniou",
+      "Herodotos Herodotou",
+      "Eleni Ioannou",
+      "Constantinos Kartoudes",
+      "Gregoris Spanoudes",
+      "Haralambos Panagopoulos"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.07745v1",
+    "published": "2026-11-05T09:51:27Z",
+    "abstract": "We present a lattice formulation of N=1 supersymmetric QCD (SQCD) based on overlap fermions, providing a discretization consistent with the Ginsparg-Wilson relation. Particular emphasis is placed on the construction of Yukawa terms that preserve a lattice-modified chiral symmetry involving overlap quarks and gluinos. To realize this modified chiral symmetry in the Yukawa sector, we follow Lüscher's strategy and introduce auxiliary Dirac and Majorana fermionic fields for the quark and gluino fields, respectively. After functional integration over these auxiliary fields, ultralocal interaction terms arise as additional contributions to the lattice action. Within this framework, and using the Wilson gauge action for gluons, we also carry out one-loop perturbative calculations. In particular, we compute the self-energies of the quark, gluon, gluino, and squark fields in the presence of quark and squark masses, enabling an unambiguous determination of the corresponding field and mass counterterms on the lattice. This work provides a robust foundation for future perturbative determinations of the fine-tunings of the gauge, Yukawa, and quartic couplings, and already shows, as expected, a reduction in the number of required counterterms relative to Wilson-type fermions.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文首次给出了基于 overlap 费米子的 N=1 超对称 QCD 的格点表述，通过引入辅助 Dirac/Majorana 费米子实现保持格点修正手征对称性的 Yukawa 项，并完成了一圈微扰计算，确定了夸克、胶子、胶微子、标量夸克的自能及相应的场与质量反项。\n\n## 研究问题\n\n作者想解决的核心问题是：如何在格点上构造 N=1 超对称 QCD（SQCD），使得该表述与 Ginsparg-Wilson 关系一致，并在 Yukawa 扇区保持格点修正的手征对称性。具体而言：\n\n1. 超对称在格点上被显式破缺，需要确定恢复超对称所需的反项（fine-tuning）。\n2. 用 Wilson 型费米子时反项数目较多，作者希望用 overlap 费米子（满足 GW 关系、具有格点修正手征对称性）来减少所需反项。\n3. 需要在 Yukawa 耦合中实现这种修正手征对称性——这是构造中的关键难点。\n\n## 方法\n\n- **费米子离散化**：采用 overlap 费米子，满足 Ginsparg-Wilson 关系，从而在格点上保留修正的手征对称性。\n- **Yukawa 项的构造**：遵循 Lüscher 的策略，分别对夸克场引入辅助 Dirac 费米子、对胶微子场引入辅助 Majorana 费米子；对辅助场做泛函积分后得到超局域的相互作用项，作为格点作用量的额外贡献。这样 Yukawa 扇区也保持了格点修正手征对称性。\n- **规范场**：采用 Wilson 规范作用量。\n- **微扰计算**：在存在夸克和标量夸克质量的情况下，做一圈微扰计算，计算夸克、胶子、胶微子、标量夸克场的自能，从而无歧义地确定对应的场反项和质量反项。\n- **算法/数值技术**：本文为解析微扰计算（一圈图），未涉及数值模拟。\n\n## 主要结果\n\n1. 首次给出了基于 overlap 费米子的 N=1 SQCD 格点表述，且与 Ginsparg-Wilson 关系一致。\n2. 成功构造了保持格点修正手征对称性的 Yukawa 项（借助辅助 Dirac/Majorana 费米子），泛函积分后得到超局域相互作用项。\n3. 完成了一圈微扰计算，得到夸克、胶子、胶微子、标量夸克在含质量情况下的自能，并确定了相应的场反项与质量反项。\n4. 如预期那样，相对于 Wilson 型费米子，所需反项数目减少——这为后续微扰确定规范、Yukawa 和四次耦合的 fine-tuning 奠定了坚实基础。\n\n## 为什么值得关注\n\n- **超对称格点表述的长期难题**：超对称在格点上被显式破缺，恢复它需要精细调节多个反项。本文用 overlap 费米子减少反项数目，是构造实用 SQCD 格点表述的重要一步。\n- **手征对称性与超对称的结合**：在 Yukawa 扇区实现格点修正手征对称性是技术难点，Lüscher 辅助场策略在此的成功应用对其它超对称/手征规范理论有借鉴意义。\n- **为数值模拟铺路**：一圈微扰结果给出了反项的具体形式，是未来非微扰数值模拟（如研究超对称恢复、态谱、禁闭/手征对称破缺）的必要前提。\n- **对 BSM 格点研究社区的价值**：SQCD 是许多超对称扩展标准模型的基础构件，本文为格点上研究这类理论提供了系统框架。\n\n## 方向标签\n\n- Lattice Field Theory\n- Supersymmetry (SUSY / SQCD)\n- BSM\n- Chiral Fermions (Overlap / Ginsparg-Wilson)\n- Perturbative Lattice Calculations\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：这是一篇方法学/构造性论文，对从事超对称格点表述、overlap 费米子、手征规范理论的研究者高度相关，且为后续微扰与非微扰工作奠定基础，值得精读。但它目前只完成了一圈微扰层面、尚无数值模拟结果，对一般格点 QCD 数值研究者（如做有限温度、强子谱）的直接相关性较低，因此不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:40.984962"
+  },
+  {
+    "id": "2611.07641v1",
+    "title": "Exact and Near-Exact Inverse Renormalization Group with Constrained Monte Carlo",
+    "authors": [
+      "Dimitrios Bachtis"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.07641v1",
+    "published": "2026-11-05T08:26:22Z",
+    "abstract": "We establish conditions for exactness of the inverse renormalization group via constrained Markov processes, a class of Monte Carlo simulations which sample the degrees of freedom within a block on a fine lattice under the constraint that they remain consistent with the corresponding degree of freedom on the coarse lattice according to a forward renormalization group transformation. We show analytically, for an arbitrary transformation, that constrained Markov processes correspond to an exact inversion of the renormalization group at the fixed point action, and to a near-exact inversion in the vicinity of the fixed point. We then optimize renormalization group transformations directly on inversely renormalized configurations to effectively map the action onto itself and ensure computational stability in the generation of configurations for high-dimensional systems. Starting from a set of uncorrelated configurations for the three-dimensional $φ^{4}$ quantum field theory at lattice volume $V=16^{3}$, we invert the renormalization group with constrained Monte Carlo to construct a set of uncorrelated, near-equilibrium configurations for $V=128^{3}$ and extract two critical exponents of the system. The inversion exhibits no critical slowing down, with dynamic critical exponent $z=0.03(2)$.",
+    "summary": {
+      "raw": "## 一句话结论\n本文证明约束蒙特卡洛（constrained Monte Carlo）在不动点处给出逆重整化群的精确反演、在不动点附近给出近精确反演，并在三维 φ⁴ 理论中从 V=16³ 构型直接生成 V=128³ 的近平衡无关构型，且无临界慢化（z=0.03(2)）。\n\n## 研究问题\n作者想解决逆重整化群（inverse RG）何时是精确的、以及如何在高维系统中稳定高效地生成大体积细格点构型的问题。具体包括：(1) 给出约束马尔可夫过程构成 RG 精确反演的解析条件；(2) 解决逆 RG 迭代中作用量映射不稳定、计算不稳定的问题；(3) 验证逆 RG 能否避免临界慢化，从而绕过传统大体积模拟的临界慢化瓶颈。\n\n## 方法\n- **模型**：三维 φ⁴ 量子场论，格点体积从 V=16³ 反演到 V=128³。\n- **核心方法**：约束蒙特卡洛（constrained Markov processes）——在细格点上对每个 block 内的自由度采样，约束条件是它们经前向 RG 变换后与对应粗格点自由度一致。\n- **解析部分**：对任意 RG 变换证明约束马尔可夫过程在不动点作用量处精确反演 RG，在不动点邻域近精确。\n- **优化技术**：直接在逆重整化构型上优化 RG 变换，使作用量有效映射到自身，保证高维系统构型生成的数值稳定性。\n- **数值流程**：从一组无关的 V=16³ 构型出发，用约束 MC 逆 RG 构造 V=128³ 的无关近平衡构型，并提取两个临界指数；测量动态临界指数 z。\n\n## 主要结果\n1. **解析结果**：对任意前向 RG 变换，约束马尔可夫过程在不动点作用量处是 RG 的精确反演，在不动点附近是近精确反演。\n2. **数值结果**：从 V=16³ 成功构造 V=128³ 的无关、近平衡构型，并从中提取两个临界指数。\n3. **无临界慢化**：逆 RG 过程表现出动态临界指数 z = 0.03(2)，即几乎无临界慢化，与传统大体积模拟形成鲜明对比。\n4. **稳定性**：通过在逆重整化构型上直接优化 RG 变换，实现了作用量的有效自映射，保证了高维生成的稳定性。\n\n## 为什么值得关注\n- **绕过临界慢化**：传统大体积格点模拟在临界点附近因临界慢化而代价极高；逆 RG 提供了一条从廉价小体积构型生成大体积平衡构型的路径，z≈0 意味着成本几乎不随体积标度恶化。\n- **逆 RG 的严格基础**：此前逆 RG 多为近似/启发式操作，本文给出精确性与近精确性的解析条件，把逆 RG 从技巧提升为有理论保证的方法。\n- **对格点场论与统计物理的广泛意义**：方法对任意 RG 变换成立，可推广到其他标量场、自旋模型乃至规范理论，对研究临界现象、连续极限外推和大体积构型生成有直接价值。\n- **与机器学习生成模型的关系**：约束 MC 逆 RG 可视为一种有物理约束的生成方法，为基于 RG 的采样/生成策略提供理论参照。\n\n## 方向标签\n- Lattice field theory（标量场论）\n- Renormalization group\n- Monte Carlo algorithms\n- Critical phenomena\n- Generative / sampling methods\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：解析结论清晰且有普适性，数值演示在三维 φ⁴ 上完整（含临界指数与 z 的测量），对做格点模拟和临界现象的人有直接方法学价值；扣一星是因为演示限于标量 φ⁴、尚未推广到规范理论/QCD，且实际加速效果在更大体积和更接近连续极限时的表现仍需进一步验证。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:49.092566"
+  },
+  {
+    "id": "2611.07045v1",
+    "title": "The 2d Ising Model on Hyperbolic Lattices and the Role of Boundary Conditions",
+    "authors": [
+      "Pallabi Dey",
+      "Debasish Banerjee",
+      "Arnab Kundu",
+      "Ritam Sinha"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.07045v1",
+    "published": "2026-11-04T19:06:12Z",
+    "abstract": "We investigate the role of boundary conditions in the critical behaviour of the ferromagnetic Ising model on regular hyperbolic tessellations. Using worm and Metropolis simulations, we compare open boundaries with wired boundaries implemented through a common auxiliary spin. For open boundaries, the susceptibility exhibits volume-based finite-size scaling with non-mean-field scaling exponents that are approximately stable across four tessellations, supporting the possibility of a common universality class. Comparisons with Binder crossings and susceptibility peaks reveal substantial finite-size effects. For wired boundaries, the central-to-auxiliary spin correlator exhibits radial scaling consistent with a mean-field magnetization exponent. The central-spin response to a uniform magnetic field provides a further consistency test of $δ=3$. Layer-resolved responses to a weak boundary field also reveal an enhancement of the induced magnetization towards the interior. Our results highlight the importance of boundary conditions and the distinction between interior and whole-system observables in characterizing critical phenomena on non-amenable lattices.",
+    "summary": {
+      "raw": "## 一句话结论\n在双曲格点上，边界条件（开放 vs. 有线）会根本性改变二维伊辛模型的临界行为：开放边界给出非平均场的、跨四种镶嵌近似普适的标度指数，而有线边界通过辅助自旋诱导出与平均场磁化指数一致的径向标度，说明非 amenable 格点上“内部”与“全系统”观测量必须严格区分。\n\n## 研究问题\n作者想解决的核心问题是：在规则双曲镶嵌（非 amenable 格点，边界/体积比不趋于零）上，铁磁伊辛模型的临界行为如何依赖于边界条件？具体而言：\n1. 开放边界下，有限尺寸标度是否给出稳定的、非平均场的临界指数，从而支持一个共同普适类？\n2. 用“公共辅助自旋”实现的有线边界会如何改变中心自旋的响应与关联，是否恢复平均场式的指数（如 δ=3、平均场磁化指数）？\n3. 在非 amenable 格点上，内部观测量与全系统观测量在刻画临界现象时有何本质区别？\n\n## 方法\n- **模型**：规则双曲镶嵌上的铁磁伊辛模型（四种镶嵌，比较其标度行为）。\n- **格点/几何**：双曲 tessellations（非 amenable 格点），强调边界效应不可忽略。\n- **边界条件**：\n  - 开放边界（open boundaries）；\n  - 有线边界（wired boundaries），通过一个公共辅助自旋把所有边界自旋耦合起来实现。\n- **算法/数值技术**：\n  - Worm 算法（用于高效采样，尤其适合伊辛类模型）；\n  - Metropolis 模拟（作为对照/补充）；\n  - 有限尺寸标度分析：磁化率随体积的标度、Binder cumulant 交叉、磁化率峰值；\n  - 中心自旋对均匀磁场的响应（检验 δ=3）；\n  - 分层（layer-resolved）响应：对弱边界场逐层测量诱导磁化，观察向内部增强的效应。\n\n## 主要结果\n1. **开放边界**：磁化率表现出基于体积的有限尺寸标度，拟合出的临界指数为非平均场值，且在四种双曲镶嵌之间近似稳定，支持存在一个共同普适类的可能性。\n2. **有限尺寸效应显著**：Binder 交叉与磁化率峰值的比较揭示出相当大的有限尺寸修正，说明简单外推需谨慎。\n3. **有线边界**：中心自旋到辅助自旋的关联函数呈现径向标度，与平均场磁化指数一致；中心自旋对均匀磁场的响应进一步与 δ=3 相符，构成一致性检验。\n4. **分层响应**：对弱边界场的逐层响应显示，诱导磁化向内部增强，凸显边界场在非 amenable 几何中的非平庸传播。\n5. **总体结论**：边界条件的选择以及“内部观测量 vs. 全系统观测量”的区分，是刻画非 amenable 格点上临界现象的关键。\n\n## 为什么值得关注\n- **对格点场论/统计场论的方法论意义**：非 amenable 格点（双曲空间）上边界自由度占比不消失，传统热力学极限与有限尺寸标度假设需要重新审视；本文给出“边界条件决定有效普适类/指数”的具体数值证据。\n- **普适性与全息/弯曲空间关联**：双曲格点上的伊辛临界行为与平均场指数（δ=3）的出现，对理解强曲率/负曲率背景下的场论、以及离散全息类构造中的临界现象有参考价值。\n- **算法层面**：worm 算法在双曲格点上的应用与分层响应测量，为后续非 amenable 格点上的 Monte Carlo 研究提供可复用技术路线。\n- **对 lattice QCD/理论物理社区的间接启示**：虽然不直接是 QCD，但它强调“边界条件与观测量定义”对临界指数提取的系统性影响，这对有限温度/有限体积格点计算中边界条件与有限尺寸标度分析具有方法论借鉴意义。\n\n## 方向标签\n- Lattice field theory (statistical)\n- Finite-size scaling\n- Boundary conditions\n- Curved/hyperbolic lattices\n- Monte Carlo algorithms (worm/Metropolis)\n- Universality & critical exponents\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：选题聚焦、问题清晰，数值证据直接回答“边界条件如何改变临界行为”这一在非 amenable 格点上常被忽视的关键问题；对做有限尺寸标度、边界条件系统效应、以及弯曲空间格点模拟的研究者有较高参考价值。扣一星是因为它不直接涉及 QCD/BSM 等粒子物理主流方向，且四种镶嵌的统计精度与普适类结论仍需更大体积/更多镶嵌验证；但对方法论敏感的读者仍值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:22:59.238456"
+  },
+  {
+    "id": "2611.07004v1",
+    "title": "Conformal Bootstrap Unblocked",
+    "authors": [
+      "Li-Yuan Chiang",
+      "David Poland"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.07004v1",
+    "published": "2026-11-04T19:00:01Z",
+    "abstract": "We develop a novel conformal bootstrap formulated directly in terms of conformal symmetry, reflection positivity, and crossing symmetry, without explicitly relying on the operator product expansion or conformal blocks. By constructing Gram matrices from states created by pairs of local operators and imposing spectral constraints through conformal generators, we obtain a hierarchy of semidefinite programs that directly constrain correlation functions. We demonstrate the method in one to three dimensions, obtaining correlator and spectral bounds that capture generalized free field behavior and reproduce the characteristic Ising kinks in two and three dimensions. We further show that joint positivity of states at different insertion configurations naturally constrains correlators away from self-dual kinematics.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文提出了一种不依赖 OPE 和共形块、直接基于共形对称性、反射正定性和交叉对称性的“无阻塞”共形 bootstrap 框架，通过构造 Gram 矩阵并求解半定规划层级，直接约束关联函数与谱，并在 1–3 维重现广义自由场行为和 Ising 临界点特征。\n\n## 研究问题\n传统共形 bootstrap 通常依赖算符乘积展开（OPE）和共形块展开，将交叉对称性转化为共形块系数的正定性约束。作者希望解决：能否绕开 OPE 和共形块，直接以共形对称性、反射正定性和交叉对称性为出发点，构造一个更直接、更一般的共形 bootstrap 框架，从而约束关联函数和谱，并避免对共形块解析性质的依赖？\n\n## 方法\n- 构造由局域算符对产生的态空间 Gram 矩阵，利用反射正定性要求 Gram 矩阵半正定。\n- 通过共形生成元施加谱约束（而非显式 OPE/共形块展开）。\n- 将问题组织为一系列半定规划（SDP）层级，直接约束关联函数。\n- 在 1–3 维中演示该方法，数值求解 SDP 以获得关联函数界和谱界。\n- 进一步利用不同插入构型下态的联合正定性，约束远离自对偶运动学区域的关联函数。\n\n## 主要结果\n- 在 1–3 维中成功构造并求解了该 bootstrap 层级，得到关联函数和谱的界。\n- 结果捕获了广义自由场行为。\n- 在二维和三维中重现了 Ising 模型的特征“kink”结构。\n- 表明不同插入构型下态的联合正定性可以自然地对远离自对偶运动学的关联函数施加额外约束。\n\n## 为什么值得关注\n- 对共形 bootstrap 社区：提供了一条不依赖 OPE/共形块的替代路径，可能简化或推广现有 bootstrap 程序，并增强对共形块解析性质假设的独立性。\n- 对理论物理：直接以对称性和正定性构造 SDP 的思路具有一般性，可能推广到更广泛的量子场论约束问题。\n- 对格点/QCD 社区：虽然本文不是格点方法，但其“从态的正定性直接约束关联函数”的精神与格点场论中的反射正定性、谱表示和数值半定规划方法有概念联系，可能为格点与共形 bootstrap 的交叉提供新工具。\n- 对临界现象与统计物理：在 2D/3D Ising 中重现 kink，说明方法具有实际约束力，可用于研究临界指数和普适性。\n\n## 方向标签\n- Conformal Bootstrap\n- Quantum Field Theory\n- Semidefinite Programming\n- Critical Phenomena\n- Ising Model\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文提出了一种概念上新颖且可能具有广泛影响的 bootstrap 框架，数值上在 1–3 维重现 Ising kink，说明方法有效。对共形 bootstrap 和理论物理研究者优先级较高；对纯格点 QCD 数值工作者直接相关性稍弱，但其正定性和 SDP 思想值得关注。若后续能推广到更高维、规范场或更复杂谱问题，影响力会进一步提升。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:23:06.435676"
+  },
+  {
+    "id": "2611.07003v1",
+    "title": "Nonlocal magic of fermions is bounded by entanglement fluctuations and is logarithmic for free fermions",
+    "authors": [
+      "Raghav G. Jha",
+      "Dengyao Luo",
+      "Alexander F. Kemper",
+      "Bojko N. Bakalov"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.07003v1",
+    "published": "2026-11-04T19:00:01Z",
+    "abstract": "Free-fermion states are classically simulable, yet, written as qubits, they typically carry extensive magic, the quantum resource that stabilizer circuits lack. Part of this magic is nonlocal: local unitaries acting separately on two parts of the system cannot remove it. If these local unitaries are restricted to Gaussian ones, the nonlocal magic grows linearly with the number $m$ of partially entangled fermion pairs. We show that this growth is an artifact of the Gaussian restriction: local Gaussian unitaries minimize the nonlocal stabilizer Rényi entropy for up to three pairs, but not from four pairs on. General local non-Gaussian unitaries that respect fermion parity take $m$ free-fermion pairs to fermionic Bell pairs with a fidelity that decays at most as $1/\\sqrt m$ compared to exponential decay with Gaussian unitaries, so the nonlocal magic drops from linear to logarithmic in $m$. The reason is statistical --- Bell pairs have equal Schmidt weights, that is, a fully degenerate entanglement spectrum, and a state can stay far from them only if its Schmidt weights are spread over many orders of magnitude. This spread is measured by the capacity of entanglement $C_E$, the variance of the entanglement Hamiltonian, and the nonlocal magic of any fermionic state grows at most logarithmically with $C_E$. Free-fermion pairs add to $C_E$ independently, so $C_E$ grows only linearly in $m$, and this leads to the stabilizer fidelity decreasing at most as $1/\\sqrt m$. Almost all the magic of free fermions, including Hartree--Fock and BCS mean-field states, is therefore local.",
+    "summary": {
+      "raw": "## 一句话结论\n自由费米子态中看似随粒子对数线性增长的非局域“魔法”（magic）其实主要是高斯限制造成的假象：允许保持费米宇称的一般局域非高斯操作后，非局域 stabilizer Rényi 熵至多随纠缠容量 \\(C_E\\) 对数增长，而自由费米子对的 \\(C_E\\) 只线性增长，因此非局域魔法从线性降为对数，自由费米子（含 Hartree–Fock 与 BCS 平均场态）的绝大多数魔法都是局域的。\n\n## 研究问题\n作者想解决的核心问题是：把自由费米子态写成量子比特后，它携带大量“魔法”（stabilizer 电路所缺的量子资源），其中一部分是非局域的——对两部分分别做局域酉变换也去不掉。此前有结果表明，若把局域酉变换限制为高斯操作，非局域魔法会随部分纠缠费米子对数目 \\(m\\) 线性增长。作者要问：这个线性增长是物理的，还是高斯限制的假象？一般（非高斯）局域操作能把非局域魔法压到多低？其背后的统计机制是什么？\n\n## 方法\n这是一篇量子信息/多体理论的分析性工作，而非格点数值模拟。主要手段包括：\n- 以自由费米子态（含 Hartree–Fock 与 BCS 平均场态）为对象，将其映射为 qubit 态并研究 stabilizer Rényi 熵作为 magic 度量；\n- 比较“局域高斯酉变换”与“保持费米宇称的一般局域非高斯酉变换”两类操作下非局域 magic 的最小化行为；\n- 用 Schmidt 权重分布（纠缠谱）刻画态与费米子 Bell 对（完全简并纠缠谱）的接近程度，引入纠缠容量 \\(C_E\\)（纠缠哈密顿量的方差）作为谱展宽的度量；\n- 通过保真度随 \\(m\\) 的衰减标度（高斯下指数衰减 vs 一般操作下至多 \\(1/\\sqrt m\\)）以及 magic 上界 \\(\\lesssim \\log C_E\\) 做解析论证，辅以最多三对/四对的小规模情形说明高斯最小化何时失效。\n\n## 主要结果\n1. **高斯限制是假象**：局域高斯酉变换只在最多三对费米子时最小化非局域 stabilizer Rényi 熵，从四对起不再是最优。\n2. **线性→对数**：保持费米宇称的一般局域非高斯酉变换可把 \\(m\\) 个自由费米子对变成费米子 Bell 对，保真度至多按 \\(1/\\sqrt m\\) 衰减（高斯下为指数衰减），于是非局域 magic 从随 \\(m\\) 线性增长降为对数增长。\n3. **统计机制**：Bell 对具有完全简并的纠缠谱（Schmidt 权重相等）；一个态要远离 Bell 对，其 Schmidt 权重必须横跨许多数量级，这一展宽由纠缠容量 \\(C_E\\) 度量。\n4. **普适上界**：任意费米子态的非局域 magic 至多随 \\(C_E\\) 对数增长；自由费米子对的 \\(C_E\\) 可加、只随 \\(m\\) 线性增长，故 stabilizer 保真度至多按 \\(1/\\sqrt m\\) 衰减。\n5. **物理推论**：自由费米子（包括 Hartree–Fock 与 BCS 平均场态）的绝大部分 magic 是局域的，非局域部分很弱。\n\n## 为什么值得关注\n- 澄清了“自由费米子具有大量非局域 magic”这一可能误导的结论，指出它是高斯操作限制的产物，修正了对自由费米子量子资源结构的理解。\n- 给出了非局域 magic 与纠缠谱展宽（纠缠容量 \\(C_E\\)）之间的定量联系，为用纠缠量刻画量子资源提供了新桥梁。\n- 对量子模拟与经典可模拟性边界有直接意义：自由费米子经典可模拟，其非局域 magic 的对数上界进一步说明其“量子优势”资源有限；对基于费米子/超导比特的量子计算资源评估、以及 BCS/Hartree–Fock 平均场态的资源判断都有参考价值。\n- 方法上把 stabilizer Rényi 熵、纠缠容量、Schmidt 谱统计结合起来，可推广到其他多体态的 magic 分析。\n\n## 方向标签\nQuantum simulation；Tensor network（纠缠谱/Schmidt 分解视角）；理论物理（量子资源理论、纠缠）；凝聚态/多体量子信息（自由费米子、BCS/Hartree–Fock）。不直接属于 Lattice QCD、BSM、Machine Learning、Finite temperature。\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：概念清晰、结论有普适性，对量子模拟与量子资源理论社区价值较高；但它不是格点 QCD 或有限温度场论的直接方法论文，与 Lattice QCD 主线关联较弱。若你的兴趣在量子模拟、纠缠与经典可模拟性边界，可提到 4 星；若专注格点 QCD 数值，则 2–3 星即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-07T06:23:16.451105"
   }
 ]
