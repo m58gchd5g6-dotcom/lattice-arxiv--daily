@@ -7804,5 +7804,109 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-07T06:23:16.451105"
+  },
+  {
+    "id": "2611.09865v1",
+    "title": "Emergence and polymer physics of the center-vortex network: Confronting SU(4) lattice Yang-Mills theory",
+    "authors": [
+      "Luis E. Oxman",
+      "Jackson A. Mickley",
+      "Derek B. Leinweber"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.09865v1",
+    "published": "2026-11-06T18:45:23Z",
+    "abstract": "The geometric organization and statistical properties of center-vortex networks provide a window into the infrared dynamics underlying confinement in Yang-Mills theory. Motivated by this connection, we investigate new consequences of a previously proposed confinement mechanism based on physically equivalent elementary Cartan fluxes. We show that, in the percolating phase, these fluxes dynamically reorganize into center-charge sectors whose dominant vortex tensions satisfy a Casimir scaling law, similar to that observed for confining string tensions. We then confront this result with the first nontrivial Yang-Mills case: the doubly charged vortex chains recently observed in SU(4) lattice simulations. To extract the parameters needed to connect the lattice ensemble with the effective description, we characterize how center-vortex chains grow and bend in SU(3) and SU(4) using polymer-inspired techniques not previously applied to center vortices. We find good quantitative agreement for the SU(4) doubly charged sector, providing further evidence for the proposed mechanism.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过将基于“物理等价基本 Cartan 通量”的禁闭机制与 SU(4) 格点 Yang-Mills 模拟中观测到的双荷中心涡旋链进行定量对比，发现两者在双荷扇区高度吻合，为中心涡旋网络作为红外禁闭动力学的有效描述提供了新的证据。\n\n## 研究问题\n作者想解决的核心问题是：此前提出的基于物理等价基本 Cartan 通量的禁闭机制，能否在真实的 SU(4) 格点 Yang-Mills 理论中得到定量验证？具体而言，该机制预言在渗流相中通量会动态重组为中心荷扇区，且主导涡旋张力满足 Casimir 标度律；作者需要检验这一预言是否与 SU(4) 格点模拟中最近观测到的双荷涡旋链一致，并提取连接格点系综与有效描述所需的参数。\n\n## 方法\n- **格点规范理论模拟**：使用 SU(3) 和 SU(4) 格点 Yang-Mills 理论，分析中心涡旋网络的几何与统计性质。\n- **有效模型**：基于物理等价基本 Cartan 通量的禁闭机制，描述渗流相中通量重组为中心荷扇区及 Casimir 标度律。\n- **聚合物物理启发技术**：首次将聚合物物理中的方法（如链生长与弯曲的统计表征）应用于中心涡旋，以刻画 SU(3) 和 SU(4) 中中心涡旋链的生长与弯曲行为，从而提取有效描述所需的参数。\n- **定量对比**：将有效模型预言与 SU(4) 格点模拟中双荷涡旋链的观测结果进行定量比较。\n\n## 主要结果\n1. 在渗流相中，基本 Cartan 通量动态重组为中心荷扇区，其主导涡旋张力满足与禁闭弦张力类似的 Casimir 标度律。\n2. 利用聚合物启发的技术，成功表征了 SU(3) 和 SU(4) 中中心涡旋链的生长与弯曲，并提取了连接格点系综与有效描述的参数。\n3. 对于 SU(4) 双荷扇区，有效模型预言与格点模拟结果达到良好的定量一致，进一步支持了所提出的禁闭机制。\n\n## 为什么值得关注\n- **对禁闭机制的理解**：中心涡旋网络是理解 Yang-Mills 理论红外禁闭动力学的重要窗口。该工作首次将基于 Cartan 通量的禁闭机制与 SU(4) 格点数据定量对比并取得一致，为禁闭的涡旋图像提供了新的支持。\n- **方法学创新**：将聚合物物理技术引入中心涡旋分析，为刻画涡旋网络的几何与统计性质提供了新工具，可能推广到其他规范群和更复杂的涡旋结构。\n- **对格点/QCD 社区的意義**：SU(4) 是超越 SU(3) 的第一个非平凡案例，双荷涡旋链的定量验证增强了有效模型的可信度，有助于连接格点模拟与解析禁闭模型，并可能启发对更高规范群或有限温度下涡旋网络的研究。\n\n## 方向标签\n- Lattice QCD\n- Confinement\n- Center vortices\n- Yang-Mills theory\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：该论文将有效禁闭机制与 SU(4) 格点数据进行了罕见的定量对比，方法上有聚合物物理的新颖应用，结果对理解禁闭机制有实质推进。扣一星是因为其主题较为专门，主要吸引对中心涡旋和禁闭机制感兴趣的读者，而非广泛格点社区；且 SU(4) 仍属简化模型，向真实 QCD 的推广尚需进一步工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-09T07:00:24.550625"
+  },
+  {
+    "id": "2611.09817v1",
+    "title": "Machine learning for lattice QCD",
+    "authors": [
+      "Gurtej Kanwar",
+      "Scott Lawrence",
+      "Alessandro Nada",
+      "Phiala Shanahan"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.09817v1",
+    "published": "2026-11-06T18:05:06Z",
+    "abstract": "Machine learning (ML) methods have been explored as a means of optimizing lattice field theory calculations, with increasing interest in recent years. This chapter gives an introduction and summary to the use of ML methods to optimize lattice field theory without introducing any uncontrolled approximations. We focus on those directions which are clearly established as of late 2025, marking the 50th anniversary of the beginning of the study of lattice gauge theory. This chapter is a contribution to the online book ``Lattice QCD at 50 years,'' (LQCD@50), edited by Tanmoy Bhattacharya, Maarten Golterman, Rajan Gupta, Laurent Lellouch, and Steve Sharpe.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这是一篇关于「用机器学习优化格点QCD计算、且不引入任何不可控近似」的综述性章节，系统梳理了截至2025年底已被确立的几条主要ML应用路线，适合作为进入该方向的入门地图。\n\n## 研究问题\n\n作者想回答的是：在格点场论（尤其是格点QCD）的计算流程中，机器学习方法究竟能在哪些环节、以何种方式带来实质性的效率提升，同时**不破坏格点计算的可控系统误差**这一根本要求。换言之，ML在这里不是用来替代第一性原理计算，而是作为加速器/采样器/代理模型嵌入现有严格框架。作者刻意把范围限定在\"clearly established as of late 2025\"的方向，即已经过验证、被社区接受的方法，而非纯探索性的前沿尝试。\n\n## 方法\n\n作为综述章节，它本身不提出新算法，而是归纳以下几类已被确立的技术路线（按格点场论中ML的典型分类）：\n\n- **采样加速**：用归一化流（normalizing flows）等生成模型学习规范场/费米子场的分布，构造更高效的提议分布，用于混合蒙特卡洛（HMC）中的多保真度或独立采样，减少临界 slowing down 和拓扑冻结问题。\n- **代理模型与函数逼近**：用神经网络逼近 Dirac 算符求逆、行列式比、作用量梯度等昂贵子计算，作为HMC力项或观测量估计的加速器。\n- **场变换/流式方法（flow-based trivializing maps）**：学习规范场的可逆变换，使变换后的场分布更接近高斯，从而改善采样和积分。\n- **信号提取与数据分析**：ML用于相关函数拟合、激发态提取、噪声缩减等下游分析环节。\n- **规范等变网络**：强调网络结构需尊重规范对称性/平移对称性，以保证外推与系统误差可控。\n\n关键方法论立场是：所有这些方法都必须保持**精确性（exactness）**——例如用ML提议分布配合Metropolis接受/拒绝步骤，保证采样仍收敛到正确的目标分布。\n\n## 主要结果\n\n综述的核心结论可概括为：\n\n1. **ML在格点QCD中的定位已明确**：它是\"优化器\"而非\"近似替代品\"，可控近似这一红线被普遍遵守，这使该方法论在严格场论社区中站得住脚。\n2. **归一化流/生成模型是当前最成熟、证据最充分的方向**，尤其在改善拓扑采样和降低自相关时间方面有可复现的收益。\n3. **规范等变架构**被确立为设计原则，而非可选技巧。\n4. 部分方向（如纯用ML替代求逆）仍受精度与可扩展性限制，尚未普遍确立。\n5. 作者以\"50周年\"为节点做阶段性盘点，意味着该领域已从\"能不能用\"进入\"哪些已确定可用\"的成熟期。\n\n## 为什么值得关注\n\n- 对**格点社区**：它给出了一份\"哪些ML方法可以放心用、哪些还不能\"的权威清单，直接指导实践选型，避免重复踩坑。\n- 对**QCD/理论物理**：格点计算的最大瓶颈（临界 slowing down、拓扑冻结、昂贵求逆）正是ML最能发挥作用的痛点；若这些加速成立，将直接扩展可计算的物理范围（更细格距、更大体积、更轻夸克质量）。\n- 对**方法论文化**：它示范了如何在第一性原理严格的领域内引入数据驱动方法而不牺牲可控性——这一\"ML作为精确算法组件\"的范式对其他格点场论（BSM、有限温度、量子模拟）也有迁移价值。\n- 作为 **LQCD@50** 的章节，它具有教学与路线图双重价值，适合新人建立全局视野。\n\n## 方向标签\n\n- Lattice QCD\n- Machine Learning\n- Lattice field theory (general)\n- Algorithm development / sampling\n- Normalizing flows / generative models\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：作为综述章节，它信息密度高、定位清晰，是进入\"ML for lattice\"方向的高性价比入口，尤其适合想快速判断哪些方法已可用的人。扣一星是因为：它是综述而非原始研究，不含新结果；且范围刻意收窄到\"已确立\"方向，对最前沿探索（如量子模拟与ML结合、张量网络混合方法）覆盖有限。若你的目标是做具体算法实现，还需顺藤摸瓜读其引用的原始论文。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-09T07:00:36.243780"
+  },
+  {
+    "id": "2611.09297v1",
+    "title": "Collins-Soper kernel at large $b$ from Chiral Perturbation Theory",
+    "authors": [
+      "Alexey Vladimirov"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.09297v1",
+    "published": "2026-11-06T10:50:24Z",
+    "abstract": "We construct effective operators for transverse-momentum-dependent (TMD) distributions in Chiral Perturbation Theory. The operators constructed from pion and nucleon fields possess the main properties of the QCD operators, including multiplicatively renormalizable rapidity divergences. Extracting the leading rapidity divergence, we find the expression for the Collins-Soper kernel at large $b$ and at the low-energy normalization point, which is model-independent up to an additive constant. In this regime, the Collins-Soper kernel has a nearly constant behavior. We also find that at large $b$ it depends on the isospin channel and on the hadron type, although this dependence is numerically very small.",
+    "summary": {
+      "raw": "## 一句话结论\n作者用 Chiral Perturbation Theory（手征微扰理论，ChPT）构造了π介子和核子的 TMD 有效算符，首次在解析层面给出了大 $b$（大横向距离）区域 Collins-Soper kernel 的模型无关表达式（至多差一个可加常数），并发现该 kernel 在大 $b$ 下近似为常数、且对同位旋通道和强子类型仅有极弱的依赖。\n\n## 研究问题\n论文关注的是 TMD 分布中 Collins-Soper kernel 在大横向距离 $b$ 区域的行为。这个 kernel 描述 TMD 分布随快度演化的非微扰部分，是连接格点计算与实验（如 Drell-Yan、SIDIS）的关键量。然而在 $b \\to \\infty$ 的非微扰区域，QCD 本身无法直接解析求解，格点计算也受限于算符构造和快度发散的处理。作者想回答：能否用一个低能有效理论（ChPT）在模型无关的层面上确定大 $b$ 处 CS kernel 的行为、其常数性质以及它对强子/同位旋的依赖？\n\n## 方法\n这不是一篇格点数值论文，而是解析有效场论工作：\n- 在 ChPT 框架下，用π介子和核子场构造 TMD 对应的有效算符，使其复现 QCD 算符的主要性质，特别是**乘性可重整的快度发散**（multiplicatively renormalizable rapidity divergences）。\n- 通过提取领头快度发散，读出 CS kernel 在大 $b$、低能重整化点的表达式。\n- 分析其在大 $b$ 极限下的常数行为，并比较不同同位旋通道与强子类型（π vs 核子）的差异。\n- 没有使用格点模拟、数值算法或机器学习技术；结论是解析的、模型无关（up to additive constant）。\n\n## 主要结果\n1. 构造出的 ChPT 有效算符具备 QCD TMD 算符的核心性质，包括乘性可重整的快度发散，说明 ChPT 可以作为大 $b$ 区域 TMD 演化的有效描述。\n2. 由领头快度发散得到 CS kernel 在大 $b$、低能归一化点的表达式，该结果**模型无关，仅差一个可加常数**。\n3. 在该区域 CS kernel 呈现**近似常数**的行为，即随 $b$ 变化非常平缓。\n4. CS kernel 在大 $b$ 下**依赖同位旋通道和强子类型**，但这种依赖在数值上非常小。\n\n## 为什么值得关注\n- 对**格点 QCD**：CS kernel 的大 $b$ 行为是格点抽取 TMD 时最棘手的非微扰输入之一。本文给出模型无关的解析预言，可作为格点数据外推、算符匹配和系统误差估计的基准。\n- 对**QCD 唯象**：TMD 演化（rapidity evolution）直接影响 Drell-Yan、SIDIS、玻色子产生等过程的截面预言；大 $b$ 处 kernel 近似常数这一结论简化了非微扰建模。\n- 对**有效理论方法学**：展示了如何用 ChPT 系统构造带快度发散的 TMD 算符，为低能有效描述与 QCD 算符之间的匹配提供了模板。\n- 强子类型/同位旋依赖极弱这一发现，意味着在实用精度下可能可以用统一的 kernel 描述不同强子，具有简化唯象模型的潜在价值。\n\n## 方向标签\n- Lattice QCD（关联，作为 TMD 格点计算的解析输入）\n- TMD / Collins-Soper kernel\n- Chiral Perturbation Theory\n- QCD 唯象（Drell-Yan、SIDIS）\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：这是一篇解析有效场论工作，不涉及格点数值或算法，因此对纯格点技术读者吸引力有限；但它直接针对 TMD 格点计算中最关键的非微扰输入——大 $b$ 的 CS kernel——给出了模型无关的解析结果，对做 TMD 格点、TMD 唯象和快度演化研究的人是高相关且值得一读的。若你的工作集中在 TMD/CS kernel 或 ChPT 算符构造，可提到 4 星；若只关心格点算法本身，3 星较合适。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-09T07:00:45.988777"
+  },
+  {
+    "id": "2611.09150v1",
+    "title": "Chiral Response of QCD Topology across the Thermal Crossover",
+    "authors": [
+      "Heng-Tong Ding",
+      "Jin-Biao Gu",
+      "José Javier Hernández Hernández",
+      "Sheng-Tai Li",
+      "Jia Ni"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.09150v1",
+    "published": "2026-11-06T08:31:09Z",
+    "abstract": "We introduce a novel relation connecting the light-quark-mass derivative of the topological susceptibility in quantum chromodynamics (QCD) to the connected correlation between the squared topological charge and the integrated light-quark scalar density. This relation gives direct access to the chiral response of QCD topology---the local logarithmic light-quark-mass derivative of the susceptibility---from a single ensemble at fixed quark masses for each temperature, without additional simulations at shifted masses. Applying this relation to $(2+1)$-flavor lattice QCD at $m_π\\simeq220\\,\\mathrm{MeV}$ over temperatures ranging from well below to well above the chiral crossover, we find that the response rises rapidly through the crossover from approximately unity toward two. This evolution corresponds to a change from nearly linear to nearly quadratic dependence of the topological susceptibility on the light-quark mass. Using the chiral response as the exponent of a local power law in the light-quark mass, we determine its effective amplitude from the topological susceptibility. This amplitude exhibits a maximum near the crossover temperature, reflecting the competition between the decreasing topological susceptibility and the increasing chiral response. These results reveal a thermal reorganization of the quark-mass dependence of QCD topology beyond the suppression of topological fluctuations alone.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文提出并验证了一个新的格点 QCD 关系式，使得只需在单一夸克质量系综上就能直接提取拓扑极化率对轻夸克质量的局域对数导数（“手征响应”），并发现该响应在热手征交叉区从约 1 快速上升到约 2，揭示 QCD 拓扑的夸克质量依赖在交叉区发生了热重组。\n\n## 研究问题\n\n作者想解决的问题是：QCD 拓扑极化率 χ_top 如何依赖于轻夸克质量 m_l，尤其是在手征交叉温度附近？传统上要确定 ∂χ_top/∂m_l 需要在多个夸克质量下分别模拟（masses shifting），成本高昂。本文希望找到一种在**固定夸克质量的单一系综**上直接计算该导数（更准确说是局域对数导数 ∂ln χ_top/∂ln m_l）的方法，并借此刻画拓扑涨落在热交叉区的质量依赖行为，而不仅仅停留在“拓扑被压低”这一已知现象上。\n\n## 方法\n\n- **(2+1) 味格点 QCD** 模拟，采用 staggered 类费米子（从 m_π ≃ 220 MeV 的设定看属于较重的 pion 质量、接近物理的 strange 夸克）。\n- 温度扫描覆盖从远低于到远高于手征交叉的宽范围。\n- **核心理论工具**：推导出一个新关系式，把 χ_top 的轻夸克质量导数与“拓扑荷平方 × 积分轻夸克标量密度”的**连通关联函数**联系起来：\n  - 即 ⟨Q_top² · (∫ d⁴x \\bar ψψ)⟩_connected 直接给出 ∂χ_top/∂m_l。\n  - 这样避免了在多个质量点做额外模拟（no additional simulations at shifted masses）。\n- 定义**手征响应**为局域对数导数 ∂ln χ_top/∂ln m_l，并把它当作局域幂律 χ_top ∝ m_l^{响应指数} 的指数，再从 χ_top 本身反推有效振幅。\n- 数值上需要在同一系综上测量拓扑荷平方与标量密度积分的连通关联，属于纯规范+费米子测量的标准格点技术（拓扑荷用规范场定义，标量密度用噪声估计/随机源等）。\n\n## 主要结果\n\n1. **手征响应随温度快速演化**：穿过手征交叉时，响应从约 1 上升到约 2。这意味着 χ_top 对 m_l 的依赖从**近似线性**变为**近似二次**。\n2. **有效振幅在交叉温度附近出现极大值**：这是拓扑极化率下降与手征响应上升两种效应竞争的结果。\n3. 结论是：热交叉区不仅压低了拓扑涨落，还**重组了拓扑对夸克质量的依赖结构**（thermal reorganization），这是超出“拓扑被抑制”这一简单图像的新的物理内容。\n4. 方法层面：证明了单系综提取质量导数的可行性，为后续系统误差控制和更轻 pion 质量下的推广铺路。\n\n## 为什么值得关注\n\n- **方法学价值**：给出了一种廉价、无需多质量模拟即可获得 χ_top 质量导数的手段，对格点 QCD 中涉及质量导数的量（如手征磁效应相关、轴子物理、拓扑 susceptibility 的温度依赖）都有直接借鉴意义。\n- **物理图像更新**：把“拓扑在高温被压低”细化为“拓扑的质量依赖指数在交叉区改变”，这对理解手征对称性恢复与拓扑涨落的关系、以及 QCD 轴子（axion）宇宙学中温度依赖的 χ_top(T) 建模很重要——因为轴子质量与 χ_top 直接相关，其质量依赖形式会影响早期宇宙轴子演化的定量预测。\n- **对有效理论的约束**：线性→二次的转变可作为手征有效理论、instanton/稀释气体模型在交叉区适用性的检验点。\n- 对更广的理论物理社区（轴子、强 CP、早期宇宙 QCD 状态方程）提供了新的、可被引用的格点输入。\n\n## 方向标签\n\n- Lattice QCD\n- Finite temperature\n- QCD topology / Axion physics\n- Chiral symmetry\n- Thermal crossover\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：方法新颖且实用（单系综提取质量导数），物理结论清晰且对轴子物理与手征有效理论有直接价值，属于值得精读的格点 QCD 有限温度工作。扣一星是因为 pion 质量仍较重（m_π ≃ 220 MeV），向物理点外推和系统误差（拓扑荷定义、标量密度噪声、连续极限）仍需后续工作确认，结论的定量普适性有待检验。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-09T07:00:57.297525"
+  },
+  {
+    "id": "2610.42103v1",
+    "title": "Charge Pumping Leptogenesis from the Symmetric Mass Generation Phase on a Four-Leg Ladder Lattice",
+    "authors": [
+      "Runze Chi",
+      "Meng Zeng",
+      "Tao Xiang",
+      "Yi-Zhuang You",
+      "Bertrand I. Halperin",
+      "Juven Wang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2610.42103v1",
+    "published": "2026-10-30T17:44:53Z",
+    "abstract": "Quantized charge pumping in quantum Hall systems is a bulk topological property, typically manifesting on gapless boundaries as spectral flow through chiral edge modes upon flux insertion. When the boundary is anomaly-free, it can be symmetrically gapped by symmetric mass generation (SMG) interactions. However, the effects on quantized charge pumping at an interacting gapped boundary are unclear. We address this using density-matrix renormalization group simulations of a four-leg ladder quasi-(2+1)d realization of the (1+1)d 3-4-5-0 lattice chiral fermion model with six-fermion interactions at one edge. We find gapless modes near the interacting edge for both weak and strong couplings, but the edge can be in a fully gapped SMG phase at intermediate coupling. We also identify spontaneous breaking of the model's $\\mathbb{Z}_2$ symmetry above a critical interaction strength. Across all three boundary phases, we find quantized charge pumping with the same pumped charge per flux quantum. The spatial distribution of the pumped charge varies between phases. Besides charge pumping, we study how a single injected fermion propagates under open boundary conditions. In the SMG phase, an interaction-induced flavor-mixing current develops at the endpoints of the gapped edge, which is absent in the weak- and strong-coupling limits. This current reveals a charge-redistribution mechanism unique to the SMG phase. Additionally, we propose an analogy between charge pumping in this model and a topological leptogenesis scenario in the (3+1)d Standard Model. The anomaly-free chiral U(1) symmetries of the 3-4-5-0 model play a role analogous to the baryon-minus-lepton symmetry of the Standard Model. In both settings, charge pumping can be associated with a continuous deformation along a classically defined but quantum-anomalous direction, while a discrete subgroup remains an exact quantum symmetry.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文用四腿梯形格点上的 DMRG 模拟证明：即使边界被对称质量生成（SMG）完全能隙化，量子化电荷泵浦仍然存在且泵浦电荷量不变，只是空间分布改变；并据此提出一个与 (3+1) 维标准模型中拓扑轻子生成（leptogenesis）的类比。\n\n## 研究问题\n\n作者想解决的核心问题是：**当手征费米子边界的反常被 SMG 相互作用对称地能隙化之后，体态的量子化电荷泵浦（spectral flow / 手征反常的边界表现）是否仍然存在？** 传统图像中，量子化电荷泵浦通过无能隙手征边缘模的谱流实现；若边界被能隙化（且无对称性自发破缺），这一图像似乎失效。作者要检验：在相互作用能隙化边界上，泵浦是否仍量子化、泵浦电荷如何空间分布、以及 SMG 相是否有独特的电荷重分布机制。进一步，作者想把这一格点现象与标准模型中反常与 B−L 对称性、拓扑轻子生成联系起来。\n\n## 方法\n\n- **模型**：(1+1) 维 3-4-5-0 格点手征费米子模型（一种无反常手征 U(1) 对称性的格点手征费米子构造），嵌入到准 (2+1) 维的**四腿梯形（four-leg ladder）** 几何中，作为量子霍尔型电荷泵浦的准二维实现。\n- **相互作用**：在其中一条边上加入**六费米子相互作用**，用于诱导 SMG。\n- **数值方法**：**密度矩阵重整化群（DMRG）**，在梯形几何上做准一维模拟；通过插入磁通（flux insertion）研究谱流与泵浦电荷，通过开边界条件下注入单费米子研究传播与电流。\n- **分析手段**：扫描相互作用强度（弱、中、强耦合），识别边界相（无能隙、SMG 能隙相、Z₂ 自发破缺相），测量泵浦电荷量及其空间分布、端点处的 flavor-mixing 电流。\n\n## 主要结果\n\n1. **边界相图**：弱耦合与强耦合下相互作用边缘附近保持无能隙模；在**中等耦合**区间，边缘进入完全能隙化的 **SMG 相**；超过临界相互作用强度出现模型 Z₂ 对称性的**自发破缺**。\n2. **泵浦量子化稳健**：在三种边界相（弱耦合无能隙、SMG 能隙、Z₂ 破缺）中，**每个磁通量子泵浦的电荷量相同且量子化**——即泵浦量子化不依赖于边界是否无能隙。\n3. **空间分布不同**：虽然总泵浦电荷相同，但泵浦电荷的**空间分布随相而变**，说明能隙化边界把泵浦电荷重新分配到体内/不同区域。\n4. **SMG 相独有的电荷重分布机制**：开边界下注入单费米子时，SMG 相在能隙边缘端点出现**相互作用诱导的 flavor-mixing 电流**，而弱、强耦合极限下没有。这揭示了 SMG 相特有的电荷重分布机制。\n5. **与拓扑轻子生成的类比**：3-4-5-0 模型的无反常手征 U(1) 对称性类比于标准模型的 **B−L 对称性**；两种情形中，电荷泵浦都可视为沿一个**经典定义但量子反常的方向**做连续形变，而一个**离散子群保持为精确量子对称性**。这为 (3+1) 维标准模型中的拓扑轻子生成提供了一个可数值模拟的格点类比。\n\n## 为什么值得关注\n\n- **对 SMG 物理的意义**：直接回答\"SMG 能隙化边界后反常/泵浦何去何从\"这一开放问题，表明量子化泵浦是比边缘无能隙性更稳健的体拓扑性质，深化了对反常流入（anomaly inflow）与对称性能隙化边界关系的理解。\n- **对格点手征费米子的意义**：3-4-5-0 模型是格点手征规范理论的重要构造；在准二维梯形上实现并数值验证其泵浦行为，为格点手征费米子与反常匹配提供了非微扰证据。\n- **对粒子物理/宇宙学的意义**：把格点电荷泵浦与标准模型拓扑轻子生成（sphaleron 型反常过程、B−L 与离散子群）建立类比，为早期宇宙重子/轻子生成的反常机制提供可计算的凝聚态/格点玩具模型。\n- **对张量网络/量子模拟社区**：展示了 DMRG 在准二维拓扑与相互作用边界问题上的能力，且该设置天然适合冷原子量子模拟。\n\n## 方向标签\n\n- Tensor network\n- BSM\n- Quantum simulation\n- Lattice chiral fermions / Anomaly & topological matter（若只能从给定列表选，则归入 BSM + Tensor network + Quantum simulation）\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：选题切中 SMG 与反常泵浦交叉处的实质问题，结论清晰（泵浦量子化对边界能隙化稳健）且有非平庸的新机制（SMG 相 flavor-mixing 电流）；与轻子生成的类比有启发性但仍是类比层面、需后续工作落实。对做格点手征费米子、SMG、张量网络和反常物理的读者优先级很高；对主流 Lattice QCD 数值计算读者相关性中等。方法（DMRG 准一维）成熟、可复现性好，但准 (2+1) 维外推与真实 (3+1) 维标准模型的距离使其略低于满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-09T07:01:09.714052"
   }
 ]
