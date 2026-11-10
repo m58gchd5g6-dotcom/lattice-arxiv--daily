@@ -7908,5 +7908,327 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-09T07:01:09.714052"
+  },
+  {
+    "id": "2611.12877v1",
+    "title": "A regularization-independent Information Criterion for correlated data",
+    "authors": [
+      "Davide Laudicina"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12877v1",
+    "published": "2026-11-09T18:58:14Z",
+    "abstract": "We generalize the Akaike Information Criterion (AIC) to allow model and data subset selection when regularized fits are performed on correlated data. While the standard generalization to regularized fits is inherently dependent on the type of regularization applied to the data covariance matrix, our definition, the RIAIC, is, on average, regularization-independent. The regularization-independence is achieved by defining the new Information Criterion as an estimator of the model-dependent contribution to the correlated Kullback--Leibler divergence. The Bayesian extension is derived as well. We test the new criterion on lattice QCD data by performing regularized fits and show that it reproduces the selection properties of the standard correlated AIC, with fluctuations which are compatible with the expected statistical uncertainties. These results enable the application of subset and model selection techniques to cases where regularizations are applied to the covariance matrix of the fitted dataset.",
+    "summary": {
+      "raw": "## 一句话结论\n\n论文提出了一种对正则化方式不敏感的信息准则 RIAIC，用于在相关数据（如格点 QCD 数据）上进行模型与数据子集选择，并在格点 QCD 数据上验证了其选择性质与标准相关 AIC 一致。\n\n## 研究问题\n\n在格点 QCD 等场合，拟合相关数据时协方差矩阵常因统计量不足而需要正则化（如 shrinkage、截断等）。标准的相关 AIC 在正则化拟合下会依赖所采用的正则化类型，导致模型/子集选择结果随正则化方案而变。作者想解决的是：如何定义一个在平均意义上与正则化无关的信息准则，使得在正则化拟合下仍能可靠地进行模型选择和数据子集选择，并给出其贝叶斯推广。\n\n## 方法\n\n- 将 AIC 推广到相关数据的正则化拟合情形，核心是把新信息准则定义为相关 Kullback–Leibler 散度中“模型依赖贡献”的估计量，从而在平均意义上消除对正则化类型的依赖，得到 RIAIC。\n- 推导了相应的贝叶斯扩展（类似 BIC 的推广）。\n- 在格点 QCD 数据上进行数值实验：对相关数据进行正则化拟合，比较 RIAIC 与标准相关 AIC 的模型/子集选择性质，并考察涨落是否与预期统计不确定性相容。\n- 涉及的技术点包括协方差矩阵正则化、相关数据的拟合与信息准则估计、统计涨落分析。\n\n## 主要结果\n\n- RIAIC 在平均意义上与正则化方式无关，克服了标准相关 AIC 对正则化类型的固有依赖。\n- 在格点 QCD 数据的正则化拟合测试中，RIAIC 再现了标准相关 AIC 的选择性质，其涨落与预期统计不确定性相容。\n- 给出了贝叶斯推广形式。\n- 结论是：该准则使得在协方差矩阵需要正则化的情况下，仍可应用子集选择与模型选择技术。\n\n## 为什么值得关注\n\n格点 QCD 提取能谱、矩阵元等物理量时普遍面临相关数据拟合与协方差矩阵正则化问题，模型选择（如拟合区间、态数目）直接影响系统误差。RIAIC 提供了一种对正则化方案稳健的选择准则，有助于减少人为选择带来的偏差、提高拟合与误差估计的可靠性，并可推广到其他相关数据分析场景；其贝叶斯版本也为模型平均/比较提供了工具。\n\n## 方向标签\n\n- Lattice QCD\n- 统计方法与数据分析（信息准则/模型选择）\n- 相关数据拟合与协方差正则化\n\n## 阅读优先级\n\n★★★★☆（4 星）\n\n理由：问题实际且常见（格点 QCD 拟合中的正则化与模型选择），方法有明确的理论动机（KL 散度中模型依赖部分的估计），并有数值验证；但属于统计方法学贡献而非新物理，若读者主要关心具体物理结果，优先级可略降；对做格点谱学/矩阵元拟合分析的研究者价值较高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:38:55.048260"
+  },
+  {
+    "id": "2611.12771v1",
+    "title": "The structure of the pion at large $N_c$",
+    "authors": [
+      "Isaac Zhu",
+      "Fernando Romero-López",
+      "Phiala E. Shanahan"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12771v1",
+    "published": "2026-11-09T17:42:39Z",
+    "abstract": "We compute the pion quark momentum fraction in the large-$N_c$ limit using the Twisted Eguchi-Kawai (TEK) reduced model. Gauge configurations for different values of the lattice spacing are generated with the pure-gauge TEK action, while the pion correlators are computed for different quark masses with maximally twisted mass fermions. The bare matrix element corresponding to the quark momentum fraction is obtained using the Feynman-Hellmann method, and we use perturbative renormalization factors to connect to the $\\overline{\\mathrm{MS}}$ scheme at $2\\,\\mathrm{GeV}$. A global analysis at several lattice spacings, pion masses, and values of $N_c$ yields $\\langle x\\rangle_q^{\\overline{\\mathrm{MS}}}(2\\,\\mathrm{GeV}) = 0.267(105)$ at the physical pion mass in the large-$N_c$ limit. This value is significantly smaller than existing $N_c=3$ determinations from phenomenology and lattice QCD, indicating that, in the large-$N_c$ limit, the pion's light-cone momentum is carried predominantly by gluons.",
+    "summary": {
+      "raw": "## 一句话结论\n在大 $N_c$ 极限下，用 TEK 约化模型首次算出 pion 的夸克动量分数 $\\langle x\\rangle_q^{\\overline{\\mathrm{MS}}}(2\\,\\mathrm{GeV}) = 0.267(105)$，显著低于 $N_c=3$ 的现有结果，暗示大 $N_c$ 下 pion 的光锥动量主要由胶子携带。\n\n## 研究问题\n作者想解决什么问题？\n- 计算 pion 的夸克动量分数 $\\langle x\\rangle_q$ 在大 $N_c$ 极限下的值，检验 $N_c=3$ 的格点/唯象结果能否外推到 large-$N_c$。\n- 检验 large-$N_c$ 下 pion 内部动量分配的图像（夸克 vs 胶子），因为 't Hooft 模型等理论预期胶子贡献占主导。\n- 技术上验证 TEK 约化模型 + 最大扭曲质量费米子能否可靠地计算强子矩阵元（而不只是谱量）。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- **模型**：Twisted Eguchi-Kawai (TEK) 约化模型——用单点（单格点）矩阵模型模拟 large-$N_c$ 规范理论，避免 $N_c$ 增大时格点数 $N_c^2$ 的爆炸。\n- **规范作用量**：纯规范 TEK 作用量，多个格点间距 $a$ 的组态。\n- **费米子**：最大扭曲质量（maximally twisted mass）费米子，多个夸克质量。\n- **矩阵元提取**：Feynman–Hellmann 方法（通过对夸克质量/扭曲参数的导数获得 $\\langle x\\rangle_q$ 的裸矩阵元），而非直接三点函数拟合。\n- **重整化**：微扰重整化因子，转换到 $\\overline{\\mathrm{MS}}$ 方案、标度 $2\\,\\mathrm{GeV}$。\n- **分析**：对多个格点间距、pion 质量、$N_c$ 值做全局拟合/手征外推，外推到物理 pion 质量与 large-$N_c$ 极限。\n\n## 主要结果\n总结最重要发现。\n- 得到 $\\langle x\\rangle_q^{\\overline{\\mathrm{MS}}}(2\\,\\mathrm{GeV}) = 0.267(105)$（物理 pion 质量、large-$N_c$ 极限），误差约 40%，统计上尚不精确但中心值明显偏低。\n- 该值**显著小于** $N_c=3$ 的格点 QCD 与唯象 determinations（后者通常在 0.4–0.5 量级附近）。\n- 物理解释：若夸克只携带约 1/4 的 pion 光锥动量，则剩余大部分由胶子携带——与 large-$N_c$ 下胶子主导的预期一致，且暗示 $1/N_c$ 修正可能相当大，$N_c=3$ 不能简单视为 large-$N_c$ 的良好近似。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- **对 large-$N_c$ 外推的警示**：pion 动量分数这类量在 $N_c=3$ 与 $N_c\\to\\infty$ 之间可能有 $O(1)$ 差异，影响所有依赖 large-$N_c$ 近似的 QCD 唯象（如手征微扰论、部分子分布建模）。\n- **TEK 约化模型的能力展示**：证明约化模型不仅能算谱量，还能算强子矩阵元，为 large-$N_c$ 格点计算开辟路径（成本与 $N_c$ 无关）。\n- **pion 结构图像**：为\"pion 中胶子携带多少动量\"提供独立的 large-$N_c$ 约束，与实验（Drell–Yan、J/ψ 产生、EIC 未来数据）和 $N_c=3$ 格点结果形成对照。\n- **方法学**：Feynman–Hellmann 在扭曲质量费米子上的应用，对矩阵元计算有参考价值。\n\n## 方向标签\n- Lattice QCD\n- Large-$N_c$ / Reduced models (TEK)\n- Hadron structure / Parton distributions\n- Chiral perturbation theory / quark mass extrapolation\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：结果新颖且概念重要（large-$N_c$ 下胶子主导 pion 动量），但误差 ~40%、仅用微扰重整化、单点约化模型存在系统误差（如 $N_c\\to\\infty$ 外推、$a\\to0$ 外推的控制），结论目前是\"指示性\"而非\"决定性\"。对做 pion 结构、large-$N_c$、部分子分布的人值得精读；对一般格点/QCD 读者可读摘要与结论即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:39:04.401640"
+  },
+  {
+    "id": "2611.12730v1",
+    "title": "Unpolarized proton PDF with physical quark masses and large momenta",
+    "authors": [
+      "Xiang Gao",
+      "Andrew Hanlon",
+      "Jinchen He",
+      "Xiangyu Jiang",
+      "Swagato Mukherjee",
+      "Peter Petreczky",
+      "Qi Shi",
+      "Yong Zhao"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12730v1",
+    "published": "2026-11-09T17:16:44Z",
+    "abstract": "We present a lattice quantum chromodynamics (QCD) calculation of the proton isovector ($u-d$) unpolarized parton distribution function (PDF) at physical sea and valence quark masses, using Coulomb-gauge-fixed quark bilinears within the large-momentum effective theory framework. The calculation is performed on a (2+1)-flavor ensemble with a lattice spacing of $a=0.076$ fm and proton momenta up to $2.3$ GeV. We combine kinematically enhanced nucleon interpolating operators, the Coulomb-gauge method, and high-statistics measurements to improve the signal quality at large momenta and quark separations. We use the static regularization-independent momentum subtraction and hybrid schemes to renormalize the bare matrix elements. The light-cone PDF in the $\\overline{\\rm MS}$ scheme is obtained from the quasi-PDF through next-to-leading-order (NLO) perturbative matching supplemented by next-to-leading-logarithmic renormalization-group resummation. With reduced uncertainties, the resulting PDF is consistent with our previous calculation on a similar lattice ensemble with $a=0.06$~fm and a valence pion mass of 300 MeV. Notably, despite the reduced uncertainties, the agreement with the phenomenological PDF persists over the longitudinal momentum fraction range $0.25\\lesssim|x|\\lesssim0.75$, where the lattice calculation is expected to be reliable. This agreement is further supported by a comparison in coordinate space, where our short-distance lattice matrix elements are consistent with those obtained from the phenomenological PDF through NLO matching. In particular, we observe close agreement in the imaginary part for the first time. Together, these results represent an encouraging step toward precision benchmarking of lattice QCD calculations of PDFs.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文在物理夸克质量、质子动量高达 2.3 GeV 的格点 QCD 计算中，以显著减小的误差确定了质子同位旋非极化 PDF，并在大动量分数区间（0.25 ≲ |x| ≲ 0.75）与唯象 PDF 保持一致，首次在坐标空间虚部也观察到一致，标志着格点 PDF 计算向精度基准检验迈出重要一步。\n\n## 研究问题\n\n作者想解决的核心问题是：如何在格点 QCD 中可靠地计算质子非极化 PDF，并使其精度足以与唯象 PDF 进行有意义的定量比较。具体而言：\n\n1. 此前格点 PDF 计算多使用较重的手征质量（如价 π 介子质量 300 MeV）或较粗的格距，系统误差控制有限；\n2. 大质子动量下信号噪声严重，尤其在大夸克分离区域，需要改进信号质量；\n3. 需要检验格点结果与唯象 PDF 在多大程度上一致，以及这种一致性是否在误差减小后依然成立；\n4. 通过坐标空间比较（而非仅动量空间）提供独立的交叉检验，特别是虚部的一致性此前未被观察到。\n\n## 方法\n\n**格点系综与参数：**\n- (2+1) 味格点系综，格距 a = 0.076 fm，物理海夸克与价夸克质量（physical quark masses）；\n- 质子动量最高达 2.3 GeV。\n\n**框架：**\n- 大动量有效理论（LaMET）框架，通过准 PDF（quasi-PDF）经微扰匹配得到光锥 PDF；\n- 使用库仑规范固定的夸克双线性算符（Coulomb-gauge-fixed quark bilinears）。\n\n**信号改进技术：**\n- 运动学增强的核子插值算符（kinematically enhanced nucleon interpolating operators）；\n- 库仑规范方法；\n- 高统计量测量，以改善大动量与大夸克分离下的信号质量。\n\n**重整化：**\n- 静态 RI/MOM（regularization-independent momentum subtraction）方案；\n- 混合方案（hybrid scheme）用于重整化裸矩阵元。\n\n**匹配与演化：**\n- 次领头阶（NLO）微扰匹配；\n- 辅以次领头对数（NLL）重整化群重求和，得到 $\\overline{\\rm MS}$ 方案下的光锥 PDF。\n\n**交叉检验：**\n- 与先前 a = 0.06 fm、价 π 介子质量 300 MeV 的相似系综计算结果比较；\n- 在坐标空间将格点短距离矩阵元与唯象 PDF 经 NLO 匹配所得结果比较（含实部与虚部）。\n\n## 主要结果\n\n1. **误差显著减小**：结合改进的插值算符、库仑规范方法和高质量统计，大动量与大分离区域的信号质量明显提升，最终 PDF 的不确定度较此前计算减小。\n\n2. **与先前格点计算一致**：新结果与之前 a = 0.06 fm、价 π 介子质量 300 MeV 系综的计算在误差范围内一致，表明格距与手征质量系统误差可控。\n\n3. **与唯象 PDF 一致**：尽管误差减小，在格点计算预期可靠的区间 0.25 ≲ |x| ≲ 0.75 内，结果仍与唯象 PDF 吻合。\n\n4. **坐标空间交叉检验**：格点短距离矩阵元与唯象 PDF 经 NLO 匹配得到的对应量一致；**首次观察到虚部也高度一致**，这是此前未有的检验。\n\n5. **总体意义**：这些结果代表了格点 QCD 对 PDF 的精度基准检验（precision benchmarking）迈出的令人鼓舞的一步。\n\n## 为什么值得关注\n\n1. **物理夸克质量**：使用物理夸克质量消除了手征外推带来的系统不确定性，使结果更接近真实 QCD。\n\n2. **大动量与信号改进**：2.3 GeV 的质子动量配合运动学增强插值算符与库仑规范方法，展示了在 LaMET 框架下控制大动量噪声的可行技术路线，对后续更高精度计算有借鉴意义。\n\n3. **多方案重整化与 NLO+NLL 匹配**：RI/MOM 与混合方案的联合使用、以及 NLL 重求和的引入，提升了微扰匹配的可靠性，减少了方案依赖。\n\n4. **坐标空间虚部首次一致**：虚部对 PDF 的细节（如反夸克分布、端点行为）敏感，其与唯象结果的一致是 LaMET 方法有效性的强有力独立证据，超越了传统的动量空间比较。\n\n5. **精度基准检验的里程碑**：在误差减小后仍与唯象 PDF 一致，说明格点 PDF 计算正从\"定性可行\"走向\"定量可信\"，对未来与实验数据（如 JAM、CTEQ、NNPDF 分析）的联合拟合、以及为电子-离子对撞机（EIC）提供理论输入具有重要意义。\n\n6. **对 LaMET 系统误差的检验**：与不同格距、不同手征质量系综的一致性，以及坐标空间比较，共同构成了对 LaMET 系统误差（格距效应、手征外推、微扰匹配截断、重整化方案依赖）的多角度检验。\n\n## 方向标签\n\n- Lattice QCD\n- Parton Distribution Functions (PDFs)\n- Large-Momentum Effective Theory (LaMET)\n- Hadron Structure\n- Renormalization\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n**理由：** 这是一篇方法成熟、结果扎实的格点 PDF 计算论文，使用物理夸克质量和大动量，并首次在坐标空间虚部实现与唯象 PDF 的一致，具有较高的参考价值。对于关注强子结构、LaMET 方法学、以及格点 QCD 精度检验的研究者而言值得精读。扣一星的原因是：它属于渐进式改进（在既有 LaMET 框架内的精度提升与系统误差检验），而非提出全新方法或范式；且 PDF 的可靠区间仍限于 0.25 ≲ |x| ≲ 0.75，小 x 与大 x 区域仍是开放问题。若读者从事 PDF 格点计算或 EIC 理论准备，优先级可提升至 5 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:39:17.026785"
+  },
+  {
+    "id": "2611.12520v1",
+    "title": "Symanzik Effective Hamiltonian for Lattice Quantum Field Theories",
+    "authors": [
+      "Fernanda Steffens",
+      "Carsten Urbach"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12520v1",
+    "published": "2026-11-09T14:58:33Z",
+    "abstract": "We propose a framework to construct the Symanzik effective Hamiltonian for lattice quantum field theories directly based on dimensional analysis and symmetries in the Hamiltonian formulation. This allows to classify all operators which can contribute at a given order in the spatial lattice spacing. This list can be reduced using the equations of motion and other identities. We exemplify the framework for $φ^4$ and pure gauge theory, obtaining results consistent with earlier publications for the case of classical improvement. It provides the means to develop a non-perturbative improvement programme in the Hamiltonian formulation of lattice quantum field theories in the future.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出了一套在哈密顿量表述下、仅凭量纲分析和对称性即可系统构造格点量子场论 Symanzik 有效哈密顿量的框架，并在 φ⁴ 与纯规范理论中验证了其与经典改进文献的一致性。\n\n## 研究问题\n传统 Symanzik 改进是在拉格朗日路径积分表述下进行的，通过构造有效作用量来消除格点离散化误差。本文要解决的问题是：能否以及如何直接在**哈密顿量表述**（即空间格点、时间连续）下构造 Symanzik 有效哈密顿量，从而系统分类在给定空间格距阶数上所有可能贡献的算符，为未来发展非微扰改进方案奠定基础。\n\n## 方法\n- 采用**哈密顿量格点场论**框架（空间离散、时间连续），而非通常的欧氏路径积分表述。\n- 基于**量纲分析 + 对称性**（而非逐阶微扰匹配）枚举在给定空间格距 a 阶数上允许出现的所有算符。\n- 利用**运动方程（EOM）及其他恒等式**约化算符列表，去除冗余项。\n- 以 **φ⁴ 标量场论**和**纯规范理论**作为示例进行构造，并与已有经典改进（classical improvement）结果对比验证。\n- 属于解析/理论构造工作，不含数值模拟或算法实现。\n\n## 主要结果\n1. 建立了在哈密顿量表述下构造 Symanzik 有效哈密顿量的系统框架，可对任意给定阶数的空间格距算符进行完整分类。\n2. 给出了算符约化的系统手段（EOM 与恒等式），使算符列表最小化。\n3. 在 φ⁴ 和纯规范理论中，所得结果与先前文献中经典改进的结论一致，验证了框架的正确性。\n4. 该框架为将来在哈密顿量表述下开展**非微扰改进计划**提供了方法论基础（例如面向量子模拟或张量网络计算）。\n\n## 为什么值得关注\n- 哈密顿量表述正日益重要（量子模拟、张量网络、实时动力学、有限密度等问题），但此前缺乏与之匹配的系统性 Symanzik 改进理论；本文填补了这一空白。\n- 提供了**非微扰改进**的出发点，有望减少格点离散误差而无需依赖微扰匹配。\n- 对 lattice QCD 的哈密顿量/量子模拟路线（如量子计算机上模拟规范理论）具有直接的方法论价值，因为离散化误差控制是这类方案的核心挑战之一。\n\n## 方向标签\n- Lattice QCD\n- Quantum simulation\n- 理论方法（Symanzik improvement / Hamiltonian formulation）\n\n## 阅读优先级\n★★★★☆（4 星）\n理由：这是一篇方法学/理论构造论文，对从事哈密顿量格点场论、量子模拟规范理论及改进方案的研究者高度相关且思路清晰；但它目前是框架性工作、示例限于 φ⁴ 与纯规范理论，尚未给出 QCD 的具体算符列表或数值验证，因此对纯数值 Lattice QCD 实践者的即时实用性略低，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:39:24.068293"
+  },
+  {
+    "id": "2611.12474v1",
+    "title": "Optimised Distillation for Nucleon Correlation Functions",
+    "authors": [
+      "J. A. Crawford",
+      "J. Finkenrath",
+      "L. Barca"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12474v1",
+    "published": "2026-11-09T14:21:36Z",
+    "abstract": "The calculation and analysis of nucleon correlation functions is essential for understanding the observed spectra and structure of these ubiquitous hadrons. Two challenges arise in their analysis: at early Euclidean times, they are dominated by excited state contributions and at later Euclidean times, the signal-to-noise ratio degrades exponentially. This leads to a common challenge in identifying a reasonable window on which to extract the ground state energy. By modulating the contribution of each Laplacian eigenmode to the correlator via distillation profiles, we build optimised operators which improve the overlap with the nucleon ground state. In these proceedings, we present our progress on constructing optimised distillation profiles for nucleons and their excited state suppression in two- and three-point correlation functions.",
+    "summary": {
+      "raw": "## 一句话结论\n作者通过引入“优化蒸馏剖面”（optimised distillation profiles）来调制各拉普拉斯本征模对核子关联函数的贡献，从而构造出与核子基态重叠更好的优化算符，在两点和三点关联函数中实现了激发态的进一步压制。\n\n## 研究问题\n核子关联函数的计算面临两个核心困难：(1) 在早期欧几里得时间，关联函数被激发态贡献主导；(2) 在晚期时间，信噪比呈指数衰减。两者共同导致难以找到一个可靠的“拟合窗口”来提取基态能量。作者希望改善算符与核子基态的重叠，从而在更早的时间段就能压制激发态污染，缓解窗口选择难题。\n\n## 方法\n- 采用**格点 QCD** 框架下的**蒸馏（distillation）**方法，即用拉普拉斯算符的低 lying 本征模构造 smeared 算符。\n- 核心创新是引入**蒸馏剖面（distillation profiles）**：对每个拉普拉斯本征模赋予一个权重因子，调制其对面关联函数的贡献，从而构造“优化算符”。\n- 通过调节这些剖面权重来最大化与核子基态的重叠、抑制激发态。\n- 在**两点和三点关联函数**上检验激发态压制效果。\n- 属于 proceedings 性质的工作，报告构造优化剖面的进展。\n\n## 主要结果\n- 通过蒸馏剖面调制各本征模贡献，可以构造出与核子基态重叠更优的算符。\n- 优化后的算符在两点和三点关联函数中表现出对激发态更强的压制。\n- 这为在更早欧几里得时间提取基态能量、缓解信噪比与激发态污染的矛盾提供了可行途径。\n（注：作为 proceedings，文中主要是进展报告，定量结果需参见全文/后续文章。）\n\n## 为什么值得关注\n- 核子谱学与结构计算（如核子电磁形状因子、轴荷、电荷半径等）高度依赖两点/三点关联函数的可靠基态提取。\n- 激发态污染是格点核子计算系统误差的主要来源之一；改进算符重叠是直接且通用的手段。\n- 蒸馏剖面的思路可与已有蒸馏算符库结合，具有较好的可移植性，对格点 QCD 强子谱学社区有实际价值。\n\n## 方向标签\n- Lattice QCD\n- Hadron spectroscopy\n- Distillation / smearing techniques\n- Nucleon structure\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：问题重要且方法思路清晰、实用，但作为 conference proceedings 篇幅有限，定量细节和系统误差分析可能不完整。若你从事格点核子关联函数或激发态提取工作，值得细读并追踪其全文；若只关心 broader 方法学，可作为参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:39:30.228063"
+  },
+  {
+    "id": "2611.12373v1",
+    "title": "Magnetic moments of the $Σ_c$ and $Σ_b$ baryons from external-field QCD sum rules",
+    "authors": [
+      "Halil Mutuk"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12373v1",
+    "published": "2026-11-09T13:16:54Z",
+    "abstract": "We compute the magnetic moments of the $Σ_c$ and $Σ_b$ isotriplets with external-field QCD sum rules. The heavy-quark propagator is kept with its full mass dependence and with its couplings to the photon, to soft gluons and to both simultaneously, and the magnetic sum rule is normalized by the mass sum rule of the same interpolating field, which removes the residue and gives the baryon masses within a few percent. The quark-condensate magnetic susceptibility $χ$, which otherwise dominates the uncertainty, is fixed by the proton magnetic moment computed with the same interpolating field; the neutron moment then follows to about $5\\%$. Uncertainties from the QCD inputs are evaluated with a Monte Carlo analysis, and those from the interpolating field, the Borel window, the scale of the heavy-quark mass, the calibration and the normalization are added. With $\\overline{\\rm MS}$ heavy-quark masses we obtain $μ_{Σ_c^{++}}=2.37\\pm0.65$, $μ_{Σ_c^{+}}=0.50\\pm0.15$, $μ_{Σ_c^{0}}=-1.39\\pm0.37$, $μ_{Σ_b^{+}}=2.16\\pm0.65$, $μ_{Σ_b^{0}}=0.55\\pm0.16$ and $μ_{Σ_b^{-}}=-1.06\\pm0.32$ in nuclear magnetons; at this order the results depend sizably on the heavy-quark mass scheme. The moments are carried by the light diquark; the heavy-quark contribution, whose separation depends on the interpolating field, is $-0.13\\pm0.02\\,μ_N$ for $Σ_c$ and $+0.013\\pm0.003\\,μ_N$ for $Σ_b$.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文用外场 QCD 求和规则（external-field QCD sum rules）计算了 Σc 和 Σb 同位旋三重态重子磁矩，通过用同一插值场的质量求和规则归一化磁矩求和规则、并用质子磁矩标定夸克凝聚磁化率 χ，把主要不确定性压到可控范围，给出 μ(Σc⁺⁺)=2.37±0.65、μ(Σb⁺)=2.16±0.65 等结果（核磁子单位），并指出重夸克质量方案会显著影响数值。\n\n## 研究问题\n\n作者想解决的核心问题是：Σc 和 Σb 同位旋三重态（Σc⁺⁺,⁺,⁰ 与 Σb⁺,⁰,⁻）的磁矩在 QCD 求和规则框架下如何可靠计算。此前这类计算的主要障碍有两个：一是夸克凝聚磁化率 χ 主导不确定性；二是重夸克传播子若只取领头质量依赖、忽略光子与软胶子耦合，会引入系统误差。本文要同时处理这两点，并给出带完整误差预算的磁矩预言。\n\n## 方法\n\n需要说明：本文**不是格点 QCD 计算**，而是 QCD 求和规则（SVZ 算符乘积展开 + Borel 变换）方法。具体技术要点：\n\n- **外场求和规则**：在存在弱外磁场的情况下构造关联函数，提取正比于外场的项得到磁矩求和规则。\n- **重夸克传播子**：保留完整质量依赖，并包含重夸克与光子、与软胶子、以及与两者同时耦合的项（即 O(1/m_Q) 及更高阶修正被系统纳入）。\n- **归一化方案**：磁矩求和规则用同一插值场的质量求和规则归一化，消去 residuum（耦合常数），同时使得到的重子质量在几个百分点内与实验相符——这相当于一个自洽性检验。\n- **χ 的标定**：夸克凝聚磁化率 χ 原本主导误差，作者用同一插值场计算质子磁矩来定 χ，然后中子磁矩作为预言检验，精度约 5%。\n- **误差分析**：QCD 输入参数用 Monte Carlo 传播；插值场选择、Borel 窗口、重夸克质量标度、标定与归一化带来的系统误差另行相加。\n- **质量方案**：使用 MS-bar 重夸克质量，并明确指出在该阶结果对质量方案敏感。\n\n## 主要结果\n\n- 磁矩（核磁子单位，MS-bar 重夸克质量）：\n  - μ(Σc⁺⁺)=2.37±0.65，μ(Σc⁺)=0.50±0.15，μ(Σc⁰)=−1.39±0.37\n  - μ(Σb⁺)=2.16±0.65，μ(Σb⁰)=0.55±0.16，μ(Σb⁻)=−1.06±0.32\n- 磁矩主要由轻双夸克（light diquark）携带；重夸克贡献依赖于插值场选择，数值为 Σc 情形 −0.13±0.02 μ_N、Σb 情形 +0.013±0.003 μ_N。\n- 中子磁矩在同框架下预言精度约 5%，说明 χ 标定方案有效。\n- 该阶结果对重夸克质量方案有可观依赖，是主要的理论系统误差之一。\n\n## 为什么值得关注\n\n- 为 Σc、Σb 三重态提供了带完整误差预算的磁矩预言，可作为格点 QCD 第一性原理计算和未来实验（如 LHCb、 Belle II 对重子电磁性质的测量）的对照基准。\n- 方法学上有两点可迁移：用同一插值场的质量求和规则归一化以消去 residuum；用质子磁矩标定 χ 以压制主导误差——这两条对其它重子/多夸克态的求和规则计算有借鉴价值。\n- 明确指出重夸克质量方案的系统效应，提醒社区在比较不同方法（求和规则 vs. 格点）结果时需注意方案一致性。\n- 对理解重味重子内部结构（轻双夸克主导磁矩、重夸克贡献很小）提供了定量图像。\n\n## 方向标签\n\n- QCD Sum Rules（外场求和规则）\n- Heavy-flavor baryon physics\n- Hadron electromagnetic properties\n- Quark-gluon condensates\n- 非格点解析方法（与 Lattice QCD 互补）\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：若你的研究直接涉及重味重子磁矩、外场求和规则技术、或需要与格点结果做交叉检验，本文值得细读（方法细节和误差预算较完整）；若你主要做格点 QCD 数值计算，本文不是格点工作，但可作为物理动机和现象学对照，读摘要与结果表即可。方法学创新（归一化 + χ 标定）对做求和规则的人价值较高，对更广的理论物理社区则属专门性工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:39:40.828139"
+  },
+  {
+    "id": "2611.12318v1",
+    "title": "Heavy-quark spin symmetry and Pauli exclusion in pentaquarks with three to five heavy quarks",
+    "authors": [
+      "Ulaş Özdem"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12318v1",
+    "published": "2026-11-09T12:40:43Z",
+    "abstract": "We study negative-parity hidden-flavor pentaquarks with three to five heavy quarks, $QQ\\bar{Q}qq$, $QQQ\\bar{Q}q$, and $QQQQ\\bar{Q}$ with $Q=c,b$ and $q=u,d$, in QCD sum rules, using the complete set of S-wave baryon--meson currents with $J^P=1/2^-$, $3/2^-$, and $5/2^-$ and the operator product expansion up to dimension 10, 9, and 6. We focus on the splittings between states of the same baryon--meson configuration, which, unlike the absolute masses, are only weakly affected by the choice of the heavy-quark mass scheme and by a finite width. Configurations whose light degrees of freedom have a unique spin are nearly degenerate or show splittings that decrease from charm to bottom by a factor compatible with $\\bar m_c/\\bar m_b$, whereas configurations with two light quarks in different hadrons show splittings that are not reduced, as expected from heavy-quark spin symmetry. A decomposition of the correlators into factorizable two-hadron and connected quark-exchange contributions shows that the correlators are dominated by the two-hadron part and that this pattern holds separately for both parts: the quark-exchange contribution decreases from charm to bottom when a heavy quark is exchanged and is not reduced when a light quark is exchanged. In the fully heavy systems the $1/2^-$ and $3/2^-$ states are degenerate within about $20$~MeV, while the $5/2^-$ state lies $126$--$139$~MeV ($cccc\\bar c$) and $183$--$228$~MeV ($bbbb\\bar b$) above the $3/2^-$ state. This splitting is generated by the exchange terms between the identical heavy quarks and does not decrease from charm to bottom, which points to the Pauli principle rather than to a hyperfine effect. Currents whose baryon and meson share no quark flavor are exactly factorizable at this order and cannot distinguish bound states from two-hadron states.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文用 QCD 求和规则系统研究了含 3–5 个重夸克的隐味五夸克态，发现重夸克自旋对称性支配同配置态之间的劈裂模式，而全重五夸克中 \\(5/2^-\\) 与 \\(3/2^-\\) 之间不随重夸克质量减小的劈裂源于全同重夸克间的泡利排斥（交换项），而非超精细效应。\n\n## 研究问题\n\n作者想解决的核心问题是：在含多个重夸克（\\(c\\)、\\(b\\)）的隐味五夸克系统 \\(QQ\\bar Q qq\\)、\\(QQQ\\bar Q q\\)、\\(QQQQ\\bar Q\\) 中，\n\n1. 重夸克自旋对称性（HQSS）如何体现在同一种重子–介子构型的不同自旋态之间的质量劈裂上？\n2. 这些劈裂是否如 HQSS 预期那样随重夸克质量从 charm 到 bottom 按 \\(\\bar m_c/\\bar m_b\\) 减小？\n3. 全重系统（\\(cccc\\bar c\\)、\\(bbbb\\bar b\\)）中 \\(1/2^-\\)、\\(3/2^-\\)、\\(5/2^-\\) 态的简并/劈裂结构由什么物理机制产生——是超精细相互作用还是泡利原理导致的交换项？\n4. 关联函数中可因子化的两强子部分与连通的夸克交换部分各自贡献如何，能否据此区分束缚态与两强子态？\n\n## 方法\n\n需要说明：这篇论文**不是格点 QCD 计算**，而是 **QCD 求和规则（QCD sum rules）** 框架下的解析/半解析研究。具体方法要点：\n\n- **算符乘积展开（OPE）**：构造完整的 S 波重子–介子型流（\\(J^P=1/2^-, 3/2^-, 5/2^-\\)），OPE 分别展开到维度 10、9、6。\n- **关注劈裂而非绝对质量**：作者强调同构型态之间的质量差对重夸克质量方案的选择和有限宽度效应不敏感，因此比绝对质量更可靠。\n- **关联函数分解**：将关联函数拆分为可因子化的两强子贡献与连通的夸克交换贡献，分别分析其从 charm 到 bottom 的行为。\n- **HQSS 标度检验**：检验劈裂是否按 \\(\\bar m_c/\\bar m_b\\) 比例减小，以此作为重夸克自旋对称性是否适用的判据。\n- **全重系统的交换项分析**：识别 \\(5/2^-\\)–\\(3/2^-\\) 劈裂的来源为全同重夸克之间的交换项。\n\n## 主要结果\n\n1. **HQSS 适用性分两类**：轻自由度自旋唯一的构型，其劈裂近乎简并或从 charm 到 bottom 按 \\(\\bar m_c/\\bar m_b\\) 减小；而两个轻夸克分处不同强子的构型，劈裂不减小——与 HQSS 预期一致。\n2. **关联函数由两强子部分主导**，且该模式对两强子部分和交换部分分别成立；交换重夸克时交换贡献从 charm 到 bottom 减小，交换轻夸克时不减小。\n3. **全重系统**：\\(1/2^-\\) 与 \\(3/2^-\\) 在约 20 MeV 内简并；\\(5/2^-\\) 位于 \\(3/2^-\\) 之上 \\(126\\text{–}139\\) MeV（\\(cccc\\bar c\\)）和 \\(183\\text{–}228\\) MeV（\\(bbbb\\bar b\\)）。\n4. **该 \\(5/2^-\\)–\\(3/2^-\\) 劈裂不随重夸克质量减小**，由全同重夸克间的交换项产生，指向**泡利原理**而非超精细效应。\n5. **重子与介子无共同味夸克的流在本阶严格可因子化**，无法区分束缚态与两强子态——这是一个重要的方法学警示。\n\n## 为什么值得关注\n\n- **对五夸克寻找的判据意义**：多重重夸克五夸克是当前实验（LHCb 等）关注的方向，本文给出了区分“真正束缚态”与“两强子阈值效应”的判据，并指出某些流在原则上无法区分二者。\n- **HQSS 的适用边界**：明确了 HQSS 在何种构型下成立、何种构型下失效，对理解含重夸克的多夸克态谱结构有普遍价值。\n- **泡利原理 vs 超精细**：全重系统中不随质量减小的劈裂为“泡利排斥驱动”的质量劈裂提供了一个干净的例子，对多夸克态的分类与解释有理论意义。\n- **方法学**：强调用劈裂而非绝对质量做 QCD 求和规则分析，规避了重夸克质量方案与有限宽度的系统误差，这一策略对其他多夸克态研究有借鉴价值。\n- 对格点社区而言，这些预言可作为未来格点计算（尤其是全重五夸克）的对照基准。\n\n## 方向标签\n\n- QCD Sum Rules\n- Heavy-Quark Spin Symmetry\n- Exotic Hadrons / Pentaquarks\n- Multiquark States\n- Pauli Exclusion / Quark Exchange\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：论文问题清晰、物理图像明确（HQSS 标度 + 泡利原理），结论对多夸克态现象学有直接指导意义，且方法学警示（可因子化流无法区分束缚态与两强子态）值得所有做多夸克态的人注意。扣一星的原因是：它基于 QCD 求和规则而非格点第一性原理计算，结论带有求和规则固有的模型依赖性（尽管作者用劈裂规避了部分系统误差）；若读者主要关心格点数值结果，需将其视为现象学参考而非格点预言。对做五夸克/多夸克态、重味物理或 HQSS 的研究者，属于应读且优先级较高的文献。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:39:52.402428"
+  },
+  {
+    "id": "2611.12142v1",
+    "title": "Renormalized symmetry probes for emergent symmetries and non-chiral lattice fermions",
+    "authors": [
+      "Ting-Wai Chiu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12142v1",
+    "published": "2026-11-09T09:53:24Z",
+    "abstract": "The degeneracy of hadron correlators in symmetry-related channels signals symmetry restoration in high-temperature QCD. RG-invariant probes of this degeneracy need care when the regularization breaks chiral symmetry, or when the symmetry is not exact in the massless action, as for the emergent chiral-spin symmetry $SU(2)_{CS}$. We renormalize the thermal and screening meson correlators of every flavor sector by the thermal correlator of the same channel in the $\\bar ud$ sector at a common reference point. The symmetry ratio $κ_{AB}$ then depends on the renormalization only through the ratio $R_{AB}$. For exact symmetries, $R_{AB}=1$ and $κ_{AB}$ is RG invariant and scheme independent in mass-independent schemes. For emergent symmetries, $R_{AB}\\neq1$ carries the relative logarithmic cutoff dependence of the two channels, which cancels in $κ_{AB}$, and the residual dependence on the reference scale is physical. The framework applies to Wilson, twisted-mass and staggered fermions, where $R_{AB}$ absorbs the channel-dependent renormalization, and the tensor pair $(T_k,X_k)$ keeps $R_{T_kX_k}=1$ on isotropic Wilson-type lattices. Lattice artifacts are a small correction to the chiral-spin probes $κ_{CS}$ and $κ_{fade}$, but as large as the signal of the exact-symmetry probes. For free quarks, we derive $κ_{fade}=2/3$ for every mass and separation, and $κ_{CS}\\le1/3$. We apply the renormalized probes to $N_f=2+1+1$ QCD with optimal domain-wall quarks at the physical point, with $a=0.064$ fm and $T=192$-$1539$ MeV. The hierarchical restoration of the chiral symmetries from the light to the charm sectors is confirmed, and is invariant under renormalization. The $\\bar uc$ and $\\bar sc$ sectors have the widest chiral-spin windows, also at a tighter threshold. Thus spin-1 mesons with one charm quark are the most attractive channels for the chiral-spin regime.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文提出了一套**重整化不变的对称性探针**（对称性比值 κ_AB），用来在格点正规化破坏手征对称性或对称性仅为“涌现”时，仍能可靠地检验高温 QCD 中手征对称性与涌现手征自旋对称性 SU(2)_CS 的恢复，并在 N_f=2+1+1 畴壁费米子数据上确认了从轻到粲夸克扇区的层级式对称恢复。\n\n## 研究问题\n\n作者想解决的核心问题是：**如何在格点上稳健地探测对称性恢复**，具体包括三个难点：\n\n1. **正规化破坏对称性**：Wilson、twisted-mass、staggered 等费米子离散化显式破坏手征对称性，导致对称相关通道的关联函数即使物理上对称也不简并。\n2. **涌现对称性并非严格对称**：SU(2)_CS 手征自旋对称性在无质量作用量中也不是严格对称，只是低能/特定条件下涌现，因此其“恢复”判据需要更细致的定义。\n3. **重整化与方案依赖**：直接比较不同通道的关联函数会受到通道相关的重整化常数、截断效应和参考点选择的影响，需要一个 RG 不变、方案无关（在质量无关方案下）的探针。\n\n## 方法\n\n- **探针构造**：用同一通道在 \\bar u d 扇区、同一参考点的热关联函数对每个味道扇区的热/屏蔽介子关联函数做“重整化”。定义对称性比值 κ_AB，使其只通过通道比值 R_AB 依赖重整化。\n- **严格对称情形**：R_AB = 1，κ_AB 在质量无关方案下 RG 不变且方案无关。\n- **涌现对称情形**：R_AB ≠ 1，携带两通道相对的截断对数依赖，但在 κ_AB 中抵消；残余的参考标度依赖是物理的。\n- **适用性分析**：框架适用于 Wilson、twisted-mass、staggered 费米子；在各向同性 Wilson 型格点上，张量对 (T_k, X_k) 保持 R = 1。\n- **解析计算**：对自由夸克推导出 κ_fade = 2/3（对所有质量和分离），以及 κ_CS ≤ 1/3。\n- **数值应用**：N_f = 2+1+1 QCD，最优畴壁夸克，物理点，a = 0.064 fm，温度 T = 192–1539 MeV，检验手征对称性的层级恢复与手征自旋窗口。\n\n## 主要结果\n\n1. **建立了 RG 不变的对称性探针框架**：κ_AB 对严格对称是 RG 不变、方案无关的；对涌现对称，截断依赖在比值中抵消，残余参考标度依赖具有物理意义。\n2. **格点伪影的定量评估**：对 κ_CS、κ_fade 这类手征自旋探针，格点伪影只是小修正；但对严格对称探针，伪影可与信号同量级——说明必须重整化才能可靠判读。\n3. **自由夸克基准值**：κ_fade = 2/3（与质量、分离无关），κ_CS ≤ 1/3，为相互作用情形提供对照。\n4. **N_f=2+1+1 畴壁 QCD 数值确认**：从轻到粲扇区的手征对称性层级恢复得到确认，且该结论在重整化下不变。\n5. **手征自旋窗口**：\\bar u c 与 \\bar s c 扇区拥有最宽的手征自旋窗口（即使在更严阈值下也成立），因此**含一个粲夸克的自旋-1 介子是手征自旋区域最有吸引力的通道**。\n\n## 为什么值得关注\n\n- **方法学价值**：为“正规化破坏对称性”这一格点 QCD 长期难题提供了系统、可推广的 RG 不变探针，可直接用于 Wilson/twisted-mass/staggered 等主流费米子作用量。\n- **对涌现对称性物理的意义**：SU(2)_CS 手征自旋对称性是理解高温 QCD 介子谱（尤其是含粲夸克介子）和部分子自由度组织的重要线索；本文给出了可靠的判据和具体预言（\\bar u c、\\bar s c 窗口最宽）。\n- **对热 QCD 谱学**：层级式手征对称恢复与手征自旋窗口的定量刻画，有助于解释 RHIC/LHC 重离子碰撞中高温介子关联与化学冻结图像。\n- **可复现与可比性**：κ_AB 的方案无关性使不同格点合作组、不同作用量的结果可以横向比较。\n\n## 方向标签\n\n- Lattice QCD\n- Finite temperature\n- Chiral symmetry / emergent symmetry\n- Domain-wall fermions\n- Hadron correlators / spectral probes\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：这是一篇方法学 + 数值应用兼备的论文，核心贡献（RG 不变对称性探针）具有普适性，且给出了可检验的物理预言（含粲夸克自旋-1 介子的手征自旋窗口）。对做高温 QCD、格点费米子、介子谱学的研究者优先级很高；对更偏 BSM、量子模拟或算法方向的研究者相关性较低，故不给满分。若你关注 SU(2)_CS 或畴壁费米子热谱，可提到 5 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:40:03.505053"
+  },
+  {
+    "id": "2611.12071v1",
+    "title": "Matrix-vector models for the 3D Ising CFT",
+    "authors": [
+      "Kaichi Mizohata",
+      "Tatsuya Seko",
+      "Asato Tsuchiya"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.12071v1",
+    "published": "2026-11-09T08:44:32Z",
+    "abstract": "The construction of three-dimensional conformal field theories (3D CFTs) using interacting fermions in the lowest Landau level on a sphere has recently proven remarkably efficient, while it differs from that of conventional field theories on the fuzzy sphere. Focusing on the 3D Ising CFT, we consider a class of models that are defined by deformed Hamiltonians specified by a function which controls how the interaction is damped at high angular momenta, and this class includes the original model. We show that each model in the class can be reformulated in a basis-independent manner as a matrix--vector quantum-mechanical model, and, upon integrating out the fermionic vectors, as a matrix model. We then focus on a Gaussian choice, for which the bosonic matrices acquire a heat-kernel propagator whose width is controlled by a parameter $ξ$. Through exact diagonalization with the number of fermions up to $16$, we find that the low-energy spectra of the deformed Hamiltonians at criticality agree with those in the 3D Ising CFT for a range of $ξ$. We thus obtain matrix-model realizations of the 3D Ising CFT that, in contrast to conventional fuzzy-sphere field theories, show no sign of UV/IR mixing in the low-lying spectrum.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文把球面上最低朗道能级费米子构造的 3D Ising CFT 模型重写成矩阵–向量量子力学模型，并在高斯变形下通过精确对角化（最多 16 个费米子）验证低能谱与 3D Ising CFT 一致，且低能谱中看不到传统 fuzzy sphere 场论常见的 UV/IR 混合。\n\n## 研究问题\n\n作者想解决的核心问题是：如何更干净、更可控地构造 3D Ising CFT 的格点/非微扰实现，并避免传统 fuzzy sphere 场论中出现的 UV/IR 混合问题。具体来说，他们研究一类由“高角动量处相互作用如何被压低”的函数所指定的变形哈密顿量，希望理解这些模型能否在低能下稳定地重现 3D Ising CFT 的谱，以及能否给出更解析、更统一的矩阵模型表述。\n\n## 方法\n\n- **物理平台**：球面上最低朗道能级（LLL）的相互作用费米子，用于构造 3D CFT。\n- **模型类**：由函数控制高角动量阻尼的一类变形哈密顿量，包含原始模型作为特例。\n- **重表述**：将每个模型以基无关方式重写为 **matrix–vector quantum-mechanical model**；积掉费米子向量后得到 **matrix model**。\n- **重点情形**：选择高斯型阻尼，使玻色矩阵获得宽度由参数 ξ 控制的热核传播子。\n- **数值方法**：**精确对角化（exact diagonalization）**，费米子数最多到 16。\n- **分析对象**：临界点附近低能谱与 3D Ising CFT 谱的比对；检查 UV/IR 混合迹象。\n\n## 主要结果\n\n1. **统一重表述**：这一类变形哈密顿量都可以写成基无关的矩阵–向量量子力学模型，积掉费米子后成为矩阵模型。\n2. **高斯变形可解性强**：高斯选择下玻色矩阵获得热核传播子，宽度由 ξ 控制，为系统扫描提供参数。\n3. **数值验证**：在费米子数最多 16 的精确对角化中，临界点处变形哈密顿量的低能谱在一段 ξ 范围内与 3D Ising CFT 谱一致。\n4. **无 UV/IR 混合迹象**：与常规 fuzzy-sphere 场论不同，这些矩阵模型实现的低能谱中没有看到 UV/IR 混合的信号。\n5. **矩阵模型实现**：因此作者得到了 3D Ising CFT 的一类矩阵模型实现。\n\n## 为什么值得关注\n\n- 对 **3D CFT 的非微扰构造** 提供了一条不同于传统 fuzzy sphere 场论的路线。\n- **UV/IR 混合** 是 fuzzy sphere 和非交换几何场论中的老大难问题；若低能谱确实干净，这对构造更高维 CFT、理解非交换场论的有效描述都很重要。\n- 矩阵模型表述可能带来更解析的控制手段，而不仅是数值对角化。\n- 对 **lattice/QCD 社区** 的间接意义在于：它展示了“矩阵模型 + 精确对角化”作为研究强耦合 CFT 谱的工具，和 tensor network、quantum simulation 等方向有方法上的亲缘性。\n- 对 **量子模拟** 也有潜在启发：矩阵–向量模型比完整场论更容易映射到可控量子系统。\n\n## 方向标签\n\n- Lattice field theory\n- CFT / Conformal field theory\n- Matrix models\n- Fuzzy sphere / Noncommutative geometry\n- Exact diagonalization\n- Quantum simulation（潜在相关）\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：论文问题清晰、方法有创新性（矩阵–向量/矩阵模型重表述），数值结果直接针对 3D Ising CFT 谱，且明确讨论了 UV/IR 混合这一关键痛点。对做 CFT 非微扰构造、fuzzy sphere、矩阵模型和量子模拟的人优先级很高。扣一星是因为费米子数最多 16，仍属小系统精确对角化，外推到热力学极限和连续 CFT 需要更多后续验证；若读者主要关心 QCD 本身而非 CFT 构造，相关性会稍低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:40:12.105808"
+  },
+  {
+    "id": "2611.11108v1",
+    "title": "Evaluating generative samplers for lattice field theory by scale",
+    "authors": [
+      "Satoshi Iso",
+      "Lingxiao Wang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.11108v1",
+    "published": "2026-11-08T03:39:56Z",
+    "abstract": "Generative samplers for lattice field theory are commonly evaluated by their effective sample size (ESS). We show that a small global ESS need not imply inaccurate long-distance observables: errors spread over many short-distance modes can dominate this diagnostic. We introduce a scale-resolved diagnostic based on the overlap between coarse-grained model and target distributions. At the lattice cutoff, this overlap determines the asymptotic ESS fraction; lower cutoffs isolate long-wavelength errors. In the exactly solvable free theory, two samplers with comparable ESS yield a $32\\%$ bias and no bias in the susceptibility, respectively. In two-dimensional $φ^4$ theory near criticality, trained diffusion samplers show the same separation of scales: their path-weight ESS fraction falls rapidly over the volumes studied, while low moments of the magnetization remain close to their target values. Varying the reference parameters substantially changes infrared observables, with little effect on the log-weight variance. Given the target magnetization distribution, a marginal Metropolis test maintains an acceptance rate of order one in our tests. Combined with exact local updates, it reduces the remaining mismatch, although residual bias remains at finite relaxation length. In the free field, uniformly bounded relative errors in the proposal mode variances give a volume-independent bound on the number of updates needed for a prescribed accuracy of the chain's stationary mode variances at fixed correlation length. The target marginal must be supplied or computed separately; estimating it from the samplers' own weights can inherit the poor global overlap.",
+    "summary": {
+      "raw": "## 一句话结论\n论文指出常用的全局有效样本量（ESS）诊断会因短距离模式误差的累积而严重低估生成采样器在长距离物理量上的实际精度，并提出一种基于粗粒化分布重叠的“尺度分辨”诊断来区分不同尺度上的误差。\n\n## 研究问题\n生成式采样器（如扩散模型、归一化流）被用于格点场论时，通常用全局 ESS 来评估其质量。作者想回答：全局 ESS 小是否真的意味着长距离可观测量（如磁化率、低阶磁矩）不准确？如果不是，应该如何按尺度评估采样器误差，并如何用局部更新（如 Metropolis）修正剩余偏差？\n\n## 方法\n- **理论框架**：在自由场（可精确求解）中解析研究 ESS 与尺度误差的关系；引入基于粗粒化模型分布与目标分布重叠的尺度分辨诊断，在格点截断处该重叠决定渐近 ESS 分数，降低截断则隔离长波误差。\n- **数值模型**：二维 φ⁴ 理论（近临界区），使用训练好的扩散采样器。\n- **算法/技术**：路径权重 ESS 分数、磁化低阶矩比较、参考参数变化对红外可观测量的影响、边际 Metropolis 检验（给定目标磁化分布时接受率保持 O(1)），以及与精确局部更新结合以减小残余偏差；自由场中分析提议模式方差一致有界时达到给定精度所需更新次数与体积无关的界。\n\n## 主要结果\n1. **全局 ESS 具有误导性**：自由场中两个 ESS 相当的采样器，一个在磁化率上产生 32% 偏差，另一个无偏差——说明小全局 ESS 不必然意味着长距离观测量不准确，短距离模式误差可主导该诊断。\n2. **尺度分离在 φ⁴ 中重现**：近临界二维 φ⁴ 中，训练好的扩散采样器路径权重 ESS 分数随体积快速下降，但磁化低阶矩仍接近目标值。\n3. **参考参数主要影响红外**：改变参考参数显著改变红外可观测量，而对对数权重方差影响很小。\n4. **边际 Metropolis 有效**：给定目标磁化分布时，边际 Metropolis 检验接受率保持 O(1)，结合精确局部更新可减小剩余不匹配，但有限弛豫长度下仍有残余偏差。\n5. **自由场中的体积无关界**：提议模式方差相对误差一致有界时，在固定关联长度下达到链的平稳模式方差给定精度所需更新次数有与体积无关的界。\n6. **警告**：目标边际分布必须单独提供或计算；从采样器自身权重估计会继承糟糕的全局重叠。\n\n## 为什么值得关注\n生成式采样器被视为绕过格点 QCD 临界慢化的重要候选工具，但社区目前普遍用全局 ESS 作为“一票否决”式指标，可能错误地淘汰在物理上足够好的采样器，也可能掩盖真正的长距离偏差。本文提供了更合理的按尺度评估框架，并给出与局部更新结合的实用修正方案，对格点场论中机器学习采样器的评估标准和实际部署都有直接影响；自由场中体积无关的更新次数界也为算法复杂度分析提供了理论依据。\n\n## 方向标签\n- Machine Learning\n- Lattice field theory (φ⁴)\n- Algorithms for sampling\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对使用或评估生成式采样器的格点研究者来说，这是方法论上很重要且篇幅友好的论文——它直接挑战了常用诊断指标，并给出可操作的替代方案与修正流程。扣一星是因为数值验证主要在二维 φ⁴ 和自由场，向四维非阿贝尔规范理论的推广仍需后续工作；若读者只关心 QCD 现象学而非采样算法，相关性会降低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:40:20.516421"
+  },
+  {
+    "id": "2611.10816v1",
+    "title": "Flavor decomposition of the nucleon axial and tensor charges from lattice QCD",
+    "authors": [
+      "C. Alexandrou",
+      "S. Bacchio",
+      "M. Di Carlo",
+      "A. Evangelista",
+      "C. Iona",
+      "F. Pittler",
+      "G. Spanoudes"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.10816v1",
+    "published": "2026-11-07T15:49:51Z",
+    "abstract": "We determine the nucleon axial and tensor charges using four ensembles of twisted-mass clover-improved fermions with approximately equal physical volumes of about 5.5~fm and four lattice spacings, $ a=0.05$~fm, 0.06~fm, 0.07~fm, and 0.08~fm. The mass of the degenerate up and down, strange and charm quarks are tuned to approximately their physical values. We compute both connected and disconnected contributions to determine the isovector and isoscalar charges and their flavour decomposition. For the nucleon isovector axial charge we find $g_A^{u-d}=1.263(34)(26)$, in agreement with the experimental value. For the isoscalar axial charge we find $g_A^{u+d}=0.458(16)(1)$, while for the corresponding tensor charges we find $g_T^{u-d}=0.951(21)(5)$ and $g_T^{u+d}=0.556(16)(5)$.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文用四种格距、大体积的 twisted-mass clover 改进费米子组态，完整计算了核子轴矢与张量荷的连通加非连通贡献，给出了与实验一致的同位旋矢量轴荷及高精度的同位旋标量轴荷和张量荷味道分解结果。\n\n## 研究问题\n作者想解决的核心问题是：核子轴矢荷 \\(g_A\\) 与张量荷 \\(g_T\\) 的**味道分解**（isovector \\(u-d\\) 与 isoscalar \\(u+d\\)），特别是此前格点计算中系统误差较大的**非连通贡献**和**同位旋标量通道**。具体目标包括：\n- 在多个格距下控制连续极限外推误差；\n- 同时包含连通与非连通图，得到完整的味道分解；\n- 检验同位旋矢量轴荷是否与实验值一致，并为同位旋标量轴荷、张量荷提供可靠预言（这些量对暗物质直接探测、中子电偶极矩等 BSM 现象学重要）。\n\n## 方法\n- **格点作用量**：twisted-mass clover-improved 费米子（\\(N_f=2+1+1\\)，即简并 u/d、strange、charm 均调至物理质量）。\n- **组态**：四套系综，物理体积约 \\(5.5\\ \\mathrm{fm}\\)（大体积以压低有限体积效应），四个格距 \\(a=0.05, 0.06, 0.07, 0.08\\ \\mathrm{fm}\\)，用于连续极限外推。\n- **可观测量**：核子两点/三点关联函数，提取轴矢荷 \\(g_A\\) 与张量荷 \\(g_T\\)。\n- **图贡献**：同时计算**连通（connected）**与**非连通（disconnected）**贡献，从而分离 isovector 与 isoscalar 通道并进行味道分解。\n- **误差处理**：给出统计误差与系统误差（括号中第二项），并进行格距外推。\n\n## 主要结果\n- 同位旋矢量轴荷：\\(g_A^{u-d}=1.263(34)(26)\\)，与实验值一致（实验约 1.27）。\n- 同位旋标量轴荷：\\(g_A^{u+d}=0.458(16)(1)\\)。\n- 张量荷：\\(g_T^{u-d}=0.951(21)(5)\\)，\\(g_T^{u+d}=0.556(16)(5)\\)。\n- 关键点：非连通贡献被显式计入，isoscalar 通道首次在四格距、大体积下给出较精确结果；同位旋矢量轴荷与实验吻合验证了系统误差控制的可信度。\n\n## 为什么值得关注\n- **现象学价值**：核子张量荷直接进入暗物质与核子自旋无关散射截面的计算，isoscalar 轴荷与张量荷是 BSM 搜索（如暗物质直接探测、轴子耦合）的关键输入。\n- **格点方法学**：展示了在 \\(N_f=2+1+1\\) 全味道动力学下、大体积多格距地处理**非连通图**的可行性，这对其他需要 disconnected 贡献的量（如核子 \\(\\sigma\\) 项、奇异夸克含量）有示范意义。\n- **精度基准**：\\(g_A^{u-d}\\) 与实验一致，为格点 QCD 系统误差评估提供了标定点；同时给出可被未来实验/现象学引用的张量荷预言。\n- **味道分解完整性**：同时给出 isovector 与 isoscalar，便于与 \\(\\beta\\) 衰变、以及未来中微子/暗物质实验的核矩阵元对接。\n\n## 方向标签\n- Lattice QCD\n- Nucleon structure / form factors\n- BSM（暗物质直接探测相关矩阵元）\n- Flavor decomposition / disconnected contributions\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇方法扎实、结果直接可用于现象学的格点 QCD 计算，四格距+大体积+完整味道分解的组合使其结果可信度高，对暗物质探测和核子结构研究社区有直接参考价值。扣一星是因为它属于“精确计算/基准测量”型工作，方法上无全新算法突破，且张量荷的连续极限外推误差仍是主要不确定度来源，读者需结合系统误差讨论来使用其结果。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:40:29.948479"
+  },
+  {
+    "id": "2611.10773v1",
+    "title": "Constrained field-space estimators for background-field lattice QCD observables",
+    "authors": [
+      "Scott Moerschbacher",
+      "Frank X. Lee"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.10773v1",
+    "published": "2026-11-07T15:00:07Z",
+    "abstract": "Background-field lattice calculations extract weak-field response coefficients from correlators computed at several field strengths. We treat this extraction as linear estimation in field space and compare fixed cancellation stencils with covariance-optimized, generalized-least-squares estimators of the same coefficient, using archival nucleon double ratios on about 1000 quenched configurations at six quark masses and decuplet correlators for which exact answers follow from the lattice contractions. The fixed $O(B^4)$-$O(B^8)$ stencils are nearly coincident and cost almost nothing in precision. Weight-free null-space tests reject the two-term response model in most nucleon ensembles; whether they reject the three-term model depends on the temporal fits and on the noise of the estimated temporal covariance, which raises the null-contrast error by a factor of 1.7-2.4. With that noise included, covariance optimization gains 1-2% in precision at the five lighter masses (3-30% with two-state time fits, which also lower moments by 3-10%) and nothing on independent data halves, while its weights carry three to four orders of magnitude more leverage on omitted response modes than the fixed stencils and move the moments by up to 1.8 marginal standard errors. The decuplet controls show what such leverage does under misspecification: the first-order responses obey $μ_{Δ^+}/μ_{Δ^{++}}=1/2$ and $μ_{Δ^0}=0$ exactly. The lowest-order estimate misses the first by 10-25 standard errors. The fixed $O(B^4)$-$O(B^8)$ stencils satisfy it within errors in the production windows, whereas the correlated linear fit in $B^2$, with the same constraints as the $O(B^4)$ stencil, misses it by 3-17%; the null-space test rejects that fit's model. The results distinguish statistical precision from robustness to omitted response modes; they are not physical-point magnetic moments.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文把背景场格点QCD中“从多个场强提取弱场响应系数”这件事重新表述为场空间中的线性估计问题，系统比较了固定抵消模板与协方差优化的广义最小二乘估计器，指出后者在统计精度上的增益有限且对遗漏响应模式极其敏感，而固定模板在鲁棒性上明显更优。\n\n## 研究问题\n作者想解决的核心问题是：在背景场格点QCD计算中，如何从有限个场强下的关联子中稳健地提取弱场响应系数（如磁矩）。具体而言：\n1. 常用的固定抵消模板（如O(B^4)-O(B^8)差分格式）与协方差优化的广义最小二乘估计器相比，精度和鲁棒性如何权衡？\n2. 这些估计器对“遗漏响应模式”（即模型未包含的高阶场强响应）的敏感性有多大？\n3. 零空间检验能否有效诊断两顶/三顶响应模型的充分性？\n4. 在模型误设（misspecification）情况下，协方差优化的杠杆效应会导致多大偏差？\n\n## 方法\n- **格点设置**：约1000个淬火组态，六个夸克质量，使用 archival 核子双比值（nucleon double ratios）和十重态（decuplet）关联子。\n- **理论框架**：将弱场响应系数的提取视为场空间中的线性估计问题；响应系数是场强B^2的多项式展开系数。\n- **估计器对比**：\n  - 固定抵消模板：O(B^4)到O(B^8)的有限差分/模板格式，用于消除高阶响应模式的污染。\n  - 协方差优化的广义最小二乘（GLS）估计器：利用估计的时间协方差构造权重。\n- **检验工具**：\n  - 无权重零空间检验（weight-free null-space tests）：检验两顶和三顶响应模型是否被数据拒绝。\n  - 十重态精确控制：利用格点收缩给出精确答案的十重态关联子，检验估计器在模型误设下的表现（如 μ_{Δ+}/μ_{Δ++}=1/2 和 μ_{Δ0}=0 的精确关系）。\n- **数值技术**：时间拟合（包括单态和两态拟合）、协方差噪声估计、杠杆效应分析（leverage on omitted response modes）。\n\n## 主要结果\n1. **固定模板几乎无精度损失**：O(B^4)-O(B^8)固定模板彼此几乎重合，精度损失可忽略。\n2. **零空间检验拒绝两顶模型**：在多数核子系综中，无权重零空间检验拒绝两顶响应模型；三顶模型是否被拒绝取决于时间拟合和估计的时间协方差噪声（噪声使零对比误差增大1.7-2.4倍）。\n3. **协方差优化增益有限**：在五个较轻质量处，计入协方差噪声后，GLS仅获得1-2%的精度提升（两态时间拟合下为3-30%，但矩降低3-10%）；在独立数据半样本上无增益。\n4. **GLS杠杆效应巨大**：GLS权重对遗漏响应模式的杠杆比固定模板大3-4个数量级，可使矩移动最多1.8个边际标准误。\n5. **十重态控制揭示误设风险**：最低阶估计以10-25个标准误错过 μ_{Δ+}/μ_{Δ++}=1/2；固定O(B^4)-O(B^8)模板在生产窗口内满足精确关系；而B^2中的相关线性拟合（与O(B^4)模板同约束）以3-17%错过该关系，且零空间检验拒绝其模型。\n6. **核心区分**：结果区分了统计精度与对遗漏响应模式的鲁棒性；这些不是物理点磁矩。\n\n## 为什么值得关注\n- **方法学意义**：为背景场格点QCD中弱场响应系数的提取提供了系统的统计估计框架，明确了“精度”与“鲁棒性”的权衡，对今后此类计算的数据分析有直接指导意义。\n- **警示协方差优化**：表明协方差优化的GLS估计器在模型误设下可能因杠杆效应产生显著偏差，固定模板虽然简单但更稳健——这对广泛使用相关拟合的格点社区是一个重要提醒。\n- **零空间检验的实用性**：提供了一种无权重、低成本的模型诊断工具，可用于检验响应模型是否充分。\n- **十重态精确控制的巧妙设计**：利用格点收缩的精确答案作为“已知真值”来量化误设偏差，方法上具有推广价值。\n- **非物理点声明**：作者明确这些结果不是物理磁矩，避免了误读，体现了严谨性。\n\n## 方向标签\n- Lattice QCD\n- Hadron structure\n- Background field methods\n- Statistical estimation / data analysis\n\n## 阅读优先级\n★★★★☆（4星）\n\n理由：这篇论文对格点QCD中背景场方法的数据分析有直接且实用的指导意义，尤其适合正在做或计划做核子磁矩/极化率等背景场计算的研究者。它不涉及新物理或新算法，但提供了重要的方法学警示和诊断工具，统计估计的框架也较为清晰。扣一星是因为其结论主要针对淬火近似下的 archival 数据，未涉及 dynamical 组态或连续极限，物理影响有限；但对方法学社区而言仍值得一读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:40:40.351116"
+  },
+  {
+    "id": "2611.10671v1",
+    "title": "An Information-Theoretic Perspective on Spectral Reconstruction in Lattice QCD",
+    "authors": [
+      "Nan Wang",
+      "Long-cheng Gui",
+      "Jian Liang",
+      "Jun Shi",
+      "Han-yang Xing"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.10671v1",
+    "published": "2026-11-07T11:36:53Z",
+    "abstract": "Assessing the reliability of spectral reconstruction from finite, noisy lattice correlators requires understanding the constraints supplied by the data relative to prior assumptions. We develop an information-theoretic framework using Kullback--Leibler (KL) divergences to quantify the information supplied by the data through changes from prior to posterior probability distributions. Our analysis accounts for both changes in the probability distributions of spectral strength at individual energies and constraints encoded in correlations across the spectrum. We smear these information measures over neighboring energies using Gaussian weights to obtain a smoothed assessment at a specified energy scale. We demonstrate this framework using a hierarchical Bayesian reconstruction method with posterior sampling, applied to mock correlator data generated from a three-peak spectrum and a near-physical lattice proton correlator. These calculations show that the information measures help explain the properties of reconstructed spectra. They also provide a semiquantitative criterion for assessing how strongly reconstructed spectral structures are constrained by the data and how reliable they are in light of prior effects.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出了一套基于KL散度的信息论框架，用来定量刻画“数据相对于先验到底提供了多少信息”，从而半定量地判断格点QCD谱重构结果在多大程度上由数据约束、在多大程度上受先验影响。\n\n## 研究问题\n格点QCD中从有限、含噪的欧几里得关联函数重构谱函数是病态逆问题，结果强烈依赖先验假设（如正定性、平滑性、峰结构等）。作者想解决的核心问题是：**如何客观评估重构出的谱结构究竟是被数据“撑起来”的，还是先验“造出来”的**，并给出一个可操作的可靠性判据。\n\n## 方法\n- **信息论框架**：用Kullback–Leibler散度度量从先验到后验概率分布的变化，分别刻画：\n  - 单个能量点上谱强度分布的变化（pointwise信息）；\n  - 谱在能量间相关性所编码的约束（correlation信息）。\n- **高斯平滑**：用高斯权重在邻近能量上对信息量做平滑，得到在给定能量尺度下的平滑评估，避免逐点噪声。\n- **贝叶斯谱重构**：采用分层贝叶斯重构方法并结合后验采样（posterior sampling）。\n- **测试数据**：①由三峰谱生成的模拟关联函数；②接近物理的格点质子关联函数。\n- 属于纯数值/统计方法研究，未引入新的格点作用量或规范场模拟。\n\n## 主要结果\n- 信息度量能够解释重构谱的性质：不同谱结构（峰、肩、宽结构）对应的数据信息量差异明显。\n- 给出了一个**半定量判据**：可以判断重构出的谱结构被数据约束的强度，以及在先验效应下其可靠程度。\n- 在三峰模拟数据和近物理质子关联函数上验证了框架的可行性，说明该方法能区分“数据支持的峰”与“先验驱动的峰”。\n\n## 为什么值得关注\n谱重构（尤其是质子、中子等强子谱和有限温度谱）长期面临“结果可信度难以量化”的痛点，社区常靠经验或改变先验做稳健性检验。该工作把“数据信息量”变成可计算的量，为谱重构结果提供了原则性的可靠性评估工具，对格点QCD强子谱、有限温度输运系数、以及任何病态逆问题（如最大熵方法、贝叶斯重构）都有方法论价值，也有助于审稿和结果比较时建立更客观的标准。\n\n## 方向标签\n- Lattice QCD\n- Bayesian inference / Inverse problems\n- Spectral reconstruction\n- Information theory\n- Hadron spectroscopy\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：方法学贡献清晰、实用性强，直接针对格点谱重构的可信度评估这一真实痛点，且框架可迁移到多种重构场景；但它属于统计/方法论层面，不产生新的物理预言或格点数据，若你关注具体物理结果（如质子谱、有限温度谱）则需结合其后续应用阅读。对做谱重构或贝叶斯分析的研究者建议优先精读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:40:47.579869"
+  },
+  {
+    "id": "2611.10303v1",
+    "title": "The Gribov problem on the horizon: A short guide to the Gribov-Zwanziger framework and its refinement",
+    "authors": [
+      "Antonio D. Pereira"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.10303v1",
+    "published": "2026-11-06T23:04:18Z",
+    "abstract": "Gauge fixing in Yang-Mills theories encounters a non-perturbative obstruction: distinct gauge-equivalent configurations can satisfy the same gauge condition. These are the so-called Gribov copies and their existence challenges the global validity of the Faddeev-Popov prescription. Addressing this ambiguity motivates a framework that connects the geometry of gauge-field space to infrared dynamics. This mini-review introduces the Gribov problem in Euclidean Yang-Mills theories and traces the construction of the Gribov-Zwanziger action and its refinement through the introduction of dimension-two condensates. We discuss the resulting infrared propagators, their comparison to lattice results, and the role of BRST symmetry, before surveying selected applications and open questions.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这是一篇关于格点规范理论中 Gribov 问题及 Gribov–Zwanziger 框架的简明综述，系统梳理了从规范固定的非微扰障碍到红外面传播子与维度二凝聚修正的理论脉络，并将其与格点结果进行对照。\n\n## 研究问题\n\n作者想解决（或梳理）的核心问题是：在欧几里得 Yang–Mills 理论中做规范固定时，Faddeev–Popov 方案存在非微扰层面的全局失效——即同一规范轨道上存在多个满足同一规范条件的组态（Gribov copies）。这引出了两个层次的问题：\n\n1. **理论层面**：如何在 Gribov 拷贝存在的情况下，构造一个自洽的、能正确描述红外动力学的规范固定框架？Gribov–Zwanziger (GZ) 作用量及其引入维度二凝聚的\"精炼\"(refined) 版本如何从规范场空间的几何结构中自然导出？\n2. **现象学层面**：该框架给出的红外面传播子（特别是胶子传播子的红外行为）能否与格点数据定量对比？BRST 对称性在其中扮演什么角色、是否被显式破坏？\n\n简言之，这是一篇\"路线图式\"的综述，目标不是提出新计算，而是把 Gribov 问题→GZ 作用量→精炼 GZ→红外面传播子→格点对比→BRST 对称性→应用与开放问题这条逻辑链讲清楚。\n\n## 方法\n\n需要说明：**这篇论文本身不是格点计算工作，而是一篇理论综述（mini-review）**，因此它没有使用格点模拟、蒙特卡洛算法或数值技术。它的\"方法\"是理论构造与文献综合：\n\n- **几何方法**：从规范场空间的几何（Gribov 区域、第一 Gribov 视界）出发，通过限制泛函积分到 Gribov 区域来构造 GZ 作用量。\n- **有效作用量方法**：引入 Zwanziger 辅助场（或等价地通过 horizon 函数）实现 Gribov 区域的限制，得到 GZ 作用量；进一步通过引入维度二凝聚 ⟨A²⟩ 构造精炼 GZ 作用量。\n- **传播子分析**：在 GZ 及精炼 GZ 框架下解析计算胶子、鬼场传播子的红外形式。\n- **与格点数据对比**：综述中引用已有的格点结果（如胶子传播子在红外区的行为、鬼场传播子的增强等）来检验理论预言。\n- **BRST 对称性分析**：讨论 GZ 作用量中 BRST 对称性的显式破坏及其软破坏（soft breaking）性质。\n\n因此，若按\"lattice 方法/模型/算法/数值技术\"来问，答案是：**本文不涉及原创格点数值方法，而是以理论解析构造为主、以格点文献数据为参照的综述性工作**。\n\n## 主要结果\n\n综述所总结的核心发现（即该领域的主要结论）包括：\n\n1. **Gribov 拷贝是规范固定的非微扰障碍**，使 Faddeev–Popov 方案不能全局成立，必须通过限制积分区域（Gribov 区域）来修正。\n2. **GZ 作用量**通过 horizon 函数/辅助场实现 Gribov 区域限制，给出红外修正的胶子传播子，预言胶子在红外被压制（与微扰行为不同）。\n3. **精炼 GZ 框架**引入维度二凝聚（如 ⟨A²⟩），使传播子在红外的行为更接近格点观测，尤其是胶子传播子的红外行为与格点数据定性/半定量一致。\n4. **BRST 对称性在 GZ 框架中被显式破坏**，但这种破坏是\"软的\"（由维度二参数控制），在特定意义上可受控，并影响 Ward 恒等式与可观测量的构造。\n5. 综述还指出该框架在有限温度、QCD 相变、以及与其他红外修正方案（如 massive Yang–Mills、Curci–Ferrari 等）的关系方面的应用与开放问题。\n\n## 为什么值得关注\n\n- **对格点社区**：Gribov 问题直接关系到格点上规范固定的定义与可行性（如 Landau/Coulomb 规范固定的 Gribov 拷贝问题、Faddeev–Popov 算符的零模），也关系到格点胶子/鬼场传播子的红外解读。该综述提供了理论侧的系统参照，有助于理解格点数据背后的非微扰机制。\n- **对 QCD 红外物理**：胶子质量生成、禁闭机制、维度二凝聚等都与 QCD 真空结构相关，GZ 框架是连接规范场空间几何与红外动力学的重要理论工具。\n- **对理论物理方法学**：BRST 对称性的软破坏、规范固定的全局定义等问题具有超出 QCD 的方法论意义（如引力、其他规范理论中的规范固定）。\n- **综述价值**：作为\"short guide\"，它为进入该领域的研究者（包括做格点、做解析 QCD 的学生）提供了清晰的入门路线图。\n\n## 方向标签\n\n- Lattice QCD（作为对照与检验来源）\n- 规范固定 / Gribov 问题（Gauge fixing）\n- 红外 QCD / 禁闭（Infrared QCD, Confinement）\n- BRST 对称性\n- 传播子与凝聚（Propagators, Condensates）\n\n（不涉及 BSM、Quantum simulation、Machine Learning、Tensor network、Finite temperature 作为本文主线；有限温度仅作为应用提及。）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：\n\n- **加分**：主题重要且经典（Gribov 问题是格点规范固定与红外 QCD 的核心非微扰问题之一），综述形式适合快速建立全局图景；对做格点规范固定、传播子测量或红外 QCD 的研究者有直接参考价值。\n- **减分**：本文是理论综述而非原创格点数值工作，若读者的核心需求是\"格点算法/数值技术\"或最新格点数据，则本文不是首选；其内容偏解析框架梳理，深度有限（\"short guide\"定位）。\n- **适用人群**：想快速了解 GZ 框架与格点结果对应关系的入门者、需要理论背景的格点研究者，优先级较高；纯做格点算法或 BSM 的读者可降为 2 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:41:01.695412"
+  },
+  {
+    "id": "2611.10259v1",
+    "title": "Evidence for quark+quark pairing in proton formation",
+    "authors": [
+      "Hui-Yu Xing",
+      "Dan-Dan Cheng",
+      "Craig D. Roberts",
+      "Jose Rodriguez-Quintero"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.10259v1",
+    "published": "2026-11-06T21:49:45Z",
+    "abstract": "The question of pairing between quarks inside baryons is addressed by calculating the fragmentation functions that describe production of nucleons (protons and neutrons) in high-energy collisions and comparing attendant predictions with phenomenological global fits to available data and directly with data on hadron multiplicities. The fragmentation functions are obtained from nucleon parton distribution functions using the Drell-Levy-Yan relation and subsequently solving a coupled set of pion, kaon, and nucleon jet cascade equations. Strong empirical evidence is found for the presence of diquark correlations. In comparison with global fits, $d$ (down) quark to proton fragmentation ($d\\to p$) exhibits the clearest signals. The strongest evidence is found in comparisons with the momentum-dependent proton multiplicity distribution: FFs built from a proton wave function that contains diquark correlations deliver a $z$-profile that is fully consistent with available data, whereas that obtained from a no-pairing wave function is disfavoured by data at the $9σ$ level.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文通过将基于核子部分子分布函数（PDF）和 Drell-Levy-Yan 关系构造的碎裂函数（FF）与全球拟合及强子多重数数据对比，发现含双夸克（diquark）关联的质子波函数在描述 \\(d\\to p\\) 碎裂时显著优于无配对波函数，最强证据来自动量依赖的质子多重数分布，无配对情形被数据以 \\(9\\sigma\\) 水平排除。\n\n## 研究问题\n\n作者想解决的问题是：**重子（特别是质子）内部的夸克之间是否存在配对（diquark 关联）？** 具体而言：\n\n- 传统夸克模型把重子视为三个近似自由的夸克，但 QCD 强子结构可能包含显著的双夸克关联。\n- 作者试图从**碎裂函数**（描述高能碰撞中夸克产生核子的过程）这一角度寻找双夸克关联的经验证据。\n- 核心思路：如果质子波函数含双夸克关联，则其碎裂函数（尤其 \\(d\\to p\\)）的 \\(z\\) 分布形状会与无配对情形不同，从而可与数据区分。\n\n## 方法\n\n需要说明：**这篇论文并非格点场论计算**，而是基于唯象模型与数据拟合的分析。其方法链条为：\n\n1. **从核子 PDF 出发**：利用核子部分子分布函数作为输入。\n2. **Drell-Levy-Yan (DLY) 关系**：用 DLY 关系将 PDF 映射为碎裂函数（这是 PDF 与 FF 之间的解析对应关系）。\n3. **喷注级联方程**：求解耦合的 \\(\\pi\\)、\\(K\\)、核子喷注级联方程（jet cascade equations），得到演化后的碎裂函数。\n4. **波函数模型对比**：分别构造含双夸克关联的质子波函数与无配对波函数，生成两套 FF 预言。\n5. **与数据对比**：\n   - 与全球拟合（global fits）的碎裂函数对比；\n   - 直接与强子多重数数据（尤其动量依赖的质子多重数分布）对比；\n   - 用统计显著性（\\(\\sigma\\) 水平）量化区分度。\n\n没有使用格点 QCD 数值模拟、张量网络或机器学习方法。\n\n## 主要结果\n\n1. **发现双夸克关联的强经验证据**：含 diquark 关联的 FF 与全球拟合及多重数数据一致。\n2. **\\(d\\to p\\) 碎裂是最清晰的信号通道**：在与其他全球拟合对比时，下夸克到质子的碎裂表现出最明显的双夸克关联特征。\n3. **最强证据来自动量依赖的质子多重数分布**：含双夸克关联波函数给出的 \\(z\\) 分布与数据完全一致；而无配对波函数的预言被数据以 **\\(9\\sigma\\)** 水平排除。\n4. 结论：质子形成过程中存在 **quark+quark 配对** 的经验证据。\n\n## 为什么值得关注\n\n- **对强子结构图像的意义**：若双夸克关联确实显著，则重子内部结构不能简单用三夸克自由图像描述，这对夸克模型、QCD 非微扰强子结构研究有直接影响。\n- **连接 PDF 与 FF**：通过 DLY 关系把 PDF 信息传递到 FF，提供了一条用碎裂数据反推强子波函数结构的唯象途径。\n- **\\(9\\sigma\\) 的统计显著性**：在唯象分析中属于很强的排除水平，值得理论社区认真对待并独立检验。\n- **对高能碰撞唯象学的影响**：碎裂函数是解释强子多重数、喷注强子化的重要输入，双夸克关联会改变相关预言。\n- **对格点 QCD 的间接启示**：虽然本文不是格点计算，但其结论为格点 QCD 研究核子波函数中的双夸克关联、以及计算相关矩阵元提供了唯象动机。\n\n需要提醒：该结论依赖 DLY 关系、级联方程和特定波函数模型等唯象假设，其稳健性需由独立方法和格点 QCD 第一性原理计算进一步检验。\n\n## 方向标签\n\n- Hadron structure / QCD phenomenology\n- Fragmentation functions\n- Diquark correlations\n- Parton distribution functions\n- High-energy collisions\n\n（不属于 Lattice QCD、BSM、Quantum simulation、Machine Learning、Tensor network、Finite temperature 等方向。）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：\n\n- **加分**：问题重要（重子内部双夸克关联）、结论统计显著（\\(9\\sigma\\)）、方法链条清晰，且对强子结构唯象学有直接价值；对关注核子波函数与格点 QCD 强子结构的研究者有参考意义。\n- **减分**：它不是格点 QCD 或第一性原理计算，结论依赖 DLY 关系、喷注级联方程和波函数模型等唯象假设，模型依赖性较强；对纯格点/算法方向的研究者相关性有限。\n- **建议**：若你关注强子结构、PDF/FF 唯象或双夸克关联，值得一读并追踪其后续独立验证；若你专注格点算法或 BSM，可略读结论即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:41:12.747296"
+  },
+  {
+    "id": "2611.10166v1",
+    "title": "Pion and kaon electromagnetic form factors in a flavor-dressed contact interaction: the role of Nf-screening on dynamical chiral symmetry breaking",
+    "authors": [
+      "Aftab Ahmad",
+      "Muhammad Abid",
+      "Niaz Hussain",
+      "Mumtaz Khan",
+      "Tariq Mahmood",
+      "Alfredo Raya"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.10166v1",
+    "published": "2026-11-06T19:41:41Z",
+    "abstract": "We compute the electromagnetic form factors of the pion and the kaon in a symmetry-preserving contact interaction whose effective coupling depends on the number of active light flavors Nf , so that dynamical chiral symmetry breaking is screened as Nf grows toward the chiral transition. The calculation uses the rainbow-ladder truncation of the Schwinger-Dyson and Bethe-Salpeter equations with proper-time regularization, and it includes the dressed quark-photon vertex obtained from its own inhomogeneous Bethe-Salpeter equation in the same truncation. At Nf = 2 the model reproduces the established contact interaction values of the meson masses, decay constants and condensates, and the charge radii rpi = 0.447 fm and rK = 0.417 fm, which undershoot experiment by about one third, as is known for this class of interactions. We therefore restrict every comparison to Q2 less then or equal to 0.6 GeV2, confront it with the NA7 data and with one-loop chiral perturbation theory, and focus on the response to Nf . Both radii grow monotonically with Nf , and the growth survives every variation of the screening function and of the infrared confinement scale that we test. The growth is carried by the quark core rather than by the vector-meson dressing: between Nf = 2 and 6 the bare-vertex contribution to <r2pi> rises from 0.097 to 0.226 fm2, while the dressing contribution moves from 0.102 to 0.127 fm2 even though the rho pole drops from 0.93 to 0.70 GeV. The finite strange mass slows the kaon response only moderately.",
+    "summary": {
+      "raw": "## 一句话结论\n在保持对称性的接触相互作用模型中引入随活跃轻味数 Nf 变化的有效耦合（对 DCSB 的 Nf 屏蔽），发现 π 和 K 的电磁形状因子及其电荷半径随 Nf 单调增大，且增长主要来自夸克核心而非矢量介子 dressing。\n\n## 研究问题\n作者想解决的核心问题是：当活跃轻味数 Nf 增大、接近手征相变时，动力学手征对称性破缺（DCSB）被“屏蔽”会如何影响 π 和 K 的电磁形状因子与电荷半径？具体而言，他们想区分电荷半径对 Nf 的响应是由裸顶点（夸克核心）贡献主导，还是由夸克-光子顶点 dressing（矢量介子极点）贡献主导，并检验这种响应是否稳健于屏蔽函数形式和红外禁闭标度的变化。\n\n## 方法\n- **模型框架**：对称性保持的接触相互作用（contact interaction），有效耦合依赖于活跃轻味数 Nf，使 DCSB 随 Nf 增大而被屏蔽。\n- **方程与截断**：Schwinger–Dyson 方程（SDE）与 Bethe–Salpeter 方程（BSE）的 rainbow-ladder 截断。\n- **正规化**：proper-time regularization。\n- **顶点**：包含由同一截断下非齐次 BSE 得到的 dressed quark-photon vertex，从而把裸顶点贡献与 dressing 贡献分开。\n- **标定与比较**：在 Nf = 2 时复现该接触相互作用已知的介子质量、衰变常数、凝聚值以及 rπ = 0.447 fm、rK = 0.417 fm（比实验低约三分之一）；因此所有与实验/ChPT 的比较限制在 Q² ≤ 0.6 GeV²，并与 NA7 数据和单圈手征微扰理论对比。\n- **扫描**：改变屏蔽函数形式与红外禁闭标度，检验半径随 Nf 增长的稳健性；并在 Nf = 2 到 6 之间分解裸顶点与 dressing 对 ⟨r²⟩ 的贡献。\n\n## 主要结果\n- Nf = 2 时模型复现该接触相互作用类模型的已知结果：介子质量、衰变常数、凝聚值，以及 rπ = 0.447 fm、rK = 0.417 fm，电荷半径比实验低约三分之一（该类相互作用的已知缺陷）。\n- π 和 K 的电荷半径都随 Nf 单调增大，且这一增长在作者测试的所有屏蔽函数形式和红外禁闭标度变化下都保持稳健。\n- 增长由夸克核心（裸顶点）主导，而非矢量介子 dressing：Nf 从 2 到 6，裸顶点对 ⟨r²π⟩ 的贡献从 0.097 升到 0.226 fm²，而 dressing 贡献仅从 0.102 移到 0.127 fm²——尽管 ρ 极点质量从 0.93 GeV 降到 0.70 GeV。\n- 有限奇异夸克质量只是适度减缓 kaon 的响应。\n\n## 为什么值得关注\n- 把“Nf 屏蔽 DCSB”这一与手征相变相关的物理效应，与可观测的电磁形状因子/电荷半径联系起来，为理解接近手征转变时强子性质如何演化提供了模型层面的定量图像。\n- 明确区分了裸顶点与 dressing 的贡献，指出电荷半径的 Nf 响应主要由夸克核心携带，这对解释矢量介子极点（ρ 介子）在强子电磁性质中的作用提供了反直觉但重要的约束。\n- 对接触相互作用类模型的系统误差（半径偏低约三分之一）给出了清晰的适用范围（Q² ≤ 0.6 GeV²），并与 NA7 数据和 ChPT 对比，增强了结果的可解释性。\n- 对 lattice QCD 与有效模型社区有参考价值：为 Nf 依赖的 DCSB 屏蔽效应提供可检验的定性/半定量预言，并提示在比较形状因子时应关注顶点 dressing 与裸核心的分离。\n\n## 方向标签\n- Lattice QCD（关联的有效模型/连续场论方法）\n- Chiral symmetry breaking / DCSB\n- Hadron form factors\n- Schwinger–Dyson / Bethe–Salpeter\n- Effective models of QCD\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：这是一篇方法清晰、结论稳健且物理图像明确的模型研究，对理解 Nf 依赖的 DCSB 屏蔽与电磁形状因子之间的联系有价值；但它基于接触相互作用与 rainbow-ladder 截断，属于有效模型层面，且电荷半径本身比实验低约三分之一，定量预言能力有限。对关注手征对称性破缺、介子形状因子和有效模型系统误差的读者值得一读；若主要关心第一性原理 lattice QCD 或高精度实验对比，则优先级中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-10T07:41:22.482141"
   }
 ]
