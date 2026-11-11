@@ -8230,5 +8230,143 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-10T07:41:22.482141"
+  },
+  {
+    "id": "2611.14324v1",
+    "title": "Non-perturbative renormalization of the energy-momentum tensor in the 2d $O(3)$ non-linear $σ$-model",
+    "authors": [
+      "Leonardo Giusti",
+      "Mitsuaki Hirasawa",
+      "Michele Pepe"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.14324v1",
+    "published": "2026-11-10T16:48:31Z",
+    "abstract": "We construct the traceless components of the energy-momentum tensor on the lattice for the two-dimensional $O(3)$ non-linear $σ$-model, such that their correlation functions satisfy the appropriate Ward identities in the continuum limit. The theory is defined by the standard lattice discretizations of both the action and the energy-momentum tensor. The discretization of space-time entails that the traceless two-index symmetric irreducible representation of $O(2)$ splits into two irreducible representations of the dihedral group $D_4$, each requiring an independent renormalization constant. These constants are defined non-perturbatively by imposing discretized versions of continuum Ward identities for one-point functions in the presence of shifted boundary conditions. The non-perturbative calculations are then carried out by Monte Carlo simulations, and the resulting renormalization constants are determined with a final accuracy better than a permille throughout the investigated range of the dimensionless bare coupling constant squared $0\\leq g_0^2\\leq 0.6$.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文在二维 \\(O(3)\\) 非线性 σ 模型的格点离散化上，非微扰地构造并重整化了无迹能动张量的两个独立分量，通过移位边界条件下的 Ward 恒等式在蒙特卡洛模拟中把重整化常数确定到优于千分之一的精度。\n\n## 研究问题\n\n作者要解决的核心问题是：能动张量 \\(T_{\\mu\\nu}\\) 在格点上的非微扰重整化。具体而言：\n\n1. 二维 \\(O(3)\\) 非线性 σ 模型在格点上破坏了连续 \\(O(2)\\) 旋转对称性，只保留二面体群 \\(D_4\\)。连续极限下 \\(O(2)\\) 的无迹两指标对称不可约表示（即 \\(T_{\\mu\\nu}\\) 的无迹部分，两个分量）在格点上分裂为 \\(D_4\\) 的两个不可约表示，因此需要**两个独立的重整化常数**，而不是一个。\n2. 如何在不依赖微扰论的情况下，用格点可计算的量（Ward 恒等式）把这些重整化常数定出来。\n3. 验证所构造的格点能动张量在连续极限下满足正确的 Ward 恒等式。\n\n## 方法\n\n- **模型**：二维 \\(O(3)\\) 非线性 σ 模型，采用标准格点作用量（最近邻相互作用，\\(g_0^2\\) 为裸耦合平方）。\n- **算符构造**：在格点上构造能动张量的无迹分量，按 \\(D_4\\) 的不可约表示分解为两个分量，各自带一个重整化常数 \\(Z\\)。\n- **重整化条件**：使用**移位边界条件**（shifted boundary conditions）下一点函数的离散化 Ward 恒等式，非微扰地定义重整化常数。这是本文方法上的关键点——移位边界条件提供了非零的动量/温度效应，使 Ward 恒等式成为可数值检验的约束。\n- **数值技术**：蒙特卡洛模拟，在 \\(0 \\le g_0^2 \\le 0.6\\) 范围内扫描裸耦合，提取重整化常数。\n- **精度控制**：最终精度优于 permille（千分之一）。\n\n## 主要结果\n\n1. 成功构造了格点无迹能动张量，其关联函数在连续极限下满足相应的 Ward 恒等式。\n2. 确认了由于 \\(O(2) \\to D_4\\) 的对称性破缺，无迹两指标对称表示确实分裂为两个 \\(D_4\\) 不可约表示，**每个需要独立的重整化常数**——这是格点离散化带来的非微扰效应，不能靠单一 \\(Z\\) 吸收。\n3. 用移位边界条件下的 Ward 恒等式非微扰地确定了这两个重整化常数，在整个 investigated 范围 \\(0 \\le g_0^2 \\le 0.6\\) 内精度优于 \\(10^{-3}\\)。\n4. 结果与微扰论预期在弱耦合端一致（作为交叉检验），但方法本身是非微扰的。\n\n## 为什么值得关注\n\n- **能动张量的格点重整化是可积模型/量子场论中能量-动量相关可观测量的基础**：一旦 \\(T_{\\mu\\nu}\\) 被正确重整化，就可以可靠地计算能量密度、动量密度、剪切粘滞等输运相关量的关联函数。\n- **对称性破缺导致的算符混合/分裂**是一个普遍问题：在更高维（如 4d）格点 QCD 中，能动张量同样面临 \\(O(4) \\to H(4)\\) 的分裂，需要多个重整化常数。本文在 2d \\(O(3)\\) 模型这个相对可控的平台上，把\"用 Ward 恒等式 + 移位边界条件非微扰定 \\(Z\\)\"的整套流程走通并达到 permille 精度，对 4d 情形有直接的方法论借鉴意义。\n- **移位边界条件**作为一种非微扰重整化工具，近年来在 QCD 热力学与输运系数计算中被广泛使用；本文展示了它在低维可积模型中的可行性与精度潜力。\n- 2d \\(O(3)\\) 模型本身是渐近自由、有质量间隙的可积模型，常被用作检验格点方法与算符构造的\"试验台\"；本文结果为该模型中的能量-动量物理提供了可靠的格点输入。\n\n## 方向标签\n\n- Lattice field theory（格点场论方法）\n- Operator renormalization（算符重整化）\n- Energy-momentum tensor（能动张量）\n- Ward identities / Shifted boundary conditions\n- 2d \\(O(3)\\) non-linear σ-model\n- Monte Carlo simulation\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：这是一篇方法学扎实、结果干净的技术性论文，对**专门做能动张量格点重整化或移位边界条件方法**的研究者价值很高（对他们可到 4 星）；但对更广泛的 lattice QCD/理论物理读者，其模型（2d \\(O(3)\\)）和结论偏\"试验台\"性质，不直接给出 QCD 物理结果。若你关心 4d 能动张量重整化、输运系数或移位边界条件技术，值得细读；若只关心 QCD 现象学，读摘要与方法部分即可。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:00.403585"
+  },
+  {
+    "id": "2611.14103v1",
+    "title": "Nucleon sigma terms in lattice QCD at physical pion mass and in the continuum",
+    "authors": [
+      "Constantia Alexandrou",
+      "Christos Iona",
+      "Giannis Koutsou",
+      "Yan Li",
+      "Srijit Paul",
+      "Ferenc Pittler"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.14103v1",
+    "published": "2026-11-10T13:57:35Z",
+    "abstract": "We determine the light, strange and charm $σ$-terms of the nucleon in lattice QCD using four $N_f=2+1+1$ twisted-mass gauge ensembles simulated at physical pion masses and with approximately the same spatial volumes. The four lattice spacings ranging from $0.080$ fm to $0.049$ fm, with an action that has O(a) improvement, enable extrapolating the results to the continuum limit. Both valence and sea quark contributions are analysed accounting for excited-state contamination from low-lying multihadron states. We perform global fits to all ensembles, that yield $σ_{πN}=53.0(7.4)(1.6)$ MeV, $σ_s=58.2(17.0)(2.1)$ MeV and $σ_c=112(28)(25)$ MeV, with statistical and systematic uncertainties, respectively.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在物理π介子质量下，使用四个格距的 \\(N_f=2+1+1\\) twisted-mass 规范组态，经过连续极限外推，给出了核子轻、奇异和粲σ项的首个系统性的格点QCD测定：\\(\\sigma_{\\pi N}=53.0(7.4)(1.6)\\) MeV、\\(\\sigma_s=58.2(17.0)(2.1)\\) MeV、\\(\\sigma_c=112(28)(25)\\) MeV。\n\n## 研究问题\n作者想解决的核心问题是：核子的σ项（特别是奇异和粲夸克贡献）在格点QCD中此前存在较大的不确定性和系统误差，主要来源于非物理的π介子质量、有限的格距以及激发态污染。本文旨在物理π介子质量下、通过多格距连续极限外推，并系统处理低 lying 多强子态的激发态污染，给出可靠的轻、奇异、粲σ项测定值。\n\n## 方法\n- **规范组态**：四个 \\(N_f=2+1+1\\) twisted-mass 组态，均在物理π介子质量附近，空间体积近似相同。\n- **格距**：\\(a = 0.080\\) fm 到 \\(0.049\\) fm，作用量具有 O(a) 改进，支持连续极限外推。\n- **夸克贡献分析**：同时分析价夸克和海夸克贡献。\n- **激发态污染处理**：考虑低 lying 多强子态的激发态污染。\n- **拟合策略**：对所有组态进行全局拟合（global fits），同时外推到连续极限。\n- **误差处理**：分别给出统计误差和系统误差。\n\n## 主要结果\n- \\(\\sigma_{\\pi N} = 53.0(7.4)(1.6)\\) MeV\n- \\(\\sigma_s = 58.2(17.0)(2.1)\\) MeV\n- \\(\\sigma_c = 112(28)(25)\\) MeV\n\n其中第一个误差为统计误差，第二个为系统误差。奇异σ项的中心值偏大且统计误差较大（约17 MeV），粲σ项的不确定性更大（统计约28 MeV，系统约25 MeV），反映了高阶夸克贡献的测定仍具挑战性。\n\n## 为什么值得关注\n- **物理π介子质量**：避免了手征外推带来的系统不确定性，结果更接近真实QCD。\n- **连续极限外推**：四个格距覆盖0.049–0.080 fm，O(a)改进作用量使连续外推更可靠。\n- **激发态污染的系统处理**：多强子态污染是σ项计算的主要系统误差来源之一，本文对此进行了显式分析。\n- **奇异和粲σ项**：这些量直接关系到暗物质直接探测中的核子散射截面（特别是与重WIMP的相干散射），以及核子质量分解和trace anomaly问题。\n- **对社区的意义**：提供了物理点、连续极限下σ项的基准值，可用于检验其他格点合作组的结果、约束手征微扰理论以及唯象模型。\n\n## 方向标签\n- Lattice QCD\n- Nucleon structure\n- Sigma terms / Scalar form factors\n- Dark matter direct detection (phenomenology)\n- Continuum extrapolation\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：该工作直接针对核子σ项这一格点QCD与暗物质唯象交叉的重要量，方法上采用了物理π介子质量、多格距连续外推和激发态系统处理，结果具有基准价值。扣一星的原因是奇异和粲σ项的误差仍然较大，且twisted-mass费米子的系统效应（如isospin breaking、automatic O(a)改进的具体实现）需要读者具备一定背景才能充分评估。对从事核子结构、暗物质探测和格点QCD精密计算的读者属于高优先级阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:07.495938"
+  },
+  {
+    "id": "2611.14080v1",
+    "title": "Pseudoscalar meson masses in magnetic fields at zero temperature from lattice QCD",
+    "authors": [
+      "Heng-Tong Ding",
+      "Dan Zhang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.14080v1",
+    "published": "2026-11-10T13:44:23Z",
+    "abstract": "We study neutral and charged pseudoscalar meson masses in background magnetic fields in $(2+1)$-flavor QCD at zero temperature and physical quark masses. Using the highly improved staggered quark action at four lattice spacings, we obtain continuum-extrapolated masses from connected correlators for pions, kaons, and the fictitious $s\\bar s$ pseudoscalar $η^0_{s\\bar s}$. Neutral pseudoscalar masses decrease with increasing magnetic field, with the largest relative reduction for the neutral pion. In contrast, charged pion and kaon masses initially rise but tend to level off or decrease at stronger fields, departing from the point-particle lowest-Landau-level expectation. To investigate the origin of this field dependence, we compare neutral and charged pion masses at finite lattice spacings with the field included only in valence propagators or only in the sea-quark determinant. Valence-only masses approximately reproduce the full results, while sea-only masses remain close to their corresponding zero-field values.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文用格点 QCD 在物理夸克质量、零温度、四档格距下系统计算了磁场中中性及带电赝标量介子（π、K、$η^0_{s\\bar s}$）的质量，发现中性介子质量随磁场增大而下降、带电介子先升后趋平或下降，且这些效应几乎完全由价夸克传播子（而非海夸克行列式）决定。\n\n## 研究问题\n\n作者想解决的核心问题是：在真实 QCD（而非手征微扰论或准粒子模型）中，背景磁场如何改变赝标量介子的质量？具体包括：\n\n1. 中性赝标量（π⁰、K⁰、$η^0_{s\\bar s}$）质量随 B 如何变化——是否如某些模型预期的那样下降？\n2. 带电赝标量（π⁺、K⁺）是否遵循点粒子最低朗道能级（LLL）预期 $m^2(B)=m^2(0)+eB$？此前格点结果存在分歧。\n3. 磁场效应究竟来自价夸克（传播子）还是海夸克（行列式/真空极化）？这是理解物理机制的关键分解。\n\n## 方法\n\n- **规范场系综**：$(2+1)$-味 QCD，物理夸克质量，零温度，背景磁场通过 U(1) 相位（固定拓扑荷的均匀磁场，即所谓“磁化”方案）施加于 HISQ 作用量。\n- **格点作用量**：高度改进交错夸克（HISQ）作用量，**四档格距**用于连续极限外推。\n- **观测量**：由**连通关联函数**提取 π、K 及虚构的 $s\\bar s$ 赝标量 $η^0_{s\\bar s}$ 的质量（注意：未做 disconnected 图，π⁰ 的 disconnected 贡献被省略，作者明确称其为连通部分质量）。\n- **关键数值实验**：在有限格距下做“部分淬火”分解——(a) 磁场只加在**价夸克传播子**上（sea 仍为零场）；(b) 磁场只加在**海夸克行列式**上（valence 为零场）。将两者与全结果对比，以定位磁场依赖的来源。\n- **算法/技术**：HISQ 价夸克传播子求解、磁场下的规范场重加权/系综生成、多格距连续外推。\n\n## 主要结果\n\n1. **中性赝标量质量随 B 下降**，其中 π⁰ 的相对下降最大；K⁰ 与 $η^0_{s\\bar s}$ 也下降但幅度较小（与夸克质量/组分有关）。\n2. **带电 π⁺、K⁺ 质量先随 B 上升，但在强场下趋于平缓甚至下降**，明显偏离点粒子 LLL 预期 $m^2=m_0^2+eB$（该预期对应单调上升）。\n3. **机制分解**：仅价夸克加磁场的质量**近似重现**全结果；仅海夸克加磁场的质量**几乎停留在零场值**。即磁场对介子质量的主要效应来自价夸克传播子，海夸克（真空极化）贡献很小。\n4. 结果经四档格距连续外推，具有较好的系统控制。\n\n## 为什么值得关注\n\n- **对模型预期的检验**：中性 π 质量随 B 下降、带电介子偏离 LLL，直接约束了手征微扰论、Nambu–Jona-Lasinio/准粒子模型以及“磁催化/磁抑制”图像在真实 QCD 中的适用性。\n- **厘清物理机制**：价夸克 vs 海夸克的分解表明，磁场对强子质量的影响主要由价夸克在磁场中的能级/波函数改变驱动，而非真空极化——这对理解“磁效应”在格点计算中的系统误差与物理解释都很重要。\n- **与重离子碰撞/早期宇宙的关联**：强磁场存在于非中心重离子碰撞与早期宇宙中，介子质量谱的磁场依赖影响 Dilepton 谱、手征对称性恢复等可观测量的建模。\n- **方法学价值**：四格距连续外推 + 部分淬火分解，为后续研究（如矢量介子、核子、有限温度）提供了可复用的技术路线；同时暴露了连通关联函数近似（缺 disconnected 图）的局限，提示后续工作需补全。\n\n## 方向标签\n\n- Lattice QCD\n- QCD in external magnetic fields\n- Hadron spectroscopy\n- Chiral symmetry / meson masses\n- Quark-gluon plasma phenomenology（间接相关）\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：这是一项系统、控制良好的格点 QCD 计算（物理夸克质量、四格距连续外推、明确的价/海分解），直接回应了磁场中介子质量这一有争议的问题，结论清晰且具机制洞察，对格点与现象学社区都有较高参考价值。扣一星的原因：仅用连通关联函数（π⁰ 的 disconnected 贡献缺失，作者自己标注为连通质量），且为 $T=0$、单一磁场方案，结论的普适性（如对磁场拓扑/量化方案的依赖、有限温度推广）仍需后续工作确认。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:17.958352"
+  },
+  {
+    "id": "2611.13886v1",
+    "title": "Lattice Hamiltonians for Chiral Gauge Theories",
+    "authors": [
+      "Dorota M. Grabowska"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.13886v1",
+    "published": "2026-11-10T10:48:23Z",
+    "abstract": "We present a lattice Hamiltonian for chiral gauge theories on the boundary of a slab. The formulation is gauge-fixed, so the gauge variables are the physical modes of the boundary field, and Gauss's law holds exactly. The bulk gauge field is determined by the boundary field and an integer label, which is the topological charge that the boundary generates and the bulk stores as a localized instanton. The bulk enters as a dielectric, and both gauge anomaly conditions become the question of whether the boundary satisfies Gauss's law on its own. For background gauge fields, we show that sectors that differ by a unit of bulk charge are degenerate after Pauli-Villars subtraction and the mirror fermions decouple. The boundary theory has no vacuum angle. Every term in the Hamiltonian is defined in terms of the boundary gauge variables, the integer label and the fermion modes, a starting point for quantum circuit construction.",
+    "summary": {
+      "raw": "## 一句话结论\n本文提出了一种基于“slab（板状）体-边界”结构的格点哈密顿量表述，用于手征规范理论：边界上的规范变量是物理模式且高斯定律严格成立，体区规范场由边界场与一个整数拓扑荷标签决定，从而为手征规范理论的量子模拟/量子线路构造提供了起点。\n\n## 研究问题\n作者想解决的核心问题是：**如何在格点上以哈密顿量形式、非微扰地定义手征规范理论（chiral gauge theory）**，同时满足以下要求：\n1. 规范固定后规范变量只保留物理模式，且高斯定律（Gauss's law）严格成立；\n2. 正确处理手征规范反常（gauge anomaly）条件——即反常抵消问题；\n3. 避免传统格点上手征费米子面临的 doubling/mirror fermion 问题，并使 mirror fermion 在物理谱中退耦；\n4. 构造一个所有项都可由边界规范变量、整数标签和费米子模式显式写出的哈密顿量，为量子线路实现做准备。\n\n## 方法\n- **格点哈密顿量框架（Hamiltonian lattice formulation）**：而非路径积分/Monte Carlo 方法，直接在哈密顿量层面定义理论。\n- **Slab 几何（体-边界结构）**：手征规范理论生活在 slab 的边界上，体区（bulk）作为“电介质（dielectric）”响应边界。\n- **规范固定 + 高斯定律约束**：规范变量取为边界场的物理模式，高斯定律作为严格约束（而非近似）。\n- **体区规范场由边界场 + 整数拓扑荷标签决定**：该整数标签对应边界生成的拓扑荷，体区将其存储为局域瞬子（localized instanton）。\n- **反常条件重述**：两个规范反常条件被转化为“边界是否能独立满足高斯定律”的问题。\n- **背景规范场分析 + Pauli-Villars 减除**：证明相差一个体区电荷单位的扇区在 PV 减除后简并，mirror fermion 退耦。\n- **无真空角（no vacuum angle）**：边界理论不含 θ 角。\n- 属于**解析/构造性**工作，未报告数值模拟或算法基准。\n\n## 主要结果\n1. **构造出显式的格点哈密顿量**：每一项都写成边界规范变量、整数标签和费米子模式的函数，具备量子线路构造的可实现性。\n2. **高斯定律严格成立**，规范变量即物理模式，规范固定不破坏约束。\n3. **体区作为电介质**，其规范场完全由边界场与整数拓扑荷标签确定；该整数即边界生成、体区以局域瞬子形式存储的拓扑荷。\n4. **两个规范反常条件等价于边界能否独立满足高斯定律**——给出了反常抵消的几何/约束解释。\n5. **背景规范场下**：相差一个体区电荷单位的扇区在 Pauli-Villars 减除后简并，**mirror fermion 退耦**。\n6. **边界理论无真空角**。\n\n## 为什么值得关注\n- **手征规范理论是格点场论的长期难题**：Nielsen–Ninomiya 定理与 doublers/mirror fermions 使手征费米子难以直接格点化；本文用体-边界 + 拓扑荷标签的方案绕开了部分困难，并显式处理反常抵消。\n- **面向量子模拟**：哈密顿量形式、有限维局域变量、显式量子线路可构造性，使其成为**量子模拟手征规范理论**的候选起点（与 quantum simulation 社区高度相关）。\n- **对 SM/BSM 的意义**：手征规范理论是标准模型弱相互作用的结构核心，格点上非微扰定义对理解手征对称性破缺、反常物理有潜在价值。\n- **概念贡献**：把反常条件重述为高斯定律满足性问题、把体区拓扑荷与边界生成荷对应，提供了新的理论视角。\n\n## 方向标签\n- Lattice gauge theory（手征规范理论）\n- Quantum simulation\n- BSM / chiral gauge theories\n- Anomaly / topological charge\n\n## 阅读优先级\n**★★★★☆（4/5）**\n理由：这是一篇概念性强、构造清晰的格点哈密顿量论文，对手征格点规范理论与量子模拟方向的研究者有直接价值；但属于解析构造、尚无数值验证或量子线路的具体实现，且 slab/体-边界方案的实际可行性仍需后续工作检验，因此不给满分。若你关注手征费米子格点化或量子模拟规范理论，建议优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:26.515217"
+  },
+  {
+    "id": "2611.13852v1",
+    "title": "Assessing the expressive power of a gauge-invariant PEPS ansatz across a topological phase transition",
+    "authors": [
+      "Etsuko Itou",
+      "Tsuyoshi Okubo"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.13852v1",
+    "published": "2026-11-10T10:13:13Z",
+    "abstract": "We investigate the expressive power of the gauged Gaussian fermionic projected entangled pair state (GGFPEPS) ansatz, which is a manifestly gauge-invariant tensor network ansatz for $(2+1)$-dimensional lattice gauge theories. In the GGFPEPS ansatz, the gauge field on each link is represented by coupling its configuration to the fermion number of virtual fermions placed at both ends of the link. This ansatz has been studied by variational Monte Carlo (VMC) methods in previous work~\\cite{Emonts:2022yom}. However, the statistical error of VMC makes a precise determination of the variational parameters difficult, so that the expressive power of the ansatz could not be examined accurately. In this work, we reformulate the computation as a Grassmann tensor network (TN), in which the whole network is contracted deterministically, and introduce the higher-order tensor renormalization group (HOTRG), which allows us to perform calculations in large volumes up to $L=34$. We also evaluate the infinite volume system using the corner transfer matrix renormalization group (CTMRG). We find that the ansatz with only eight complex variational parameters accurately describes the pure $\\mathbb{Z}_2$ gauge theory including the region of the topological phase transition, not only in the energy but also in the topological entanglement entropy. The critical coupling obtained from the peaks of their susceptibilities agrees quantitatively with the one predicted by continuous-time quantum Monte Carlo simulations~\\cite{wu2012phase}. Furthermore, near the transition point, we show that the ansatz represents a state outside the plaquette product family, which is a one-parameter family of states assumed in the construction of the ansatz as a simple interpolation between the strong and weak coupling limits.",
+    "summary": {
+      "raw": "## 一句话结论\n作者将规范不变的GGFPEPS拟设改写为Grassmann张量网络并用HOTRG/CTMRG确定性地收缩，证明仅含8个复变分参数的拟设能精确刻画纯Z₂规范理论（含拓扑相变区）的能量与拓扑纠缠熵，且临界耦合与量子蒙特卡洛结果定量一致。\n\n## 研究问题\n作者想解决的核心问题是：**规范不变PEPS拟设（GGFPEPS）的表达能力到底有多强**。此前该拟设只能用变分蒙特卡洛（VMC）研究，而VMC的统计误差使得变分参数难以精确确定，因而无法准确检验拟设的表达能力。本文要在消除统计误差的前提下，定量评估该拟设在跨越拓扑相变时的描述精度，并检验它在相变点附近是否超出构造时所假设的\"plaquette乘积态\"单参数族。\n\n## 方法\n- **模型**：(2+1)维纯Z₂格点规范理论（含拓扑相变），拟设中规范场通过耦合到链路两端虚拟费米子的费米子数来实现规范不变性。\n- **拟设**：gauged Gaussian fermionic PEPS（GGFPEPS），仅8个复变分参数。\n- **数值技术**：\n  - 将计算重构为**Grassmann张量网络**，整个网络可**确定性收缩**（无统计误差），替代此前的VMC。\n  - **HOTRG**（高阶张量重整化群）用于有限体积，最大到 L=34。\n  - **CTMRG**（角转移矩阵重整化群）用于直接计算无限体积极限。\n- **观测量**：能量、拓扑纠缠熵、磁化率/关联的 susceptibilities 峰值定临界耦合。\n\n## 主要结果\n1. 仅8个复参数的GGFPEPS能**精确描述**纯Z₂规范理论，覆盖拓扑相变区域，能量和拓扑纠缠熵都吻合。\n2. 由 susceptibilities 峰值提取的**临界耦合与连续时间量子蒙特卡洛预测定量一致**。\n3. 在相变点附近，拟设所表示的状态**超出 plaquette 乘积态族**——即它并非只是强弱耦合极限之间的简单单参数插值，说明该拟设具有超出构造假设的真实表达能力。\n4. 方法层面：Grassmann TN + HOTRG/CTMRG 使得大体积（L=34）与无限体积的确定性计算成为可能，克服了VMC的统计误差瓶颈。\n\n## 为什么值得关注\n- 对**张量网络与格点规范理论交叉领域**：首次以确定性方法（而非MC）严格评估规范不变PEPS的表达能力，为\"张量网络能否高效表示规范理论基态/相变\"提供了干净证据。\n- 对**拓扑相与纠缠**研究：拓扑纠缠熵的精确复现说明拟设能捕捉拓扑序的非局域特征，这对用TN研究拓扑相变是重要基准。\n- 对**方法学**：Grassmann TN + HOTRG/CTMRG 的组合为(2+1)维规范理论提供了可扩展、无符号问题困扰的确定性数值框架，可能推广到更复杂的规范理论（如含费米子物质、非阿贝尔情形的前期探索）。\n- 对**QCD/格点社区**：虽然模型是Z₂玩具模型，但它示范了\"少参数、规范不变、可确定性收缩\"的拟设路线，对高维规范理论张量网络方法的发展有参考价值。\n\n## 方向标签\n- Tensor network\n- Lattice gauge theory\n- Topological phases\n- Quantum simulation（方法学相关）\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇方法学与物理结论兼具的扎实工作——既给出了确定性TN收缩评估规范不变PEPS表达能力的清晰框架，又给出了可检验的物理结论（临界耦合吻合、超出plaquette乘积族）。对做张量网络×规范理论的人属于**必读**；对一般格点QCD读者相关性稍弱（Z₂玩具模型），但方法思路有借鉴意义，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:34.070739"
+  },
+  {
+    "id": "2611.13117v1",
+    "title": "Reconstruction of pion polarizabilities in lattice QCD with machine learning",
+    "authors": [
+      "Hanxing Jiang",
+      "Frank X. Lee"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.13117v1",
+    "published": "2026-11-09T19:04:48Z",
+    "abstract": "We apply the denoising diffusion probabilistic model (DDPM) from generative machine learning to a model-independent reconstruction of electric and magnetic polarizabilities of both charged and neutral pions. The inputs are the sparse momentum-space four-point-function data in lattice QCD for the connected quark-line contributions obtained in previous simulations at four pion masses between approximately 370 and 1100 MeV on quenched Wilson lattices. For charged pions, the elastic contribution is obtained from the pion form-factor slope, and the complete electric and magnetic inelastic terms are reconstructed separately. The neutral-pion electric and magnetic channels are reconstructed without an elastic charge-radius contribution. Four distinct families of synthetic training functions are employed, so that no single analytic fitting function is prescribed for the lattice data. We present low-momentum reconstructions to the limit of zero momentum transfer where the polarizabilities are defined, and mass extrapolations to the physical pion mass of 138 MeV.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次将生成式机器学习中的去噪扩散概率模型（DDPM）用于格点QCD中π介子电极化率与磁极化率的模型无关重建，在稀疏四点函数数据上实现了对带电与中性π介子极化率的低动量外推和物理质量外推。\n\n## 研究问题\n作者想解决的问题是：格点QCD中π介子极化率的提取依赖于对稀疏动量空间四点函数数据的解析拟合，而拟合函数的选择会引入模型依赖性偏差。论文试图用生成式机器学习方法实现**模型无关**的重建，避免预设单一解析拟合形式，从而更可靠地得到带电和中性π介子的电、磁极化率，并外推到零动量转移和物理π介子质量（138 MeV）。\n\n## 方法\n- **格点数据来源**：使用此前在淬火Wilson格点上、四个π介子质量（约370–1100 MeV）下获得的连通夸克线贡献的稀疏动量空间四点函数数据。\n- **机器学习方法**：采用生成式模型中的去噪扩散概率模型（DDPM）进行重建。\n- **物理处理**：\n  - 带电π介子：弹性贡献由π介子形状因子斜率获得，非弹性电、磁项分别重建。\n  - 中性π介子：电、磁通道重建时不包含弹性电荷半径贡献。\n- **训练策略**：使用四类不同的合成训练函数族，避免对格点数据预设单一解析拟合函数，从而实现模型无关性。\n- **外推**：进行低动量重建并外推到零动量转移（极化率定义处），再外推到物理π介子质量138 MeV。\n\n## 主要结果\n- 成功用DDPM从稀疏四点函数数据中重建了带电和中性π介子的电、磁极化率，且不依赖单一预设拟合函数。\n- 对带电π介子，弹性与非弹性贡献被分开处理，非弹性电、磁项分别重建；中性π介子通道在无弹性电荷半径贡献下重建。\n- 给出了低动量外推到零动量转移的极化率结果，并完成了向物理π介子质量138 MeV的质量外推。\n- 四类合成训练函数族的使用表明重建结果对训练函数族的选择具有一定的稳健性（模型无关性）。\n\n## 为什么值得关注\n- **方法学意义**：这是生成式机器学习（DDPM）在格点QCD多点函数分析中的一次应用尝试，为稀疏、高噪声格点数据的模型无关分析提供了新思路，可能减少传统拟合带来的系统误差。\n- **物理意义**：π介子极化率是检验手征微扰理论、理解π介子内部结构和QCD非微扰动力学的重要量，可靠的格点计算对理论比较和实验（如Primakoff测量）有参考价值。\n- **社区影响**：若该方法可推广，可能改变格点QCD中多点函数提取物理量的标准流程，推动机器学习与格点场论的交叉研究。\n\n## 方向标签\n- Lattice QCD\n- Machine Learning\n- Hadron structure\n- Chiral perturbation theory\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：论文将生成式机器学习引入格点QCD极化率重建，方法新颖且针对模型依赖性问题，对格点QCD和机器学习交叉领域有较高参考价值。但数据基于淬火Wilson格点、π介子质量较物理值偏大，且目前是方法学探索阶段，物理结果的精度和系统误差控制仍需后续验证，因此不是必读的奠基性工作，但对相关方向研究者值得细读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:40.921139"
+  },
+  {
+    "id": "2611.05899v2",
+    "title": "Finite-volume Analysis of On-shell Subtraction in the Luescher formalism",
+    "authors": [
+      "Wanchen Lei",
+      "Yuting Wang",
+      "Jin-Yi Pang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.05899v2",
+    "published": "2026-11-04T03:45:39Z",
+    "abstract": "On-shell subtraction is a relevant step in finite-volume analyses, which is to isolate an on-shell singularity and evaluate regular momentum-dependent factors at their on-shell values. For short-range interactions with a finite mass gap, the correction associated with this on-shell subtraction is exponentially suppressed at sufficiently large volume and can therefore be neglected at the corresponding accuracy. We examine how this correction changes as the relevant mass parameter decreases. Using a common dimensional-regularization prescription, we derive analytic expressions for the resulting finite volume correction for representative momentum structures and examine their behavior numerically. For a nonzero mass parameter, the corrections are indeed exponentially suppressed at large $μL$, whereas in the massless limit this suppression is replaced by an enhanced finite-volume dependence. More importantly, the $S$-wave contribution can develop an infrared divergence of finite volume correction in the massless limit. These results clarify the conditions under which on-shell subtraction can be applied and provide guidance for assessing such corrections in finite-volume hadronic calculations involving long-range effects, including QCD+QED.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文系统分析了Lüscher形式中在壳减除（on-shell subtraction）的有限体积修正随质量参数减小（直至无质量极限）的行为，发现非零质量时修正按指数压低，而无质量极限下S波贡献会出现红外发散，从而明确了在壳减除适用的条件。\n\n## 研究问题\n\n作者想解决的问题是：在Lüscher有限体积形式中，提取无限体积散射振幅时需要进行\"在壳减除\"——即把动量依赖的规则因子在其在壳值处取值，以隔离在壳奇异性。对于有质量间隙的短程相互作用，这一修正被认为在大体积下指数压低而可忽略。但当相关质量参数（如交换粒子的质量μ）变小时，这一压低是否仍然成立？在无质量极限下会发生什么？作者要定量刻画这一修正随μL的行为，特别是检验无质量极限下是否出现非指数压低的增强甚至红外发散。\n\n## 方法\n\n- 采用维数正规化（dimensional regularization）的常用方案，对代表性动量结构推导有限体积修正的解析表达式。\n- 分析对象是Lüscher形式中在壳减除相关的规则化动量因子，考察其有限体积修正（即离散求和与连续积分的差）。\n- 对若干代表性动量结构（包括S波等分波贡献）给出解析结果，并进行数值评估，考察随μL的变化。\n- 属于解析/半解析的有限体积场论分析，而非格点数值模拟；但结论直接服务于格点QCD的有限体积分析。\n\n## 主要结果\n\n1. 对于非零质量参数μ，在壳减除的有限体积修正确实随μL增大而指数压低，验证了常规假设在足够大体积下的有效性。\n2. 当μ减小、进入无质量极限时，指数压低被增强的有限体积依赖所取代——修正不再指数小。\n3. 更重要的是，S波贡献在无质量极限下可以出现有限体积修正的红外发散。这意味着在涉及长程效应（如QCD+QED中光子交换、或近无质量粒子交换）的有限体积强子计算中，在壳减除的修正不能被简单忽略，需要专门处理。\n4. 这些结果明确了在壳减除可被安全应用的条件，并为评估此类修正提供了指导。\n\n## 为什么值得关注\n\n- Lüscher形式是从格点有限体积能谱提取散射信息（相移、共振参数）的核心工具，而在壳减除是其标准步骤之一。该工作澄清了这一步骤的适用边界，避免在长程相互作用情形下系统性误用。\n- 对QCD+QED的格点计算尤为重要：光子（以及近无质量粒子）交换带来长程效应，正是无质量极限下红外发散出现的物理场景，直接关系到强子质量修正、衰变常数等计算中有限体积效应的可靠估计。\n- 为有限体积误差的系统化评估提供了解析工具和判据，对格点社区制定误差预算、设计体积外推策略有实际指导意义。\n\n## 方向标签\n\n- Lattice QCD\n- Finite-volume effects\n- Hadron scattering / Lüscher formalism\n- QCD+QED\n- Theoretical / analytic field theory\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：对于从事格点QCD有限体积分析、特别是涉及散射相移提取或QCD+QED长程效应的研究者，这是直接相关且具有警示意义的工作——它指出了一个常被默认忽略的修正可能在特定情形下失效。属于方法学/误差控制的专门分析，受众相对聚焦；若不涉及有限体积散射或在壳减除，则相关性较低，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-11T06:55:48.212152"
   }
 ]
