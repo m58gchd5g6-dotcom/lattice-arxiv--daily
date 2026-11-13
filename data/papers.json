@@ -8368,5 +8368,239 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-11T06:55:48.212152"
+  },
+  {
+    "id": "2611.17139v1",
+    "title": "Three-body dynamics of the Roper resonance",
+    "authors": [
+      "Jinzi Wu",
+      "Michael Döring",
+      "Maxim Mai"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.17139v1",
+    "published": "2026-11-12T17:29:13Z",
+    "abstract": "The enigmatic Roper resonance is notoriously difficult to determine in lattice QCD. Its quantum numbers, $J^P=1/2^+$, allow for two pions and a nucleon in relative $S$-waves. This absence of a centrifugal barrier leads to strong three-body $ππN$ effects on top of the two-body $πN$ channel -maybe the reason why the Roper is obscured in lattice QCD close to physical masses. Guided by unitarity, an amplitude is constructed in which three-body states are populated through channels in $f_0(500)N(939)1/2^+$, $πΔ(1232)3/2^+$, and $πN(1440)1/2^+$ configurations. The latter channel is required by unitarity in the presence of nucleon exchange, and it contains the nucleon as a bound state, generating the $πN$ channel automatically. With the sub-channels matching the corresponding two-body amplitudes from experiment and nucleon properties, the $P_{11}$ amplitude from SAID is fitted, allowing for an accurate determination of the Roper poles close to the complex $πΔ$ threshold. The Roper poles and residues are, for the first time, determined by explicitly including this and other non-analyticities in combination with strict two- and three-body unitarity. Contour deformation allows for a direct pole search. Systematic uncertainties from the parametrization dependence are quantified. The result for the Roper $S$-matrix pole is $\\sqrt{s_R}/{\\rm MeV} =1346\\pm 2^{+6}_{-3} - i(81\\pm 2^{+7}_{-8})$. The amplitude developed here will serve as the central input for a quantization condition that allows for future determinations of the Roper resonance from lattice QCD.",
+    "summary": {
+      "raw": "## 一句话结论\n作者构建了一个严格满足两体和三体幺正性的 \\(P_{11}\\) 散射振幅，首次在显式包含 \\(\\pi\\Delta\\) 阈非解析结构的情况下精确确定了 Roper 共振的极点位置 \\(\\sqrt{s_R}=1346\\pm2^{+6}_{-3}-i(81\\pm2^{+7}_{-8})\\) MeV，并为未来从格点 QCD 提取 Roper 共振提供了核心输入。\n\n## 研究问题\nRoper 共振（\\(J^P=1/2^+\\)）在格点 QCD 近物理质量处极难确定。其量子数允许 \\(\\pi\\pi N\\) 处于相对 S 波，无离心势垒，导致强烈的三体 \\(\\pi\\pi N\\) 效应叠加在 \\(\\pi N\\) 两体道之上——这可能是 Roper 在格点 QCD 中被\"遮蔽\"的原因。作者想解决的核心问题是：如何在严格满足两体和三体幺正性的前提下，正确处理 \\(\\pi\\pi N\\) 三体动力学及 \\(\\pi\\Delta\\) 阈附近的非解析结构，从而可靠地确定 Roper 极点，并为格点 QCD 的量化条件提供振幅输入。\n\n## 方法\n- **非微扰散射振幅构造**：以幺正性为指导，构造 \\(P_{11}\\) 振幅，三体态通过 \\(f_0(500)N(939)\\)、\\(\\pi\\Delta(1232)\\)、\\(\\pi N(1440)\\) 三个道被填充。\n- **三体幺正性与核子交换**：\\(\\pi N(1440)\\) 道在存在核子交换时由幺正性要求引入，且该道包含核子作为束缚态，自动生成 \\(\\pi N\\) 道。\n- **子道匹配实验**：各子道与实验两体振幅及核子性质匹配，拟合 SAID 的 \\(P_{11}\\) 振幅。\n- **极点搜索**：采用围道形变（contour deformation）技术在复能量平面上直接搜索极点，显式包含 \\(\\pi\\Delta\\) 阈等非解析结构。\n- **系统误差量化**：对参数化依赖带来的系统不确定性进行定量评估。\n- 注意：本文本身不是格点计算，而是为未来格点 QCD 量化条件提供振幅基础的分析框架。\n\n## 主要结果\n- Roper 的 S 矩阵极点首次在严格两体+三体幺正性、并显式包含 \\(\\pi\\Delta\\) 阈非解析性的条件下确定：\n  \\[\n  \\sqrt{s_R}/\\text{MeV} = 1346\\pm2^{+6}_{-3} - i(81\\pm2^{+7}_{-8})\n  \\]\n- 极点与留数均在复 \\(\\pi\\Delta\\) 阈附近被精确确定。\n- 系统误差（参数化依赖）被量化，量级约为 \\(+6/-3\\) MeV（实部）和 \\(+7/-8\\) MeV（虚部）。\n- 所构造的振幅将作为未来格点 QCD 量化条件的核心输入。\n\n## 为什么值得关注\n- **对格点 QCD 的直接价值**：Roper 共振是格点 QCD 强子谱计算中最棘手的态之一。本文提供的振幅是连接格点有限体积谱与无限体积散射振幅的量化条件的关键输入，为未来从格点 QCD 确定 Roper 铺路。\n- **三体动力学方法学**：展示了如何在强子散射中一致地处理两体与三体幺正性、阈值非解析性和核子交换，这对涉及三体道的共振（如 \\(a_1\\)、\\(N^*\\) 系列）具有方法学示范意义。\n- **精确极点确定**：首次在显式包含 \\(\\pi\\Delta\\) 阈非解析性的情况下给出 Roper 极点，对理解 Roper 的本质（三夸克态 vs. 强子分子态 vs. 三体动力学效应）提供关键约束。\n\n## 方向标签\n- Lattice QCD\n- Hadron spectroscopy\n- Few-body / three-body dynamics\n- Scattering amplitudes & unitarity\n- Resonance pole determination\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：对于关注格点 QCD 强子谱、共振提取和三体散射形式理论的读者，这是一篇高价值论文——它直接针对 Roper 这一长期难题，方法严谨（严格幺正性+围道形变极点搜索），结果精确且为未来格点计算提供必要输入。扣一星是因为它本身不是格点计算，且技术门槛较高（三体幺正性形式理论），对不熟悉散射振幅形式理论的读者可读性有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:03:34.665903"
+  },
+  {
+    "id": "2611.16989v1",
+    "title": "$NΩ$ Dibaryon near Unitarity from Physical-Point Lattice QCD",
+    "authors": [
+      "Liang Zhang",
+      "Yan Lyu",
+      "Sinya Aoki",
+      "Takumi Doi",
+      "Tetsuo Hatsuda",
+      "Song Zhang",
+      "Yu-Gang Ma"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16989v1",
+    "published": "2026-11-12T15:55:38Z",
+    "abstract": "The $NΩ$ system is a promising dibaryon candidate because its constituents share no valence quarks and therefore avoid valence-quark Pauli repulsion. We determine the $^{5}S_{2}$ $NΩ$ interaction in (2+1)-flavor lattice QCD at physical quark masses ($m_π\\simeq137~\\text{MeV}$) using the HAL QCD method. The interaction is attractive over the resolved range and supports a shallow state near unitarity. A direct $T$-matrix pole analysis gives $B_{nΩ} = 0.61\\,(^{+0.41}_{-0.30})\\,(^{+0.60}_{-0.18})~\\text{MeV}$; including finite-charge-size Coulomb attraction yields $B_{pΩ} = 1.25\\,(^{+0.46}_{-0.39})\\,(^{+0.69}_{-0.25})~\\text{MeV}$. These results provide a first-principles benchmark for future $NΩ$ femtoscopy and dibaryon searches.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文用物理点（$m_\\pi\\simeq137$ MeV）的 (2+1)-flavor 格点 QCD 与 HAL QCD 方法，首次从第一性原理确定 $^{5}S_{2}$ $N\\Omega$ 相互作用，发现其在可分辨范围内为吸引并支持一个接近幺正极限的浅束缚态（$B_{n\\Omega}\\approx0.61$ MeV，含库仑修正后 $B_{p\\Omega}\\approx1.25$ MeV）。\n\n## 研究问题\n\n作者想解决的核心问题是：$N\\Omega$ 系统（核子与 $\\Omega$ 重子，价夸克无重叠，因而规避价夸克泡利排斥）是否是真实的双重子（dibaryon）候选者，其相互作用强度与束缚能究竟是多少。此前缺乏物理夸克质量下的第一性原理格点计算，$N\\Omega$ 束缚态的存在性与深度不确定。论文旨在给出 $^{5}S_{2}$ 通道的 $N\\Omega$ 相互作用势与 $T$-矩阵极点，为未来的 femtoscopy 实验和双重子搜寻提供理论基准。\n\n## 方法\n\n- **格点 QCD**：(2+1)-flavor 组态，物理夸克质量（$m_\\pi\\simeq137$ MeV），即接近物理点。\n- **HAL QCD 方法**：从 Nambu–Bethe–Salpeter（NBS）关联函数提取非局域势 $V(r,r')$，再求解 Schrödinger 方程得到相移与束缚态信息；这是规避直接能谱法在浅束缚态/近阈态下系统误差的标准手段。\n- **$T$-矩阵极点分析**：直接对 $T$ 矩阵做极点搜索以确定束缚能 $B_{n\\Omega}$，而非仅依赖能谱拟合。\n- **库仑修正**：在 $n\\Omega$ 结果基础上加入有限电荷半径的库仑吸引，得到 $p\\Omega$ 的束缚能 $B_{p\\Omega}$。\n- 通道：$^{5}S_{2}$（自旋-5/2、轨道 S 波）。\n\n## 主要结果\n\n1. $^{5}S_{2}$ $N\\Omega$ 相互作用在可分辨距离范围内为**吸引**。\n2. 该吸引支持一个**接近幺正极限的浅束缚态**（near unitarity）。\n3. 直接 $T$-矩阵极点分析给出中性通道束缚能：\n   $$B_{n\\Omega}=0.61\\,(^{+0.41}_{-0.30})\\,(^{+0.60}_{-0.18})\\ \\text{MeV}$$\n   （第一个误差为统计，第二个为系统）。\n4. 加入有限电荷半径库仑吸引后：\n   $$B_{p\\Omega}=1.25\\,(^{+0.46}_{-0.39})\\,(^{+0.69}_{-0.25})\\ \\text{MeV}$$\n5. 结果为未来 $N\\Omega$ femtoscopy 与双重子实验搜寻提供第一性原理基准。\n\n## 为什么值得关注\n\n- **首次物理点计算**：此前 $N\\Omega$ 的格点研究多在较重夸克质量下进行，物理点的结果直接可与实验对比，是该方法学的重要里程碑。\n- **近幺正物理**：浅束缚态接近幺正极限，意味着 $N\\Omega$ 系统处于散射长度发散附近，对少体物理、有效场论（如 pionless EFT）和普适性研究有直接价值。\n- **实验可检验**：$B\\sim$ 1 MeV 量级的浅态正是 femtoscopy（如 ALICE 的 $p\\Omega$ 关联测量）敏感的区域，论文给出了明确的预言与误差预算。\n- **方法学贡献**：展示了 HAL QCD + $T$-矩阵极点分析在近阈浅态问题上的可靠性，对其它双重子/多夸克态研究有借鉴意义。\n- **强子物理**：$N\\Omega$ 因无色单态价夸克重叠而规避泡利排斥，是检验 QCD 中束缚态形成机制的干净案例。\n\n## 方向标签\n\n- Lattice QCD\n- Hadron physics / Dibaryon\n- Nuclear forces from QCD (HAL QCD)\n- Near-unitarity / Few-body physics\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：这是物理点、第一性原理的 $N\\Omega$ 相互作用计算，结果直接可被 femtoscopy 实验检验，且涉及近幺正浅态这一有普适意义的物理情形，对格点强子物理与少体核物理社区都高度相关。扣一星是因为系统误差（尤其外推与 $T$-矩阵极点定位）仍较大（误差带接近 100%），且目前仅单一通道 $^{5}S_{2}$，结论的稳健性有待更多通道与更大体积的独立验证；但对关注双重子或近阈态的研究者，属于必读级别。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:03:43.298432"
+  },
+  {
+    "id": "2611.16988v1",
+    "title": "Unconstrained $\\mathbb{Z}_2$ gauge theory on a triangular lattice: deconfined fermions in a vison crystal and superfluidity",
+    "authors": [
+      "Welberth Kennedy",
+      "João C. Inácio",
+      "Fakher F. Assaad"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16988v1",
+    "published": "2026-11-12T15:50:59Z",
+    "abstract": "We investigate an unconstrained $\\mathbb{Z}_2$ gauge theory coupled to fermions on the triangular lattice at half filling, using auxiliary field quantum Monte Carlo simulations. The triangular geometry gives rise to a global $\\mathbb{Z}_2$ symmetry that acts as an Ising symmetry on the plaquette fluxes. At weak transverse field $h$, this symmetry is spontaneously broken, stabilizing a vison crystal. We argue that this phase is deconfined: fermions, charged under an emergent $\\mathbb{Z}_2$ gauge field, propagate in an ordered $π$-flux background and form a Dirac semimetal. Increasing the transverse field triggers a first-order quantum phase transition to a confined $s$-wave superfluid, at which confinement and global symmetry breaking occur simultaneously. This contrasts with the square lattice, where the corresponding transition is continuous. We extend our analysis to finite temperature and determine the thermal phase boundaries of both ordered phases. The superfluid melts through a Kosterlitz--Thouless transition, whereas the vison crystal undergoes a thermal Ising transition. Together, our results establish the $T \\times h$ phase diagram and demonstrate how the triangular geometry leads to qualitative changes in both the phases and the criticality of the model.",
+    "summary": {
+      "raw": "## 一句话结论\n在三角晶格上，无约束 \\(\\mathbb{Z}_2\\) 规范场与半满费米子耦合时，弱横场下会自发破缺一个作用在 plaquette flux 上的全局 \\(\\mathbb{Z}_2\\)（Ising）对称性，形成 vison 晶体；该相中费米子在有序 \\(\\pi\\)-flux 背景中传播并形成 Dirac 半金属，表现为去禁闭；增大横场后发生一阶量子相变，同时进入禁闭的 \\(s\\)-波超流相。\n\n## 研究问题\n作者想解决的核心问题是：三角晶格的几何结构（相对于方晶格）如何改变 \\(\\mathbb{Z}_2\\) 规范场–费米子耦合模型的基态相、去禁闭机制以及量子相变的性质。具体包括：\n- 三角晶格是否产生新的全局对称性（plaquette flux 上的 Ising 对称性）；\n- 弱横场下是否稳定 vison 晶体，以及该相是否去禁闭；\n- 去禁闭–禁闭相变在三角晶格上是连续还是一阶；\n- 有限温度下两个有序相的热相变类型与 \\(T\\times h\\) 相图。\n\n## 方法\n- **模型**：三角晶格上的无约束 \\(\\mathbb{Z}_2\\) 规范场耦合半满费米子，含横场 \\(h\\)；采用辅助场（auxiliary field）表述。\n- **数值方法**：辅助场量子蒙特卡洛（auxiliary field quantum Monte Carlo, AFQMC）模拟。\n- **分析手段**：通过序参量、规范场关联、费米子谱/Dirac 结构等判断 vison 晶体、去禁闭与 Dirac 半金属行为；通过相变性质（连续性/一阶）与有限温相变（Kosterlitz–Thouless、Ising）确定相图。\n- **扩展**：有限温度模拟，确定超流与 vison 晶体的热相边界，构建 \\(T\\times h\\) 相图。\n\n## 主要结果\n1. **新全局对称性**：三角晶格几何导致 plaquette flux 上出现一个全局 \\(\\mathbb{Z}_2\\) 对称性，其行为类似 Ising 对称性。\n2. **Vison 晶体与去禁闭**：弱横场 \\(h\\) 下该全局 \\(\\mathbb{Z}_2\\) 对称性自发破缺，稳定 vison 晶体；作者论证该相是去禁闭的：带 \\(\\mathbb{Z}_2\\) 规范荷的费米子在有序 \\(\\pi\\)-flux 背景中传播，形成 Dirac 半金属。\n3. **一阶量子相变**：增大 \\(h\\) 触发一阶量子相变，进入禁闭的 \\(s\\)-波超流相；禁闭与全局对称性破缺同时发生。这与方晶格上对应的连续相变形成鲜明对比。\n4. **有限温相图**：超流相通过 Kosterlitz–Thouless 相变熔化；vison 晶体通过热 Ising 相变熔化；给出完整的 \\(T\\times h\\) 相图。\n5. **几何效应**：三角晶格导致相与临界性质的定性改变。\n\n## 为什么值得关注\n- 对 **lattice gauge theory / 强关联规范场** 社区：展示了晶格几何如何控制 \\(\\mathbb{Z}_2\\) 规范理论的去禁闭机制与相变普适类，补充了方晶格之外的系统性理解。\n- 对 **去禁闭与禁闭转变** 的研究：给出“去禁闭 Dirac 半金属 + vison 晶体”与“禁闭超流”之间一阶转变的明确例子，说明几何阻挫/三角结构可改变临界性。\n- 对 **量子模拟与凝聚态规范场实现**：三角晶格 \\(\\mathbb{Z}_2\\) 规范–费米子模型可在冷原子、超导量子比特或 Rydberg 阵列等平台实现，结果提供可检验的相图与热相变预言。\n- 对 **有限温度规范理论**：给出 vison 晶体（Ising）与超流（KT）两类热相变的清晰对照，有助于理解规范场–物质耦合系统的热熔化机制。\n\n## 方向标签\n- Lattice gauge theory\n- Condensed matter / strongly correlated systems\n- Quantum simulation\n- Finite temperature\n- Frustrated lattice / triangular lattice\n- Deconfinement and confinement\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：该论文把“晶格几何 → 全局对称性 → 去禁闭机制 → 相变性质”这条逻辑链讲得很完整，且给出有限温相图，对 \\(\\mathbb{Z}_2\\) 规范–费米子模型与量子模拟实现都有直接参考价值。若研究兴趣集中在方晶格 \\(\\mathbb{Z}_2\\) 规范理论、去禁闭转变或有限温规范场相变，优先级可提到 5 星；若主要关注 QCD 式非阿贝尔规范场或连续场论方法，则相关性稍低，但仍值得作为晶格几何效应与去禁闭机制的案例阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:03:51.888276"
+  },
+  {
+    "id": "2611.16876v1",
+    "title": "Numerical tests of chiral fermion weights with $η$-invariant phases in the 3450 model",
+    "authors": [
+      "Tatsuhiro Misumi"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16876v1",
+    "published": "2026-11-12T14:40:00Z",
+    "abstract": "We test numerically a recently proposed prescription for coupling continuum chiral fermions to interpolated lattice gauge fields, in which the fermion weight has a Pauli-Villars (PV) regularized magnitude and a phase given by an Atiyah-Patodi-Singer (APS) $η$-invariant in one higher dimension. We use the anomaly-free two-dimensional $U(1)$ theory with left-handed charges $3,4$ and right-handed charges $5,0$, whose torus determinant is known exactly. At zero magnetic flux, with gauge fields interpolated from lattice links, the Polyakov loops evaluated on a $16\\times16$ grid of flat connections agree with the exact values within $0.04\\%$, whereas omitting the APS phase substantially reduces them to about $3\\%$ of the exact result. The vacuum-polarization response yields an induced mass $m/e=2.82089$, close to $5/\\sqrtπ=2.82095$. At unit flux, where zero modes make the determinant vanish, we calculate a twelve-point correlator on a cylinder with the generalized APS boundary condition. For three smooth backgrounds its magnitude agrees with the exact result within $0.8\\%$. Without the $η$-invariant its phase deviates by $1.8$-$3.0$ mrad, and with it by $0.2$-$0.5$ mrad. The phase of each charged fermion changes by $15$-$46$ mrad when the gauge field is extended differently into the third dimension, but the change cancels to below $0.2$ mrad in the anomaly-free combination.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文用二维无反常 U(1) 手征规范理论（3450 模型）数值验证了“PV 正则化幅度 + 高维 APS η-不变量相位”的手征费米子权重方案：在零磁通和单位磁通下都能高精度复现精确结果，且 η-相位对相位与 Polyakov 环至关重要。\n\n## 研究问题\n作者想解决什么问题？\n- 如何把连续统手征费米子耦合到**插值得到的格点规范场**上，并构造一个既保持手征性、又具有正确相位（包括反常相位）的费米子权重。\n- 具体检验近期提出的方案：权重幅度用 Pauli–Villars 正则化，相位由高一维的 Atiyah–Patodi–Singer（APS）η-不变量给出。\n- 关键问题是：这个 η-相位是否真的能给出正确的规范场依赖相位？在有无零模（零磁通/单位磁通）时表现如何？对规范场向第三维延拓的依赖性是否会在无反常组合中抵消？\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- **模型**：二维无反常 U(1) 手征规范理论，左手电荷 3、4，右手电荷 5、0（即 3450 模型）；环面行列式有精确解，可作为基准。\n- **规范场**：从格点 link 插值得到连续统规范场；在 \\(16\\times16\\) 的平坦联络网格上计算 Polyakov 环。\n- **权重构造**：费米子权重 = PV 正则化幅度 × \\(\\exp(i\\pi \\eta)\\)，其中 η 为高一维 APS η-不变量相位。\n- **数值任务**：\n  - 零磁通：比较 Polyakov 环与精确值；计算真空极化响应（诱导质量）。\n  - 单位磁通：存在零模使行列式为零，改在圆柱上、用广义 APS 边界条件计算十二点关联函数；比较幅度与相位。\n  - 检验规范场向第三维不同延拓下各带电费米子相位的改变，以及无反常组合中的抵消。\n\n## 主要结果\n总结最重要发现。\n- **零磁通**：在 \\(16\\times16\\) 平坦联络网格上，Polyakov 环与精确值吻合到 **0.04%**；若省略 APS 相位，则降到精确值的约 **3%**，说明 η-相位不可或缺。\n- **真空极化**：诱导质量 \\(m/e=2.82089\\)，非常接近解析值 \\(5/\\sqrt{\\pi}=2.82095\\)。\n- **单位磁通**：对三个光滑背景，十二点关联函数幅度与精确值吻合到 **0.8%** 以内。\n- **相位精度**：不含 η-不变量时相位偏差 **1.8–3.0 mrad**；含 η-不变量时偏差仅 **0.2–0.5 mrad**。\n- **第三维延拓依赖性**：单个带电费米子的相位随规范场延拓方式改变 **15–46 mrad**，但在无反常组合中抵消到 **<0.2 mrad**，验证了方案的反常抵消结构。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 手征费米子如何放到格点上（避免 doubler、保持手征对称性与正确反常）是格点场论长期核心难题；该工作给出一个**可数值实施的连续统—格点混合方案**，并用已知精确解做了高精度基准测试。\n- η-不变量相位来自高一维 APS 构造，直接联系到**反常流入（anomaly inflow）**和拓扑相位；数值验证其在无反常组合中的延拓无关性，对理解手征规范理论的相位结构有直接意义。\n- 虽然测试在 2D U(1)，但方案原则上可推广到 4D 手征规范理论，对**格点手征规范理论、SM/BSM 手征费米子、以及拓扑绝缘体/反常物理**都有潜在影响。\n- 高精度（0.04%、0.2–0.5 mrad）表明该方案在数值上可行，为后续更高维、非阿贝尔推广提供了信心。\n\n## 方向标签\n- Lattice chiral gauge theory\n- Anomaly inflow / η-invariant\n- Chiral fermions\n- Topological phases\n- U(1) gauge theory (2D benchmark)\n\n## 阅读优先级\n★★★★☆（4/5）\n- 理由：这是一篇**方法验证型**论文，模型是 2D U(1) 基准而非 4D QCD，直接对格点 QCD 主线的影响是间接的；但它针对的是格点手征规范理论中非常关键且长期未决的问题，数值结果干净、基准精确、结论明确（η-相位必要且无反常组合中延拓依赖抵消）。对做手征格点费米子、反常流入或拓扑相位的人应优先阅读；对一般格点 QCD 现象学读者优先级中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:00.401900"
+  },
+  {
+    "id": "2611.16824v1",
+    "title": "Gauge Theory Bootstrap with varying $N_c$",
+    "authors": [
+      "Rafael Cordoba",
+      "Yifei He",
+      "Martin Kruczenski",
+      "Derek Ping",
+      "Jignesh Mohanty",
+      "Emil Alegria"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16824v1",
+    "published": "2026-11-12T13:58:37Z",
+    "abstract": "We use the Gauge Theory Bootstrap to study asymptotically free gauge theories with a varying number of colors $N_c$. The parameter $N_c$ enters the computation through the sum rules and asymptotic form factors, allowing us to tune this microscopic parameter directly and examine the corresponding low-energy strongly coupled dynamics. For $3\\le N_c\\le 12$, we extract the scattering lengths, effective ranges, and low-energy constants $\\bar{l}_i$, and study their $N_c$ dependence. We also obtain the $σ$, $ρ$, and $f_2$ resonances for the same range of $N_c$. The $ρ$ and $f_2$ masses depend only weakly on $N_c$, and their widths decrease as $N_c$ increases, consistent with the $1/N_c$ scaling expected for conventional $q\\bar{q}$ mesons. In contrast, the $σ$ meson mass and width both increase with $N_c$, in agreement with a previous unitarized $χ$PT analysis. These results provide a further test of the Gauge Theory Bootstrap for studying asymptotically free gauge theories.",
+    "summary": {
+      "raw": "## 一句话结论\n本文用 Gauge Theory Bootstrap 方法，把色数 $N_c$ 当作可调参数（$3\\le N_c\\le 12$），系统研究了渐近自由规范理论的低能强耦合动力学，发现 $\\rho$、$f_2$ 的宽度随 $N_c$ 增大而减小（符合 $1/N_c$ 预期），而 $\\sigma$ 的质量和宽度都随 $N_c$ 增大而增大。\n\n## 研究问题\n作者想检验 Gauge Theory Bootstrap 这一非微扰方法能否在**改变 $N_c$** 的情况下正确刻画渐近自由规范理论的低能行为。具体来说：$N_c$ 作为微观参数如何影响低能可观测量（散射长度、有效程、低能常数 $\\bar l_i$、以及 $\\sigma/\\rho/f_2$ 共振的质谱与宽度）？这些量随 $N_c$ 的标度行为是否符合大 $N_c$ 预期（如 $q\\bar q$ 介子宽度 $\\sim 1/N_c$）？这本质上是对该方法可靠性的一次压力测试。\n\n## 方法\n- **Gauge Theory Bootstrap**：一种基于 S-矩阵自举（bootstrap）的非微扰方法，用解析性、幺正性、交叉对称性等一般性约束，结合求和规则（sum rules）与渐近形状因子（asymptotic form factors）来约束低能强耦合动力学。\n- $N_c$ 通过**求和规则和渐近形状因子**进入计算，因此可以**直接调节**这个微观参数，而不需要做格点模拟。\n- 对 $3\\le N_c\\le 12$ 逐点求解，提取散射长度、有效程、低能常数 $\\bar l_i$，并定位 $\\sigma$、$\\rho$、$f_2$ 共振的质量与宽度。\n- 注意：这**不是**格点 QCD 计算，而是解析/半解析的自举方法；文中也未使用机器学习或张量网络。\n\n## 主要结果\n1. 对 $3\\le N_c\\le 12$ 提取了散射长度、有效程和低能常数 $\\bar l_i$，并给出它们随 $N_c$ 的变化趋势。\n2. $\\rho$ 和 $f_2$ 的**质量对 $N_c$ 依赖很弱**，而**宽度随 $N_c$ 增大而减小**，与常规 $q\\bar q$ 介子预期的 $1/N_c$ 标度一致。\n3. $\\sigma$ 介子的**质量和宽度都随 $N_c$ 增大而增大**，与此前 unitarized $\\chi$PT 分析一致。\n4. 总体结论：这些结果进一步验证了 Gauge Theory Bootstrap 用于研究渐近自由规范理论的可行性。\n\n## 为什么值得关注\n- **方法学验证**：$N_c$ 依赖是一个很强的判据——正确的非微扰方法应能重现 $1/N_c$ 标度。本文给出了一致性检验，增强了 bootstrap 方法在强耦合 QCD 领域的可信度。\n- **与格点互补**：格点 QCD 改变 $N_c$ 代价高昂（需重跑不同 $N_c$ 的模拟），而该方法可连续/系统地扫描 $N_c$，为理解大 $N_c$ 极限和 $q\\bar q$ vs. 其他成分的介子性质提供廉价探针。\n- **$\\sigma$ 的异常行为**：$\\sigma$ 质量与宽度随 $N_c$ 增大而增大，暗示其并非简单 $q\\bar q$ 态，对理解标量介子本质（分子态、胶球混合等）有参考价值。\n- 对 BSM 中“类 QCD”强动力学（不同 $N_c$ 的暗规范理论）也有潜在借鉴意义。\n\n## 方向标签\n- Lattice QCD（相关但非格点方法）\n- BSM（大 $N_c$ / 类 QCD 强动力学）\n- 强子谱与非微扰方法（Bootstrap / S-matrix）\n- 大 $N_c$ 展开\n\n## 阅读优先级\n★★★★☆（4 星）\n理由：对关注非微扰强相互作用、大 $N_c$ 标度、以及 bootstrap 方法可靠性的人很有价值；结论清晰、检验判据明确。扣一星是因为它并非格点计算，且方法本身（Gauge Theory Bootstrap）仍属较专门、需一定背景才能评估其系统误差的框架，对纯格点实践者的直接操作性有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:07.854363"
+  },
+  {
+    "id": "2611.16658v1",
+    "title": "Automatic O(a) Improvement for Wilson Twisted Mass Fermions in the Hamiltonian Formulation",
+    "authors": [
+      "Carsten Urbach"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16658v1",
+    "published": "2026-11-12T11:33:21Z",
+    "abstract": "We apply the recently developed Symanzik effective Hamiltonian framework to Wilson twisted mass fermions. The effective Hamiltonian is constructed solely based on the symmetries of the lattice Hamiltonian without recourse to the Symanzik effective action in Euclidean space-time. We use it to prove automatic $O(a)$ improvement at maximal twist, as well as $O(a)$ improvement via so-called mass and Wilson average. Moreover, we derive the structure of $O(a)$ counterterms pre-requisite for clover on-shell improvement of Wilson fermions. We show how to remove on-shell redundant contributions using canonical transformations, and find that the well known clover term in isotropic Euclidean space time splits into two terms with independent coefficients.",
+    "summary": {
+      "raw": "## 一句话结论\n本文把新发展的 Symanzik 有效哈密顿量框架推广到 Wilson twisted mass 费米子，仅凭格点哈密顿量的对称性就证明了最大 twist 下的自动 O(a) 改进以及通过 mass/Wilson average 的 O(a) 改进，并给出了 clover 在壳改进所需的 O(a) 抵消项结构。\n\n## 研究问题\n作者想解决的问题是：能否不借助欧氏时空中的 Symanzik 有效作用量，而直接在哈密顿量（哈密顿形式）框架下，对 Wilson twisted mass 费米子建立 O(a) 改进的系统性证明？具体包括三件事：(1) 证明最大 twist 下的自动 O(a) 改进；(2) 证明 mass average 与 Wilson average 带来的 O(a) 改进；(3) 推导 Wilson 费米子 clover 在壳改进所需的 O(a) 抵消项结构，并处理在壳冗余项。\n\n## 方法\n使用格点场论中的 Symanzik 有效哈密顿量框架（近期发展的哈密顿量版本），对象是 Wilson twisted mass 费米子。核心做法是：只利用格点哈密顿量的对称性（而非欧氏有效作用量）构造有效哈密顿量，按 a 的幂次展开并枚举允许的 O(a) 算符；用在壳运动方程与正则变换（canonical transformations）去除在壳冗余贡献；再分析各算符系数在最大 twist、mass average、Wilson average 条件下的约束，从而得到改进结论。文中未涉及数值模拟或算法实现，属于解析/理论推导工作。\n\n## 主要结果\n1. 在哈密顿量框架下构造出 Wilson twisted mass 费米子的 Symanzik 有效哈密顿量，证明最大 twist 下自动 O(a) 改进成立。\n2. 证明通过 mass average 和 Wilson average 也可实现 O(a) 改进。\n3. 推导出 clover 在壳改进所需的 O(a) 抵消项结构；用在壳冗余项的正则变换消去冗余贡献。\n4. 关键结构性发现：各向同性欧氏时空中熟知的 clover 项，在哈密顿量表述下分裂为两个具有独立系数的项。\n\n## 为什么值得关注\n- 对 twisted mass 物理而言，自动 O(a) 改进是其核心优势之一，此前主要在欧氏作用量框架下论证；本文给出哈密顿量框架下的独立证明，增强了该性质的稳健性，并打通了哈密顿量 Symanzik 方法与实际格点方案（twisted mass、clover 改进）之间的连接。\n- clover 项分裂为两个独立系数项，提示在哈密顿量/哈密顿量模拟（如量子模拟、张量网络、哈密顿量型格点计算）语境下，改进项的结构与欧氏情形不同，对构造改进算符和匹配系数有直接影响。\n- 对理解 O(a) 改进的系统误差控制、以及在壳改进中冗余算符的处理具有方法学价值，可推广到其他费米子方案。\n\n## 方向标签\nLattice QCD\nTheoretical particle physics (Symanzik improvement)\nHamiltonian lattice field theory\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：这是一篇方法学/解析性论文，不涉及数值结果，受众主要是关心 O(a) 改进、twisted mass 与哈密顿量表述的格点理论研究者。对直接做 twisted mass 或 clover 改进模拟的人有参考价值（尤其 clover 项分裂这一结构结论），但对更广泛的格点社区属于专门性工作；若你关注哈密顿量型格点方法或量子模拟中的改进问题，优先级可提到 4 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:14.108507"
+  },
+  {
+    "id": "2611.16544v1",
+    "title": "Matching lattice and continuum chiral determinants at finite volume",
+    "authors": [
+      "Zhengwen Liu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16544v1",
+    "published": "2026-11-12T09:37:40Z",
+    "abstract": "Recent formulations of lattice chiral gauge theories define a complex fermion weight either through Craig's gauge-invariant overlap measure or, following Hsu and Witten, through a continuum Weyl determinant on a reconstructed gauge connection, with its phase fixed by the five-dimensional $η$-invariant. For one $SU(5)$ generation on a flat four-torus, we prove that their relative weights agree in the continuum limit along smooth gapped paths, after fixing a normalization and subtracting a local Yang-Mills counterterm, whose coefficient we determine. On bounded smooth families a uniform Dirac gap suffices: the vacuum expansion need not converge. We obtain explicit uniform convergence rates for the logarithmic variations and, for Craig's interpolation, prove the reconstruction bounds that the matching requires, extending Hsu's small-field comparison to finite amplitude. For Hsu's reflection-positive reconstruction with flat collars, the phase variations still match, while the logarithmic coefficient of the quadratic counterterm is enhanced by a calculable, profile-dependent factor. In a hypercharge background on which the vacuum expansion diverges, numerical comparisons at the input gauge field support quadratic convergence of the phase, whereas the modulus acquires a logarithmic correction to quadratic scaling, whose coefficient follows analytically from the free overlap vacuum polarization.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文证明了：在平坦四维环面上，Craig 的规范不变 overlap 测度与 Hsu–Witten 通过五维 η-不变量定相的连续统 Weyl 行列式，在连续极限下（沿光滑有能隙路径、固定归一化并减去一个局域 Yang–Mills 反项后）相对权重一致，并给出了该反项系数、显式一致收敛速率以及数值验证。\n\n## 研究问题\n\n作者想解决的核心问题是：**格点手征规范理论的费米子权重，能否在连续极限下与连续统手征行列式（Weyl 行列式）精确匹配？**\n\n具体而言：\n\n1. 格点手征规范理论长期面临\"如何定义复费米子权重\"的困难。两种主流方案是：\n   - **Craig 的规范不变 overlap 测度**（纯格点定义）；\n   - **Hsu–Witten 方案**：在重构的规范联络上定义连续统 Weyl 行列式，其相位由五维 η-不变量固定。\n\n2. 此前 Hsu 只在小场（small-field）情形下比较过两者，缺乏有限振幅、有限体积下的严格匹配证明。\n\n3. 需要回答：两者在连续极限下是否给出相同的物理（相差可定的局域反项）？收敛速率如何？在真空展开发散的情形下数值行为怎样？\n\n## 方法\n\n- **格点方法**：overlap 费米子形式（Neuberger 重叠算符）、Craig 的规范不变 overlap 测度、Hsu 的反射正定重构（reflection-positive reconstruction）配平直\"collar\"。\n- **模型**：平坦四维环面（flat four-torus）上单个 SU(5) 代（one SU(5) generation），即标准模型一代费米子在 SU(5) GUT 型规范背景下的手征费米子。\n- **理论工具**：\n  - 五维 η-不变量（APS η-invariant）定相；\n  - Dirac 能隙（uniform Dirac gap）与真空展开（vacuum expansion）；\n  - 局域 Yang–Mills 反项（local counterterm）的系数确定；\n  - 对数变分的一致收敛速率估计；\n  - Craig 插值的重构界（reconstruction bounds），将 Hsu 的小场比较推广到有限振幅。\n- **数值技术**：在真空展开发散的 hypercharge 背景上做数值比较，检验相位的二次收敛与模长的对数修正。\n\n## 主要结果\n\n1. **主匹配定理**：对平坦四环面上一个 SU(5) 代，沿光滑有能隙路径，Craig 测度与 Hsu–Witten 连续统 Weyl 行列式的相对权重在连续极限下一致——前提是固定归一化并减去一个局域 Yang–Mills 反项，作者确定了该反项的系数。\n\n2. **一致收敛**：在有界光滑族上，只需一致 Dirac 能隙即可，**不要求真空展开收敛**；作者给出了对数变分的显式一致收敛速率。\n\n3. **重构界**：对 Craig 插值，证明了匹配所需的重构界，把 Hsu 的小场比较**推广到有限振幅**。\n\n4. **反射正定重构的修正**：对 Hsu 的反射正定重构（平直 collar），相位变分仍然匹配，但二次反项的对数系数被一个**可计算的、依赖 profile 的因子**增强。\n\n5. **数值验证**：在真空展开发散的 hypercharge 背景上，数值结果支持相位的**二次收敛**；而模长出现对二次标度的**对数修正**，其系数可由自由 overlap 真空极化解析地给出。\n\n## 为什么值得关注\n\n- **对手征规范理论的基础意义**：这是首次在有限体积、有限振幅下严格建立格点手征测度与连续统 Weyl 行列式的匹配，填补了 Hsu 小场比较到一般情形的空白，为格点手征规范理论的定义提供了坚实的连续极限依据。\n- **对 overlap/畴壁费米子社区**：明确了局域反项系数与收敛速率，对实际数值模拟中如何取连续极限、如何控制系统误差有直接指导意义。\n- **对 η-不变量与五维方法**：把五维 η-不变量定相方案与纯四维格点测度联系起来，深化了对\"格点如何编码手征反常与相位\"的理解。\n- **对 BSM/SU(5) 唯象**：以 SU(5) 一代为具体模型，对 GUT 型手征规范理论的格点化有参考价值。\n- **方法论**：真空展开发散时仍能证明匹配、并给出对数修正的解析系数，展示了\"能隙条件替代真空展开收敛\"这一更弱假设的威力。\n\n## 方向标签\n\n- Lattice chiral gauge theory\n- Overlap fermions\n- BSM / GUT (SU(5))\n- Anomaly / η-invariant\n- Continuum limit & counterterms\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n**理由**：这是一篇技术性强、结论扎实的理论工作，直接触及格点手征规范理论最核心的\"连续极限匹配\"问题，对专门做 overlap/手征规范理论的研究者几乎是必读。扣一星是因为：主题高度专门化，对主流 Lattice QCD（淬火/全 QCD 谱学、热力学）读者相关性有限；且证明依赖较多技术假设（光滑有能隙路径、平直 collar 等），实际数值模拟中的适用性仍需进一步检验。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:23.820160"
+  },
+  {
+    "id": "2611.16092v1",
+    "title": "Critical behavior of the bosonized Schwinger model with uniform matrix product states",
+    "authors": [
+      "Takuya Okuda"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.16092v1",
+    "published": "2026-11-11T23:00:02Z",
+    "abstract": "Quantum electrodynamics in two spacetime dimensions, also known as the Schwinger model, admits a dual formulation in terms of a non-compact boson field. Using a Hamiltonian lattice discretization of the bosonized model, we compute the critical mass of the continuum Schwinger model at $θ=π$. We numerically obtain the ground state on an infinite chain by the variational uniform matrix product state (VUMPS) algorithm, preserving charge conjugation exactly. As a truncated basis for the local Hilbert space, we employ the oscillator basis that diagonalizes the one-site reduced density matrix of the free limit. We constrain the fitting functions for the continuum extrapolation using the Symanzik effective theory for lattice corrections. Our result for the critical mass, $(m/g)_c = 0.333\\,555(5)$, agrees with recent staggered-fermion determinations at comparable precision.",
+    "summary": {
+      "raw": "## 一句话结论\n作者用变分均匀矩阵乘积态（VUMPS）在无穷长链上精确求解了玻色化 Schwinger 模型的哈密顿量格点版本，在保持电荷共轭对称性的条件下给出 θ=π 时连续极限临界质量 (m/g)_c = 0.333 555(5)，与最新交错费米子结果在同等精度下一致。\n\n## 研究问题\n二维 QED（Schwinger 模型）在 θ=π 处存在一个临界质量 (m/g)_c，低于它时发生自发对称性破缺/相变。作者想用玻色化对偶表述 + 张量网络方法独立、高精度地确定这个临界质量，并检验玻色化格点离散化能否达到与费米子格点方法相当的精度。核心难点在于：玻色场是非紧致的，局域希尔伯特空间无限维，需要合适的截断基；同时连续极限外推需要控制格点修正。\n\n## 方法\n- **模型**：Schwinger 模型的玻色化对偶——非紧致玻色场，哈密顿量格点离散化（Hamiltonian lattice discretization），工作在 θ=π。\n- **算法**：变分均匀矩阵乘积态（VUMPS），直接在无穷长链上求基态，严格保持 charge conjugation（C）对称性。\n- **局域基截断**：采用 oscillator basis，即对角化自由极限下单体约化密度矩阵的本征基，作为截断的局域希尔伯特空间。\n- **连续极限外推**：用 Symanzik 有效理论约束格点修正的拟合函数形式，做受控外推。\n- **数值结果**：临界质量 (m/g)_c = 0.333 555(5)。\n\n## 主要结果\n- 高精度确定 θ=π 处连续 Schwinger 模型的临界质量：(m/g)_c = 0.333 555(5)。\n- 该结果与近期交错费米子（staggered fermion）格点计算在可比精度下一致，构成对费米子格点结果的独立交叉验证。\n- 表明「玻色化 + VUMPS + oscillator basis + Symanzik 外推」这一组合可以在无穷长链上以可控系统误差达到与费米子方法相当的精度，且电荷共轭对称性被精确保持。\n\n## 为什么值得关注\n- **方法学交叉验证**：Schwinger 模型是格点场论的「试验台」。用完全不同的表述（玻色化 vs. 费米子）和完全不同的数值技术（张量网络 vs. 蒙特卡洛/精确对角化）得到一致结果，增强了对 (m/g)_c 这一基准量的信心。\n- **张量网络在格点场论中的成熟**：展示了 VUMPS 处理非紧致场、无限系统、精确对称性保持的能力，为张量网络方法进入更高维/更复杂规范理论提供范例。\n- **θ=π 物理**：θ=π 是拓扑项最有趣的点（与 CP 对称性、't Hooft 反常、可能的一阶/连续相变相关），精确确定临界质量对理解 θ 依赖相图有意义。\n- **对量子模拟的参考价值**：玻色化表述 + 局域截断基对冷原子/量子模拟实现 Schwinger 模型有直接借鉴意义。\n\n## 方向标签\n- Tensor network\n- Lattice gauge theory（Schwinger model）\n- Quantum simulation（间接相关）\n- 连续极限/有效场论（Symanzik）\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇方法清晰、结果干净、精度有竞争力且具有交叉验证价值的工作，对做张量网络格点场论或 Schwinger 模型基准计算的人几乎是必读；对更广泛的格点 QCD 社区属于「值得知道结论」级别，但方法细节（oscillator basis、Symanzik 外推）对非张量网络背景读者需要一定门槛。若你关注 θ=π 物理或张量网络在规范理论中的应用，可提到 5 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:31.097330"
+  },
+  {
+    "id": "2611.15922v1",
+    "title": "Monopole crystal and effective theory for a monopole-enhanced 3D U(1) gauge theory",
+    "authors": [
+      "Alessandro Mariani"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.15922v1",
+    "published": "2026-11-11T19:17:02Z",
+    "abstract": "Recently, a version of U(1) lattice gauge theory on the cubic lattice with a monopole enhancement term was considered in the literature. In this work, we further our understanding of this theory with a mixture of analytical and numerical methods. We show that for sufficiently large monopole enhancement, the monopoles are no longer dilute and they arrange themselves into an antiferromagnetic, Néel-ordered ground state. Nonetheless, a variant of Polyakov's argument for the dilute excitations over the dense ground state leads to an effective sine-Gordon model which is qualitatively similar to that of the standard theory. We also predict analytically the presence of first-order transitions as the monopole chemical potential is varied at fixed gauge coupling, corresponding to a change in the dominant monopole charge. Similarly, we predict a transition in the Ising universality class as the gauge coupling is varied. We then use numerical methods to study the phase diagram of the theory and check some of our predictions.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文证明在带单极子增强项的3D U(1)格点规范理论中，足够强的单极子增强会使单极子从稀薄气体转变为反铁磁Néel有序的“单极子晶体”，但稀薄激发上的Polyakov论证仍给出定性相似的sine-Gordon有效理论，并预言了固定耦合下随单极子化学势变化的一阶相变以及随规范耦合变化的Ising普适类相变。\n\n## 研究问题\n作者想解决的核心问题是：当U(1)格点规范理论中加入一个增强单极子（monopole enhancement）的项后，理论在强增强区域的行为如何？具体包括：\n1. 单极子密度增大后是否仍可用稀薄气体图像描述，还是会形成某种有序基态？\n2. Polyakov关于禁闭的稀薄单极子论证在单极子密集时是否仍然适用，有效理论形式如何改变？\n3. 相图结构如何——是否存在新的一阶相变或Ising类相变？相变由什么参数驱动？\n\n## 方法\n- **模型**：立方格点上的3D U(1)格点规范理论，作用量在标准Wilson形式基础上加入单极子增强项（对单极子电荷的化学势型项），使单极子产生/湮灭的权重被增强。\n- **解析方法**：\n  - 分析强增强极限下的单极子基态，论证其形成反铁磁Néel有序的“单极子晶体”。\n  - 在密集有序基态之上构造稀薄激发，推广Polyakov论证，导出有效的sine-Gordon模型。\n  - 用有效势/自由能分析预言固定规范耦合下随单极子化学势变化的一阶相变（主导单极子电荷改变），以及随规范耦合变化的Ising普适类相变。\n- **数值方法**：用Monte Carlo模拟研究相图，检验解析预言（摘要未具体说明算法细节，通常为Metropolis或类似格点更新，配合单极子电荷测量与序参量分析）。\n\n## 主要结果\n1. **单极子晶体基态**：当单极子增强足够强时，单极子不再稀薄，而是排列成反铁磁、Néel有序的基态（单极子晶体）。\n2. **有效理论仍为sine-Gordon型**：尽管基态单极子密集，作者给出Polyakov论证的一个变体，表明密集基态上的稀薄激发仍由定性上与标准理论相似的sine-Gordon模型描述。\n3. **一阶相变预言**：固定规范耦合、改变单极子化学势时，预言存在一阶相变，对应主导单极子电荷的改变。\n4. **Ising普适类相变预言**：改变规范耦合时，预言存在Ising普适类的相变。\n5. **数值相图**：用Monte Carlo方法研究相图并检验了部分解析预言。\n\n## 为什么值得关注\n- **对Polyakov禁闭机制的理解**：Polyakov的稀薄单极子论证是3D U(1)禁闭的经典图像。本文研究单极子密集时该图像如何被修改，深化了对禁闭机制在不同单极子密度区域鲁棒性的理解。\n- **单极子晶体与有序态**：单极子形成Néel有序晶体是一种有趣的强关联规范场基态，可能为理解规范理论中的拓扑缺陷凝聚与有序化提供范例。\n- **相图与普适类**：预言一阶相变与Ising类相变，为格点模拟提供了可检验目标，也把该模型与更广泛的相变普适类分类联系起来。\n- **方法学意义**：展示了在密集拓扑缺陷背景下推广有效场论论证的可行性，对lattice gauge theory社区处理单极子凝聚、禁闭-解禁闭转变等问题有参考价值。\n- **潜在联系**：单极子增强项与化学势、拓扑电荷控制相关，可能对理解有限密度、拓扑缺陷调控等场景有启发。\n\n## 方向标签\n- Lattice gauge theory\n- Confinement\n- Topological defects (monopoles)\n- Phase transitions / universality\n- Effective field theory\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文主题聚焦、问题清晰，把经典Polyakov论证推广到单极子密集区域，并给出可数值检验的相变预言，对研究3D U(1)禁闭与单极子物理的读者有较高参考价值。扣一星是因为其适用范围较专门（3D U(1)加增强项），与主流QCD或BSM直接关联有限，且摘要未展示数值细节，需读正文确认数值证据强度。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:39.792970"
+  },
+  {
+    "id": "2611.15873v1",
+    "title": "Scalar and pseudoscalar glueballonia: do they bind?",
+    "authors": [
+      "Narmin Nasibova",
+      "Francesco Giacosa"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.15873v1",
+    "published": "2026-11-11T19:00:07Z",
+    "abstract": "We investigate the existence of molecular two-glueball bound states, so-called glueballonia, in pure Yang-Mills (YM) theory. We mainly concentrate on the scalar and pseudoscalar channels, thus studying scalar-scalar and scalar-pseudoscalar bound states, respectively. Near the onset of binding, when a bound state first appears just below threshold, a nonrelativistic framework is justified. We employ an attractive scalar-exchange Yukawa potential together with a smeared contact term contribution and determine the critical attraction required for binding. For two scalar glueballs, we use the scalar dilaton effective theory to determine the parameters of the non-relativistic potential: the Yukawa interaction is generated by t- and u-channels involving the exchange of one scalar glueball, while the repulsion emerges by the s-channel annihilation and contact interaction. Using lattice-YM input to fix the dilaton parameters, we find that the attraction is strong enough: the scalar glueballonium binds, and the result is quite robust with respect to parameter variations. In a minimal scalar-pseudoscalar extension, the Yukawa attraction is again given by the t-channel scalar glueball, while the crossed u-channel pseudoscalar exchange induces an attractive local contribution, making the pseudoscalar glueballonium also bind in pure gauge. Importantly, both the scalar and pseudoscalar glueballonia are stable in the YM vacuum. Next, we briefly comment on the pseudoscalar-pseudoscalar, scalar-tensor, and tensor-tensor channels: all these channels are attractive too and could form bound states, which, however, would be unstable in pure YM due to decay into two lighter glueballs. Finally, as a cross-check, our formalism confirms that Higgs-Higgs bound state does not form.",
+    "summary": {
+      "raw": "## 一句话结论\n\n在纯 Yang-Mills 理论中，标量胶球偶素（scalar glueballonium）和赝标量胶球偶素（pseudoscalar glueballonium）都能形成束缚态，且在 YM 真空中稳定；而赝标量-赝标量、标量-张量、张量-张量等通道虽然相互吸引，但形成的束缚态会衰变为两个较轻的胶球而不稳定。\n\n## 研究问题\n\n作者想解决的核心问题是：**纯 Yang-Mills 理论中，两个胶球能否通过相互作用形成分子型束缚态（glueballonia）？** 具体聚焦于标量-标量（scalar-scalar）和标量-赝标量（scalar-pseudoscalar）两个通道，并判断这些束缚态在 YM 真空中是否稳定。此外还顺带考察了赝标量-赝标量、标量-张量、张量-张量通道的吸引性质，以及作为交叉检验验证 Higgs-Higgs 束缚态是否形成。\n\n## 方法\n\n- **非相对论框架**：在束缚态刚出现在阈值下方（near onset of binding）时，非相对论近似成立，作者在此框架下求解两体束缚问题。\n- **势能模型**：采用吸引的标量交换 Yukawa 势，加上一个 smeared contact term（涂抹接触项）贡献，确定束缚所需的临界吸引强度。\n- **标量-标量通道**：利用标量 dilaton 有效理论确定非相对论势的参数——Yukawa 吸引来自 t- 和 u- 通道的单标量胶球交换，排斥来自 s- 通道湮灭和接触相互作用。\n- **格点 YM 输入**：用 lattice Yang-Mills 的结果固定 dilaton 参数（如胶球质量、衰变常数等），再代入势模型判断是否束缚。\n- **标量-赝标量通道**：在最小标量-赝标量扩展中，Yukawa 吸引仍由 t- 通道标量胶球给出，交叉的 u- 通道赝标量交换产生额外的吸引局域贡献。\n- **稳定性分析**：检查各通道束缚态在 YM 真空中的衰变稳定性。\n- **交叉检验**：用同一形式验证 Higgs-Higgs 束缚态不形成。\n\n## 主要结果\n\n1. **标量胶球偶素束缚**：吸引足够强，标量胶球偶素确实形成束缚态，且结果对参数变化相当稳健（quite robust）。\n2. **赝标量胶球偶素也束缚**：在最小标量-赝标量扩展中，u- 通道赝标量交换带来的吸引局域贡献使赝标量胶球偶素同样在纯规范理论中束缚。\n3. **两者在 YM 真空中稳定**：标量和赝标量胶球偶素都不会衰变为两个较轻的胶球，因此在 YM 真空中是稳定的。\n4. **其他通道**：赝标量-赝标量、标量-张量、张量-张量通道也都具有吸引性、可能形成束缚态，但由于可衰变为两个较轻胶球，在纯 YM 中不稳定。\n5. **交叉检验**：同一形式确认 Higgs-Higgs 束缚态不形成，说明该框架能区分不同标量场的束缚行为。\n\n## 为什么值得关注\n\n- **胶球物理**：胶球是纯规范 QCD 的标志性非微扰态，胶球之间的分子型束缚态（glueballonia）此前缺乏系统研究。本文首次在有效理论 + 格点输入框架下给出标量和赝标量通道束缚的定量判据。\n- **格点与有效理论的结合**：用 lattice YM 数据固定 dilaton 有效理论参数，再求解非相对论束缚问题，为研究多胶球态提供了一条可操作路径。\n- **对实验搜寻的意义**：稳定的标量/赝标量胶球偶素可能是格点谱计算和未来实验（如 BESIII、PANDA、LHC 的胶球搜寻）中应关注的候选态，也可能影响对轻胶球谱的解读。\n- **方法学价值**：dilaton 有效理论 + Yukawa/contact 势 + 格点输入的组合，可推广到其他强相互作用束缚态（如多胶球、胶球-介子分子态）的研究。\n- **稳定性判据**：明确指出哪些通道的束缚态在 YM 真空中稳定、哪些会衰变，对格点谱学中识别\"额外态\"有直接参考价值。\n\n## 方向标签\n\n- Lattice QCD\n- Glueball / Exotic hadrons\n- Effective field theory (dilaton)\n- Nonperturbative QCD\n- Hadron spectroscopy\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：论文问题清晰、方法自洽（有效理论 + 格点输入 + 非相对论束缚判据），结论对胶球谱学和格点 QCD 社区有直接参考价值，且给出了稳定性分析这一实用判据。扣一星是因为它主要基于有效理论和势模型而非第一性格点计算束缚态谱，定量精度依赖 dilaton 参数和接触项的建模，结论的\"稳健性\"仍需未来格点直接验证。对做胶球谱、多胶球态或有效理论建模的研究者，值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:48.637112"
+  },
+  {
+    "id": "2611.15749v1",
+    "title": "Quantum and classical thermal equilibrium for probabilistic classical fields",
+    "authors": [
+      "C. Wetterich"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.15749v1",
+    "published": "2026-11-11T17:27:09Z",
+    "abstract": "The time evolution of the probability distribution for classical fields can be described by the quantum formalism. For free classical fields the free quantum field theory arises as a subsystem. Different probability distributions for classical fields correspond to the classical thermal equilibrium with the Rayleigh-Jeans divergence or the quantum thermal equilibrium with the Planck spectrum. The selection of the Rayleigh-Jeans or Planck spectrum is not a question of fundamental concepts. It becomes an issue of dynamical selection once interactions are present. We compare the momentum dependence of the classical energy and field correlations for the classical and quantum equilibrium. This permits to decide which equilibrium is selected as a result of asymptotic dynamics by numerical simulations of the probabilistic classical fields including interactions. For free probabilistic classical fields we construct a general ``classical-quantum map'' between the classical probability distribution and the density matrix of the quantum field theory.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文论证了经典场的概率分布演化可以用量子形式描述，并指出经典热平衡（Rayleigh-Jeans 谱）与量子热平衡（Planck 谱）之间的选择不是基本概念问题，而是由相互作用存在时的渐近动力学决定的，从而为用数值模拟判定实际系统选择哪种平衡提供了框架。\n\n## 研究问题\n\n作者想解决的核心问题是：**经典概率场的热平衡究竟对应 Rayleigh-Jeans 谱还是 Planck 谱？** 在自由场情形下，两种平衡都数学上自洽，无法从基本原理上排除其一。作者追问：一旦引入相互作用，系统的渐近动力学是否会\"选择\"其中一种平衡？此外，作者希望建立经典概率分布与量子场论密度矩阵之间的\"经典-量子映射\"，从而把经典概率场问题纳入量子形式体系来研究。\n\n## 方法\n\n- **形式框架**：用量子形式体系描述经典场概率分布的时间演化；对自由经典场，自由量子场论作为其子系统出现。\n- **平衡态比较**：对比经典平衡（Rayleigh-Jeans 谱）与量子平衡（Planck 谱）下能量和场关联的动量依赖。\n- **数值模拟**：对含相互作用的概率经典场进行数值模拟，通过渐近动力学判定系统选择哪种平衡。\n- **经典-量子映射**：对自由概率经典场构造经典概率分布与量子场论密度矩阵之间的一般映射。\n\n需要说明：摘要中未明确给出具体的格点离散化方案、格点作用量形式或具体算法（如 Monte Carlo、实时演化算法等），也未指明具体模型（如 φ⁴ 理论）。从摘要判断，工作重心在形式框架与概念论证，数值模拟部分的具体 lattice 细节需查阅正文。\n\n## 主要结果\n\n1. **自由场情形**：经典概率场的演化可用量子形式描述，自由量子场论作为子系统自然出现；经典与量子两种热平衡在自由场层面都自洽，无法仅凭基本原理区分。\n2. **相互作用决定平衡选择**：Rayleigh-Jeans 谱与 Planck 谱的选择不是基本概念问题，而是动力学选择问题——一旦存在相互作用，渐近动力学将决定系统落入哪种平衡。\n3. **可判定的数值判据**：通过比较经典与量子平衡下能量和场关联的动量依赖，可以用含相互作用概率经典场的数值模拟来判定实际被选择的平衡。\n4. **经典-量子映射**：对自由概率经典场，构造了经典概率分布与量子场论密度矩阵之间的一般\"经典-量子映射\"。\n\n## 为什么值得关注\n\n- **概念层面**：澄清了\"经典热平衡 vs 量子热平衡\"这一长期存在的概念混淆，把 Rayleigh-Jeans 发散问题从\"基本原理缺陷\"重新定位为\"相互作用动力学选择\"问题，这对理解经典场近似何时失效、量子效应何时必须引入具有基础意义。\n- **方法层面**：经典-量子映射为用经典概率场模拟量子场论（反之亦然）提供了形式桥梁，与当前 quantum simulation、classical simulation of quantum fields 的研究方向直接相关。\n- **格点/QCD 关联**：在有限温度格点场论中，经典场近似（如经典统计场模拟）常用于红外区域；本文关于哪种谱被动力学选择的判据，对判断经典近似在具体相互作用下的适用性有参考价值。\n- **可检验性**：给出了可数值实现的判据（比较能量与关联的动量依赖），使抽象的概念争论变成可计算的物理问题。\n\n## 方向标签\n\n- Finite temperature\n- Quantum simulation\n- 经典-量子对应 / 形式理论\n- 实时动力学数值模拟\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：论文的概念框架（经典-量子映射、平衡选择的动力学判据）对有限温度场论和经典场模拟的理论基础有清晰价值，适合关注热平衡、经典近似有效性及量子-经典对应的读者。但摘要显示其重心偏形式与概念论证，具体格点实现细节未在摘要中体现，若读者主要关心可直接用于 Lattice QCD 的数值技术，优先级可下调；若关心理论基础与量子模拟交叉方向，则值得一读。建议先读引言与结论判断与自身课题的相关度。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:04:56.358888"
+  },
+  {
+    "id": "2611.15388v1",
+    "title": "A unified mean-field description of dense hadron matter constrained from $χ$EFT and lattice QCD",
+    "authors": [
+      "Md. Emanuel Hoque",
+      "Arunava Mukherjee",
+      "Sayantan Sharma"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.15388v1",
+    "published": "2026-11-11T12:12:45Z",
+    "abstract": "We construct a relativistic mean field theory (RMFT) of hadrons in an attempt to describe the confined phase of QCD across a wide range of temperatures and baryon densities. This includes the scalar and vector mesons interacting with baryons and resonances up to $3$ GeV, including those which are not yet discovered but predicted within the quark model and lattice QCD. The baryon--meson couplings are constrained through a two-stage Bayesian analysis. In the first stage, we constrain six different couplings in our theory using six nuclear empirical parameters inferred from the chiral effective field theory predictions of the energy per nucleon for pure neutron matter over baryon densities $n_B \\in [0.08, 0.32]~\\mathrm{fm}^{-3}$, employing a Gaussian-process likelihood to account for correlations in the input data. In the second stage, this posterior is set as the prior for constraining different baryon--meson couplings in our RMFT construction, using lattice QCD input. The resulting posterior provides substantially improved constraints for different baryon--meson couplings and non-linear meson self-interactions, which are consistent with the current astrophysical observations of neutron star masses, radii and tidal deformability parameters.",
+    "summary": {
+      "raw": "## 一句话结论\n作者构建了一个覆盖宽温区与宽重子密度范围的相对论平均场论（RMFT），用两阶段贝叶斯分析把 χEFT 与 lattice QCD 的输入统一起来约束重子—介子耦合，得到的后验与中子星观测（质量、半径、潮汐形变）一致。\n\n## 研究问题\n作者想解决什么问题？\n- 如何在**禁闭相 QCD** 的宽温度—宽重子密度区域，建立一个统一、可约束的有效描述。\n- 现有 RMFT 通常只在中低密度、零温附近被标定，耦合的不确定性大；作者希望用**χEFT（纯中子物质能量每核子）** 与 **lattice QCD（有限温度/密度输入）** 两级约束，系统缩小重子—介子耦合与非线性介子自相互作用的参数空间。\n- 同时把重子谱扩展到 3 GeV，包括夸克模型与 lattice QCD 预言但尚未发现的共振态，以检验这些自由度对状态方程与耦合约束的影响。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- **模型框架**：相对论平均场论（RMFT），包含标量与矢量介子与重子/共振态（至 3 GeV）相互作用，并含非线性介子自相互作用。\n- **两阶段贝叶斯分析**：\n  - 第一阶段：用 χEFT 给出的纯中子物质能量每核子（\\(n_B \\in [0.08,0.32]~\\mathrm{fm}^{-3}\\)）约束 6 个核经验参数对应的 6 个耦合；采用**高斯过程似然**处理输入数据的关联。\n  - 第二阶段：把第一阶段后验作为先验，用 **lattice QCD 输入**进一步约束不同的重子—介子耦合。\n- **数值技术**：贝叶斯推断/后验采样（摘要未明示具体采样器，如 MCMC 或嵌套采样），以及将后验与天体观测（中子星质量、半径、潮汐形变）做一致性检验。\n- 注意：本文**不是**直接做格点模拟，而是把 lattice QCD 结果作为贝叶斯约束输入来标定有效模型。\n\n## 主要结果\n总结最重要发现。\n- 两阶段贝叶斯流程给出了对重子—介子耦合与非线性介子自相互作用的**显著改进约束**（相比单阶段或先验）。\n- 所得后验与当前**中子星质量、半径、潮汐形变参数**的天体观测一致。\n- 把重子/共振态谱扩展到 3 GeV（含未发现态）被纳入统一框架，说明该 RMFT 可在宽温、宽密度区域描述禁闭相 QCD 的有效行为。\n- 方法学上表明：χEFT 与 lattice QCD 可以作为**分层约束**共同用于有效场论参数标定，且高斯过程似然能正确处理输入数据的相关性。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 为**状态方程（EoS）** 研究提供了一个可跨温区、跨密度使用的有效模型，并把核物理（χEFT）、格点 QCD 与天体观测三条证据链统一到同一贝叶斯框架中。\n- 对**中子星物态**与重离子碰撞的交叉约束有直接价值：耦合后验可直接用于致密物质 EoS 的不确定性传播。\n- 方法上示范了如何把 lattice QCD 的有限温度/密度结果作为**先验/似然输入**来约束有效模型，这对连接第一性原理 QCD 与现象学模型的研究路线有推广意义。\n- 把 3 GeV 以下重子共振态系统纳入，有助于评估“缺失共振态”对致密物质描述的影响，对夸克模型与 lattice 谱学预言也是检验。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Dense matter / QCD phase diagram\n- Bayesian inference\n- Effective field theory (χEFT / RMFT)\n- Neutron stars\n\n## 阅读优先级\n★★★★☆（4/5）\n- 理由：对做致密物质 EoS、中子星与 lattice QCD 现象学连接的研究者，这是**高相关**的方法学论文：两阶段贝叶斯约束与 χEFT+lattice 联合标定思路可直接复用。\n- 扣一星原因：它是有效模型（RMFT）而非第一性原理格点计算，结论依赖模型假设与共振态谱的选取；若你只关心纯 lattice 技术（算法、算力、格点作用量），直接收益有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-13T07:05:04.410351"
   }
 ]
