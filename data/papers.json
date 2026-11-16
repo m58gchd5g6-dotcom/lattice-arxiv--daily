@@ -8602,5 +8602,145 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-13T07:05:04.410351"
+  },
+  {
+    "id": "2611.18552v1",
+    "title": "Real-time simulation of scattering in $φ^4$ theory: localized excitation, scalable wave packet preparation, and peak-generating artifacts",
+    "authors": [
+      "Boyu Gao",
+      "Natalie Klco"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.18552v1",
+    "published": "2026-11-13T18:57:45Z",
+    "abstract": "Probing real-time dynamics is essential for understanding non-perturbative scattering and interactions in quantum field theory. A common challenge in real-time simulation is preparing accurate asymptotic incoming states. Through efficiently solvable eigenvalue problems, we jointly optimize a superposition of single particle momentum eigenstates and a single site interpolating operator to maximize preparation fidelity from the interacting vacuum. This leads to a localized excitation in the interacting theory analogous to a position eigenstate. Weighted sums of the resulting interpolating operator over lattice sites prepare wave packets of arbitrary spatial extent. To ensure that this construction produces the correct continuum limit, relative phases among single particle momentum eigenstates in this superposition are calibrated using a relation derived from Lorentz symmetry. Analyzing single particle wave packet propagation through the position space profile reveals oscillatory Airy distortions, which originate from interference between saddle point contributions at different momenta that share the same lattice group velocity. These oscillations systematically weaken when approaching the continuum limit, and reliable regimes are identified as a function of simulation time and wave packet momentum profile. Two-particle scattering simulations in interacting scalar field theory are also implemented, revealing artificial inelasticity arising from coarse local field digitization or deviation from the Nyquist-Shannon sampling point. With these artifacts under control, present simulations provide emerging evidence for physical inelastic processes in $φ^4$ theory. The constructions introduced in this work may provide new understanding of state preparation for the quantum simulation of scattering.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文提出了一套在格点 $\\\\phi^4$ 理论中制备可扩展单粒子波包初态的系统方法，并系统识别了实时散射模拟中两类主要伪影（Airy 振荡与伪非弹性），为量子模拟散射的态制备提供了新思路。\n\n## 研究问题\n\n实时模拟量子场论中的非微扰散射过程，核心困难在于**如何从相互作用真空制备准确的渐近入射态**。具体而言：\n\n1. 如何在相互作用理论中构造类似“位置本征态”的局域激发？\n2. 如何由此可扩展地制备任意空间宽度的波包，并保证正确的连续极限？\n3. 实时演化中出现的数值/离散化伪影（如 Airy 振荡、伪非弹性）来源是什么，如何控制？\n\n## 方法\n\n- **模型**：格点标量 $\\\\phi^4$ 理论（实时间演化）。\n- **态制备**：通过可高效求解的本征值问题，联合优化“单粒子动量本征态的叠加”与“单格点插值算符”，最大化从相互作用真空的制备保真度，得到相互作用理论中的局域激发（类比位置本征态）。\n- **波包构造**：对插值算符在格点上做加权求和，制备任意空间范围的波包。\n- **连续极限校准**：利用 Lorentz 对称性导出的关系，校准叠加中单粒子动量本征态之间的相对相位，确保正确连续极限。\n- **伪影分析**：通过位置空间剖面分析单粒子波包传播，识别 Airy 型振荡（源于相同格点群速度下不同动量鞍点贡献的干涉）；分析双粒子散射中的伪非弹性（源于粗粒度局域场数字化或偏离 Nyquist–Shannon 采样点）。\n- **数值技术**：本征值问题求解、实时间格点演化、波包剖面分析。\n\n## 主要结果\n\n1. **局域激发构造**：联合优化动量本征态叠加与单格点插值算符，可高效制备高保真度的相互作用理论局域激发。\n2. **可扩展波包制备**：插值算符的格点加权求和可制备任意空间宽度的波包；相对相位由 Lorentz 对称性关系校准以保证连续极限。\n3. **Airy 振荡伪影**：单粒子波包传播中出现振荡型 Airy 畸变，源于同一格点群速度下不同动量鞍点的干涉；该振荡随接近连续极限系统性减弱，并给出了依赖模拟时间与动量分布的可靠参数区域。\n4. **伪非弹性**：双粒子散射模拟中出现由粗粒度场数字化或偏离 Nyquist–Shannon 采样点引起的人工非弹性。\n5. **物理非弹性的证据**：在控制上述伪影后，模拟提供了 $\\\\phi^4$ 理论中物理非弹性过程的初步证据。\n\n## 为什么值得关注\n\n- **态制备是实时量子模拟的核心瓶颈**：该工作给出了系统、可扩展且可校准的初态制备方案，对量子模拟散射（quantum simulation of scattering）有直接方法论价值。\n- **伪影的定量刻画**：Airy 振荡与伪非弹性的来源分析和可靠参数区域界定，对任何实时间格点/量子模拟计算都有警示和指导意义。\n- **连接格点场论与量子模拟**：为格点场论社区和量子模拟社区之间搭建了态制备理解的桥梁，尤其对 $\\\\phi^4$ 这类标量理论的可扩展模拟有参考价值。\n- **对 QCD 的间接启示**：虽然模型是标量理论，但态制备、连续极限校准和伪影控制的思路可迁移到更复杂的规范理论实时模拟问题。\n\n## 方向标签\n\n- Quantum simulation\n- Lattice field theory (real-time)\n- Scalar $\\\\phi^4$ theory\n- State preparation\n- Numerical artifacts / continuum limit\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：论文聚焦实时量子模拟中一个关键且实际的问题——渐近入射态的制备与伪影控制，方法系统、结果具体，对量子模拟和格点实时计算社区有较高参考价值。扣一星是因为模型限于标量 $\\\\phi^4$ 理论，向 QCD/规范理论的推广仍需额外工作，且“物理非弹性证据”目前仍是初步的。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:04.795345"
+  },
+  {
+    "id": "2611.18526v1",
+    "title": "Three-dimensional parton structure in QCD with CP-violation",
+    "authors": [
+      "Alexandru-Mihail Sturzu",
+      "Joe Karpie"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.18526v1",
+    "published": "2026-11-13T18:40:57Z",
+    "abstract": "The Energy-Momentum tensor encodes the mechanical properties of a system such as the internal distributions energy, momentum, forces, and particle fluxes. The QCD energy momentum tensor respects CP symmetry even when QCD is modified with a CP-violating $θ$-term. In this theory, there are 5 unique generalized form factors in the Lorentz decomposition of the total Energy Momentum tensor and 3 more which only vanish when summing over all flavors. We introduce two new lightcone GPDs whose Mellin moments give the electromagnetic and gravitational form factors. These generalize the observables for QCD-based CP violation such as the neutron electric dipole moment to three dimensional light cone structure.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文在含 CP 破坏 θ 项的 QCD 中，系统分析了总能量-动量张量的洛伦兹分解，发现 5 个独立广义形状因子（另有 3 个仅在味求和后消失），并引入两个新的光锥 GPD，其 Mellin 矩分别给出电磁和引力形状因子，从而把基于 QCD 的 CP 破坏观测量（如中子电偶极矩）推广到三维光锥结构。\n\n## 研究问题\n\n作者想解决的问题是：当 QCD 中加入 CP 破坏的 θ 项后，能量-动量张量的洛伦兹结构如何变化？在 CP 守恒时能量-动量张量尊重 CP 对称性，但在 θ 项存在时，其形状因子分解会出现哪些新的、与 CP 破坏相关的结构？如何把这些结构与三维部分子（光锥）分布联系起来，从而把中子电偶极矩这类已知 CP 破坏观测量推广为三维光锥层面的广义部分子分布（GPD）？\n\n## 方法\n\n从摘要看，这篇工作主要是**解析/场论层面的理论分析**，而非格点数值计算：\n\n- 对总能量-动量张量做洛伦兹分解，在含 θ 项的 QCD 中枚举独立的广义形状因子；\n- 区分\"真正独立\"的形状因子与\"仅在味求和后消失\"的形状因子；\n- 构造两个新的光锥 GPD，并计算其 Mellin 矩，证明其分别对应电磁形状因子与引力形状因子；\n- 将已知的 CP 破坏观测量（中子 EDM）嵌入这一三维光锥框架。\n\n摘要未提及具体的格点方法、模型或数值算法，因此无法确认是否包含格点计算；从描述看更接近连续场论的形式分析。\n\n## 主要结果\n\n1. 含 CP 破坏 θ 项的 QCD 中，总能量-动量张量的洛伦兹分解有 **5 个唯一广义形状因子**；\n2. 另有 **3 个形状因子**只在不对所有味求和时出现，味求和后消失；\n3. 引入 **两个新的光锥 GPD**，其 Mellin 矩分别给出电磁形状因子和引力形状因子；\n4. 这些新 GPD 把 QCD 基 CP 破坏观测量（如中子电偶极矩）**推广到三维光锥结构**。\n\n## 为什么值得关注\n\n- 把 CP 破坏（θ 项）从传统的矩阵元/形状因子层面提升到**三维部分子分布**层面，为研究强子内部结构与 CP 破坏的关联提供了新观测量；\n- 能量-动量张量的形状因子分解在含 θ 项时的完整分类，对理解 QCD 的引力形状因子与 CP 破坏的相互作用有基础性意义；\n- 新 GPD 的 Mellin 矩联系电磁与引力形状因子，可能为格点 QCD 计算（如 GPD、引力形状因子）以及实验（GPD 提取）提供新的理论靶标；\n- 对中子 EDM 等 CP 破坏观测量的三维推广，可能影响对 BSM CP 破坏的强子层面解释。\n\n## 方向标签\n\n- Lattice QCD（潜在应用/关联）\n- QCD 唯象与强子结构（GPD、形状因子）\n- CP violation / θ-term\n- 理论物理（场论形式分析）\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：主题重要且新颖——把 CP 破坏与三维 GPD 结构联系起来的框架有潜在影响力，尤其对 GPD 和引力形状因子研究社区。但从摘要看，这是一篇偏形式理论的分解与构造工作，摘要未显示格点数值结果或可直接检验的算法；若读者关注格点计算或数值实现，其直接实用性有限。建议对 GPD/形状因子或 CP 破坏强子结构感兴趣的读者优先阅读，纯格点数值方向读者可作背景参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:11.810892"
+  },
+  {
+    "id": "2611.18306v1",
+    "title": "Towards an improved understanding of $a_1$ and $a_2$ transition form factors",
+    "authors": [
+      "Hannah Schäfer"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.18306v1",
+    "published": "2026-11-13T15:26:27Z",
+    "abstract": "The isovector axial-vector and tensor meson states $a_1$ and $a_2$ have garnered interest in the last years since they appear as intermediate states in the hadronic light-by-light (HLbL) scattering contribution to $(g-2)_μ$. Their dynamical behaviour including their transition form factors is poorly understood to this day, which also affects the uncertainty budget of the HLbL contribution. In order to improve the situation, we construct the $a_1$ and $a_2$ as resonances in the $ρπ$ system, which allows us to express the relevant amplitudes in terms of known form factors and properties of the resonances. With this, we aim to obtain a phenomenologically well motivated parameterisation of the transition form factors built from the general principles of analyticity, unitarity, and crossing symmetry.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文并非格点计算工作，而是一个基于解析性、幺正性和交叉对称性的**现象学/色散关系框架**，通过在 $\\rho\\pi$ 系统中将 $a_1$ 和 $a_2$ 构造为共振态，为它们的跃迁形状因子提供有物理动机的参数化，以改进 HLbL 对 $(g-2)_\\mu$ 贡献的不确定性预算。\n\n## 研究问题\n\n作者想解决的问题是：$a_1(1260)$ 和 $a_2(1320)$ 作为同位旋矢量轴矢量和张量介子，会作为中间态出现在强子光-by-光（HLbL）散射对缪子反常磁矩 $(g-2)_\\mu$ 的贡献中。然而，这两个共振态的动力学行为——尤其是它们的跃迁形状因子——至今理解很差，这直接构成了 HLbL 贡献误差预算中的一个不确定来源。论文的目标是给出一个**现象学上动机充分、基于一般原理**的跃迁形状因子参数化，从而改善这一状况。\n\n## 方法\n\n需要强调的是，这篇工作**不是格点 QCD 计算**，也不涉及蒙特卡洛模拟或数值算法。其方法是：\n\n- 将 $a_1$ 和 $a_2$ 作为 $\\rho\\pi$ 系统中的**共振态**来处理，从而把相关振幅用已知的形状因子和共振态性质来表达；\n- 基于**解析性（analyticity）、幺正性（unitarity）和交叉对称性（crossing symmetry）** 这些量子场论的一般原理，构造跃迁形状因子的参数化；\n- 属于色散关系/共振手征有效理论一类的现象学方法，而非第一性原理格点计算。\n\n因此，若从格点视角看，这篇论文更像是为格点计算提供**可对照的参数化形式和物理输入**，而非直接产生格点数据。\n\n## 主要结果\n\n摘要层面给出的核心结果是：作者建立了一个将 $a_1$、$a_2$ 视为 $\\rho\\pi$ 共振态的框架，并由此得到了跃迁形状因子的、由解析性/幺正性/交叉对称性所约束的现象学参数化。其意义在于为 HLbL 中涉及这些共振态的贡献提供了更可靠的输入形式，从而有望**收紧 $(g-2)_\\mu$ 的 HLbL 误差预算**。需要注意，摘要未给出具体数值结果（如形状因子参数值或对 $a_\\mu^{\\rm HLbL}$ 的定量修正），这些需查阅正文。\n\n## 为什么值得关注\n\n- **对 $(g-2)_\\mu$ 的直接影响**：HLbL 是缪子 $g-2$ 理论预言中误差最大的部分之一，而 $a_1$、$a_2$ 中间态贡献是其不确定性来源之一。改进这些跃迁形状因子的描述，直接关系到 $(g-2)_\\mu$ 检验 BSM 的灵敏度。\n- **连接格点与现象学**：格点 QCD 近年来开始直接计算 HLbL 的贡献（如 Mainz 等组的格点 HLbL 结果），而共振态跃迁形状因子正是格点与色散关系方法都需要处理的对象。该框架可为格点结果提供参数化对照，也可为色散关系分析提供输入。\n- **方法学价值**：用解析性、幺正性、交叉对称性系统构造共振跃迁形状因子，是强子物理中稳健且可推广的思路，对其它共振态（如 $\\pi_1$、$f_1$ 等）也有借鉴意义。\n\n## 方向标签\n\n- Hadronic light-by-light scattering\n- $(g-2)_\\mu$\n- Dispersion relations / Analyticity & unitarity\n- Resonance phenomenology\n- Hadronic form factors\n\n（注：本文不属于 Lattice QCD 直接计算，也不涉及 BSM、量子模拟、机器学习、张量网络或有限温度。）\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：如果你的研究直接围绕 $(g-2)_\\mu$ 的 HLbL 贡献、或涉及 $a_1/a_2$ 共振态跃迁形状因子的参数化，这篇论文值得细读，因为它提供了有原理支撑的参数化框架，可与格点或色散关系结果对照。但若你的兴趣在于格点 QCD 的第一性原理计算技术（算法、算符构造、连续极限等），本文方法与格点无直接关系，优先级应降低。总体而言，这是一篇面向 HLbL 现象学的重要但专门化的贡献，适合作为 $(g-2)_\\mu$ 误差预算相关工作的参考，而非广泛必读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:19.992487"
+  },
+  {
+    "id": "2611.18224v1",
+    "title": "Light baryon masses from the modified Taylor coupling",
+    "authors": [
+      "A. S. Miramontes",
+      "J. Papavassiliou",
+      "H. Sanchis-Alepuz"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.18224v1",
+    "published": "2026-11-13T14:26:32Z",
+    "abstract": "We present a calculation of the positive-parity baryon octet and decuplet spectra, using a non-perturbative interaction governed by the modified Taylor effective charge and complemented by explicit flavour-dependent contributions. The framework transitions seamlessly from the mesonic domain, where it was first established, to the baryonic sector, requiring no further parameter optimization. By solving the relativistic three-body Faddeev equation, we extract both the ground-state masses and amplitudes for the corresponding baryonic configurations. The resulting spectrum reproduces experimental data within a few percent. Additionally, we derive the evolution of the nucleon and $Δ$ masses as functions of the pion mass, contrast our findings directly against lattice-QCD benchmarks, and evaluate the propagation of the lattice uncertainties into the computed hadronic observables.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文将此前在介子 sector 建立的、基于 modified Taylor 有效荷的非微扰相互作用无缝推广到重子 sector，通过求解相对论性三体 Faddeev 方程，在无需重新拟合参数的情况下，以百分之几的精度重现了正宇称重子八重态与十重态的谱，并系统对比了格点 QCD 基准、分析了格点不确定度的传播。\n\n## 研究问题\n\n作者想解决的核心问题是：一个最初在介子领域建立并验证的相互作用模型（modified Taylor 有效荷 + 显式味依赖贡献），能否在不引入任何新参数、不重新优化的前提下，直接推广到重子 sector，并给出与实验和格点 QCD 一致的重子质量谱？具体而言：\n\n1. 该框架能否从两体（介子）自然过渡到三体（重子）系统？\n2. 计算出的重子八重态、十重态基态质量与振幅能否在百分之几的精度内符合实验？\n3. 核子与 Δ 质量随 pion mass 的演化能否与格点 QCD 的基准结果直接对比？\n4. 格点 QCD 的不确定度如何传播到所计算的可观测量中？\n\n## 方法\n\n- **相互作用模型**：采用非微扰的 modified Taylor 有效荷作为核心相互作用，并辅以显式的味依赖（flavour-dependent）贡献。该有效荷此前在介子 sector 中确立，本文直接沿用，不做参数再优化。\n- **少体方程**：求解相对论性三体 Faddeev 方程，以处理重子作为三夸克束缚态的问题，从中提取基态质量与本征振幅。\n- **谱学对象**：正宇称重子八重态（核子、Λ、Σ、Ξ）与十重态（Δ、Σ*、Ξ*、Ω）。\n- **pion mass 依赖**：计算核子与 Δ 质量作为 pion mass 的函数，并与格点 QCD 结果直接对照。\n- **不确定度传播**：将格点 QCD 的输入不确定度传播到所计算的强子可观测量中，评估理论误差。\n- **对比基准**：以实验数据和格点 QCD 计算结果作为双重检验标准。\n\n需要说明的是，本文并非直接的格点 QCD 数值模拟，而是以格点 QCD 结果为基准的连续场论/少体框架计算；其\"lattice\"关联体现在与格点基准的对比及不确定度传播上。\n\n## 主要结果\n\n1. **谱的整体符合**：所计算的正宇称重子八重态与十重态基态质量在百分之几的精度内重现实验数据，且整个重子 sector 的计算未引入任何新的参数优化。\n2. **框架的可迁移性**：证实了 modified Taylor 有效荷框架可以从介子领域无缝过渡到重子领域，说明该相互作用具有跨 sector 的普适性。\n3. **pion mass 演化**：给出了核子与 Δ 质量随 pion mass 变化的演化曲线，并与格点 QCD 基准直接对比，检验了模型在非物理 quark mass 区域的行为。\n4. **不确定度传播**：量化了格点 QCD 输入不确定度对强子可观测量（质量、振幅）的影响，为理论误差评估提供了依据。\n5. **振幅信息**：除质量外，还提取了相应重子组态的本征振幅，提供了波函数层面的信息。\n\n## 为什么值得关注\n\n- **参数经济性**：一个在介子 sector 拟合的模型能零参数外推到三夸克重子系统并达到百分之几精度，这对有效相互作用模型的普适性是有力证据，也为构建统一的介子—重子描述提供了可行路径。\n- **连接连续方法与格点 QCD**：论文将少体 Faddeev 框架的结果与格点 QCD 基准系统对比，并做不确定度传播，这种\"连续模型 ↔ 格点基准\"的交叉验证对两个社区都有参考价值，尤其是在格点外推到物理 pion mass 仍具挑战的背景下。\n- **重子谱学与强子结构**：对八重态、十重态质量与振幅的统一描述，对理解强子谱、夸克禁闭下的三体束缚态结构有直接意义。\n- **方法学示范**：展示了如何把格点 QCD 的误差系统地传播到强子可观测量，这对依赖格点输入的有效模型研究具有方法学借鉴意义。\n\n## 方向标签\n\n- Lattice QCD（作为对比基准与不确定度来源）\n- Hadron spectroscopy\n- Few-body / Faddeev equations\n- Effective interactions / Dyson-Schwinger 相关框架\n- Chiral extrapolation（pion mass 演化）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：论文的核心贡献是把一个已有模型从介子推广到重子并做系统基准对比，属于稳健但有继承性的工作，而非全新范式。对于关注重子谱、有效相互作用普适性、或格点—连续方法交叉验证的研究者，值得一读，尤其是其 pion mass 演化和不确定度传播部分。但若读者主要关心格点 QCD 本身的算法或大规模数值模拟进展，本文的相关性有限，因为其主体是连续少体框架而非格点计算。综合而言，对 lattice/QCD 强子谱方向的研究者有中等偏上的参考价值，故给三星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:29.917031"
+  },
+  {
+    "id": "2611.18038v1",
+    "title": "The ratio of gradient-flow scales $\\sqrt{t_0}/w_0$ in $2+1$ flavor lattice QCD",
+    "authors": [
+      "Simon Kuberski",
+      "Alejandro Sáez"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.18038v1",
+    "published": "2026-11-13T11:09:15Z",
+    "abstract": "We determine the ratio $\\sqrt{t_0}/w_0$ of gradient-flow scales in isospin-symmetric $2+1$-flavor QCD at the physical point and in the continuum limit. Our analysis uses CLS gauge ensembles at five lattice spacings and combines Wilson and Zeuthen flow data to constrain the continuum extrapolation at the flavor-SU(3)-symmetric point. We obtain $\\sqrt{t_0}/w_0=0.8264(26)$ in the Edinburgh consensus scheme, corresponding to a precision of about $0.31\\%$. This result relates determinations quoted in terms of either flow scale and helps assess tensions among published results.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在物理点和连续极限下，确定了等旋对称 2+1 味 QCD 中梯度流标度比 √t₀/w₀ = 0.8264(26)（精度约 0.31%），为统一不同流标度的结果、评估文献间的张力提供了关键换算基准。\n\n## 研究问题\n作者想解决的核心问题是：梯度流标度 t₀ 和 w₀ 是格点 QCD 中常用的两种标度设定方式，不同协作组常分别用其中之一引用结果，导致相互比较时存在系统性的换算不确定性。本文旨在精确确定二者之比 √t₀/w₀，从而（1）在两种标度方案之间建立可靠的换算关系；（2）帮助判断已发表结果之间表面上的张力究竟是物理差异还是标度换算带来的假象。\n\n## 方法\n- **格点作用量与味内容**：采用 CLS 协作组的 2+1 味 Wilson 型格点 QCD 组态，等旋对称、物理点（physical point）。\n- **格点间距覆盖**：使用五个格点间距的系综，以控制连续极限外推。\n- **梯度流技术**：同时使用 Wilson flow 和 Zeuthen flow 两种流方案的数据，相互交叉检验并约束连续外推。\n- **外推策略**：在味-SU(3) 对称点（flavor-SU(3)-symmetric point）进行连续极限外推，以简化外推中的质量依赖。\n- **标度方案**：结果在 Edinburgh consensus scheme 中给出，便于与社区通用约定对接。\n- **误差处理**：报告总误差约 0.31%，包含统计与系统误差（多格距、双流方案、外推拟合等）。\n\n## 主要结果\n- 在物理点、连续极限下得到 **√t₀/w₀ = 0.8264(26)**，相对精度约 **0.31%**。\n- 该结果同时利用了 Wilson 和 Zeuthen flow，增强了连续外推的稳健性。\n- 提供了一个精确的换算因子，使以 t₀ 引用的结果与以 w₀ 引用的结果可以一致地比较。\n- 作者指出该比值有助于评估已发表结果之间的张力（tension），即部分表观不一致可能源于标度换算而非物理效应。\n\n## 为什么值得关注\n- **社区基础设施性结果**：t₀ 和 w₀ 是格点 QCD 中最广泛使用的标度之一，精确的比值是跨协作组结果比较的“公共货币”。\n- **缓解张力**：许多文献中的差异（例如夸克质量、Λ_QCD、α_s 等衍生量）部分来自标度选择不同；本文提供了消除这一不确定性的工具。\n- **方法学价值**：五个格距 + 双流方案的连续外推策略，为其他梯度流标度计算提供了可参考的范式。\n- **对唯象与精密检验的间接影响**：精确标度换算有助于把格点结果可靠地输入到味物理、强子谱和耦合常数测定中。\n\n## 方向标签\n- Lattice QCD\n- Gradient flow\n- Continuum limit / Scale setting\n- Flavor physics (2+1 flavor)\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇目标明确、技术成熟、结果精度高的“基础设施型”论文，对任何使用梯度流标度的格点 QCD 研究者都有直接实用价值；但它不是提出新算法或新物理机制的工作，创新性主要体现在精密测定与系统误差控制上。若你的研究涉及标度设定、跨组结果比较或梯度流系统误差，优先级可升至 5 星；若关注 BSM、量子模拟或机器学习等方向，则相关性较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:37.084964"
+  },
+  {
+    "id": "2611.17842v1",
+    "title": "Hardware-aware sampling and QPU-informed Monte Carlo with quantum annealers",
+    "authors": [
+      "Seungyeob Jwa",
+      "Jangho Kim",
+      "Sunghee Kim",
+      "Sunkyu Lee",
+      "Weonjong Lee"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.17842v1",
+    "published": "2026-11-13T07:24:42Z",
+    "abstract": "We study how the physical representation of a logical model affects sampling by quantum annealers and its use in corrected Monte Carlo. The square-lattice Ising model provides controlled classical references. Fixed embeddings with one physical qubit per logical spin reach $36\\times36$ spins. Comparisons with uniform two-qubit chains and mixed chain lengths show that matching mean energy leaves differences in magnetization and correlations. Extended-range conditional predictors improve the description of mixed embeddings, distinguishing their residual correlations from those of the tested uniform embeddings. Independent calibration checks and fixed-scale annealing scans show that temperature shifts alone do not determine distributional agreement. Normalized autoregressive models learned from QPU samples provide proposals with exact Metropolis--Hastings and multiple-try corrections on larger periodic lattices. These preserve the target distribution, although block updates alone relax critical magnetization slowly. Complementary direct-QPU updates reveal how block size and fitted-temperature correction affect acceptance and spin motion. Together, the results support prioritizing one-qubit representations and short uniform chains, while separating hardware sampling fidelity from the convergence of corrected Monte Carlo.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文系统研究了量子退火器上逻辑自旋的物理嵌入方式（单比特表示 vs. 多比特链）如何影响采样质量，并展示了用 QPU 样本训练的自回归模型作为 Metropolis–Hastings 提议分布可在保持目标分布的前提下实现修正的蒙特卡洛采样。\n\n## 研究问题\n作者想解决的核心问题是：量子退火器（quantum annealer）作为采样器时，逻辑模型的物理表示（embedding）如何影响其采样保真度；以及如何将 QPU 采样与经典修正蒙特卡洛（corrected Monte Carlo）结合，使得在硬件采样不完美的情况下仍能获得对目标分布的精确采样。具体包括：（1）固定嵌入下不同链长/混合嵌入对磁化与关联函数的影响；（2）温度标定是否能单独解释分布差异；（3）如何用 QPU 样本构造提议分布并做精确修正；（4）块更新与直接 QPU 更新对接受率和自旋运动的影响。\n\n## 方法\n- **模型**：方格子 Ising 模型（square-lattice Ising model），作为可控的经典参考系统；固定嵌入下达到 36×36 自旋。\n- **硬件表示**：比较单物理比特/逻辑自旋的固定嵌入、均匀两比特链、以及混合链长嵌入。\n- **采样与标定**：独立标定检查与固定尺度退火扫描（fixed-scale annealing scans）；拟合温度修正。\n- **统计诊断**：比较平均能量、磁化、关联函数；引入扩展范围的条件预测器（extended-range conditional predictors）描述混合嵌入的残余关联。\n- **修正蒙特卡洛**：从 QPU 样本学习归一化自回归模型（normalized autoregressive models），作为提议分布，配合精确 Metropolis–Hastings 与 multiple-try 修正，在更大周期格子上采样。\n- **更新策略**：块更新（block updates）与互补的直接 QPU 更新，考察块大小与拟合温度修正对接受率和自旋运动的影响。\n\n## 主要结果\n1. **嵌入方式影响分布**：即使匹配平均能量，单比特表示、均匀两比特链与混合链长嵌入在磁化和关联函数上仍有差异；单比特表示与短均匀链表现更优。\n2. **温度平移不足以解释差异**：独立标定与退火扫描表明，仅靠温度偏移不能使分布一致，说明硬件采样保真度问题不只是有效温度问题。\n3. **自回归提议 + 精确修正可行**：从 QPU 样本学习的归一化自回归模型可提供提议分布，配合 MH 与 multiple-try 修正后严格保持目标分布；但仅用块更新时临界磁化弛豫缓慢。\n4. **直接 QPU 更新的行为**：块大小与拟合温度修正显著影响接受率和自旋运动，揭示了硬件更新与经典修正之间的互补关系。\n5. **实践建议**：优先采用单比特表示与短均匀链，并将硬件采样保真度与修正蒙特卡洛的收敛性分开评估。\n\n## 为什么值得关注\n- 对**量子退火作为采样器**的可靠性给出了定量、可控的基准（Ising 格子模型），明确了嵌入选择对物理观测量（磁化、关联）的系统性影响，这对任何想把退火器用于统计物理或场论采样的工作都是基础性参考。\n- 提出并验证了**QPU 样本 → 自回归提议 → 精确 MH 修正**的流程，保证了目标分布的精确性，为“硬件采样不完美但经典修正可补救”的混合范式提供了可操作模板。\n- 对 lattice/QCD 社区而言，虽然本文用的是 Ising 模型而非规范场，但其方法论（嵌入保真度评估、提议分布学习、精确修正、收敛性分离）可直接迁移到更复杂的格点场论采样问题，尤其是当前量子硬件噪声大、有效温度难以标定的现实背景下。\n- 强调了**采样保真度与 MCMC 收敛性是两件事**，这一区分对评估量子辅助采样方案的实际价值很重要。\n\n## 方向标签\n- Quantum simulation\n- Machine Learning\n- Statistical field theory / Ising model\n- Quantum annealing (hardware sampling)\n- Monte Carlo algorithms\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文问题清晰、方法扎实（精确修正保证正确性）、结论对量子退火采样与混合量子-经典 MCMC 有直接指导意义，且方法论可迁移到格点场论采样。扣一星是因为模型限于经典 Ising、系统规模（36×36）与硬件特定性较强，尚未直接涉及规范场或费米子等 QCD 相关复杂性；对专注 QCD 的读者属于“方法借鉴”而非“直接结果”。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:45.743304"
+  },
+  {
+    "id": "2611.17800v1",
+    "title": "Emerging understanding of the rare kaon decay $K^+\\toπ^+\\ell^+\\ell^-$ from lattice QCD",
+    "authors": [
+      "Zhao-Long Zhang",
+      "Xu Feng",
+      "Lu-Chang Jin",
+      "Bo-Lin Li",
+      "Chuan Liu",
+      "Christopher T. Sachrajda"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.17800v1",
+    "published": "2026-11-13T06:26:40Z",
+    "abstract": "Rare kaon decays provide sensitive probes of the Standard Model and potential new physics. For $K^+\\toπ^+\\ell^+\\ell^-$, the experimental decay rate determines only the squared vector form factor $|V(z)|^2$, leaving its sign undetermined. Previous lattice QCD calculations have either used unphysical pion masses or suffered from uncertainties too large to resolve this sign. Here we present a first-principles calculation using two domain-wall fermion ensembles with near-physical pion masses. We develop a computational strategy that establishes the ultraviolet finiteness and continuum equivalence of local and conserved vector currents, substantially simplifying the calculation of nonlocal matrix elements. Four independent subtraction schemes provide nontrivial consistency checks, while the one-end trick reduces noise from quark-self-loop contributions. We determine $V(z)$ at six spacelike and timelike momentum transfers. Fits consistently yield $V(0)<0$, with a statistical significance of $5.8σ$--$7.9σ$ at $M_{η_c}=1.1,\\mathrm{GeV}$. After extrapolation to the physical charm-quark mass, the negative sign persists across all fit forms, with a significance of $2.0σ$--$3.4σ$. Our results provide direct first-principles evidence favoring the negative-sign solution and establish a framework for more precise lattice QCD determinations.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文利用近物理π介子质量的两组域壁费米子系综，首次从第一性原理格点QCD计算中确定稀有衰变 $K^+\\to\\pi^+\\ell^+\\ell^-$ 的矢量形状因子 $V(z)$ 在 $z=0$ 处为负号，统计显著性在物理粲夸克质量外推后仍达 $2.0\\sigma$–$3.4\\sigma$，为实验上无法确定的符号问题提供了格点判据。\n\n## 研究问题\n\n$K^+\\to\\pi^+\\ell^+\\ell^-$ 的实验衰变率只给出矢量形状因子模方 $|V(z)|^2$，无法确定其符号。符号本身对检验标准模型和约束新物理（尤其是与 $K\\to\\pi\\nu\\bar\\nu$ 等过程的联合分析）有重要意义。此前格点计算要么使用非物理的π介子质量，要么误差过大无法分辨符号。作者要解决的核心问题是：**从第一性原理格点QCD出发，以可控的系统误差确定 $V(z)$ 的符号**，并建立一套可推广到更高精度的计算框架。\n\n## 方法\n\n- **费米子离散化**：两组 domain-wall fermion 系综，π介子质量接近物理值。\n- **形状因子计算**：在六个动量转移点（类空与类时）上确定 $V(z)$，涉及非局域矩阵元的计算。\n- **流的选择与重整化**：发展了一套计算策略，证明局域矢量流与守恒矢量流在紫外有限性和连续极限等价性上的性质，从而**大幅简化非局域矩阵元的计算**。\n- **减除方案**：采用四种独立的减除方案（subtraction schemes）做非平庸的一致性检验。\n- **噪声压低**：使用 one-end trick 降低夸克自环贡献的噪声。\n- **拟合与外推**：在 $M_{\\eta_c}=1.1$ GeV 处拟合得到 $V(0)<0$，显著性 $5.8\\sigma$–$7.9\\sigma$；再外推到物理粲夸克质量，检验多种拟合形式下符号的稳健性。\n\n## 主要结果\n\n1. 在 $M_{\\eta_c}=1.1$ GeV 处，所有拟合一致给出 $V(0)<0$，统计显著性为 $5.8\\sigma$–$7.9\\sigma$。\n2. 外推到物理粲夸克质量后，负号在所有拟合形式下持续存在，显著性为 $2.0\\sigma$–$3.4\\sigma$。\n3. 四种独立减除方案给出一致结果，构成非平庸的系统检验。\n4. 所发展的局域/守恒流等价性论证与 one-end trick 显著简化了非局域矩阵元计算并压低噪声，为后续更高精度计算奠定框架。\n\n## 为什么值得关注\n\n- **直接回应实验无法回答的问题**：$K^+\\to\\pi^+\\ell^+\\ell^-$ 的符号是实验衰变率本身无法提供的物理信息，格点给出第一性原理判据，对解释实验和联合分析稀有K衰变至关重要。\n- **方法学贡献**：局域与守恒矢量流的紫外有限性与连续等价性论证、四种减除方案的一致性检验、one-end trick 的应用，都是可复用的技术，能推广到其他非局域矩阵元（如 $K\\to\\pi\\pi$、$B\\to K$ 等）的计算。\n- **对BSM约束的意义**：符号确定后，可与 $K\\to\\pi\\nu\\bar\\nu$ 等过程联合约束新物理参数空间，提升稀有K衰变作为标准模型检验工具的灵敏度。\n- **格点QCD精度前沿**：展示了在近物理π介子质量下处理非局域矩阵元并控制系统误差的可行性，是稀有衰变格点计算走向精确化的标志性一步。\n\n## 方向标签\n\n- Lattice QCD\n- Rare kaon decays\n- BSM\n- Form factors\n- Domain-wall fermions\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：这是一篇方法上有实质创新、物理问题明确且结果具有直接现象学意义的格点QCD论文。符号问题的第一性原理判定对稀有K衰变社区有较高价值，且所发展的技术框架可推广。扣一星是因为外推到物理粲夸克质量后显著性降至 $2.0\\sigma$–$3.4\\sigma$，尚未达到“确证”级别，且目前仅两组系综，系统误差（如连续极限、体积效应）仍需后续工作检验。对从事格点稀有衰变、非局域矩阵元或BSM唯象的研究者，属于必读；对一般理论物理读者，可作为了解格点方法前沿的参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-16T07:02:54.029442"
   }
 ]
