@@ -9151,5 +9151,62 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-17T08:21:15.576458"
+  },
+  {
+    "id": "2611.22791v1",
+    "title": "Quantum phase transition and superselection sectors in two-color one-flavor matrix QCD at weak coupling",
+    "authors": [
+      "Nirmalendu Acharyya",
+      "Arkajyoti Bandyopadhyay",
+      "Parthsarathi Kondapure",
+      "Sachindeo Vaidya"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.22791v1",
+    "published": "2026-11-17T13:54:31Z",
+    "abstract": "We numerically investigate the weak-coupling (small $g$) regime of the matrix model of $SU(2)$ gauge theory coupled to one flavor of massless fundamental quarks. The theory possesses a global Pauli-Gürsey $SU(2)_B$ symmetry, which organizes physical states of spin $J$ into sectors labelled by its representation $B$. We find localization-delocalization quantum phase transitions (QPTs) in multiple $(B,J)$ sectors at sector-dependent critical couplings $g_\\ast^{BJ}$. Direct evaluation of the localization probability reveals that the ground states are predominantly localized near $A_i=0$ for $g<g_\\ast^{BJ}$, but become almost entirely expelled from this region for $g>g_*^{BJ}$. The QPTs in different sectors exhibit distinct features, and we establish that quark-glue interactions are essential for these transitions. The transitions are singular: the ground state expectation value of $\\text{Tr}(A_iA_i)$ remains finite for $g< g_\\ast^{BJ}$, whereas it diverges as $g$ approaches $g_\\ast^{BJ}$ from above. We show that the two limiting ground states on either side of $g_\\ast^{BJ}$ belong to distinct superselection sectors. Furthermore, as $g$ approaches $g_\\ast^{BJ}$ from above, the ground state localizes on a submanifold (of codimension 2) of the gauge configuration space, with the spin and color of its glue components becoming locked.",
+    "summary": {
+      "raw": "## 一句话结论\n在弱耦合区，双色单味矩阵 QCD 的基态在多个（B,J）超选择扇区中发生局域-离域量子相变，临界耦合依赖于扇区，且相变两侧的基态属于不同的超选择扇区。\n\n## 研究问题\n作者想解决什么问题？\n- 在弱耦合（小 g）区域，SU(2) 规范场耦合一个无质量基本夸克的矩阵模型中，基态随耦合如何演化？\n- Pauli-Gürsey SU(2)_B 全局对称性如何组织物理态，不同自旋 J 与表示 B 的扇区是否表现出不同的相变行为？\n- 夸克-胶子相互作用在相变中扮演什么角色？相变是否奇异，两侧基态是否属于不同超选择扇区？\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 模型：双色（SU(2)）规范理论耦合一个无质量基本夸克的矩阵模型（matrix QCD），在弱耦合小 g 区域进行数值研究。\n- 对称性分析：利用全局 Pauli-Gürsey SU(2)_B 对称性，将物理态按表示 B 与自旋 J 分扇区研究。\n- 数值技术：直接计算局域化概率（localization probability），通过数值方法确定各 (B,J) 扇区的临界耦合 g_*^{BJ}；计算基态期望值 Tr(A_iA_i) 以刻画相变的奇异性。\n- 观测量：局域化概率、Tr(A_iA_i) 的期望值、基态在规范构型空间中的局域化行为（包括在余维 2 子流形上的局域化）。\n\n## 主要结果\n总结最重要发现。\n- 在多个 (B,J) 扇区中观察到局域-离域量子相变，临界耦合 g_*^{BJ} 依赖于扇区。\n- 当 g < g_*^{BJ} 时，基态主要局域在 A_i = 0 附近；当 g > g_*^{BJ} 时，基态几乎完全被排斥出该区域。\n- 不同扇区的相变具有不同特征；夸克-胶子相互作用对相变至关重要。\n- 相变是奇异的：Tr(A_iA_i) 的基态期望值在 g < g_*^{BJ} 时保持有限，而从上方趋近 g_*^{BJ} 时发散。\n- 相变两侧的两个极限基态属于不同的超选择扇区。\n- 从上方趋近临界点时，基态局域在规范构型空间的余维 2 子流形上，其胶子分量的自旋与颜色发生锁定。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 揭示了弱耦合矩阵 QCD 中由全局对称性扇区结构控制的量子相变，为理解规范理论中基态局域化与超选择扇区的关系提供了新视角。\n- 奇异相变与 Tr(A_iA_i) 的发散行为对理解规范场构型空间中的非微扰现象具有重要意义。\n- 自旋-颜色锁定与余维 2 子流形局域化可能为研究禁闭、手征对称性破缺等 QCD 非微扰现象提供新的理论工具。\n- 对量子模拟和格点场论中研究规范理论相结构、超选择扇区有潜在启发。\n\n## 方向标签\n- Lattice QCD\n- 理论物理（规范理论相变）\n- 量子模拟（潜在相关）\n\n## 阅读优先级\n★★★☆☆（3/5）\n- 理由：论文聚焦于矩阵模型的弱耦合相变与超选择扇区，主题新颖且与规范理论非微扰现象相关，但模型较简化（双色单味矩阵模型），与真实 QCD 的格点模拟距离较远；对专门研究规范理论相结构、超选择扇区或矩阵模型的读者价值较高，对一般格点 QCD 数值模拟读者的直接相关性中等。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-18T07:49:27.204993"
+  },
+  {
+    "id": "2611.21860v1",
+    "title": "Anomaly inflow for simplicial Kähler fermions",
+    "authors": [
+      "Simon Catterall"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.21860v1",
+    "published": "2026-11-16T20:23:25Z",
+    "abstract": "We study massive Kähler Dirac fermions propagating on finite triangulations of various three dimensional manifolds with one or more boundaries. To probe the anomaly structure of these models we decompose the Kähler field into two reduced Kähler fields and choose boundary conditions that ensure that any edge modes are necessarily massless. We then show how to factorize the Pfaffian of this system into a product of bulk and boundary sectors each of which can separately pick up a phase under a global $Z_4$ transformation of the fermions that simultaneously changes the sign of the mass. These phases are topological, depending only on the index of the lattice Kähler operator in that sector. For the boundary sector a non-trivial phase signals the presence of a 't Hooft anomaly. We study cases where the boundary is anomalous but an inflow from the bulk cancels its phase. Canceling this anomaly for a non-orientable boundary in the absence of the bulk recovers the known classification of topological superconductors. We also give a continuum interpretation of these results in terms of inflow from a gravitational Chern Simons theory which is induced by integrating out massive bulk Kähler Dirac fermions. In the presence of a boundary the latter gives rise to Wen-Zee terms that mediate the anomaly inflow mechanism.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文在有限三角剖分的三维流形上研究有质量 Kähler（simplicial）Dirac 费米子，通过将 Pfaffian 分解为体态与边界态两个扇区，证明了边界 't Hooft 反常可由体态反常流入抵消，并在连续极限下将其解释为引力 Chern–Simons 理论诱导的 Wen–Zee 项所介导的反常流入机制。\n\n## 研究问题\n作者想解决的核心问题是：在格点（单纯剖分）框架下，有质量 Kähler 费米子的全局 \\(Z_4\\) 变换（同时改变质量符号）会在 Pfaffian 上产生相位，这些相位是拓扑的、只依赖于格点 Kähler 算符的指标。作者希望厘清：\n1. 这些相位如何在体态（bulk）与边界（boundary）扇区之间分配；\n2. 边界扇区的非平凡相位是否对应 't Hooft 反常，以及体态反常流入能否将其抵消；\n3. 在无体态时，对不可定向边界消除该反常是否能重现拓扑超导体的已知分类；\n4. 如何在连续极限下用引力 Chern–Simons / Wen–Zee 项理解这一反常流入机制。\n\n## 方法\n- **格点模型**：在三维流形的有限三角剖分上定义有质量 Kähler Dirac 费米子（simplicial Kähler fermion），流形可带一个或多个边界。\n- **场分解**：将 Kähler 场分解为两个约化 Kähler 场，并选取边界条件使边缘模式必然无质量。\n- **Pfaffian 分解**：把该系统的 Pfaffian 因式分解为体态与边界两个扇区的乘积，分别考察其在全局 \\(Z_4\\) 变换下的相位。\n- **拓扑指标**：用格点 Kähler 算符在各扇区的指标（index）刻画相位的拓扑性质。\n- **连续解释**：通过积分掉有质量体态 Kähler Dirac 费米子，导出引力 Chern–Simons 理论，并在有边界时得到 Wen–Zee 项，用以解释反常流入。\n- 属于解析/拓扑论证为主的工作，未见大规模数值模拟。\n\n## 主要结果\n1. Pfaffian 可分解为体态与边界扇区之积，每个扇区在 \\(Z_4\\) 变换下可各自获得相位，且相位是拓扑的，仅依赖相应扇区中格点 Kähler 算符的指标。\n2. 边界扇区的非平凡相位标志着 't Hooft 反常的存在。\n3. 研究了边界反常但体态流入将其相位抵消的情形，即反常流入机制在格点上的实现。\n4. 在无体态情况下，对不可定向边界消除该反常，重现了拓扑超导体的已知分类。\n5. 给出连续极限解释：有质量体态 Kähler Dirac 费米子积分后诱导引力 Chern–Simons 理论，有边界时产生 Wen–Zee 项，正是这些项介导了反常流入。\n\n## 为什么值得关注\n- 它把**格点费米子指标理论**与**反常流入/'t Hooft 反常**这两个重要主题在单纯剖分框架下联系起来，为格点上定义和探测反常提供了可操作的方案。\n- 对**拓扑超导体分类**的格点重现，说明该框架能捕捉对称性保护拓扑相的关键拓扑不变量。\n- 引力 Chern–Simons / Wen–Zee 的连续解释把格点结果与凝聚态（分数量子霍尔、拓扑序）及高能理论中的反常流入语言对接，有助于理解格点上如何实现引力反常。\n- 对 lattice/QCD 社区而言，Kähler fermion 的指标与 Pfaffian 相位分析对处理手征费米子、符号问题与拓扑扇区有方法学参考价值。\n\n## 方向标签\n- Lattice field theory（格点场论）\n- Chiral fermions / Anomaly（手征费米子与反常）\n- Topological phases（拓扑相 / 拓扑超导体）\n- Lattice gravity / Chern–Simons（格点引力与 Chern–Simons 有效理论）\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：选题聚焦、逻辑清晰，把格点指标、Pfaffian 相位与反常流入串成完整论证链，并与拓扑超导体分类和连续 Chern–Simons 解释对接，理论价值高。扣一星是因为它偏解析/拓扑构造，缺少数值验证，且 Kähler fermion 框架相对小众，直接应用于主流格点 QCD 的路径不如 Domain-wall/Overlap 方案直接；但对关心格点反常与拓扑相的读者优先级很高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-18T07:49:35.104243"
+  },
+  {
+    "id": "2611.21743v1",
+    "title": "Center anomalies without twists: torsion, exact degeneracies, and condensates",
+    "authors": [
+      "Mohamed M. Anber"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.21743v1",
+    "published": "2026-11-16T19:00:10Z",
+    "abstract": "Mixed center anomalies are usually exposed by 't Hooft's twisted boundary conditions in a Hamiltonian formalism. On $\\mathbb {RP}^3$, torsion makes the twist unnecessary: a center operator on the untwisted $SU(2)$ Hilbert space anticommutes with time reversal in Yang-Mills theory at $θ=π$ and with the chiral symmetry of super Yang-Mills theory, so every level is at least doubly degenerate. The relevant semiclassical object is the BPST instanton, which descends to a charge-$\\tfrac12$ saddle on the orbifold $\\mathbb R^4/\\mathbb Z_2$. We complete it in two ways: applying a conformal transformation maps the orbifold to $\\mathbb R\\times\\mathbb {RP}^3$, with the saddle describing the tunneling event between the two center sectors; by resolving the orbifold singularity, we obtain the Eguchi-Hanson space, which gives the gaugino condensate at its weak-coupling value.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文指出，在 \\(\\mathbb{RP}^3\\) 上由于挠率（torsion）的存在，混合中心反常无需引入 't Hooft 扭曲边界条件即可显现：未扭曲 \\(SU(2)\\) Hilbert 空间上的中心算符与时间反演（\\(\\theta=\\pi\\) Yang–Mills）或手征对称性（超 Yang–Mills）反交换，导致每个能级至少二重简并；相应的半经典对象是 BPST 瞬子降落到 orbifold \\(\\mathbb{R}^4/\\mathbb{Z}_2\\) 上的电荷-\\(\\tfrac12\\) 鞍点，作者通过共形变换和奇点消解（Eguchi–Hanson 空间）两种方式完成其物理诠释。\n\n## 研究问题\n\n作者想解决的问题是：**混合中心反常通常需要借助 't Hooft 扭曲边界条件才能在 Hamiltonian 框架中暴露出来，能否在无扭曲的设定下直接看到中心反常的物理后果？** 具体而言：\n\n1. 在 \\(\\mathbb{RP}^3\\) 这样的非平凡拓扑空间上，挠率是否可以替代扭曲边界条件，使中心对称性反常以算符反交换的形式直接显现？\n2. 这种反常导致的精确简并（exact degeneracy）在 \\(\\theta=\\pi\\) Yang–Mills 和超 Yang–Mills 中如何体现？\n3. 对应的半经典鞍点（BPST 瞬子在 orbifold 上的降级）如何描述中心扇区之间的隧穿，以及如何与 gaugino 凝聚（gaugino condensate）的弱耦合值联系起来？\n\n## 方法\n\n需要说明：**这篇论文不是格点论文**，它使用的是解析/半经典方法，而非 lattice 数值技术。具体方法包括：\n\n- **Hamiltonian 形式下的算符分析**：在未扭曲的 \\(SU(2)\\) Hilbert 空间上构造中心算符，分析其与时间反演、手征对称性的反交换关系。\n- **拓扑与挠率分析**：利用 \\(\\mathbb{RP}^3 = S^3/\\mathbb{Z}_2\\) 的拓扑结构，说明挠率如何使扭曲变得不必要。\n- **半经典瞬子计算**：将 BPST 瞬子映射到 orbifold \\(\\mathbb{R}^4/\\mathbb{Z}_2\\)，得到电荷-\\(\\tfrac12\\) 鞍点。\n- **共形变换**：将 orbifold 映射到 \\(\\mathbb{R}\\times\\mathbb{RP}^3\\)，把鞍点解释为两个中心扇区之间的隧穿事件。\n- **奇点消解**：通过消解 orbifold 奇点得到 Eguchi–Hanson 空间，计算 gaugino 凝聚的弱耦合值。\n\n## 主要结果\n\n1. **无扭曲的中心反常**：在 \\(\\mathbb{RP}^3\\) 上，挠率使得 't Hooft 扭曲不再必要；未扭曲 \\(SU(2)\\) Hilbert 空间上的中心算符与时间反演（\\(\\theta=\\pi\\) Yang–Mills）反交换，与超 Yang–Mills 的手征对称性反交换。\n2. **精确简并**：上述反交换关系意味着每个能级至少二重简并（every level is at least doubly degenerate）。\n3. **半经典鞍点**：BPST 瞬子降落到 \\(\\mathbb{R}^4/\\mathbb{Z}_2\\) 上成为电荷-\\(\\tfrac12\\) 的鞍点。\n4. **两种完成方式**：\n   - 共形变换将 orbifold 映到 \\(\\mathbb{R}\\times\\mathbb{RP}^3\\)，鞍点描述两个中心扇区之间的隧穿；\n   - 消解奇点得到 Eguchi–Hanson 空间，给出 gaugino 凝聚的弱耦合值。\n\n## 为什么值得关注\n\n- **对中心反常的理解**：传统上中心反常依赖 't Hooft 扭曲边界条件，本文表明在特定拓扑空间（\\(\\mathbb{RP}^3\\)）上挠率可以替代扭曲，深化了对反常–拓扑–边界条件三者关系的理解。\n- **精确简并的物理后果**：\\(\\theta=\\pi\\) Yang–Mills 和超 Yang–Mills 中的精确二重简并对谱结构、真空结构和禁闭机制有直接含义。\n- **瞬子/鞍点与凝聚**：电荷-\\(\\tfrac12\\) 鞍点与 Eguchi–Hanson 空间上的 gaugino 凝聚计算，连接了半经典图像与非微扰凝聚现象，对理解超对称规范理论的非微扰真空有重要意义。\n- **对格点社区的间接价值**：虽然本文是解析工作，但其关于扭曲边界条件、中心扇区、拓扑荷与简并的结论，对格点模拟中如何设置边界条件、如何解释有限体积谱简并、以及 \\(\\theta=\\pi\\) 附近的格点研究有概念性指导意义。\n\n## 方向标签\n\n- 理论物理（中心反常 / 拓扑）\n- 超对称规范理论\n- 瞬子与半经典方法\n- \\(\\theta=\\pi\\) Yang–Mills\n- 边界条件与拓扑（'t Hooft 扭曲）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：这是一篇概念性强、解析性为主的论文，对理解中心反常、扭曲边界条件与拓扑空间的相互关系很有价值，尤其适合对 \\(\\theta=\\pi\\)、超对称规范理论和瞬子半经典方法感兴趣的研究者。但它**不是格点数值工作**，不涉及 lattice 算法、数值模拟或格点 QCD 的具体计算，因此对以格点数值为核心的读者优先级中等。若你的研究涉及 't Hooft 扭曲、中心对称性、有限体积谱简并或 \\(\\theta=\\pi\\) 的格点研究，则值得优先阅读（可提升至 4 星）；若主要关注格点 QCD 现象学或算法开发，则优先级较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-18T07:49:44.379399"
   }
 ]
