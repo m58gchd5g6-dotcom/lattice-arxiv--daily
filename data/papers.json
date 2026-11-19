@@ -9208,5 +9208,194 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-18T07:49:44.379399"
+  },
+  {
+    "id": "2611.24658v1",
+    "title": "Light fermions can trigger a Brout-Englert-Higgs effect",
+    "authors": [
+      "Axel Maas",
+      "Sofie Martins",
+      "Georg Wieland"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.24658v1",
+    "published": "2026-11-18T15:57:38Z",
+    "abstract": "The Brout-Englert-Higgs effect produces the masses of the Standard Model particles. However, the cause of this effect is unknown. Beyond-the-Standard-Model theories aim to find the source of this effect, for example using a composite Higgs and dynamically generating its vacuum expectation value. In this paper, we show evidence from lattice simulations with vectorially coupled fermions and without Yukawa couplings that the Brout-Englert-Higgs effect could be triggered by the light masses of fermions. This suggests that an explanation entirely within the Standard Model could be possible. Moreover, our results are consistent with weak couplings and fermions can only impact the Higgs potential at NNLO. This implies a so far unidentified mechanism in an SU(2) scalar-fermion-gauge system that produces a non-zero vacuum expectation value. In addition, we find that the transition from a QCD-like behavior to a Higgs-like behavior happens when the fermion mass falls below twice the W/Z mass: a threshold that is integer valued but not connected to other critical physical behavior.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过格点模拟发现，在无 Yukawa 耦合的矢量耦合费米子-标量-规范系统中，轻费米子质量（低于 2m_W）可以触发 Brout-Englert-Higgs 效应，暗示标准模型内部可能存在一种尚未识别的机制来动态产生 Higgs 真空期望值。\n\n## 研究问题\n作者想解决的核心问题是：Brout-Englert-Higgs (BEH) 效应的起源是什么？标准模型中 Higgs 机制产生粒子质量，但其触发原因未知。BSM 理论通常引入复合 Higgs 或动力学对称破缺来解释，但本文探索一个更激进的可能性——BEH 效应是否可能完全由标准模型内部的轻费米子质量触发，而无需引入新物理或 Yukawa 耦合。\n\n## 方法\n- **格点场论模拟**：在格点上研究 SU(2) 标量-费米子-规范系统。\n- **模型设定**：矢量耦合费米子（vectorially coupled fermions），无 Yukawa 耦合。\n- **数值技术**：通过格点模拟扫描费米子质量参数，观察系统从 QCD-like 行为到 Higgs-like 行为的转变。\n- **关键观测量**：监测 Higgs 势、真空期望值 (VEV) 以及相变行为随费米子质量的变化。\n\n## 主要结果\n1. **轻费米子触发 BEH 效应**：在无 Yukawa 耦合的情况下，当费米子质量足够轻时，系统自发产生非零 Higgs 真空期望值，表现出 BEH 效应。\n2. **转变阈值**：从 QCD-like 到 Higgs-like 行为的转变发生在费米子质量降至 **2m_W（两倍 W/Z 质量）以下**时。该阈值是整数值但与其它临界物理行为无关联。\n3. **弱耦合一致性**：结果与弱耦合情形一致，费米子仅在 NNLO 层次影响 Higgs 势，意味着存在一个此前未识别的 SU(2) 标量-费米子-规范系统中的机制产生非零 VEV。\n4. **标准模型内部解释的可能性**：暗示 BEH 效应可能完全在标准模型框架内得到解释，无需 BSM 物理。\n\n## 为什么值得关注\n- **对 Higgs 机制起源的重新审视**：如果 BEH 效应可由标准模型内部的轻费米子触发，将挑战传统认为需要 BSM 物理来解释 Higgs 机制起源的观点。\n- **格点场论方法的重要性**：展示了格点模拟在探索非微扰动力学机制中的独特能力，尤其是在弱耦合 NNLO 效应难以解析捕捉的情形。\n- **对 QCD-like 与 Higgs-like 行为转变的理解**：揭示了费米子质量阈值（2m_W）作为相变边界的角色，为理解规范-标量-费米子系统的相结构提供新视角。\n- **潜在的理论物理影响**：可能启发对标准模型自洽性和 Higgs 势生成机制的新理论框架。\n\n## 方向标签\n- Lattice Field Theory\n- BSM\n- Higgs Physics\n- Non-perturbative Dynamics\n- Electroweak Symmetry Breaking\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文提出了一个具有潜在重要理论意义的问题——BEH 效应是否可在标准模型内部由轻费米子触发，并用格点模拟提供了初步证据。方法扎实、结果清晰，且阈值 2m_W 的发现具有启发性。扣一星是因为结果尚属初步证据（evidence），需要更多独立验证和更大规模模拟来确认；此外，NNLO 弱耦合下的机制细节仍需进一步理论澄清。对 lattice 和 Higgs/BSM 社区具有较高参考价值。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:04.564099"
+  },
+  {
+    "id": "2611.24572v1",
+    "title": "Radii of Sn Isotopes near the Proton Dripline from Nuclear Lattice Effective Field Theory",
+    "authors": [
+      "Fabian Hildenbrand",
+      "Serdar Elhatisari",
+      "Ulf-G. Meißner"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.24572v1",
+    "published": "2026-11-18T15:05:57Z",
+    "abstract": "We present the first $\\textit{ab initio}$ lattice calculations of charge and matter radii of tin isotopes $^{96}$Sn, $^{98}$Sn, $^{100}$Sn, $^{102}$Sn and $^{104}$Sn near the proton dripline using nuclear lattice effective field theory with high-fidelity two- and three-nucleon forces combined with the partial-pinhole algorithm. The resulting radii are larger then predicted from other ab-initio methods. We find that variations of the three-nucleon interaction reveal substantial radius differences even among interactions with similar binding energies. We intensively discuss of the role of different choices of the three-body forces.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次用核格点有效场论（NLEFT）结合部分针孔算法，对质子滴线附近的锡同位素（⁹⁶Sn–¹⁰⁴Sn）进行了从头算的电荷半径与物质半径计算，发现所得半径系统性地大于其他从头算方法的预言，且三核子力的不同选择会显著改变半径。\n\n## 研究问题\n作者想解决两个层面的问题：（1）能否用 NLEFT 这一从头算格点方法可靠地计算中重核（锡同位素）的电荷半径与物质半径，特别是靠近质子滴线的奇异核；（2）三核子力（3NF）的具体形式对半径预言有多敏感——即在结合能相近的不同 3NF 之间，半径是否仍存在实质性差异。这关系到从头算核结构预言的可信度与不确定性量化。\n\n## 方法\n- **框架**：Nuclear Lattice Effective Field Theory（NLEFT），即格点上的手征有效场论，配合高保真两核子力与三核子力。\n- **算法**：Partial-Pinhole Algorithm（部分针孔算法），用于从格点蒙特卡罗中提取核的密度分布与半径，缓解符号问题并提高对空间波函数的采样效率。\n- **对象**：⁹⁶Sn、⁹⁸Sn、¹⁰⁰Sn、¹⁰²Sn、¹⁰⁴Sn 五个锡同位素。\n- **系统研究**：系统比较多种三体力选择，分析其对结合能与半径的影响。\n\n## 主要结果\n1. 首次给出这些锡同位素的 NLEFT 从头算电荷半径与物质半径。\n2. 所得半径**大于**其他从头算方法（如介质相似重整化群、耦合簇等）的预言。\n3. 关键发现：即使不同三核子力给出**相近的结合能**，其半径预言仍可出现**显著差异**——说明半径对 3NF 细节高度敏感，结合能不足以约束半径。\n4. 论文对三体力不同选择的角色进行了深入讨论，实质上指出了当前从头算半径预言中存在由 3NF 带来的系统性不确定性。\n\n## 为什么值得关注\n- **方法学意义**：展示了 NLEFT + 部分针孔算法能够处理中重核（A≈100）的半径这类空间分布量，而不仅是能谱，扩展了格点核物理的可观测量范围。\n- **不确定性量化**：揭示“结合能简并但半径分歧”这一现象，对从头算核理论的误差预算与预言可信度评估至关重要，提醒社区不能仅用结合能标定三体力。\n- **与实验/天体物理的关联**：质子滴线附近锡同位素的半径对理解核尺寸、滴线位置以及 r-process 核合成中的核质量/半径输入有直接意义，也可能为未来稀有同位素装置（如 FRIB）的测量提供理论对照。\n- **跨领域启示**：对格点场论社区而言，这是“格点方法处理多体空间结构量”的范例，与 Lattice QCD 中密度/半径类可观测量的提取技术在方法论上有相通之处。\n\n## 方向标签\n- Lattice field theory（Nuclear Lattice EFT）\n- Chiral effective field theory\n- Few-/many-body nuclear structure\n- Ab initio nuclear physics\n- Uncertainty quantification\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对核格点 EFT 与从头算核结构方向的研究者是高相关、必读级别的工作，方法（部分针孔算法）与结论（3NF 对半径的敏感性）都具参考价值；对更广泛的格点/QCD 社区则属于方法学上有启发但非核心的交叉阅读，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:11.566231"
+  },
+  {
+    "id": "2611.24435v1",
+    "title": "Total Angular Momentum Assignments in the Hadron Spectrum",
+    "authors": [
+      "The HADLENS Collaboration",
+      "S. Rostami",
+      "Omid Zamani Jamshidi",
+      "B. Dehghanzad",
+      "K. Azizi"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.24435v1",
+    "published": "2026-11-18T13:53:03Z",
+    "abstract": "Predicting the total angular momentum $J$ for hadronic resonances whose spins have not yet been experimentally determined constitutes an important step in the spectroscopy of observed hadrons. In the present study, we develop a data-driven model in order to predict the value of $ J $ for hadrons with unknown spins using a dataset of known mesons and baryons from the PDG, including information on their quark content, isospin, parity, mass and other spectroscopic features. In particular, we employ XGBoost classifiers along with nested optimization in order to discover spectroscopic patterns across different hadronic sectors. We also prepare a systematic list of hadrons with unknown or poorly determined values of $ J $, and study spin-parity assignments for those hadrons. Since the parity hypothesis is taken as an input to the model, our model predicts the value of $ J $ conditional on a given parity hypothesis rather than independently determining the full $J^P$ assignment. Our predictions for several theoretically studied states show good agreement with results from quark models, QCD sum rules, molecular models, and other phenomenological approaches, while predictions for some other states differ from existing theoretical assignments. These differences motivate further theoretical investigations and may be tested by future experimental measurements.",
+    "summary": {
+      "raw": "## 一句话结论\n作者用 XGBoost 分类器结合嵌套优化，从 PDG 已知介子和重子的谱学特征中学习规律，在给定宇称假设下预测自旋未定强子的总角动量 J，为实验和理论研究提供可检验的 J 指派参考。\n\n## 研究问题\n强子谱中许多共振态的自旋尚未被实验确定或确定得很差，而 J 是刻画强子态、区分不同理论模型（夸克模型、QCD 求和规则、分子态模型等）的关键量子数。作者想解决的是：能否用数据驱动的方法，从已知强子的夸克组分、同位旋、宇称、质量等谱学信息中挖掘规律，对自旋未知的强子给出 J 的预测，并系统整理这些待定态，供后续理论和实验检验。\n\n## 方法\n这是一篇纯数据驱动/机器学习的唯象分析工作，不涉及格点 QCD 数值模拟。具体做法是：\n\n- 数据集取自 PDG 的已知介子和重子，特征包括夸克内容、同位旋、宇称、质量及其他谱学特征；\n- 使用 XGBoost 分类器进行 J 的预测；\n- 采用嵌套优化（nested optimization）做超参数选择与模型评估，以发现不同强子扇区中的谱学模式；\n- 关键设定：宇称 P 作为模型输入而非输出，因此模型给出的是「在给定宇称假设下」的 J 条件预测，而不是独立确定完整的 J^P；\n- 作者还整理了一份 J 未知或确定不佳的强子清单，逐一研究其自旋-宇称指派。\n\n## 主要结果\n- 建立了一个可用的数据驱动流程，在给定宇称假设下预测强子 J，并给出系统性的待定态清单；\n- 对若干已有理论研究的状态，预测结果与夸克模型、QCD 求和规则、分子态模型及其他唯象方法符合较好；\n- 对另一些状态，预测与现有理论指派不一致——这些分歧被作者视为值得进一步理论研究的线索，并可由未来实验测量检验；\n- 需要强调的局限：由于宇称是输入，模型不能独立给出完整 J^P，预测的可靠性依赖于宇称假设的正确性。\n\n## 为什么值得关注\n- 强子谱的 J^P 指派是连接实验与理论的核心环节，许多新观测态（如奇特强子候选者）的自旋未定，直接阻碍对其内部结构的判断；\n- 该工作提供了一种独立于具体理论模型的经验性交叉检验手段：当数据驱动预测与夸克模型、求和规则或分子态模型一致时增强信心，不一致时则指出需要重新审视的理论指派；\n- 对格点 QCD 社区而言，这类预测可作为格点计算（如确定特定道量子数下的能谱、识别哪些态对应哪些 J^P）的参考清单和优先级指引，也有助于实验分析中自旋-宇称分配的交叉验证；\n- 方法层面展示了机器学习在强子谱学中的实用价值，但因其不直接包含 QCD 动力学，结论应视为唯象提示而非第一性原理结果。\n\n## 方向标签\n- Machine Learning\n- Hadron Spectroscopy（唯象）\n- QCD Phenomenology\n\n## 阅读优先级\n★★★☆☆（3/5）\n\n理由：若你的兴趣在于用格点 QCD 第一性原理计算强子谱并做 J^P 指派，这篇论文不提供格点方法或数值技术，但它的待定态清单和预测可作为与格点能谱对照、选择研究目标的实用参考，值得快速浏览其表格与结论部分。若你关注机器学习在粒子物理唯象中的应用，或需要为实验/理论研究提供 J 指派的交叉检验，则相关性更高，可升至 4 星。总体而言方法新颖但结论受宇称输入假设限制，属于有价值的辅助性唯象工作，而非核心方法论文。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:19.102153"
+  },
+  {
+    "id": "2611.24374v1",
+    "title": "Interpretable uncertainties for bounds on spectral functionals from Euclidean correlators",
+    "authors": [
+      "Christoph Lehner"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.24374v1",
+    "published": "2026-11-18T13:05:21Z",
+    "abstract": "Positivity of the spectral density, combined with a $χ^2$ measure of compatibility with the data, bounds every linear functional of the spectral density of a Euclidean correlator to an interval. We show how such an interval is turned into a central value with statistical and systematic errors that have a definite meaning. We first show that, at typical precision, the best positive fit of noisy data has $χ^2_{\\min}>0$, with a probability bounded from below by the distance of the noise-free data from the boundary of the set of data of positive spectra. Numerically, it does not depend on the number of states. The threshold must therefore be set relative to $χ^2_{\\min}$. With $Δχ^2=1$, the interval reproduces Gaussian error propagation when positivity does not act, and positivity can only narrow it. We define the statistical error by the jackknife and the systematic error as the remaining, non-Gaussian part of the interval, which becomes a systematic error that does not decrease with the statistics in the high-statistics limit. Coverage tests for correlators and for smeared spectral densities and step functions give nominal coverage for outputs determined by the data and mostly conservative coverage otherwise. The exceptions are effects of the statistical error on the error estimate that disappear as the statistics is increased. Additional bounds on the spectral density, for example from perturbation theory, further reduce the systematic error substantially without loss of coverage. For long-distance correlators the method uses the same information as the bounding method, and its error agrees with that of the bounding method up to the remaining gap between the bounds.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文提出了一套把「正定性约束下的谱函数泛函区间」转化为具有明确统计/系统误差含义的中心值的方法，核心创新是用 Δχ²=1 定义区间、用 jackknife 定义统计误差、把剩余非高斯部分定义为不随统计量下降的系统误差，并证明该误差在长距离下与 bounding method 一致。\n\n## 研究问题\n\n从欧氏关联函数反演谱函数是病态问题。正定性（谱密度非负）结合数据兼容性的 χ² 度量，可以把谱密度的任意线性泛函约束到一个区间内。但实际使用中面临几个问题：\n\n1. 噪声数据的最佳正定拟合通常给出 χ²_min > 0，因此不能简单用 χ²_min + 1 作为阈值，否则区间会被系统性偏移；\n2. 这个区间如何转化为「中心值 ± 统计误差 ± 系统误差」这种物理学家习惯的报告形式，且每个误差有确定含义？\n3. 统计误差与系统误差如何分离？系统误差在高统计量极限下是否会消失（若不消失，说明它是正定性约束带来的本质不确定性）？\n4. 该误差估计的覆盖性（coverage）是否可靠？与已有的 bounding method 是什么关系？\n\n## 方法\n\n- **框架**：基于谱密度正定性与 χ² 兼容性构造谱函数线性泛函的可行区间（类似 Hansen-Lupo-Tantalo 及 bounding method 的思路）。\n- **阈值设定**：论证在典型精度下 χ²_min > 0 且其下界由无噪声数据到正谱数据集合边界的距离决定，数值上不依赖态数；因此阈值应取相对于 χ²_min 的 Δχ²=1，而非绝对 χ²。\n- **误差分解**：统计误差用 jackknife 估计；系统误差定义为区间中剩余的非高斯部分，即正定性导致的、在高统计量极限下不消失的展宽。\n- **覆盖性检验**：对关联函数、涂抹谱密度（smeared spectral densities）和阶跃函数做 coverage tests。\n- **附加约束**：引入微扰论等额外谱密度上界，检验其对系统误差和覆盖性的影响。\n- **与 bounding method 对比**：分析长距离关联函数情形下两者信息使用与误差的一致性。\n\n## 主要结果\n\n1. **χ²_min > 0 是常态**：在典型精度下最佳正定拟合的 χ²_min 大于零，其概率下界由无噪声数据到正谱数据集合边界的距离给出，且数值上不依赖态数。因此阈值必须相对于 χ²_min 设定。\n2. **Δχ²=1 的合理性**：当正定性不起作用时，该区间退化为高斯误差传播；正定性只会使区间变窄，不会人为展宽。\n3. **误差分离**：统计误差由 jackknife 给出；系统误差是区间剩余的非高斯部分，在高统计量极限下不随统计量下降——这是正定性约束的本质不确定性。\n4. **覆盖性**：对由数据决定的输出给出名义覆盖（nominal coverage），其余情形多为保守覆盖；例外是统计误差对误差估计本身的影响，随统计量增加而消失。\n5. **附加约束有效**：来自微扰论等的额外谱密度界可显著减小系统误差而不损失覆盖性。\n6. **与 bounding method 的关系**：长距离关联函数下方法使用与 bounding method 相同的信息，误差在剩余区间间隙范围内一致。\n\n## 为什么值得关注\n\n- **可解释的误差报告**：lattice 社区长期需要从关联函数提取谱信息（如谱函数、输运系数、衰变常数相关泛函），但正定性约束带来的误差往往难以用「统计/系统」二分法清晰报告。本文给出了有确定统计含义的方案。\n- **系统误差不消失的物理意义**：明确指出正定性导致的系统误差在高统计量下不消失，提醒社区不能靠增加统计量消除这类不确定性，必须靠额外物理输入（如微扰论界）来压缩。\n- **与 bounding method 的统一**：把广泛使用的 bounding method 纳入同一误差语言，便于比较和组合不同方法的结果。\n- **覆盖性检验的严谨性**：为这类区间方法的可靠性提供了统计验证框架，对将来用于谱函数重建、输运系数提取等工作有直接参考价值。\n\n## 方向标签\n\n- Lattice QCD\n- Spectral function reconstruction\n- Statistical methods / error analysis\n- Bounding method\n- Inverse problems\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：如果你从事从欧氏关联函数提取谱信息（谱函数、输运系数、矩阵元泛函）的工作，这篇论文直接关系到你如何报告误差、如何设定 χ² 阈值、以及系统误差的物理来源，属于方法论上必读且实用的一类。扣一星是因为它偏统计方法论、不涉及具体物理过程的新计算，对不做谱函数反演的人相关性较低；且部分论证（如 χ²_min 下界、覆盖性）需要一定统计背景才能完全消化。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:27.567991"
+  },
+  {
+    "id": "2611.23982v1",
+    "title": "Positivity, Noise, and Cones",
+    "authors": [
+      "Ryan Abbott",
+      "Claire X. Davis",
+      "Sarah Fields",
+      "William I. Jay",
+      "Patrick Oare",
+      "Matteo Saccardi"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.23982v1",
+    "published": "2026-11-18T07:24:38Z",
+    "abstract": "As a consequence of causality, Euclidean-time correlation functions in quantum field theory are subject to constraints in the form of positivity conditions on certain Hankel matrices. Such conditions define convex conic structures. Correlation functions computed numerically using Monte Carlo techniques generally contain statistical fluctuations that violate the positivity conditions. This work describes a projection procedure, based on the convex conic geometry induced by the positivity conditions and a statistical covariance matrix, that can be used to restore positivity, providing a unique decomposition for noisy correlators into causal and acausal components. In contrast to previous literature, this work explicitly leverages the conic structure and not just the convex nature of the causal space. The projection can be computed using primal-dual interior-point methods. Constrained projection gives rise to observable-specific frequentist confidence intervals for smeared spectral densities in the causal bootstrap of [Phys. Rev. D 114, 074510 (2026)]. Analytic results are supported with numerical examples.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文利用因果性所诱导的凸锥几何结构，提出了一种基于统计协方差矩阵的投影方法，将含噪声的 Monte Carlo 关联函数唯一分解为因果与反因果分量，从而恢复正定性，并由此给出涂抹谱密度的频率学派置信区间。\n\n## 研究问题\n\n作者想解决的问题是：在格点场论中，Euclidean 时间关联函数由于因果性必须满足 Hankel 矩阵的正定性约束（即这些约束定义了一个凸锥）。然而，Monte Carlo 数值计算得到的关联函数不可避免地带有统计涨落，这些涨落通常会破坏正定性条件。此前文献虽然利用了因果空间的凸性，但没有显式利用其**锥结构**。本文要解决的核心问题是：如何系统地、唯一地将含噪声的关联函数投影回因果锥内，并在此基础上构造对涂抹谱密度具有频率学派意义的置信区间。\n\n## 方法\n\n- **理论框架**：基于因果性导致的 Hankel 矩阵正定性条件，将因果关联函数空间刻画为凸锥（convex cone）。\n- **投影算法**：结合正定性条件诱导的凸锥几何与统计协方差矩阵，定义一种投影程序，将噪声关联函数唯一分解为因果分量与反因果分量。\n- **数值优化**：使用**原始-对偶内点法**（primal-dual interior-point methods）计算该约束投影。\n- **统计推断**：在因果 bootstrap 框架（参考文献 Phys. Rev. D 114, 074510 (2026)）下，利用约束投影构造涂抹谱密度的观测者特定频率学派置信区间。\n- **数值验证**：论文包含解析结果与数值示例相互印证。\n\n## 主要结果\n\n1. 提出了一个基于凸锥几何与统计协方差矩阵的投影程序，能够**唯一**地将含噪声关联函数分解为因果与反因果分量，并恢复正定性。\n2. 与以往工作不同，该方法显式利用了因果空间的**锥结构**，而不仅仅是凸性，从而获得更强的约束。\n3. 该约束投影可用于构造涂抹谱密度的**观测者特定频率学派置信区间**，扩展了因果 bootstrap 的统计推断能力。\n4. 解析结果得到数值示例的支持，验证了方法的可行性。\n\n## 为什么值得关注\n\n- **格点 QCD 关联函数分析**：Monte Carlo 数据破坏正定性是格点计算中的常见问题，该投影方法提供了一种有原则的数据修正手段，可能影响谱函数重建、矩阵元提取等分析。\n- **统计严谨性**：将凸锥几何与频率学派置信区间结合，为格点场论中的统计推断提供了更严格的框架，超越了简单的凸性约束。\n- **因果 bootstrap 的扩展**：为因果 bootstrap 方法提供了可操作的投影算法与置信区间构造，增强了该方法在实际格点数据上的适用性。\n- **方法论交叉**：凸优化（内点法）与量子场论因果性约束的结合，可能启发其他受正定性约束的物理量分析（如 Hankel 矩阵正定性在动量空间、有限温度等场景的应用）。\n\n## 方向标签\n\n- Lattice QCD\n- 统计方法与数据分析（Statistical Methods / Data Analysis）\n- 谱函数与关联函数（Spectral Functions / Correlation Functions）\n- 凸优化与因果性约束（Convex Optimization / Causality Constraints）\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：该论文针对格点场论中一个实际且普遍的问题（Monte Carlo 噪声破坏正定性）提出了有理论依据的解决方案，方法结合凸锥几何与内点法，具有较强的可操作性和统计严谨性。对从事格点 QCD 关联函数分析、谱函数重建或因果 bootstrap 的研究者具有直接参考价值。扣一星是因为其应用范围目前主要集中在关联函数后处理与统计推断层面，对更广泛的格点模拟算法本身影响有限，且数值示例的具体规模与物理场景需进一步阅读全文评估。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:34.699124"
+  },
+  {
+    "id": "2611.23586v1",
+    "title": "Topological signatures of criticality: the Ising case",
+    "authors": [
+      "Tak-Shing Chan",
+      "Paweł Dłotko",
+      "Jacek Gulgowski",
+      "Biagio Lucini",
+      "Mateusz Masłowski",
+      "Davide Vadacchino"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.23586v1",
+    "published": "2026-11-17T22:36:23Z",
+    "abstract": "Topological properties of microscopic configurations may provide additional insight into phase transitions beyond conventional thermodynamic observables. We investigate this idea in the two-dimensional Ising model on square and triangular lattices by associating cell complexes with the positive and negative spin domains and constructing an Euler-characteristic observable from their difference. We provide the expression relating this quantity to conventional observables of the Ising model. This derivation allows us to understand its expected behavior physically. As a byproduct, we show that at any finite positive temperature the expectation of the Euler characteristic exceeds a positive, lattice-size-independent bound, hence disproving a previously suggested conjecture. Monte Carlo simulations combined with multihistogram reweighting show that this spin-odd topological observable exhibits order-parameter-like behavior near the ferromagnetic transition. Finite-size scaling of its susceptibility yields pseudocritical temperatures that converge to the known critical temperature for both lattice geometries. On the square lattice, the leading-order estimate of the critical exponent obtained from the topological observable depends more strongly on the fitting range than the magnetization estimate. This behavior is consistent with stronger subleading finite-size corrections, as supported by fits including an additional correction term. On the triangular lattice, the corresponding estimate remains consistent with the theoretical Ising value. Our study suggests that topologically defined quantities such as the Euler characteristic can provide an alternative way to locate order-disorder phase transitions in the systems considered here. Since the definition of these observables is purely geometrical, they can provide useful insights in cases in which order parameters cannot be constructed.",
+    "summary": {
+      "raw": "## 一句话结论\n作者通过给二维 Ising 模型的正负自旋畴构造胞腔复形并取其 Euler 特征之差，得到一个纯几何的“自旋奇”拓扑观测量，它在铁磁相变附近表现出类序参量行为，可用于定位相变，并顺带否证了一个此前提出的关于 Euler 特征期望值下界的猜想。\n\n## 研究问题\n作者想探究：微观构型的拓扑性质能否提供超越常规热力学观测量（磁化、能量、比热等）的相变信息。具体地，他们希望在二维 Ising 模型（方格与三角格）上构造一个由正负自旋畴几何定义的拓扑量，弄清它与常规观测量的关系、它的物理预期行为，并检验它能否可靠地定位铁磁相变、提取临界指数。此外，他们还试图澄清/否证文献中关于 Euler 特征期望值在有限正温度下界的一个猜想。\n\n## 方法\n- **模型**：二维 Ising 模型，分别定义在方格点阵与三角点阵上，最近邻铁磁耦合。\n- **拓扑观测量构造**：把正自旋畴与负自旋畴分别关联为胞腔复形（cell complex），计算各自的 Euler 特征，并取两者之差作为观测量（自旋奇，spin-odd）。\n- **解析推导**：给出该 Euler 特征差与常规 Ising 观测量（如磁化、能量、畴壁/顶点/边/面计数等）之间的显式关系式，从而从物理上理解其预期行为；并证明在任意有限正温度下 Euler 特征的期望值超过一个与点阵尺寸无关的正下界，据此否证此前的猜想。\n- **数值方法**：Monte Carlo 模拟 + 多直方图重加权（multihistogram reweighting）。\n- **有限尺寸标度分析**：对拓扑观测量的磁化率（susceptibility）做有限尺寸标度，提取赝临界温度并外推到已知临界温度；拟合临界指数，并检验加入次领头修正项后的稳定性。\n\n## 主要结果\n1. **解析关系**：Euler 特征差可写成常规 Ising 观测量的组合，因而其行为可从物理上预期；它是一个自旋奇（在自旋翻转下变号）的量，类似序参量。\n2. **否证猜想**：证明在任意有限正温度下，Euler 特征的期望值大于一个与点阵尺寸无关的正下界，从而推翻此前文献中提出的相关猜想。\n3. **数值相变定位**：Monte Carlo + 多直方图重加权显示该拓扑观测量在铁磁相变附近呈类序参量行为；其磁化率的有限尺寸标度给出的赝临界温度在方格与三角格上都收敛到已知临界温度。\n4. **临界指数**：\n   - 方格上，从拓扑观测量得到的领头临界指数估计对拟合区间比对磁化估计更敏感，这与更强的次领头有限尺寸修正一致（加入额外修正项的拟合支持这一点）。\n   - 三角格上，相应估计与理论 Ising 值一致。\n5. **总体结论**：这类纯几何定义的拓扑量可作为定位有序-无序相变的替代手段，尤其在无法构造常规序参量的情形下可能有用。\n\n## 为什么值得关注\n- 对格点/统计场论社区：提供了一种**不依赖常规序参量**的相变探测手段，思路可推广到序参量难以定义的系统（如规范理论中的某些相变、拓扑序、阻挫系统）。\n- 方法学意义：把微观构型的**拓扑/几何不变量**（Euler 特征、胞腔复形）与热力学临界行为定量联系起来，并给出与常规观测量的显式关系，属于“拓扑观测量作为临界性信号”这一新兴方向的扎实案例。\n- 对格点 QCD 的潜在启发：QCD 相变（如手征/去禁闭转变）中常缺乏简单序参量，纯几何/拓扑定义的观测量（类似 Polyakov 圈、拓扑荷之外的畴壁/团簇几何量）可能提供补充诊断；本文的有限尺寸标度与修正项分析范式可直接借鉴。\n- 澄清文献中的猜想，具有独立的理论价值。\n\n## 方向标签\n- Finite temperature\n- 统计场论 / 相变与临界现象\n- 拓扑观测量（Euler 特征、胞腔复形）\n- Monte Carlo 与重加权方法\n- （潜在相关）Lattice QCD 相变诊断\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：论文本身扎实、结论清晰，但研究对象是二维 Ising 模型这一“教科书级”系统，离格点 QCD 的直接应用尚有距离；其价值主要在于方法学示范与可推广的思路。若你关注“无常规序参量时的相变探测”或想把拓扑/几何观测量引入格点规范理论，值得一读；若只关心 QCD 本身的具体计算，则可略读或作为方法论参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:43.571118"
+  },
+  {
+    "id": "2611.23577v1",
+    "title": "Perspective on Proton Transversity Distribution Functions",
+    "authors": [
+      "Ke-Xin Zeng",
+      "Peng Cheng",
+      "Yang Yu",
+      "Daniele Binosi",
+      "Craig D. Roberts"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.23577v1",
+    "published": "2026-11-17T22:24:15Z",
+    "abstract": "Using available information on proton tensor charges and constraints from perturbative quantum chromodynamics (QCD), Ansaetze are introduced for hadron-scale in-proton valence-quark transversity distributions functions (DFs). The concept of a QCD effective charge, which defines an evolution scheme for collinear parton distribution and fragmentation functions that is all-orders exact, is then used to deliver predictions for the $x$-dependence of these DFs at the scale $ζ_{2} = 2\\,$GeV. Although the approach is largely algebraic, its predictions remain viable after comparisons with results obtained using computationally intensive methods. Thus, given the scarcity of data that can today be used for inference of proton transversity DFs, it may be worth using the results herein to inform and constrain related experiments and phenomenological fits.",
+    "summary": {
+      "raw": "## 一句话结论\n作者利用质子张量电荷的现有信息和微扰QCD约束，构造了强子标度下价夸克横向度分布函数的Ansatz，并通过全阶精确的QCD有效荷演化方案，给出了ζ₂=2 GeV处这些分布函数x依赖的预测。\n\n## 研究问题\n作者想解决什么问题？\n质子横向度分布函数（transversity DFs）目前实验数据极为稀缺，难以通过拟合推断。作者希望在数据不足的情况下，利用已有的质子张量电荷信息和微扰QCD约束，构造合理的价夸克横向度分布函数Ansatz，并借助QCD有效荷演化方案给出可检验的预测，从而为相关实验和唯象拟合提供约束和参考。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n这篇论文主要是解析/唯象工作，并非直接的格点计算。其方法包括：\n- 利用质子张量电荷的现有信息（包括格点QCD对张量电荷的确定）作为输入约束；\n- 基于微扰QCD的约束构造强子标度下价夸克横向度分布函数的Ansatz；\n- 采用QCD有效荷（effective charge）概念定义一种对共线部分子分布和碎裂函数全阶精确的演化方案；\n- 将分布函数演化至ζ₂=2 GeV，给出x依赖的预测；\n- 与计算密集型方法（如格点QCD或其它数值方法）的结果进行比较验证。\n\n## 主要结果\n总结最重要发现。\n作者给出了质子中价夸克横向度分布函数在ζ₂=2 GeV处的x依赖预测。尽管方法主要是代数性的，但其预测在与计算密集型方法的结果比较后仍然成立/可行。鉴于目前可用于推断质子横向度分布函数的实验数据稀缺，作者建议用这些结果来指导和约束相关实验及唯象拟合。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n横向度分布函数是描述质子自旋结构的关键量之一，但实验测量极其困难（需要极化Drell-Yan等过程），数据稀缺。该工作提供了一种低成本、基于QCD约束和格点张量电荷输入的解析预测方案，可作为实验分析和唯象拟合的先验约束。同时，其采用的QCD有效荷全阶精确演化方案对部分子分布函数的演化研究具有方法学意义。对格点QCD社区而言，该工作展示了如何将格点计算的张量电荷与连续场论演化结合，产生可直接与实验比较的预言。\n\n## 方向标签\n- Lattice QCD\n- QCD Phenomenology\n- Proton Spin Structure\n- Parton Distribution Functions\n- Perturbative QCD\n\n## 阅读优先级\n★★★☆☆（3/5）\n原因：该论文属于唯象/解析性工作，不涉及新的格点计算或算法，但巧妙利用了格点QCD的张量电荷结果并结合QCD有效荷演化给出可检验预言，对质子自旋结构和横向度分布函数研究有实际参考价值。对于关注部分子分布函数唯象、格点QCD与实验交叉方向的研究者值得一读；若专注于格点算法或数值技术本身，则优先级较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:49.198607"
+  },
+  {
+    "id": "2611.23399v1",
+    "title": "Generative diffusion models for lattice field theory",
+    "authors": [
+      "Gert Aarts",
+      "Diaa E. Habibi",
+      "Lingxiao Wang",
+      "Kai Zhou"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.23399v1",
+    "published": "2026-11-17T19:02:28Z",
+    "abstract": "Generative diffusion models offer a new route to ensemble generation in lattice field theory. The backward, or denoising, process underlying these models is a stochastic process with a learned, time-dependent drift, which leads to a clear connection with stochastic quantisation. After reviewing this correspondence, I turn to theories with a sign problem. There the complex Boltzmann weight obstructs direct sampling, but complex Langevin dynamics can sometimes evade the sign problem by generating configurations on a complexified manifold, distributed according to a real and semi-positive distribution. This distribution is not known in closed form. I discuss how this distribution can be learned from complex Langevin data using score-based and, in particular, energy-based diffusion models. The latter give direct access to the unnormalised distribution itself, which can subsequently be used as the weight in a standard Markov chain Monte Carlo simulation. Results are shown for a simple quartic model with a complex action.",
+    "summary": {
+      "raw": "## 一句话结论\n本文建立了生成扩散模型与随机量子化之间的对应关系，并提出用基于得分和基于能量的扩散模型从复朗之万数据中学习符号问题下的实半正定分布，从而为含复作用量的格点场论提供一条新的采样路径。\n\n## 研究问题\n作者想解决的问题是：格点场论中生成扩散模型（尤其是其反向去噪过程）与随机量子化之间究竟有什么联系；更重要的是，在存在符号问题（复玻尔兹曼权重）的理论中，直接采样不可行，而复朗之万动力学虽能在复化流形上生成按某个实半正定分布采样的构型，但该分布没有闭式表达式。作者希望找到一种方法，从复朗之万数据中学习这个未知分布，并把它用作标准马尔可夫链蒙特卡洛（MCMC）的权重，从而绕开符号问题。\n\n## 方法\n- **理论框架**：将扩散模型的反向（去噪）过程视为带学习到的、时间依赖漂移的随机过程，并与随机量子化建立清晰对应。\n- **针对符号问题**：采用复朗之万动力学在复化流形上生成构型，这些构型服从一个实且半正定的分布，但该分布未知。\n- **学习该分布**：使用基于得分（score-based）的扩散模型，特别是基于能量（energy-based）的扩散模型，从复朗之万数据中学习该分布。基于能量的扩散模型可直接给出未归一化分布本身。\n- **后续采样**：将学到的未归一化分布作为权重，用于标准 MCMC 模拟。\n- **数值验证**：在一个带复作用量的简单四次（quartic）模型上展示结果。\n\n## 主要结果\n- 明确了扩散模型的反向去噪过程与随机量子化之间的对应关系。\n- 展示了基于得分和基于能量的扩散模型可以从复朗之万数据中学习符号问题下的实半正定分布。\n- 基于能量的扩散模型能直接访问未归一化分布，从而可作为标准 MCMC 的权重使用。\n- 在带复作用量的简单四次模型上给出了初步结果，验证了该方案的可行性。\n\n## 为什么值得关注\n符号问题是格点场论（包括有限密度 QCD、某些 BSM 模型等）中长期存在的核心障碍，直接阻碍了基于重要性的采样。本文提出的思路把机器学习中的扩散模型与随机量子化、复朗之万动力学联系起来，提供了一种“学习未知实分布 + 标准 MCMC 重加权”的新范式，且基于能量的模型直接给出未归一化分布这一点对实际采样尤为关键。若能在更接近真实 QCD 的模型上扩展，这可能为有限密度格点 QCD 和含复作用量理论提供一条有前景的新路线，因此对格点/QCD/理论物理社区具有方法学上的重要性。\n\n## 方向标签\n- Machine Learning\n- Lattice QCD\n- Sign problem\n- BSM\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇方法学/概念性论文，清晰建立了扩散模型与随机量子化的联系，并针对符号问题提出了可操作的新方案，思想新颖且对格点社区有潜在影响；但目前数值验证仅限简单四次模型，尚属原理性演示，离真实 QCD 应用还有距离，因此给 4 星而非 5 星。适合关注机器学习与格点场论交叉、符号问题方法的研究者优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:46:54.974575"
+  },
+  {
+    "id": "2611.19306v2",
+    "title": "Spatiotemporal K-Shape: Reconstructing inhomogeneous condensate profiles on the lattice",
+    "authors": [
+      "Keita Horie",
+      "Rin Kagami",
+      "Chiho Nonaka"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.19306v2",
+    "published": "2026-11-14T10:08:11Z",
+    "abstract": "Spatially modulated chiral condensates can affect the phase structure of dense QCD effective models. Understanding such order requires characterizing its real-space structure as well as detecting a modulation. Spatial two-point correlators retain the ensemble-averaged power spectrum but discard relative Fourier phases, leaving the configuration shapes undetermined in general. We propose the Spatiotemporal K-Shape method to extract representative shapes from lattice Monte Carlo ensembles without assuming a functional form. The method extends K-Shape clustering to periodic lattice fields, aligning configurations modulo translations and, optionally, a global sign or phase before extracting cluster centroids. Comparisons across clusterings assess whether one representative shape suffices. Controlled tests recover distinct profiles with identical correlators and separate mixtures of different shapes. Applied to the $(1+1)$-dimensional Gross-Neveu model with $N_f=8$, the method extracts non-sinusoidal profiles with two sign changes at two chemical potentials and separates multiple shape families at a third, where a single centroid is insufficient. Including the discrete chiral sign symmetry in the alignment can fold domain-length fluctuations into an asymmetric centroid without implying a preferred ensemble asymmetry. The method thus complements correlator diagnostics with representative real-space shapes and information on their diversity. The application to the Gross-Neveu model provides a testing ground for configuration-based studies of inhomogeneous order relevant to the QCD phase diagram.",
+    "summary": {
+      "raw": "## 一句话结论\n\n论文提出 Spatiotemporal K-Shape 方法，将 K-Shape 时间序列聚类推广到周期性格点场，从而在不预设函数形式的前提下，从格点蒙特卡洛系综中提取非均匀手征凝聚的实空间代表形状，并在 (1+1) 维 Gross-Neveu 模型中成功区分了具有相同两点关联函数的不同凝聚剖面。\n\n## 研究问题\n\n空间调制的手征凝聚会影响稠密 QCD 有效模型的相结构。然而，常规的空间两点关联函数只保留系综平均后的功率谱，丢失了相对傅里叶相位，因此一般无法确定单个构型的实空间形状。作者想解决的问题是：**如何从格点蒙特卡洛系综中直接提取非均匀凝聚的代表性实空间剖面，并判断单一代表形状是否足够描述系综，而无需假设某种解析函数形式。**\n\n## 方法\n\n- **模型**：(1+1) 维 Gross-Neveu 模型，\\(N_f=8\\)，在有限化学势下研究非均匀手征凝聚。\n- **核心算法**：Spatiotemporal K-Shape 方法，将 K-Shape 聚类扩展到周期性格点场。\n  - 在聚类对齐时考虑**平移模周期性**（即构型在格点上平移等价）。\n  - 可选地考虑**全局符号或相位**对齐（对应离散手征对称性）。\n  - 提取聚类质心作为代表形状。\n- **模型无关性**：不假设凝聚剖面的函数形式（如正弦形），直接从数据中提取形状。\n- **聚类比较**：通过比较不同聚类数下的结果，评估单一代表形状是否充分。\n- **受控测试**：构造具有相同关联函数但不同剖面的构型，验证方法能恢复不同形状并分离混合系综。\n- **应用**：在三个不同化学势下分析 Gross-Neveu 模型系综，提取凝聚剖面并比较聚类结构。\n\n## 主要结果\n\n1. **受控测试验证了方法有效性**：能够恢复具有相同两点关联函数的不同剖面，并能分离不同形状的混合系综。\n2. **在 (1+1) 维 Gross-Neveu 模型（\\(N_f=8\\)）中**：\n   - 在两个化学势下提取出**非正弦形、具有两次符号变化**的凝聚剖面。\n   - 在第三个化学势下，**单一质心不足以描述系综**，方法成功分离出多个形状家族。\n3. **手征符号对称性的影响**：在对齐中纳入离散手征符号对称性后，畴长度涨落会被折叠成一个不对称质心，但这**并不意味着系综本身存在偏好性不对称**——这是方法对齐选择带来的效应，需谨慎解释。\n4. 方法补充了关联函数诊断，提供了代表实空间形状及其多样性的信息。\n\n## 为什么值得关注\n\n- **填补诊断空白**：两点关联函数丢失傅里叶相位，无法区分形状不同的凝聚。该方法提供了关联函数之外的实空间形状信息，对理解非均匀手征凝聚的实空间结构至关重要。\n- **模型无关、数据驱动**：不预设剖面函数形式，适用于各种有效模型和格点系综，具有通用性。\n- **与 QCD 相图相关**：空间调制手征凝聚与稠密 QCD 相结构密切相关，该方法为基于构型的研究提供了测试平台和工具。\n- **方法学贡献**：将 K-Shape 聚类推广到周期性格点场并处理对称性对齐，对格点场论数据分析社区有借鉴价值。\n- **警示性发现**：对称性对齐可能人为引入不对称质心，提醒研究者在解释聚类结果时需注意对齐方案的影响。\n\n## 方向标签\n\n- Lattice Field Theory\n- Finite Density / Finite Temperature\n- Chiral Symmetry Breaking\n- Machine Learning（聚类方法）\n- Gross-Neveu Model\n- QCD Phase Diagram\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：论文提出了一种新颖且通用的数据分析方法，解决了格点场论中一个实际且重要的问题（关联函数无法确定实空间形状），并在具体模型中展示了有效性。方法学贡献清晰，受控测试扎实，对稠密 QCD 相结构研究有潜在价值。扣一星是因为目前应用限于 (1+1) 维 Gross-Neveu 模型，尚未推广到更高维或真实 QCD，且方法本身（K-Shape 聚类）属于已有算法的扩展而非全新框架。对于关注非均匀凝聚、有限密度相结构或格点数据分析方法的研究者，值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-19T07:47:02.542550"
   }
 ]
