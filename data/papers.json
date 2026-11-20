@@ -9397,5 +9397,188 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-19T07:47:02.542550"
+  },
+  {
+    "id": "2611.26443v1",
+    "title": "Review of Pion and Nucleon Gluon Parton Distribution Functions from Lattice QCD",
+    "authors": [
+      "William Good",
+      "Huey-Wen Lin"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.26443v1",
+    "published": "2026-11-19T17:15:22Z",
+    "abstract": "Gluons play an essential role in the strong interaction that binds quarks into hadrons, as described by quantum chromodynamics (QCD). Understanding how the fundamental dynamics of QCD give rise to hadron structure remains one of the outstanding challenges in nuclear and particle physics. Parton distribution functions (PDFs) provide a successful framework for describing high-energy scattering processes involving hadrons. However, our knowledge of gluon PDFs remains comparatively limited because of the experimental challenges associated with directly constraining the gluon structure of hadrons. In recent years, a major breakthrough has enabled the calculation of the Bjorken-$x$ dependence of PDFs directly from lattice QCD. Among the available approaches, the large-momentum effective theory (LaMET) and pseudo-PDF frameworks have emerged as the most widely used methods and have produced the majority of lattice determinations of parton distributions. These developments have sparked rapid progress in first-principles studies of the $x$-dependent structure of hadrons, including gluon PDFs of the nucleon and pseudoscalar mesons. In this review, we summarize recent advances in lattice QCD calculations of gluon PDFs {using the LaMET and pseudo-PDF methods}, discuss the current status and impacts of these developments, and highlight the remaining challenges and future opportunities.",
+    "summary": {
+      "raw": "## 一句话结论\n这是一篇综述，系统总结了利用格点QCD（特别是LaMET和pseudo-PDF方法）计算π介子和核子胶子部分子分布函数（gluon PDF）的最新进展、现状与挑战。\n\n## 研究问题\n作者想解决的核心问题是：胶子PDF的实验约束相对匮乏，而格点QCD近年来已能首次从第一性原理出发计算PDF的Bjorken-$x$依赖。综述旨在梳理这一领域（尤其是胶子PDF）的方法、成果、影响与遗留难题。\n\n## 方法\n综述性质，覆盖的主要方法包括：\n- **大动量有效理论（LaMET）**：通过计算大动量强子态中的准PDF（quasi-PDF），再经匹配核（matching kernel）与重整化，得到光锥PDF。\n- **伪PDF（pseudo-PDF）框架**：基于空间关联函数（Ioffe-time分布），通过因子化关系提取PDF。\n- 涉及的关键数值技术：格点QCD规范场组态生成、胶子算符的重整化（含混合与幂次发散处理）、大动量强子态的信噪比控制、连续极限与外推等。\n\n## 主要结果\n- LaMET与pseudo-PDF已成为格点计算部分子分布的两大主流框架，产出了目前大多数的格点PDF结果。\n- 胶子PDF（核子与赝标介子）的$x$依赖计算已取得快速进展，标志着第一性原理研究强子结构进入新阶段。\n- 综述同时指出当前仍存在系统性挑战（如大动量下的控制、重整化与匹配精度、格点间距效应等），并展望未来机会。\n\n## 为什么值得关注\n胶子贡献了核子质量与自旋的很大部分，但实验上直接约束胶子结构极为困难。格点QCD首次提供了从QCD第一性原理计算胶子PDF的途径，这对理解强子结构、检验QCD因子化、以及与实验（如EIC）互证具有重要意义。对lattice/QCD社区而言，这是一份及时的方法与现状地图。\n\n## 方向标签\n- Lattice QCD\n- Hadron structure / PDF\n- LaMET / pseudo-PDF\n- QCD factorization\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：作为综述，它是进入“格点胶子PDF”这一快速发展的子领域的良好入口，覆盖面广、脉络清晰；但综述本身不含新的原始计算，若读者已熟悉该方向，价值主要在于系统梳理与参考文献索引。对从事强子结构、PDF或格点QCD的研究者，优先级较高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:37:54.208076"
+  },
+  {
+    "id": "2611.26415v1",
+    "title": "Half-strings across the deconfinement transition of a $U(1)$ quantum link model",
+    "authors": [
+      "Indrajit Sau",
+      "Arnab Sen",
+      "Debasish Banerjee"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.26415v1",
+    "published": "2026-11-19T17:01:22Z",
+    "abstract": "The phenomenon of confinement is arguably the key feature of gauge theories regularly studied in high-energy and condensed matter physics. This causes hadrons to exist as stable particles in quantum chromodynamics (QCD) as bound states of quarks (and gluons), and strings in pure gauge theories. The promise of realizing such strings in quantum simulator setups have fueled extensive studies of a plethora of simpler lattice gauge theories (LGTs). Quantum link models (QLMs) generalize Wilsonian LGTs and yield richer scenarios of confinement. For example, the string joining two static charges in the spin-$\\frac{1}{2}$ $U(1)$ QLM fractionalize, giving rise to confining phases that break the point group and internal symmetries spontaneously. It was further shown in PRL 130, 071901 (2023) that adding annealed $Q = \\pm 2$ charges to this model qualitatively changes the confinement-deconfinement transition. In this paper, we examine the finite temperature phase transition both in the presence and the absence of annealed charges through detailed extraction of critical temperature, $T_c$ , and exponents. The (effective) string tension $σ$ at zero and finite- temperatures are compared between the theory with and without annealed charges. The quantity $T_c/\\sqrtσ$ for the QLM with annealed charges is similar to the usual $\\mathbb{Z}_2$ gauge theory, while the theory without the charges provides a new universal value.",
+    "summary": {
+      "raw": "## 一句话结论\n本文通过大规模格点数值模拟，系统刻画了自旋-1/2 U(1)量子链接模型在有无退火Q=±2电荷两种情形下的有限温度退禁闭相变，提取了临界温度与临界指数，并发现含退火电荷情形的T_c/√σ与普通Z_2规范理论一致，而无电荷情形给出一个新的普适值。\n\n## 研究问题\n作者想解决的问题是：在自旋-1/2 U(1)量子链接模型中，退禁闭相变（confinement-deconfinement transition）的有限温度性质究竟如何？具体而言：\n1. 该模型中弦会分数化（fractionalize），导致自发破缺点群与内部对称性的禁闭相，这种特殊禁闭机制下的有限温度相变属于什么普适类？\n2. 此前PRL 130, 071901 (2023)指出加入退火Q=±2电荷会定性改变禁闭-退禁闭相变，那么两种情形（有/无退火电荷）的临界温度T_c、临界指数、以及零温与有限温下的（有效）弦张力σ分别是什么？T_c/√σ这个无量纲比值在两种情形下是否对应已知普适类？\n\n## 方法\n- **模型**：自旋-1/2 U(1)量子链接模型（QLM），这是Wilson格点规范理论的推广，链接变量取有限维希尔伯特空间（自旋表示），而非Wilson理论中的U(1)相位。研究两种版本：纯QLM（无退火电荷）与加入退火Q=±2电荷的QLM。\n- **格点方法**：有限温度格点场论计算，通过详细提取临界温度T_c与临界指数来确定相变普适类。\n- **数值技术**：摘要未明确列出具体算法（如量子蒙特卡洛、张量网络、精确对角化等），但提到\"detailed extraction of critical temperature and exponents\"，暗示使用了有限尺寸标度分析（finite-size scaling）来定位临界点并拟合临界指数；同时比较零温与有限温下的（有效）弦张力σ。\n- **观测量**：临界温度T_c、临界指数、（有效）弦张力σ、以及无量纲比值T_c/√σ。\n\n## 主要结果\n1. **临界温度与临界指数**：在有退火电荷与无退火电荷两种情形下分别提取了T_c和临界指数，表明两种情形的相变普适类不同。\n2. **弦张力比较**：比较了零温与有限温下的（有效）弦张力σ，涵盖有/无退火电荷两种理论。\n3. **关键普适比值**：含退火Q=±2电荷的QLM给出T_c/√σ与普通Z_2规范理论相似的值；而无退火电荷的QLM给出一个新的普适值，意味着该模型定义了一个新的普适类。\n4. **定性结论**：退火电荷的引入不仅定性改变相变（如PRL 130, 071901 (2023)所示），而且在定量普适参数（T_c/√σ）上也使模型回归到类似Z_2规范理论的普适行为；纯QLM则对应全新普适类。\n\n## 为什么值得关注\n- **禁闭机制的多样性**：QLM中的弦分数化提供了不同于标准Wilson规范理论的禁闭场景，理解其有限温度相变有助于厘清\"禁闭\"这一QCD核心现象在更一般规范理论中的普适性质。\n- **普适类分类**：T_c/√σ是连接格点规范理论与连续场论/宇宙学相变的重要无量纲量；发现新普适值意味着该模型可能对应新的连续极限普适类，对统计物理与场论交叉领域有分类学意义。\n- **量子模拟关联**：QLM因其有限维局域希尔伯特空间而成为量子模拟器实现规范理论的理想目标；明确其相图与临界性质对设计量子模拟实验（如冷原子、超导量子比特）具有直接指导意义。\n- **与Z_2规范理论的联系**：含退火电荷情形回归Z_2-like普适行为，提示退火电荷可能起到\"抹平\"QLM特殊分数化禁闭结构的作用，这对理解物质场（电荷）如何改变规范场相结构有普遍启示。\n\n## 方向标签\n- Lattice gauge theory\n- Quantum simulation\n- Finite temperature\n- Confinement\n- Universality / critical phenomena\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：本文是PRL 130, 071901 (2023)的后续系统性有限温度研究，对该特定QLM模型的相变普适类给出了定量刻画（T_c、临界指数、T_c/√σ），对关注QLM、禁闭机制多样性及量子模拟规范理论的读者价值很高。但它聚焦于一个特定简化模型（自旋-1/2 U(1) QLM），与真实QCD的有限温度退禁闭相变距离较远，且摘要未展示具体数值结果与算法细节，因此对一般格点QCD社区的直接相关性略低于对量子模拟/规范理论普适类研究者的相关性。若读者从事QLM或量子模拟规范理论，建议优先精读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:03.486457"
+  },
+  {
+    "id": "2611.26257v1",
+    "title": "Fast extraction of universal data from temporal spectrum: Applications to Haagerup CFT and monopole scattering",
+    "authors": [
+      "Tokiro Numasawa",
+      "Boris De Vos",
+      "Masataka Watanabe",
+      "Atsushi Ueda"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.26257v1",
+    "published": "2026-11-19T15:30:45Z",
+    "abstract": "Extracting precise universal data on conformal field theory (CFT) on the lattice traditionally requires large-scale simulations of the ground states and excitations of critical systems. Here, we propose an alternative accurate and fast algorithm, where we read off the CFT spectrum from the transfer matrix spectrum of an infinite matrix product state after a short imaginary-time evolution. We apply this method to extract the charge-resolved spectrum of a Haagerup CFT to higher levels and obtain a central charge $c = 2.137(27)$. Moreover, we show that the Maldacena--Ludwig monopole boundary can be realized as the ground state of the Fidkowski--Kitaev Hamiltonian after space-time rotation.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出一种基于无限矩阵乘积态（iMPS）转移矩阵谱的快速算法，只需短时间虚时演化即可从时间谱中提取共形场论（CFT）的普适数据，并用它高精度地验证了 Haagerup CFT 的中心荷，同时指出 Maldacena–Ludwig 单极子边界可作为 Fidkowski–Kitaev 模型在时空旋转下的基态实现。\n\n## 研究问题\n传统上在格点上提取 CFT 的精确普适数据（如中心荷、按电荷分辨的能谱）需要对临界系统的基态与激发态做大规模数值模拟，计算代价高、收敛慢。作者想解决的核心问题是：能否用一种更快速、更精确的算法，从一维量子临界系统的转移矩阵（时间）谱中直接读出 CFT 谱与中心荷等普适数据，并将其应用于 Haagerup CFT 与单极子散射这类非平凡模型。\n\n## 方法\n- **张量网络 / iMPS**：用无限矩阵乘积态表示一维临界系统的基态，从 iMPS 的转移矩阵（transfer matrix）谱中读取 CFT 谱。\n- **虚时演化**：只做短时间的虚时演化即可收敛到所需精度，避免大规模基态/激发态模拟。\n- **电荷分辨谱**：提取按电荷分量子数分辨的 CFT 谱，用于识别 Haagerup CFT 的能谱结构。\n- **模型应用**：Haagerup CFT（一种非平凡、非 unitary 的最小模型类 CFT）；以及 Fidkowski–Kitaev Hamiltonian，通过时空旋转（space-time rotation）将其基态与 Maldacena–Ludwig 单极子边界对应起来。\n- **数值估计**：由谱数据拟合中心荷 c。\n\n## 主要结果\n1. **算法有效性**：证明短虚时演化后的 iMPS 转移矩阵谱可以快速、准确地给出 CFT 谱，是一种替代大规模模拟的实用算法。\n2. **Haagerup CFT 中心荷**：将方法推广到更高能级，提取电荷分辨谱并得到中心荷 \\(c = 2.137(27)\\)，与理论预期一致（Haagerup CFT 预期 \\(c \\approx 2.12\\) 左右），误差可控。\n3. **单极子边界的实现**：证明 Maldacena–Ludwig 单极子边界可作为 Fidkowski–Kitaev Hamiltonian 在时空旋转下的基态实现，从而把凝聚态模型与规范场论中的单极子散射问题联系起来。\n\n## 为什么值得关注\n- **方法学价值**：为格点/张量网络社区提供了一种低成本、高精度的 CFT 谱提取工具，可推广到其他临界系统，减少对大规模 DMRG/精确对角化的依赖。\n- **非平凡 CFT 的数值检验**：Haagerup CFT 是近年来凝聚态与数学物理交叉的热点（与任意子、拓扑序相关），精确数值验证其中心荷与谱具有独立价值。\n- **跨领域联系**：把 Maldacena–Ludwig 单极子边界与 Fidkowski–Kitaev 模型通过时空旋转对应起来，为用凝聚态张量网络方法研究规范场论中的单极子/拓扑缺陷散射开辟了新途径，对 lattice/QCD 与拓扑物态社区都有启发。\n- **对 QCD/规范场论的潜在意义**：单极子边界条件与拓扑缺陷是禁闭、θ 真空等问题中的核心对象，该工作提示可用一维张量网络高效模拟这类边界物理。\n\n## 方向标签\n- Tensor network\n- Quantum simulation\n- BSM（拓扑缺陷/单极子相关）\n- Lattice field theory（方法学）\n- Conformal field theory / critical phenomena\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：算法思路清晰、实现门槛相对低，且同时覆盖张量网络方法学与非平凡 CFT/单极子物理两个有吸引力的方向，对做临界系统、张量网络和拓扑缺陷的研究者都值得一读；扣一星是因为其核心验证集中在特定模型（Haagerup CFT、Fidkowski–Kitaev），对主流 Lattice QCD 的直接冲击有限，需读者自行判断可迁移性。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:11.016641"
+  },
+  {
+    "id": "2611.25943v1",
+    "title": "Equation of state of hot and dense QCD at the physical point via the complex Langevin equation",
+    "authors": [
+      "Michael Mandl",
+      "Dénes Sexty",
+      "Daniel Unterhuber"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.25943v1",
+    "published": "2026-11-19T11:29:58Z",
+    "abstract": "This study presents the first results for the equation of state of 2+1+1-flavor QCD at the physical point, obtained using the complex Langevin equation. We calculate continuum-extrapolated thermodynamic quantities, such as the baryon density, pressure, the speed of sound and the adiabatic compressibility. The simulations are performed in the isospin-symmetric, strangeness- and charm-neutral setting above the crossover temperature and at unprecedentedly large baryon chemical potentials.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次利用复朗之万方程（complex Langevin equation）在物理点（physical point）上计算了 2+1+1 味 QCD 在有限温度和前所未有的大重子化学势下的状态方程，给出了连续极限外推的热力学量。\n\n## 研究问题\n作者想解决的核心问题是：在有限温度、有限重子化学势（且化学势较大）的条件下，如何从第一性原理格点 QCD 出发计算 2+1+1 味（包含粲夸克）QCD 的状态方程。传统格点 QCD 在有限化学势下遭遇符号问题（sign problem），使得大化学势区域的模拟极为困难；本文试图用复朗之万方程绕过该障碍，并给出物理点上的连续极限结果。\n\n## 方法\n- **格点方法**：2+1+1 味 Wilson 型格点 QCD，参数取在物理点（physical point），即夸克质量取物理值。\n- **算法/数值技术**：复朗之万方程（complex Langevin equation），用于处理有限重子化学势带来的复作用量/符号问题。\n- **物理设定**：同位旋对称（isospin-symmetric）、奇异数和粲数中性（strangeness- and charm-neutral）的系综；温度高于 crossover 温度；重子化学势取到前所未有的大值。\n- **连续极限**：对多个格点间距做连续外推（continuum extrapolation），得到连续极限下的热力学量。\n- **计算量**：重子数密度、压强、声速（speed of sound）、绝热压缩率（adiabatic compressibility）等状态方程量。\n\n## 主要结果\n- 首次给出物理点上 2+1+1 味 QCD 在有限温度和大重子化学势下的连续外推状态方程。\n- 计算了重子数密度、压强、声速和绝热压缩率等热力学量随温度与化学势的变化。\n- 模拟覆盖了高于 crossover 温度、且重子化学势达到前所未有的大值区域，扩展了格点 QCD 状态方程的可及范围。\n- 结果展示了复朗之万方程在物理点、含粲夸克、大化学势条件下计算状态方程的可行性。\n\n## 为什么值得关注\n- **突破符号问题瓶颈**：有限密度格点 QCD 长期受符号问题困扰，复朗之万方程若能在物理点、大化学势下给出可靠结果，对方法学有重要意义。\n- **物理点 + 2+1+1 味**：包含粲夸克的物理点计算比以往多数 2+1 味或非物理质量的结果更接近真实 QCD，对理解重离子碰撞和致密星体物质有直接价值。\n- **状态方程的应用**：状态方程（压强、声速、压缩率等）是重离子碰撞流体力学模拟和中子星/致密物质物态描述的关键输入。\n- **大化学势区域**：该区域此前格点结果稀少，本文提供了新的第一性原理数据点，可能影响对 QCD 相图临界区和高密度行为的认识。\n- **方法验证与争议**：复朗之万方程的可靠性（尤其在大化学势、物理点）在社区中仍有讨论，本文结果将推动对该方法的进一步检验与比较。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Finite density / QCD phase diagram\n- Complex Langevin\n- Equation of state\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：该工作直接针对格点 QCD 最困难的有限密度符号问题，并在物理点、2+1+1 味、大化学势下给出状态方程，物理意义和方法学意义都很高，值得关注。扣一星是因为复朗之万方程在物理点大化学势下的系统误差控制与可靠性仍需社区进一步验证，读者在引用其定量结果时应结合方法学讨论谨慎对待。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:17.949535"
+  },
+  {
+    "id": "2611.25749v1",
+    "title": "Second-order formulation of chiral fermions with a local boundary condition",
+    "authors": [
+      "Kazuya Yonekura"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.25749v1",
+    "published": "2026-11-19T08:54:51Z",
+    "abstract": "Chiral fermions in $d$ dimensions arise naturally as boundary modes of a massive fermion in $d+1$ dimensions subject to a local boundary condition. When anomalies are absent, this construction can be used to define an intrinsically $d$-dimensional theory of chiral fermions. However, defining the path integral using the first-order Dirac operator with this boundary condition is technically inconvenient, even in the continuum. We present a formulation in terms of second-order differential operators that is completely equivalent to the original formulation in the continuum. Its natural lattice discretization generates Wilson's term and avoids fermion doubling. Our lattice formulation closely resembles the boundary-fermion construction of Shamir, and provides some insight into the case of a general Wilson parameter.",
+    "summary": {
+      "raw": "## 一句话结论\n作者把“有质量体费米子 + 局域边界条件产生手征边界模”的构造，从一阶 Dirac 形式改写为完全等价的二阶微分算子形式，其自然格点离散自动给出 Wilson 项并避免费米子倍增，从而为手征费米子的格点定义提供了一个更易操作、且与 Shamir 边界费米子构造密切相关的框架。\n\n## 研究问题\n论文要解决的核心问题是：手征费米子可以自然地实现为 d+1 维有质量费米子在局域边界条件下的边界模，但在连续统中直接用一阶 Dirac 算子加该边界条件来定义路径积分在技术上很不方便（边界条件与一阶算子的配合、路径积分测度、格点化都棘手）。作者希望找到一个在连续统中与原表述完全等价、但更适合格点离散化的二阶算子表述，并借此理解 Wilson 参数的一般取值情形。\n\n## 方法\n- 理论构造：将一阶 Dirac 算子加局域边界条件的边界费米子问题，改写为二阶微分算子（Dirac 算子的平方型/二阶形式）表述，证明其在连续统中与原一阶表述完全等价。\n- 格点离散：对该二阶算子做自然格点离散化，分析离散化后自动出现的 Wilson 项，并论证其如何消除费米子倍增（doubling）。\n- 与已有构造对比：将所得格点表述与 Shamir 的边界费米子（domain-wall 型）构造进行比较，讨论一般 Wilson 参数 r 的情形。\n- 本文为解析/构造性理论工作，未涉及数值模拟或算法实现。\n\n## 主要结果\n1. 给出了手征费米子边界条件的二阶算子表述，并证明其在连续统中与一阶 Dirac 表述完全等价。\n2. 该二阶形式的自然格点离散化自动生成 Wilson 项，从而避免费米子倍增——Wilson 项不是人为加入，而是二阶离散化的自然产物。\n3. 所得格点表述与 Shamir 的边界费米子构造高度相似，并对其一般 Wilson 参数情形给出了一定洞察。\n4. 在无反常情形下，该构造可用于定义内禀 d 维的手征费米子理论。\n\n## 为什么值得关注\n手征费米子的格点定义是 lattice field theory 的长期难题（Nielsen–Ninomiya 定理、doubling、手征规范理论的正规化）。本文提供了一条不同于传统 domain-wall / overlap 的视角：从二阶算子出发，让 Wilson 项自然涌现，并把边界条件、体质量与 Wilson 参数统一在一个框架里。它与 Shamir 构造的联系有助于澄清 domain-wall 费米子中 Wilson 参数的作用，对构造手征规范理论、理解 anomaly inflow 与边界模的格点实现都有潜在价值。不过目前是纯理论构造，尚未给出数值验证或具体格点模拟方案。\n\n## 方向标签\n- Lattice QCD（手征费米子正规化）\n- 手征规范理论 / Chiral gauge theories\n- Domain-wall / 边界费米子\n- 理论物理（anomaly inflow、连续统-格点对应）\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：对关心手征费米子格点定义、domain-wall/overlap 构造及 Wilson 参数作用的研究者，这篇提供了有价值的新视角和等价性论证，值得一读；但它是纯解析构造，缺少数值结果和可直接落地的算法细节，对以数值模拟或 QCD 现象学为主的研究者优先级中等。若你的工作直接涉及手征格点费米子或边界条件表述，可提到 4 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:24.537981"
+  },
+  {
+    "id": "2611.25573v1",
+    "title": "Structure and Binding of the \\texorpdfstring{$pnΩ^-$}{pnOmega} System with a Near-Unitary \\texorpdfstring{$NΩ$}{NOmega} Interaction from Physical-Point Lattice QCD",
+    "authors": [
+      "Faisal Etminan"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.25573v1",
+    "published": "2026-11-19T06:14:10Z",
+    "abstract": "The binding and spatial structure of the \\(pnΩ^-\\) system are investigated in the \\(I(J^P)=0(5/2^+)\\) channel using the physical-point HAL QCD \\(NΩ({}^{5}S_2)\\) interaction. The pairwise Hamiltonian includes the spin-triplet \\(pn\\) interaction and the finite-size Coulomb attraction in the \\(pΩ^-\\) pair. The three-body Schrödinger equation is solved with the Gaussian Expansion Method (GEM), including all three Jacobi rearrangement configurations. For the central HAL QCD potential at \\(t/a=14\\), the calculated three-body binding energy is \\(18.63\\) MeV, corresponding to a separation energy of \\(16.39\\) MeV relative to the \\(d+Ω^-\\) threshold. The spatial structure is examined through interparticle root-mean-square distances, pair and spectator radial distributions, and the correlation between the two Jacobi coordinates. Relative to a frozen-deuteron folded reference, the full three-body solution exhibits a substantially more compact spectator distribution and a contracted \\(pn\\) pair. The dependence on the Euclidean-time choice of the HAL QCD potential is also assessed. The results characterize the three-body rearrangement induced by the attractive \\(NΩ\\) interaction within the adopted pairwise model.",
+    "summary": {
+      "raw": "## 一句话结论\n在物理点 HAL QCD 的 \\(N\\Omega(^{5}S_2)\\) 近幺正吸引相互作用下，\\(pn\\Omega^-\\) 的 \\(I(J^P)=0(5/2^+)\\) 三体系统确实束缚，结合能约 18.6 MeV（相对 \\(d+\\Omega^-\\) 阈分离能约 16.4 MeV），且三体解比“冻结氘核折叠”参考更紧凑。\n\n## 研究问题\n作者想解决：在真实物理点格点 QCD 给出的 \\(N\\Omega\\) 相互作用（近幺正、强吸引）基础上，\\(pn\\Omega^-\\) 三体系统是否形成束缚态、束缚有多深，以及 \\(N\\Omega\\) 吸引如何通过三体重新排列改变空间结构（尤其相对于简单把 \\(pn\\) 当作冻结氘核的近似）。同时评估 HAL QCD 势对欧几里得时间选择（\\(t/a\\)）的依赖。\n\n## 方法\n- **格点输入**：物理点 HAL QCD 方法给出的 \\(N\\Omega({}^{5}S_2)\\) 势（中心势，取 \\(t/a=14\\) 为主，并考察 \\(t/a\\) 依赖）。\n- **两体哈密顿量**：自旋三重态 \\(pn\\) 相互作用 + \\(p\\Omega^-\\) 的有限体积库仑吸引。\n- **三体求解**：高斯展开法（GEM）求解三体薛定谔方程，包含全部三个 Jacobi 重排构型（即完全反对称化/正确处理三体自由度）。\n- **结构分析**：粒子间均方根距离、配对与旁观者径向分布、两个 Jacobi 坐标之间的关联；并与冻结氘核折叠参考比较。\n- **模型层次**：采用成对（pairwise）哈密顿量近似，未显式包含三体力。\n\n## 主要结果\n- 对 \\(t/a=14\\) 的中心 HAL QCD 势，三体结合能为 **18.63 MeV**，相对 \\(d+\\Omega^-\\) 阈的分离能为 **16.39 MeV**。\n- 空间结构上，完整三体解相比冻结氘核折叠参考：旁观者（\\(\\Omega^-\\)）分布明显更紧凑，\\(pn\\) 对也被压缩——说明 \\(N\\Omega\\) 吸引诱导了显著的三体重新排列，而非简单的“氘核+旁观者”图像。\n- 评估了 HAL QCD 势的欧几里得时间（\\(t/a\\)）选择对结果的影响，表明结论在该系统下有一定稳健性（具体数值依赖需看正文）。\n\n## 为什么值得关注\n- 这是**物理点格点 QCD 势直接驱动三体束缚计算**的典型案例，把 lattice QCD 的输入推进到多体/核物理可观测层面。\n- \\(N\\Omega\\) 近幺正吸引是超核与奇异多体物理中的热点；若形成束缚态，对寻找 \\(pn\\Omega^-\\) 这类三体超核、理解 \\(s\\) 夸克在核介质中的作用有直接意义。\n- 方法上展示了 GEM + 全 Jacobi 重排 + HAL QCD 势的工作流，可作为其他三体超核（如 \\(NN\\Omega\\)、\\(N\\Lambda\\Lambda\\) 等）研究的模板。\n- 对“冻结近似是否足够”给出定量反例，提醒三体计算中重排效应不可忽略。\n\n## 方向标签\n- Lattice QCD\n- Nuclear/Hypernuclear physics from lattice QCD\n- Few-body / three-body physics\n- HAL QCD potential\n- Strangeness physics\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对做 lattice QCD 势、超核三体计算的人是高相关且方法清晰的工作；结论直接、可复现性强。扣一星是因为采用成对哈密顿量、未含三体力，且结果依赖 HAL QCD 势的 \\(t/a\\) 选择与有限体积库仑处理，需读正文确认系统误差；对非核物理方向的 lattice 读者优先级可降至 3 星。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:31.054900"
+  },
+  {
+    "id": "2611.25241v1",
+    "title": "Testing the D234 Dirac operator",
+    "authors": [
+      "Jorge Baeza-Ballesteros",
+      "Andreas Risch",
+      "Mattis Roost",
+      "Stefan Schaefer",
+      "Rainer Sommer"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.25241v1",
+    "published": "2026-11-18T22:20:25Z",
+    "abstract": "We study a version of the so-called D234 fermion action. On top of non-perturbative improvement to $\\mathcal{O}(a)$, this action is also tree-level improved at $\\mathcal{O}(a^2)$. The version we consider also has gauge links smoothed with one level of stout smearing and the clover term in its exponentiated form. Working in the quenched approximation, we compare this action to the clover-improved Wilson action. The proposed action reduces the size of discretization effects and the violation of rotational invariance to a remarkable degree. The presence of exceptionally small eigenvalues in the spectrum of the Dirac operator is also reduced.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在淬火近似下检验了一种带 stout smearing 和指数化 clover 项的 D234 改进费米子作用量，发现它相比 clover-improved Wilson 作用量能显著压低离散化效应、旋转对称性破缺以及狄拉克算子异常小本征值。\n\n## 研究问题\n作者想解决的问题是：标准 Wilson/clover 费米子作用量在有限格距下存在明显的 $\\mathcal{O}(a^2)$ 离散化误差和旋转对称性破缺，并且狄拉克算子谱中会出现异常小的本征值（与拓扑零模和近零模相关），这会污染物理量的提取。论文检验的 D234 作用量在 $\\mathcal{O}(a)$ 非微扰改进之上又做了 $\\mathcal{O}(a^2)$ 树图级改进，作者希望系统评估这种作用量是否真的在非微扰层面改善了上述问题。\n\n## 方法\n- **格点费米子作用量**：D234 费米子作用量的一个版本，包含 $\\mathcal{O}(a)$ 非微扰改进和 $\\mathcal{O}(a^2)$ 树图级改进。\n- **规范链接平滑**：对 gauge links 施加一级 stout smearing。\n- **clover 项处理**：采用指数化形式（exponentiated clover term），而非线性展开形式。\n- **对比基准**：clover-improved Wilson 作用量。\n- **近似与系综**：淬火近似（quenched approximation），即忽略海夸克贡献。\n- **数值技术**：通过比较两种作用量下的离散化效应、旋转不变性破缺程度以及狄拉克算子本征值谱（特别是异常小本征值的出现频率/大小）来评估改进效果。\n\n## 主要结果\n- 所提出的 D234 作用量**显著减小了离散化效应**。\n- **旋转不变性破缺被大幅压低**，达到\"remarkable degree\"。\n- 狄拉克算子谱中**异常小本征值的存在明显减少**。\n- 总体而言，该作用量在淬火近似下优于 clover-improved Wilson 作用量。\n\n## 为什么值得关注\n- **系统误差控制**：离散化效应和旋转对称性破缺是格点 QCD 计算中主要的系统误差来源之一，能有效压低它们对高精度谱学、矩阵元计算和手征物理研究有直接价值。\n- **本征值谱问题**：异常小本征值会影响 Dirac 算子求逆的数值稳定性，也可能与拓扑荷、手征对称性破缺的物理解释相关；减少这类本征值有助于改善算法行为和物理信号。\n- **改进作用量的实践意义**：stout smearing + 指数化 clover 的组合是当前格点 QCD 中常用的技术路线，本文为该类 D234 变体提供了非微扰层面的检验证据，对后续在动力学（unquenched）模拟中采用该作用量有参考价值。\n- **局限**：淬火近似下结论需谨慎外推到 full QCD，但作为作用量检验的第一步是合理的。\n\n## 方向标签\n- Lattice QCD\n- Lattice fermion actions / improvement\n- Numerical lattice field theory\n\n## 阅读优先级\n★★★☆☆（3/5）\n\n理由：论文主题聚焦于格点费米子作用量的改进与检验，属于格点 QCD 方法学中的扎实但相对专门的工作。对从事格点作用量改进、Dirac 算子谱或高精度谱学计算的研究者价值较高；但由于采用淬火近似、且属于作用量测试类研究，对更广泛的理论物理社区（如 BSM、量子模拟等）吸引力有限。若读者关注 fermion action improvement 或 stout smearing 的实践效果，值得一读；否则可作为背景参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:37.498704"
+  },
+  {
+    "id": "2611.25062v1",
+    "title": "Naturalness scale inference in chiral perturbation theory and chiral logarithms",
+    "authors": [
+      "Tara Hassanzadeh",
+      "Martin Hoferichter",
+      "Lucas Platter",
+      "Jacobo Ruiz de Elvira",
+      "Matthias R. Schindler"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.25062v1",
+    "published": "2026-11-18T19:07:35Z",
+    "abstract": "We infer naturalness scales of chiral perturbation theory in the mesonic sector using Bayesian techniques that are extended to explicitly take into account chiral logarithms. To demonstrate our approach, we consider the chiral expansion of the pion decay constant $F_π$ and the threshold and subthreshold parameters of $ππ$ scattering. We find a strong observable dependence of the inferred naturalness scales, and show that they need not coincide with the pion mass at which the order-by-order hierarchy of the chiral expansion breaks down. As an application, we discuss the requirements for lattice-QCD constraints on the two combinations of $O(p^6)$ low-energy constants that in the current matching of Roy-equation analyses to chiral perturbation theory need to be estimated from resonance saturation, but could be extracted from the pion-mass dependence of $ππ$ scattering parameters.",
+    "summary": {
+      "raw": "## 一句话结论\n作者将贝叶斯自然性判据推广到显式包含手征对数（chiral logarithms）的情形，用手征微扰论中π介子衰变常数和ππ散射参数的逐阶展开推断自然性标度，发现推断出的标度强烈依赖于所考察的可观测量，且不必等于手征展开逐阶层级破缺的π介子质量。\n\n## 研究问题\n作者想解决的核心问题是：在手征微扰论（ChPT）中，如何可靠地推断“自然性标度”（naturalness scale），即低能常数（LECs）无量纲化后应具有的量级所对应的能标。传统做法通常把自然性标度默认取为某个特征质量（如π介子质量或ρ介子质量），但ChPT展开中含有手征对数项（如 $m_\\pi^2 \\ln m_\\pi^2$），这些项会随π介子质量变化而改变逐阶展开的相对大小，从而影响自然性判据。作者希望用贝叶斯方法显式处理手征对数，检验推断出的自然性标度是否与展开破缺的能标一致，并探讨这对从格点QCD提取 $O(p^6)$ 低能常数组合的约束意味着什么。\n\n## 方法\n本文主要是理论/唯象分析，不是直接的格点计算，但紧密服务于格点QCD的匹配问题。方法要点：\n\n- **贝叶斯自然性推断框架**：将ChPT逐阶展开的系数视为随机变量，假设其无量纲化后服从某个先验分布（通常取对数均匀或类似“自然性先验”），通过贝叶斯推断得到自然性标度的后验分布。作者将这一框架**扩展**为显式包含手征对数项，即展开式中的对数依赖不被吸收进系数，而是作为已知函数保留。\n- **考察对象**：π介子衰变常数 $F_\\pi$ 的手征展开，以及ππ散射的阈值参数和亚阈值参数的手征展开。\n- **数值实现**：对每个可观测量，在不同π介子质量下逐阶比较ChPT展开，结合贝叶斯更新推断自然性标度，并分析其随可观测量的变化。\n- **应用分析**：讨论格点QCD对两个 $O(p^6)$ 低能常数组合的约束需求——这两个组合目前在Roy方程分析与ChPT匹配中只能靠共振饱和估计，但原则上可从ππ散射参数对π介子质量的依赖中提取。\n\n## 主要结果\n1. **自然性标度具有强可观测量依赖性**：不同可观测量（$F_\\pi$、阈值参数、亚阈值参数）推断出的自然性标度并不相同，说明不存在一个普适的“自然性标度”可以统一描述所有ChPT展开。\n2. **自然性标度不必等于展开破缺的π介子质量**：作者发现，推断出的自然性标度与“逐阶层级破缺”（order-by-order hierarchy breaks down）所对应的π介子质量并不重合。这挑战了以往把两者等同的简化假设。\n3. **手征对数的影响不可忽略**：显式包含手征对数会改变自然性推断的结果，说明在自然性分析中忽略对数项可能导致对标度的错误估计。\n4. **对格点QCD的启示**：作者给出了从ππ散射参数对 $m_\\pi$ 的依赖中提取两个 $O(p^6)$ LEC组合所需的格点精度和π介子质量覆盖范围的要求，为未来格点计算提供了目标。\n\n## 为什么值得关注\n- **对ChPT系统误差评估的意义**：自然性标度是估计截断误差（truncation error）的关键输入。若标度强烈依赖可观测量且不等于展开破缺能标，则常用的误差估计方法需要修正。\n- **连接格点QCD与唯象分析**：Roy方程分析与ChPT匹配中，两个 $O(p^6)$ LEC组合目前只能靠共振饱和估计，是ππ散射唯象精度的瓶颈。本文指出它们可从格点QCD的 $m_\\pi$ 依赖中提取，并量化了所需精度，直接指导未来格点计算设计。\n- **方法学贡献**：将贝叶斯自然性判据推广到含手征对数的情形，为ChPT及其他有效场论的自然性/截断误差分析提供了更自洽的工具。\n- **对格点社区的实际价值**：随着格点QCD系统误差不断减小，ChPT截断误差成为主导误差之一；本文结果有助于更可靠地估计该误差，并明确哪些LEC最值得用格点数据约束。\n\n## 方向标签\n- Chiral Perturbation Theory\n- Lattice QCD（间接相关，服务于格点匹配）\n- Bayesian Methods\n- Effective Field Theory\n- Hadron Phenomenology\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：本文不是直接的格点计算，但对手征微扰论截断误差估计和格点QCD提取低能常数的匹配问题有直接且实用的指导意义。方法学上（贝叶斯自然性+手征对数）有创新性，结论（自然性标度依赖可观测量、不等于展开破缺能标）对做ChPT误差分析的格点研究者很重要。若读者主要关注格点算法或有限温度/QCD相图，相关性较低；但对做ππ散射、LEC提取、ChPT系统误差的格点与唯象研究者，属于值得精读的工作。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:47.240791"
+  },
+  {
+    "id": "2611.23586v2",
+    "title": "Topological signatures of criticality: the Ising case",
+    "authors": [
+      "Tak-Shing Chan",
+      "Paweł Dłotko",
+      "Jacek Gulgowski",
+      "Biagio Lucini",
+      "Mateusz Masłowski",
+      "Davide Vadacchino"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.23586v2",
+    "published": "2026-11-17T22:36:23Z",
+    "abstract": "Topological properties of microscopic configurations may provide additional insight into phase transitions beyond conventional thermodynamic observables. We investigate this idea in the two-dimensional Ising model on square and triangular lattices by associating cell complexes with the positive and negative spin domains and constructing an Euler-characteristic observable from their difference. We provide the expression relating this quantity to conventional observables of the Ising model. This derivation allows us to understand its expected behavior physically. As a byproduct, we show that at any finite positive temperature the expectation of the Euler characteristic exceeds a positive, lattice-size-independent bound, hence disproving a previously suggested conjecture. Monte Carlo simulations combined with multihistogram reweighting show that this spin-odd topological observable exhibits order-parameter-like behavior near the ferromagnetic transition. Finite-size scaling of its susceptibility yields pseudocritical temperatures that converge to the known critical temperature for both lattice geometries. On the square lattice, the leading-order estimate of the critical exponent obtained from the topological observable depends more strongly on the fitting range than the magnetization estimate. This behavior is consistent with stronger subleading finite-size corrections, as supported by fits including an additional correction term. On the triangular lattice, the corresponding estimate remains consistent with the theoretical Ising value. Our study suggests that topologically defined quantities such as the Euler characteristic can provide an alternative way to locate order-disorder phase transitions in the systems considered here. Since the definition of these observables is purely geometrical, they can provide useful insights in cases in which order parameters cannot be constructed.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文通过将二维 Ising 模型的正负自旋畴与胞腔复形关联并构造 Euler 示性数拓扑观测量，证明该量在铁磁相变附近表现出类序参量行为，其磁化率有限尺寸标度可定位临界温度，为无法构造传统序参量的系统提供了一种纯几何的相变探测手段。\n\n## 研究问题\n\n作者想解决的问题是：**拓扑性质的微观构型观测量能否为相变提供超越传统热力学观测量的额外信息？** 具体而言：\n\n1. 如何将二维 Ising 模型的自旋构型与拓扑量（Euler 示性数）关联，并建立其与传统观测量（磁化、能量等）的解析关系？\n2. 该拓扑观测量在铁磁相变附近是否表现出序参量式的行为？其有限尺寸标度能否用于定位临界温度并提取临界指数？\n3. 此前有 conjecture 认为 Euler 示性数的期望值在有限温度下会趋于零（或某个与格点尺寸相关的行为），该 conjecture 是否成立？\n4. 由于该观测量的定义是纯几何的，它能否推广到传统序参量无法构造的系统？\n\n## 方法\n\n- **模型**：二维 Ising 模型，分别在**方格点（square lattice）** 和**三角格点（triangular lattice）** 上研究。\n- **拓扑构造**：将正自旋畴和负自旋畴分别与胞腔复形（cell complexes）关联，构造各自的 Euler 示性数，并取其**差值**作为观测量（spin-odd topological observable）。\n- **解析推导**：给出该 Euler 示性数差值与 Ising 模型传统观测量（如磁化、能量、畴壁密度等）之间的表达式，从而从物理上理解其预期行为；并证明在任意有限正温度下 Euler 示性数的期望值超过一个与格点尺寸无关的正下界，从而**否定了一个此前提出的 conjecture**。\n- **数值方法**：**Monte Carlo 模拟**结合**多直方图重加权（multihistogram reweighting）**，用于计算该拓扑观测量的热力学行为。\n- **有限尺寸标度分析**：对拓扑观测量的磁化率（susceptibility）做有限尺寸标度，提取赝临界温度并外推至热力学极限；同时拟合临界指数，并检验加入次领头修正项后的拟合稳定性。\n\n## 主要结果\n\n1. **解析关系**：建立了 Euler 示性数差值与传统 Ising 观测量之间的明确表达式，使得该拓扑量的物理行为可以被理解（例如它与畴壁/界面密度相关）。\n2. **否定旧 conjecture**：证明在任意有限正温度下，Euler 示性数的期望值大于一个**与格点尺寸无关的正下界**，因此此前建议的该量在有限温度下趋于零（或尺寸相关消失）的 conjecture 不成立。\n3. **类序参量行为**：Monte Carlo 模拟显示该 spin-odd 拓扑观测量在铁磁相变附近表现出**类序参量（order-parameter-like）行为**。\n4. **临界温度定位**：其磁化率的有限尺寸标度给出的赝临界温度在方格点和三角格点上均**收敛到已知的临界温度**。\n5. **临界指数**：\n   - 方格点上，从拓扑观测量提取的领头临界指数估计对拟合区间的依赖比磁化估计更强，这与更强的次领头有限尺寸修正一致（加入额外修正项的拟合支持这一解释）。\n   - 三角格点上，相应估计与理论 Ising 值一致。\n6. **总体结论**：拓扑定义的量（如 Euler 示性数）可以为所研究系统提供一种**替代性的相变定位方法**；由于其定义是纯几何的，在无法构造序参量的情形下可能提供有用信息。\n\n## 为什么值得关注\n\n- **对相变探测方法论的贡献**：提供了一种不依赖传统序参量的相变定位手段。传统 Landau 序参量依赖于对称性破缺模式，而在规范理论、拓扑相、或序参量难以构造的系统中，纯几何/拓扑观测量可能成为有力补充。\n- **与格点场论的潜在联系**：Euler 示性数等拓扑量在格点规范理论中与拓扑荷、缺陷（如畴壁、单极子、涡旋）密切相关；该工作展示了如何将胞腔复形拓扑与统计场论观测量系统关联，这一思路可启发对格点 QCD 中拓扑结构（如中心涡旋、畴壁）与相变关系的类比研究。\n- **对 conjecture 的修正**：明确否定了一个已提出的猜想，澄清了有限温度下拓扑量的行为，具有基础性意义。\n- **方法学上的可推广性**：多直方图重加权 + 有限尺寸标度 + 次领头修正分析的组合，为类似拓扑观测量的临界行为研究提供了可复制的范式。\n- **跨学科价值**：二维 Ising 模型是可解且数值上高度可控的基准模型，在此建立的拓扑观测量与临界行为的关系，可作为检验更复杂系统（包括格点场论模型）中类似拓扑探测手段的试金石。\n\n## 方向标签\n\n- Finite temperature\n- 统计场论 / 相变与临界现象\n- 拓扑观测量与缺陷\n- Monte Carlo 数值方法\n- 格点模型基准研究（与 Lattice QCD 拓扑结构方法学相关）\n\n## 阅读优先级\n\n**★★★☆☆（3/5）**\n\n理由：该论文在二维 Ising 这一基准模型上建立了拓扑观测量（Euler 示性数）与相变行为的联系，方法严谨、结论清晰（包括否定一个 conjecture），对统计场论和相变数值方法社区有直接价值。但它并非格点 QCD 的直接研究，模型简单（二维标量模型），其结论向规范理论或 QCD 的推广仍需额外工作。对于关注**拓扑量作为相变探针**或**无传统序参量系统中相变定位**的研究者，值得一读；对于主要关注 Lattice QCD 数值模拟本身的研究者，优先级中等，可作为方法学参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-20T07:38:57.334066"
   }
 ]
