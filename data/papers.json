@@ -9812,5 +9812,234 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-23T08:01:32.054286"
+  },
+  {
+    "id": "2611.31087v1",
+    "title": "Leading-order dynamical QED corrections to the thermodynamics of isospin-asymmetric QCD",
+    "authors": [
+      "Gergely Endrődi",
+      "Ádám Fischer",
+      "Wei-Ping Huang",
+      "Gergely Markó"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31087v1",
+    "published": "2026-11-23T17:35:23Z",
+    "abstract": "We present a first lattice calculation of the leading-order effect of dynamical photons on the thermodynamics of QCD at nonzero isospin chemical potential $μ_I$, across the onset of charged-pion condensation. In QCD this onset is a second-order transition, which dynamical photons are expected, on general grounds, to drive first order. However, a direct simulation is not possible since unequal quark charges render the QCD+QED action complex at nonzero $μ_I$. We therefore expand the free energy density $f$ in the electromagnetic coupling $e$ around $e=0$, where the sign problem is absent. The leading-order expansion coefficient, $\\partial^2 f/\\partial e^2|_{e=0}$, is the convolution of the photon propagator with the electromagnetic current-current correlator, which we measure with a newly proposed planar source on existing (2+1)-flavor pure-QCD ensembles at nonzero $μ_I$ and pionic source $λ$. At physical quark masses and a single lattice spacing, after extrapolating to vanishing $λ$, we find that $\\partial^2 f/\\partial e^2|_{e=0}$ is, within errors, independent of $μ_I$ below the onset and rises sharply across it.",
+    "summary": {
+      "raw": "## 一句话结论\n作者首次在格点上计算了动力学光子对非零同位旋化学势下QCD热力学的领头阶修正，发现该修正系数在带电π介子凝聚阈值以下与μ_I无关、在阈值处急剧上升，为“动力学光子将QCD的二阶相变驱动为一阶”这一预期提供了首个格点证据。\n\n## 研究问题\n论文关注的核心问题是：动力学光子（dynamical photons）如何影响非零同位旋化学势μ_I下QCD的热力学，特别是在带电π介子凝聚（charged-pion condensation）起始点附近。在纯QCD中，该起始点是一个二阶相变；一般性论证预期动力学光子会将其驱动为一阶相变。但直接模拟不可行，因为夸克电荷不相等使得非零μ_I下的QCD+QED作用量为复数（符号问题）。因此作者要解决的是：如何在避免符号问题的前提下，首次从格点上定量提取光子对热力学的领头阶效应。\n\n## 方法\n- **展开策略**：将自由能密度 f 在电磁耦合 e 附近围绕 e=0 做微扰展开，在 e=0 处符号问题不存在，从而规避复数作用量问题。\n- **领头阶系数**：计算 ∂²f/∂e²|_{e=0}，它等于光子传播子与电磁流-流关联函数的卷积。\n- **新数值技术**：提出并使用一种新的“平面源”（planar source）来测量该流-流关联函数。\n- **格点系综**：在已有的 (2+1) 味纯QCD系综上进行，取非零μ_I和非零π介子源λ，物理夸克质量、单一格点间距。\n- **外推**：对λ→0做外推后得到物理结果。\n\n## 主要结果\n在物理夸克质量和单一格点间距下，经λ→0外推后，∂²f/∂e²|_{e=0} 在误差范围内于凝聚阈值以下与μ_I无关，而在跨越阈值时急剧上升。这一行为与“动力学光子使相变变为一阶”的预期定性一致，是该效应的首个格点计算证据。\n\n## 为什么值得关注\n- **首次性**：这是动力学光子对非零μ_I下QCD热力学领头阶效应的首个格点计算，填补了QCD+QED有限密度热力学研究的空白。\n- **规避符号问题的方法论价值**：在e=0处展开、结合平面源测量流-流关联函数的方案，为其他存在符号问题的QCD+QED问题提供了可复用的技术路线。\n- **物理意义**：直接关系到中子星/致密物质、早期宇宙等环境中同位旋不对称QCD物质的性质，以及光子对相变性质的拓扑/普适类影响。\n- **对社区**：为“光子驱动相变阶数改变”这一长期理论预期提供了第一份定量格点检验，可能激发后续多格点间距、连续极限及系统误差研究。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- Finite density（同位旋化学势）\n- QCD+QED\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：工作具有明确的“首次”意义和方法创新（e 展开 + 平面源），结论清晰且物理动机强，对格点QCD和致密物质社区都有参考价值。扣一星是因为目前仅在单一格点间距、纯QCD系综上得到结果，尚未做连续极限和系统误差的完整控制，属于初步但重要的探索性计算。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:14:33.988398"
+  },
+  {
+    "id": "2611.30669v1",
+    "title": "Identifying the conformal window by chiral phase boundaries",
+    "authors": [
+      "Jan Philipp Klinger",
+      "Reinhold Kaiser",
+      "Owe Philipsen",
+      "Jonas Schaible"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.30669v1",
+    "published": "2026-11-23T13:26:23Z",
+    "abstract": "Once the number of massless fermion flavours reaches a critical value $N_f^*$, many-flavour QCD enters the conformal window, where chiral symmetry remains unbroken in the vacuum. At non-zero quark mass, chiral symmetry is explicitly broken, and thermal chiral crossovers can also occur for $N_f\\geq N_f^*$. Their presence alone therefore does not distinguish a QCD-like theory from a mass-deformed conformal theory. They differ, however, in whether a thermal transition persists in the continuum chiral limit. To address this, we map out the chiral phase boundaries of unimproved staggered fermions in the bare lattice parameter space $(N_τ,β,am,N_f)$, comparing $N_f=7$ and $N_f=8$. Our results indicate that the thermal chiral transition persists in the continuum chiral limit for $N_f=7$, whereas the massless continuum theory with $N_f=8$ remains chirally symmetric in the vacuum. Furthermore, we demonstrate that the pseudo-critical surface for eight flavours observed for finite quark masses is consistent with conformal hyperscaling, providing further evidence that eight-flavour QCD lies within the conformal window and suggesting $7<N_f^*\\leq8$.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过映射未改进交错费米子在裸格点参数空间中的手征相边界，比较 $N_f=7$ 与 $N_f=8$，发现 $N_f=7$ 的热手征转变在连续手征极限下持续存在，而 $N_f=8$ 的无质量连续理论保持手征对称，从而给出 $7<N_f^*\\leq 8$ 的证据。\n\n## 研究问题\n作者想解决的核心问题是：如何区分 QCD-like 理论与质量变形共形理论。具体而言，当无质量费米子味数达到临界值 $N_f^*$ 后，多味 QCD 进入共形窗口，真空中手征对称性保持未破缺。在非零夸克质量下，手征对称性被明显破缺，热手征交叉也可在 $N_f\\geq N_f^*$ 时发生，因此仅凭热交叉的存在不能区分两类理论。关键区别在于：热转变是否在连续手征极限下持续存在。作者希望通过确定手征相边界来定位共形窗口的下边界，即判断 $N_f^*$ 是 7 还是 8。\n\n## 方法\n- **格点模型**：未改进交错费米子（unimproved staggered fermions）。\n- **参数空间**：裸格点参数空间 $(N_\\tau,\\beta,am,N_f)$，其中 $N_\\tau$ 为时间方向格点数，$\\beta$ 为规范耦合，$am$ 为裸夸克质量，$N_f$ 为味数。\n- **比较对象**：$N_f=7$ 与 $N_f=8$。\n- **数值技术**：通过映射手征相边界（chiral phase boundaries），即确定手征转变/交叉发生的临界线或临界面，并外推到连续手征极限（$am\\to0$，$a\\to0$）。\n- **分析手段**：对 $N_f=8$ 的有限质量伪临界面检验共形超标度（conformal hyperscaling）行为，以判断其是否与共形窗口内的质量变形共形理论一致。\n\n## 主要结果\n1. **$N_f=7$**：热手征转变在连续手征极限下持续存在，表明 $N_f=7$ 仍属于 QCD-like 区域，手征对称性在无质量极限下自发破缺。\n2. **$N_f=8$**：无质量连续理论在真空中保持手征对称，未发生自发破缺，符合共形窗口内质量变形共形理论的行为。\n3. **共形超标度检验**：$N_f=8$ 在有限夸克质量下观测到的伪临界面与共形超标度一致，进一步支持八味 QCD 位于共形窗口内。\n4. **共形窗口边界**：综合以上结果，作者建议 $7<N_f^*\\leq 8$。\n\n## 为什么值得关注\n- **对共形窗口定位的直接贡献**：共形窗口的下边界 $N_f^*$ 是多味 QCD 相图的关键参数，对理解规范理论的红外行为、手征对称性破缺模式以及是否存在红外不动点至关重要。\n- **方法学意义**：论文强调“热手征交叉是否存在”本身不足以区分 QCD-like 与质量变形共形理论，必须考察连续手征极限下转变是否持续。这为格点研究共形窗口提供了更清晰的判据。\n- **对 BSM 模型构建的影响**：许多 technicolor 和复合希格斯模型依赖近共形动力学，$N_f^*$ 的确定直接影响模型可行性。\n- **对格点社区的意义**：$N_f=8$ 是否在共形窗口内长期存在争议，该工作通过手征相边界与超标度分析提供了新的独立证据，有助于澄清此前不同格点合作组之间的张力。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- BSM\n- Chiral symmetry\n- Conformal window\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文直接针对多味 QCD 共形窗口边界这一重要且长期存在争议的问题，方法清晰，结论具有潜在影响力。对于研究格点规范理论、共形窗口、technicolor/复合希格斯以及手征对称性破缺的研究者而言，属于高相关度工作。扣一星的原因是：使用未改进交错费米子，连续极限外推和手征极限处理可能存在系统误差；且 $N_f=7$ 与 $N_f=8$ 的结论仍需其他费米子离散化方案和更大体积的独立验证。但总体而言，值得优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:14:40.510580"
+  },
+  {
+    "id": "2611.30493v1",
+    "title": "Progress on finite temperature Sp(4) lattice gauge theory with matter fields",
+    "authors": [
+      "Alexis Verney-Provatas",
+      "Chris Allton",
+      "Ed Bennett",
+      "Luigi Del Debbio",
+      "Ryan C. Hill",
+      "Deog Ki Hong",
+      "Jong-Wan Lee",
+      "C. -J. David Lin",
+      "Biagio Lucini",
+      "Maurizio Piai",
+      "Davide Vadacchino"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.30493v1",
+    "published": "2026-11-23T11:13:00Z",
+    "abstract": "We explore the finite temperature behaviour of the Sp(4) lattice gauge theory coupled to two dynamical Wilson fermions transforming in the fundamental representation. The continuum theory provides a realisation of composite dark matter within the Strongly Interacting Massive Particle (SIMP) paradigm. Its thermal phase transition in the early universe might have generated an observable relic stochastic gravitational wave signal. Evaluating the sensitivity of future gravitational wave experiments to this signal requires knowledge of the strength of the phase transition. We explore the two dimensional parameter space of the theory, defined by the bare fermion mass and inverse gauge coupling. For this exploratory study we focus on lattices with a small number of sites in the temporal dimension. We analyse the finite volume scaling behaviour of Polyakov loop observables. Specifically the scaling of the peak of the susceptibility, informed by multiple histogram reweighting, is used to discriminate between the presence of a phase transition or crossover. In the light fermion mass regime we find strong indications of a crossover, while for heavy fermions we find preliminary evidence of a first-order phase transition. These findings motivate further studies of the continuum limit for this and other Sp(2N) gauge theories.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过有限温度格点模拟研究了 Sp(4) 规范场与两个基本表示 Wilson 费米子耦合的理论，发现轻费米子质量区域呈现平滑的 crossover，而重费米子区域初步显示一阶相变迹象，为复合暗物质 SIMP 模型的早期宇宙相变引力波信号评估提供了关键输入。\n\n## 研究问题\n作者想解决的核心问题是：Sp(4) 规范理论耦合两个基本表示动力学费米子（作为 SIMP 复合暗物质候选）在早期宇宙中的热相变性质——具体而言，相变是 crossover 还是一阶相变，以及其强度如何。这一信息直接决定了该理论预言的可观测随机引力波信号强度，从而影响未来引力波实验（如 LISA、爱因斯坦望远镜、宇宙 explorer 等）对该模型的探测灵敏度评估。\n\n## 方法\n- **模型**：Sp(4) 格点规范理论 + 两个动力学 Wilson 费米子（基本表示），对应连续极限下的 SIMP 复合暗物质实现。\n- **参数空间**：裸费米子质量 \\(m_f\\) 与规范耦合倒数 \\(\\beta\\) 构成的二维参数空间。\n- **格点设置**：聚焦于时间方向格点数较少的小体积格点（探索性研究），分析有限体积标度行为。\n- **观测量**：Polyakov loop 及其磁化率（susceptibility）。\n- **数值技术**：多直方图重加权（multiple histogram reweighting）以精确确定磁化率峰值的位置和高度，通过峰值随体积的标度行为区分相变类型（crossover vs. 一阶相变）。\n- **相变判别**：利用磁化率峰高随空间体积的标度指数判断相变阶数。\n\n## 主要结果\n1. **轻费米子质量区域**：发现强证据表明存在 **crossover**（平滑过渡），而非真正的一阶相变。\n2. **重费米子质量区域**：初步证据显示存在 **一阶相变**（first-order phase transition），表现为磁化率峰值随体积的标度行为符合一阶相变特征。\n3. 相变类型对裸费米子质量敏感，暗示该理论相图中可能存在 crossover 与一阶相变线相交的临界点（critical endpoint）。\n4. 结果为后续连续极限研究和更广泛的 Sp(2N) 规范理论热相变研究提供了动机和初步参数定位。\n\n## 为什么值得关注\n- **暗物质与引力波交叉领域**：SIMP 范式是解决小尺度结构问题的重要复合暗物质候选，而 Sp(4) 是最小可实现该机制的规范群之一。相变强度直接决定引力波信号的可探测性，本文为该模型的引力波预言提供了第一手格点输入。\n- **相变类型判定的方法论意义**：利用多直方图重加权 + 磁化率有限体积标度区分 crossover 与一阶相变，是有限温度格点场论中的标准但非平凡的技术路线，本文将其系统应用于 Sp(4) 伴随费米子理论。\n- **扩展至 Sp(2N) 家族**：结果为更广泛的 Sp(2N) 规范理论（N=2,3,...）的热相变研究铺路，这类理论在复合 Higgs、暗物质和 technicolor 模型中均有应用。\n- **对社区的直接价值**：为引力波实验（LISA 等）对 SIMP 暗物质模型的探测灵敏度评估提供了必要的理论输入参数，连接了格点场论与引力波天文学两个社区。\n\n## 方向标签\n- Lattice gauge theory\n- BSM physics\n- Finite temperature\n- Dark matter (SIMP)\n- Gravitational waves\n- Sp(4) gauge theory\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文属于探索性研究（小时间方向格点、尚未做连续极限），结果具有初步性，不宜作为最终结论引用。但其物理动机明确且跨学科意义强（暗物质 + 引力波 + 格点场论），方法路线清晰，对从事 BSM 格点计算、复合暗物质模型或早期宇宙相变引力波的研究者具有较高的参考价值。若读者关注 Sp(2N) 理论或 SIMP 暗物质，本文是必读的近期进展；若仅关注 QCD 本身，则相关性较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:14:48.057853"
+  },
+  {
+    "id": "2611.30489v1",
+    "title": "Non-invertible Duality Defects in Four-Dimensional $\\mathbb{Z}_N$ Lattice Gauge Theories",
+    "authors": [
+      "Satoshi Yamaguchi"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.30489v1",
+    "published": "2026-11-23T11:11:55Z",
+    "abstract": "We consider four-dimensional $\\mathbb{Z}_N$ lattice gauge theories with generalized plaquette actions. These theories are known to exhibit dualities. We construct topological interfaces implementing these dualities by assigning a weight to each building block and proving topological invariance. At self-dual couplings, these interfaces become duality defects representing non-invertible symmetries. We also study center symmetry defects and their junctions with the duality interfaces and derive several crossing relations.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文在四维 \\(\\mathbb{Z}_N\\) 格点规范理论中显式构造了实现已知对偶变换的拓扑界面，并证明在自对偶耦合处这些界面成为非可逆对偶缺陷，同时系统研究了它们与中心对称缺陷的交汇（junction）及交叉关系。\n\n## 研究问题\n\n作者想解决的问题是：四维 \\(\\mathbb{Z}_N\\) 格点规范理论已知存在对偶性（duality），但这些对偶性在格点上如何以**拓扑界面/缺陷**的形式被显式实现？具体而言：\n\n1. 能否在格点上逐块（building block）赋权，构造出实现对偶变换的拓扑界面，并证明其拓扑不变性？\n2. 在自对偶耦合处，这些界面是否成为非可逆（non-invertible）对偶缺陷，从而在格点层面实现非可逆对称性？\n3. 这些对偶界面与中心对称（center symmetry）缺陷如何交汇？交汇处满足哪些交叉关系（crossing relations）？\n\n这本质上是把连续场论中近年火热的\"非可逆对称性/对偶缺陷\"概念，落到四维格点规范理论的具体构造上。\n\n## 方法\n\n- **模型**：四维 \\(\\mathbb{Z}_N\\) 格点规范理论，采用广义 plaquette 作用量（generalized plaquette actions），即作用量不仅含基本 plaquette，还含更高表示或组合的 plaquette 项——正是这类推广作用量使对偶性得以存在。\n- **构造方法**：对界面的每个\"building block\"（格点上的局部构件）赋一个权重，通过拼接这些局部权重定义整张拓扑界面，并证明其拓扑不变性（即界面可连续变形而不改变配分函数）。\n- **自对偶点分析**：在自对偶耦合处识别界面成为对偶缺陷的条件，讨论其非可逆性。\n- **缺陷交汇分析**：研究中心对称缺陷与对偶界面的交汇，推导交叉关系（crossing relations），这是代数上约束缺陷融合/编织规则的关键。\n- **性质**：属于解析/构造性工作，非数值模拟；核心是格点上的显式定义与拓扑不变性证明。\n\n## 主要结果\n\n1. **显式构造了实现对偶变换的拓扑界面**：通过对每个 building block 赋权并在格点上拼接，得到拓扑不变的界面，从而在格点层面\"实现\"了该理论的已知对偶性。\n2. **自对偶耦合处的非可逆对偶缺陷**：在自对偶点，这些界面成为对偶缺陷，代表非可逆对称性——即缺陷的融合不满足群式可逆规则。\n3. **中心对称缺陷与对偶界面的交汇**：构造并分析了中心对称缺陷与对偶界面的 junction，推导出若干交叉关系，给出缺陷代数的一致性约束。\n4. 整体上把连续场论中的非可逆对偶缺陷语言，系统地翻译并落实到四维 \\(\\mathbb{Z}_N\\) 格点规范理论的具体格点构造中。\n\n## 为什么值得关注\n\n- **非可逆对称性是当前高能/凝聚态理论的前沿**：过去几年非可逆对称性在连续场论中发展迅速，但在**格点上**的显式、严格构造仍很少。本文给出了四维规范理论中的具体格点实现，为在格点上研究非可逆对称性提供了可操作的框架。\n- **格点提供非微扰定义**：连续场论中对偶缺陷的讨论常依赖半经典或有效描述；格点构造给出非微扰、定义良好的对象，可用于检验缺陷代数、交叉关系等。\n- **对 QCD 与规范理论社区的意义**：中心对称、't Hooft 缺陷、对偶性都是禁闭与相结构研究的核心工具；把对偶界面与中心缺陷的交汇关系搞清楚，有助于理解四维规范理论的相图与拓扑缺陷代数。\n- **方法可推广**：逐块赋权 + 拓扑不变性证明的构造思路，可能推广到其他格点模型（如带物质场、其他规范群），并与张量网络/量子模拟中的对称性缺陷实现产生联系。\n\n## 方向标签\n\n- Lattice gauge theory\n- Topological defects / Non-invertible symmetries\n- Duality\n- Theoretical high energy physics\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n理由：对研究格点规范理论、拓扑缺陷与非可逆对称性的读者，这是高度相关且构造清晰的工作，概念上把场论前沿与格点方法衔接起来，值得精读其构造与交叉关系部分。扣一星是因为它偏解析构造、无数值结果，且面向较专门的读者群；若你的兴趣在数值 QCD 或算法层面，相关性会低一些。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:14:55.325061"
+  },
+  {
+    "id": "2611.30475v1",
+    "title": "Pion scattering in finite volume within the Inverse Amplitude Method: Extension to moving frames",
+    "authors": [
+      "Julián A. Sánchez",
+      "Raquel Molina",
+      "Ángel Gómez Nicola"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.30475v1",
+    "published": "2026-11-23T11:01:35Z",
+    "abstract": "We study the leading exponentially suppressed finite-volume corrections to $ππ$ scattering near threshold in moving frames. Using the one-loop Inverse Amplitude Method (IAM), we compute the $I=0$ and $I=2$ amplitudes in a box with total momentum $\\vec P=2π\\vec d/L$, including the left-hand cut and the $t$-, $u$-channel and tadpole contributions neglected in Lüscher's quantization condition. We derive the resulting correction to the near-threshold energy levels and measure its size relative to the Lüscher term. We find that it becomes comparable to the latter for $m_πL\\lesssim 1.5$--$1.7$ at rest, and that it is larger in moving frames, reaching $m_πL\\lesssim 2.8$ for $\\vec d=[002]$. The corrections become negligible only for $m_πL\\gtrsim 5$.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在运动参考系中，用一圈手征微扰理论下的逆振幅方法（IAM）计算了 ππ 散射的近阈有限体积修正，发现除 Lüscher 项外被忽略的左手割线、t/u 道和蝌蚪贡献在较小体积（尤其运动系）下可与 Lüscher 项相当，必须在格点能级分析中加以考虑。\n\n## 研究问题\n作者想解决什么问题？\n- Lüscher 量子化条件在提取 ππ 散射振幅时只保留了指数压低的有限体积效应中的主导项（Lüscher 项），而忽略了左手割线、t/u 道交换和蝌蚪图等贡献。\n- 这些被忽略的项在近阈、较小体积以及**运动参考系**（总动量非零）下究竟有多大？何时可以安全忽略？\n- 论文将此前静止系的分析推广到运动系（\\(\\vec P = 2\\pi \\vec d/L\\)），定量评估这些修正相对于 Lüscher 项的大小，并给出可忽略的 \\(m_\\pi L\\) 阈值。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- **模型**：一圈逆振幅方法（Inverse Amplitude Method, IAM），基于手征微扰理论（ChPT），用于构造 \\(I=0\\) 和 \\(I=2\\) 的 ππ 振幅。\n- **有限体积处理**：在边长为 \\(L\\)、总动量 \\(\\vec P = 2\\pi\\vec d/L\\) 的盒子中计算振幅，采用运动系下的有限体积求和/积分替换（Matsubara 型离散化），显式包含：\n  - 左手割线贡献；\n  - \\(t\\)-、\\(u\\)-道交换贡献；\n  - 蝌蚪图贡献。\n- **输出量**：推导这些效应对近阈能级的修正 \\(\\delta E\\)，并与标准 Lüscher 项比较其相对大小。\n- 属于解析/半解析的理论计算（非直接格点数值模拟），为格点 QCD 的有限体积分析提供系统误差估计。\n\n## 主要结果\n总结最重要发现。\n- 被忽略的指数压低修正在小体积下不可忽略：\n  - **静止系**：当 \\(m_\\pi L \\lesssim 1.5\\text{–}1.7\\) 时，修正与 Lüscher 项大小相当。\n  - **运动系**：修正更大，对 \\(\\vec d=[002]\\) 可达 \\(m_\\pi L \\lesssim 2.8\\) 仍与 Lüscher 项可比。\n- 只有当 \\(m_\\pi L \\gtrsim 5\\) 时，这些修正才变得可以忽略。\n- 结论：运动系中有限体积修正的系统误差比静止系更严重，格点提取散射参数时需谨慎处理或外推到更大体积。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- **系统误差控制**：格点 QCD 通过有限体积能级提取 ππ 散射长度/相移（如 \\(a_0\\)、\\(a_2\\)），该工作量化了 Lüscher 公式之外被忽略项的大小，直接关系到系统误差预算。\n- **运动系计算日益重要**：现代格点计算常用运动系来覆盖更多运动学点、分离不同分波，本文表明运动系的有限体积修正更显著，提醒社区不能简单沿用静止系的经验阈值。\n- **方法学贡献**：将 IAM 与运动系有限体积技术结合，为手征有效理论框架下的有限体积修正提供了可操作的解析工具。\n- **对阈值附近物理的影响**：ππ 近阈行为与手征对称性破缺、σ 介子性质及 \\(K\\to\\pi\\pi\\) 等过程相关，精确控制有限体积效应有助于更可靠地约束这些物理量。\n\n## 方向标签\n- Lattice QCD\n- Chiral Effective Field Theory\n- Finite-Volume Effects\n- Hadron Scattering\n\n## 阅读优先级\n★★★★☆（4/5）\n- **理由**：对从事格点 QCD 散射计算、有限体积分析或手征微扰理论的研究者高度相关，提供了运动系修正的定量估计和实用阈值参考，方法清晰、结论直接可用。扣一星是因为它属于解析理论工作、非直接格点模拟，且聚焦近阈 ππ 特定道，对更广泛读者（如 BSM、量子模拟）相关性有限。若你的工作涉及从格点能级提取散射参数，建议优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:02.379084"
+  },
+  {
+    "id": "2611.30124v1",
+    "title": "Quark and gluon gravitational form factors of the nucleon at next-to-leading order",
+    "authors": [
+      "Ulaş Özdem"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.30124v1",
+    "published": "2026-11-23T06:33:57Z",
+    "abstract": "We compute the quark and gluon gravitational form factors $A$, $J$ and $D$ of the nucleon in three-point QCD sum rules at next-to-leading order in $α_s$ for the quark and gluon energy-momentum tensors (EMT), treating both at the same order in the $\\overline{\\rm MS}$ scheme. The nucleon EMT also tests the method, showing where the sum rules are reliable and why. Protected estimators of $D$ and of the trace form factor $\\bar c$ require antisymmetric Borel moments, since none with equal Borel masses alone is protected. The $\\mathcal{O}(α_s)$ corrections reduce $A_{\\rm tot}$ by $32$--$40\\%$, $J_{\\rm tot}$ by $22$--$27\\%$ and $|D_{\\rm tot}|$ by $21$--$27\\%$, since the perturbative share of the two-point function is much larger. The total form factors agree with lattice QCD for $1\\le Q^2\\le2.5$~GeV$^2$. At $Q^2=1.5$~GeV$^2$, $A_{\\rm tot}=0.337\\pm0.113$, $J_{\\rm tot}=0.206\\pm0.100$ and $D_{\\rm tot}=-0.206\\pm0.121$. $D$ is the most reliable result: its correlator is mostly perturbative, and its quark and gluon parts agree with the lattice. In $A$ and $J$, a local gluon-condensate term that does not fall with $Q^2$ is the largest, and their gluon shares are well below the lattice, possibly because the gluon EMT couples at this order only through gluon exchange and the condensate. A working region exists only near $β=1$, and the constant part of transitions cannot be separated within the Borel windows. The individual conservation identities deviate at one point by two standard deviations, consistent with a missing finite term in the $g_{μν}$ structure, and $\\bar c$ is therefore given at leading order with condensates.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文用次领头阶（NLO）的三点 QCD 求和规则，同时计算了核子中夸克和胶子的引力形状因子 \\(A\\)、\\(J\\)、\\(D\\)，发现 \\(D\\) 最可靠且与格点 QCD 一致，而 \\(A\\)、\\(J\\) 的胶子份额明显偏低，可能源于胶子 EMT 在此阶只通过胶子交换和凝聚贡献。\n\n## 研究问题\n作者想解决的核心问题是：核子的能量-动量张量（EMT）形状因子——特别是引力形状因子 \\(A\\)、\\(J\\)、\\(D\\)——在夸克与胶子之间的分配，能否在 QCD 求和规则框架下以与格点 QCD 可比的一致精度（NLO、\\(\\overline{\\rm MS}\\) 方案）被确定？具体包括：\n- 夸克与胶子 EMT 是否能在同一阶、同一方案下统一处理；\n- 求和规则在哪些区域可靠、哪些量（如 \\(D\\)、迹形状因子 \\(\\bar c\\)）需要特殊估计量（反对称 Borel 矩）；\n- NLO 修正对形状因子的影响有多大；\n- 求和规则结果与格点 QCD 在 \\(1\\le Q^2\\le 2.5\\ \\mathrm{GeV}^2\\) 是否一致，以及胶子份额偏低的原因。\n\n## 方法\n- **方法类型**：QCD 求和规则（三点关联函数），不是格点模拟。属于解析/半解析的非微扰 QCD 方法。\n- **计算阶数**：对夸克和胶子 EMT 均在 \\(\\alpha_s\\) 次领头阶（NLO）计算，统一采用 \\(\\overline{\\rm MS}\\) 方案。\n- **关键技术点**：\n  - 使用三点 QCD 求和规则提取形状因子；\n  - 引入**反对称 Borel 矩**来构造 \\(D\\) 和迹形状因子 \\(\\bar c\\) 的“受保护估计量”（protected estimators），因为仅用相等 Borel 质量没有受保护的估计量；\n  - 分析求和规则的工作区域（仅在 \\(\\beta=1\\) 附近存在），并讨论 Borel 窗口内跃迁常数部分无法分离的问题；\n  - 检验 EMT 守恒恒等式（individual conservation identities），发现某点偏离约两个标准差，与 \\(g_{\\mu\\nu}\\) 结构中缺失有限项一致，因此 \\(\\bar c\\) 只在领头阶加凝聚项给出。\n- **与格点对比**：将总形状因子与格点 QCD 结果在 \\(1\\le Q^2\\le 2.5\\ \\mathrm{GeV}^2\\) 比较。\n\n## 主要结果\n- **NLO 修正显著**：\\(\\mathcal{O}(\\alpha_s)\\) 修正使 \\(A_{\\rm tot}\\) 减小 \\(32\\)–\\(40\\%\\)，\\(J_{\\rm tot}\\) 减小 \\(22\\)–\\(27\\%\\)，\\(|D_{\\rm tot}|\\) 减小 \\(21\\)–\\(27\\%\\)，原因是两点函数的微扰部分占比很大。\n- **数值结果**（\\(Q^2=1.5\\ \\mathrm{GeV}^2\\)）：\n  - \\(A_{\\rm tot}=0.337\\pm0.113\\)\n  - \\(J_{\\rm tot}=0.206\\pm0.100\\)\n  - \\(D_{\\rm tot}=-0.206\\pm0.121\\)\n- **与格点一致**：总形状因子在 \\(1\\le Q^2\\le 2.5\\ \\mathrm{GeV}^2\\) 与格点 QCD 相符。\n- **\\(D\\) 最可靠**：其关联函数以微扰为主，夸克与胶子部分均与格点一致。\n- **\\(A\\)、\\(J\\) 的问题**：一个不随 \\(Q^2\\) 衰减的局域胶子凝聚项贡献最大，且它们的胶子份额远低于格点，可能因为胶子 EMT 在此阶只通过胶子交换和凝聚耦合。\n- **技术限制**：工作区域仅在 \\(\\beta=1\\) 附近；Borel 窗口内跃迁常数部分无法分离；守恒恒等式有一处偏离两个标准差。\n\n## 为什么值得关注\n- **对核子质量与自旋分解**：\\(A\\)、\\(J\\)、\\(D\\) 直接关联核子的质量分布、自旋来源和内部力学性质（如 Druck 项、稳定性条件），是理解核子结构的核心量。\n- **夸克-胶子分配问题**：胶子对核子 EMT 的贡献是当前格点 QCD 与实验（如 JLab、EIC）关注的焦点，本文给出了独立的求和规则视角，并指出胶子份额可能被低估及其原因。\n- **方法学价值**：系统展示了三点求和规则在 NLO 下的可靠性边界（工作区域、Borel 矩选择、守恒恒等式检验），对使用求和规则研究 EMT 的后续工作有直接参考意义。\n- **与格点的交叉检验**：在 \\(1\\le Q^2\\le 2.5\\ \\mathrm{GeV}^2\\) 与格点一致，增强了双方结果的可信度，也指出了分歧所在（\\(A\\)、\\(J\\) 的胶子份额），为格点系统误差评估提供线索。\n- **对 \\(\\bar c\\) 与迹反常**：迹形状因子涉及 QCD 迹反常与核子质量起源，本文对其可靠性的讨论有理论意义。\n\n## 方向标签\n- QCD Sum Rules\n- Nucleon Structure\n- Gravitational Form Factors\n- Energy-Momentum Tensor\n- Lattice QCD（对比基准）\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：这是一篇方法严谨、结果与格点可比的核子 EMT 求和规则研究，对关注核子引力形状因子、夸克-胶子分配和 QCD 求和规则可靠性的读者价值很高；扣一星是因为它本身不是格点计算，且 \\(A\\)、\\(J\\) 的胶子份额与格点存在未完全解释的偏差，结论的稳健性仍受求和规则固有系统误差限制。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:10.359541"
+  },
+  {
+    "id": "2611.29900v1",
+    "title": "Hadron spectroscopy of QC2D at finite density",
+    "authors": [
+      "Kei Iida",
+      "Etsuko Itou",
+      "Kotaro Murakami",
+      "and Daiki Suenaga"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.29900v1",
+    "published": "2026-11-23T01:55:21Z",
+    "abstract": "We investigate the chemical-potential dependence of hadron masses in two-color QCD (QC$_2$D) at low temperature using lattice Monte Carlo simulations. We calculate all possible meson and diquark correlation functions, including disconnected diagrams, on a $32^4$ lattice at $T\\approx40\\,\\mathrm{MeV}$. In the hadronic phase, we obtain a meson mass hierarchy similar to that of three-color QCD. After the superfluid transition, the ordering changes: the $σ$ and $a_1$ channels become lighter, while the pion mass increases with density. We also examine the diquark source dependence of the Nambu--Goldstone mode of $U(1)_B$ symmetry breaking and find an almost vanishing mass in the superfluid phase after extrapolation to zero source. Finally, we compare correlation functions for chiral partners and discuss indications of partial chiral-symmetry restoration. This contribution is based on our recent study of hadron spectra in dense QC$_2$D~\\cite{Iida:2026dmw}.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过在 \\(32^4\\) 格点上对两色 QCD（QC₂D）进行有限密度格点蒙特卡洛模拟，发现超流相变后强子质量谱发生显著重排：\\(\\sigma\\) 和 \\(a_1\\) 道变轻、\\(\\pi\\) 变重，且 \\(U(1)_B\\) 自发破缺的 Nambu–Goldstone 模在零源外推下质量趋近于零，同时手征伙伴关联函数显示出部分手征对称性恢复的迹象。\n\n## 研究问题\n作者想解决的问题是：在低温度、有限重子化学势下，两色 QCD 的强子谱（介子与双夸克）如何随密度演化？具体包括：\n1. 强子相中介子质量谱是否与三色 QCD 类似；\n2. 超流相变之后质量谱的排序如何改变；\n3. \\(U(1)_B\\) 对称性自发破缺所产生的 Nambu–Goldstone 模的质量行为（需外推到零双夸克源）；\n4. 手征伙伴（chiral partners）的关联函数是否显示出部分手征对称性恢复的信号。\n\n## 方法\n- **模型**：两色 QCD（QC₂D），低温度 \\(T\\approx 40\\,\\mathrm{MeV}\\)，有限化学势。\n- **格点设置**：\\(32^4\\) 格点上的格点蒙特卡洛模拟。\n- **观测量**：计算所有可能的介子与双夸克关联函数，**包括 disconnected diagrams**（这在有限密度强子谱计算中较具挑战性）。\n- **数值技术**：通过双夸克源（diquark source）依赖研究 \\(U(1)_B\\) Nambu–Goldstone 模，并外推到零源以提取物理质量；比较手征伙伴的关联函数以讨论手征对称性恢复。\n- 该工作基于作者近期关于稠密 QC₂D 强子谱的研究（文献引用 Iida:2026dmw）。\n\n## 主要结果\n1. **强子相**：介子质量谱呈现出与三色 QCD 类似的层级结构。\n2. **超流相变之后**：质量排序改变——\\(\\sigma\\) 和 \\(a_1\\) 道变轻，而 \\(\\pi\\) 介子质量随密度增加而上升。\n3. **Nambu–Goldstone 模**：研究双夸克源依赖后，外推到零源时该模质量几乎为零，符合超流相中 \\(U(1)_B\\) 自发破缺的预期。\n4. **手征对称性**：通过比较手征伙伴的关联函数，讨论了部分手征对称性恢复的迹象。\n\n## 为什么值得关注\n- **符号问题规避**：两色 QCD 在有限化学势下没有符号问题（或符号问题可控），是研究稠密强相互作用物质性质的理想理论实验室，可为理解三色 QCD 相图（如超流、手征对称性恢复）提供可计算的类比。\n- **完整谱计算**：包含 disconnected diagrams 的全套介子/双夸克关联函数计算在有限密度下并不常见，提供了较系统的强子谱密度依赖信息。\n- **对称性破缺的格点证据**：对 \\(U(1)_B\\) Nambu–Goldstone 模的零源外推和手征伙伴比较，为超流相与手征对称性恢复提供了直接的格点信号。\n- 对理解致密物质中的有效自由度（哪些强子变轻/变重）以及构建致密 QCD 有效模型具有参考价值。\n\n## 方向标签\n- Lattice QCD\n- Finite density\n- Finite temperature\n- Chiral symmetry\n- Superfluidity\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该工作系统计算了有限密度 QC₂D 的完整强子谱（含 disconnected diagrams），并给出超流相变后质量谱重排与手征对称性恢复的格点证据，对稠密 QCD 相结构研究有直接参考价值。减一星的原因是：QC₂D 与真实三色 QCD 存在模型差异（两色 vs 三色、双夸克 vs 重子），结论向真实 QCD 的推广需谨慎；且作为会议/贡献性文章，细节深度可能有限。对从事有限密度格点、致密物质与手征对称性研究的读者优先级较高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:17.035588"
+  },
+  {
+    "id": "2611.29423v1",
+    "title": "Thermodynamics of QCD+QED from the lattice",
+    "authors": [
+      "G. Endrődi",
+      "E. Garnacho-Velasco",
+      "G. Markó",
+      "L. Pethő"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.29423v1",
+    "published": "2026-11-22T11:58:00Z",
+    "abstract": "QED corrections to observables in QCD are by now well-understood at zero temperature, where QED effects are perturbative and required for precision physics observables, such as the neutron-proton mass difference or the muon anomalous magnetic moment, among many others. However, there are indications in the literature that at finite temperature the introduction of QED can lead to non-perturbative effects, affecting the structure of the phase diagram, since the combined theory is exactly center-symmetric. In this proceedings article, we analyze the structure of the combined theory and the different strategies to simulate it on the lattice, as well as presenting novel results of lattice QCD+QED simulations at finite temperature, focusing on understanding the role of the electromagnetic coupling in the thermodynamics of this system. We also discuss new features that arise in the combined theory and the challenges that these simulations entail, which require the development of new algorithms in order to understand the phase diagram of QCD+QED from first principles.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇 proceedings 指出，在有限温度下引入 QED 会因 QCD+QED 联合理论具有精确的中心对称性而可能产生非微扰效应、改变相图结构，并给出了有限温度格点 QCD+QED 模拟的新结果与算法挑战。\n\n## 研究问题\n作者想解决的核心问题是：零温下 QED 修正已被很好地理解为微扰效应，但有限温度下 QED 的引入是否会带来非微扰效应、从而改变 QCD 相图的结构？具体而言，需要厘清 QCD+QED 联合理论的结构，评估在格点上模拟该理论的不同策略，并理解电磁耦合在系统热力学中扮演的角色。\n\n## 方法\n- 理论分析：分析 QCD+QED 联合理论的结构，特别是其精确的中心对称性（combined theory is exactly center-symmetric），以及由此带来的新特征。\n- 格点模拟策略：讨论在格点上模拟 QCD+QED 的不同策略（例如如何处理 QED 的非紧致/紧致形式、电荷屏蔽、有限体积效应等）。\n- 数值模拟：给出有限温度格点 QCD+QED 模拟的新结果，聚焦电磁耦合对热力学量的影响。\n- 算法层面：指出这些模拟带来的挑战，需要发展新算法才能从第一性原理理解 QCD+QED 相图。\n\n## 主要结果\n- 文献中的迹象表明，有限温度下引入 QED 可能导致非微扰效应，影响相图结构，根源在于 QCD+QED 联合理论是精确中心对称的。\n- 作者给出了有限温度格点 QCD+QED 模拟的新结果，用于理解电磁耦合在该系统热力学中的作用。\n- 联合理论中出现了一些新特征，且相关模拟面临挑战，需要开发新算法才能从第一性原理确定 QCD+QED 的相图。\n\n## 为什么值得关注\n- 相图结构问题：若 QED 在有限温度下确实引入非微扰效应并改变相图，则传统上基于纯 QCD 的有限温度相图图像需要修正，这对重离子碰撞、早期宇宙等物理场景的理解有直接影响。\n- 中心对称性：联合理论的精确中心对称性是一个结构性新特征，可能影响禁闭/去禁闭转变的刻画，值得理论社区深入审视。\n- 方法学挑战：模拟 QCD+QED 需要新算法，这推动了格点方法学的发展，对 lattice 社区具有直接的方法论价值。\n- 第一性原理目标：从第一性原理理解 QCD+QED 相图，是把 QED 修正从零温精度物理推广到有限温度热力学的重要一步。\n\n## 方向标签\n- Lattice QCD\n- Finite temperature\n- QCD+QED\n- Phase diagram\n- Algorithms\n\n## 阅读优先级\n★★★☆☆（3/5）\n理由：这是一篇 proceedings，篇幅有限，主要给出问题框架、策略讨论和新结果的概要，而非完整细节；但它提出的“有限温度 QED 非微扰效应与中心对称性”问题具有概念重要性，且涉及新算法需求，对做有限温度格点 QCD 或 QED 修正的研究者值得一读。若读者关注相图或 QCD+QED 模拟方法学，可优先阅读；若只关心零温精度物理，则相关性较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:21.974578"
+  },
+  {
+    "id": "2611.28691v1",
+    "title": "Study of the $N^*(1535)$ and $N^*(1650)$ resonances from $πN$ $S_{11}$ scattering data and lattice QCD spectra",
+    "authors": [
+      "Zhi-Xuan Li",
+      "Derek B. Leinweber",
+      "Anthony W. Thomas",
+      "Jia-Jun Wu"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.28691v1",
+    "published": "2026-11-21T09:24:02Z",
+    "abstract": "We investigate two of the lowest-lying odd-parity nucleon resonances, $N^*(1535)$ and $N^*(1650)$, within a nonperturbative Hamiltonian framework (NPHF). The coupled-channel model contains two three-quark bare states with total quark spins $1/2$ and $3/2$, together with four meson-baryon channels: $πN$, $ηN$, $KΛ$, and $KΣ$. Constraints from SU(3) flavor symmetry and the bare-state spin wave functions are imposed on the bare-state-channel vertices and the channel-channel Weinberg-Tomozawa interactions. This substantially reduces the number of free parameters. We combine fits to infinite-volume $πN$ $S_{11}$ scattering data with finite-volume lattice QCD spectra. We use Hamiltonian eigenvectors to analyze the model-basis compositions. A contamination function then compares the resulting operator-mixing pattern with lattice correlation-matrix eigenvectors. Within the scenarios considered, both bare states and coupled-channel interactions play important roles in describing the two resonances. From our combined infinite and finite volume analysis, in contrast to conventional quark-model expectations, the spin-$1/2$ bare state is heavier than the spin-$3/2$ bare state. The contamination analysis is consistent with the associated operator assignment and with a recent analysis of the relativistic wavefunctions associated with these states. The symmetry-constrained NPHF provides a unified description of the two $S_{11}$ resonances. The combined analysis also constrains their model interpretation.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文通过将无限体积 πN S₁₁ 散射数据与有限体积格点 QCD 能谱联合拟合，在一个受 SU(3) 味对称性约束的非微扰哈密顿量框架中，发现两个最低奇宇称核子共振 N*(1535) 和 N*(1650) 需要两个裸三夸克态与四个介子-重子道共同描述，且自旋-1/2 裸态比自旋-3/2 裸态更重——这与传统夸克模型预期相反。\n\n## 研究问题\n作者想解决的核心问题是：两个最低奇宇称核子共振 N*(1535) 和 N*(1650) 的内部结构究竟是什么？具体而言：\n\n1. 这两个共振是否能用一个统一的理论框架同时描述？\n2. 它们各自需要多少个裸三夸克态（quark-model 态）和多少介子-重子耦合道来解释？\n3. 格点 QCD 有限体积能谱与实验散射数据能否给出一致的图像？\n4. 传统夸克模型中自旋-1/2 态轻于自旋-3/2 态的排序是否成立？\n\n## 方法\n论文采用了一个**非微扰哈密顿量框架（NPHF）**，具体包含以下要素：\n\n- **模型空间**：两个三夸克裸态（总夸克自旋分别为 1/2 和 3/2）加上四个介子-重子道：πN、ηN、KΛ、KΣ，构成耦合道模型。\n- **对称性约束**：对裸态-道顶点和道-道 Weinberg-Tomozawa 相互作用施加 SU(3) 味对称性约束以及裸态自旋波函数约束，从而大幅减少自由参数数目。\n- **联合拟合**：同时拟合无限体积 πN S₁₁ 散射数据（实验/唯象输入）和有限体积格点 QCD 能谱（格点输入）。\n- **本征态分析**：利用哈密顿量本征矢分析模型基矢的组成成分。\n- **污染函数分析（contamination function）**：将模型给出的算符混合模式与格点关联矩阵本征矢进行比较，以检验算符分配的合理性。\n- **格点方法**：使用有限体积格点 QCD 谱（即格点上计算得到的能级），通过将模型预测的有限体积能级与格点能谱匹配来实现联合约束。论文未涉及新的格点算法或数值技术，而是将已有格点谱作为约束输入。\n\n## 主要结果\n1. **两个共振需要裸态与耦合道共同描述**：在所考虑的情景中，裸三夸克态和耦合道相互作用对 N*(1535) 和 N*(1650) 的描述都起重要作用，不能仅用其中之一来解释。\n2. **裸态质量排序反转**：联合无限体积与有限体积分析给出，自旋-1/2 裸态比自旋-3/2 裸态更重，这与传统夸克模型的预期相反。\n3. **污染分析与算符分配一致**：污染函数分析结果与相关的算符分配一致，也与近期对这些态的相对论波函数分析一致。\n4. **统一描述**：受对称性约束的 NPHF 给出了两个 S₁₁ 共振的统一描述，联合分析还对其模型解释施加了约束。\n\n## 为什么值得关注\n- **对强子谱学的重要性**：N*(1535) 和 N*(1650) 是核子激发谱中最低的两个奇宇称态，长期存在结构争议（传统三夸克态 vs. 介子-重子分子态 vs. 混合图像）。该工作提供了一个统一的耦合道框架来同时处理两者。\n- **格点 QCD 与唯象模型的桥梁**：将有限体积格点能谱与无限体积散射数据联合拟合，是连接格点 QCD 第一性原理计算与实验可观测量的重要方法论实践，有助于推动格点 QCD 对共振态的研究。\n- **对称性约束减少参数**：SU(3) 味对称性约束大幅减少自由参数，使模型更具预测力和可检验性，对构建可信的强子模型有参考价值。\n- **挑战传统夸克模型图像**：裸态质量排序反转的结论若被进一步证实，将对夸克模型中的自旋-轨道耦合和态排序理解产生重要影响。\n- **算符混合分析的方法论意义**：污染函数与格点关联矩阵本征矢的比较，为格点上算符选择和态识别提供了系统工具。\n\n## 方向标签\n- Lattice QCD\n- Hadron spectroscopy\n- Coupled-channel dynamics\n- SU(3) flavor symmetry\n- Resonance physics\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文直接涉及格点 QCD 谱与散射数据联合分析共振态这一当前强子物理前沿方向，方法上有明确的对称性约束和联合拟合策略，结论（裸态质量排序反转）具有非平凡物理意义。对于关注核子激发谱、耦合道模型或格点 QCD 共振态研究的读者，属于值得精读的工作。扣一星是因为论文主要基于已有格点谱的模型分析而非新的格点计算，且结论依赖于所考虑的情景假设，需要后续独立验证。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:29.612151"
+  },
+  {
+    "id": "2611.28590v1",
+    "title": "Fermionic 2+1D SU(2) quantum link models: an ED/DMRG reliability study",
+    "authors": [
+      "Daming Li"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.28590v1",
+    "published": "2026-11-21T05:44:23Z",
+    "abstract": "Non-Abelian lattice gauge theory with dynamical fermions is a central target for tensor-network and quantum-simulation methods, but controlled reliability studies on small systems are scarce. We benchmark two complementary Hilbert-space approaches for a 2+1D SU(2) quantum link model with one staggered fermion flavour on small two-dimensional lattices: sparse exact diagonalization (ED) and matrix-product-state density-matrix renormalization group (DMRG). The link variables use the five-state $\\{5\\}$ truncation, and fermions are represented by two-colour four-state sites. We implement ED with explicit cross-site Jordan--Wigner strings and DMRG with total-fermion-number conservation and a matrix product operator (MPO) built from local terms. We validate the link algebra, Gauss-law commutation, Hermiticity, the pure-gauge limit, and the MPO against ED component by component. The $2\\times2$ methods agree to $10^{-13}$ and the $2\\times3$--$2\\times5$ ladders are controlled at or below the $10^{-5}$ level. The $3\\times3$ geometry illustrates the role of colour neutrality: at half filling the odd fermion number makes $G^2=3/4$ the exact lower bound, while one hole or one doublon restores neutrality and lowers the residual to $\\sim2\\times10^{-5}$ at $χ=2048$. An independent exact-Gauss fPEPS provides a reference for the even-filling $3\\times2$ sector. The results define a reproducible reliability envelope for non-Abelian gauge-fermion benchmarks and show where larger-scale simulations require larger bond dimensions or different tensor-network geometries.",
+    "summary": {
+      "raw": "## 一句话结论\n这篇论文对 2+1 维 SU(2) 量子链接模型（带一个交错费米子味）在小二维格点上系统比较了稀疏精确对角化（ED）与 DMRG 两种方法，给出了一个可复现的“可靠性包络”，并指出 3×3 半填充下色中性对残余误差的关键作用。\n\n## 研究问题\n作者想解决什么问题？\n- 非阿贝尔格点规范理论耦合动力学费米子是非微扰研究（张量网络、量子模拟）的核心目标，但小系统上的受控可靠性研究很少。\n- 具体问题：在 2+1D SU(2) 量子链接模型 + 一个交错费米子味、链接变量用五态 {5} 截断、费米子用两色四态格点的设定下，ED 与 DMRG 两种 Hilbert 空间方法能否在小型二维格点上相互验证、误差可控到何种程度？\n- 进一步：不同几何（2×2、2×3–2×5 梯子、3×3、3×2）和填充下，残余误差的来源是什么（键维数、色中性、Gauss 定律约束）？\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- 模型：2+1D SU(2) 量子链接模型（quantum link model），五态 {5} 截断的链接变量；一个交错费米子味，费米子表示为两色四态格点。\n- 方法一：稀疏精确对角化（ED），显式跨格点 Jordan–Wigner 字符串处理费米子符号。\n- 方法二：矩阵乘积态 DMRG，利用总费米子数守恒，MPO 由局域项构建。\n- 验证手段：逐分量校验链接代数、Gauss 定律对易关系、厄米性、纯规范极限、MPO 与 ED 的一致性。\n- 参考基准：独立的 exact-Gauss fPEPS 用于偶数填充 3×2 扇区。\n- 误差度量：ED 与 DMRG 结果之差、Gauss 定律残余（如 G² 下界）。\n\n## 主要结果\n总结最重要发现。\n- 2×2 格点上 ED 与 DMRG 一致到 10⁻¹³；2×3–2×5 梯子在 10⁻⁵ 或更低水平受控。\n- 3×3 几何揭示色中性的作用：半填充时奇数费米子数使 G²=3/4 成为精确下界；加入一个空位（hole）或一个双占（doublon）恢复色中性，在 χ=2048 时残余降至约 2×10⁻⁵。\n- 独立 exact-Gauss fPEPS 为偶数填充 3×2 扇区提供参考。\n- 结论给出非阿贝尔规范-费米子基准的可复现可靠性包络，并指出更大规模模拟需要更大键维数或不同张量网络几何。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- 为非阿贝尔格点规范理论 + 动力学费米子的张量网络/量子模拟方法提供了少见的、逐分量受控的可靠性基准，填补了小系统系统误差研究的空白。\n- 明确了误差来源（键维数、色中性、Gauss 定律约束、几何），对规划更大规模 DMRG/fPEPS/量子模拟实验有直接指导意义。\n- 量子链接模型与量子模拟硬件天然契合，该可靠性包络可作为方法交叉验证的参考标准，对 lattice gauge theory、张量网络和量子模拟社区均有价值。\n\n## 方向标签\n- Tensor network\n- Quantum simulation\n- Lattice gauge theory（非阿贝尔规范理论）\n- Algorithm benchmarking / reliability study\n\n## 阅读优先级\n★★★★☆（4/5）\n- 理由：这是一篇方法学基准论文，不提出新物理，但对使用 DMRG/fPEPS/量子模拟研究非阿贝尔规范-费米子系统的研究者非常实用；误差包络和色中性讨论具体可操作。若你关注更大规模模拟或方法可靠性，优先级高；若只关心物理结果，可略读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:35.810151"
+  },
+  {
+    "id": "2611.23577v2",
+    "title": "Perspective on Proton Transversity Distribution Functions",
+    "authors": [
+      "Ke-Xin Zeng",
+      "Peng Cheng",
+      "Yang Yu",
+      "Daniele Binosi",
+      "Craig D. Roberts"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.23577v2",
+    "published": "2026-11-17T22:24:15Z",
+    "abstract": "Using available information on proton tensor charges and constraints from perturbative quantum chromodynamics (QCD), Ansaetze are introduced for hadron-scale in-proton valence-quark transversity distributions functions (DFs). The concept of a QCD effective charge, which defines an evolution scheme for collinear parton distribution and fragmentation functions that is all-orders exact, is then used to deliver predictions for the $x$-dependence of these DFs at the scale $ζ_{2} = 2\\,$GeV. Although the approach is largely algebraic, its predictions remain viable after comparisons with results obtained using computationally intensive methods. Thus, given the scarcity of data that can today be used for inference of proton transversity DFs, it may be worth using the results herein to inform and constrain related experiments and phenomenological fits.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文用质子张量电荷的实验/格点信息加上微扰QCD约束，构造了价夸克横向度分布函数（transversity DFs）的解析拟设，并用全阶精确的QCD有效荷演化方案给出2 GeV尺度下x依赖的预测，结果与计算密集型方法一致。\n\n## 研究问题\n\n作者想解决的核心问题是：质子横向度分布函数（transversity DFs）目前实验数据极其稀缺，难以通过拟合推断。能否利用已有的质子张量电荷信息和微扰QCD约束，构造合理的拟设（Ansaetze），从而给出可靠的横向度分布预测，用于指导和约束相关实验与唯象拟合？\n\n## 方法\n\n- **拟设构造**：利用质子张量电荷（tensor charges）的可用信息（来自格点QCD和实验）以及微扰QCD约束，构造强子尺度下价夸克横向度分布函数的解析拟设。\n- **QCD有效荷演化**：采用QCD有效荷（effective charge）概念，定义一种对共线部分子分布和碎裂函数全阶精确（all-orders exact）的演化方案，将分布演化到ζ₂ = 2 GeV尺度。\n- **解析为主**：方法整体是代数/解析性的，不依赖大规模数值计算，但结果与计算密集型方法（如格点QCD或全局拟合）做了比较验证。\n\n注意：论文本身不是格点计算，而是利用格点QCD提供的张量电荷作为输入，结合解析演化给出预测。\n\n## 主要结果\n\n- 给出了价夸克横向度分布函数在ζ₂ = 2 GeV尺度下x依赖的预测。\n- 该解析方法的预测与计算密集型方法所得结果比较后仍然可靠（viable）。\n- 由于当前可用于推断质子横向度DF的数据稀缺，作者建议用本文结果来指导和约束相关实验及唯象拟合。\n\n## 为什么值得关注\n\n- **填补数据空白**：横向度分布是核子自旋结构三大领头扭度分布之一（与unpolarized和helicity并列），但实验数据最少，本文提供了一种低成本、可操作的约束手段。\n- **连接格点与唯象**：展示了如何用格点QCD给出的张量电荷（一个相对容易计算的量）来约束完整的x依赖分布，这对格点社区和唯象社区之间的桥梁作用有意义。\n- **全阶精确演化方案**：QCD有效荷演化方案的应用本身对部分子分布演化方法学有参考价值。\n- **实验指导**：为未来电子离子对撞机（EIC）等相关实验和全局分析提供先验输入。\n\n## 方向标签\n\n- Lattice QCD（作为张量电荷输入来源）\n- QCD Phenomenology\n- Proton Spin Structure\n- Parton Distribution Functions\n- Perturbative QCD\n\n## 阅读优先级\n\n★★★☆☆（3/5）\n\n理由：论文主题重要（横向度分布数据稀缺、格点与唯象结合有价值），方法巧妙且实用，但整体是解析拟设工作而非第一性格点计算，技术深度和 novelty 对纯格点研究者而言中等。对关注核子自旋结构、部分子分布唯象、以及格点QCD与实验交叉方向的研究者值得一读；对纯算法/数值格点方法研究者优先级较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-24T10:15:41.681321"
   }
 ]
