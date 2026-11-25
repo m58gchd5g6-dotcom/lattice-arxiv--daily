@@ -10041,5 +10041,228 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-24T10:15:41.681321"
+  },
+  {
+    "id": "2611.33140v1",
+    "title": "$QQ\\bar Q\\bar Q$ Quark System and Gauge/String Duality II: String Breaking",
+    "authors": [
+      "Oleg Andreev"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.33140v1",
+    "published": "2026-11-24T18:55:55Z",
+    "abstract": "This is the second of two companion papers in which we continue developing the construction of the fully heavy tetraquark system using the gauge/string duality. Here, we extend this construction to model $SU(3)$ gauge theory with two light flavors of equal mass. As an application, we analyze the two lowest Born-Oppenheimer potentials, both analytically and numerically, for rectangular and collinear geometries. Our analysis reveals several critical scales associated with string reconnection and breaking, as well as junction annihilation and pinching. In addition, we find that the string tension is universal, whereas the string breaking distance is not.",
+    "summary": {
+      "raw": "## 一句话结论\n\n本文用规范/弦对偶（全息方法）构建了含两个等质量轻夸克的SU(3)规范理论中的全重四夸克系统，解析和数值计算了矩形与共线两种几何下最低的两个Born-Oppenheimer势，揭示了弦重联、断裂、结湮灭与收缩等关键尺度，并发现弦张力具有普适性而弦断裂距离不具有普适性。\n\n## 研究问题\n\n作者想解决的问题是：如何将此前建立的、基于规范/弦对偶的全重四夸克（\\(QQ\\bar Q\\bar Q\\)）系统构造，从纯SU(3)规范理论推广到含两个等质量轻味的SU(3)规范理论，并在此基础上研究该系统中弦的动力学行为——特别是弦重联（string reconnection）、弦断裂（string breaking）、结湮灭（junction annihilation）和结收缩（junction pinching）等非微扰现象，以及这些现象对应的临界尺度。核心问题是：在含轻夸克的环境中，四夸克系统的势能结构如何变化？弦张力和弦断裂距离是否具有普适性？\n\n## 方法\n\n本文采用的是**规范/弦对偶（gauge/string duality）** 的全息方法，而非传统的格点QCD数值模拟。具体而言：\n\n- 在AdS/CFT（更准确地说是规范/引力对偶）框架下，将SU(3)规范理论中的夸克-反夸克相互作用建模为高维时空中弦的世界面。\n- 将构造推广到含两个等质量轻味的SU(3)规范理论，这通常涉及在引力对偶中引入额外的D-brane或味自由度。\n- 对矩形（rectangular）和共线（collinear）两种四夸克几何构型，解析和数值地计算最低的两个Born-Oppenheimer势。\n- 通过分析弦的世界面构型随夸克间距变化的行为，识别弦重联、断裂、结湮灭和收缩等临界尺度。\n\n需要指出的是，本文**没有使用格点QCD数值模拟**，而是用全息对偶作为解析/半解析工具来研究非微扰弦动力学。\n\n## 主要结果\n\n1. **两个最低Born-Oppenheimer势的完整刻画**：对矩形和共线两种几何，作者解析和数值地得到了最低两个Born-Oppenheimer势随夸克间距变化的完整行为。\n\n2. **多个临界尺度的识别**：分析揭示了与弦重联、弦断裂、结湮灭和结收缩相关的若干临界尺度。这些尺度标志着四夸克系统在不同间距区域的主导弦构型发生转变。\n\n3. **弦张力的普适性**：作者发现弦张力（string tension）是普适的——即不依赖于具体的四夸克几何构型或轻味的存在。\n\n4. **弦断裂距离的非普适性**：与之相对，弦断裂距离（string breaking distance）**不是**普适的，它依赖于系统的具体参数和几何构型。\n\n## 为什么值得关注\n\n- **对四夸克态理解的深化**：全重四夸克系统是近年来实验（如LHCb发现的\\(T_{cc}\\)、\\(X(3872)\\)等）和理论关注的热点。本文从弦动力学角度提供了对四夸克势能结构的系统刻画，有助于理解多夸克态的内部结构和稳定性。\n- **弦断裂与重联的非微扰动力学**：弦断裂是格点QCD中著名的非微扰现象，传统上通过格点模拟研究。本文用全息方法给出了解析视角，并与格点结果形成互补。\n- **普适性问题的澄清**：弦张力普适而弦断裂距离非普适的结论，对理解QCD弦的性质和有效理论构建有直接意义。\n- **方法学意义**：展示了规范/弦对偶在处理多夸克系统和弦动力学方面的能力，为后续研究提供了可推广的框架。\n\n## 方向标签\n\n- Lattice QCD（间接相关，弦断裂是格点QCD的核心非微扰现象）\n- Holography / Gauge-String Duality\n- Quarkonium / Exotic Hadrons\n- Nonperturbative QCD\n- String Dynamics\n\n## 阅读优先级\n\n**★★★☆☆（3/5星）**\n\n理由：本文是系列论文的第二篇，建立在作者此前工作的基础上，主题专一（全重四夸克系统的全息建模）。对于直接研究多夸克态、弦断裂或规范/弦对偶的读者，本文有较高参考价值；但对于更广泛的格点QCD社区，其方法（全息对偶而非格点模拟）与主流格点技术距离较远，且四夸克系统的全息建模仍属相对专门的领域。建议对四夸克态或弦动力学感兴趣的读者优先阅读，一般读者可将其作为背景参考。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:11.723523"
+  },
+  {
+    "id": "2611.33138v1",
+    "title": "Prospects and limitations of adaptive variational quantum algorithms for lattice field theories: a case study in 2+1 dimensions",
+    "authors": [
+      "Nico Dichter",
+      "Andrea Bulgarelli",
+      "Lena Funcke",
+      "Stefan Kühn"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.33138v1",
+    "published": "2026-11-24T18:55:38Z",
+    "abstract": "The variational quantum algorithm ADAPT-VQE has previously been used to prepare the vacuum of lattice gauge theories in $1+1D$. In this paper, we study whether it extends to higher dimensions. We identify two general limitations of ADAPT-VQE. First, if the qubit Hamiltonian and the initial state are real, i.e., invariant under qubit-level time-reversal, all real-valued pool operators have vanishing gradients and are never selected. Second, the algorithm can converge to excited eigenstates. We illustrate both limitations, also providing examples from literature, and present a first application of ADAPT-VQE to a lattice field theory in $2+1D$, namely free Wilson fermions, where both obstacles occur. Adding charge conjugation symmetry to the operator pool improves the results, and combining different pools with suitable initial states recovers the ground and first excited states over the full mass range. These findings give practical guidelines for applying ADAPT-VQE to lattice field theories beyond $1+1D$.",
+    "summary": {
+      "raw": "## 一句话结论\n本文系统分析了 ADAPT-VQE 在 2+1 维格点场论中制备真空时的两个普遍性障碍（实哈密顿量下实算符梯度消失、算法可能收敛到激发态），并以自由 Wilson 费米子为例给出通过引入电荷共轭对称性算符池和组合不同初始态来恢复基态与第一激发态的实用方案。\n\n## 研究问题\n作者想解决的核心问题是：此前 ADAPT-VQE 仅在 1+1 维格点规范理论中成功制备真空，能否推广到更高维度（2+1 维）？在推广过程中会遇到哪些结构性限制，以及如何规避？具体而言，作者识别并刻画了两个一般性限制：（1）当量子比特哈密顿量和初始态为实数（即具有量子比特级时间反演不变性）时，所有实值 pool 算符的梯度为零，永远不会被选中；（2）算法可能收敛到激发本征态而非基态。\n\n## 方法\n- **算法**：ADAPT-VQE（自适应变分量子本征求解器），一种从参考态出发、逐步从算符池中选择梯度最大算符构建拟设的变分量子算法。\n- **模型**：2+1 维自由 Wilson 费米子（free Wilson fermions）格点场论，作为首个 2+1 维格点场论的 ADAPT-VQE 应用案例。\n- **技术手段**：\n  - 分析量子比特哈密顿量与初始态的实性（qubit-level time-reversal 不变性）对算符梯度的影响；\n  - 构造不同算符池（包括加入电荷共轭对称性的 pool）与不同初始态的组合；\n  - 在完整质量范围内检验基态与第一激发态的恢复情况；\n  - 结合文献中的例子说明两个限制的普遍性。\n\n## 主要结果\n1. **两个一般性限制被明确识别并证明**：\n   - 若量子比特哈密顿量和初始态均为实数，则所有实值 pool 算符的梯度严格为零，ADAPT-VQE 无法选中它们，导致拟设无法扩展；\n   - ADAPT-VQE 可能收敛到激发本征态，而非目标基态。\n2. **2+1 维自由 Wilson 费米子案例中两个障碍均实际出现**，验证了限制的现实性。\n3. **加入电荷共轭（charge conjugation）对称性到算符池可改善结果**。\n4. **组合不同算符池与合适初始态，可在完整质量范围内同时恢复基态和第一激发态**。\n5. 给出了将 ADAPT-VQE 应用于 1+1 维以上格点场论的实用指导原则。\n\n## 为什么值得关注\n- **量子模拟社区**：ADAPT-VQE 是近期量子设备上制备多体本征态的主流混合算法之一，本文揭示的两个限制（实哈密顿量梯度消失、收敛到激发态）对任何用 ADAPT-VQE 研究格点模型的工作都有直接警示意义，且不限于格点场论。\n- **格点场论社区**：随着量子计算用于格点规范理论的研究从 1+1 维走向更高维，本文首次系统检验了 ADAPT-VQE 在 2+1 维的可扩展性，指出了维度升高带来的结构性困难，并提供了可操作的缓解策略（对称性增强的算符池、多池多初始态组合）。\n- **方法论层面**：将电荷共轭对称性显式纳入算符池的思路，对其他对称性约束的变分算法设计有借鉴价值；对“实哈密顿量导致梯度消失”的分析也补充了变分量子算法中 barren plateau/对称性问题的讨论。\n- **务实价值**：结论是“有前景但有限制”，为后续在更高维、含规范场的模型上应用 ADAPT-VQE 划定了现实预期与改进方向。\n\n## 方向标签\n- Quantum simulation\n- Lattice field theory (beyond 1+1D)\n- Variational quantum algorithms (ADAPT-VQE)\n- Wilson fermions\n- Symmetry in quantum algorithms\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对于从事量子计算与格点场论交叉研究（尤其是变分量子算法制备真空/本征态）的读者，这是一篇高相关性的方法学论文——它明确指出了 ADAPT-VQE 向高维推广时的两个硬性障碍并给出可行缓解方案，具有很强的实践指导意义。扣一星是因为案例限于自由 Wilson 费米子（无相互作用、无规范场），结论向含规范场的 2+1 维理论推广仍需进一步验证；对纯经典格点 QCD 或唯象研究者优先级较低。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:18.364326"
+  },
+  {
+    "id": "2611.33079v1",
+    "title": "Bound-state preparation in strongly coupled theories",
+    "authors": [
+      "Scott Lawrence",
+      "Duff Neill"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.33079v1",
+    "published": "2026-11-24T18:14:50Z",
+    "abstract": "Many quantum simulation tasks, including scattering in quantum field theories and effective non-relativistic theories, require the preparation of asymptotic states. Such a state, which may be a bound state, is typically the lowest-lying excited state in some sector of Hilbert space. At weak coupling these states can often be prepared adiabatically by beginning with the free theory, but this is not generally feasible in strongly coupled theories. We detail a family of algorithms for preparing composite states in strongly coupled theories, including non-Abelian gauge theories, by using weakly coupled auxiliary fields. These methods do not require quantum phase estimation. We demonstrate the method numerically, via classical simulation, on nonrelativistic theories in one spatial dimension. We estimate the yield of this method applied to $J/ψ$ production in quantum chromodynamics.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文提出了一类利用弱耦合辅助场在强耦合理论（包括非阿贝尔规范理论）中制备束缚态/复合态初态的量子算法，无需量子相位估计，并在一维非相对论模型上做了经典数值验证，还估计了其在 QCD 中 J/ψ 产生问题上的产额。\n\n## 研究问题\n量子模拟（如量子场论中的散射、有效非相对论理论）需要制备渐近态，这些态可能是某个希尔伯特空间扇区的最低激发态（束缚态）。弱耦合时可通过从自由理论绝热演化制备，但强耦合理论中一般不可行。作者要解决的核心问题是：**如何在强耦合理论中高效制备复合/束缚态初态**，且避免昂贵的量子相位估计。\n\n## 方法\n- 提出一族**量子算法**：引入**弱耦合辅助场**，通过与目标强耦合理论耦合，利用辅助场的可控动力学把系统制备到目标复合态。\n- 算法**不依赖量子相位估计**。\n- 数值验证采用**经典模拟**，在一维空间中的**非相对论理论**上进行。\n- 进一步对 QCD 中 **J/ψ 产生**的产额做了估计（基于该方法的可行性/效率分析）。\n\n## 主要结果\n- 展示了利用弱耦合辅助场制备强耦合复合态的一族可行算法框架，适用于包括非阿贝尔规范理论在内的强耦合理论。\n- 在一维非相对论模型上通过经典数值模拟验证了方法有效。\n- 对 QCD 中 J/ψ 产生的应用给出了产额估计，表明该方法在现实量子模拟任务中具有潜在可行性。\n\n## 为什么值得关注\n- 量子模拟强耦合规范理论（如 QCD）的一大瓶颈是初态制备；该工作提供了不依赖量子相位估计的替代路线，降低了量子资源需求。\n- 对**散射问题的量子模拟**、**束缚态/共振态制备**有直接意义，可推动量子计算在粒子物理中的应用。\n- 将方法从简单模型推进到 QCD 现象（J/ψ）的产额估计，为未来在量子硬件上研究强子物理提供了具体路线图。\n\n## 方向标签\n- Quantum simulation\n- Lattice QCD\n- Strongly coupled gauge theory\n- Bound-state preparation\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：问题重要且算法思路清晰（辅助场、无需量子相位估计），并有数值验证与 QCD 应用估计；但验证主要在一维非相对论模型，距离真实 QCD 量子模拟仍有差距，适合关注量子模拟与强耦合态制备的研究者优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:22.838481"
+  },
+  {
+    "id": "2611.32775v1",
+    "title": "Space-Time Point Defects as Probes of Criticality: Application to the Gross-Neveu-Heisenberg Transition",
+    "authors": [
+      "Jakob Väth",
+      "Luis Thremer",
+      "Francesco Parisen Toldin",
+      "Fakher F. Assaad"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.32775v1",
+    "published": "2026-11-24T15:07:18Z",
+    "abstract": "At criticality, a local field acting at a single point in Euclidean space-time is irrelevant and induces a modulation in space and time that decays with twice its scaling dimension. This turns two-point correlation functions into one-point measurements: one operator insertion enters the Boltzmann weight, the other is measured. For the local magnetization the relation is exact at any source strength. Implemented in auxiliary-field quantum Monte Carlo, the approach yields the static spin susceptibility and imaginary-time-displaced correlations with unprecedented precision. We apply it to the Dirac-semimetal to antiferromagnetic-Mott-insulator transition of the half-filled $π$-flux Hubbard model. This lattice model provides a regularization of the $N_f=2$ Gross-Neveu-Heisenberg universality class. A finite-size scaling analysis estimates the critical exponents as $ ν=1.10(3)$ and $η_φ=1.09(4)$, close to field-theory predictions of $η_φ\\simeq1$. Since $η_φ>1$, the equal-time structure factor at criticality does not diverge with the system size. Hence, the equal-time structure factor at the ordering wave vector is dominated by background contributions and cannot be used for extracting critical exponents. Consistently, the spin dynamics at the transition is strongly incoherent and the quantum Fisher information remains bounded.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出并实现了一种“时空点缺陷探针”方法：在临界点插入一个局域场作为源，把两点关联函数转化为单点测量，从而以极高精度提取 Gross-Neveu-Heisenberg 相变的临界指数（ν=1.10(3)，η_φ=1.09(4)），并揭示 η_φ>1 时等时结构因子不随体系增大而发散、自旋动力学强非相干。\n\n## 研究问题\n作者想解决的核心问题是：如何在辅助场量子蒙特卡洛中高精度、低系统误差地测量临界指数，特别是针对半满 π-flux Hubbard 模型所实现的 N_f=2 Gross-Neveu-Heisenberg 普适类；同时澄清一个常被误用的观测量——等时结构因子在 η_φ>1 时是否还能用于提取临界指数。\n\n## 方法\n- 模型：半满 π-flux Hubbard 模型，作为 N_f=2 Gross-Neveu-Heisenberg 普适类的格点正则化。\n- 方法思想：在临界点于欧氏时空单点插入局域场（点缺陷），该源在临界点是不相关算符，诱导的时空调制以两倍标度维数衰减；于是两点关联函数可改写为“一个算符进入 Boltzmann 权重、另一个被测量”的单点测量。\n- 对局域磁化，该关系在任意源强度下严格成立。\n- 数值技术：辅助场量子蒙特卡洛（auxiliary-field QMC），结合有限尺寸标度分析。\n- 输出量：静态自旋磁化率、虚时间位移关联函数。\n\n## 主要结果\n- 临界指数估计为 ν=1.10(3)、η_φ=1.09(4)，接近场论预言 η_φ≃1。\n- 由于 η_φ>1，临界点处等时结构因子不随体系尺寸发散；因此在有序波矢处的等时结构因子由背景贡献主导，不能用于提取临界指数。\n- 与之自洽的是：相变处自旋动力学强非相干，量子 Fisher 信息保持有界。\n\n## 为什么值得关注\n- 方法层面：把“点缺陷/源探针”变成一种通用的高精度临界测量手段，可推广到其他 QMC 可处理的临界点，减少对多点关联函数的统计与系统误差。\n- 物理层面：明确指出 η_φ>1 时等时结构因子不可用于临界指数提取，纠正了文献中可能存在的误用，对 Gross-Neveu-Heisenberg 普适类的数值判定有直接影响。\n- 社区相关性：对凝聚态量子临界数值研究（Hubbard/Dirac 半金属—反铁磁 Mott 转变）有直接价值；其“源探针 + 单点测量”的思想对 lattice field theory 中临界现象与算符插入的系统误差控制也有借鉴意义。\n\n## 方向标签\n- Lattice field theory\n- Quantum Monte Carlo\n- Quantum criticality\n- Strongly correlated electrons\n- Finite-size scaling\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：方法新颖且可迁移，结果对 Gross-Neveu-Heisenberg 普适类有实质约束，并澄清了一个重要观测量误用问题；但应用目前集中在单一格点模型，若读者关注 QCD/BSM 或张量网络方向，直接相关性略低，故不给满分。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:30.311934"
+  },
+  {
+    "id": "2611.31810v1",
+    "title": "Intrinsic Soft Function in the Continuum and Physical Mass Limit from Lattice QCD",
+    "authors": [
+      "Zhi-Chao Gong",
+      "Min-Huan Chu",
+      "Jun Hua",
+      "Xiangdong Ji",
+      "Andreas Schäfer",
+      "Jin-Xin Tan",
+      "Han-Zhang Wang",
+      "Wei Wang",
+      "Jian-Hui Zhang",
+      "Mu-Hua Zhang",
+      "Qi-An Zhang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31810v1",
+    "published": "2026-11-24T02:02:07Z",
+    "abstract": "The intrinsic soft function is a universal nonperturbative ingredient of transverse-momentum-dependent (TMD) factorization. Despite substantial progress in lattice QCD studies, a determination with simultaneous control of the continuum, physical-pion-mass, and infinite-momentum limits has remained unavailable. In this work we present the first lattice determination incorporating all these limits within large-momentum effective theory, extracting the intrinsic soft function from a light-meson form factor and quasi-TMD wave functions. A key advance is the use of power-counting-guided axial-vector interpolators, which substantially improve the signal and enable a direct calculation at the physical pion mass. Combined with results from six ensembles spanning four lattice spacings, this improvement allows a precise determination extending to $b_\\perp\\simeq1.1~\\mathrm{fm}$, while remaining consistent with perturbative predictions at short distances. The resulting transverse-distance dependence exhibits an approximately exponential decay, with the decay rate being characterized by an effective scale $Λ\\simeq0.7~\\mathrm{GeV}$ at $μ=2~\\mathrm{GeV}$, providing a quantitative benchmark for nonperturbative Wilson-line dynamics and essential input for precision TMD studies.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次在格点QCD中同时控制连续极限、物理π介子质量和无穷大动量极限，利用大动量有效理论（LaMET）从轻介子形状因子和准TMD波函数中提取了内禀软函数，给出了横向距离依赖的定量基准。\n\n## 研究问题\n内禀软函数是横向动量依赖（TMD）因子化中的普适非微扰成分，对精确TMD研究至关重要。尽管格点QCD已有显著进展，但同时控制连续极限、物理π介子质量极限和无穷大动量极限的确定一直缺失。作者旨在填补这一空白，给出首个同时满足这三个极限的格点确定。\n\n## 方法\n- **理论框架**：大动量有效理论（LaMET），将光锥定义的TMD软函数与格点可计算的准TMD量关联。\n- **格点QCD计算**：使用六个系综、跨越四个格点间距，进行连续极限外推。\n- **关键技术创新**：采用幂次计数引导的轴矢流插值算子（power-counting-guided axial-vector interpolators），显著改善信号，使得在物理π介子质量下直接计算成为可能。\n- **提取对象**：从轻介子形状因子和准TMD波函数中联合提取内禀软函数。\n- **覆盖范围**：横向距离延伸至 \\(b_\\perp \\simeq 1.1~\\mathrm{fm}\\)，并与短距离微扰预测进行一致性检验。\n\n## 主要结果\n1. 首次实现了同时控制连续极限、物理π介子质量和无穷大动量极限的内禀软函数格点确定。\n2. 横向距离依赖呈现近似指数衰减，衰减率由有效标度 \\(\\Lambda \\simeq 0.7~\\mathrm{GeV}\\)（在 \\(\\mu=2~\\mathrm{GeV}\\) 处）表征。\n3. 结果在短距离与微扰预测一致，在 \\(b_\\perp \\simeq 1.1~\\mathrm{fm}\\) 范围内保持精确。\n4. 幂次计数引导的轴矢流插值算子大幅提升了信噪比，使物理π介子质量下的直接计算成为可行。\n\n## 为什么值得关注\n- **对TMD物理**：内禀软函数是TMD因子化中的普适非微扰输入，该结果提供了首个同时控制三个关键极限的定量确定，对精确TMD研究（如SIDIS、Drell-Yan过程）至关重要。\n- **对格点QCD社区**：展示了幂次计数引导插值算子在提升信号方面的有效性，为未来在物理π介子质量下计算其他非微扰量提供了技术范式。\n- **对Wilson线动力学**：给出了非微扰Wilson线动力学的定量基准（\\(\\Lambda \\simeq 0.7~\\mathrm{GeV}\\)），可用于检验模型和微扰展开。\n- **方法学意义**：六系综、四格点间距的连续极限外推增强了结果的可靠性，为LaMET框架下的精确计算树立了标杆。\n\n## 方向标签\n- Lattice QCD\n- TMD Factorization\n- LaMET\n- Nonperturbative QCD\n- Hadron Structure\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文在TMD因子化的非微扰输入方面取得了实质性突破——首次同时控制三个关键极限，技术上有创新（幂次计数引导插值算子），结果具有定量基准价值。对于从事TMD、格点QCD强子结构或LaMET研究的读者，属于必读级别。扣一星是因为其影响力主要集中在TMD/LaMET子领域，对更广泛的理论物理社区的直接冲击有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:35.502760"
+  },
+  {
+    "id": "2611.31783v1",
+    "title": "Lightest $Ω$-baryon systems with strangeness $-3$ and $-6$ within the framework of Faddeev and Faddeev--Yakubovsky equations",
+    "authors": [
+      "R. Lazauskas",
+      "R. Ya. Kezerashvili",
+      "I. Filikhin"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31783v1",
+    "published": "2026-11-24T01:33:37Z",
+    "abstract": "We investigate the binding energies and spatial properties of few-body $Ω$-baryon systems with strangeness $S=-3$ and $S=-6$ using the configuration-space Faddeev and Faddeev--Yakubovsky equations. For the first time, microscopic Faddeev--Yakubovsky calculations are performed for the four- and five-body $ΩNNN$, $ΩNNNN$, and $ΩΩNN$ systems. We employ HAL QCD and meson-exchange $ΩN$ interactions, together with the HAL QCD $ΩΩ$ potential, and examine the effects of Coulomb interactions and spin--isospin configurations. The calculations predict substantial enhancement of binding with increasing baryon number, with the most strongly bound $ΩNNNN$ configurations reaching approximately $60$~MeV and bound $ΩΩNN$ states in the $S=-6$ sector. The results reveal pronounced spin dependence and compact few-body structures, with the $Ω$ baryon preferentially localized near the center-of-mass. These findings provide new predictions for light multistrange nuclear systems and extend microscopic few-body calculations into the four- and five-body $Ω$-baryon sectors.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次将微观 Faddeev–Yakubovsky 方程应用于四体和五体 Ω 重子系统（ΩNNN、ΩNNNN、ΩΩNN），基于 HAL QCD 与介子交换相互作用预言了随重子数增加而显著增强的束缚，最深的 ΩNNNN 态束缚能约 60 MeV，并揭示出强烈的自旋依赖与紧凑的空间结构。\n\n## 研究问题\n作者想解决的核心问题是：在 strangeness S=−3 和 S=−6 的少体 Ω 重子系统中，四体与五体束缚态是否存在、束缚能有多大、空间结构如何。此前微观少体计算多停留在三体层面，四体、五体的 Ω 重子系统（尤其是 ΩNNNN 与 ΩΩNN）缺乏第一性原理式的 Faddeev–Yakubovsky 处理；同时 ΩN、ΩΩ 相互作用本身存在 HAL QCD 与介子交换模型之间的差异，需要检验这些相互作用在多变体系中的后果，并考察库仑相互作用与自旋–同位旋组态的影响。\n\n## 方法\n- **少体方程框架**：采用配置空间（configuration-space）的 Faddeev 方程（三体）与 Faddeev–Yakubovsky 方程（四体、五体），这是首次对 ΩNNN、ΩNNNN、ΩΩNN 做微观 FY 计算。\n- **相互作用输入**：使用 HAL QCD 的 ΩN 势与介子交换（meson-exchange）ΩN 势，配合 HAL QCD 的 ΩΩ 势；并考察库仑相互作用的效应以及不同自旋–同位旋组态。\n- **数值技术**：在坐标空间中求解耦合的少体微分/积分方程，处理不同两体道之间的耦合与渐近边界条件。\n- 注意：这不是格点 QCD 直接计算，而是把格点 QCD 导出的 HAL QCD 势作为输入，用少体方程做核物理式的束缚态求解。\n\n## 主要结果\n- 随重子数增加，束缚显著增强：最深的 ΩNNNN 组态束缚能可达约 **60 MeV**。\n- 在 S=−6 扇区预言了束缚的 **ΩΩNN** 态。\n- 结果表现出明显的**自旋依赖性**，不同自旋–同位旋组态束缚差异大。\n- 空间结构紧凑，Ω 重子倾向于局域在质心附近。\n- 库仑相互作用与不同相互作用模型（HAL QCD vs. 介子交换）对束缚能的影响被系统考察。\n\n## 为什么值得关注\n- 把微观少体计算从三体推进到四体、五体的多奇异数重子扇区，填补了方法学空白。\n- 为实验寻找轻的多奇异核系统（如 Ω 超核、双 Ω 系统）提供可检验的理论预言，与 J-PARC、FAIR、RHIC 等奇异数物理计划相关。\n- 检验 HAL QCD 势在多变体系中的可移植性与自洽性，对 lattice QCD 导出核力的应用范围有直接意义。\n- 对理解中子星内部可能存在的超子/Ω 组分与多奇异数物质状态方程有间接参考价值。\n\n## 方向标签\n- Lattice QCD（间接：HAL QCD 势输入）\n- Few-body nuclear physics\n- Hypernuclear / multistrange systems\n- Hadron interaction potentials\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：方法上有明确新意（首次四体/五体 FY 计算），结果给出可检验的定量预言，对少体核物理与奇异数核物理社区价值高；但它不是格点 QCD 直接计算，而是基于已有 HAL QCD 势的少体求解，若读者关注的是格点 QCD 本身的方法学进展，相关性略打折扣。对做超核、奇异数少体、HAL QCD 势应用的研究者，建议优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:41.420764"
+  },
+  {
+    "id": "2611.31763v1",
+    "title": "Probing the inner structure of bound states",
+    "authors": [
+      "Yahui Chai",
+      "Yibin Guo",
+      "Karl Jansen"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31763v1",
+    "published": "2026-11-24T01:10:37Z",
+    "abstract": "We show how constructing a composite particle eigenstate reveals its internal structure. Using quantum subspace expansion (QSE), we optimize states with different sets of operators and use their fidelities with the full QSE state to measure the importance of each added operator type. Taking the scalar meson of the massive Schwinger model as a benchmark, we find that fermion bilinears suffice at large fermion masses. At small masses, two classes of four-fermion operators play important but very different roles: the four fermion operators with two fermions and 2 anti-fermions at small distance give little improvement. In contrast, spatially extended meson-meson operators produce a large gain in state fidelity. Turning to observables, we find that the scalar charge is much more sensitive to the meson-meson operators than e.g. the meson mass. The parton distribution function (PDF) also changes from symmetric to asymmetric about the momentum fraction 1/2, along with the growing importance of meson-meson operators. These results establish QSE as a tool for probing the internal structure of composite particles and connecting it to observable properties.",
+    "summary": {
+      "raw": "## 一句话结论\n作者提出用量子子空间展开（QSE）构造复合粒子本征态，并通过比较不同算符集合与完整QSE态之间的保真度来定量刻画束缚态内部结构，以有质量Schwinger模型的标量介子为基准，发现小费米子质量下空间扩展的介子-介子算符对态保真度和可观测量的贡献远大于短程四费米子算符。\n\n## 研究问题\n作者想解决的问题是：如何系统、定量地判断一个复合粒子（束缚态）内部结构中哪些成分/算符最重要，以及这些内部结构成分如何影响可观测物理量（如标量荷、介子质量、部分子分布函数PDF）。传统上构造束缚态本征态时，人们会加入各种算符（费米子双线性、四费米子算符等），但缺乏一个清晰的、可操作的判据来衡量每类算符的相对重要性，也缺乏将内部结构与可观测性质联系起来的系统方法。\n\n## 方法\n- **模型**：有质量Schwinger模型（1+1维QED），以其标量介子作为基准束缚态。\n- **方法框架**：量子子空间展开（Quantum Subspace Expansion, QSE）。用不同算符集合构造试探态，在QSE子空间中优化/对角化得到近似本征态。\n- **核心判据**：计算用不同算符子集得到的态与“完整QSE态”（包含所有算符类型）之间的保真度（fidelity），用保真度的提升量来衡量每类新增算符的重要性。\n- **比较的算符类别**：\n  1. 费米子双线性算符（fermion bilinears）；\n  2. 短程四费米子算符（两个费米子+两个反费米子，小距离）；\n  3. 空间扩展的介子-介子（meson-meson）算符。\n- **可观测量的计算**：标量荷、介子质量、部分子分布函数（PDF），并考察它们对介子-介子算符重要性的敏感度。\n- 该方法本质上是一种量子模拟/量子计算风格的变分与子空间方法，但也可在经典数值框架下实现和验证。\n\n## 主要结果\n1. **大费米子质量区**：费米子双线性算符已经足够描述标量介子态，加入四费米子算符改进很小。\n2. **小费米子质量区**：两类四费米子算符角色截然不同——\n   - 短程的“两费米子+两反费米子”算符带来的保真度改进很小；\n   - 空间扩展的介子-介子算符则带来态保真度的大幅提升。\n3. **可观测量的敏感度差异**：标量荷对介子-介子算符远比介子质量敏感；也就是说，某些可观测性质强烈依赖于束缚态中扩展的介子-介子成分，而另一些（如质量）则不那么敏感。\n4. **PDF的行为**：随着介子-介子算符重要性的增加（即随费米子质量减小），PDF从关于动量分数1/2对称变为不对称。\n5. **方法论结论**：QSE可以作为探测复合粒子内部结构、并将其与可观测性质联系起来的工具。\n\n## 为什么值得关注\n- **概念层面**：提供了一种可操作、可定量的“束缚态内部结构探针”，把“加入哪些算符”这一经验性问题转化为保真度判据，具有方法论价值。\n- **对格点/QCD社区**：束缚态算符构造（尤其是多强子/介子-介子算符）在格点QCD中计算共振态、多强子态、核子-介子耦合等时非常关键；该工作给出了判断哪些算符真正重要的系统方法，有助于优化算符基组、理解多强子成分的作用。\n- **对量子模拟社区**：QSE本身是量子计算中用于本征态制备和误差缓解的常用技术，本文将其拓展为“结构探针”，展示了量子模拟方法在强相互作用束缚态物理中的新用途。\n- **对PDF与部分子物理**：结果显示PDF的对称性/不对称性与介子-介子算符重要性相关，提示束缚态内部结构成分会直接影响部分子分布，这对理解强子结构模型与格点PDF计算有启发意义。\n- **模型虽简单但可推广**：Schwinger模型是1+1维可解/可数值精确研究的基准模型，结论为向更高维QCD推广提供了动机和思路。\n\n## 方向标签\n- Lattice field theory\n- Quantum simulation\n- Hadron structure\n- Bound states\n- Parton distribution functions\n- Schwinger model\n\n## 阅读优先级\n★★★★☆（4/5）\n\n理由：论文提出的QSE保真度判据思路清晰、可操作性强，且把束缚态内部结构与可观测性质（标量荷、PDF）联系起来，对格点强子结构、多强子算符构造和量子模拟交叉领域都有直接参考价值。扣一星是因为基准模型是1+1维Schwinger模型，结论向3+1维QCD的推广仍需进一步验证；若读者主要关注高维格点QCD数值计算或具体算法实现细节，需结合后续工作阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:49.432278"
+  },
+  {
+    "id": "2611.31750v1",
+    "title": "Hadron structure in $1+1$ dimensions from the infinite Hamiltonian lattice",
+    "authors": [
+      "Ross Dempsey"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31750v1",
+    "published": "2026-11-24T01:00:04Z",
+    "abstract": "The internal structure of a hadron is encoded in matrix elements of operators between hadron states of definite momentum. In this paper, we develop a framework for computing such matrix elements in $(1+1)$-dimensional gauge theories by working on an infinite spatial lattice. We apply the method to the massive Schwinger model. We benchmark our method against discretized lightcone quantization (DLCQ) at $θ= 0$, and then use the lattice to study hadrons at $θ\\neq 0$, where DLCQ does not apply. We compute parton distribution functions and gravitational form factors, and both show signatures of hadrons becoming large, loosely-bound states when we set $m$ greater than the critical mass $m_c$ and approach $θ= π$ from below. Moreover, we see the gravitational form factor change from that of a free boson to that of a free Majorana fermion when we set $θ= π$ and approach the 2D Ising critical point at $m=m_c$ from below.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在无穷空间格点上发展了(1+1)维规范理论强子矩阵元的计算框架，以有质量Schwinger模型为试验场，首次在θ≠0区域计算了部分子分布函数和引力形状因子，揭示了强子随θ→π和m>m_c变为大而松散束缚态、并在临界点附近呈现自由Majorana费米子特征的物理图像。\n\n## 研究问题\n作者想解决的问题是：如何在(1+1)维规范理论中，对具有确定动量的强子态计算算符矩阵元（从而提取部分子分布函数、引力形状因子等内部结构信息），特别是在DLCQ方法不适用的θ≠0区域。具体而言，他们希望建立一个可在无穷空间格点上工作的框架，并用有质量Schwinger模型检验其有效性，进而探索θ角和质量参数如何改变强子的内部结构。\n\n## 方法\n- **格点框架**：采用无穷空间格点（infinite spatial lattice）的哈密顿量格点场论方法，而非传统的欧氏时空路径积分格点。无穷格点避免了有限体积效应，同时保持空间离散化。\n- **模型**：有质量Schwinger模型（1+1维QED，即U(1)规范场耦合单个费米子），这是研究禁闭、θ真空和强子结构的经典玩具模型。\n- **基准检验**：在θ=0时与离散光锥量子化（DLCQ）结果对比，验证方法正确性。\n- **算法/数值技术**：摘要未详述具体算法（如张量网络、截断方案或变分方法），但核心是在无穷格点上构造哈密顿量并求解强子态及其矩阵元；随后在θ≠0区域计算部分子分布函数（PDF）和引力形状因子（GFF）。\n- **物理扫描**：调节费米子质量m与临界质量m_c的关系，以及θ从0到π的变化，追踪强子结构的变化。\n\n## 主要结果\n1. **方法验证**：在θ=0时，无穷格点方法与DLCQ结果一致，证明框架可靠。\n2. **θ≠0的新物理**：当m>m_c且θ从下方趋近π时，PDF和GFF均显示出强子变成大而松散束缚态（large, loosely-bound states）的特征。\n3. **临界点行为**：当θ=π且m从下方趋近m_c（即趋近2D Ising临界点）时，引力形状因子从自由玻色子的形式转变为自由Majorana费米子的形式，揭示了临界点附近强子内部结构的费米化/玻色化转变。\n\n## 为什么值得关注\n- **方法学贡献**：展示了无穷空间格点哈密顿量方法可以系统计算强子矩阵元（PDF、GFF），为(1+1)维规范理论提供了一个不依赖DLCQ的替代框架，尤其适用于DLCQ失效的θ≠0区域。\n- **物理洞察**：定量刻画了θ角对强子内部结构的影响，以及临界点附近形状因子的普适转变，连接了格点规范理论与凝聚态/统计物理中的临界现象（2D Ising）。\n- **对QCD的启示**：虽然工作在(1+1)维，但PDF和GFF的计算框架与强子结构研究直接相关，为更高维推广（如(2+1)或(3+1)维哈密顿量格点方法）提供了概念验证和技术路线。\n- **社区意义**：对lattice field theory、强子物理和量子模拟（哈密顿量格点方法天然适合量子计算实现）社区均有参考价值。\n\n## 方向标签\n- Lattice field theory (Hamiltonian formulation)\n- Hadron structure (PDF, GFF)\n- Schwinger model / 1+1D gauge theory\n- Quantum simulation (potential)\n- θ-vacuum / topological terms\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：论文在方法上有创新（无穷格点哈密顿量框架计算强子矩阵元），物理结果清晰且有启发性（θ依赖的强子结构、临界点转变），对强子结构和哈密顿量格点方法社区有较高参考价值。扣一星是因为工作在(1+1)维玩具模型，距离真实QCD还有距离，且摘要未透露具体算法细节，需读正文评估数值成本和可扩展性。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T08:59:55.945873"
+  },
+  {
+    "id": "2611.31749v1",
+    "title": "Parton Physics in the Schwinger Model from Matrix Product States",
+    "authors": [
+      "Mari Carmen Bañuls",
+      "Krzysztof Cichy",
+      "C. -J. David Lin",
+      "Manuel Schneider"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31749v1",
+    "published": "2026-11-24T01:00:02Z",
+    "abstract": "Parton distribution functions (PDFs) and light-cone distribution amplitudes (LCDAs) encode the non-perturbative structure of hadrons in terms of their partonic constituents. They are defined through matrix elements containing parton operators that are connected by a Wilson line along a light-front direction, which makes them difficult to access in Euclidean lattice calculations. We demonstrate how parton functions can be directly obtained in Minkowski space using the Hamiltonian framework. We compute fermion and antifermion PDFs, LCDAs, and decay constants of the vector meson in the Schwinger model for several fermion masses. States in Hilbert space are efficiently represented by tensor networks, with an expressivity that is systematically controlled by a bond dimension. The light-front Wilson line is implemented as a stepwise evolution on the lattice that alternates spatial shifts of an external charge with Trotterized time-evolution steps acting on a matrix product state. All systematic uncertainties are quantified by varying and extrapolating in the lattice spacing, volume, bond dimension, gauge-field truncation, and Trotter step width. The slow growth of the entanglement entropy makes moderate bond dimensions sufficient, which supports the feasibility of using tensor networks for computing light-front matrix elements in more general settings. We confirm that the computed distributions fulfill the expected normalizations, momentum sum rules, and symmetry properties.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文首次在Minkowski空间中利用矩阵乘积态（MPS）张量网络方法，直接计算了Schwinger模型中的部分子分布函数（PDFs）、光锥分布振幅（LCDAs）和矢量介子衰变常数，并系统量化了所有系统误差，验证了张量网络方法在计算光锥矩阵元方面的可行性。\n\n## 研究问题\n作者想解决的核心问题是：**如何在格点框架下直接获取Minkowski空间中的部分子物理量（PDFs和LCDAs）**。这些量通过沿光锥方向连接部分子算符的Wilson线定义，本质上是Minkowski空间的量，传统Euclidean格点QCD无法直接计算（面临符号问题/解析延拓困难）。作者希望在Schwinger模型这一可解的低维规范理论中，证明Hamiltonian框架结合张量网络可以绕过这一障碍，直接实现光锥Wilson线的逐步演化。\n\n## 方法\n- **模型**：Schwinger模型（1+1维QED），包含费米子与规范场，选取多个费米子质量值。\n- **框架**：Hamiltonian格点场论（而非Lagrangian路径积分），在Minkowski空间中直接工作。\n- **态表示**：矩阵乘积态（MPS）张量网络，用键维（bond dimension）系统控制表达精度。\n- **光锥Wilson线实现**：将Wilson线实现为格点上的逐步演化——交替执行外部电荷的空间平移与Trotterized时间演化步，作用于MPS上。\n- **数值技术**：Trotter化时间演化、规范场截断、有限格点间距与有限体积外推。\n- **系统误差控制**：通过改变并外推格点间距、体积、键维、规范场截断和Trotter步宽，量化所有系统不确定性。\n\n## 主要结果\n1. **成功计算了**Schwinger模型中费米子与反费米子的PDFs、LCDAs以及矢量介子的衰变常数，覆盖多个费米子质量。\n2. **验证了物理正确性**：计算出的分布满足预期的归一化条件、动量求和规则和对称性性质。\n3. **纠缠熵增长缓慢**，使得中等键维即可达到足够精度，表明张量网络方法在更一般设置下计算光锥矩阵元具有可行性。\n4. 所有系统误差（格点间距、体积、键维、规范场截断、Trotter步宽）均被系统量化并外推。\n\n## 为什么值得关注\n- **突破Euclidean格点的根本限制**：PDFs和LCDAs的光锥Wilson线在Euclidean格点上无法直接实现，传统方法依赖准PDFs（quasi-PDFs）等间接方案并需复杂匹配。该工作展示了Hamiltonian+Minkowski框架的直接路径。\n- **为张量网络方法正名**：证明了MPS可以在规范理论中高效表示基态与激发态，且纠缠熵增长可控，为向更高维（2+1D、3+1D）推广提供了信心。\n- **对量子模拟社区有直接参考价值**：Trotterized时间演化+外部电荷平移的方案与量子计算机/张量网络的混合算法思路高度契合。\n- **方法学示范**：系统误差的全面量化与外推策略为未来类似计算设立了标准。\n\n## 方向标签\n- Tensor network\n- Quantum simulation\n- Lattice gauge theory（Hamiltonian formulation）\n- Parton physics / PDFs\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文在方法学上有重要创新——首次在Minkowski空间中用张量网络直接计算光锥部分子分布，且系统误差处理严谨、物理检验充分。对于关注PDFs格点计算、Hamiltonian方法、张量网络在规范理论中应用的研究者，这是必读工作。扣一星是因为当前仅在1+1维Schwinger模型（可解模型）中验证，向QCD的推广仍面临维度、规范群复杂度（SU(3) vs U(1)）和费米子数目等重大挑战，实际影响力尚待后续工作确认。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T09:00:02.200319"
+  },
+  {
+    "id": "2611.31745v1",
+    "title": "Light-cone distributions of vector and scalar bound states in the Schwinger model from tensor networks",
+    "authors": [
+      "Juan Hormaza",
+      "Wenyang Qian"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31745v1",
+    "published": "2026-11-24T00:57:30Z",
+    "abstract": "Light-cone distributions encode the partonic structure of hadrons, but they involve real-time correlations that Euclidean lattice methods cannot access directly. We compute the parton distribution functions (PDFs) and light-cone distribution amplitudes (LCDAs) of the vector and scalar meson bound states of the massive Schwinger model with tensor networks. Using the Kogut-Susskind lattice Hamiltonian with the gauge field eliminated through Gauss's law, we prepare the vacuum and the mesons as matrix product states and identify the vector and scalar mesons through their charge conjugation and momentum. The gauge-invariant light-cone correlators that define both distributions are evaluated directly in Minkowski space by real-time evolution. The two mesons exhibit qualitatively different light-cone structure, dictated by charge conjugation. The vector meson has a single-peaked PDF and a symmetric LCDA, while the scalar meson has a double-peaked PDF and an antisymmetric LCDA, whose vanishing zeroth moment requires a normalization through its first moment. The decay constants obtained from local matrix elements and from the moments of the LCDAs agree, and approach predictions from nonrelativistic model as the fermion mass increases. For the relatively large masses considered in this work, the PDFs closely follow the squared LCDAs, showing that the mesons are dominated by their valence component. Our results demonstrate tensor networks as a practical route to light-cone distributions of ground-state as well as excited hadrons in low-dimensional gauge theories.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文利用张量网络在Minkowski空间中直接实时演化，首次计算了有质量Schwinger模型中矢量介子和标量介子的PDF与LCDA，展示了张量网络作为低维规范理论中获取光锥分布的实用途径。\n\n## 研究问题\n作者想解决的问题是：光锥分布（PDF和LCDA）涉及实时关联，传统Euclidean格点方法无法直接访问。如何在低维规范理论中直接计算基态和激发态强子的光锥分布？具体而言，矢量介子和标量介子的光锥结构有何差异，这些差异如何由电荷共轭对称性决定？\n\n## 方法\n- **模型**：有质量Schwinger模型（1+1维QED），使用Kogut-Susskind格点哈密顿量形式。\n- **规范场处理**：通过Gauss定律消除规范场，减少自由度。\n- **数值技术**：张量网络（矩阵乘积态，MPS）——将真空和介子态制备为MPS，通过电荷共轭和动量量子数识别矢量介子和标量介子。\n- **光锥关联函数计算**：在Minkowski空间中通过实时演化直接评估定义PDF和LCDA的规范不变光锥关联函数（而非Euclidean解析延拓）。\n- **衰变常数提取**：分别从局部矩阵元和LCDA矩获得衰变常数并进行比较。\n\n## 主要结果\n1. **矢量与标量介子的光锥结构定性不同**，由电荷共轭对称性决定：\n   - 矢量介子：单峰PDF，对称LCDA。\n   - 标量介子：双峰PDF，反对称LCDA；其零阶矩为零，需通过一阶矩归一化。\n2. **衰变常数一致性**：从局部矩阵元和LCDA矩获得的衰变常数一致，并随费米子质量增大趋近非相对论模型预言。\n3. **PDF与LCDA平方的关系**：在所考虑的较大质量区域，PDF紧密跟随LCDA的平方，表明介子被价夸克组分主导。\n4. **方法可行性验证**：张量网络可实际用于计算基态及激发态强子的光锥分布。\n\n## 为什么值得关注\n- **突破Euclidean限制**：光锥分布本质是Minkowski量，传统格点QCD需通过间接方法（如准PDF、电流-电流关联的解析延拓）提取，存在系统误差。该工作展示了张量网络直接在Minkowski空间实时演化的可行性。\n- **低维规范理论的严格检验**：Schwinger模型是可解/近可解的规范理论，为方法验证提供了理想平台，结果可与解析或半解析预期对比。\n- **向高维推广的路线图**：虽然当前工作在1+1维，但张量网络方法原则上可推广到更高维或更复杂规范理论，为量子模拟和经典张量网络方法研究强子结构提供概念验证。\n- **对量子模拟社区的启示**：实时演化和光锥关联的计算正是量子模拟器的自然应用场景，该工作为未来量子硬件上的强子结构计算提供了经典基准。\n\n## 方向标签\n- Tensor network\n- Lattice gauge theory\n- Hadron structure (PDF/LCDA)\n- Quantum simulation (related)\n- Schwinger model\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：该论文在方法学上有重要创新——首次用张量网络在Minkowski空间中直接计算Schwinger模型的PDF和LCDA，结果清晰且物理图像明确（电荷共轭决定光锥结构差异）。对于关注强子结构计算新方法、张量网络应用或量子模拟路线的研究者，这是必读工作。扣一星是因为当前限于1+1维且质量较大区域，向现实QCD（3+1维、轻夸克）的推广仍面临重大挑战，但作为概念验证和方法探索，其价值很高。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T09:00:08.129748"
+  },
+  {
+    "id": "2611.31366v1",
+    "title": "Locality from Nonlocality: Symmetry Relocalization and Gauging of Lattice Dirac Fermions",
+    "authors": [
+      "Lei Su"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.31366v1",
+    "published": "2026-11-23T19:00:01Z",
+    "abstract": "Spatially nonlocal symmetries need not imply nonlocal gauge dynamics. Nonlocal canonical transformations make certain exact nonlocal compact symmetries of free lattice Dirac fermions onsite while retaining sufficient Hamiltonian locality for gauging. Symmetry relocalization yields exact or emergent gauge locality in 1D, 2D, and 3D, subject to lattice structure, topology, and anomalies. In 1D, a Hamiltonian-preserving transformation exchanges onsite vector and nonlocal spectral axial charges of a half-filled chain, enabling local gauging of each and exposing their mixed anomaly. Bosonization identifies momentum-winding T-duality, with a parity-projected operator flowing to a noninvertible topological defect. A nonperturbative norm-resolvent bound proves emergent dynamical gauge locality at finite chemical potential, while a doubled Chern-insulator parent reveals the duality's bulk origin and superconducting extensions reveal hidden compact symmetries. In 2D, the square $π$-flux Majorana model shares the Kitaev honeycomb model's single Dirac fermion and odd Pfaffian parity but supports sharp and exponentially local compact charges, the latter with nontrivial Chern topology. Relocalization retains Schwartz locality for asymptotically local gauging, while AIII/AII parents clarify bulk charge origin and parity-anomaly inflow. Two flavors yield compact $U(2)$, a quaternionic invariant, and asymptotically local non-Abelian gauging. In 3D, an exact mixed vector-axial flux response is derived, while a distinct model supports an exponentially local vector $U(1)$ charge with strong quaternionic topology. A nonlocal map makes the charge and Kramers symmetry onsite while preserving exponential Hamiltonian locality. For a compact $SU(2)$ Weyl doublet, a no-go theorem forbids translation-preserving Gaussian onsite relocalization retaining Weyl content and Hamiltonian locality.",
+    "summary": {
+      "raw": "## 一句话结论\n\n这篇论文证明：**空间非局域的对称性并不必然导致非局域的规范动力学**——通过非局域正则变换可以把格点 Dirac 费米子的某些精确非局域紧致对称性“重新局域化”（relocalization）为 onsite 形式，同时保留足够的哈密顿量局域性以进行规范化（gauging），从而在 1D、2D、3D 中获得精确或涌现的规范局域性，并受格点结构、拓扑与反常约束。\n\n## 研究问题\n\n作者想解决的核心问题是：**格点费米子上的非局域对称性能否被规范化（gauged）而不引入非局域规范动力学？**\n\n具体拆解为几个子问题：\n\n1. 自由格点 Dirac 费米子存在一些精确的、紧致的但空间非局域的对称性（如谱轴向荷、π-flux Majorana 模型中的紧致荷）。通常认为非局域对称性规范化后会给出非局域规范理论，作者要检验这一直觉是否成立。\n2. 能否通过非局域正则变换把这些非局域对称性变成 onsite（局域）形式，同时保持哈密顿量足够局域以便规范化？\n3. 这种“对称性重新局域化”在不同维度和不同格点模型（1D 半满链、2D π-flux Majorana、3D Weyl 双重态）中受哪些拓扑、格点结构与反常的约束？\n4. 规范局域性是精确的还是涌现的？在有限化学势下动力学规范局域性是否非微扰地成立？\n5. 是否存在 no-go 定理限制某些情形（如 3D 紧致 SU(2) Weyl 双重态）下的重新局域化？\n\n## 方法\n\n论文以**解析格点场论方法**为主，辅以严格数学估计，未见大规模数值模拟。主要手段包括：\n\n- **非局域正则变换 / 对称性重新局域化**：构造保持哈密顿量局域性的 canonical transformation，把非局域紧致荷映射为 onsite 荷。\n- **格点模型构造**：1D 半满 Dirac 链；1D 双份 Chern 绝缘体母模型（doubled Chern-insulator parent）；2D 方格 π-flux Majorana 模型（与 Kitaev 蜂窝模型共享单个 Dirac 费米子与奇 Pfaffian 宇称）；AIII/AII 母模型；3D 混合矢量-轴向通量响应模型、指数局域矢量 U(1) 荷模型、紧致 SU(2) Weyl 双重态。\n- **玻色化（bosonization）**：在 1D 中识别动量绕转 T-对偶，宇称投影算符流向非可逆拓扑缺陷。\n- **非微扰范数-预解式界（norm-resolvent bound）**：证明有限化学势下涌现动力学规范局域性。\n- **反常分析**：混合矢量-轴向反常、宇称反常流入（parity-anomaly inflow）、四元数不变量（quaternionic invariant）。\n- **No-go 定理**：对 3D 紧致 SU(2) Weyl 双重态，证明不存在保持平移、Gaussian onsite、保留 Weyl 内容与哈密顿量局域性的重新局域化。\n- **局域性刻画**：区分 sharp（严格局域）与指数局域紧致荷，讨论 Schwartz 局域性与渐近局域规范化。\n\n## 主要结果\n\n1. **1D**：保持哈密顿量的变换在半满链上交换 onsite 矢量荷与非局域谱轴向荷，使两者都可局域规范化，并暴露其混合反常；玻色化给出动量绕转 T-对偶，宇称投影算符流向非可逆拓扑缺陷；非微扰范数-预解式界证明有限化学势下涌现动力学规范局域性；双份 Chern 绝缘体母模型揭示对偶的体起源，超导扩展揭示隐藏紧致对称性。\n2. **2D**：方格 π-flux Majorana 模型与 Kitaev 蜂窝模型共享单 Dirac 费米子与奇 Pfaffian 宇称，但支持 sharp 与指数局域紧致荷，后者带非平凡 Chern 拓扑；重新局域化对渐近局域规范化保留 Schwartz 局域性；AIII/AII 母模型澄清体荷起源与宇称反常流入；两味给出紧致 U(2)、四元数不变量与渐近局域非阿贝尔规范化。\n3. **3D**：导出精确的混合矢量-轴向通量响应；另一模型支持带强四元数拓扑的指数局域矢量 U(1) 荷，非局域映射使荷与 Kramers 对称性 onsite 同时保持指数哈密顿量局域性；对紧致 SU(2) Weyl 双重态，no-go 定理禁止保持平移的 Gaussian onsite 重新局域化同时保留 Weyl 内容与哈密顿量局域性。\n4. **总体结论**：非局域对称性 ≠ 非局域规范动力学；重新局域化在 1D/2D/3D 中给出精确或涌现规范局域性，但受格点结构、拓扑与反常制约。\n\n## 为什么值得关注\n\n- **概念层面**：挑战“非局域对称性 ⇒ 非局域规范理论”的常见直觉，提出“对称性重新局域化”这一可操作机制，对格点规范理论的基础理解有直接意义。\n- **格点费米子与手性/反常问题**：涉及谱轴向荷、宇称反常流入、混合矢量-轴向反常、Pfaffian 宇称、四元数不变量等，与格点手性费米子、反常匹配、拓扑绝缘体等核心议题紧密相关。\n- **规范化与局域性**：给出精确/涌现规范局域性的判据与 no-go 定理，对构造格点规范理论（尤其涉及非局域荷、紧致规范群、Weyl 费米子）有方法论价值。\n- **跨领域联系**：T-对偶、非可逆对称性/拓扑缺陷、Kitaev 模型、Chern 绝缘体、超导扩展等，连接凝聚态拓扑物态、量子信息与高能理论。\n- **对 QCD/格点社区**：虽非直接 QCD 计算，但关于规范局域性、反常、紧致荷与 no-go 定理的讨论，对理解格点规范理论中对称性实现与规范化限制有潜在启发。\n\n## 方向标签\n\n- Lattice field theory（格点场论基础/格点费米子）\n- Topological phases / Anomalies（拓扑物态与反常）\n- Non-invertible symmetries（非可逆对称性）\n- Quantum simulation（潜在相关，非本文主线）\n- Condensed matter / Kitaev models（模型联系）\n\n## 阅读优先级\n\n**★★★★☆（4/5）**\n\n理由：论文概念新颖、结构清晰（1D/2D/3D 分层展开），对格点费米子、对称性重新局域化与规范局域性的基础问题给出系统性结果，并配有严格数学论证与 no-go 定理，理论价值高。扣一星是因为：以解析构造为主、缺少大规模数值验证；与主流格点 QCD 数值计算距离较远；部分结果（如非可逆缺陷、四元数拓扑）需要较多背景才能充分消化。适合对格点费米子基础、拓扑与反常、规范化机制感兴趣的研究者精读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-25T09:00:24.018621"
   }
 ]
