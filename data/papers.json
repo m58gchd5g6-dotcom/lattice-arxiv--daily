@@ -10264,5 +10264,93 @@
     "status": "unread",
     "notes": [],
     "created_at": "2026-11-25T09:00:24.018621"
+  },
+  {
+    "id": "2611.34836v1",
+    "title": "Lattice gauge theory computation of $1/m_Q$ and $1/m_Q^2$ corrections to the quarkonium potential",
+    "authors": [
+      "Michael Eichberg",
+      "Marc Wagner"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.34836v1",
+    "published": "2026-11-25T18:15:38Z",
+    "abstract": "We compute the static quark-antiquark potential and its $1/m_Q$ and $1/m_Q^2$ corrections, i.e.\\ the $1/m_Q$ potential and all $1/m_Q^2$ potentials, which can be expressed in terms of correlators of two field strength insertions, in SU(3) lattice gauge theory and provide parameterizations for quark-antiquark separations $0.2 \\, \\text{fm} \\lesssim r \\lesssim 0.7 \\, \\text{fm}$. The field strength insertions in generalized Wilson loops are renormalized using gradient flow, which also leads to small statistical uncertainties. All potentials are extrapolated to zero flow time and, in contrast to previous lattice studies, to the continuum, using three lattice spacings and four flow times. The spin dependent potentials are matched to the $\\overline{\\text{MS}}$ scheme at NLO and provided at $μ= 3 \\, \\text{GeV}$. They can easily be converted to specific heavy quark masses, e.g.\\ for Born-Oppenheimer effective field theory studies of quarkonium.",
+    "summary": {
+      "raw": "## 一句话结论\n该论文在 SU(3) 格点规范理论中首次同时计算了静态夸克-反夸克势的 $1/m_Q$ 和全部 $1/m_Q^2$ 修正势，并通过梯度流重整化、三点/四点外推至零流时和连续极限，给出了 $0.2\\,\\text{fm}\\lesssim r\\lesssim 0.7\\,\\text{fm}$ 范围内的参数化，自旋相关势在 NLO 匹配到 $\\overline{\\text{MS}}$ 方案（$\\mu=3\\,\\text{GeV}$）。\n\n## 研究问题\n作者想解决什么问题？\n- 重夸克偶素（quarkonium）及 Born-Oppenheimer 有效场论研究需要精确的夸克-反夸克势，包括 $1/m_Q$ 和 $1/m_Q^2$ 阶的相对论修正（即 $1/m_Q$ 势和全部 $1/m_Q^2$ 势）。\n- 这些修正势可由两个场强插入的关联函数表示，但此前格点研究存在以下不足：(1) 场强插入的重整化处理不完善；(2) 未外推至连续极限；(3) 未系统外推至零流时；(4) 自旋相关势未匹配到 $\\overline{\\text{MS}}$ 方案，难以直接用于具体重夸克质量下的唯象研究。\n- 因此本文目标是：在格点上可靠地计算这些修正势，控制重整化与连续极限系统误差，并给出可直接用于有效场论研究的匹配结果。\n\n## 方法\n使用了什么 lattice 方法、模型、算法或数值技术？\n- **理论框架**：SU(3) 格点规范理论，计算静态夸克-反夸克势及其 $1/m_Q$、$1/m_Q^2$ 修正；修正势用广义 Wilson 圈中场强插入的两点关联函数表示。\n- **重整化**：对广义 Wilson 圈中的场强插入使用**梯度流（gradient flow）** 重整化，同时显著降低统计误差。\n- **外推**：使用**三个格点间距**和**四个流时**，将所有势外推至零流时（zero flow time）并外推至连续极限（continuum limit）——这是与以往格点研究的关键区别。\n- **匹配**：自旋相关势在 NLO 匹配到 $\\overline{\\text{MS}}$ 方案，给出 $\\mu=3\\,\\text{GeV}$ 处的值，可方便地转换到特定重夸克质量。\n- **输出形式**：对 $0.2\\,\\text{fm}\\lesssim r\\lesssim 0.7\\,\\text{fm}$ 的分离范围提供参数化（parameterizations）。\n\n## 主要结果\n总结最重要发现。\n- 计算得到了静态势以及 $1/m_Q$ 势和全部 $1/m_Q^2$ 势（自旋无关与自旋相关部分），并给出了 $0.2$–$0.7\\,\\text{fm}$ 范围内的参数化公式。\n- 梯度流重整化使统计误差很小；通过三格距、四流时的联合外推，首次将这些势同时外推至零流时和连续极限，系统性地控制了离散化与流时效应。\n- 自旋相关势在 NLO 匹配到 $\\overline{\\text{MS}}$ 方案并在 $\\mu=3\\,\\text{GeV}$ 给出，可直接用于 Born-Oppenheimer 有效场论等重夸克偶素研究，或转换到具体重夸克质量（如 charm、bottom）下的势模型。\n\n## 为什么值得关注\n解释它对 lattice/QCD/理论物理社区的重要性。\n- **唯象价值**：重夸克偶素谱与衰变的高精度研究（如 $J/\\psi$、$\\Upsilon$ 系统）需要 $1/m_Q$ 和 $1/m_Q^2$ 修正势；本文提供了带连续极限和 $\\overline{\\text{MS}}$ 匹配的可靠格点输入，可直接嵌入 Born-Oppenheimer 有效场论或 pNRQCD 类计算。\n- **方法学贡献**：展示了梯度流在广义 Wilson 圈场强插入重整化中的有效性，以及多格距、多流时联合外推至连续极限的可行方案，为后续更高阶修正或更精细的势计算树立了范式。\n- **社区需求**：此前缺乏系统的连续极限结果和 $\\overline{\\text{MS}}$ 匹配，本文填补了这一空白，提升了格点势计算与微扰/有效场论对接的可靠性。\n\n## 方向标签\n- Lattice QCD\n- Quarkonium / Heavy Quark Physics\n- Effective Field Theory (Born-Oppenheimer / pNRQCD)\n- Gradient Flow Renormalization\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：对重夸克偶素与有效场论方向的研究者而言，这是直接可用的高价值格点输入，方法上也具有参考意义（梯度流重整化 + 连续极限外推）。扣一星是因为其适用范围限于 $0.2$–$0.7\\,\\text{fm}$ 的分离区间和纯规范 SU(3)（未含动力学夸克），对更广社区（如有限温度、BSM、量子模拟）的直接相关性有限。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-26T08:44:48.474652"
+  },
+  {
+    "id": "2611.34367v1",
+    "title": "Unfreezing topology using out-of-equilibrium replica exchanges",
+    "authors": [
+      "C. Bonanno",
+      "A. Bulgarelli",
+      "E. Cellini",
+      "R. Dionisio",
+      "A. Nada",
+      "D. Panfalone",
+      "D. Vadacchino",
+      "L. Verzichelli"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.34367v1",
+    "published": "2026-11-25T13:30:59Z",
+    "abstract": "Parallel Tempering on Boundary Conditions (PTBC) mitigates topological freezing by exchanging configurations between replicas that interpolate between periodic and open boundaries on a small defect. We generalize PTBC by replacing the instantaneous swap with a short out-of-equilibrium protocol, in which the defect couplings of two replicas are exchanged gradually while the fields around the defect are updated. We show that the swap rate depends only on the average work spent along the out-of-equilibrium trajectory by virtue of Crooks' and Jarzynski's fluctuation relations. From the theoretical derivation of the scaling of the work as a function of the number of replicas, protocol length, and defect size, we predict the swap rate and the optimal protocol length. These predictions are tested in the $2d$ $\\mathrm{CP}^{N-1}$ model with $N=21$. The optimal setup agrees with the measured one, the total computational cost at fixed statistical precision decreases by $\\gtrsim40\\%$ with respect to standard PTBC for all explored lattice spacings, and the required number of replicas at fixed acceptance is halved.",
+    "summary": {
+      "raw": "## 一句话结论\n作者把 PTBC 中的瞬时构型交换推广为短时非平衡协议，并用 Crooks/Jarzynski 涨落关系从理论上预测交换率与最优协议长度，在 2d CP^{N-1} 模型中验证后使固定统计精度下的总计算成本降低 ≳40%、所需副本数减半。\n\n## 研究问题\n拓扑冻结（topological freezing）是格点场论中靠近连续极限时拓扑荷的更新率随格距减小而指数下降的问题，导致拓扑扇区采样极慢、统计误差被严重低估。PTBC（Parallel Tempering on Boundary Conditions）通过在周期边界与开边界之间插值、在小缺陷上交换构型来缓解冻结，但标准 PTBC 的瞬时交换接受率随缺陷/边界条件差异增大而下降，需要较多副本，且交换效率缺乏可解析预测的优化准则。本文要解决的是：能否用非平衡（有限时长）交换协议替代瞬时交换，从而在理论上可控地提高交换率、减少副本数并降低总计算成本。\n\n## 方法\n- **格点模型**：2 维 CP^{N-1} 模型，N=21，作为具有拓扑荷与拓扑冻结的简化测试平台（非 QCD，但拓扑性质类似）。\n- **算法框架**：PTBC 的推广——将两个副本的缺陷耦合（defect couplings）在短时非平衡协议中逐渐交换，同时更新缺陷附近场量；即用有限时长“开关”代替瞬时 swap。\n- **理论工具**：Crooks 涨落定理与 Jarzynski 等式，将交换接受率与沿非平衡轨迹所做的平均功 ⟨W⟩ 联系起来，从而交换率只依赖平均功。\n- **标度分析**：解析推导功 W 随副本数、协议长度、缺陷大小的标度行为，据此预测交换率与最优协议长度。\n- **数值验证**：在多个格距下测量交换率、最优协议长度与总计算成本，与理论预测对比。\n\n## 主要结果\n1. 交换率仅由非平衡轨迹上的平均功决定（由 Crooks/Jarzynski 关系给出），为优化提供了可解析的判据。\n2. 推导出功随副本数、协议长度与缺陷大小的标度，并据此预测交换率与最优协议长度；数值测得的最优设置与理论预测一致。\n3. 在固定统计精度下，总计算成本相对标准 PTBC 在所有探索的格距上降低 ≳40%。\n4. 在固定接受率下，所需副本数减半。\n\n## 为什么值得关注\n拓扑冻结是格点 QCD 走向更细格距、连续极限时的主要系统误差与成本瓶颈之一，PTBC 已是主流缓解手段。本文的价值在于：\n- 把“交换”从瞬时操作推广为可控的非平衡过程，并用涨落定理给出**可预测、可优化**的交换率公式，使 PTBC 的参数（副本数、协议长度、缺陷大小）不再靠经验调参；\n- 实测成本降低 ≳40%、副本数减半，直接关系到大规模格点 QCD 的可行性；\n- 方法具有模型无关性（基于涨落关系的普适性），有望推广到 4d SU(N) 规范理论、其他边界条件方案（如 open boundary、SFtX）以及更一般的 replica exchange 场景；\n- 为“非平衡协议 + 涨落关系”在格点采样中的应用提供了范例，可能启发更多非平衡采样算法。\n\n## 方向标签\n- Lattice QCD\n- Topological freezing / sampling algorithms\n- Replica exchange / Parallel tempering\n- Non-equilibrium statistical mechanics (Crooks/Jarzynski)\n- CP^{N-1} model\n\n## 阅读优先级\n★★★★☆（4/5）\n理由：问题重要（拓扑冻结是格点 QCD 的实际瓶颈）、方法有理论根基且给出可操作的优化判据、数值收益明确（成本降 ≳40%、副本减半）。扣一星是因为验证仅在 2d CP^{N-1} 上进行，尚未在 4d SU(N) 规范理论中展示；对做大规模 QCD 模拟的读者，需关注其向 4d 规范理论的推广与实现开销（非平衡协议本身的场更新成本）是否仍保持净收益。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-26T08:44:55.635881"
+  },
+  {
+    "id": "2611.33970v1",
+    "title": "Gradient-flow scale setting from octet baryon masses in N$^3$LO covariant chiral perturbation theory",
+    "authors": [
+      "Xiu-Lei Ren"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.33970v1",
+    "published": "2026-11-25T08:32:53Z",
+    "abstract": "We determine the gradient-flow scale $t_0$ by analyzing the lowest-lying octet-baryon masses on the Coordinated Lattice Simulations (CLS) $N_f=2+1$ ensembles in covariant baryon chiral perturbation theory up to next-to-next-to-next-to leading order (N$^3$LO). By including the finite-volume corrections self-consistently and the discretization effects from Symanzik effective field theory, we obtain a good description of the RQCD data and determine the gradient-flow scale to be $\\sqrt{8t_{0,\\mathrm{ph}}}=0.4120(14)_\\mathrm{stat.}(16)_\\mathrm{sys.}$ fm with sub-percent precision. The predicted octet baryon masses agree well with the experimental values in the isospin limit. Using the Feynman-Hellmann theorem, we also estimate the nucleon sigma terms, which are consistent with direct determinations from three-point correlation functions on the same CLS ensembles.",
+    "summary": {
+      "raw": "## 一句话结论\n\n该论文通过将 N³LO 协变重子手征微扰理论（covariant baryon ChPT）应用于 CLS 格点系综上的八重态重子质量，以亚百分比精度确定了梯度流标度 √(8t₀,ph) = 0.4120(14)_stat.(16)_sys. fm，并自洽地估计了核子 sigma 项。\n\n## 研究问题\n\n作者想解决的核心问题是：如何利用格点 QCD 数据（具体为 CLS N_f=2+1 系综上的八重态重子质量）在协变重子手征微扰理论框架下，以高精度确定梯度流标度 t₀。梯度流标度是现代格点 QCD 中用于设定物理尺度的关键量，其精确确定对于将格点结果与实验对比至关重要。此外，作者还希望检验该框架能否同时自洽地描述重子质量谱并给出与直接三点函数计算一致的核子 sigma 项。\n\n## 方法\n\n- **格点数据**：使用 Coordinated Lattice Simulations (CLS) 的 N_f=2+1 系综上的 RQCD 八重态重子质量数据。\n- **理论框架**：协变重子手征微扰理论（covariant baryon ChPT），展开至次次次领头阶（N³LO）。\n- **有限体积修正**：自洽地纳入有限体积效应修正。\n- **离散化效应**：基于 Symanzik 有效场论处理格点离散化效应。\n- **标度确定**：通过拟合重子质量数据确定梯度流标度 t₀。\n- **Sigma 项估计**：利用 Feynman-Hellmann 定理从拟合参数中提取核子 sigma 项。\n\n## 主要结果\n\n1. **梯度流标度**：确定 √(8t₀,ph) = 0.4120(14)_stat.(16)_sys. fm，达到亚百分比精度（统计误差约 0.34%，系统误差约 0.39%）。\n2. **重子质量谱**：预测的八重态重子质量在同位旋极限下与实验值吻合良好。\n3. **核子 sigma 项**：通过 Feynman-Hellmann 定理估计的核子 sigma 项与同一 CLS 系综上三点关联函数的直接测定一致，提供了交叉检验。\n\n## 为什么值得关注\n\n- **标度设定的精度提升**：亚百分比精度的 t₀ 确定对于格点 QCD 社区具有直接实用价值——t₀ 是连接格点计算与物理单位的关键桥梁，其精度直接影响所有基于 CLS 系综的物理量测定。\n- **ChPT 框架的验证**：展示了 N³LO 协变重子 ChPT 能够同时描述重子质量谱和 sigma 项，增强了该理论工具在格点数据外推中的可信度。\n- **自洽性检验**：sigma 项与三点函数直接测定的一致性，为格点 QCD 系统误差评估提供了独立交叉验证。\n- **方法论整合**：将有限体积修正、离散化效应和手征外推自洽地整合在一个框架中，为未来类似分析提供了范式。\n\n## 方向标签\n\n- Lattice QCD\n- Chiral Perturbation Theory\n- Baryon spectroscopy\n- Scale setting\n- Hadron structure\n\n## 阅读优先级\n\n★★★★☆（4/5）\n\n**理由**：该论文对格点 QCD 社区具有直接实用价值——精确的 t₀ 标度是许多后续物理分析的输入参数，且亚百分比精度值得关注。N³LO 协变重子 ChPT 的技术实现和自洽性检验对从事手征外推和格点数据分析的研究者尤为相关。不过，其方法论属于相对成熟的框架组合（ChPT + 梯度流标度设定），创新性更多体现在精度和自洽性整合而非全新概念，因此不给满分。对于专注于重子谱学、标度设定或 ChPT 应用的研究者，推荐优先阅读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-26T08:45:04.979070"
+  },
+  {
+    "id": "2611.33280v1",
+    "title": "Parton structure of mesonic states with tensor networks",
+    "authors": [
+      "Jack Y. Araz",
+      "Yamil Cahuana Medrano",
+      "Peter L. Nguyen",
+      "Zhong-Bo Kang",
+      "Jian-Wei Qiu",
+      "David Richards",
+      "Nobuo Sato",
+      "Marco Zaccheddu",
+      "Jia-Yue Zhang"
+    ],
+    "arxiv_url": "http://arxiv.org/abs/2611.33280v1",
+    "published": "2026-11-24T19:00:03Z",
+    "abstract": "We present the first direct tensor network calculation of flavor-resolved parton distribution functions (PDFs) for a pion-like isospin triplet in the two-flavor Nambu-Jona-Lasinio model in (1+1) dimensions. Four-fermion interactions bind the mesons without confinement. Using staggered fermions and a charge-symmetrized Hamiltonian, we prepare the bound states and compute light-cone correlators by real-time evolution. The resulting quark and antiquark PDFs obey the expected isospin relations under $u \\leftrightarrow d$ exchange between charged pions and exhibit equal u and d distributions in the neutral pion. A flavor-independent antisymmetrization of the field ordering removes the vacuum-subtracted anticommutator contribution and restores charge-conjugation relations in both the correlators and PDFs across the triplet within numerical accuracy. These results provide benchmarks for quantum simulations of the partonic structure of the meson.",
+    "summary": {
+      "raw": "## 一句话结论\n本文首次用张量网络方法在(1+1)维两味NJL模型中直接计算了π介子同位旋三重态的味分辨部分子分布函数（PDF），并证明通过一种与味无关的场排序反对称化可以恢复电荷共轭关系。\n\n## 研究问题\n作者想解决的核心问题是：如何在格点框架下（特别是张量网络/量子模拟框架下）直接、非微扰地计算介子束缚态的味分辨部分子分布函数（PDF），并正确处理电荷共轭、同位旋对称性以及真空减除带来的反交换子贡献问题。具体而言，他们关注π介子同位旋三重态（π⁺、π⁰、π⁻）中夸克与反夸克的PDF，以及这些PDF在同位旋交换和电荷共轭下的关系是否能在数值上被正确重现。\n\n## 方法\n- **模型**：(1+1)维两味Nambu-Jona-Lasinio（NJL）模型，四费米相互作用使介子束缚但无禁闭。\n- **费米子离散化**：交错费米子（staggered fermions）。\n- **哈密顿量**：电荷对称化（charge-symmetrized）的哈密顿量。\n- **初态制备**：制备介子束缚态。\n- **计算手段**：张量网络（tensor network）方法，通过实时演化（real-time evolution）计算光锥关联函数（light-cone correlators），进而提取PDF。\n- **关键技术处理**：采用与味无关的场排序反对称化（flavor-independent antisymmetrization of field ordering），去除真空减除的反交换子贡献，从而在关联函数和PDF中恢复电荷共轭关系。\n\n## 主要结果\n1. 首次直接通过张量网络计算出NJL模型中π介子同位旋三重态的味分辨夸克/反夸克PDF。\n2. 得到的PDF满足预期的同位旋关系：在π⁺与π⁻之间做u↔d交换时关系成立；中性π⁰中u和d分布相等。\n3. 通过味无关的场排序反对称化，消除了真空减除的反交换子贡献，在数值精度内恢复了三重态中关联函数与PDF的电荷共轭关系。\n4. 结果为介子部分子结构的量子模拟提供了基准（benchmark）。\n\n## 为什么值得关注\n- **方法学意义**：展示了张量网络作为格点场论互补工具在实时演化和光锥关联函数计算上的可行性，这对传统蒙特卡洛方法因符号问题难以处理的实时量尤为重要。\n- **PDF计算新途径**：为从第一性原理计算强子PDF提供了不同于大动量有效理论（LaMET）等格点QCD方法的替代路线，尤其适用于低维模型和量子模拟基准测试。\n- **对称性处理**：明确了真空减除反交换子贡献与电荷共轭关系恢复之间的技术细节，对后续量子模拟和张量网络计算部分子结构有直接参考价值。\n- **量子模拟基准**：为未来在量子计算机上模拟介子部分子结构提供了可对照的经典基准结果。\n\n## 方向标签\n- Tensor network\n- Quantum simulation\n- Lattice field theory (低维模型)\n- Hadron structure / PDF\n- NJL model\n\n## 阅读优先级\n★★★★☆（4/5）\n\n**理由**：本文在方法上具有创新性（首次张量网络直接计算PDF），技术处理（场排序反对称化恢复电荷共轭）有参考价值，且为量子模拟提供基准，对张量网络、量子模拟和强子结构交叉领域的研究者高度相关。扣一星是因为工作限于(1+1)维NJL模型，无禁闭、无规范场，距离真实QCD还有相当距离，对主流格点QCD社区的直接冲击有限，但对方法探索和量子模拟方向的研究者仍属必读。"
+    },
+    "topics": [],
+    "score": null,
+    "status": "unread",
+    "notes": [],
+    "created_at": "2026-11-26T08:45:10.982168"
   }
 ]
